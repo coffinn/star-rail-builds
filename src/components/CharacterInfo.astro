@@ -1,6 +1,7 @@
 ---
 import {
     renderCharacterAbilityDescription,
+    type CharacterAbility,
     type CharacterData,
 } from '../utils/character-data';
 
@@ -8,7 +9,29 @@ const { character } = Astro.props as {
     character: CharacterData;
 };
 
-const abilities = Object.values(character.abilities ?? {});
+const abilityOrder = ['basic', 'skill', 'ultimate', 'talent', 'technique'];
+
+const abilities = abilityOrder
+    .map((id) => {
+        const ability = character.abilities?.[id];
+
+        if (!ability) {
+            return null;
+        }
+
+        return {
+            id,
+            ability,
+        };
+    })
+    .filter(
+        (
+            item,
+        ): item is {
+            id: string;
+            ability: CharacterAbility;
+        } => item !== null,
+    );
 
 const majorTraces = Object.entries(character.major_traces ?? {}).sort(
     ([a], [b]) => Number(a) - Number(b),
@@ -17,10 +40,35 @@ const majorTraces = Object.entries(character.major_traces ?? {}).sort(
 const eidolons = [...(character.eidolons ?? [])].sort(
     (a, b) => a.level - b.level,
 );
+
+const getDefaultLevel = (ability: CharacterAbility) => {
+    const min = ability.min_level ?? 1;
+
+    const max = ability.max_level ?? min;
+
+    return Math.max(min, Math.min(ability.default_level ?? max, max));
+};
+
+const getAbilityLevels = (ability: CharacterAbility) => {
+    const min = ability.min_level ?? 1;
+
+    const max = ability.max_level ?? min;
+
+    return Array.from(
+        {
+            length: max - min + 1,
+        },
+        (_, index) => min + index,
+    );
+};
 ---
 
 <section class="card character-info-card">
     <h2>Character Info</h2>
+
+    <!-- ========================= -->
+    <!-- Level 80 Stats            -->
+    <!-- ========================= -->
 
     {
         character.level_80_stats && (
@@ -28,27 +76,35 @@ const eidolons = [...(character.eidolons ?? [])].sort(
                 <h3>Level 80 Stats</h3>
 
                 <div class="character-stat-grid">
-                    <span>
-                        HP
-                        <strong>{character.level_80_stats.hp}</strong>
-                    </span>
+                    {character.level_80_stats.hp !== undefined && (
+                        <span>
+                            HP
+                            <strong>{character.level_80_stats.hp}</strong>
+                        </span>
+                    )}
 
-                    <span>
-                        ATK
-                        <strong>{character.level_80_stats.atk}</strong>
-                    </span>
+                    {character.level_80_stats.atk !== undefined && (
+                        <span>
+                            ATK
+                            <strong>{character.level_80_stats.atk}</strong>
+                        </span>
+                    )}
 
-                    <span>
-                        DEF
-                        <strong>{character.level_80_stats.def}</strong>
-                    </span>
+                    {character.level_80_stats.def !== undefined && (
+                        <span>
+                            DEF
+                            <strong>{character.level_80_stats.def}</strong>
+                        </span>
+                    )}
 
-                    <span>
-                        SPD
-                        <strong>{character.level_80_stats.spd}</strong>
-                    </span>
+                    {character.level_80_stats.spd !== undefined && (
+                        <span>
+                            SPD
+                            <strong>{character.level_80_stats.spd}</strong>
+                        </span>
+                    )}
 
-                    {character.max_energy && (
+                    {character.max_energy !== undefined && (
                         <span>
                             Energy
                             <strong>{character.max_energy}</strong>
@@ -59,55 +115,142 @@ const eidolons = [...(character.eidolons ?? [])].sort(
         )
     }
 
+    <!-- ========================= -->
+    <!-- Abilities                 -->
+    <!-- ========================= -->
+
     <section class="character-info-section">
         <h3>Abilities</h3>
 
         <div class="character-info-details">
             {
-                abilities.map((ability) => (
-                    <details open>
-                        <summary>
-                            <strong>{ability.type}</strong>
+                abilities.map(({ id, ability }) => {
+                    const minLevel = ability.min_level ?? 1;
 
-                            <span>{ability.name}</span>
-                        </summary>
+                    const maxLevel = ability.max_level ?? minLevel;
 
-                        <div class="character-detail-body">
-                            {ability.tag && (
-                                <p>
-                                    <strong>Type:</strong> {ability.tag}
-                                </p>
-                            )}
+                    const defaultLevel = getDefaultLevel(ability);
 
-                            <div class="character-detail-meta">
-                                {ability.default_level && (
-                                    <span>Lv. {ability.default_level}</span>
-                                )}
+                    const levels = getAbilityLevels(ability);
 
-                                {ability.energy_gain !== undefined && (
-                                    <span>
-                                        Energy Gain: {ability.energy_gain}
+                    const scalable =
+                        Boolean(
+                            ability.description_template && ability.scaling,
+                        ) && maxLevel > minLevel;
+
+                    return (
+                        <details open data-character-ability={id}>
+                            <summary>
+                                <strong>{ability.type}</strong>
+
+                                <span>{ability.name}</span>
+
+                                {scalable && (
+                                    <span
+                                        class="character-ability-level"
+                                        data-character-level-value
+                                    >
+                                        Lv. {defaultLevel}
                                     </span>
                                 )}
+                            </summary>
 
-                                {ability.energy_cost !== undefined && (
-                                    <span>
-                                        Energy Cost: {ability.energy_cost}
-                                    </span>
+                            <div class="character-detail-body">
+                                {ability.tag && (
+                                    <p class="character-ability-tag">
+                                        <strong>Type:</strong> {ability.tag}
+                                    </p>
                                 )}
 
-                                {ability.break !== undefined && (
-                                    <span>Break: {ability.break}</span>
+                                <div class="character-detail-meta">
+                                    {ability.energy_gain !== undefined && (
+                                        <span>
+                                            Energy Gain:{' '}
+                                            <strong>
+                                                {ability.energy_gain}
+                                            </strong>
+                                        </span>
+                                    )}
+
+                                    {ability.energy_cost !== undefined && (
+                                        <span>
+                                            Energy Cost:{' '}
+                                            <strong>
+                                                {ability.energy_cost}
+                                            </strong>
+                                        </span>
+                                    )}
+
+                                    {ability.break !== undefined && (
+                                        <span>
+                                            Break:{' '}
+                                            <strong>{ability.break}</strong>
+                                        </span>
+                                    )}
+                                </div>
+
+                                {scalable && (
+                                    <div class="character-trace-slider">
+                                        <div class="character-slider-header">
+                                            <strong>Trace Level</strong>
+
+                                            <span data-character-level-value>
+                                                Lv. {defaultLevel}
+                                            </span>
+                                        </div>
+
+                                        <input
+                                            type="range"
+                                            min={minLevel}
+                                            max={maxLevel}
+                                            step="1"
+                                            value={defaultLevel}
+                                            data-character-level-slider
+                                            aria-label={`${ability.name} Trace Level`}
+                                        />
+
+                                        <div class="character-slider-bounds">
+                                            <span>Lv. {minLevel}</span>
+
+                                            <span>Lv. {maxLevel}</span>
+                                        </div>
+                                    </div>
                                 )}
+
+                                <div class="character-ability-description">
+                                    {scalable ? (
+                                        levels.map((level) => (
+                                            <p
+                                                data-character-level-panel={
+                                                    level
+                                                }
+                                                hidden={level !== defaultLevel}
+                                            >
+                                                {renderCharacterAbilityDescription(
+                                                    ability,
+                                                    level,
+                                                )}
+                                            </p>
+                                        ))
+                                    ) : (
+                                        <p>
+                                            {renderCharacterAbilityDescription(
+                                                ability,
+                                            )}
+                                        </p>
+                                    )}
+                                </div>
                             </div>
-
-                            <p>{renderCharacterAbilityDescription(ability)}</p>
-                        </div>
-                    </details>
-                ))
+                        </details>
+                    );
+                })
             }
         </div>
     </section>
+
+    <!-- ========================= -->
+    <!-- Major Traces              -->
+    <!-- ========================= -->
 
     <section class="character-info-section">
         <h3>Major Traces</h3>
@@ -117,7 +260,7 @@ const eidolons = [...(character.eidolons ?? [])].sort(
                 majorTraces.map(([ascension, trace]) => (
                     <details open>
                         <summary>
-                            <strong>A{ascension}</strong>
+                            <strong>Ascension {ascension}</strong>
 
                             <span>{trace.name}</span>
                         </summary>
@@ -130,6 +273,10 @@ const eidolons = [...(character.eidolons ?? [])].sort(
             }
         </div>
     </section>
+
+    <!-- ========================= -->
+    <!-- Stat Bonuses              -->
+    <!-- ========================= -->
 
     <section class="character-info-section">
         <h3>Stat Bonuses</h3>
@@ -146,6 +293,10 @@ const eidolons = [...(character.eidolons ?? [])].sort(
             }
         </div>
     </section>
+
+    <!-- ========================= -->
+    <!-- Eidolons                  -->
+    <!-- ========================= -->
 
     <section class="character-info-section">
         <h3>Eidolons</h3>
@@ -170,37 +321,59 @@ const eidolons = [...(character.eidolons ?? [])].sort(
     </section>
 </section>
 
+<script>
+    document
+        .querySelectorAll<HTMLElement>('[data-character-ability]')
+        .forEach((ability) => {
+            const slider = ability.querySelector<HTMLInputElement>(
+                '[data-character-level-slider]',
+            );
+
+            if (!slider) {
+                return;
+            }
+
+            const levelLabels = ability.querySelectorAll<HTMLElement>(
+                '[data-character-level-value]',
+            );
+
+            const panels = ability.querySelectorAll<HTMLElement>(
+                '[data-character-level-panel]',
+            );
+
+            const updateLevel = () => {
+                const level = slider.value;
+
+                levelLabels.forEach((label) => {
+                    label.textContent = `Lv. ${level}`;
+                });
+
+                panels.forEach((panel) => {
+                    panel.hidden = panel.dataset.characterLevelPanel !== level;
+                });
+            };
+
+            slider.addEventListener('input', updateLevel);
+        });
+</script>
+
 <style>
     .character-info-card {
+        box-sizing: border-box;
+
         width: 100%;
         max-width: 100%;
         min-width: 0;
+
         margin-top: 1.5rem;
     }
-    .character-info-section,
-    .character-info-details,
-    .character-info-details details,
-    .character-detail-body {
+
+    .character-info-section {
+        box-sizing: border-box;
+
         width: 100%;
         max-width: 100%;
         min-width: 0;
-    }
-
-    .character-info-details details {
-        overflow: hidden;
-    }
-
-    .character-info-details summary {
-        width: 100%;
-        min-width: 0;
-    }
-
-    .character-info-details summary span,
-    .character-detail-body,
-    .character-detail-body p {
-        min-width: 0;
-        overflow-wrap: anywhere;
-        word-break: normal;
     }
 
     .character-info-section + .character-info-section {
@@ -209,14 +382,23 @@ const eidolons = [...(character.eidolons ?? [])].sort(
 
     .character-stat-grid {
         display: grid;
+
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+
+        width: 100%;
+        min-width: 0;
+
         gap: 0.75rem;
     }
 
     .character-stat-grid > span {
         display: flex;
+
         justify-content: space-between;
+
         gap: 0.75rem;
+
+        min-width: 0;
 
         padding: 0.65rem 0.8rem;
 
@@ -227,10 +409,21 @@ const eidolons = [...(character.eidolons ?? [])].sort(
 
     .character-info-details {
         display: grid;
+
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+
         gap: 0.5rem;
     }
 
     .character-info-details details {
+        box-sizing: border-box;
+
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+
         border: 1px solid color-mix(in srgb, currentColor 15%, transparent);
 
         border-radius: 0.5rem;
@@ -239,27 +432,139 @@ const eidolons = [...(character.eidolons ?? [])].sort(
     }
 
     .character-info-details summary {
+        box-sizing: border-box;
+
         display: flex;
-        gap: 0.75rem;
         align-items: center;
+
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+
+        gap: 0.75rem;
 
         padding: 0.7rem 0.8rem;
 
         cursor: pointer;
     }
 
+    .character-info-details summary > span {
+        min-width: 0;
+
+        overflow-wrap: anywhere;
+    }
+
+    .character-ability-level {
+        margin-left: auto;
+
+        flex: 0 0 auto;
+
+        opacity: 0.75;
+    }
+
     .character-detail-body {
+        box-sizing: border-box;
+
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+
         padding: 0 0.8rem 0.8rem;
+    }
+
+    .character-detail-body p {
+        max-width: 100%;
+        min-width: 0;
+
+        overflow-wrap: anywhere;
+    }
+
+    .character-ability-tag {
+        margin-top: 0;
     }
 
     .character-detail-meta {
         display: flex;
         flex-wrap: wrap;
+
         gap: 0.5rem 1rem;
 
-        margin-bottom: 0.6rem;
+        margin-bottom: 0.75rem;
+
+        font-size: 0.9rem;
 
         opacity: 0.8;
-        font-size: 0.9rem;
+    }
+
+    .character-trace-slider {
+        box-sizing: border-box;
+
+        display: grid;
+
+        width: 50%;
+        max-width: 420px;
+        min-width: 240px;
+
+        gap: 0.3rem;
+
+        margin: 0.75rem 0;
+    }
+    @media (max-width: 600px) {
+        .character-trace-slider {
+            width: 100%;
+            min-width: 0;
+            max-width: none;
+        }
+    }
+
+    .character-slider-header {
+        display: flex;
+
+        justify-content: space-between;
+
+        gap: 1rem;
+    }
+
+    .character-trace-slider input {
+        box-sizing: border-box;
+
+        display: block;
+
+        width: 100%;
+        min-width: 0;
+
+        cursor: pointer;
+    }
+
+    .character-slider-bounds {
+        display: flex;
+
+        justify-content: space-between;
+
+        font-size: 0.75rem;
+
+        opacity: 0.65;
+    }
+
+    .character-ability-description {
+        box-sizing: border-box;
+
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+
+        padding-top: 0.25rem;
+    }
+
+    .character-ability-description p {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+
+        margin-bottom: 0;
+
+        line-height: 1.5;
+
+        overflow-wrap: anywhere;
     }
 </style>

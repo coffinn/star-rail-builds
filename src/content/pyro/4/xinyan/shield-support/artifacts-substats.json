@@ -1,9 +1,0 @@
-{
-    "substats_priority": [
-        "er",
-        {
-            "name": "[[stat:atk%]] / [[stat:def%]]"
-        },
-        "cr/cd"
-    ]
-}

@@ -24,17 +24,5 @@
         }
       ]
     }
-  ],
-
-  "major_traces": [
-    {
-      "ascension": 2
-    },
-    {
-      "ascension": 4
-    },
-    {
-      "ascension": 6
-    }
   ]
 }

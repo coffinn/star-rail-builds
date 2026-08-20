@@ -1,13 +1,6 @@
 ---
 import { t } from '../utils/i18n';
-
-import type {
-  CharacterData,
-} from '../utils/character-data';
-
 import InlineNoteLabel from './InlineNoteLabel.astro';
-import CharacterInfoPopover from './CharacterInfoPopover.astro';
-import TraceAbilityPopover from './TraceAbilityPopover.astro';
 
 type TraceItem = {
   id?: string;
@@ -21,29 +14,20 @@ type TracePriority = {
   approx?: boolean;
 };
 
-type MajorTraceItem = {
-  ascension: number;
-  note?: string;
-  noteId?: string;
-};
-
 type TraceRecommendations = {
   traces: TracePriority[];
-  major_traces?: MajorTraceItem[];
 };
 
 const {
   traces,
   locale,
-  characterData,
 } = Astro.props as {
   traces: TraceRecommendations;
   locale: any;
-  characterData?: CharacterData | null;
 };
 
 const hasNoteMarker = (
-  item: TraceItem | MajorTraceItem,
+  item: TraceItem,
 ) => item.noteId || item.note;
 
 const traceRows = traces.traces.map(
@@ -62,37 +46,6 @@ const traceRows = traces.traces.map(
       : [],
   }),
 );
-
-const majorTraces =
-  traces.major_traces ?? [];
-
-const ascensionLabel =
-  t(
-    locale,
-    'ui',
-    'Ascension',
-    undefined,
-    false,
-  ) || 'Ascension';
-
-const getAbilityInfo = (
-  item: TraceItem,
-) => {
-  if (!characterData) {
-    return undefined;
-  }
-
-  const id = item.id ?? item.name;
-
-  return characterData.abilities?.[id];
-};
-
-const getMajorTraceInfo = (
-  ascension: number,
-) =>
-  characterData?.major_traces?.[
-    String(ascension)
-  ];
 ---
 
 <div class="card recommendation-card talent-card">
@@ -101,7 +54,6 @@ const getMajorTraceInfo = (
   </h2>
 
   <div class="recommendation-card-body">
-
     <div class="rank-list">
       {
         traceRows.map((trace) => (
@@ -113,93 +65,50 @@ const getMajorTraceInfo = (
               </strong>
 
               <span class="rank-content">
-
-                {trace.mainItems.map(
-                  (item, itemIndex) => {
-                    const ability =
-                      getAbilityInfo(item);
-
-                    return (
+                {
+                  trace.mainItems.map(
+                    (
+                      item,
+                      itemIndex,
+                    ) => (
                       <>
                         {itemIndex > 0 && ' = '}
 
-                        {ability ? (
-                          <TraceAbilityPopover
-                            label={item.name}
-                            ability={ability}
-                          />
-                        ) : (
-                          <InlineNoteLabel
-                            label={item.name}
-                            noteId={item.noteId}
-                            hasNote={Boolean(
-                              hasNoteMarker(item),
-                            )}
-                            emphasized
-                          />
-                        )}
-
-                        {ability &&
-                          item.noteId && (
-                            <a
-                              class="note-link"
-                              href={`#${item.noteId}`}
-                            >
-                              ⓘ
-                            </a>
+                        <InlineNoteLabel
+                          label={item.name}
+                          noteId={item.noteId}
+                          hasNote={Boolean(
+                            hasNoteMarker(item),
                           )}
-
-                        {ability &&
-                          !item.noteId &&
-                          item.note && (
-                            <span class="note-marker-text">
-                              ⓘ
-                            </span>
-                          )}
+                          emphasized
+                        />
                       </>
-                    );
-                  },
-                )}
-
+                    ),
+                  )
+                }
               </span>
             </div>
 
             {
               trace.alternativeItems.map(
-                (item) => {
-                  const ability =
-                    getAbilityInfo(item);
+                (item) => (
+                  <div class="rank-row alt">
+                    <span class="rank-approx">
+                      &asymp;
+                    </span>
 
-                  return (
-                    <div class="rank-row alt">
-
-                      <span class="rank-approx">
-                        &asymp;
-                      </span>
-
-                      <span class="rank-content">
-
-                        {ability ? (
-                          <TraceAbilityPopover
-                            label={item.name}
-                            ability={ability}
-                          />
-                        ) : (
-                          <InlineNoteLabel
-                            label={item.name}
-                            noteId={item.noteId}
-                            hasNote={Boolean(
-                              hasNoteMarker(item),
-                            )}
-                            emphasized
-                          />
+                    <span class="rank-content">
+                      <InlineNoteLabel
+                        label={item.name}
+                        noteId={item.noteId}
+                        hasNote={Boolean(
+                          hasNoteMarker(item),
                         )}
-
-                      </span>
-
-                    </div>
-                  );
-                },
+                        emphasized
+                      />
+                    </span>
+                  </div>
+                ),
               )
             }
 
@@ -207,72 +116,5 @@ const getMajorTraceInfo = (
         ))
       }
     </div>
-
-    {
-      majorTraces.length > 0 && (
-        <div class="trace-major-section">
-
-          <h3>
-            {t(
-              locale,
-              'ui',
-              'Major Traces',
-              undefined,
-              false,
-            )}
-          </h3>
-
-          <div class="rank-list">
-
-            {
-              majorTraces.map(
-                (majorTrace) => {
-                  const info =
-                    getMajorTraceInfo(
-                      majorTrace.ascension,
-                    );
-
-                  return (
-                    <div class="rank-group">
-
-                      <div class="rank-row">
-
-                        <span class="rank-content">
-
-                          {info ? (
-                            <CharacterInfoPopover
-                              label={`${ascensionLabel} ${majorTrace.ascension}`}
-                              title={info.name}
-                              subtitle={`Major Trace • ${ascensionLabel} ${majorTrace.ascension}`}
-                              description={
-                                info.description
-                              }
-                              emphasized
-                            />
-                          ) : (
-                            <strong>
-                              {ascensionLabel}{' '}
-                              {
-                                majorTrace.ascension
-                              }
-                            </strong>
-                          )}
-
-                        </span>
-
-                      </div>
-
-                    </div>
-                  );
-                },
-              )
-            }
-
-          </div>
-
-        </div>
-      )
-    }
-
   </div>
 </div>
