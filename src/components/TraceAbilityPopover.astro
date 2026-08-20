@@ -1,0 +1,309 @@
+---
+import {
+  renderCharacterAbilityDescription,
+  type CharacterAbility,
+} from '../utils/character-data';
+
+type Props = {
+  label: string;
+  ability: CharacterAbility;
+};
+
+const {
+  label,
+  ability,
+} = Astro.props as Props;
+
+const escapeHtml = (value: unknown) =>
+  String(value ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+
+const minLevel =
+  ability.min_level ?? 1;
+
+const maxLevel =
+  ability.max_level ?? minLevel;
+
+const defaultLevel = Math.max(
+  minLevel,
+  Math.min(
+    ability.default_level ?? maxLevel,
+    maxLevel,
+  ),
+);
+
+const hasLevelScaling =
+  Boolean(
+    ability.description_template &&
+    ability.scaling,
+  ) &&
+  maxLevel > minLevel;
+
+const levels = Array.from(
+  {
+    length:
+      maxLevel - minLevel + 1,
+  },
+  (_, index) =>
+    minLevel + index,
+);
+
+const meta = [
+  {
+    label: 'Energy Gain',
+    value: ability.energy_gain,
+  },
+  {
+    label: 'Energy Cost',
+    value: ability.energy_cost,
+  },
+  {
+    label: 'Break',
+    value: ability.break,
+  },
+].filter(
+  (item) =>
+    item.value !== undefined &&
+    item.value !== null,
+);
+
+const metaHtml = meta
+  .map(
+    (item) =>
+      [
+        '<span class="trace-ability-meta-row">',
+        '<span>',
+        escapeHtml(item.label),
+        '</span>',
+        '<strong>',
+        escapeHtml(item.value),
+        '</strong>',
+        '</span>',
+      ].join(''),
+  )
+  .join('');
+
+const levelPanels = hasLevelScaling
+  ? levels
+      .map((level) => {
+        const description =
+          renderCharacterAbilityDescription(
+            ability,
+            level,
+          );
+
+        return [
+          '<span ',
+          'class="trace-ability-description" ',
+          'data-trace-level-panel="',
+          level,
+          '"',
+          level === defaultLevel
+            ? ''
+            : ' hidden',
+          '>',
+          escapeHtml(description),
+          '</span>',
+        ].join('');
+      })
+      .join('')
+  : [
+      '<span class="trace-ability-description">',
+      escapeHtml(
+        renderCharacterAbilityDescription(
+          ability,
+        ),
+      ),
+      '</span>',
+    ].join('');
+
+const sliderHtml = hasLevelScaling
+  ? [
+      '<span class="trace-level-control">',
+
+      '<span class="trace-level-heading">',
+      '<span>Trace Level</span>',
+      '<strong data-trace-level-value>',
+      'Lv. ',
+      defaultLevel,
+      '</strong>',
+      '</span>',
+
+      '<input ',
+      'class="trace-level-slider" ',
+      'data-trace-level-slider ',
+      'type="range" ',
+      'min="',
+      minLevel,
+      '" ',
+      'max="',
+      maxLevel,
+      '" ',
+      'step="1" ',
+      'value="',
+      defaultLevel,
+      '" ',
+      'aria-label="Trace Level">',
+
+      '<span class="trace-level-bounds">',
+      '<span>Lv. ',
+      minLevel,
+      '</span>',
+      '<span>Lv. ',
+      maxLevel,
+      '</span>',
+      '</span>',
+
+      '</span>',
+    ].join('')
+  : '';
+
+const cardHtml = [
+  '<span class="trace-ability-popover-content">',
+
+  '<span class="trace-ability-header">',
+
+  '<span class="info-popover-name">',
+  escapeHtml(ability.name),
+  '</span>',
+
+  '<span class="trace-ability-subtitle">',
+  escapeHtml(
+    ability.tag
+      ? `${ability.type} • ${ability.tag}`
+      : ability.type,
+  ),
+  '</span>',
+
+  '</span>',
+
+  metaHtml,
+
+  sliderHtml,
+
+  '<span class="trace-ability-description-container">',
+  levelPanels,
+  '</span>',
+
+  '</span>',
+].join('');
+---
+
+<span
+  class="info-popover"
+  data-info-popover-html={cardHtml}
+  data-info-popover-card-class="trace-ability-popover-card"
+>
+  <button
+    class="info-popover-trigger"
+    type="button"
+    aria-expanded="false"
+  >
+    {label}
+  </button>
+</span>
+
+<style is:global>
+  .trace-ability-popover-card {
+    /*
+     * Every ability popup gets exactly
+     * the same desktop width.
+     */
+    width: min(
+      380px,
+      calc(100vw - 32px)
+    );
+  }
+
+  .trace-ability-popover-content {
+    display: grid;
+    min-width: 0;
+    gap: 0.65rem;
+  }
+
+  .trace-ability-header {
+    display: grid;
+    min-width: 0;
+    gap: 0.15rem;
+  }
+
+  .trace-ability-subtitle {
+    color: color-mix(
+      in srgb,
+      var(--text) 68%,
+      transparent
+    );
+    font-size: 0.8rem;
+  }
+
+  .trace-ability-meta-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    border-top: 1px solid
+      color-mix(
+        in srgb,
+        var(--text) 12%,
+        transparent
+      );
+    padding-top: 0.45rem;
+  }
+
+  .trace-level-control {
+    display: grid;
+    gap: 0.35rem;
+    margin-top: 0.2rem;
+    border-top: 1px solid
+      color-mix(
+        in srgb,
+        var(--text) 16%,
+        transparent
+      );
+    padding-top: 0.65rem;
+  }
+
+  .trace-level-heading,
+  .trace-level-bounds {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .trace-level-heading strong {
+    color: var(--accent);
+  }
+
+  .trace-level-bounds {
+    opacity: 0.65;
+    font-size: 0.72rem;
+  }
+
+  .trace-level-slider {
+    width: 100%;
+    accent-color: var(--element);
+    cursor: pointer;
+  }
+
+  .trace-ability-description-container {
+    display: block;
+    min-width: 0;
+    min-height: 5.5rem;
+    border-top: 1px solid
+      color-mix(
+        in srgb,
+        var(--text) 16%,
+        transparent
+      );
+    padding-top: 0.65rem;
+  }
+
+  .trace-ability-description {
+    min-width: 0;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+  }
+</style>

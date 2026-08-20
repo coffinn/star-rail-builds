@@ -1,336 +1,265 @@
 ---
-import type {
-  CharacterData,
+import {
+    renderCharacterAbilityDescription,
+    type CharacterData,
 } from '../utils/character-data';
 
 const { character } = Astro.props as {
-  character: CharacterData;
+    character: CharacterData;
 };
 
-const abilities = Object.values(
-  character.abilities ?? {},
+const abilities = Object.values(character.abilities ?? {});
+
+const majorTraces = Object.entries(character.major_traces ?? {}).sort(
+    ([a], [b]) => Number(a) - Number(b),
 );
 
-const majorTraces = Object.entries(
-  character.major_traces ?? {},
-).sort(
-  ([a], [b]) =>
-    Number(a) - Number(b),
-);
-
-const eidolons = [
-  ...(character.eidolons ?? []),
-].sort(
-  (a, b) => a.level - b.level,
+const eidolons = [...(character.eidolons ?? [])].sort(
+    (a, b) => a.level - b.level,
 );
 ---
 
 <section class="card character-info-card">
+    <h2>Character Info</h2>
 
-  <h2>Character Info</h2>
+    {
+        character.level_80_stats && (
+            <section class="character-info-section">
+                <h3>Level 80 Stats</h3>
 
-  {
-    character.level_80_stats && (
-      <section class="character-info-section">
+                <div class="character-stat-grid">
+                    <span>
+                        HP
+                        <strong>{character.level_80_stats.hp}</strong>
+                    </span>
 
-        <h3>Level 80 Stats</h3>
+                    <span>
+                        ATK
+                        <strong>{character.level_80_stats.atk}</strong>
+                    </span>
+
+                    <span>
+                        DEF
+                        <strong>{character.level_80_stats.def}</strong>
+                    </span>
+
+                    <span>
+                        SPD
+                        <strong>{character.level_80_stats.spd}</strong>
+                    </span>
+
+                    {character.max_energy && (
+                        <span>
+                            Energy
+                            <strong>{character.max_energy}</strong>
+                        </span>
+                    )}
+                </div>
+            </section>
+        )
+    }
+
+    <section class="character-info-section">
+        <h3>Abilities</h3>
+
+        <div class="character-info-details">
+            {
+                abilities.map((ability) => (
+                    <details open>
+                        <summary>
+                            <strong>{ability.type}</strong>
+
+                            <span>{ability.name}</span>
+                        </summary>
+
+                        <div class="character-detail-body">
+                            {ability.tag && (
+                                <p>
+                                    <strong>Type:</strong> {ability.tag}
+                                </p>
+                            )}
+
+                            <div class="character-detail-meta">
+                                {ability.default_level && (
+                                    <span>Lv. {ability.default_level}</span>
+                                )}
+
+                                {ability.energy_gain !== undefined && (
+                                    <span>
+                                        Energy Gain: {ability.energy_gain}
+                                    </span>
+                                )}
+
+                                {ability.energy_cost !== undefined && (
+                                    <span>
+                                        Energy Cost: {ability.energy_cost}
+                                    </span>
+                                )}
+
+                                {ability.break !== undefined && (
+                                    <span>Break: {ability.break}</span>
+                                )}
+                            </div>
+
+                            <p>{renderCharacterAbilityDescription(ability)}</p>
+                        </div>
+                    </details>
+                ))
+            }
+        </div>
+    </section>
+
+    <section class="character-info-section">
+        <h3>Major Traces</h3>
+
+        <div class="character-info-details">
+            {
+                majorTraces.map(([ascension, trace]) => (
+                    <details open>
+                        <summary>
+                            <strong>A{ascension}</strong>
+
+                            <span>{trace.name}</span>
+                        </summary>
+
+                        <div class="character-detail-body">
+                            <p>{trace.description}</p>
+                        </div>
+                    </details>
+                ))
+            }
+        </div>
+    </section>
+
+    <section class="character-info-section">
+        <h3>Stat Bonuses</h3>
 
         <div class="character-stat-grid">
+            {
+                character.stat_bonuses.map((bonus) => (
+                    <span>
+                        {bonus.stat}
 
-          <span>
-            HP
-            <strong>
-              {character.level_80_stats.hp}
-            </strong>
-          </span>
-
-          <span>
-            ATK
-            <strong>
-              {character.level_80_stats.atk}
-            </strong>
-          </span>
-
-          <span>
-            DEF
-            <strong>
-              {character.level_80_stats.def}
-            </strong>
-          </span>
-
-          <span>
-            SPD
-            <strong>
-              {character.level_80_stats.spd}
-            </strong>
-          </span>
-
-          {character.max_energy && (
-            <span>
-              Energy
-              <strong>
-                {character.max_energy}
-              </strong>
-            </span>
-          )}
-
+                        <strong>{bonus.value}</strong>
+                    </span>
+                ))
+            }
         </div>
+    </section>
 
-      </section>
-    )
-  }
+    <section class="character-info-section">
+        <h3>Eidolons</h3>
 
-  <section class="character-info-section">
+        <div class="character-info-details">
+            {
+                eidolons.map((eidolon) => (
+                    <details open>
+                        <summary>
+                            <strong>E{eidolon.level}</strong>
 
-    <h3>Abilities</h3>
+                            <span>{eidolon.name}</span>
+                        </summary>
 
-    <div class="character-info-details">
-
-      {
-        abilities.map((ability) => (
-          <details>
-
-            <summary>
-              <strong>
-                {ability.type}
-              </strong>
-
-              <span>
-                {ability.name}
-              </span>
-            </summary>
-
-            <div class="character-detail-body">
-
-              {ability.tag && (
-                <p>
-                  <strong>Type:</strong>{' '}
-                  {ability.tag}
-                </p>
-              )}
-
-              <div class="character-detail-meta">
-
-                {ability.level && (
-                  <span>
-                    Lv. {ability.level}
-                  </span>
-                )}
-
-                {ability.energy_gain !==
-                  undefined && (
-                  <span>
-                    Energy Gain:{' '}
-                    {ability.energy_gain}
-                  </span>
-                )}
-
-                {ability.energy_cost !==
-                  undefined && (
-                  <span>
-                    Energy Cost:{' '}
-                    {ability.energy_cost}
-                  </span>
-                )}
-
-                {ability.break !==
-                  undefined && (
-                  <span>
-                    Break:{' '}
-                    {ability.break}
-                  </span>
-                )}
-
-              </div>
-
-              <p>
-                {ability.description}
-              </p>
-
-            </div>
-
-          </details>
-        ))
-      }
-
-    </div>
-
-  </section>
-
-  <section class="character-info-section">
-
-    <h3>Major Traces</h3>
-
-    <div class="character-info-details">
-
-      {
-        majorTraces.map(
-          ([ascension, trace]) => (
-            <details>
-
-              <summary>
-                <strong>
-                  A{ascension}
-                </strong>
-
-                <span>
-                  {trace.name}
-                </span>
-              </summary>
-
-              <div class="character-detail-body">
-                <p>
-                  {trace.description}
-                </p>
-              </div>
-
-            </details>
-          ),
-        )
-      }
-
-    </div>
-
-  </section>
-
-  <section class="character-info-section">
-
-    <h3>Stat Bonuses</h3>
-
-    <div class="character-stat-grid">
-
-      {
-        character.stat_bonuses.map(
-          (bonus) => (
-            <span>
-              {bonus.stat}
-
-              <strong>
-                {bonus.value}
-              </strong>
-            </span>
-          ),
-        )
-      }
-
-    </div>
-
-  </section>
-
-  <section class="character-info-section">
-
-    <h3>Eidolons</h3>
-
-    <div class="character-info-details">
-
-      {
-        eidolons.map((eidolon) => (
-          <details>
-
-            <summary>
-              <strong>
-                E{eidolon.level}
-              </strong>
-
-              <span>
-                {eidolon.name}
-              </span>
-            </summary>
-
-            <div class="character-detail-body">
-
-              <p>
-                {eidolon.description}
-              </p>
-
-            </div>
-
-          </details>
-        ))
-      }
-
-    </div>
-
-  </section>
-
+                        <div class="character-detail-body">
+                            <p>{eidolon.description}</p>
+                        </div>
+                    </details>
+                ))
+            }
+        </div>
+    </section>
 </section>
 
 <style>
-  .character-info-card {
-    margin-top: 1.5rem;
-  }
+    .character-info-card {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        margin-top: 1.5rem;
+    }
+    .character-info-section,
+    .character-info-details,
+    .character-info-details details,
+    .character-detail-body {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
 
-  .character-info-section + .character-info-section {
-    margin-top: 1.5rem;
-  }
+    .character-info-details details {
+        overflow: hidden;
+    }
 
-  .character-stat-grid {
-    display: grid;
-    grid-template-columns:
-      repeat(
-        auto-fit,
-        minmax(120px, 1fr)
-      );
-    gap: 0.75rem;
-  }
+    .character-info-details summary {
+        width: 100%;
+        min-width: 0;
+    }
 
-  .character-stat-grid > span {
-    display: flex;
-    justify-content: space-between;
-    gap: 0.75rem;
+    .character-info-details summary span,
+    .character-detail-body,
+    .character-detail-body p {
+        min-width: 0;
+        overflow-wrap: anywhere;
+        word-break: normal;
+    }
 
-    padding: 0.65rem 0.8rem;
+    .character-info-section + .character-info-section {
+        margin-top: 1.5rem;
+    }
 
-    border: 1px solid
-      color-mix(
-        in srgb,
-        currentColor 15%,
-        transparent
-      );
+    .character-stat-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 0.75rem;
+    }
 
-    border-radius: 0.5rem;
-  }
+    .character-stat-grid > span {
+        display: flex;
+        justify-content: space-between;
+        gap: 0.75rem;
 
-  .character-info-details {
-    display: grid;
-    gap: 0.5rem;
-  }
+        padding: 0.65rem 0.8rem;
 
-  .character-info-details details {
-    border: 1px solid
-      color-mix(
-        in srgb,
-        currentColor 15%,
-        transparent
-      );
+        border: 1px solid color-mix(in srgb, currentColor 15%, transparent);
 
-    border-radius: 0.5rem;
+        border-radius: 0.5rem;
+    }
 
-    overflow: hidden;
-  }
+    .character-info-details {
+        display: grid;
+        gap: 0.5rem;
+    }
 
-  .character-info-details summary {
-    display: flex;
-    gap: 0.75rem;
-    align-items: center;
+    .character-info-details details {
+        border: 1px solid color-mix(in srgb, currentColor 15%, transparent);
 
-    padding: 0.7rem 0.8rem;
+        border-radius: 0.5rem;
 
-    cursor: pointer;
-  }
+        overflow: hidden;
+    }
 
-  .character-detail-body {
-    padding: 0 0.8rem 0.8rem;
-  }
+    .character-info-details summary {
+        display: flex;
+        gap: 0.75rem;
+        align-items: center;
 
-  .character-detail-meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem 1rem;
+        padding: 0.7rem 0.8rem;
 
-    margin-bottom: 0.6rem;
+        cursor: pointer;
+    }
 
-    opacity: 0.8;
-    font-size: 0.9rem;
-  }
+    .character-detail-body {
+        padding: 0 0.8rem 0.8rem;
+    }
+
+    .character-detail-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem 1rem;
+
+        margin-bottom: 0.6rem;
+
+        opacity: 0.8;
+        font-size: 0.9rem;
+    }
 </style>

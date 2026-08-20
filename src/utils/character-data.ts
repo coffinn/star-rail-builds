@@ -6,12 +6,27 @@ import { readJSONFile } from './content';
 export type CharacterAbility = {
     type: string;
     name: string;
+
     tag?: string;
-    level?: number;
+
     energy_gain?: number;
     energy_cost?: number;
     break?: number | string;
-    description: string;
+
+    // Static abilities such as Technique can use this.
+    description?: string;
+
+    // Level-scaled abilities use these.
+    min_level?: number;
+    max_level?: number;
+    default_level?: number;
+
+    description_template?: string;
+
+    scaling?: Record<
+        string,
+        Array<number | string>
+    >;
 };
 
 export type CharacterMajorTrace = {
@@ -36,6 +51,7 @@ export type CharacterData = {
     rarity: number;
     element: string;
     path: string;
+
     version_released?: string;
     max_energy?: number;
 
@@ -46,7 +62,10 @@ export type CharacterData = {
         spd?: number;
     };
 
-    abilities: Record<string, CharacterAbility>;
+    abilities: Record<
+        string,
+        CharacterAbility
+    >;
 
     major_traces: Record<
         string,
@@ -74,5 +93,58 @@ export function loadCharacterData(
         return null;
     }
 
-    return readJSONFile(filePath) as CharacterData;
+    return readJSONFile(
+        filePath,
+    ) as CharacterData;
+}
+
+/**
+ * Builds an ability description at a chosen
+ * trace level.
+ */
+export function renderCharacterAbilityDescription(
+    ability: CharacterAbility,
+    requestedLevel?: number,
+) {
+    if (
+        !ability.description_template ||
+        !ability.scaling
+    ) {
+        return ability.description ?? '';
+    }
+
+    const minLevel =
+        ability.min_level ?? 1;
+
+    const maxLevel =
+        ability.max_level ?? minLevel;
+
+    const defaultLevel =
+        ability.default_level ??
+        maxLevel;
+
+    const level = Math.max(
+        minLevel,
+        Math.min(
+            requestedLevel ?? defaultLevel,
+            maxLevel,
+        ),
+    );
+
+    const index = level - minLevel;
+
+    return ability.description_template.replace(
+        /\{\{([a-zA-Z0-9_-]+)\}\}/g,
+        (match, key: string) => {
+            const values =
+                ability.scaling?.[key];
+
+            const value =
+                values?.[index];
+
+            return value === undefined
+                ? match
+                : String(value);
+        },
+    );
 }

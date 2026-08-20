@@ -85,6 +85,57 @@ function selectRefinement(button: HTMLElement) {
   if (activePopover) positionCard(activePopover);
 }
 
+function selectTraceLevel(
+  slider: HTMLInputElement,
+) {
+  const level = slider.value;
+
+  card
+    .querySelectorAll<HTMLElement>(
+      '[data-trace-level-value]',
+    )
+    .forEach((label) => {
+      label.textContent = `Lv. ${level}`;
+    });
+
+  card
+    .querySelectorAll<HTMLElement>(
+      '[data-trace-level-panel]',
+    )
+    .forEach((panel) => {
+      panel.hidden =
+        panel.dataset.traceLevelPanel !==
+        level;
+    });
+
+  if (activePopover) {
+    positionCard(activePopover);
+  }
+}
+
+card.addEventListener(
+  'input',
+  (event) => {
+    const target = event.target;
+
+    if (
+      !(target instanceof HTMLInputElement)
+    ) {
+      return;
+    }
+
+    if (
+      !target.matches(
+        '[data-trace-level-slider]',
+      )
+    ) {
+      return;
+    }
+
+    selectTraceLevel(target);
+  },
+);
+
 document.addEventListener('click', (event) => {
   const target = event.target;
   if (!(target instanceof Element)) return;

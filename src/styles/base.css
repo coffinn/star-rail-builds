@@ -12,7 +12,9 @@
     'Helvetica Neue',
     sans-serif;
 }
-
+html {
+  scrollbar-gutter: stable;
+}
 * {
   box-sizing: border-box;
 }

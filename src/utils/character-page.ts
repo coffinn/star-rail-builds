@@ -456,21 +456,32 @@ function translateTraceItem(
     item: any,
     sourceFile: string,
 ) {
-    if (typeof item?.name !== 'string') return item;
+    if (typeof item?.name !== 'string') {
+        return item;
+    }
 
     if (item.name.includes('[[')) {
         return {
             ...item,
-            name: translator.translateNoteText(item.name, sourceFile),
+            name: translator.translateNoteText(
+                item.name,
+                sourceFile,
+            ),
         };
     }
 
-    // Lowercase slug names are treated as i18n IDs. Existing display strings
-    // such as "Normal Attack" remain valid legacy content.
     if (/^[a-z0-9-]+$/.test(item.name)) {
         return {
             ...item,
-            name: translator.translate('ability', item.name, sourceFile),
+
+            // Keep the original HSR ability ID.
+            id: item.id ?? item.name,
+
+            name: translator.translate(
+                'ability',
+                item.name,
+                sourceFile,
+            ),
         };
     }
 
