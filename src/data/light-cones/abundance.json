@@ -1,1 +1,582 @@
-
+{
+    "cornucopia": {
+        "rarity": 3,
+        "passive": {
+            "en": "When the wearer uses their Skill or Ultimate, their Outgoing Healing increases by {{value}}%."
+        },
+        "s1": [
+            12
+        ],
+        "s2": [
+            15
+        ],
+        "s3": [
+            18
+        ],
+        "s4": [
+            21
+        ],
+        "s5": [
+            24
+        ],
+        "level_1": {
+            "hp": 43,
+            "atk": 12,
+            "def": 12
+        },
+        "level_max": {
+            "hp": 952,
+            "atk": 264,
+            "def": 264
+        }
+    },
+    "dream-s-montage": {
+        "rarity": 4,
+        "passive": {
+            "en": "Increases the wearer's SPD by {{value}}%. After attacking enemy targets that are Weakness Broken, regenerates {{value}} Energy. This effect can trigger up to 2 time(s) per turn."
+        },
+        "s1": [
+            8,
+            3
+        ],
+        "s2": [
+            9,
+            3.5
+        ],
+        "s3": [
+            10,
+            4
+        ],
+        "s4": [
+            11,
+            4.5
+        ],
+        "s5": [
+            12,
+            5
+        ],
+        "level_1": {
+            "hp": 43,
+            "atk": 19,
+            "def": 18
+        },
+        "level_max": {
+            "hp": 952,
+            "atk": 423,
+            "def": 396
+        }
+    },
+    "echoes-of-the-coffin": {
+        "rarity": 5,
+        "passive": {
+            "en": "Increases the wearer's ATK by {{value}}%. After the wearer uses an attack, for each different enemy target the wearer hits, regenerates {{value}} Energy. Each attack can regenerate Energy up to 3 time(s) this way. After the wearer uses their Ultimate, all allies gain {{value}} SPD for 1 turn."
+        },
+        "s1": [
+            24,
+            3,
+            12
+        ],
+        "s2": [
+            28,
+            3.5,
+            14
+        ],
+        "s3": [
+            32,
+            4,
+            16
+        ],
+        "s4": [
+            36,
+            4.5,
+            18
+        ],
+        "s5": [
+            40,
+            5,
+            20
+        ],
+        "level_1": {
+            "hp": 52,
+            "atk": 26,
+            "def": 18
+        },
+        "level_max": {
+            "hp": 1164,
+            "atk": 582,
+            "def": 396
+        }
+    },
+    "fine-fruit": {
+        "rarity": 3,
+        "passive": {
+            "en": "At the start of the battle, immediately regenerates {{value}} Energy for all allies."
+        },
+        "s1": [
+            6
+        ],
+        "s2": [
+            7.5
+        ],
+        "s3": [
+            9
+        ],
+        "s4": [
+            10.5
+        ],
+        "s5": [
+            12
+        ],
+        "level_1": {
+            "hp": 43,
+            "atk": 14,
+            "def": 9
+        },
+        "level_max": {
+            "hp": 952,
+            "atk": 317,
+            "def": 198
+        }
+    },
+    "hey-over-here": {
+        "rarity": 4,
+        "passive": {
+            "en": "Increases the wearer's Max HP by {{value}}%. When the wearer uses their Skill, increases Outgoing Healing by {{value}}%, lasting for 2 turn(s)."
+        },
+        "s1": [
+            8,
+            16
+        ],
+        "s2": [
+            9,
+            19
+        ],
+        "s3": [
+            10,
+            22
+        ],
+        "s4": [
+            11,
+            25
+        ],
+        "s5": [
+            12,
+            28
+        ],
+        "level_1": {
+            "hp": 43,
+            "atk": 19,
+            "def": 18
+        },
+        "level_max": {
+            "hp": 952,
+            "atk": 423,
+            "def": 396
+        }
+    },
+    "multiplication": {
+        "rarity": 3,
+        "passive": {
+            "en": "After the wearer uses their Basic ATK, their next action will be Advanced Forward by {{value}}%."
+        },
+        "s1": [
+            12
+        ],
+        "s2": [
+            14
+        ],
+        "s3": [
+            16
+        ],
+        "s4": [
+            18
+        ],
+        "s5": [
+            20
+        ],
+        "level_1": {
+            "hp": 43,
+            "atk": 14,
+            "def": 9
+        },
+        "level_max": {
+            "hp": 952,
+            "atk": 317,
+            "def": 198
+        }
+    },
+    "night-of-fright": {
+        "rarity": 5,
+        "passive": {
+            "en": "Increases the wearer's Energy Regeneration Rate by {{value}}%. When any ally uses their Ultimate, the wearer restores HP for the ally currently with the lowest HP percentage by an amount equal to {{value}}% of the healed ally's Max HP. When the wearer provides healing for an ally, increases the healed ally's ATK by {{value}}%. This effect can stack up to 5 times and lasts for 2 turn(s)."
+        },
+        "s1": [
+            12,
+            10,
+            2.4
+        ],
+        "s2": [
+            14,
+            11,
+            2.8
+        ],
+        "s3": [
+            16,
+            12,
+            3.2
+        ],
+        "s4": [
+            18,
+            13,
+            3.6
+        ],
+        "s5": [
+            20,
+            14,
+            4
+        ],
+        "level_1": {
+            "hp": 52,
+            "atk": 21,
+            "def": 24
+        },
+        "level_max": {
+            "hp": 1164,
+            "atk": 476,
+            "def": 529
+        }
+    },
+    "perfect-timing": {
+        "rarity": 4,
+        "passive": {
+            "en": "Increases the wearer's Effect RES by {{value}}% and increases Outgoing Healing by an amount that is equal to {{value}}% of Effect RES. Outgoing Healing can be increased this way by up to {{value}}%."
+        },
+        "s1": [
+            16,
+            33,
+            15
+        ],
+        "s2": [
+            20,
+            36,
+            18
+        ],
+        "s3": [
+            24,
+            39,
+            21
+        ],
+        "s4": [
+            28,
+            42,
+            24
+        ],
+        "s5": [
+            32,
+            45,
+            27
+        ],
+        "level_1": {
+            "hp": 43,
+            "atk": 19,
+            "def": 18
+        },
+        "level_max": {
+            "hp": 952,
+            "atk": 423,
+            "def": 396
+        }
+    },
+    "post-op-conversation": {
+        "rarity": 4,
+        "passive": {
+            "en": "Increases the wearer's Energy Regeneration Rate by {{value}}% and increases Outgoing Healing when they use their Ultimate by {{value}}%."
+        },
+        "s1": [
+            8,
+            12
+        ],
+        "s2": [
+            10,
+            15
+        ],
+        "s3": [
+            12,
+            18
+        ],
+        "s4": [
+            14,
+            21
+        ],
+        "s5": [
+            16,
+            24
+        ],
+        "level_1": {
+            "hp": 48,
+            "atk": 19,
+            "def": 15
+        },
+        "level_max": {
+            "hp": 1058,
+            "atk": 423,
+            "def": 330
+        }
+    },
+    "quid-pro-quo": {
+        "rarity": 4,
+        "passive": {
+            "en": "At the start of the wearer's turn, regenerates {{value}} Energy for a randomly chosen ally (excluding the wearer) whose current Energy is lower than 50%."
+        },
+        "s1": [
+            8
+        ],
+        "s2": [
+            10
+        ],
+        "s3": [
+            12
+        ],
+        "s4": [
+            14
+        ],
+        "s5": [
+            16
+        ],
+        "level_1": {
+            "hp": 43,
+            "atk": 19,
+            "def": 18
+        },
+        "level_max": {
+            "hp": 952,
+            "atk": 423,
+            "def": 396
+        }
+    },
+    "scent-alone-stays-true": {
+        "rarity": 5,
+        "passive": {
+            "en": "Increases the wearer's Break Effect by {{value}}%. After the wearer uses Ultimate to attack enemy targets, inflicts the targets with the \"Woefree\" state, lasting for 2 turn(s). While in \"Woefree,\" enemy targets take {{value}}% increased DMG. The effect of increasing DMG taken is additionally boosted by {{value}}% if the wearer's current Break Effect is 150% or higher."
+        },
+        "s1": [
+            60,
+            10,
+            8
+        ],
+        "s2": [
+            70,
+            12,
+            10
+        ],
+        "s3": [
+            80,
+            14,
+            12
+        ],
+        "s4": [
+            90,
+            16,
+            14
+        ],
+        "s5": [
+            100,
+            18,
+            16
+        ],
+        "level_1": {
+            "hp": 48,
+            "atk": 24,
+            "def": 24
+        },
+        "level_max": {
+            "hp": 1058,
+            "atk": 529,
+            "def": 529
+        }
+    },
+    "shared-feeling": {
+        "rarity": 4,
+        "passive": {
+            "en": "Increases the wearer's Outgoing Healing by {{value}}%. When using Skill, regenerates {{value}} Energy for all allies."
+        },
+        "s1": [
+            10,
+            2
+        ],
+        "s2": [
+            12.5,
+            2.5
+        ],
+        "s3": [
+            15,
+            3
+        ],
+        "s4": [
+            17.5,
+            3.5
+        ],
+        "s5": [
+            20,
+            4
+        ],
+        "level_1": {
+            "hp": 43,
+            "atk": 19,
+            "def": 18
+        },
+        "level_max": {
+            "hp": 952,
+            "atk": 423,
+            "def": 396
+        }
+    },
+    "time-waits-for-no-one": {
+        "rarity": 5,
+        "passive": {
+            "en": "Increases the wearer's Max HP by {{value}}% and Outgoing Healing by {{value}}%. When the wearer heals allies, record the amount of Outgoing Healing. When any ally launches an attack, a random attacked enemy takes Additional DMG equal to {{value}}% of the recorded Outgoing Healing value. The type of this Additional DMG is of the same Type as the wearer's. This Additional DMG is not affected by other buffs, and can only occur 1 time per turn."
+        },
+        "s1": [
+            18,
+            12,
+            36
+        ],
+        "s2": [
+            21,
+            14,
+            42
+        ],
+        "s3": [
+            24,
+            16,
+            48
+        ],
+        "s4": [
+            27,
+            18,
+            54
+        ],
+        "s5": [
+            30,
+            20,
+            60
+        ],
+        "level_1": {
+            "hp": 57,
+            "atk": 21,
+            "def": 21
+        },
+        "level_max": {
+            "hp": 1270,
+            "atk": 476,
+            "def": 463
+        }
+    },
+    "unto-tomorrow-s-morrow": {
+        "rarity": 4,
+        "passive": {
+            "en": "Increases the wearer's Outgoing Healing by {{value}}%. When an ally target's current HP percentage is greater than or equal to 50%, increases the DMG dealt by {{value}}%."
+        },
+        "s1": [
+            12,
+            12
+        ],
+        "s2": [
+            15,
+            14
+        ],
+        "s3": [
+            18,
+            16
+        ],
+        "s4": [
+            21,
+            18
+        ],
+        "s5": [
+            24,
+            20
+        ],
+        "level_1": {
+            "hp": 48,
+            "atk": 21,
+            "def": 18
+        },
+        "level_max": {
+            "hp": 1058,
+            "atk": 476,
+            "def": 396
+        }
+    },
+    "warmth-shortens-cold-nights": {
+        "rarity": 4,
+        "passive": {
+            "en": "Increases the wearer's Max HP by {{value}}%. When using Basic ATK or Skill, restores all allies' HP by an amount equal to {{value}}% of their respective Max HP."
+        },
+        "s1": [
+            16,
+            2
+        ],
+        "s2": [
+            20,
+            2.5
+        ],
+        "s3": [
+            24,
+            3
+        ],
+        "s4": [
+            28,
+            3.5
+        ],
+        "s5": [
+            32,
+            4
+        ],
+        "level_1": {
+            "hp": 48,
+            "atk": 16,
+            "def": 18
+        },
+        "level_max": {
+            "hp": 1058,
+            "atk": 370,
+            "def": 396
+        }
+    },"what-is-real-": {
+        "rarity": 4,
+        "passive": {
+            "en": "Increases the wearer's Break Effect by {{value}}%. After using Basic ATK, restores HP for the wearer by an amount equal to {{value}}% of Max HP plus 800."
+        },
+        "s1": [
+            24,
+            2
+        ],
+        "s2": [
+            30,
+            2.5
+        ],
+        "s3": [
+            36,
+            3
+        ],
+        "s4": [
+            42,
+            3.5
+        ],
+        "s5": [
+            48,
+            4
+        ],
+        "level_1": {
+            "hp": 48,
+            "atk": 19,
+            "def": 15
+        },
+        "level_max": {
+            "hp": 1058,
+            "atk": 423,
+            "def": 330
+        }
+    }
+}
