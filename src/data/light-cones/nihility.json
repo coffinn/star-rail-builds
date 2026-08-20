@@ -364,7 +364,7 @@
             "def": 463
         }
     },
-     "its-showtime": {
+     "it-s-showtime": {
         "rarity": 4,
         "passive": {
             "en": "When the wearer inflicts a debuff on an enemy, gains a stack of Trick. Every stack of Trick increases the wearer's DMG dealt by {{value}}%, stacking up to 3 time(s). This effect lasts for 1 turn(s). When the wearer's Effect Hit Rate is 80% or higher, increases ATK by {{value}}%."
@@ -399,5 +399,493 @@
             "atk": 476,
             "def": 264
         }
-    }
+    },
+    "lies-dance-on-the-breeze": {
+        "rarity": 5,
+        "passive": {
+            "en": "Increases the wearer's SPD by {{value}}%. After the wearer uses an attack, there is a 120% base chance to inflict the \"Bamboozle\" state on every enemy target. While under the \"Bamboozle\" state, enemy targets have their DEF decreased by {{value}}% for 2 turn(s). If the wearer's SPD is higher than or equal to 170, there is a 120% base chance to inflict the \"Theft\" state on every enemy target. While under the \"Theft\" state, enemy targets have their DEF decreased by {{value}}% for 2 turn(s). When \"Bamboozle\" or \"Theft\" is repeatedly inflicted, only the most recently inflicted instance takes effect."
+        },
+        "s1": [
+            18,
+            16,
+            8
+        ],
+        "s2": [
+            21,
+            18,
+            9
+        ],
+        "s3": [
+            24,
+            20,
+            10
+        ],
+        "s4": [
+            27,
+            22,
+            11
+        ],
+        "s5": [
+            30,
+            24,
+            12
+        ],
+        "level_1": {
+            "hp": 43,
+            "atk": 26,
+            "def": 24
+        },
+        "level_max": {
+            "hp": 952,
+            "atk": 582,
+            "def": 529
+        }
+    },
+    "long-road-leads-home": {
+        "rarity": 5,
+        "passive": {
+            "en": "Increases the wearer's Break Effect by {{value}}%. When an enemy target's Weakness gets broken, there is a 100% base chance to inflict the \"Charring\" state on it, which increases its Break DMG taken by {{value}}%, lasting for 2 turn(s). This effect can stack 2 time(s)."
+        },
+        "s1": [
+            60,
+            18
+        ],
+        "s2": [
+            70,
+            21
+        ],
+        "s3": [
+            80,
+            24
+        ],
+        "s4": [
+            90,
+            27
+        ],
+        "s5": [
+            100,
+            30
+        ],
+        "level_1": {
+            "hp": 43,
+            "atk": 21,
+            "def": 30
+        },
+        "level_max": {
+            "hp": 952,
+            "atk": 476,
+            "def": 661
+        }
+    },
+    "loop": {
+        "rarity": 3,
+        "passive": {
+            "en": "Increases DMG dealt from its wearer to Slowed enemies by {{value}}%."
+        },
+        "s1": [
+            24
+        ],
+        "s2": [
+            30
+        ],
+        "s3": [
+            36
+        ],
+        "s4": [
+            42
+        ],
+        "s5": [
+            48
+        ],
+        "level_1": {
+            "hp": 38,
+            "atk": 14,
+            "def": 12
+        },
+        "level_max": {
+            "hp": 846,
+            "atk": 317,
+            "def": 264
+        }
+    },
+    "never-forget-her-flame": {
+        "rarity": 5,
+        "passive": {
+            "en": "Increases the wearer's Break Effect by {{value}}%. When entering combat, increases Break DMG dealt by the wearer and another teammate who triggered combat by {{value}}%. If there is no teammate who triggered combat, applies this effect to the wearer and the teammate with the highest Break Effect. Effects of the same type cannot be stacked. When the wearer applies Weakness to an enemy target, recovers 1 Skill Point. This effect can only trigger once, and trigger count resets when using Ultimate."
+        },
+        "s1": [
+            60,
+            32
+        ],
+        "s2": [
+            75,
+            42
+        ],
+        "s3": [
+            90,
+            52
+        ],
+        "s4": [
+            105,
+            62
+        ],
+        "s5": [
+            120,
+            72
+        ],
+        "level_1": {
+            "hp": 52,
+            "atk": 24,
+            "def": 21
+        },
+        "level_max": {
+            "hp": 1164,
+            "atk": 529,
+            "def": 463
+        }
+    },
+    "patience-is-all-you-need": {
+        "rarity": 5,
+        "passive": {
+            "en": "Increases DMG dealt by the wearer by {{value}}%. After every attack launched by wearer, their SPD increases by {{value}}%, stacking up to 3 times.If the wearer hits an enemy target that is not afflicted by Erode, there is a 100% base chance to inflict Erode to the target. Enemies afflicted with Erode are also considered to be Shocked and will receive Lightning DoT at the start of each turn equal to {{value}}% of the wearer's ATK, lasting for 1 turn(s)."
+        },
+        "s1": [
+            24,
+            4.8,
+            60
+        ],
+        "s2": [
+            28,
+            5.6,
+            70
+        ],
+        "s3": [
+            32,
+            6.4,
+            80
+        ],
+        "s4": [
+            36,
+            7.2,
+            90
+        ],
+        "s5": [
+            40,
+            8,
+            100
+        ],
+        "level_1": {
+            "hp": 48,
+            "atk": 26,
+            "def": 21
+        },
+        "level_max": {
+            "hp": 1058,
+            "atk": 582,
+            "def": 463
+        }
+    },
+    "reforged-in-hellfire": {
+        "rarity": 5,
+        "passive": {
+            "en": "Increases the wearer's Max HP by {{value}}%. At the start of the wearer's turn, regenerates a fixed amount of 20 Energy. This effect can trigger 1 time each wave. After the wearer uses Skill to attack, inflicts the target with the \"Purgatory\" state, lasting for 2 turn(s). While in the \"Purgatory\" state, the target receives {{value}}% increased CRIT DMG and {{value}}% additionally increased CRIT DMG from the wearer."
+        },
+        "s1": [
+            30,
+            30,
+            30
+        ],
+        "s2": [
+            37.5,
+            37.5,
+            37.5
+        ],
+        "s3": [
+            45,
+            45,
+            45
+        ],
+        "s4": [
+            52.5,
+            52.5,
+            52.5
+        ],
+        "s5": [
+            60,
+            60,
+            60
+        ],
+        "level_1": {
+            "hp": 62,
+            "atk": 19,
+            "def": 21
+        },
+        "level_max": {
+            "hp": 1375,
+            "atk": 423,
+            "def": 463
+        }
+    },
+    "reforged-remembrance": {
+        "rarity": 5,
+        "passive": {
+            "en": "Increases the wearer's Effect Hit Rate by {{value}}%. When the wearer deals DMG to an enemy inflicted with Wind Shear, Burn, Shock, or Bleed, each respectively grants 1 stack of Prophet, stacking up to 4 time(s). In a single battle, only 1 stack of Prophet can be granted for each type of DoT. Every stack of Prophet increases wearer's ATK by {{value}}% and enables the DoT dealt to ignore {{value}}% of the target's DEF."
+        },
+        "s1": [
+            40,
+            5,
+            7.2
+        ],
+        "s2": [
+            45,
+            6,
+            7.9
+        ],
+        "s3": [
+            50,
+            7,
+            8.6
+        ],
+        "s4": [
+            55,
+            8,
+            9.3
+        ],
+        "s5": [
+            60,
+            9,
+            10
+        ],
+        "level_1": {
+            "hp": 48,
+            "atk": 26,
+            "def": 21
+        },
+        "level_max": {
+            "hp": 1058,
+            "atk": 582,
+            "def": 463
+        }
+    },
+    "resolution-shines-as-pearls-of-sweat": {
+        "rarity": 4,
+        "passive": {
+            "en": "When the wearer hits an enemy and if the hit enemy is not already \"Ensnared,\" then there is a {{value}}% base chance to \"Ensnare\" the hit enemy. \"Ensnared\" enemies' DEF decreases by {{value}}% for 1 turn(s)."
+        },
+        "s1": [
+            60,
+            12
+        ],
+        "s2": [
+            70,
+            13
+        ],
+        "s3": [
+            80,
+            14
+        ],
+        "s4": [
+            90,
+            15
+        ],
+        "s5": [
+            100,
+            16
+        ],
+        "level_1": {
+            "hp": 43,
+            "atk": 21,
+            "def": 15
+        },
+        "level_max": {
+            "hp": 952,
+            "atk": 476,
+            "def": 330
+        }
+    },
+    "solitary-healing": {
+        "rarity": 5,
+        "passive": {
+            "en": "Increases the wearer's Break Effect by {{value}}%. When the wearer uses their Ultimate, increases DoT dealt by the wearer by {{value}}%, lasting for 2 turn(s). When a target enemy suffering from DoT imposed by the wearer is defeated, regenerates {{value}} Energy for the wearer."
+        },
+        "s1": [
+            20,
+            24,
+            4.0
+        ],
+        "s2": [
+            25,
+            30,
+            4.5
+        ],
+        "s3": [
+            30,
+            36,
+            5
+        ],
+        "s4": [
+            35,
+            42,
+            5.5
+        ],
+        "s5": [
+            40,
+            48,
+            6
+        ],
+        "level_1": {
+            "hp": 48,
+            "atk": 24,
+            "def": 18
+        },
+        "level_max": {
+            "hp": 1058,
+            "atk": 529,
+            "def": 396
+        }
+    },
+    "those-many-springs": {
+        "rarity": 5,
+        "passive": {
+            "en": "Increases the wearer's Effect Hit Rate by {{value}}%. After the wearer uses Basic ATK, Skill, or Ultimate to attack an enemy target, there is a 60% base chance to inflict \"Unarmored\" on the target. While in the Unarmored state, the enemy target receives {{value}}% increased DMG, lasting for 2 turn(s). If the target is under a DoT state inflicted by the wearer, there is a 60% base chance to upgrade the \"Unarmored\" state inflicted by the wearer to the \"Cornered\" state, which additionally increases the DMG the enemy target receives by {{value}}%, lasting for 2 turn(s). During this period, the wearer cannot inflict \"Unarmored\" on the target."
+        },
+        "s1": [
+            60,
+            10,
+            14
+        ],
+        "s2": [
+            70,
+            12,
+            16
+        ],
+        "s3": [
+            80,
+            14,
+            18
+        ],
+        "s4": [
+            90,
+            16,
+            20
+        ],
+        "s5": [
+            100,
+            18,
+            22
+        ],
+        "level_1": {
+            "hp": 43,
+            "atk": 26,
+            "def": 24
+        },
+        "level_max": {
+            "hp": 952,
+            "atk": 582,
+            "def": 529
+        }
+    },
+    "void": {
+        "rarity": 3,
+        "passive": {
+            "en": "At the start of the battle, the wearer's Effect Hit Rate increases by {{value}}% for 3 turn(s)."
+        },
+        "s1": [
+            20
+        ],
+        "s2": [
+            25
+        ],
+        "s3": [
+            30
+        ],
+        "s4": [
+            35
+        ],
+        "s5": [
+            40
+        ],
+        "level_1": {
+            "hp": 38,
+            "atk": 14,
+            "def": 12
+        },
+        "level_max": {
+            "hp": 846,
+            "atk": 317,
+            "def": 264
+        }
+    },
+    "we-will-meet-again": {
+        "rarity": 4,
+        "passive": {
+            "en": "After the wearer uses Basic ATK or Skill, deals Additional DMG equal to {{value}}% of the wearer's ATK to a random enemy that has been attacked."
+        },
+        "s1": [
+            48
+        ],
+        "s2": [
+            60
+        ],
+        "s3": [
+            72
+        ],
+        "s4": [
+            84
+        ],
+        "s5": [
+            96
+        ],
+        "level_1": {
+            "hp": 38,
+            "atk": 24,
+            "def": 15
+        },
+        "level_max": {
+            "hp": 846,
+            "atk": 529,
+            "def": 330
+        }
+    },
+    "why-does-the-ocean-sing": {
+        "rarity": 5,
+        "passive": {
+            "en": "Increases the wearer's Effect Hit Rate by {{value}}%. When an enemy target gets inflicted with a debuff by the wearer, there is a 80% base chance for them to enter \"Enthrallment,\" lasting for 3 turn(s). Effects of the same type cannot stack. While the target is in \"Enthrallment,\" for every 1 debuff applied by the wearer on the target, increases the target's received DoT by {{value}}%, stacking up to 6 time(s). When the target gets attacked by an ally, increases the attacker's SPD by {{value}}% for 3 turn(s). When the wearer gets knocked down, removes all \"Enthrallment.\""
+        },
+        "s1": [
+            40,
+            5,
+            10
+        ],
+        "s2": [
+            45,
+            6.25,
+            12.5
+        ],
+        "s3": [
+            50,
+            7.5,
+            15
+        ],
+        "s4": [
+            55,
+            8.75,
+            17.5
+        ],
+        "s5": [
+            60,
+            10,
+            20
+        ],
+        "level_1": {
+            "hp": 43,
+            "atk": 28,
+            "def": 21
+        },
+        "level_max": {
+            "hp": 952,
+            "atk": 635,
+            "def": 463
+        }
+    },
 }
