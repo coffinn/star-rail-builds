@@ -39,5 +39,46 @@
             "atk": 582,
             "def": 463
         }
+    },
+    "along-the-passing-shore": {
+        "rarity": 5,
+        "passive": {
+            "en": "Increases the wearer's CRIT DMG by {{value}}%. When the wearer hits an enemy target, inflicts Mirage Fizzle on the enemy, lasting for 1 turn. Each time the wearer attacks, this effect can only trigger 1 time on each target. The wearer deals {{value}}% increased DMG to targets afflicted with Mirage Fizzle, and the DMG dealt by Ultimate additionally increases by {{value}}%."
+        },
+        "s1": [
+            36,
+            24,
+            24
+        ],
+        "s2": [
+            42,
+            28,
+            28
+        ],
+        "s3": [
+            48,
+            32,
+            32
+        ],
+        "s4": [
+            54,
+            36,
+            36
+        ],
+        "s5": [
+            60,
+            40,
+            40
+        ],
+        "level_1": {
+            "hp": 48,
+            "atk": 28,
+            "def": 18
+        },
+        "level_max": {
+            "hp": 1058,
+            "atk": 635,
+            "def": 396
+        }
     }
 }

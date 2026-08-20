@@ -1,7 +1,7 @@
 ---
 import LightCone from '../../components/LightCone.astro';
 import Artifact from '../../components/Artifact.astro';
-import ArtifactStats from '../../components/ArtifactStats.astro';
+import RelicStats from '../../components/RelicStats.astro';
 import Trace from '../../components/Trace.astro';
 import Notes from '../../components/Notes.astro';
 import CharacterPageLayout from '../../layouts/CharacterLayout.astro';
@@ -128,8 +128,8 @@ const noteMarkerExplanation = t(
                                     )}
                                     {build.artifacts.mainstats &&
                                         build.artifacts.substats && (
-                                            <ArtifactStats
-                                                artifacts={build.artifacts}
+                                            <RelicStats
+                                                relics={build.artifacts}
                                                 locale={locale}
                                             />
                                         )}

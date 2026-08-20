@@ -311,12 +311,22 @@ function translateSubstatPriorityItem(
         return {
             ...item,
             items: item.items.map((stat: any) =>
-                translateStatItem(locale, stat, sourceFile, translator),
+                translateStatItem(
+                    locale,
+                    stat,
+                    sourceFile,
+                    translator,
+                ),
             ),
         };
     }
 
-    return translateStatItem(locale, item, sourceFile, translator);
+    return translateStatItem(
+        locale,
+        item,
+        sourceFile,
+        translator,
+    );
 }
 
 /**
@@ -487,7 +497,7 @@ function translateTracePriorities(
     return {
         ...traces,
 
-        traces: traces.traces.map(
+        traces: (traces.traces ?? []).map(
             (priority: { items: any[] }) => ({
                 ...priority,
 
@@ -500,6 +510,8 @@ function translateTracePriorities(
                 ),
             }),
         ),
+
+        major_traces: traces.major_traces ?? [],
     };
 }
 
@@ -513,14 +525,46 @@ function translateMainStats(
     translator: TranslationHelper,
 ) {
     return {
-        sands: mainstats.main_stats.sands.map((item: any) =>
-            translateStatItem(locale, item, sourceFile, translator),
+        body: (mainstats.main_stats.body ?? []).map(
+            (item: any) =>
+                translateStatItem(
+                    locale,
+                    item,
+                    sourceFile,
+                    translator,
+                ),
         ),
-        goblet: mainstats.main_stats.goblet.map((item: any) =>
-            translateStatItem(locale, item, sourceFile, translator),
+
+        feet: (mainstats.main_stats.feet ?? []).map(
+            (item: any) =>
+                translateStatItem(
+                    locale,
+                    item,
+                    sourceFile,
+                    translator,
+                ),
         ),
-        circlet: mainstats.main_stats.circlet.map((item: any) =>
-            translateStatItem(locale, item, sourceFile, translator),
+
+        planar_sphere: (
+            mainstats.main_stats.planar_sphere ?? []
+        ).map((item: any) =>
+            translateStatItem(
+                locale,
+                item,
+                sourceFile,
+                translator,
+            ),
+        ),
+
+        link_rope: (
+            mainstats.main_stats.link_rope ?? []
+        ).map((item: any) =>
+            translateStatItem(
+                locale,
+                item,
+                sourceFile,
+                translator,
+            ),
         ),
     };
 }
@@ -534,9 +578,14 @@ function collectMainStatNotes(
     lang: string,
     translator: TranslationHelper,
 ) {
-    return ['sands', 'goblet', 'circlet'].flatMap((slot) =>
+    return [
+        'body',
+        'feet',
+        'planar_sphere',
+        'link_rope',
+    ].flatMap((slot) =>
         collectStatNotes(
-            mainStats[slot],
+            mainStats[slot] ?? [],
             (stat: { name: any }) => stat.name,
             sourceFile,
             lang,
@@ -645,13 +694,14 @@ function loadBuildData({
 }: BuildContext) {
     const weaponsFile = fileInBuild(buildPath, 'light-cones.json');
     const artifactSetsFile = fileInBuild(buildPath, 'artifacts-sets.json');
-    const artifactMainstatsFile = fileInBuild(
+    const relicMainstatsFile = fileInBuild(
         buildPath,
-        'artifacts-mainstats.json',
+        'relic-mainstats.json',
     );
-    const artifactSubstatsFile = fileInBuild(
+
+    const relicSubstatsFile = fileInBuild(
         buildPath,
-        'artifacts-substats.json',
+        'relic-substats.json',
     );
     const tracesFile =
         fileInBuild(buildPath, 'traces.json');
@@ -668,9 +718,11 @@ function loadBuildData({
         : null;
 
     const rawArtifactSets = loadJSON(buildPath, 'artifacts-sets.json');
-    const rawArtifactMainstats = loadJSON(buildPath, 'artifacts-mainstats.json');
-    const rawArtifactSubstats = loadJSON(buildPath, 'artifacts-substats.json');
+    const rawArtifactMainstats =
+        loadJSON(buildPath, 'relic-mainstats.json');
 
+    const rawArtifactSubstats =
+        loadJSON(buildPath, 'relic-substats.json');
     const artifacts = {
         sets: rawArtifactSets
             ? translateArtifactSetRecommendations(
@@ -689,7 +741,7 @@ function loadBuildData({
         artifacts.mainstats.main_stats = translateMainStats(
             locale,
             artifacts.mainstats,
-            artifactMainstatsFile,
+            relicMainstatsFile,
             translator,
         );
     }
@@ -700,7 +752,7 @@ function loadBuildData({
                 translateSubstatPriorityItem(
                     locale,
                     item,
-                    artifactSubstatsFile,
+                    relicSubstatsFile,
                     translator,
                 ),
             );
@@ -742,13 +794,13 @@ function loadBuildData({
                 ),
                 ...collectSectionNotes(
                     artifacts.mainstats,
-                    artifactMainstatsFile,
+                    relicMainstatsFile,
                     lang,
                     translator,
                 ),
                 ...collectSectionNotes(
                     artifacts.substats,
-                    artifactSubstatsFile,
+                    relicSubstatsFile,
                     lang,
                     translator,
                 ),
@@ -764,7 +816,7 @@ function loadBuildData({
             mainstats: artifacts.mainstats
                 ? collectMainStatNotes(
                     artifacts.mainstats.main_stats,
-                    artifactMainstatsFile,
+                    relicMainstatsFile,
                     lang,
                     translator,
                 )
@@ -773,7 +825,7 @@ function loadBuildData({
                 ? collectStatNotes(
                     artifacts.substats.substats_priority,
                     (stat: { name: any }) => stat.name,
-                    artifactSubstatsFile,
+                    relicSubstatsFile,
                     lang,
                     translator,
                 )
