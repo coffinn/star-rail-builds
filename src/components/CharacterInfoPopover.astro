@@ -1,0 +1,145 @@
+---
+type MetaItem = {
+  label: string;
+  value?: string | number;
+};
+
+type Props = {
+  label: string;
+  title: string;
+  subtitle?: string;
+  description: string;
+  meta?: MetaItem[];
+  emphasized?: boolean;
+};
+
+const {
+  label,
+  title,
+  subtitle,
+  description,
+  meta = [],
+  emphasized = false,
+} = Astro.props as Props;
+
+const escapeHtml = (value: unknown) =>
+  String(value ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+
+const metaHtml = meta
+  .filter(
+    (item) =>
+      item.value !== undefined &&
+      item.value !== null &&
+      item.value !== '',
+  )
+  .map(
+    (item) =>
+      [
+        '<span class="character-info-popover-meta-row">',
+        '<span>',
+        escapeHtml(item.label),
+        '</span>',
+        '<strong>',
+        escapeHtml(item.value),
+        '</strong>',
+        '</span>',
+      ].join(''),
+  )
+  .join('');
+
+const cardHtml = [
+  '<span class="character-info-popover-content">',
+
+  '<span class="info-popover-header">',
+
+  '<span class="info-popover-name">',
+  escapeHtml(title),
+  '</span>',
+
+  subtitle
+    ? [
+        '<span class="character-info-popover-subtitle">',
+        escapeHtml(subtitle),
+        '</span>',
+      ].join('')
+    : '',
+
+  '</span>',
+
+  metaHtml,
+
+  '<span class="character-info-popover-description">',
+  escapeHtml(description),
+  '</span>',
+
+  '</span>',
+].join('');
+---
+
+<span
+  class="info-popover character-info-popover"
+  data-info-popover-html={cardHtml}
+  data-info-popover-card-class="character-info-popover-card"
+>
+  <button
+    class:list={[
+      'info-popover-trigger',
+      'character-info-trigger',
+      emphasized &&
+        'character-info-trigger-emphasized',
+    ]}
+    type="button"
+    aria-expanded="false"
+  >
+    {label}
+  </button>
+</span>
+
+<style is:global>
+  .character-info-trigger {
+    appearance: none;
+    border: 0;
+    padding: 0;
+    background: none;
+    color: inherit;
+    font: inherit;
+    cursor: help;
+
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-underline-offset: 3px;
+  }
+
+  .character-info-trigger-emphasized {
+    font-weight: 700;
+  }
+
+  .character-info-popover-content {
+    display: grid;
+    gap: 0.6rem;
+  }
+
+  .character-info-popover-subtitle {
+    display: block;
+    margin-top: 0.15rem;
+    opacity: 0.7;
+    font-size: 0.85rem;
+  }
+
+  .character-info-popover-meta-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .character-info-popover-description {
+    display: block;
+    margin-top: 0.25rem;
+    line-height: 1.45;
+  }
+</style>

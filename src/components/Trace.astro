@@ -1,128 +1,231 @@
 ---
 import { t } from '../utils/i18n';
+
+import type {
+  CharacterData,
+} from '../utils/character-data';
+
 import InlineNoteLabel from './InlineNoteLabel.astro';
+import CharacterInfoPopover from './CharacterInfoPopover.astro';
 
 type TraceItem = {
-    name: string;
-    note?: string;
-    noteId?: string;
+  name: string;
+  note?: string;
+  noteId?: string;
 };
 
 type TracePriority = {
-    items: TraceItem[];
-    approx?: boolean;
+  items: TraceItem[];
+  approx?: boolean;
 };
 
 type MajorTraceItem = {
-    ascension: number;
-    tooltip?: string;
-    note?: string;
-    noteId?: string;
+  ascension: number;
+  note?: string;
+  noteId?: string;
 };
 
 type TraceRecommendations = {
-    traces: TracePriority[];
-    major_traces?: MajorTraceItem[];
+  traces: TracePriority[];
+  major_traces?: MajorTraceItem[];
 };
 
-const { traces, locale } = Astro.props as {
-    traces: TraceRecommendations;
-    locale: any;
+const {
+  traces,
+  locale,
+  characterData,
+} = Astro.props as {
+  traces: TraceRecommendations;
+  locale: any;
+  characterData?: CharacterData | null;
 };
 
-const hasNoteMarker = (item: TraceItem | MajorTraceItem) =>
-    item.noteId || item.note;
+const hasNoteMarker = (
+  item: TraceItem | MajorTraceItem,
+) => item.noteId || item.note;
 
-const traceRows = traces.traces.map((trace: TracePriority, index: number) => ({
+const traceRows = traces.traces.map(
+  (
+    trace: TracePriority,
+    index: number,
+  ) => ({
     rank: index + 1,
 
-    mainItems: trace.approx ? trace.items.slice(0, 1) : trace.items,
+    mainItems: trace.approx
+      ? trace.items.slice(0, 1)
+      : trace.items,
 
-    alternativeItems: trace.approx ? trace.items.slice(1) : [],
-}));
+    alternativeItems: trace.approx
+      ? trace.items.slice(1)
+      : [],
+  }),
+);
 
-const majorTraces = traces.major_traces ?? [];
+const majorTraces =
+  traces.major_traces ?? [];
 
 const ascensionLabel =
-    t(locale, 'ui', 'Ascension', undefined, false) || 'Ascension';
+  t(
+    locale,
+    'ui',
+    'Ascension',
+    undefined,
+    false,
+  ) || 'Ascension';
+
+const getMajorTraceInfo = (
+  ascension: number,
+) =>
+  characterData?.major_traces?.[
+    String(ascension)
+  ];
 ---
 
 <div class="card recommendation-card talent-card">
-    <h2>{t(locale, 'ui', 'Traces')}</h2>
+  <h2>
+    {t(locale, 'ui', 'Traces')}
+  </h2>
 
-    <div class="recommendation-card-body">
-        <div class="rank-list">
+  <div class="recommendation-card-body">
+
+    <div class="rank-list">
+      {
+        traceRows.map((trace) => (
+          <div class="rank-group">
+
+            <div class="rank-row">
+
+              <strong class="rank-number">
+                {trace.rank}
+              </strong>
+
+              <span class="rank-content">
+
+                {trace.mainItems.map(
+                  (
+                    item,
+                    itemIndex,
+                  ) => (
+                    <>
+                      {itemIndex > 0 && ' = '}
+
+                      <InlineNoteLabel
+                        label={item.name}
+                        noteId={item.noteId}
+                        hasNote={Boolean(
+                          hasNoteMarker(
+                            item,
+                          ),
+                        )}
+                        emphasized
+                      />
+                    </>
+                  ),
+                )}
+
+              </span>
+
+            </div>
+
             {
-                traceRows.map((trace) => (
-                    <div class="rank-group">
-                        <div class="rank-row">
-                            <strong class="rank-number">{trace.rank}</strong>
+              trace.alternativeItems.map(
+                (item) => (
+                  <div class="rank-row alt">
 
-                            <span class="rank-content">
-                                {trace.mainItems.map((item, itemIndex) => (
-                                    <>
-                                        {itemIndex > 0 && ' = '}
+                    <span class="rank-approx">
+                      &asymp;
+                    </span>
 
-                                        <InlineNoteLabel
-                                            label={item.name}
-                                            noteId={item.noteId}
-                                            hasNote={Boolean(
-                                                hasNoteMarker(item),
-                                            )}
-                                            emphasized
-                                        />
-                                    </>
-                                ))}
-                            </span>
-                        </div>
+                    <span class="rank-content">
 
-                        {trace.alternativeItems.map((item) => (
-                            <div class="rank-row alt">
-                                <span class="rank-approx">&asymp;</span>
+                      <InlineNoteLabel
+                        label={item.name}
+                        noteId={item.noteId}
+                        hasNote={Boolean(
+                          hasNoteMarker(
+                            item,
+                          ),
+                        )}
+                        emphasized
+                      />
 
-                                <span class="rank-content">
-                                    <InlineNoteLabel
-                                        label={item.name}
-                                        noteId={item.noteId}
-                                        hasNote={Boolean(hasNoteMarker(item))}
-                                        emphasized
-                                    />
-                                </span>
-                            </div>
-                        ))}
-                    </div>
-                ))
+                    </span>
+
+                  </div>
+                ),
+              )
             }
-        </div>
 
-        {
-            majorTraces.length > 0 && (
-                <div class="trace-major-section">
-                    <h3>{t(locale, 'ui', 'Major Traces', undefined, false)}</h3>
-
-                    <div class="rank-list">
-                        {majorTraces.map((majorTrace) => (
-                            <div class="rank-group">
-                                <div class="rank-row">
-                                    <span
-                                        class="rank-content major-trace-tooltip"
-                                        data-tooltip={majorTrace.tooltip}
-                                    >
-                                        <InlineNoteLabel
-                                            label={`${ascensionLabel} ${majorTrace.ascension}`}
-                                            noteId={majorTrace.noteId}
-                                            hasNote={Boolean(
-                                                hasNoteMarker(majorTrace),
-                                            )}
-                                            emphasized
-                                        />
-                                    </span>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            )
-        }
+          </div>
+        ))
+      }
     </div>
+
+    {
+      majorTraces.length > 0 && (
+        <div class="trace-major-section">
+
+          <h3>
+            {t(
+              locale,
+              'ui',
+              'Major Traces',
+              undefined,
+              false,
+            )}
+          </h3>
+
+          <div class="rank-list">
+
+            {
+              majorTraces.map(
+                (majorTrace) => {
+                  const info =
+                    getMajorTraceInfo(
+                      majorTrace.ascension,
+                    );
+
+                  return (
+                    <div class="rank-group">
+
+                      <div class="rank-row">
+
+                        <span class="rank-content">
+
+                          {info ? (
+                            <CharacterInfoPopover
+                              label={`${ascensionLabel} ${majorTrace.ascension}`}
+                              title={info.name}
+                              subtitle={`Major Trace • ${ascensionLabel} ${majorTrace.ascension}`}
+                              description={
+                                info.description
+                              }
+                              emphasized
+                            />
+                          ) : (
+                            <strong>
+                              {ascensionLabel}{' '}
+                              {
+                                majorTrace.ascension
+                              }
+                            </strong>
+                          )}
+
+                        </span>
+
+                      </div>
+
+                    </div>
+                  );
+                },
+              )
+            }
+
+          </div>
+
+        </div>
+      )
+    }
+
+  </div>
 </div>

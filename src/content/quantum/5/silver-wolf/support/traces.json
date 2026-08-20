@@ -28,16 +28,13 @@
 
   "major_traces": [
     {
-      "ascension": 2,
-      "tooltip": "Generate\nBug's duration is extended for 1 turn. Every time an enemy is inflicted with Weakness Break, Silver Wolf has a 100% base chance of implanting a random Bug in the enemy."
+      "ascension": 2
     },
     {
-      "ascension": 4,
-      "tooltip": "Inject\nAt the start of the battle, immediately regenerates 20 Energy. Silver Wolf regenerates 5 Energy at the start of her turn."
+      "ascension": 4
     },
     {
-      "ascension": 6,
-      "tooltip": "Side Note\nFor every 10% Effect Hit Rate that Silver Wolf has, additionally increases her ATK by 10% to a max of 50%."
+      "ascension": 6
     }
   ]
 }

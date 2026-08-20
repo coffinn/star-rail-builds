@@ -1,0 +1,129 @@
+{
+  "id": "silver-wolf",
+  "name": "Silver Wolf",
+  "rarity": 5,
+  "element": "quantum",
+  "path": "nihility",
+  "version_released": "1.1",
+  "max_energy": 110,
+
+  "level_80_stats": {
+    "hp": 1047,
+    "atk": 640,
+    "def": 460,
+    "spd": 107
+  },
+
+  "abilities": {
+    "basic": {
+      "type": "Basic ATK",
+      "name": "System Warning",
+      "tag": "Single Target",
+      "level": 6,
+      "energy_gain": 20,
+      "break": 10,
+      "description": "At Lv. 6, deals Quantum DMG equal to 100% of Silver Wolf's ATK to one enemy."
+    },
+
+    "skill": {
+      "type": "Skill",
+      "name": "Allow Changes?",
+      "tag": "Impair",
+      "level": 10,
+      "energy_gain": 30,
+      "break": 20,
+      "description": "At Lv. 10, has a 120% base chance to implant a Weakness matching an ally for 3 turns and reduce that Weakness Type's RES by 20%. It also has a 100% base chance to reduce All-Type RES by 13% for 2 turns and deals Quantum DMG equal to 196% of ATK."
+    },
+
+    "ultimate": {
+      "type": "Ultimate",
+      "name": "User Banned",
+      "tag": "Impair / AoE",
+      "level": 10,
+      "energy_cost": 110,
+      "energy_gain": 5,
+      "break": 30,
+      "description": "At Lv. 10, has a 120% base chance to reduce all enemies' DEF by 45% for 3 turns, then deals Quantum DMG equal to 380% of Silver Wolf's ATK to all enemies."
+    },
+
+    "talent": {
+      "type": "Talent",
+      "name": "Awaiting System Response...",
+      "tag": "Impair",
+      "level": 10,
+      "description": "Silver Wolf can apply Bugs that reduce ATK by 10%, DEF by 12%, or SPD by 6%. After each attack, she has a 100% base chance to implant one random Bug for 3 turns. Her implanted Weakness can transfer to another surviving enemy when its target is defeated."
+    },
+
+    "technique": {
+      "type": "Technique",
+      "name": "Force Quit Program",
+      "tag": "Attack",
+      "description": "Attacks enemies upon entering battle, reduces Toughness regardless of Weakness Type, and triggers the Quantum Weakness Break effect when this attack breaks an enemy."
+    }
+  },
+
+  "major_traces": {
+    "2": {
+      "name": "Generate",
+      "description": "Extends Bug duration by 1 turn. Whenever an enemy is Weakness Broken, Silver Wolf has a 100% base chance to implant a random Bug."
+    },
+
+    "4": {
+      "name": "Inject",
+      "description": "Immediately regenerates 20 Energy at the start of battle and regenerates 5 Energy at the start of each Silver Wolf turn."
+    },
+
+    "6": {
+      "name": "Side Note",
+      "description": "For every 10% Effect Hit Rate Silver Wolf has, increases her ATK by 10%, up to a maximum increase of 50%."
+    }
+  },
+
+  "stat_bonuses": [
+    {
+      "stat": "Effect Hit Rate",
+      "value": "+18%"
+    },
+    {
+      "stat": "ATK",
+      "value": "+28%"
+    },
+    {
+      "stat": "Quantum DMG",
+      "value": "+8%"
+    }
+  ],
+
+  "eidolons": [
+    {
+      "level": 1,
+      "name": "Social Engineering",
+      "description": "After using her Ultimate, Silver Wolf regenerates 7 Energy for every debuff on the target, up to 5 times per Ultimate."
+    },
+    {
+      "level": 2,
+      "name": "Zombie Network",
+      "description": "When an enemy enters battle, its DMG received increases by 20%. When an ally attacks that enemy, Silver Wolf has a 100% base chance to implant one random Bug."
+    },
+    {
+      "level": 3,
+      "name": "Payload",
+      "description": "Skill Lv. +2 and Talent Lv. +2, up to their respective maximum levels."
+    },
+    {
+      "level": 4,
+      "name": "Bounce Attack",
+      "description": "After Silver Wolf uses her Ultimate, deals additional Quantum DMG equal to 20% of her ATK for every debuff on the target, up to 5 times per target."
+    },
+    {
+      "level": 5,
+      "name": "Brute Force Attack",
+      "description": "Ultimate Lv. +2 and Basic ATK Lv. +1, up to their respective maximum levels."
+    },
+    {
+      "level": 6,
+      "name": "Overlay Network",
+      "description": "Silver Wolf deals 20% more DMG for every debuff on the target, up to a maximum increase of 100%."
+    }
+  ]
+}

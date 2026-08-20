@@ -2,6 +2,7 @@
 import LightCone from '../../components/LightCone.astro';
 import Artifact from '../../components/Artifact.astro';
 import RelicStats from '../../components/RelicStats.astro';
+import CharacterInfo from '../../components/CharacterInfo.astro';
 import Trace from '../../components/Trace.astro';
 import Notes from '../../components/Notes.astro';
 import CharacterPageLayout from '../../layouts/CharacterLayout.astro';
@@ -16,6 +17,7 @@ const { lang, character: characterPath } = Astro.params;
 const {
     characterSlug,
     characterName,
+    characterData,
     metadata,
     element,
     lang: currentLang,
@@ -137,6 +139,7 @@ const noteMarkerExplanation = t(
                                         <Trace
                                             traces={build.traces}
                                             locale={locale}
+                                            characterData={characterData}
                                         />
                                     )}
                                 </div>
@@ -152,6 +155,7 @@ const noteMarkerExplanation = t(
             }
         </div>
     </div>
+    {characterData && <CharacterInfo character={characterData} />}
 </CharacterPageLayout>
 
 {

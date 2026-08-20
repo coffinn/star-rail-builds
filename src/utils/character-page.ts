@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import { loadCharacterData } from './character-data';
 import { marked } from 'marked';
 import {
     getPublicCharacterName,
@@ -902,6 +903,8 @@ export function getCharacterPageData({
     const characterSlug = character.toLowerCase();
     const slugParts = parsePublicCharacterSlug(characterSlug);
     const contentSlug = slugParts.character;
+    const characterData =
+        loadCharacterData(contentSlug);
     const foundPath = findCharacterPath(contentBase, characterSlug);
 
     if (!foundPath) {
@@ -936,6 +939,7 @@ export function getCharacterPageData({
 
     return {
         characterSlug,
+        characterData,
         characterName: slugParts.element
             ? getPublicCharacterName(locale, slugParts)
             : translatedCharacterName !== contentSlug
