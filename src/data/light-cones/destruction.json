@@ -1,0 +1,887 @@
+{
+"a-trail-of-bygone-blood": {
+        "rarity": 4,
+        "passive": {
+            "en": "Increases the wearer's CRIT Rate by {{value}}%. The Skill DMG and Ultimate DMG dealt by the wearer increase by {{value}}%."
+        },
+        "s1": [
+            12,
+            24
+        ],
+        "s2": [
+            14,
+            28
+        ],
+        "s3": [
+            16,
+            32
+        ],
+        "s4": [
+            18,
+            36
+        ],
+        "s5": [
+            20,
+            40
+        ],
+        "level_1": {
+            "hp": 48,
+            "atk": 24,
+            "def": 15
+        },
+        "level_max": {
+            "hp": 1058,
+            "atk": 529,
+            "def": 330
+        }
+    },
+
+"a-secret-vow": {
+        "rarity": 4,
+        "passive": {
+            "en": "Increases DMG dealt by the wearer by {{value}}%. The wearer also deals an extra {{value}}% of DMG to enemies whose current HP percentage is equal to or higher than the wearer's current HP percentage."
+        },
+        "s1": [
+            20,
+            20
+        ],
+        "s2": [
+            25,
+            25
+        ],
+        "s3": [
+            30,
+            30
+        ],
+        "s4": [
+            35,
+            35
+        ],
+        "s5": [
+            40,
+            40
+        ],
+        "level_1": {
+            "hp": 48,
+            "atk": 21,
+            "def": 12
+        },
+        "level_max": {
+            "hp": 1058,
+            "atk": 476,
+            "def": 264
+        }
+    },
+
+"a-thankless-coronation": {
+        "rarity": 5,
+        "passive": {
+            "en": "Increases the wearer's CRIT DMG by {{value}}%. When using Ultimate, increases the wearer's ATK by {{value}}%, and if the wearer's Max Energy is greater than or equal to 300, regenerates a fixed amount of Energy equal to 10% of the wearer's Max Energy and once again increases the wearer's ATK by {{value}}%, lasting for 2 turns."
+        },
+        "s1": [
+            36,
+            40,
+            40
+        ],
+        "s2": [
+            45,
+            50,
+            50
+        ],
+        "s3": [
+            54,
+            60,
+            60
+        ],
+        "s4": [
+            63,
+            70,
+            70
+        ],
+        "s5": [
+            72,
+            80,
+            80
+        ],
+        "level_1": {
+            "hp": 43,
+            "atk": 26,
+            "def": 24
+        },
+        "level_max": {
+            "hp": 952,
+            "atk": 582,
+            "def": 529
+        }
+    },
+
+"brighter-than-the-sun": {
+        "rarity": 5,
+        "passive": {
+            "en": "Increases the wearer's CRIT Rate by {{value}}%. When the wearer uses their Basic ATK, they will gain 1 stack of Dragon's Call, lasting for 2 turns. Each Stack of Dragon's Call increases the wearer's ATK by {{value}}% and Energy Regeneration Rate by {{value}}%. Dragon's Call can be stacked up to 2 times."
+        },
+        "s1": [
+            18,
+            18,
+            6
+        ],
+        "s2": [
+            21,
+            21,
+            7
+        ],
+        "s3": [
+            24,
+            24,
+            8
+        ],
+        "s4": [
+            27,
+            27,
+            9
+        ],
+        "s5": [
+            30,
+            30,
+            10
+        ],
+        "level_1": {
+            "hp": 48,
+            "atk": 28,
+            "def": 18
+        },
+        "level_max": {
+            "hp": 1058,
+            "atk": 635,
+            "def": 396
+        }
+    },
+
+"collapsing-sky": {
+        "rarity": 3,
+        "passive": {
+            "en": "The wearer's Basic ATK and Skill deal {{value}}% more DMG."
+        },
+        "s1": [
+            20
+        ],
+        "s2": [
+            25
+        ],
+        "s3": [
+            30
+        ],
+        "s4": [
+            35
+        ],
+        "s5": [
+            40
+        ],
+        "level_1": {
+            "hp": 38,
+            "atk": 16,
+            "def": 9
+        },
+        "level_max": {
+            "hp": 846,
+            "atk": 370,
+            "def": 198
+        }
+    },
+
+"dance-at-sunset": {
+        "rarity": 3,
+        "passive": {
+            "en": "Greatly increases the wearer's chance of getting attacked and increases CRIT DMG by {{value}}%. After the wearer uses Ultimate, receives 1 stack of Firedance, lasting for 2 turns and stacking up to 2 time(s). Each stack of Firedance increases the DMG dealt by the wearer's follow-up attack by {{value}}%."
+        },
+        "s1": [
+            36,
+            36
+        ],
+        "s2": [
+            42,
+            42
+        ],
+        "s3": [
+            48,
+            48
+        ],
+        "s4": [
+            54,
+            54
+        ],
+        "s5": [
+            60,
+            60
+        ],
+        "level_1": {
+            "hp": 48,
+            "atk": 26,
+            "def": 21
+        },
+        "level_max": {
+            "hp": 1058,
+            "atk": 582,
+            "def": 463
+        }
+    },
+
+"flame-of-blood-blaze-my-path": {
+        "rarity": 5,
+        "passive": {
+            "en": "Increases the wearer's Max HP by {{value}}% and Incoming Healing by {{value}}%. When using Skill or Ultimate, consumes HP equal to 6.0% of the wearer's Max HP and increases the DMG dealt by this attack by {{value}}%. If this effect's consumed HP is greater than 500, the DMG additionally increases by {{value}}%. If the current HP is not sufficient, this effect reduces the wearer's current HP down to 1."
+        },
+        "s1": [
+            18,
+            20,
+            6,
+            30,
+            30
+        ],
+        "s2": [
+            21,
+            25,
+            6.5,
+            35,
+            35
+        ],
+        "s3": [
+            24,
+            30,
+            7,
+            40,
+            40
+        ],
+        "s4": [
+            27,
+            35,
+            7.5,
+            45,
+            45
+        ],
+        "s5": [
+            30,
+            40,
+            8,
+            50,
+            50
+        ],
+        "level_1": {
+            "hp": 62,
+            "atk": 21,
+            "def": 18
+        },
+        "level_max": {
+            "hp": 1375,
+            "atk": 476,
+            "def": 396
+        }
+    },
+
+"flames-afar": {
+        "rarity": 4,
+        "passive": {
+            "en": "When the wearer's cumulative HP loss during one attack exceeds 25% of their Max HP, or if the amount of their own HP consumed at one time is greater than 25% of their Max HP, immediately heals the wearer for 15% of their Max HP, and at the same time, increases the DMG they deal by {{value}}% for 2 turn(s). This effect can only be triggered once every 3 turn(s)."
+        },
+        "s1": [
+            25
+        ],
+        "s2": [
+            31.25
+        ],
+        "s3": [
+            37.5
+        ],
+        "s4": [
+            43.75
+        ],
+        "s5": [
+            50
+        ],
+        "level_1": {
+            "hp": 48,
+            "atk": 21,
+            "def": 12
+        },
+        "level_max": {
+            "hp": 1058,
+            "atk": 476,
+            "def": 264
+        }
+    },
+
+"i-am-as-you-behold": {
+        "rarity": 5,
+        "passive": {
+            "en": "Increases the wearer's ATK by {{value}}% and Energy Regeneration Rate by {{value}}%. When the wearer uses Ultimate, for every 1 Energy consumed, increases the Ultimate DMG dealt this time by {{value}}%, up to a max increase of {{value}}%. When the wearer enters combat or uses Ultimate, the wearer gains \"King's Entertainment,\" lasting for 3 turn(s). While the wearer holds \"King's Entertainment,\" increases all allies' CRIT DMG by {{value}}%. Effects of the same type cannot stack."
+        },
+        "s1": [
+            18,
+            10,
+            0.2,
+            72,
+            24
+        ],
+        "s2": [
+            21,
+            12.5,
+            0.25,
+            90,
+            30
+        ],
+        "s3": [
+            24,
+            15,
+            0.3,
+            1.8,
+            36
+        ],
+        "s4": [
+            27,
+            17.5,
+            0.35,
+            126,
+            42
+        ],
+        "s5": [
+            30,
+            20,
+            0.4,
+            144,
+            48
+        ],
+        "level_1": {
+            "hp": 43,
+            "atk": 28,
+            "def": 21
+        },
+        "level_max": {
+            "hp": 952,
+            "atk": 635,
+            "def": 463
+        }
+    },
+
+"i-shall-be-my-own-sword": {
+        "rarity": 5,
+        "passive": {
+            "en": "Increases the wearer's CRIT DMG by {{value}}%. When an ally (excluding the wearer) gets attacked or loses HP, the wearer gains 1 stack of Eclipse, up to a max of 3 stack(s). Each stack of Eclipse increases the DMG of the wearer's next attack by {{value}}%. When 3 stack(s) are reached, additionally enables that attack to ignore {{value}}% of the enemy's DEF. This effect will be removed after the wearer uses an attack."
+        },
+        "s1": [
+            20,
+            14,
+            12
+        ],
+        "s2": [
+            23,
+            16.5,
+            14
+        ],
+        "s3": [
+            26,
+            19,
+            16
+        ],
+        "s4": [
+            29,
+            21.5,
+            18
+        ],
+        "s5": [
+            32,
+            24,
+            20
+        ],
+        "level_1": {
+            "hp": 52,
+            "atk": 26,
+            "def": 18
+        },
+        "level_max": {
+            "hp": 1164,
+            "atk": 582,
+            "def": 396
+        }
+    },
+
+"indelible-promise": {
+        "rarity": 4,
+        "passive": {
+            "en": "Increases the wearer’s Break Effect by {{value}}%. When the wearer uses their Ultimate, increases CRIT Rate by {{value}}%, lasting for 2 turn(s)."
+        },
+        "s1": [
+            28,
+            15
+        ],
+        "s2": [
+            35,
+            18.75
+        ],
+        "s3": [
+            42,
+            22.5
+        ],
+        "s4": [
+            49,
+            26.25
+        ],
+        "s5": [
+            56,
+            30
+        ],
+        "level_1": {
+            "hp": 43,
+            "atk": 21,
+            "def": 15
+        },
+        "level_max": {
+            "hp": 952,
+            "atk": 476,
+            "def": 330
+        }
+    },
+
+"mutual-demise": {
+        "rarity": 3,
+        "passive": {
+            "en": "If the wearer's current HP is lower than 80%, CRIT Rate increases by {{value}}%."
+        },
+        "s1": [
+            12
+        ],
+        "s2": [
+            15
+        ],
+        "s3": [
+            18
+        ],
+        "s4": [
+            21
+        ],
+        "s5": [
+            24
+        ],
+        "level_1": {
+            "hp": 38,
+            "atk": 16,
+            "def": 9
+        },
+        "level_max": {
+            "hp": 846,
+            "atk": 370,
+            "def": 198
+        }
+    },
+
+"ninja-record-sound-hunt": {
+        "rarity": 4,
+        "passive": {
+            "en": "Increases the wearer's Max HP by {{value}}%. When losing or restoring this unit's HP, increases CRIT DMG by {{value}}%, lasting for 2 turn(s). This effect can only trigger once per turn."
+        },
+        "s1": [
+            12,
+            18
+        ],
+        "s2": [
+            15,
+            22.5
+        ],
+        "s3": [
+            18,
+            27
+        ],
+        "s4": [
+            21,
+            31.5
+        ],
+        "s5": [
+            24,
+            36
+        ],
+        "level_1": {
+            "hp": 48,
+            "atk": 21,
+            "def": 12
+        },
+        "level_max": {
+            "hp": 1058,
+            "atk": 476,
+            "def": 264
+        }
+    },
+
+"nowhere-to-run": {
+        "rarity": 4,
+        "passive": {
+            "en": "Increases the wearer's ATK by {{value}}%. Whenever the wearer defeats an enemy, they restore HP equal to {{value}}% of their ATK."
+        },
+        "s1": [
+            24,
+            12
+        ],
+        "s2": [
+            30,
+            15
+        ],
+        "s3": [
+            36,
+            18
+        ],
+        "s4": [
+            42,
+            21
+        ],
+        "s5": [
+            48,
+            24
+        ],
+        "level_1": {
+            "hp": 43,
+            "atk": 24,
+            "def": 12
+        },
+        "level_max": {
+            "hp": 952,
+            "atk": 529,
+            "def": 264
+        }
+    },
+
+"on-the-fall-of-an-aeon": {
+        "rarity": 5,
+        "passive": {
+            "en": "When the wearer attacks, increases their ATK by {{value}}% in this battle. This effect can stack up to 4 time(s). After the wearer breaks an enemy's Weakness, increases DMG dealt by {{value}}%, lasting for 2 turn(s)."
+        },
+        "s1": [
+            8,
+            12
+        ],
+        "s2": [
+            10,
+            15
+        ],
+        "s3": [
+            12,
+            18
+        ],
+        "s4": [
+            14,
+            21
+        ],
+        "s5": [
+            16,
+            24
+        ],
+        "level_1": {
+            "hp": 48,
+            "atk": 24,
+            "def": 18
+        },
+        "level_max": {
+            "hp": 1058,
+            "atk": 529,
+            "def": 396
+        }
+    },
+
+"shattered-home": {
+        "rarity": 3,
+        "passive": {
+            "en": "The wearer deals {{value}}% more DMG to enemy targets whose HP percentage is greater than 50%."
+        },
+        "s1": [
+            20
+        ],
+        "s2": [
+            25
+        ],
+        "s3": [
+            30
+        ],
+        "s4": [
+            35
+        ],
+        "s5": [
+            40
+        ],
+        "level_1": {
+            "hp": 38,
+            "atk": 16,
+            "def": 9
+        },
+        "level_max": {
+            "hp": 846,
+            "atk": 370,
+            "def": 198
+        }
+    },
+
+"something-irreplaceable": {
+        "rarity": 5,
+        "passive": {
+            "en": "Increases the wearer's ATK by {{value}}%. When the wearer defeats an enemy or is hit, immediately restores HP equal to {{value}}% of the wearer's ATK. At the same time, the wearer's DMG is increased by {{value}}% until the end of their next turn. This effect cannot stack and can only trigger 1 time per turn."
+        },
+        "s1": [
+            24,
+            8,
+            24
+        ],
+        "s2": [
+            28,
+            9,
+            28
+        ],
+        "s3": [
+            32,
+            10,
+            32
+        ],
+        "s4": [
+            36,
+            11,
+            36
+        ],
+        "s5": [
+            40,
+            12,
+            40
+        ],
+        "level_1": {
+            "hp": 52,
+            "atk": 26,
+            "def": 18
+        },
+        "level_max": {
+            "hp": 1164,
+            "atk": 582,
+            "def": 396
+        }
+    },
+
+"the-moles-welcome-you": {
+        "rarity": 4,
+        "passive": {
+            "en": "When the wearer uses Basic ATK, Skill, or Ultimate to attack enemies, the wearer gains one stack of Mischievous. Each stack increases the wearer's ATK by {{value}}%."
+        },
+        "s1": [
+            12
+        ],
+        "s2": [
+            15
+        ],
+        "s3": [
+            18
+        ],
+        "s4": [
+            21
+        ],
+        "s5": [
+            24
+        ],
+        "level_1": {
+            "hp": 48,
+            "atk": 21,
+            "def": 12
+        },
+        "level_max": {
+            "hp": 1058,
+            "atk": 476,
+            "def": 264
+        }
+    },
+
+"the-unreachable-side": {
+        "rarity": 5,
+        "passive": {
+            "en": "Increases the wearer's CRIT rate by {{value}}% and increases their Max HP by {{value}}%. When the wearer is attacked or consumes their own HP, their DMG increases by {{value}}%. This effect is removed after the wearer uses an attack."
+        },
+        "s1": [
+            18,
+            18,
+            24
+        ],
+        "s2": [
+            21,
+            21,
+            28
+        ],
+        "s3": [
+            24,
+            24,
+            32
+        ],
+        "s4": [
+            27,
+            27,
+            36
+        ],
+        "s5": [
+            30,
+            30,
+            40
+        ],
+        "level_1": {
+            "hp": 57,
+            "atk": 26,
+            "def": 15
+        },
+        "level_max": {
+            "hp": 1270,
+            "atk": 582,
+            "def": 330
+        }
+    },
+
+"thus-burns-the-dawn": {
+        "rarity": 5,
+        "passive": {
+            "en": "The wearer's base SPD increases by {{value}}. When dealing DMG, ignores {{value}}% of the target's DEF. After the wearer uses Ultimate, gains \"Blazing Sun,\" which is removed at the start of the turn. While holding \"Blazing Sun,\" increases the wearer's DMG dealt by {{value}}%."
+        },
+        "s1": [
+            12,
+            18,
+            60
+        ],
+        "s2": [
+            14,
+            22.5,
+            78
+        ],
+        "s3": [
+            16,
+            27,
+            96
+        ],
+        "s4": [
+            18,
+            31.5,
+            114
+        ],
+        "s5": [
+            20,
+            36,
+            132
+        ],
+        "level_1": {
+            "hp": 43,
+            "atk": 31,
+            "def": 18
+        },
+        "level_max": {
+            "hp": 952,
+            "atk": 687,
+            "def": 396
+        }
+    },
+
+"under-the-blue-sky": {
+        "rarity": 4,
+        "passive": {
+            "en": "Increases the wearer's ATK by {{value}}%. When the wearer defeats an enemy, the wearer's CRIT Rate increases by {{value}}% for 3 turn(s)."
+        },
+        "s1": [
+            16,
+            12
+        ],
+        "s2": [
+            20,
+            15
+        ],
+        "s3": [
+            24,
+            18
+        ],
+        "s4": [
+            28,
+            21
+        ],
+        "s5": [
+            32,
+            24
+        ],
+        "level_1": {
+            "hp": 43,
+            "atk": 21,
+            "def": 15
+        },
+        "level_max": {
+            "hp": 952,
+            "atk": 476,
+            "def": 330
+        }
+    },
+
+"whereabouts-should-dreams-rest": {
+        "rarity": 5,
+        "passive": {
+            "en": "Increases the wearer's Break Effect by {{value}}%. When the wearer deals Break DMG to an enemy target, inflicts Routed on the enemy, lasting for 2 turn(s). Targets afflicted with Routed receive {{value}}% increased Break DMG from the wearer, and their SPD is lowered by 20%. Effects of the same type cannot be stacked."
+        },
+        "s1": [
+            60,
+            24
+        ],
+        "s2": [
+            70,
+            28
+        ],
+        "s3": [
+            80,
+            32
+        ],
+        "s4": [
+            90,
+            36
+        ],
+        "s5": [
+            100,
+            40
+        ],
+        "level_1": {
+            "hp": 52,
+            "atk": 21,
+            "def": 24
+        },
+        "level_max": {
+            "hp": 1164,
+            "atk": 476,
+            "def": 529
+        }
+    },
+
+"woof-walk-time-": {
+        "rarity": 4,
+        "passive": {
+            "en": "Increases the wearer's ATK by {{value}}%, and increases their DMG to enemies afflicted with Burn or Bleed by {{value}}%. This also applies to DoT."
+        },
+        "s1": [
+            10,
+            16
+        ],
+        "s2": [
+            12.5,
+            20
+        ],
+        "s3": [
+            15,
+            24
+        ],
+        "s4": [
+            17.5,
+            28
+        ],
+        "s5": [
+            20,
+            32
+        ],
+        "level_1": {
+            "hp": 43,
+            "atk": 21,
+            "def": 15
+        },
+        "level_max": {
+            "hp": 952,
+            "atk": 476,
+            "def": 330
+        }
+    }
+}
