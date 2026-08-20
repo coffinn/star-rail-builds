@@ -1,5 +1,6 @@
 {
     "eagle-of-twilight-line": {
+        "type": "cavern",
         "rarity": 5,
         "version_released": "1.0",
         "tags": [
@@ -15,6 +16,7 @@
     },
 
     "sprightly-vonwacq": {
+        "type": "planar",
         "rarity": 5,
         "version_released": "1.0",
         "tags": [

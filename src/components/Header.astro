@@ -11,196 +11,201 @@ import { languages } from '../utils/languages';
 import { localizedPath } from '../utils/paths';
 
 type Props = {
-  locale: any;
-  lang?: string;
-  character?: string;
-  page?: string;
+    locale: any;
+    lang?: string;
+    character?: string;
+    page?: string;
 };
 
 const { locale, lang, character, page } = Astro.props as Props;
 
 const currentLang = lang || 'en';
 const searchShortcutBannerDismissedStorageKey =
-  'genshin-builds:search-shortcut-banner-dismissed';
+    'genshin-builds:search-shortcut-banner-dismissed';
 const searchShortcutBannerDisabledStorageKey =
-  'genshin-builds:search-shortcut-banner-disabled';
+    'genshin-builds:search-shortcut-banner-disabled';
 const searchShortcutBanner = t(
-  locale,
-  'ui',
-  'Search shortcut banner',
-  undefined,
-  false,
+    locale,
+    'ui',
+    'Search shortcut banner',
+    undefined,
+    false,
 );
 const primaryLinks = [
-  {
-    href: localizedPath(currentLang),
-    label: t(locale, 'ui', 'Characters', undefined, false) || 'Characters',
-    isCurrent: !page,
-  },
-  {
-    href: localizedPath(currentLang, 'light-cones'),
-    label:
-        t(locale, 'ui', 'Light Cones', undefined, false) ||
-        'Light Cones',
-    isCurrent: page === 'light-cones',
+    {
+        href: localizedPath(currentLang),
+        label: t(locale, 'ui', 'Characters', undefined, false) || 'Characters',
+        isCurrent: !page,
     },
-  {
-    href: localizedPath(currentLang, 'artifacts'),
-    label:
-      t(locale, 'ui', 'Artifacts Sets', undefined, false) || 'Artifact Sets',
-    isCurrent: page === 'artifacts',
-  },
+    {
+        href: localizedPath(currentLang, 'light-cones'),
+        label:
+            t(locale, 'ui', 'Light Cones', undefined, false) || 'Light Cones',
+        isCurrent: page === 'light-cones',
+    },
+    {
+        href: localizedPath(currentLang, 'relics'),
+        label: t(locale, 'ui', 'Relics', undefined, false) || 'Relics',
+        isCurrent: page === 'relics',
+    },
 ];
 const infoLinks = [
-  {
-    href: localizedPath(currentLang, 'faq'),
-    label: t(locale, 'ui', 'FAQ', undefined, false) || 'FAQ',
-    isCurrent: page === 'faq',
-  },
-  {
-    href: localizedPath(currentLang, 'credits'),
-    label: t(locale, 'ui', 'Credits', undefined, false) || 'Credits',
-    isCurrent: page === 'credits',
-  },
-  {
-    href: localizedPath(currentLang, 'changelog'),
-    label: t(locale, 'ui', 'Changelog', undefined, false) || 'Changelog',
-    isCurrent: page === 'changelog',
-  },
+    {
+        href: localizedPath(currentLang, 'faq'),
+        label: t(locale, 'ui', 'FAQ', undefined, false) || 'FAQ',
+        isCurrent: page === 'faq',
+    },
+    {
+        href: localizedPath(currentLang, 'credits'),
+        label: t(locale, 'ui', 'Credits', undefined, false) || 'Credits',
+        isCurrent: page === 'credits',
+    },
+    {
+        href: localizedPath(currentLang, 'changelog'),
+        label: t(locale, 'ui', 'Changelog', undefined, false) || 'Changelog',
+        isCurrent: page === 'changelog',
+    },
 ];
 const isInfoCurrent = infoLinks.some((link) => link.isCurrent);
 ---
 
 <header class="site-header">
-  <div class="navbar">
-    <a
-    href={localizedPath(currentLang)}
-    class="logo-link"
-    aria-label="Star Rail Builds home"
-    >
-    <span>Star Rail Builds</span>
-    </a>
-
-    <div class="nav-panel" id="primary-navigation">
-      <nav class="primary-nav" aria-label="Main navigation">
-        {
-          primaryLinks.map((link) => (
-            <a
-              class="nav-link"
-              href={link.href}
-              aria-label={link.label}
-              aria-current={link.isCurrent ? 'page' : undefined}
-            >
-              {link.label}
-            </a>
-          ))
-        }
-
-        <details class={`nav-dropdown${isInfoCurrent ? ' is-current' : ''}`}>
-          <summary class="nav-link">
-            {t(locale, 'ui', 'Information', undefined, false)}
-            <span class="dropdown-chevron" aria-hidden="true"></span>
-          </summary>
-          <div class="dropdown-menu">
-            {
-              infoLinks.map((link) => (
-                <a
-                  class="dropdown-link"
-                  href={link.href}
-                  aria-label={link.label}
-                  aria-current={link.isCurrent ? 'page' : undefined}
-                >
-                  {link.label}
-                </a>
-              ))
-            }
-          </div>
-        </details>
-      </nav>
-    </div>
-
-    <div class="navbar-actions">
-      <div class="language-switcher">
-        <label class="language-label" for="language-select">
-          {t(locale, 'ui', 'Language')}:
-        </label>
-        <select
-          class="language-select"
-          id="language-select"
-          aria-label={t(locale, 'ui', 'Language')}
-          value={currentLang}
-          data-character={character}
-          data-page={page}
+    <div class="navbar">
+        <a
+            href={localizedPath(currentLang)}
+            class="logo-link"
+            aria-label="Star Rail Builds home"
         >
-          {
-            languages.map((language) => (
-              <option
-                value={language.code}
-                selected={language.code === currentLang}
-              >
-                {language.name}
-              </option>
-            ))
-          }
-        </select>
-      </div>
+            <span>Star Rail Builds</span>
+        </a>
 
-      <button
-        class="nav-toggle"
-        type="button"
-        aria-label="Open navigation"
-        aria-expanded="false"
-        aria-controls="primary-navigation"
-        data-nav-toggle
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+        <div class="nav-panel" id="primary-navigation">
+            <nav class="primary-nav" aria-label="Main navigation">
+                {
+                    primaryLinks.map((link) => (
+                        <a
+                            class="nav-link"
+                            href={link.href}
+                            aria-label={link.label}
+                            aria-current={link.isCurrent ? 'page' : undefined}
+                        >
+                            {link.label}
+                        </a>
+                    ))
+                }
+
+                <details
+                    class={`nav-dropdown${isInfoCurrent ? ' is-current' : ''}`}
+                >
+                    <summary class="nav-link">
+                        {t(locale, 'ui', 'Information', undefined, false)}
+                        <span class="dropdown-chevron" aria-hidden="true"
+                        ></span>
+                    </summary>
+                    <div class="dropdown-menu">
+                        {
+                            infoLinks.map((link) => (
+                                <a
+                                    class="dropdown-link"
+                                    href={link.href}
+                                    aria-label={link.label}
+                                    aria-current={
+                                        link.isCurrent ? 'page' : undefined
+                                    }
+                                >
+                                    {link.label}
+                                </a>
+                            ))
+                        }
+                    </div>
+                </details>
+            </nav>
+        </div>
+
+        <div class="navbar-actions">
+            <div class="language-switcher">
+                <label class="language-label" for="language-select">
+                    {t(locale, 'ui', 'Language')}:
+                </label>
+                <select
+                    class="language-select"
+                    id="language-select"
+                    aria-label={t(locale, 'ui', 'Language')}
+                    value={currentLang}
+                    data-character={character}
+                    data-page={page}
+                >
+                    {
+                        languages.map((language) => (
+                            <option
+                                value={language.code}
+                                selected={language.code === currentLang}
+                            >
+                                {language.name}
+                            </option>
+                        ))
+                    }
+                </select>
+            </div>
+
+            <button
+                class="nav-toggle"
+                type="button"
+                aria-label="Open navigation"
+                aria-expanded="false"
+                aria-controls="primary-navigation"
+                data-nav-toggle
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
     </div>
-  </div>
 </header>
 
 <script
-  define:vars={{
-    searchShortcutBannerDisabledStorageKey,
-    searchShortcutBannerDismissedStorageKey,
-  }}
+    define:vars={{
+        searchShortcutBannerDisabledStorageKey,
+        searchShortcutBannerDismissedStorageKey,
+    }}
 >
-  try {
-    if (
-      sessionStorage.getItem(searchShortcutBannerDismissedStorageKey) ===
-        'true' ||
-      localStorage.getItem(searchShortcutBannerDisabledStorageKey) === 'true'
-    ) {
-      document.documentElement.dataset.searchShortcutBannerDismissed = 'true';
+    try {
+        if (
+            sessionStorage.getItem(searchShortcutBannerDismissedStorageKey) ===
+                'true' ||
+            localStorage.getItem(searchShortcutBannerDisabledStorageKey) ===
+                'true'
+        ) {
+            document.documentElement.dataset.searchShortcutBannerDismissed =
+                'true';
+        }
+    } catch {
+        // TODO: storage can be unavailable idk why but it shouldnt break
     }
-  } catch {
-    // TODO: storage can be unavailable idk why but it shouldnt break
-  }
 </script>
 
 <Banner
-  top={65}
-  closeable={true}
-  sticky={true}
-  className="search-shortcut-banner"
+    top={65}
+    closeable={true}
+    sticky={true}
+    className="search-shortcut-banner"
 >
-  {searchShortcutBanner}
+    {searchShortcutBanner}
 </Banner>
 
 <div
-  class="feedback-widget"
-  data-feedback-widget
-  data-feedback-lang={currentLang}
+    class="feedback-widget"
+    data-feedback-widget
+    data-feedback-lang={currentLang}
 >
-  <SpeedDial />
-  <SearchModal locale={locale} lang={currentLang} />
-  <FeedbackModal lang={currentLang} />
+    <SpeedDial />
+    <SearchModal locale={locale} lang={currentLang} />
+    <FeedbackModal lang={currentLang} />
 </div>
 
 <script>
-  import '../scripts/header';
-  import '../scripts/feedback-form';
-  import '../scripts/site-search';
+    import '../scripts/header';
+    import '../scripts/feedback-form';
+    import '../scripts/site-search';
 </script>

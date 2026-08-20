@@ -18,6 +18,9 @@ const itemUrls = import.meta.glob<string>('/src/assets/item-assets/**/*.webp', {
     import: 'default',
     query: '?url',
 });
+export function resolveRelicAssetImage(id: string) {
+    return assetImage('relics', `${id}.webp`);
+}
 export function resolveRelicAssetUrl(id: string) {
     return assetUrl('relics', `${id}.webp`);
 }

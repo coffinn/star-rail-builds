@@ -70,8 +70,8 @@ const fileInBuild = (buildPath: string, fileName: string) =>
     path.join(buildPath, fileName);
 
 const weaponDataPath = path.resolve('src/data/light-cones');
-const artifactSetDataPath = path.resolve(
-    'src/data/artifacts/artifact_sets.json',
+const relicSetDataPath = path.resolve(
+    'src/data/relics/relic_sets.json',
 );
 
 /**
@@ -85,14 +85,14 @@ const renderMarkdown = (value: string) => marked.parse(value) as string;
 /**
  * Loads the shared artifact set database used by popovers and validation.
  */
-function loadArtifactSetData() {
-    if (!fs.existsSync(artifactSetDataPath)) {
+function loadRelicSetData() {
+    if (!fs.existsSync(relicSetDataPath)) {
         throw new Error(
-            'No shared artifact set data found at src/data/artifacts/artifact_sets.json',
+            'No shared relic set data found at src/data/relics/relic_sets.json',
         );
     }
 
-    return readJSONFile(artifactSetDataPath);
+    return readJSONFile(relicSetDataPath);
 }
 
 /**
@@ -920,7 +920,7 @@ export function getCharacterPageData({
     const currentLang = lang ?? 'en';
     const locale = getLocale(currentLang);
     const weaponData = loadAllWeaponData();
-    const artifactSetData = loadArtifactSetData();
+    const artifactSetData = loadRelicSetData();
     const translator = new TranslationHelper(
         locale,
         weaponData,

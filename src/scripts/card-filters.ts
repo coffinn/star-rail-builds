@@ -4,12 +4,14 @@ type FilterKind =
     | 'character'
     | 'weapon'
     | 'artifact'
+    | 'relic'
     | 'lightCone';
-    
+
 const sortStorageKeys = {
     character: 'genshin-builds:character-sort',
     weapon: 'genshin-builds:weapon-sort',
     artifact: 'genshin-builds:artifact-sort',
+    relic: 'star-rail-builds:relic-sort',
     lightCone: 'star-rail-builds:light-cone-sort',
 } as const;
 const highPriorityImageCount = 4;
@@ -41,6 +43,12 @@ const selectors = {
         card: '[data-light-cone-card]',
         count: '[data-light-cone-count]',
         empty: '[data-light-cone-empty]',
+    },
+    relic: {
+        form: '[data-relic-filters]',
+        card: '[data-relic-card]',
+        count: '[data-relic-count]',
+        empty: '[data-relic-empty]',
     },
 } as const;
 
@@ -220,14 +228,14 @@ document
             });
     });
 
-    document
+document
     .querySelector<HTMLElement>('[data-light-cone-browser]')
     ?.addEventListener('click', (event) => {
         const button =
             event.target instanceof Element
                 ? event.target.closest<HTMLButtonElement>(
-                      '[data-light-cone-superimposition]',
-                  )
+                    '[data-light-cone-superimposition]',
+                )
                 : null;
 
         const superimposition =
@@ -250,7 +258,7 @@ document
                     'aria-pressed',
                     String(
                         item.dataset.lightConeSuperimposition ===
-                            superimposition,
+                        superimposition,
                     ),
                 );
             });

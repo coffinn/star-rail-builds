@@ -1,0 +1,376 @@
+---
+import { Image } from 'astro:assets';
+import type { AssetImage } from '../utils/item-assets';
+import { t } from '../utils/i18n';
+
+type RelicSetBrowserData = {
+    relicSets: {
+        id: string;
+        image: AssetImage | '';
+        name: string;
+        type: 'cavern' | 'planar';
+        rarity: number;
+        versionReleased: string;
+
+        bonuses: {
+            id: string;
+            label: string;
+            html: string;
+        }[];
+
+        tags: string[];
+        tagGroups: string[];
+    }[];
+
+    tagOptionGroups: {
+        label: string;
+
+        options: {
+            id: string;
+            label: string;
+        }[];
+    }[];
+};
+
+const {
+    data,
+    locale,
+} = Astro.props as {
+    data: RelicSetBrowserData;
+    locale: any;
+};
+
+const allLabel = t(
+    locale,
+    'ui',
+    'All',
+);
+
+const resultsLabel = t(
+    locale,
+    'ui',
+    'Results',
+);
+
+const noResultsLabel = t(
+    locale,
+    'ui',
+    'No relic sets found',
+    undefined,
+    false,
+);
+
+const searchByNameLabel = t(
+    locale,
+    'ui',
+    'Search by name',
+);
+
+const searchLabel = t(
+    locale,
+    'ui',
+    'Search',
+);
+
+const typeLabel = t(
+    locale,
+    'ui',
+    'Relic Type',
+    undefined,
+    false,
+);
+
+const cavernLabel = t(
+    locale,
+    'ui',
+    'Cavern Relics',
+    undefined,
+    false,
+);
+
+const planarLabel = t(
+    locale,
+    'ui',
+    'Planar Ornaments',
+    undefined,
+    false,
+);
+
+const tagLabel = t(
+    locale,
+    'ui',
+    'Set Effect',
+    undefined,
+    false,
+);
+
+const sortByLabel = t(
+    locale,
+    'ui',
+    'Sort by',
+);
+
+const releaseDateLabel = t(
+    locale,
+    'ui',
+    'Release date',
+);
+
+const newestLabel = t(
+    locale,
+    'ui',
+    'Newest',
+);
+
+const relicSetsLabel = t(
+    locale,
+    'ui',
+    'Relic Sets',
+    undefined,
+    false,
+);
+
+const sortOptions = [
+    {
+        value: 'name',
+        label: `${relicSetsLabel} - A-Z`,
+    },
+    {
+        value: 'release',
+        label: `${releaseDateLabel} - ${newestLabel}`,
+    },
+];
+
+const getTypeLabel = (
+    type: 'cavern' | 'planar',
+) =>
+    type === 'cavern'
+        ? cavernLabel
+        : planarLabel;
+---
+
+<section
+    class="artifact-set-browser"
+    data-relic-browser
+>
+    <form
+        class="home-filters artifact-set-filters"
+        id="relic-set-filters"
+        data-relic-filters
+    >
+        <label class="home-search">
+            {searchLabel}
+
+            <input
+                type="search"
+                name="search"
+                placeholder={searchByNameLabel}
+                autocomplete="off"
+            />
+        </label>
+
+        <div class="home-select-filter">
+            {typeLabel}
+
+            <select
+                class="home-native-select"
+                name="type"
+                aria-label={typeLabel}
+            >
+                <option value="">
+                    {allLabel}
+                </option>
+
+                <option value="cavern">
+                    {cavernLabel}
+                </option>
+
+                <option value="planar">
+                    {planarLabel}
+                </option>
+            </select>
+        </div>
+
+        <div class="home-select-filter">
+            {tagLabel}
+
+            <select
+                class="home-native-select"
+                name="tagGroups"
+                aria-label={tagLabel}
+            >
+                <option value="">
+                    {allLabel}
+                </option>
+
+                {
+                    data.tagOptionGroups.map(
+                        (group) => (
+                            <optgroup
+                                label={group.label}
+                            >
+                                {group.options.map(
+                                    (tag) => (
+                                        <option
+                                            value={tag.id}
+                                        >
+                                            {
+                                                tag.label
+                                            }
+                                        </option>
+                                    ),
+                                )}
+                            </optgroup>
+                        ),
+                    )
+                }
+            </select>
+        </div>
+    </form>
+
+    <div class="artifact-set-browser-header">
+        <p
+            data-relic-count
+            data-results-label={resultsLabel}
+            aria-live="polite"
+        >
+            {data.relicSets.length}
+            {' '}
+            {resultsLabel}
+        </p>
+
+        <label class="roster-sort">
+            {sortByLabel}
+
+            <select
+                class="home-native-select"
+                name="sort"
+                form="relic-set-filters"
+                aria-label={sortByLabel}
+            >
+                {
+                    sortOptions.map(
+                        (option) => (
+                            <option
+                                value={option.value}
+                                selected={
+                                    option.value ===
+                                    'name'
+                                }
+                            >
+                                {option.label}
+                            </option>
+                        ),
+                    )
+                }
+            </select>
+        </label>
+    </div>
+
+    <div class="artifact-set-grid">
+        {
+            data.relicSets.map(
+                (relicSet) => (
+                    <article
+                        class={`artifact-set-entry rarity-${relicSet.rarity}`}
+                        data-relic-card
+                        data-name={relicSet.name}
+                        data-type={relicSet.type}
+                        data-tags={relicSet.tags.join(
+                            ' ',
+                        )}
+                        data-tag-groups={relicSet.tagGroups.join(
+                            ' ',
+                        )}
+                        data-version-released={
+                            relicSet.versionReleased
+                        }
+                    >
+                        <header class="artifact-set-entry-header">
+                            <div class="artifact-set-entry-title">
+                                <div
+                                    class={`artifact-set-entry-image${
+                                        relicSet.image
+                                            ? ''
+                                            : ' is-empty'
+                                    }`}
+                                >
+                                    {
+                                        relicSet.image && (
+                                            <Image
+                                                src={
+                                                    relicSet.image
+                                                }
+                                                alt=""
+                                                loading="lazy"
+                                                decoding="async"
+                                                width={72}
+                                                height={72}
+                                                densities={[
+                                                    1,
+                                                    2,
+                                                ]}
+                                            />
+                                        )
+                                    }
+                                </div>
+
+                                <div>
+                                    <h2>
+                                        {relicSet.name}
+                                    </h2>
+
+                                    <span>
+                                        {getTypeLabel(
+                                            relicSet.type,
+                                        )}
+                                    </span>
+                                </div>
+                            </div>
+
+                            <span class="artifact-set-entry-rarity">
+                                {relicSet.rarity}
+                                {'\u2605'}
+                            </span>
+                        </header>
+
+                        <div class="artifact-set-bonus-list">
+                            {
+                                relicSet.bonuses.map(
+                                    (bonus) => (
+                                        <section
+                                            class="artifact-set-bonus"
+                                            aria-label={`${relicSet.name} ${bonus.label}`}
+                                        >
+                                            <h3>
+                                                {bonus.label}
+                                            </h3>
+
+                                            <div
+                                                set:html={
+                                                    bonus.html
+                                                }
+                                            />
+                                        </section>
+                                    ),
+                                )
+                            }
+                        </div>
+                    </article>
+                ),
+            )
+        }
+    </div>
+
+    <p
+        class="artifact-set-empty"
+        data-relic-empty
+        hidden
+    >
+        {noResultsLabel}
+    </p>
+</section>
+
+<script>
+    import '../scripts/card-filters';
+</script>
