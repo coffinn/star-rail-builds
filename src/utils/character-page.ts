@@ -418,22 +418,31 @@ function translateArtifactSetRecommendations(
     sourceFile: string,
     artifactSetData: Record<string, any>,
 ) {
+    const translateRanks = (ranks: any[] = []) =>
+        ranks.map((rank: { groups: any[] }) => ({
+            ...rank,
+            groups: rank.groups.map((group: any) =>
+                translateArtifactSetGroup(
+                    translator,
+                    locale,
+                    group,
+                    sourceFile,
+                    artifactSetData,
+                ),
+            ),
+        }));
+
     return {
         ...artifactSets,
-        artifact_sets: (artifactSets.artifact_sets ?? []).map(
-            (rank: { groups: any[] }) => ({
-                ...rank,
-                groups: rank.groups.map((group: any) =>
-                    translateArtifactSetGroup(
-                        translator,
-                        locale,
-                        group,
-                        sourceFile,
-                        artifactSetData,
-                    ),
-                ),
-            }),
+
+        relic_sets: translateRanks(
+            artifactSets.relic_sets,
         ),
+
+        planar_ornaments: translateRanks(
+            artifactSets.planar_ornaments,
+        ),
+
         conditional: (artifactSets.conditional ?? [])
             .flatMap((entry: any) => entry.groups ?? [entry])
             .map((group: any) =>
@@ -493,7 +502,14 @@ function translateTraceItem(
  */
 function getArtifactSetNoteGroups(artifactSets: any) {
     return [
-        ...(artifactSets.artifact_sets ?? []).flatMap((rank: any) => rank.groups),
+        ...(artifactSets.relic_sets ?? []).flatMap(
+            (rank: any) => rank.groups,
+        ),
+
+        ...(artifactSets.planar_ornaments ?? []).flatMap(
+            (rank: any) => rank.groups,
+        ),
+
         ...(artifactSets.conditional ?? []),
     ];
 }
@@ -705,7 +721,7 @@ function loadBuildData({
     artifactSetData,
 }: BuildContext) {
     const weaponsFile = fileInBuild(buildPath, 'light-cones.json');
-    const artifactSetsFile = fileInBuild(buildPath, 'artifacts-sets.json');
+    const artifactSetsFile = fileInBuild(buildPath, 'relic-sets.json');
     const relicMainstatsFile = fileInBuild(
         buildPath,
         'relic-mainstats.json',
@@ -729,7 +745,7 @@ function loadBuildData({
         })
         : null;
 
-    const rawArtifactSets = loadJSON(buildPath, 'artifacts-sets.json');
+    const rawArtifactSets = loadJSON(buildPath, 'relic-sets.json');
     const rawArtifactMainstats =
         loadJSON(buildPath, 'relic-mainstats.json');
 

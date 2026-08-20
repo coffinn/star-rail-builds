@@ -3,111 +3,142 @@ import ArtifactSetGroup from './ArtifactSetGroup.astro';
 import { t } from '../utils/i18n';
 
 type ArtifactSetItem = {
-  name: string;
-  pieces: number;
-  note?: string;
-  noteId?: string;
+    name: string;
+    pieces: number;
+    note?: string;
+    noteId?: string;
 };
 
 type ArtifactSetGroupData = {
-  items?: ArtifactSetItem[];
-  choose?: boolean;
-  choices?: { items: ArtifactSetItem[] }[];
+    items?: ArtifactSetItem[];
+    choose?: boolean;
+    choices?: { items: ArtifactSetItem[] }[];
 };
 
 type ArtifactSetRank = {
-  groups: ArtifactSetGroupData[];
+    groups: ArtifactSetGroupData[];
 };
 
 type ArtifactRecommendations = {
-  sets: {
-    artifact_sets?: ArtifactSetRank[];
-    conditional?: ArtifactSetGroupData[];
-  };
+    sets: {
+        relic_sets?: ArtifactSetRank[];
+        planar_ornaments?: ArtifactSetRank[];
+        conditional?: ArtifactSetGroupData[];
+    };
 };
 
 const {
-  artifacts,
-  locale,
-  lang = 'en',
+    artifacts,
+    locale,
+    lang = 'en',
 } = Astro.props as {
-  artifacts: ArtifactRecommendations;
-  locale: any;
-  lang?: string;
+    artifacts: ArtifactRecommendations;
+    locale: any;
+    lang?: string;
 };
 
-const artifactSetRanks = artifacts.sets.artifact_sets ?? [];
-const conditionalArtifactGroups = artifacts.sets.conditional ?? [];
+const sections = [
+    {
+        title: t(locale, 'ui', 'Relic Sets', undefined, false),
+        ranks: artifacts.sets.relic_sets ?? [],
+    },
+    {
+        title: t(locale, 'ui', 'Planar Ornaments', undefined, false),
+        ranks: artifacts.sets.planar_ornaments ?? [],
+    },
+];
+
+const conditionalGroups = artifacts.sets.conditional ?? [];
 ---
 
 <div class="card recommendation-card artifact-card artifact-sets-card">
-  <h2>{t(locale, 'ui', 'Artifacts Sets', undefined, false)}</h2>
+    <h2>{t(locale, 'ui', 'Relics', undefined, false)}</h2>
 
-  <div class="recommendation-card-body">
-    <div class="section recommendation-section">
-      <div class="rank-list">
+    <div class="recommendation-card-body">
         {
-          artifactSetRanks.length > 0 &&
-            artifactSetRanks.map((rank: ArtifactSetRank, i: number) => {
-              const [mainGroup, ...alternativeGroups] = rank.groups;
-
-              return (
-                <div class="rank-group">
-                  {mainGroup && (
-                    <div class="rank-row">
-                      <strong class="rank-number">{i + 1}</strong>
-                      <div class="rank-content artifact-set-content">
-                        <ArtifactSetGroup
-                          group={mainGroup}
-                          locale={locale}
-                          lang={lang}
-                        />
-                      </div>
+            sections.map((section) => (
+                <div class="section recommendation-section">
+                    <div class="conditional-heading">
+                        {section.title}
                     </div>
-                  )}
 
-                  {alternativeGroups.map((group) => (
-                    <div class="rank-row alt">
-                      <span class="rank-approx">&asymp;</span>
-                      <div class="rank-content artifact-set-content">
-                        <ArtifactSetGroup
-                          group={group}
-                          locale={locale}
-                          lang={lang}
-                        />
-                      </div>
+                    <div class="rank-list">
+                        {section.ranks.map(
+                            (rank: ArtifactSetRank, i: number) => {
+                                const [mainGroup, ...alternativeGroups] =
+                                    rank.groups;
+
+                                return (
+                                    <div class="rank-group">
+                                        {mainGroup && (
+                                            <div class="rank-row">
+                                                <strong class="rank-number">
+                                                    {i + 1}
+                                                </strong>
+
+                                                <div class="rank-content artifact-set-content">
+                                                    <ArtifactSetGroup
+                                                        group={mainGroup}
+                                                        locale={locale}
+                                                        lang={lang}
+                                                    />
+                                                </div>
+                                            </div>
+                                        )}
+
+                                        {alternativeGroups.map((group) => (
+                                            <div class="rank-row alt">
+                                                <span class="rank-approx">
+                                                    &asymp;
+                                                </span>
+
+                                                <div class="rank-content artifact-set-content">
+                                                    <ArtifactSetGroup
+                                                        group={group}
+                                                        locale={locale}
+                                                        lang={lang}
+                                                    />
+                                                </div>
+                                            </div>
+                                        ))}
+                                    </div>
+                                );
+                            },
+                        )}
                     </div>
-                  ))}
                 </div>
-              );
-            })
+            ))
         }
-      </div>
 
-      {
-        conditionalArtifactGroups.length > 0 && (
-          <div class="conditional-list">
-            <div class="conditional-heading">
-              {t(locale, 'ui', 'Conditional (See Notes):')}
-            </div>
+        {
+            conditionalGroups.length > 0 && (
+                <div class="conditional-list">
+                    <div class="conditional-heading">
+                        {t(locale, 'ui', 'Conditional (See Notes):')}
+                    </div>
 
-            <div class="rank-list">
-              {conditionalArtifactGroups.map((group: ArtifactSetGroupData) => (
-                <div class="rank-row conditional-row">
-                  <span class="rank-marker" aria-hidden="true" />
-                  <div class="rank-content artifact-set-content">
-                    <ArtifactSetGroup
-                      group={group}
-                      locale={locale}
-                      lang={lang}
-                    />
-                  </div>
+                    <div class="rank-list">
+                        {conditionalGroups.map(
+                            (group: ArtifactSetGroupData) => (
+                                <div class="rank-row conditional-row">
+                                    <span
+                                        class="rank-marker"
+                                        aria-hidden="true"
+                                    />
+
+                                    <div class="rank-content artifact-set-content">
+                                        <ArtifactSetGroup
+                                            group={group}
+                                            locale={locale}
+                                            lang={lang}
+                                        />
+                                    </div>
+                                </div>
+                            ),
+                        )}
+                    </div>
                 </div>
-              ))}
-            </div>
-          </div>
-        )
-      }
+            )
+        }
     </div>
-  </div>
 </div>
