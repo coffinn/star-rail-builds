@@ -1,4 +1,328 @@
 {
+    "along-the-passing-shore": {
+        "rarity": 5,
+        "passive": {
+            "en": "Increases the wearer's CRIT DMG by {{value}}%. When the wearer hits an enemy target, inflicts Mirage Fizzle on the enemy, lasting for 1 turn. Each time the wearer attacks, this effect can only trigger 1 time on each target. The wearer deals {{value}}% increased DMG to targets afflicted with Mirage Fizzle, and the DMG dealt by Ultimate additionally increases by {{value}}%."
+        },
+        "s1": [
+            36,
+            24,
+            24
+        ],
+        "s2": [
+            42,
+            28,
+            28
+        ],
+        "s3": [
+            48,
+            32,
+            32
+        ],
+        "s4": [
+            54,
+            36,
+            36
+        ],
+        "s5": [
+            60,
+            40,
+            40
+        ],
+        "level_1": {
+            "hp": 48,
+            "atk": 28,
+            "def": 18
+        },
+        "level_max": {
+            "hp": 1058,
+            "atk": 635,
+            "def": 396
+        }
+    },
+    "before-the-tutorial-mission-starts": {
+        "rarity": 4,
+        "passive": {
+            "en": "Increases the wearer's Effect Hit Rate by {{value}}%. When the wearer attacks DEF-reduced enemies, regenerates {{value}} Energy."
+        },
+        "s1": [
+            20,
+            4
+        ],
+        "s2": [
+            25,
+            5
+        ],
+        "s3": [
+            30,
+            6
+        ],
+        "s4": [
+            35,
+            7
+        ],
+        "s5": [
+            40,
+            8
+        ],
+        "level_1": {
+            "hp": 43,
+            "atk": 21,
+            "def": 15
+        },
+        "level_max": {
+            "hp": 952,
+            "atk": 476,
+            "def": 330
+        }
+    },
+    "boundless-choreo": {
+        "rarity": 4,
+        "passive": {
+            "en": "Increase the wearer's CRIT Rate by {{value}}%. The wearer deals {{value}}% more CRIT DMG to enemies that are currently Slowed or have reduced DEF."
+        },
+        "s1": [
+            8,
+            24
+        ],
+        "s2": [
+            10,
+            30
+        ],
+        "s3": [
+            12,
+            36
+        ],
+        "s4": [
+            14,
+            42
+        ],
+        "s5": [
+            16,
+            48
+        ],
+        "level_1": {
+            "hp": 43,
+            "atk": 21,
+            "def": 15
+        },
+        "level_max": {
+            "hp": 952,
+            "atk": 476,
+            "def": 330
+        }
+    },
+     "eyes-of-the-prey": {
+        "rarity": 4,
+        "passive": {
+            "en": "Increases the wearer's Effect Hit Rate by {{value}}% and increases DoT by {{value}}%."
+        },
+        "s1": [
+            20,
+            24
+        ],
+        "s2": [
+            25,
+            30
+        ],
+        "s3": [
+            30,
+            36
+        ],
+        "s4": [
+            35,
+            42
+        ],
+        "s5": [
+            40,
+            48
+        ],
+        "level_1": {
+            "hp": 43,
+            "atk": 21,
+            "def": 15
+        },
+        "level_max": {
+            "hp": 952,
+            "atk": 476,
+            "def": 330
+        }
+    },
+     "fermata": {
+        "rarity": 4,
+        "passive": {
+            "en": "Increases the wearer's Break Effect by {{value}}%, and increases their DMG to enemies afflicted with Shock or Wind Shear by {{value}}%. This also applies to DoT."
+        },
+        "s1": [
+            16,
+            16
+        ],
+        "s2": [
+            20,
+            20
+        ],
+        "s3": [
+            24,
+            24
+        ],
+        "s4": [
+            28,
+            28
+        ],
+        "s5": [
+            32,
+            32
+        ],
+        "level_1": {
+            "hp": 43,
+            "atk": 21,
+            "def": 15
+        },
+        "level_max": {
+            "hp": 952,
+            "atk": 476,
+            "def": 330
+        }
+    },
+    "good-night-and-sleep-well": {
+        "rarity": 4,
+        "passive": {
+            "en": "For every debuff the target enemy has, the DMG dealt by the wearer increases by {{value}}%, stacking up to 3 time(s). This effect also applies to DoT."
+        },
+        "s1": [
+            12
+        ],
+        "s2": [
+            15
+        ],
+        "s3": [
+            18
+        ],
+        "s4": [
+            21
+        ],
+        "s5": [
+            24
+        ],
+        "level_1": {
+            "hp": 43,
+            "atk": 21,
+            "def": 15
+        },
+        "level_max": {
+            "hp": 952,
+            "atk": 476,
+            "def": 330
+        }
+    },
+    "hidden-shadow": {
+        "rarity": 3,
+        "passive": {
+            "en": "After using Skill, the wearer's next Basic ATK deals Additional DMG equal to {{value}}% of ATK to the target enemy."
+        },
+        "s1": [
+            60
+        ],
+        "s2": [
+            75
+        ],
+        "s3": [
+            90
+        ],
+        "s4": [
+            105
+        ],
+        "s5": [
+            120
+        ],
+        "level_1": {
+            "hp": 38,
+            "atk": 14,
+            "def": 12
+        },
+        "level_max": {
+            "hp": 846,
+            "atk": 317,
+            "def": 264
+        }
+    },
+    "holiday-thermae-escapade": {
+        "rarity": 4,
+        "passive": {
+            "en": "Increases the wearer's DMG dealt by {{value}}%. After the wearer attacks, there is a 100% base chance to inflict the attacked target with Vulnerability, increasing the DMG they receive by {{value}}% for 2 turn(s). Effects of the same type cannot stack."
+        },
+        "s1": [
+            16,
+            10.0
+        ],
+        "s2": [
+            20,
+            11.5
+        ],
+        "s3": [
+            24,
+            13.0
+        ],
+        "s4": [
+            28,
+            14.5
+        ],
+        "s5": [
+            32,
+            16.0
+        ],
+        "level_1": {
+            "hp": 48,
+            "atk": 24,
+            "def": 15
+        },
+        "level_max": {
+            "hp": 1058,
+            "atk": 529,
+            "def": 330
+        }
+    },
+    "in-the-name-of-the-world": {
+        "rarity": 5,
+        "passive": {
+            "en": "Increases the wearer's DMG to debuffed enemies by {{value}}%. When the wearer uses their Skill, the Effect Hit Rate for this attack increases by {{value}}%, and ATK increases by {{value}}%."
+        },
+        "s1": [
+            24,
+            18,
+            24
+        ],
+        "s2": [
+            28,
+            21,
+            28
+        ],
+        "s3": [
+            32,
+            24,
+            32
+        ],
+        "s4": [
+            36,
+            27,
+            36
+        ],
+        "s5": [
+            40,
+            30,
+            40
+        ],
+        "level_1": {
+            "hp": 48,
+            "atk": 26,
+            "def": 21
+        },
+        "level_max": {
+            "hp": 1058,
+            "atk": 582,
+            "def": 463
+        }
+    },
     "incessant-rain": {
         "rarity": 5,
         "passive": {
@@ -40,45 +364,40 @@
             "def": 463
         }
     },
-    "along-the-passing-shore": {
-        "rarity": 5,
+     "its-showtime": {
+        "rarity": 4,
         "passive": {
-            "en": "Increases the wearer's CRIT DMG by {{value}}%. When the wearer hits an enemy target, inflicts Mirage Fizzle on the enemy, lasting for 1 turn. Each time the wearer attacks, this effect can only trigger 1 time on each target. The wearer deals {{value}}% increased DMG to targets afflicted with Mirage Fizzle, and the DMG dealt by Ultimate additionally increases by {{value}}%."
+            "en": "When the wearer inflicts a debuff on an enemy, gains a stack of Trick. Every stack of Trick increases the wearer's DMG dealt by {{value}}%, stacking up to 3 time(s). This effect lasts for 1 turn(s). When the wearer's Effect Hit Rate is 80% or higher, increases ATK by {{value}}%."
         },
         "s1": [
-            36,
-            24,
-            24
+            6,
+            20
         ],
         "s2": [
-            42,
-            28,
-            28
+            7,
+            24
         ],
         "s3": [
-            48,
-            32,
-            32
+            8,
+            28
         ],
         "s4": [
-            54,
-            36,
-            36
+            9,
+            32
         ],
         "s5": [
-            60,
-            40,
-            40
+            10,
+            36
         ],
         "level_1": {
             "hp": 48,
-            "atk": 28,
-            "def": 18
+            "atk": 21,
+            "def": 12
         },
         "level_max": {
             "hp": 1058,
-            "atk": 635,
-            "def": 396
+            "atk": 476,
+            "def": 264
         }
     }
 }
