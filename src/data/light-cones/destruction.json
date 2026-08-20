@@ -190,7 +190,7 @@
     },
 
 "dance-at-sunset": {
-        "rarity": 3,
+        "rarity": 5,
         "passive": {
             "en": "Greatly increases the wearer's chance of getting attacked and increases CRIT DMG by {{value}}%. After the wearer uses Ultimate, receives 1 stack of Firedance, lasting for 2 turns and stacking up to 2 time(s). Each stack of Firedance increases the DMG dealt by the wearer's follow-up attack by {{value}}%."
         },
