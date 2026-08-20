@@ -16,7 +16,7 @@ type LocaleBundle = {
 
 const localeFiles = {
     weapon: 'weapons',
-    artifact: 'artifact-sets',
+    artifact: 'relic-sets',
     lightcone: 'light-cones',
     character: 'characters',
     stat: 'stats',

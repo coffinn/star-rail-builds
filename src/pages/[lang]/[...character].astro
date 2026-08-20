@@ -1,6 +1,6 @@
 ---
 import LightCone from '../../components/LightCone.astro';
-import Artifact from '../../components/Artifact.astro';
+import Relic from '../../components/Relic.astro';
 import RelicStats from '../../components/RelicStats.astro';
 import CharacterInfo from '../../components/CharacterInfo.astro';
 import Trace from '../../components/Trace.astro';
@@ -122,8 +122,8 @@ const noteMarkerExplanation = t(
                                         />
                                     )}
                                     {build.artifacts.sets && (
-                                        <Artifact
-                                            artifacts={build.artifacts}
+                                        <Relic
+                                            relics={build.artifacts}
                                             locale={locale}
                                             lang={currentLang}
                                         />
