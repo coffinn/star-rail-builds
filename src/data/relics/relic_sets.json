@@ -161,7 +161,7 @@
             "en": "Increases ATK by 12%."
         },
         "4p": {
-            "en": "While the wearer's memosprite is on the field, increases the wearer's SPD by 6%. When the wearer's memosprite attacks, increases the wearer's and memosprite's CRIT DMG by 30%, lasting for 2 turn(s).."
+            "en": "While the wearer's memosprite is on the field, increases the wearer's SPD by 6%. When the wearer's memosprite attacks, increases the wearer's and memosprite's CRIT DMG by 30%, lasting for 2 turn(s)."
         }
     },
     "hunter-of-glacial-forest": {
@@ -554,7 +554,7 @@
             "crit-dmg"
         ],
         "2p": {
-            "en": "ncreases the wearer's Max HP by 12%. When the wearer's Max HP is 5000 or higher, increases the wearer's and their memosprite's CRIT DMG by 28%."
+            "en": "Increases the wearer's Max HP by 12%. When the wearer's Max HP is 5000 or higher, increases the wearer's and their memosprite's CRIT DMG by 28%."
         }
     },
     "broken-keel": {
