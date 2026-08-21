@@ -364,7 +364,7 @@
             "def": 463
         }
     },
-     "it-s-showtime": {
+     "its-showtime": {
         "rarity": 4,
         "passive": {
             "en": "When the wearer inflicts a debuff on an enemy, gains a stack of Trick. Every stack of Trick increases the wearer's DMG dealt by {{value}}%, stacking up to 3 time(s). This effect lasts for 1 turn(s). When the wearer's Effect Hit Rate is 80% or higher, increases ATK by {{value}}%."
