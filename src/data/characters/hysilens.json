@@ -12,7 +12,7 @@
     "atk": 601,
     "def": 485,
     "spd": 102
-},
+  },
 
   "abilities": {
     "basic": {
@@ -84,7 +84,7 @@
         "tag": "Impair",
         "description": "After using Technique, creates a Special Dimension that lasts for 20 seconds and automatically moves forward. Enemies within the Special Dimension enter the \"Soulstruck\" state. \"Soulstruck\" enemies will not attack ally targets and will follow the dimension while it persists. After entering combat with \"Soulstruck\" enemies, there is a 100% base chance to inflict each enemy target with 2 of the following states: Wind Shear/Bleed/Burn/Shock, all of which are equivalent to those provided by Hysilens's Talent effect. Only 1 Dimension Effect created by allies can exist at the same time."
     }
-},
+  },
 
   "major_traces": {
     "2": {
@@ -101,7 +101,7 @@
         "name": "The Fiddle of Pearls",
         "description": "For every 10% of Hysilens's Effect Hit Rate that exceeds 60%, increases her DMG dealt by 15%, up to a max increase of 90%."
     }
-},
+  },
 
   "stat_bonuses": [
     {
@@ -116,7 +116,7 @@
         "stat": "Effect HIT Rate",
         "value": "10%"
     }
-],
+  ],
 
   "eidolons": [
     {
