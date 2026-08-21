@@ -14,6 +14,233 @@
             "en": "After the wearer uses their Ultimate, their action is Advanced Forward by 25%."
         }
     },
+    "genius-of-brilliant-stars": {
+        "type": "cavern",
+        "rarity": 5,
+        "version_released": "1.0",
+        "tags": [
+            "quantum-dmg",
+            "def-ignore"
+        ],
+        "2p": {
+            "en": "Increases Quantum DMG by 10%."
+        },
+        "4p": {
+            "en": "When the wearer deals DMG to the target enemy, ignores 10% DEF. If the target enemy has Quantum Weakness, the wearer additionally ignores 10% DEF."
+        }
+    },
+    "band-of-sizzling-thunder": {
+        "type": "cavern",
+        "rarity": 5,
+        "version_released": "1.0",
+        "tags": [
+            "lightning-dmg"
+        ],
+        "2p": {
+            "en": "Increases Lightning DMG by 10%."
+        },
+        "4p": {
+            "en": "When the wearer uses their Skill, increases the wearer's ATK by 20% for 1 turn(s)."
+        }
+    },
+    "champion-of-streetwise-boxing": {
+        "type": "cavern",
+        "rarity": 5,
+        "version_released": "1.0",
+        "tags": [
+            "physical-dmg"
+        ],
+        "2p": {
+            "en": "Increases Physical DMG by 10%."
+        },
+        "4p": {
+            "en": "After the wearer attacks or is hit, their ATK increases by 5% for the rest of the battle. This effect can stack up to 5 time(s)."
+        }
+    },
+    "firesmith-of-lava-forging": {
+        "type": "cavern",
+        "rarity": 5,
+        "version_released": "1.0",
+        "tags": [
+            "fire-dmg"
+        ],
+        "2p": {
+            "en": "Increases Fire DMG by 10%."
+        },
+        "4p": {
+            "en": "Increases the wearer's Skill DMG by 12%. After unleashing Ultimate, increases the wearer's Fire DMG by 12% for the next attack."
+        }
+    },
+    "guard-of-wuthering-snow": {
+        "type": "cavern",
+        "rarity": 5,
+        "version_released": "1.0",
+        "tags": [
+            "dmg-reduction"
+        ],
+        "2p": {
+            "en": "Reduces DMG taken by 8%."
+        },
+        "4p": {
+            "en": "At the beginning of the turn, if the wearer's HP is equal to or less than 50%, restores HP equal to 8% of their Max HP and regenerates 5 Energy."
+        }
+    },
+    "hunter-of-glacial-forest": {
+        "type": "cavern",
+        "rarity": 5,
+        "version_released": "1.0",
+        "tags": [
+            "ice-dmg"
+        ],
+        "2p": {
+            "en": "Increases Ice DMG by 10%."
+        },
+        "4p": {
+            "en": "After the wearer uses their Ultimate, their CRIT DMG increases by 25% for 2 turn(s)."
+        }
+    },
+    "knight-of-purity-palace": {
+        "type": "cavern",
+        "rarity": 5,
+        "version_released": "1.0",
+        "tags": [
+            "def"
+        ],
+        "2p": {
+            "en": "Increases DEF by 15%."
+        },
+        "4p": {
+            "en": "Increases the max DMG that can be absorbed by the Shield created by the wearer by 20%."
+        }
+    },
+    "musketeer-of-wild-wheat": {
+        "type": "cavern",
+        "rarity": 5,
+        "version_released": "1.0",
+        "tags": [
+            "atk"
+        ],
+        "2p": {
+            "en": "ATK increases by 12%."
+        },
+        "4p": {
+            "en": "The wearer's SPD increases by 6% and Basic ATK DMG increases by 10%."
+        }
+    },
+    "passerby-of-wandering-cloud": {
+        "type": "cavern",
+        "rarity": 5,
+        "version_released": "1.0",
+        "tags": [
+            "ogh"
+        ],
+        "2p": {
+            "en": "Increases Outgoing Healing by 10%."
+        },
+        "4p": {
+            "en": "At the start of the battle, immediately regenerates 1 Skill Point."
+        }
+    },
+    "thief-of-shooting-meteor": {
+        "type": "cavern",
+        "rarity": 5,
+        "version_released": "1.0",
+        "tags": [
+            "break-effect"
+        ],
+        "2p": {
+            "en": "Increases Break Effect by 16%."
+        },
+        "4p": {
+            "en": "Increases the wearer's Break Effect by 16%. After the wearer inflicts Weakness Break on an enemey, regenerates 3 Energy."
+        }
+    },
+    "wastelander-of-banditry-desert": {
+        "type": "cavern",
+        "rarity": 5,
+        "version_released": "1.0",
+        "tags": [
+            "img-dmg"
+        ],
+        "2p": {
+            "en": "Increases Imaginary DMG by 10%."
+        },
+        "4p": {
+            "en": "When attacking debuffed enemies, the wearer's CRIT Rate increases by 10%, and their CRIT DMG increases by 20% against Imprisoned enemies."
+        }
+    },
+    "belobog-of-the-architects": {
+        "type": "planar",
+        "rarity": 5,
+        "version_released": "1.0",
+        "tags": [
+            "def",
+            "effect-hit-rate"
+        ],
+        "2p": {
+            "en": "Increases the wearer's DEF by 15%. When the wearer's Effect Hit Rate is 50% or higher, the wearer gains an extra 15% DEF."
+        }
+    },
+    "fleet-of-the-ageless": {
+        "type": "planar",
+        "rarity": 5,
+        "version_released": "1.0",
+        "tags": [
+            "hp",
+            "atk"
+        ],
+        "2p": {
+            "en": "Increases the wearer's Max HP by 12%. When the wearer's SPD reaches 120 or higher, all allies' ATK increases by 8%."
+        }
+    },
+    "inert-salsotto": {
+        "type": "planar",
+        "rarity": 5,
+        "version_released": "1.0",
+        "tags": [
+            "ultimate-dmg",
+            "fua-dmg",
+            "crit-rate"
+        ],
+        "2p": {
+            "en": "Increases the wearer's Max HP by 12%. When the wearer's SPD reaches 120 or higher, all allies' ATK increases by 8%."
+        }
+    },
+    "celestial-differentiator": {
+        "type": "planar",
+        "rarity": 5,
+        "version_released": "1.0",
+        "tags": [
+            "crit-dmg",
+            "crit-rate"
+        ],
+        "2p": {
+            "en": "Increases the wearer's CRIT DMG by 16%. When the wearer's current CRIT DMG reaches 120% or higher, after entering battle, the wearer's CRIT Rate increases by 60% until the end of their first attack."
+        }
+    },
+    "pan-cosmic-commercial-enterprise": {
+        "type": "planar",
+        "rarity": 5,
+        "version_released": "1.0",
+        "tags": [
+            "effect-hit-rate",
+            "atk"
+        ],
+        "2p": {
+            "en": "Increases the wearer's CRIT DMG by 16%. When the wearer's current CRIT DMG reaches 120% or higher, after entering battle, the wearer's CRIT Rate increases by 60% until the end of their first attack."
+        }
+    },
+    "space-sealing-station": {
+        "type": "planar",
+        "rarity": 5,
+        "version_released": "1.0",
+        "tags": [
+            "atk"
+        ],
+        "2p": {
+            "en": "Increases the wearer's ATK by 12%. When the wearer's SPD reaches 120 or higher, the wearer's ATK increases by an extra 12%."
+        }
+    },
 
     "sprightly-vonwacq": {
         "type": "planar",
