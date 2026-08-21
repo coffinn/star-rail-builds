@@ -30,7 +30,7 @@
             "def": 264
         }
     },
-    "dream-s-montage": {
+    "dreams-montage": {
         "rarity": 4,
         "passive": {
             "en": "Increases the wearer's SPD by {{value}}%. After attacking enemy targets that are Weakness Broken, regenerates {{value}} Energy. This effect can trigger up to 2 time(s) per turn."
@@ -472,7 +472,7 @@
             "def": 463
         }
     },
-    "unto-tomorrow-s-morrow": {
+    "unto-tomorrows-morrow": {
         "rarity": 4,
         "passive": {
             "en": "Increases the wearer's Outgoing Healing by {{value}}%. When an ally target's current HP percentage is greater than or equal to 50%, increases the DMG dealt by {{value}}%."
@@ -543,7 +543,7 @@
             "atk": 370,
             "def": 396
         }
-    },"what-is-real-": {
+    },"what-is-real": {
         "rarity": 4,
         "passive": {
             "en": "Increases the wearer's Break Effect by {{value}}%. After using Basic ATK, restores HP for the wearer by an amount equal to {{value}}% of Max HP plus 800."
