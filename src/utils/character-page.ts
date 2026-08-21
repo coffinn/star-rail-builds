@@ -31,7 +31,7 @@ type BuildContext = {
     lang: string;
     locale: any;
     translator: TranslationHelper;
-    artifactSetData: Record<string, any>;
+    relicSetData: Record<string, any>;
 };
 
 type WeaponTranslationContext = {
@@ -330,77 +330,102 @@ function translateSubstatPriorityItem(
 }
 
 /**
- * Translates an artifact set ID, falling back to stat translations for pseudo-sets.
+ * Translates a relic set ID, falling back to stat translations
+ * for pseudo-sets.
  */
-function translateArtifactSetName(
+function translateRelicSetName(
     translator: TranslationHelper,
     locale: any,
     id: string,
     sourceFile: string,
 ) {
-    const artifactName = t(locale, 'artifact', id, sourceFile, false);
+    const relicName = t(
+        locale,
+        'relic',
+        id,
+        sourceFile,
+        false,
+    );
 
-    if (artifactName !== id) {
-        return artifactName;
+    if (relicName !== id) {
+        return relicName;
     }
 
-    return translator.translate('stat', id, sourceFile);
+    return translator.translate(
+        'stat',
+        id,
+        sourceFile,
+    );
 }
 
 /**
- * Normalizes one artifact set item with translated text and shared set info.
+ * Normalizes one relic set item with translated text
+ * and shared set info.
  */
-function translateArtifactSetItem(
+function translateRelicSetItem(
     translator: TranslationHelper,
     locale: any,
     item: any,
     sourceFile: string,
-    artifactSetData: Record<string, any>,
+    relicSetData: Record<string, any>,
 ) {
-    const id = translator.resolveAlias('relic', item.name);
+    const id = translator.resolveAlias(
+        'relic',
+        item.name,
+    );
 
     return {
         ...item,
         id,
-        name: translateArtifactSetName(translator, locale, id, sourceFile),
-        info: artifactSetData[id],
+        name: translateRelicSetName(
+            translator,
+            locale,
+            id,
+            sourceFile,
+        ),
+        info: relicSetData[id],
     };
 }
 
 /**
- * Translates every artifact set item inside one recommendation group.
+ * Translates every relic set item inside one
+ * recommendation group.
  */
-function translateArtifactSetGroup(
+function translateRelicSetGroup(
     translator: TranslationHelper,
     locale: any,
     group: any,
     sourceFile: string,
-    artifactSetData: Record<string, any>,
+    relicSetData: Record<string, any>,
 ) {
     return {
         ...group,
+
         items: Array.isArray(group.items)
             ? group.items.map((item: any) =>
-                translateArtifactSetItem(
+                translateRelicSetItem(
                     translator,
                     locale,
                     item,
                     sourceFile,
-                    artifactSetData,
+                    relicSetData,
                 ),
             )
             : group.items,
+
         choices: Array.isArray(group.choices)
             ? group.choices.map((choice: any) => ({
                 ...choice,
-                items: (choice.items ?? []).map((item: any) =>
-                    translateArtifactSetItem(
-                        translator,
-                        locale,
-                        item,
-                        sourceFile,
-                        artifactSetData,
-                    ),
+
+                items: (choice.items ?? []).map(
+                    (item: any) =>
+                        translateRelicSetItem(
+                            translator,
+                            locale,
+                            item,
+                            sourceFile,
+                            relicSetData,
+                        ),
                 ),
             }))
             : group.choices,
@@ -408,54 +433,64 @@ function translateArtifactSetGroup(
 }
 
 /**
- * Translates ranked and conditional artifact set recommendations.
+ * Translates ranked and conditional relic recommendations.
  */
-function translateArtifactSetRecommendations(
-    artifactSets: any,
+function translateRelicSetRecommendations(
+    relicSets: any,
     translator: TranslationHelper,
     locale: any,
     sourceFile: string,
-    artifactSetData: Record<string, any>,
+    relicSetData: Record<string, any>,
 ) {
-    const translateRanks = (ranks: any[] = []) =>
-        ranks.map((rank: { groups: any[] }) => ({
-            ...rank,
-            groups: rank.groups.map((group: any) =>
-                translateArtifactSetGroup(
-                    translator,
-                    locale,
-                    group,
-                    sourceFile,
-                    artifactSetData,
+    const translateRanks = (
+        ranks: any[] = [],
+    ) =>
+        ranks.map(
+            (rank: { groups: any[] }) => ({
+                ...rank,
+
+                groups: rank.groups.map(
+                    (group: any) =>
+                        translateRelicSetGroup(
+                            translator,
+                            locale,
+                            group,
+                            sourceFile,
+                            relicSetData,
+                        ),
                 ),
-            ),
-        }));
+            }),
+        );
 
     return {
-        ...artifactSets,
+        ...relicSets,
 
         relic_sets: translateRanks(
-            artifactSets.relic_sets,
+            relicSets.relic_sets,
         ),
 
         planar_ornaments: translateRanks(
-            artifactSets.planar_ornaments,
+            relicSets.planar_ornaments,
         ),
 
-        conditional: (artifactSets.conditional ?? [])
-            .flatMap((entry: any) => entry.groups ?? [entry])
+        conditional: (
+            relicSets.conditional ?? []
+        )
+            .flatMap(
+                (entry: any) =>
+                    entry.groups ?? [entry],
+            )
             .map((group: any) =>
-                translateArtifactSetGroup(
+                translateRelicSetGroup(
                     translator,
                     locale,
                     group,
                     sourceFile,
-                    artifactSetData,
+                    relicSetData,
                 ),
             ),
     };
 }
-
 /**
  * Translates one talent priority item while preserving legacy display strings.
  */
@@ -499,17 +534,25 @@ function translateTraceItem(
 /**
  * Flattens ranked and conditional artifact groups for note collection.
  */
-function getArtifactSetNoteGroups(artifactSets: any) {
+/**
+ * Flattens ranked and conditional relic groups
+ * for note collection.
+ */
+function getRelicSetNoteGroups(
+    relicSets: any,
+) {
     return [
-        ...(artifactSets.relic_sets ?? []).flatMap(
+        ...(relicSets.relic_sets ?? []).flatMap(
             (rank: any) => rank.groups,
         ),
 
-        ...(artifactSets.planar_ornaments ?? []).flatMap(
+        ...(
+            relicSets.planar_ornaments ?? []
+        ).flatMap(
             (rank: any) => rank.groups,
         ),
 
-        ...(artifactSets.conditional ?? []),
+        ...(relicSets.conditional ?? []),
     ];
 }
 
@@ -638,44 +681,69 @@ function buildLocalizedNotes(
 ) {
     if (!buildNoteData) return null;
 
-    const notes: LocalizedBuildNote[] = Array.isArray(buildNoteData.notes)
-        ? buildNoteData.notes
-        : [];
+    const notes: LocalizedBuildNote[] =
+        Array.isArray(buildNoteData.notes)
+            ? buildNoteData.notes
+            : [];
 
-    /**
-     * Localizes inline tokens inside one calculation credit detail.
-     */
-    const localizeCreditDetail = (credit: BuildCalculationCredit) =>
+    const localizeCreditDetail = (
+        credit: BuildCalculationCredit,
+    ) =>
         credit?.detail
             ? {
                 ...credit,
-                detail: translator.translateNoteText(credit.detail, sourceFile, {
-                    lightConePopovers: true,
-                    artifactPopovers: true,
-                    rotationPopovers: true,
-                }),
+
+                detail:
+                    translator.translateNoteText(
+                        credit.detail,
+                        sourceFile,
+                        {
+                            lightConePopovers:
+                                true,
+                            relicPopovers: true,
+                            rotationPopovers:
+                                true,
+                        },
+                    ),
             }
             : credit;
 
-    /**
-     * Handles both single and multi-author calculation credit fields.
-     */
     const localizeCreditDetails = (
-        value: BuildCalculationCredit | BuildCalculationCredit[] | undefined,
+        value:
+            | BuildCalculationCredit
+            | BuildCalculationCredit[]
+            | undefined,
     ) => {
         if (Array.isArray(value)) {
-            return value.map(localizeCreditDetail);
+            return value.map(
+                localizeCreditDetail,
+            );
         }
 
-        return value ? localizeCreditDetail(value) : value;
+        return value
+            ? localizeCreditDetail(value)
+            : value;
     };
 
     return {
         ...buildNoteData,
-        artifact: localizeCreditDetails(buildNoteData.artifact),
-        artifacts: localizeCreditDetails(buildNoteData.artifacts),
-        weapons: localizeCreditDetails(buildNoteData.weapons),
-        talent: localizeCreditDetails(buildNoteData.talent),
+
+        relic: localizeCreditDetails(
+            buildNoteData.relic,
+        ),
+
+        relics: localizeCreditDetails(
+            buildNoteData.relics,
+        ),
+
+        weapons: localizeCreditDetails(
+            buildNoteData.weapons,
+        ),
+
+        talent: localizeCreditDetails(
+            buildNoteData.talent,
+        ),
+
         trace: localizeCreditDetails(
             buildNoteData.trace,
         ),
@@ -683,8 +751,15 @@ function buildLocalizedNotes(
         traces: localizeCreditDetails(
             buildNoteData.traces,
         ),
-        talents: localizeCreditDetails(buildNoteData.talents),
-        global: localizeCreditDetails(buildNoteData.global),
+
+        talents: localizeCreditDetails(
+            buildNoteData.talents,
+        ),
+
+        global: localizeCreditDetails(
+            buildNoteData.global,
+        ),
+
         notes: notes.map((note) => {
             if (note.en === undefined) {
                 throw new Error(
@@ -693,11 +768,15 @@ function buildLocalizedNotes(
             }
 
             return renderMarkdown(
-                translator.translateNoteText(note[lang] ?? note.en, sourceFile, {
-                    lightConePopovers: true,
-                    artifactPopovers: true,
-                    rotationPopovers: true,
-                }),
+                translator.translateNoteText(
+                    note[lang] ?? note.en,
+                    sourceFile,
+                    {
+                        lightConePopovers: true,
+                        relicPopovers: true,
+                        rotationPopovers: true,
+                    },
+                ),
             );
         }),
     };
@@ -717,10 +796,18 @@ function loadBuildData({
     lang,
     locale,
     translator,
-    artifactSetData,
+    relicSetData,
 }: BuildContext) {
-    const weaponsFile = fileInBuild(buildPath, 'light-cones.json');
-    const artifactSetsFile = fileInBuild(buildPath, 'relic-sets.json');
+    const weaponsFile = fileInBuild(
+        buildPath,
+        'light-cones.json',
+    );
+
+    const relicSetsFile = fileInBuild(
+        buildPath,
+        'relic-sets.json',
+    );
+
     const relicMainstatsFile = fileInBuild(
         buildPath,
         'relic-mainstats.json',
@@ -730,63 +817,105 @@ function loadBuildData({
         buildPath,
         'relic-substats.json',
     );
-    const tracesFile =
-        fileInBuild(buildPath, 'traces.json');
-    const buildNotesFile = fileInBuild(buildPath, 'build-notes.json');
 
-    const rawWeapons = loadJSON(buildPath, 'light-cones.json');
+    const tracesFile = fileInBuild(
+        buildPath,
+        'traces.json',
+    );
+
+    const buildNotesFile = fileInBuild(
+        buildPath,
+        'build-notes.json',
+    );
+
+    /*
+     * Light Cones
+     */
+    const rawWeapons = loadJSON(
+        buildPath,
+        'light-cones.json',
+    );
+
     const weapons = rawWeapons
-        ? translateWeaponRecommendations(rawWeapons, {
-            weaponData: loadWeaponData(weaponType),
-            weaponType,
-            sourceFile: weaponsFile,
-            translator,
-        })
+        ? translateWeaponRecommendations(
+            rawWeapons,
+            {
+                weaponData:
+                    loadWeaponData(
+                        weaponType,
+                    ),
+
+                weaponType,
+                sourceFile:
+                    weaponsFile,
+                translator,
+            },
+        )
         : null;
 
-    const rawArtifactSets = loadJSON(buildPath, 'relic-sets.json');
-    const rawArtifactMainstats =
-        loadJSON(buildPath, 'relic-mainstats.json');
+    /*
+     * Relics
+     */
+    const rawRelicSets = loadJSON(
+        buildPath,
+        'relic-sets.json',
+    );
 
-    const rawArtifactSubstats =
-        loadJSON(buildPath, 'relic-substats.json');
-    const artifacts = {
-        sets: rawArtifactSets
-            ? translateArtifactSetRecommendations(
-                rawArtifactSets,
+    const rawRelicMainstats = loadJSON(
+        buildPath,
+        'relic-mainstats.json',
+    );
+
+    const rawRelicSubstats = loadJSON(
+        buildPath,
+        'relic-substats.json',
+    );
+
+    const relics = {
+        sets: rawRelicSets
+            ? translateRelicSetRecommendations(
+                rawRelicSets,
                 translator,
                 locale,
-                artifactSetsFile,
-                artifactSetData,
+                relicSetsFile,
+                relicSetData,
             )
             : null,
-        mainstats: rawArtifactMainstats,
-        substats: rawArtifactSubstats,
+
+        mainstats: rawRelicMainstats,
+        substats: rawRelicSubstats,
     };
 
-    if (artifacts.mainstats) {
-        artifacts.mainstats.main_stats = translateMainStats(
-            locale,
-            artifacts.mainstats,
-            relicMainstatsFile,
-            translator,
-        );
-    }
-
-    if (artifacts.substats) {
-        artifacts.substats.substats_priority =
-            artifacts.substats.substats_priority.map((item: any) =>
-                translateSubstatPriorityItem(
-                    locale,
-                    item,
-                    relicSubstatsFile,
-                    translator,
-                ),
+    if (relics.mainstats) {
+        relics.mainstats.main_stats =
+            translateMainStats(
+                locale,
+                relics.mainstats,
+                relicMainstatsFile,
+                translator,
             );
     }
 
-    const rawTraces =
-        loadJSON(buildPath, 'traces.json');
+    if (relics.substats) {
+        relics.substats.substats_priority =
+            relics.substats.substats_priority.map(
+                (item: any) =>
+                    translateSubstatPriorityItem(
+                        locale,
+                        item,
+                        relicSubstatsFile,
+                        translator,
+                    ),
+            );
+    }
+
+    /*
+     * Traces
+     */
+    const rawTraces = loadJSON(
+        buildPath,
+        'traces.json',
+    );
 
     const traces = rawTraces
         ? translateTracePriorities(
@@ -795,69 +924,113 @@ function loadBuildData({
             tracesFile,
         )
         : null;
+
+    /*
+     * Notes
+     */
     const notes = {
         weapons: {
-            global: collectSectionNotes(weapons, weaponsFile, lang, translator),
+            global: collectSectionNotes(
+                weapons,
+                weaponsFile,
+                lang,
+                translator,
+            ),
+
             items: collectNotes(
                 weapons
                     ? [
                         ...weapons.weapons,
-                        ...(weapons.conditional ? [{ items: weapons.conditional }] : []),
+
+                        ...(weapons.conditional
+                            ? [
+                                {
+                                    items:
+                                        weapons.conditional,
+                                },
+                            ]
+                            : []),
                     ]
                     : [],
-                (weapon: { name: any }) => weapon.name,
+
+                (weapon: {
+                    name: any;
+                }) => weapon.name,
+
                 weaponsFile,
                 lang,
                 translator,
             ),
         },
-        artifacts: {
+
+        relics: {
             global: [
                 ...collectSectionNotes(
-                    artifacts.sets,
-                    artifactSetsFile,
+                    relics.sets,
+                    relicSetsFile,
                     lang,
                     translator,
                 ),
+
                 ...collectSectionNotes(
-                    artifacts.mainstats,
+                    relics.mainstats,
                     relicMainstatsFile,
                     lang,
                     translator,
                 ),
+
                 ...collectSectionNotes(
-                    artifacts.substats,
+                    relics.substats,
                     relicSubstatsFile,
                     lang,
                     translator,
                 ),
             ],
+
             sets: collectNotes(
-                artifacts.sets ? getArtifactSetNoteGroups(artifacts.sets) : [],
-                (artifact: { name: any; pieces: any }) =>
-                    `${artifact.name} (${artifact.pieces})`,
-                artifactSetsFile,
+                relics.sets
+                    ? getRelicSetNoteGroups(
+                        relics.sets,
+                    )
+                    : [],
+
+                (relic: {
+                    name: any;
+                    pieces: any;
+                }) =>
+                    `${relic.name} (${relic.pieces})`,
+
+                relicSetsFile,
                 lang,
                 translator,
             ),
-            mainstats: artifacts.mainstats
+
+            mainstats: relics.mainstats
                 ? collectMainStatNotes(
-                    artifacts.mainstats.main_stats,
+                    relics.mainstats
+                        .main_stats,
                     relicMainstatsFile,
                     lang,
                     translator,
                 )
                 : [],
-            substats: artifacts.substats
+
+            substats: relics.substats
                 ? collectStatNotes(
-                    artifacts.substats.substats_priority,
-                    (stat: { name: any }) => stat.name,
+                    relics.substats
+                        .substats_priority,
+
+                    (stat: {
+                        name: any;
+                    }) => stat.name,
+
                     relicSubstatsFile,
                     lang,
                     translator,
                 )
                 : [],
         },
+
         traces: {
             global: collectSectionNotes(
                 traces,
@@ -868,7 +1041,11 @@ function loadBuildData({
 
             items: collectNotes(
                 traces?.traces ?? [],
-                (trace: { name: any }) => trace.name,
+
+                (trace: {
+                    name: any;
+                }) => trace.name,
+
                 tracesFile,
                 lang,
                 translator,
@@ -876,19 +1053,35 @@ function loadBuildData({
         },
     };
 
-    const buildNoteData = loadJSON(buildPath, 'build-notes.json');
-    const rawBuildName =
-        buildNoteData?.name?.[lang] ?? buildNoteData?.name?.en ?? buildName;
+    /*
+     * Build-level notes
+     */
+    const buildNoteData = loadJSON(
+        buildPath,
+        'build-notes.json',
+    );
 
-    // Build cards only deal with display-ready data and pre-rendered note HTML.
+    const rawBuildName =
+        buildNoteData?.name?.[lang] ??
+        buildNoteData?.name?.en ??
+        buildName;
+
     return {
-        name: translator.translateNoteText(rawBuildName, buildNotesFile),
-        isBest: buildNoteData?.best === true,
+        name: translator.translateNoteText(
+            rawBuildName,
+            buildNotesFile,
+        ),
+
+        isBest:
+            buildNoteData?.best === true,
+
         slug: buildName,
+
         weapons,
-        artifacts,
+        relics,
         traces,
         notes,
+
         buildNote: buildLocalizedNotes(
             buildNoteData,
             buildNotesFile,
@@ -919,13 +1112,16 @@ export function getCharacterPageData({
     const currentLang = lang ?? 'en';
     const locale = getLocale(currentLang);
     const weaponData = loadAllWeaponData();
-    const artifactSetData = loadRelicSetData();
-    const translator = new TranslationHelper(
-        locale,
-        weaponData,
-        currentLang,
-        artifactSetData,
-    );
+    const relicSetData =
+        loadRelicSetData();
+
+    const translator =
+        new TranslationHelper(
+            locale,
+            weaponData,
+            currentLang,
+            relicSetData,
+        );
     const characterSlug = character.toLowerCase();
     const slugParts = parsePublicCharacterSlug(characterSlug);
     const contentSlug = slugParts.character;
@@ -982,7 +1178,7 @@ export function getCharacterPageData({
                 lang: currentLang,
                 locale,
                 translator,
-                artifactSetData,
+                relicSetData,
             }),
         ),
         warnings: translator.getWarnings(),
