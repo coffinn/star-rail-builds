@@ -1,3 +1,587 @@
 {
-    
+    "fly-into-a-pink-tomorrow": {
+        "rarity": 4,
+        "version_released": "3.7",
+        "passive": {
+            "en": "Increases the wearer's CRIT DMG by {{value}}%. When equipped by Trailblazer (Remembrance), increases all ally targets' DMG dealt by {{value}}% and DMG dealt by Enhanced Basic ATK \"Together, We Script Tomorrow!\" by {{value}}%."
+        },
+        "s1": [
+            12,
+            8,
+            60
+        ],
+        "s2": [
+            15,
+            10,
+            70
+        ],
+        "s3": [
+            18,
+            12,
+            80
+        ],
+        "s4": [
+            21,
+            14,
+            90
+        ],
+        "s5": [
+            24,
+            16,
+            100
+        ],
+        "level_1": {
+            "hp": 38,
+            "atk": 21,
+            "def": 18
+        },
+        "level_max": {
+            "hp": 846,
+            "atk": 476,
+            "def": 396
+        }
+    },
+    "geniuses-greetings": {
+        "rarity": 4,
+        "version_released": "3.0",
+        "passive": {
+            "en": "Increases the wearer's ATK by {{value}}%. After the wearer uses Ultimate, increases the Basic ATK DMG dealt by the wearer and their memosprite by {{value}}%, lasting for 3 turn(s)."
+        },
+        "s1": [
+            16,
+            20
+        ],
+        "s2": [
+            20,
+            25
+        ],
+        "s3": [
+            24,
+            30
+        ],
+        "s4": [
+            28,
+            35
+        ],
+        "s5": [
+            32,
+            40
+        ],
+        "level_1": {
+            "hp": 43,
+            "atk": 21,
+            "def": 15
+        },
+        "level_max": {
+            "hp": 952,
+            "atk": 476,
+            "def": 330
+        }
+    },
+    "long-may-rainbows-adorn-the-sky": {
+        "rarity": 5,
+        "version_released": "3.3",
+        "passive": {
+            "en": "Increases the wearer's SPD by {{value}}%. When the wearer uses Basic ATK, Skill, or Ultimate, consumes all allies' HP equal to {{value}}% of their current HP and additionally deals 1 instance of Additional DMG of the wearer's memosprite Type equal to {{value}}% of the total consumed HP to the attacked target after the next attack launched by the wearer's memosprite. The total HP consumed is then reset. When the wearer's memosprite uses Memosprite Skill, increases the DMG taken by all enemies by {{value}}% for 2 turn(s). The same types of effects cannot stack."
+        },
+        "s1": [
+            18,
+            1,
+            250,
+            18
+        ],
+        "s2": [
+            21,
+            1.25,
+            312.5,
+            22.5
+        ],
+        "s3": [
+            24,
+            1.5,
+            375,
+            27
+        ],
+        "s4": [
+            27,
+            1.75,
+            437.5,
+            31.5
+        ],
+        "s5": [
+            30,
+            2,
+            500,
+            36
+        ],
+        "level_1": {
+            "hp": 52,
+            "atk": 21,
+            "def": 24
+        },
+        "level_max": {
+            "hp": 1164,
+            "atk": 476,
+            "def": 529
+        }
+    },
+    "make-farewells-more-beautiful": {
+        "rarity": 5,
+        "version_released": "3.2",
+        "passive": {
+            "en": "Increases the wearer's Max HP by {{value}}%. When the wearer or their memosprite loses HP during their own turn, the wearer gains \"Death Flower.\" \"Death Flower\" allows the wearer and their memosprite to ignore {{value}}% of the target's DEF when dealing DMG, lasting for 2 turn(s). When the wearer's memosprite disappears, advances the wearer's action by {{value}}%. This effect can only trigger up to 1 time, and the trigger count resets every time the wearer uses Ultimate."
+        },
+        "s1": [
+            30,
+            30,
+            12
+        ],
+        "s2": [
+            37,
+            35,
+            15
+        ],
+        "s3": [
+            45,
+            40,
+            18
+        ],
+        "s4": [
+            52,
+            45,
+            21
+        ],
+        "s5": [
+            60,
+            50,
+            24
+        ],
+        "level_1": {
+            "hp": 57,
+            "atk": 24,
+            "def": 18
+        },
+        "level_max": {
+            "hp": 1270,
+            "atk": 529,
+            "def": 396
+        }
+    },
+    "memorys-curtain-never-falls": {
+        "rarity": 5,
+        "version_released": "3.1",
+        "passive": {
+            "en": "Increases the wearer's SPD by {{value}}%. After the wearer uses Skill, increases the DMG dealt by all allies by {{value}}%, lasting for 3 turn(s)."
+        },
+        "s1": [
+            6,
+            8
+        ],
+        "s2": [
+            7.5,
+            10
+        ],
+        "s3": [
+            9,
+            12
+        ],
+        "s4": [
+            10.5,
+            14
+        ],
+        "s5": [
+            12,
+            16
+        ],
+        "level_1": {
+            "hp": 48,
+            "atk": 24,
+            "def": 18
+        },
+        "level_max": {
+            "hp": 1058,
+            "atk": 529,
+            "def": 396
+        }
+    },
+    "reminiscence": {
+        "rarity": 3,
+        "version_released": "3.0",
+        "passive": {
+            "en": "When memosprite's turn starts, the wearer and memosprite each gain 1 stack of \"Commemoration.\" Each stack increases DMG dealt by {{value}}%, stacking up to 4 time(s). When memosprite disappears, removes \"Commemoration\" from the wearer and memosprite."
+        },
+        "s1": [
+            8
+        ],
+        "s2": [
+            9
+        ],
+        "s3": [
+            10
+        ],
+        "s4": [
+            11
+        ],
+        "s5": [
+            12
+        ],
+        "level_1": {
+            "hp": 28,
+            "atk": 19,
+            "def": 12
+        },
+        "level_max": {
+            "hp": 635,
+            "atk": 423,
+            "def": 264
+        }
+    },
+    "rise-and-sing": {
+        "rarity": 5,
+        "version_released": "N/A",
+        "passive": {
+            "en": "Not available yet"
+        },
+        "s1": [
+            0
+        ],
+        "s2": [
+            0
+        ],
+        "s3": [
+            0
+        ],
+        "s4": [
+            0
+        ],
+        "s5": [
+            0
+        ],
+        "level_1": {
+            "hp": 0,
+            "atk": 0,
+            "def": 0
+        },
+        "level_max": {
+            "hp": 0,
+            "atk": 0,
+            "def": 0
+        }
+    },
+    "shadowburn": {
+        "rarity": 3,
+        "version_released": "3.0",
+        "passive": {
+            "en": "When the wearer summons memosprite for the first time, recovers 1 Skill Point(s) and regenerates {{value}} Energy for this unit."
+        },
+        "s1": [
+            12
+        ],
+        "s2": [
+            14
+        ],
+        "s3": [
+            16
+        ],
+        "s4": [
+            18
+        ],
+        "s5": [
+            20
+        ],
+        "level_1": {
+            "hp": 38,
+            "atk": 14,
+            "def": 12
+        },
+        "level_max": {
+            "hp": 846,
+            "atk": 317,
+            "def": 264
+        }
+    },
+    "sweat-now-cry-less": {
+        "rarity": 4,
+        "version_released": "3.0",
+        "passive": {
+            "en": "Increases the wearer's CRIT Rate by {{value}}%. When the wearer's memosprite is on the field, increases the DMG dealt by the wearer and their memosprite by {{value}}%."
+        },
+        "s1": [
+            12,
+            24
+        ],
+        "s2": [
+            14,
+            27
+        ],
+        "s3": [
+            16,
+            30
+        ],
+        "s4": [
+            18,
+            33
+        ],
+        "s5": [
+            20,
+            36
+        ],
+        "level_1": {
+            "hp": 48,
+            "atk": 24,
+            "def": 9
+        },
+        "level_max": {
+            "hp": 1058,
+            "atk": 529,
+            "def": 198
+        }
+    },
+    "the-flower-remembers": {
+        "rarity": 4,
+        "version_released": "3.4",
+        "passive": {
+            "en": "Increases the wearer's CRIT DMG by {{value}}%. The CRIT DMG dealt by the wearer's Memosprite increases by {{value}}%."
+        },
+        "s1": [
+            24,
+            24
+        ],
+        "s2": [
+            28,
+            28
+        ],
+        "s3": [
+            32,
+            32
+        ],
+        "s4": [
+            36,
+            36
+        ],
+        "s5": [
+            40,
+            40
+        ],
+        "level_1": {
+            "hp": 48,
+            "atk": 24,
+            "def": 15
+        },
+        "level_max": {
+            "hp": 1058,
+            "atk": 529,
+            "def": 330
+        }
+    },
+    "the-storys-next-page": {
+        "rarity": 4,
+        "version_released": "3.4",
+        "passive": {
+            "en": "Increases the wearer's Max HP by {{value}}%. After the wearer's memosprite attacks, the Outgoing Healing of the wearer and their memosprite increases by {{value}}%, lasting for 1 turn(s)."
+        },
+        "s1": [
+            16,
+            12
+        ],
+        "s2": [
+            20,
+            15
+        ],
+        "s3": [
+            24,
+            18
+        ],
+        "s4": [
+            28,
+            21
+        ],
+        "s5": [
+            32,
+            24
+        ],
+        "level_1": {
+            "hp": 48,
+            "atk": 16,
+            "def": 18
+        },
+        "level_max": {
+            "hp": 1058,
+            "atk": 370,
+            "def": 396
+        }
+    },
+    "this-love-forever": {
+        "rarity": 5,
+        "version_released": "3.7",
+        "passive": {
+            "en": "Increases the wearer's SPD by {{value}}%. When the wearer's memosprite uses a Memosprite Skill on an ally, gains \"Blank,\" which increases DMG taken by all enemies by {{value}}%. When the wearer's memosprite uses a Memosprite Skill on an enemy, gains \"Verse,\" which increases CRIT DMG of all allies by {{value}}%. When the wearer's memosprite has both \"Blank\" and \"Verse,\" increases the effects of \"Blank\" and \"Verse\" by {{value}}%."
+        },
+        "s1": [
+            18,
+            10,
+            16,
+            60
+        ],
+        "s2": [
+            21,
+            12,
+            19,
+            65
+        ],
+        "s3": [
+            24,
+            14,
+            22,
+            70
+        ],
+        "s4": [
+            27,
+            16,
+            25,
+            75
+        ],
+        "s5": [
+            30,
+            18,
+            28,
+            80
+        ],
+        "level_1": {
+            "hp": 57,
+            "atk": 21,
+            "def": 21
+        },
+        "level_max": {
+            "hp": 1270,
+            "atk": 476,
+            "def": 463
+        }
+    },
+    "time-woven-into-gold": {
+        "rarity": 5,
+        "version_released": "3.0",
+        "passive": {
+            "en": "Increases the wearer's base SPD by {{value}}. After the wearer and the wearer's memosprite attacks, the wearer gains 1 stack of \"Brocade.\" Each stack of \"Brocade\" increases the wearer's and their memosprite's CRIT DMG by {{value}}%, stacking up to 6 time(s). When reaching maximum stacks, each \"Brocade\" stack additionally increases Basic ATK DMG dealt by {{value}}%."
+        },
+        "s1": [
+            12,
+            9,
+            9
+        ],
+        "s2": [
+            14,
+            10.5,
+            10.5
+        ],
+        "s3": [
+            16,
+            12,
+            12
+        ],
+        "s4": [
+            18,
+            13.5,
+            13.5
+        ],
+        "s5": [
+            20,
+            15,
+            15
+        ],
+        "level_1": {
+            "hp": 48,
+            "atk": 28,
+            "def": 18
+        },
+        "level_max": {
+            "hp": 1058,
+            "atk": 635,
+            "def": 396
+        }
+    },
+    "to-evernights-stars": {
+        "rarity": 5,
+        "version_released": "3.6",
+        "passive": {
+            "en": "Increases the wearer's Max HP by {{value}}%. When the wearer's memosprite uses an ability, the wearer gains \"Noctis.\" While the wearer has \"Noctis,\" all allies' memosprites ignore {{value}}% of the target's DEF when dealing DMG. Increases the DMG dealt by the wearer and their memosprite by {{value}}%. When the wearer's memosprite disappears, the wearer recovers {{value}} Energy. Similar effects cannot stack."
+        },
+        "s1": [
+            30,
+            20,
+            30,
+            8
+        ],
+        "s2": [
+            37.5,
+            22.5,
+            37.5,
+            10
+        ],
+        "s3": [
+            45,
+            25,
+            45,
+            12
+        ],
+        "s4": [
+            52.5,
+            27.5,
+            52.5,
+            14
+        ],
+        "s5": [
+            60,
+            30,
+            60,
+            16
+        ],
+        "level_1": {
+            "hp": 52,
+            "atk": 24,
+            "def": 21
+        },
+        "level_max": {
+            "hp": 1164,
+            "atk": 529,
+            "def": 463
+        }
+    },
+    "victory-in-a-blink": {
+        "rarity": 4,
+        "version_released": "3.0",
+        "passive": {
+            "en": "Increases the wearer's CRIT DMG by 12%. When the wearer's memosprite uses an ability on an ally target, increases the DMG dealt by all ally targets by 8%, lasting for 3 turn(s)."
+        },
+        "s1": [
+            12,
+            8
+        ],
+        "s2": [
+            15,
+            10
+        ],
+        "s3": [
+            18,
+            12
+        ],
+        "s4": [
+            21,
+            14
+        ],
+        "s5": [
+            24,
+            16
+        ],
+        "level_1": {
+            "hp": 38,
+            "atk": 21,
+            "def": 18
+        },
+        "level_max": {
+            "hp": 846,
+            "atk": 476,
+            "def": 396
+        }
+    }
 }
