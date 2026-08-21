@@ -2,15 +2,11 @@ import { compareCharacterCards } from './character-sort.mjs';
 
 type FilterKind =
     | 'character'
-    | 'weapon'
-    | 'artifact'
     | 'relic'
     | 'lightCone';
 
 const sortStorageKeys = {
-    character: 'genshin-builds:character-sort',
-    weapon: 'genshin-builds:weapon-sort',
-    artifact: 'genshin-builds:artifact-sort',
+    character: 'star-rail-builds:character-sort',
     relic: 'star-rail-builds:relic-sort',
     lightCone: 'star-rail-builds:light-cone-sort',
 } as const;
@@ -22,20 +18,6 @@ const selectors = {
         card: '[data-character-card]',
         count: '[data-character-count]',
         empty: '[data-character-empty]',
-    },
-
-    weapon: {
-        form: '[data-weapon-filters]',
-        card: '[data-weapon-card]',
-        count: '[data-weapon-count]',
-        empty: '[data-weapon-empty]',
-    },
-
-    artifact: {
-        form: '[data-artifact-filters]',
-        card: '[data-artifact-card]',
-        count: '[data-artifact-count]',
-        empty: '[data-artifact-empty]',
     },
 
     lightCone: {
@@ -202,31 +184,7 @@ if (kind) {
     applyFilters();
 }
 
-document
-    .querySelector<HTMLElement>('[data-weapon-browser]')
-    ?.addEventListener('click', (event) => {
-        const button =
-            event.target instanceof Element
-                ? event.target.closest<HTMLButtonElement>('[data-weapon-refinement]')
-                : null;
-        const refinement = button?.dataset.weaponRefinement;
-        const card = button?.closest<HTMLElement>('[data-weapon-card]');
-        if (!button || !refinement || !card) return;
 
-        card
-            .querySelectorAll<HTMLElement>('[data-weapon-refinement]')
-            .forEach((item) =>
-                item.setAttribute(
-                    'aria-pressed',
-                    String(item.dataset.weaponRefinement === refinement),
-                ),
-            );
-        card
-            .querySelectorAll<HTMLElement>('[data-weapon-refinement-panel]')
-            .forEach((panel) => {
-                panel.hidden = panel.dataset.weaponRefinementPanel !== refinement;
-            });
-    });
 
 document
     .querySelector<HTMLElement>('[data-light-cone-browser]')
