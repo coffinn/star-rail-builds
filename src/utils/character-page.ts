@@ -357,7 +357,7 @@ function translateArtifactSetItem(
     sourceFile: string,
     artifactSetData: Record<string, any>,
 ) {
-    const id = translator.resolveAlias('artifact', item.name);
+    const id = translator.resolveAlias('relic', item.name);
 
     return {
         ...item,

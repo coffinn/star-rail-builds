@@ -7,12 +7,12 @@ import {
 } from './light-cone-passive';
 
 import {
-    resolveArtifactAssetUrl,
+    resolveRelicAssetUrl,
     resolveLightConeAssetUrlById,
 } from './item-assets';
 
 type TranslationCategory =
-    | 'artifact'
+    | 'relic'
     | 'lightcone'
     | 'character'
     | 'stat'
@@ -24,10 +24,11 @@ type TranslationCategory =
 type InlineTranslationCategory =
     | TranslationCategory
     | 'set'
+    | 'artifact'
     | 'weapon';
 
 const CATEGORIES: TranslationCategory[] = [
-    'artifact',
+    'relic',
     'lightcone',
     'character',
     'stat',
@@ -62,21 +63,25 @@ type SharedLightConeData = {
     };
 };
 
-type LocalizedArtifactEffect = {
+type LocalizedRelicEffect = {
     en?: string;
     [lang: string]: string | undefined;
 };
 
-type SharedArtifactSetData = {
+type SharedRelicSetData = {
     rarity: number;
-    '1p'?: LocalizedArtifactEffect;
-    '2p'?: LocalizedArtifactEffect;
-    '4p'?: LocalizedArtifactEffect;
+    '1p'?: LocalizedRelicEffect;
+    '2p'?: LocalizedRelicEffect;
+    '4p'?: LocalizedRelicEffect;
 };
 
 type TranslateNoteTextOptions = {
     lightConePopovers?: boolean;
+    relicPopovers?: boolean;
+
+    // Temporary compatibility with older callers.
     artifactPopovers?: boolean;
+
     rotationPopovers?: boolean;
 };
 
@@ -87,7 +92,7 @@ type TranslationAliasCategory = Partial<
 const aliases = translationAliases as TranslationAliasCategory;
 
 const INLINE_TRANSLATION_TOKEN_PATTERN =
-    /\[\[(?:(set|weapon|lightcone|character|stat|element|path|ability|note):)?([a-z0-9%/-]+)(?:\|([^\]\n]+))?\]\]/g;
+    /\[\[(?:(relic|set|artifact|weapon|lightcone|character|stat|element|path|ability|note):)?([a-z0-9%/-]+)(?:\|([^\]\n]+))?\]\]/g;
 const ROTATION_POPOVER_INTRO_ID = 'Rotation notation intro';
 const ROTATION_POPOVER_NUMBER_INTRO_ID = 'Rotation notation number intro';
 const ROTATION_POPOVER_EXAMPLE_ID = 'Rotation notation example';
@@ -193,7 +198,10 @@ export class TranslationHelper {
         private locale: any,
         private lightConeDataById: Record<string, SharedLightConeData> = {},
         private lang = 'en',
-        private artifactSetDataById: Record<string, SharedArtifactSetData> = {},
+        private relicSetDataById: Record<
+            string,
+            SharedRelicSetData
+        > = {},
     ) { }
 
     /**
@@ -388,8 +396,14 @@ export class TranslationHelper {
                 );
             }
 
-            if (translationCategory === 'artifact' && options.artifactPopovers) {
-                return this.renderArtifactPopover(
+            if (
+                translationCategory === 'relic' &&
+                (
+                    options.relicPopovers ||
+                    options.artifactPopovers
+                )
+            ) {
+                return this.renderRelicPopover(
                     canonicalId,
                     translation,
                     displayName,
@@ -408,8 +422,11 @@ export class TranslationHelper {
     private toTranslationCategory(
         category: InlineTranslationCategory,
     ): TranslationCategory {
-        if (category === 'set') {
-            return 'artifact';
+        if (
+            category === 'set' ||
+            category === 'artifact'
+        ) {
+            return 'relic';
         }
 
         if (category === 'weapon') {
@@ -422,8 +439,14 @@ export class TranslationHelper {
     /**
      * Resolves a short alias into its canonical translation ID.
      */
-    resolveAlias(category: TranslationCategory, id: string) {
-        const aliasCategory = category === 'artifact' ? 'set' : category;
+    resolveAlias(
+        category: TranslationCategory,
+        id: string,
+    ) {
+        const aliasCategory =
+            category === 'relic'
+                ? 'set'
+                : category;
 
         return aliases[aliasCategory]?.[id] ?? id;
     }
@@ -588,7 +611,9 @@ export class TranslationHelper {
     /**
      * Selects a localized artifact set effect with English fallback.
      */
-    private getLocalizedArtifactEffect(effect?: LocalizedArtifactEffect) {
+    private getLocalizedRelicEffect(
+        effect?: LocalizedRelicEffect,
+    ) {
         if (!effect) return '';
 
         return effect[this.lang] ?? effect.en ?? '';
@@ -597,19 +622,23 @@ export class TranslationHelper {
     /**
      * Builds the inline HTML for an artifact set translation token popover.
      */
-    private renderArtifactPopover(id: string, name: string, label = name) {
-        const info = this.artifactSetDataById[id];
+    private renderRelicPopover(
+        id: string,
+        name: string,
+        label = name,
+    ) {
+        const info = this.relicSetDataById[id];
 
         if (!info) {
             return escapeHtml(label);
         }
 
         const effectRows = [
-            { label: '1P', value: this.getLocalizedArtifactEffect(info['1p']) },
-            { label: '2P', value: this.getLocalizedArtifactEffect(info['2p']) },
-            { label: '4P', value: this.getLocalizedArtifactEffect(info['4p']) },
+            { label: '1P', value: this.getLocalizedRelicEffect(info['1p']) },
+            { label: '2P', value: this.getLocalizedRelicEffect(info['2p']) },
+            { label: '4P', value: this.getLocalizedRelicEffect(info['4p']) },
         ].filter((row) => row.value);
-        const imageUrl = resolveArtifactAssetUrl(id);
+        const imageUrl = resolveRelicAssetUrl(id);
         const imageMarkup = imageUrl
             ? [
                 '<span class="info-popover-image artifact-popover-image"><img src="',
