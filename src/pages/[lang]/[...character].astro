@@ -12,13 +12,9 @@ import { getCharacterPageData } from '../../utils/character-page';
 import { t } from '../../utils/i18n';
 import { getCharacterStaticPaths } from '../../utils/routes';
 
-export const getStaticPaths =
-    getCharacterStaticPaths;
+export const getStaticPaths = getCharacterStaticPaths;
 
-const {
-    lang,
-    character: characterPath,
-} = Astro.params;
+const { lang, character: characterPath } = Astro.params;
 
 const {
     characterSlug,
@@ -36,15 +32,12 @@ const {
 });
 
 const defaultBuildSlug =
-    builds.find(
-        (build) => build.isBest,
-    )?.slug ??
-    builds[0]?.slug;
+    builds.find((build) => build.isBest)?.slug ?? builds[0]?.slug;
 
 const calculationKeys = [
     'relic',
     'relics',
-    'weapons',
+    'light_cones',
     'talent',
     'talents',
     'global',
@@ -52,39 +45,25 @@ const calculationKeys = [
     'traces',
 ];
 
-const hasBuildCalculations = (
-    buildNote: any,
-) =>
+const hasBuildCalculations = (buildNote: any) =>
     calculationKeys.some((key) => {
-        const credits = Array.isArray(
-            buildNote?.[key],
-        )
+        const credits = Array.isArray(buildNote?.[key])
             ? buildNote[key]
             : [buildNote?.[key]];
 
-        return credits.some(
-            (credit) =>
-                credit?.author &&
-                credit?.link,
-        );
+        return credits.some((credit) => credit?.author && credit?.link);
     });
 
-const buildHasItemNotes = (
-    notes: any,
-) =>
+const buildHasItemNotes = (notes: any) =>
     [
-        notes?.weapons?.items,
+        notes?.lightCones?.items,
 
         notes?.relics?.sets,
         notes?.relics?.mainstats,
         notes?.relics?.substats,
 
         notes?.traces?.items,
-    ].some(
-        (items) =>
-            Array.isArray(items) &&
-            items.length > 0,
-    );
+    ].some((items) => Array.isArray(items) && items.length > 0);
 
 const noteMarkerExplanation = t(
     locale,
@@ -109,49 +88,27 @@ const noteMarkerExplanation = t(
         isBest: build.isBest,
         buildNote: build.buildNote,
 
-        hasCalculations:
-            hasBuildCalculations(
-                build.buildNote,
-            ),
+        hasCalculations: hasBuildCalculations(build.buildNote),
     }))}
 >
-    <div
-        class="character-builds-layout"
-        data-default-build={defaultBuildSlug}
-    >
+    <div class="character-builds-layout" data-default-build={defaultBuildSlug}>
         <div class="build-list">
             {
                 builds.map((build) => {
-                    const buildContentId =
-                        `build-content-${build.slug}`;
+                    const buildContentId = `build-content-${build.slug}`;
 
-                    const hasNoteMarkerHint =
-                        buildHasItemNotes(
-                            build.notes,
-                        );
+                    const hasNoteMarkerHint = buildHasItemNotes(build.notes);
 
-                    const isDefaultBuild =
-                        build.slug ===
-                        defaultBuildSlug;
+                    const isDefaultBuild = build.slug === defaultBuildSlug;
 
                     return (
                         <section
-                            class={`build-card${
-                                isDefaultBuild
-                                    ? ' open'
-                                    : ''
-                            }`}
+                            class={`build-card${isDefaultBuild ? ' open' : ''}`}
                             data-build-panel
                             data-id={build.slug}
                             id={buildContentId}
-                            aria-hidden={
-                                isDefaultBuild
-                                    ? 'false'
-                                    : 'true'
-                            }
-                            hidden={
-                                !isDefaultBuild
-                            }
+                            aria-hidden={isDefaultBuild ? 'false' : 'true'}
+                            hidden={!isDefaultBuild}
                         >
                             <div class="build-content">
                                 {hasNoteMarkerHint && (
@@ -163,82 +120,48 @@ const noteMarkerExplanation = t(
                                             ⓘ
                                         </span>
 
-                                        <span>
-                                            {
-                                                noteMarkerExplanation
-                                            }
-                                        </span>
+                                        <span>{noteMarkerExplanation}</span>
                                     </div>
                                 )}
 
                                 <div class="grid">
-                                    {build.weapons && (
+                                    {build.lightCones && (
                                         <LightCone
-                                            weapons={
-                                                build.weapons
-                                            }
-                                            locale={
-                                                locale
-                                            }
-                                            lang={
-                                                currentLang
-                                            }
+                                            lightCones={build.lightCones}
+                                            locale={locale}
+                                            lang={currentLang}
                                         />
                                     )}
 
                                     {build.relics.sets && (
                                         <Relic
-                                            relics={
-                                                build.relics
-                                            }
-                                            locale={
-                                                locale
-                                            }
-                                            lang={
-                                                currentLang
-                                            }
+                                            relics={build.relics}
+                                            locale={locale}
+                                            lang={currentLang}
                                         />
                                     )}
 
-                                    {build.relics
-                                        .mainstats &&
-                                        build.relics
-                                            .substats && (
+                                    {build.relics.mainstats &&
+                                        build.relics.substats && (
                                             <RelicStats
-                                                relics={
-                                                    build.relics
-                                                }
-                                                locale={
-                                                    locale
-                                                }
+                                                relics={build.relics}
+                                                locale={locale}
                                             />
                                         )}
 
                                     {build.traces && (
                                         <Trace
-                                            traces={
-                                                build.traces
-                                            }
-                                            locale={
-                                                locale
-                                            }
-                                            characterData={
-                                                characterData
-                                            }
+                                            traces={build.traces}
+                                            locale={locale}
+                                            characterData={characterData}
                                         />
                                     )}
                                 </div>
 
                                 <Notes
-                                    notes={
-                                        build.notes
-                                    }
-                                    buildNote={
-                                        build.buildNote
-                                    }
-                                    locale={
-                                        locale
-                                    }
+                                    notes={build.notes}
+                                    buildNote={build.buildNote}
+                                    locale={locale}
                                 />
                             </div>
                         </section>
@@ -248,18 +171,11 @@ const noteMarkerExplanation = t(
         </div>
     </div>
 
-    {
-        characterData && (
-            <CharacterInfo
-                character={characterData}
-            />
-        )
-    }
+    {characterData && <CharacterInfo character={characterData} />}
 </CharacterPageLayout>
 
 {
-    import.meta.env.DEV &&
-    warnings.length > 0 ? (
+    import.meta.env.DEV && warnings.length > 0 ? (
         <script
             is:inline
             set:html={`const warnings = ${JSON.stringify(

@@ -27,16 +27,19 @@ type CharacterPageDataOptions = {
 type BuildContext = {
     buildPath: string;
     buildName: string;
-    weaponType: string;
+    pathName: string;
     lang: string;
     locale: any;
     translator: TranslationHelper;
     relicSetData: Record<string, any>;
 };
 
-type WeaponTranslationContext = {
-    weaponData: Record<string, SharedWeaponData>;
-    weaponType: string;
+type LightConeTranslationContext = {
+    lightConeData: Record<
+        string,
+        SharedLightConeData
+    >;
+    pathName: string;
     sourceFile: string;
     translator: TranslationHelper;
 };
@@ -68,7 +71,7 @@ type BuildCalculationCredit = {
 const fileInBuild = (buildPath: string, fileName: string) =>
     path.join(buildPath, fileName);
 
-const weaponDataPath = path.resolve('src/data/light-cones');
+const lightConeDataPath = path.resolve('src/data/light-cones');
 const relicSetDataPath = path.resolve(
     'src/data/relics/relic_sets.json',
 );
@@ -95,14 +98,19 @@ function loadRelicSetData() {
 }
 
 /**
- * Loads shared weapon data for the current character weapon type.
+ * Loads shared Light Cone data for one Path.
  */
-function loadWeaponData(weaponType: string) {
-    const filePath = path.join(weaponDataPath, `${weaponType}.json`);
+function loadLightConeData(
+    pathName: string,
+) {
+    const filePath = path.join(
+        lightConeDataPath,
+        `${pathName}.json`,
+    );
 
     if (!fs.existsSync(filePath)) {
         throw new Error(
-            `No shared weapon data found for weapon type "${weaponType}"`,
+            `No shared Light Cone data found for Path "${pathName}"`,
         );
     }
 
@@ -110,34 +118,49 @@ function loadWeaponData(weaponType: string) {
 }
 
 /**
- * Loads every shared weapon entry so inline weapon popovers can resolve IDs.
+ * Loads every shared Light Cone entry so inline
+ * Light Cone popovers can resolve IDs.
  */
-function loadAllWeaponData() {
+function loadAllLightConeData() {
     return fs
-        .readdirSync(weaponDataPath)
-        .filter((fileName) => fileName.endsWith('.json'))
-        .reduce<Record<string, SharedWeaponData>>((weaponData, fileName) => {
-            const typeData = readJSONFile(path.join(weaponDataPath, fileName));
+        .readdirSync(lightConeDataPath)
+        .filter((fileName) =>
+            fileName.endsWith('.json'),
+        )
+        .reduce<
+            Record<
+                string,
+                SharedLightConeData
+            >
+        >((lightConeData, fileName) => {
+            const pathData = readJSONFile(
+                path.join(
+                    lightConeDataPath,
+                    fileName,
+                ),
+            );
 
-            Object.assign(weaponData, typeData);
-            return weaponData;
+            Object.assign(
+                lightConeData,
+                pathData,
+            );
+
+            return lightConeData;
         }, {});
 }
 
-type SharedWeaponData = {
+type SharedLightConeData = {
     rarity: number;
     source?: string;
+    free?: boolean;
+    version_released?: string;
 
     passive?: {
         en: string;
-        [lang: string]: string | undefined;
+        [lang: string]:
+        | string
+        | undefined;
     };
-
-    r1?: (number | number[])[];
-    r2?: (number | number[])[];
-    r3?: (number | number[])[];
-    r4?: (number | number[])[];
-    r5?: (number | number[])[];
 
     s1?: (number | number[])[];
     s2?: (number | number[])[];
@@ -145,19 +168,13 @@ type SharedWeaponData = {
     s4?: (number | number[])[];
     s5?: (number | number[])[];
 
-    substat?: string;
-
     level_1?: {
-        base_attack?: number;
-        substat_value?: string;
         hp?: number;
         atk?: number;
         def?: number;
     };
 
     level_max?: {
-        base_attack?: number;
-        substat_value?: string;
         hp?: number;
         atk?: number;
         def?: number;
@@ -165,19 +182,23 @@ type SharedWeaponData = {
 };
 
 /**
- * Reads and validates the rarity for one weapon recommendation.
+ * Gets and validates one Light Cone's rarity.
  */
-function getWeaponRarity(
-    weaponData: Record<string, SharedWeaponData>,
-    weaponId: string,
-    weaponType: string,
+function getLightConeRarity(
+    lightConeData: Record<
+        string,
+        SharedLightConeData
+    >,
+    lightConeId: string,
+    pathName: string,
     sourceFile: string,
 ) {
-    const rarity = weaponData[weaponId]?.rarity;
+    const rarity =
+        lightConeData[lightConeId]?.rarity;
 
     if (!rarity) {
         throw new Error(
-            `Missing rarity for weapon "${weaponId}" in src/data/weapons/${weaponType}.json (source: ${sourceFile})`,
+            `Missing rarity for Light Cone "${lightConeId}" in src/data/light-cones/${pathName}.json (source: ${sourceFile})`,
         );
     }
 
@@ -185,19 +206,24 @@ function getWeaponRarity(
 }
 
 /**
- * Reads and validates the shared data for one weapon recommendation.
+ * Gets and validates the shared data for
+ * one Light Cone.
  */
-function getWeaponInfo(
-    weaponData: Record<string, SharedWeaponData>,
-    weaponId: string,
-    weaponType: string,
+function getLightConeInfo(
+    lightConeData: Record<
+        string,
+        SharedLightConeData
+    >,
+    lightConeId: string,
+    pathName: string,
     sourceFile: string,
 ) {
-    const data = weaponData[weaponId];
+    const data =
+        lightConeData[lightConeId];
 
     if (!data) {
         throw new Error(
-            `Missing shared data for weapon "${weaponId}" in src/data/weapons/${weaponType}.json (source: ${sourceFile})`,
+            `Missing shared data for Light Cone "${lightConeId}" in src/data/light-cones/${pathName}.json (source: ${sourceFile})`,
         );
     }
 
@@ -205,48 +231,110 @@ function getWeaponInfo(
 }
 
 /**
- * Normalizes legacy string weapon entries into object entries.
+ * Normalizes legacy string Light Cone entries
+ * into object entries.
  */
-function normalizeWeaponItem(item: any) {
-    return typeof item === 'string' ? { name: item } : item;
+function normalizeLightConeItem(
+    item: any,
+) {
+    return typeof item === 'string'
+        ? { name: item }
+        : item;
 }
 
 /**
- * Translates one weapon item while preserving ranking metadata.
+ * Translates one Light Cone recommendation.
  */
-function translateWeaponItem(item: any, context: WeaponTranslationContext) {
-    const { weaponData, weaponType, sourceFile, translator } = context;
-    const normalizedItem = normalizeWeaponItem(item);
-    const id = translator.resolveAlias('lightcone', normalizedItem.name);
-    const weaponInfo = getWeaponInfo(weaponData, id, weaponType, sourceFile);
+function translateLightConeItem(
+    item: any,
+    context: LightConeTranslationContext,
+) {
+    const {
+        lightConeData,
+        pathName,
+        sourceFile,
+        translator,
+    } = context;
+
+    const normalizedItem =
+        normalizeLightConeItem(item);
+
+    const id = translator.resolveAlias(
+        'lightcone',
+        normalizedItem.name,
+    );
+
+    const lightConeInfo =
+        getLightConeInfo(
+            lightConeData,
+            id,
+            pathName,
+            sourceFile,
+        );
 
     return {
         ...normalizedItem,
         id,
-        rarity: getWeaponRarity(weaponData, id, weaponType, sourceFile),
-        info: weaponInfo,
-        name: translator.translate('lightcone', id, sourceFile),
+
+        rarity: getLightConeRarity(
+            lightConeData,
+            id,
+            pathName,
+            sourceFile,
+        ),
+
+        info: lightConeInfo,
+
+        name: translator.translate(
+            'lightcone',
+            id,
+            sourceFile,
+        ),
     };
 }
 
 /**
- * Translates ranked and conditional weapon recommendations.
+ * Translates ranked and conditional
+ * Light Cone recommendations.
  */
-function translateWeaponRecommendations(
-    weapons: any,
-    context: WeaponTranslationContext,
+function translateLightConeRecommendations(
+    lightCones: any,
+    context: LightConeTranslationContext,
 ) {
     return {
-        ...weapons,
-        weapons: weapons.weapons.map((position: { items: any[] }) => ({
-            ...position,
-            items: position.items.map((item) => translateWeaponItem(item, context)),
-        })),
-        conditional: weapons.conditional?.map((item: any) =>
-            translateWeaponItem(item, context),
+        ...lightCones,
+
+        light_cones: (
+            lightCones.light_cones ?? []
+        ).map(
+            (position: {
+                items: any[];
+            }) => ({
+                ...position,
+
+                items:
+                    position.items.map(
+                        (item) =>
+                            translateLightConeItem(
+                                item,
+                                context,
+                            ),
+                    ),
+            }),
         ),
+
+        conditional:
+            lightCones.conditional?.map(
+                (item: any) =>
+                    translateLightConeItem(
+                        item,
+                        context,
+                    ),
+            ),
     };
 }
+
+
 
 /**
  * Converts Astro's catch-all character param into the stable character slug.
@@ -736,8 +824,8 @@ function buildLocalizedNotes(
             buildNoteData.relics,
         ),
 
-        weapons: localizeCreditDetails(
-            buildNoteData.weapons,
+        light_cones: localizeCreditDetails(
+            buildNoteData.light_cones,
         ),
 
         talent: localizeCreditDetails(
@@ -792,13 +880,13 @@ function buildLocalizedNotes(
 function loadBuildData({
     buildPath,
     buildName,
-    weaponType,
+    pathName,
     lang,
     locale,
     translator,
     relicSetData,
 }: BuildContext) {
-    const weaponsFile = fileInBuild(
+    const lightConesFile = fileInBuild(
         buildPath,
         'light-cones.json',
     );
@@ -831,23 +919,25 @@ function loadBuildData({
     /*
      * Light Cones
      */
-    const rawWeapons = loadJSON(
+    const rawLightCones = loadJSON(
         buildPath,
         'light-cones.json',
     );
 
-    const weapons = rawWeapons
-        ? translateWeaponRecommendations(
-            rawWeapons,
+    const lightCones = rawLightCones
+        ? translateLightConeRecommendations(
+            rawLightCones,
             {
-                weaponData:
-                    loadWeaponData(
-                        weaponType,
+                lightConeData:
+                    loadLightConeData(
+                        pathName,
                     ),
 
-                weaponType,
+                pathName,
+
                 sourceFile:
-                    weaponsFile,
+                    lightConesFile,
+
                 translator,
             },
         )
@@ -929,35 +1019,35 @@ function loadBuildData({
      * Notes
      */
     const notes = {
-        weapons: {
+        lightCones: {
             global: collectSectionNotes(
-                weapons,
-                weaponsFile,
+                lightCones,
+                lightConesFile,
                 lang,
                 translator,
             ),
 
             items: collectNotes(
-                weapons
+                lightCones
                     ? [
-                        ...weapons.weapons,
+                        ...lightCones.light_cones,
 
-                        ...(weapons.conditional
+                        ...(lightCones.conditional
                             ? [
                                 {
                                     items:
-                                        weapons.conditional,
+                                        lightCones.conditional,
                                 },
                             ]
                             : []),
                     ]
                     : [],
 
-                (weapon: {
+                (lightCone: {
                     name: any;
-                }) => weapon.name,
+                }) => lightCone.name,
 
-                weaponsFile,
+                lightConesFile,
                 lang,
                 translator,
             ),
@@ -1077,7 +1167,7 @@ function loadBuildData({
 
         slug: buildName,
 
-        weapons,
+        lightCones,
         relics,
         traces,
         notes,
@@ -1111,14 +1201,15 @@ export function getCharacterPageData({
 
     const currentLang = lang ?? 'en';
     const locale = getLocale(currentLang);
-    const weaponData = loadAllWeaponData();
+    const lightConeData =
+        loadAllLightConeData();
     const relicSetData =
         loadRelicSetData();
 
     const translator =
         new TranslationHelper(
             locale,
-            weaponData,
+            lightConeData,
             currentLang,
             relicSetData,
         );
@@ -1174,7 +1265,7 @@ export function getCharacterPageData({
             loadBuildData({
                 buildPath: path.join(foundPath.path, buildName),
                 buildName,
-                weaponType: metadata.path,
+                pathName: metadata.path,
                 lang: currentLang,
                 locale,
                 translator,

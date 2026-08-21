@@ -1,10 +1,7 @@
 ---
 import { t } from '../utils/i18n';
 
-const {
-    buildNote,
-    locale,
-} = Astro.props;
+const { buildNote, locale } = Astro.props;
 
 type CalculationCredit = {
     author?: string;
@@ -17,152 +14,73 @@ type CalculationItem = {
     linkText: string;
 };
 
-const toCalculationCredits = (
-    value:
-        | CalculationCredit
-        | CalculationCredit[],
-) =>
-    (
-        Array.isArray(value)
-            ? value
-            : [value]
-    ).filter(
-        (credit) =>
-            credit?.author &&
-            credit?.link,
+const toCalculationCredits = (value: CalculationCredit | CalculationCredit[]) =>
+    (Array.isArray(value) ? value : [value]).filter(
+        (credit) => credit?.author && credit?.link,
     );
 
-const calculationItems: CalculationItem[] =
-    [
-        {
-            keys: [
-                'relic',
-                'relics',
-            ],
+const calculationItems: CalculationItem[] = [
+    {
+        keys: ['relic', 'relics'],
 
-            linkText: t(
-                locale,
-                'ui',
-                'Detailed relics calculation',
-            ),
-        },
+        linkText: t(locale, 'ui', 'Detailed relics calculation'),
+    },
 
-        {
-            keys: ['weapons'],
+    {
+        keys: ['light_cones'],
 
-            linkText: t(
-                locale,
-                'ui',
-                'Detailed weapons calculation',
-            ),
-        },
+        linkText: t(locale, 'ui', 'Detailed Light Cone calculation'),
+    },
 
-        {
-            keys: [
-                'talent',
-                'talents',
-            ],
+    {
+        keys: ['talent', 'talents'],
 
-            linkText: t(
-                locale,
-                'ui',
-                'Detailed talents calculation',
-            ),
-        },
+        linkText: t(locale, 'ui', 'Detailed talents calculation'),
+    },
 
-        {
-            keys: ['global'],
+    {
+        keys: ['global'],
 
-            linkText: t(
-                locale,
-                'ui',
-                'Detailed calculations',
-            ),
-        },
-    ];
+        linkText: t(locale, 'ui', 'Detailed calculations'),
+    },
+];
 
-const calculationCredits =
-    buildNote
-        ? calculationItems.flatMap(
-              (item) =>
-                  item.keys.flatMap(
-                      (key) =>
-                          toCalculationCredits(
-                              buildNote[
-                                  key
-                              ] ?? [],
-                          ).map(
-                              (
-                                  credit,
-                              ) => ({
-                                  ...item,
-                                  credit,
-                              }),
-                          ),
-                  ),
-          )
-        : [];
+const calculationCredits = buildNote
+    ? calculationItems.flatMap((item) =>
+          item.keys.flatMap((key) =>
+              toCalculationCredits(buildNote[key] ?? []).map((credit) => ({
+                  ...item,
+                  credit,
+              })),
+          ),
+      )
+    : [];
 ---
 
 {
-    calculationCredits.length >
-        0 && (
+    calculationCredits.length > 0 && (
         <section class="build-calculation-card">
-            <h2>
-                {t(
-                    locale,
-                    'ui',
-                    'Detailed calculations',
-                )}
-            </h2>
+            <h2>{t(locale, 'ui', 'Detailed calculations')}</h2>
 
             <div class="build-calculation-list">
-                {calculationCredits.map(
-                    ({
-                        linkText,
-                        credit,
-                    }) => (
-                        <div class="build-calculation-link">
-                            <a
-                                href={
-                                    credit.link
-                                }
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                {
-                                    linkText
-                                }
-                            </a>
+                {calculationCredits.map(({ linkText, credit }) => (
+                    <div class="build-calculation-link">
+                        <a href={credit.link} target="_blank" rel="noreferrer">
+                            {linkText}
+                        </a>
 
-                            <div class="build-calculation-credit">
-                                {credit.detail && (
-                                    <>
-                                        <span
-                                            set:html={
-                                                credit.detail
-                                            }
-                                        />
+                        <div class="build-calculation-credit">
+                            {credit.detail && (
+                                <>
+                                    <span set:html={credit.detail} />
 
-                                        <span aria-hidden="true">
-                                            {' '}
-                                            -{' '}
-                                        </span>
-                                    </>
-                                )}
-
-                                {t(
-                                    locale,
-                                    'ui',
-                                    'Thank you to',
-                                )}{' '}
-                                {
-                                    credit.author
-                                }!
-                            </div>
+                                    <span aria-hidden="true"> - </span>
+                                </>
+                            )}
+                            {t(locale, 'ui', 'Thank you to')} {credit.author}!
                         </div>
-                    ),
-                )}
+                    </div>
+                ))}
             </div>
         </section>
     )

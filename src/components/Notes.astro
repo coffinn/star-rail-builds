@@ -1,11 +1,7 @@
 ---
 import { t } from '../utils/i18n';
 
-const {
-    notes,
-    buildNote,
-    locale,
-} = Astro.props;
+const { notes, buildNote, locale } = Astro.props;
 
 type RenderedNote = {
     id: string;
@@ -24,185 +20,112 @@ type NoteSection = {
     groups: NoteGroup[];
 };
 
-const hasNoteContent = (
-    section: NoteSection,
-) =>
+const hasNoteContent = (section: NoteSection) =>
     section.global.length +
-        section.groups.reduce(
-            (total, group) =>
-                total +
-                group.items.length,
-            0,
-        ) >
+        section.groups.reduce((total, group) => total + group.items.length, 0) >
     0;
 
 const noteSections: NoteSection[] = [
     {
-        headingId:
-            'Regarding Weapons Choices:',
+        headingId: 'Regarding Light Cone Choices:',
 
-        global:
-            notes.weapons.global,
+        global: notes.lightCones.global,
 
         groups: [
             {
-                items:
-                    notes.weapons.items,
+                items: notes.lightCones.items,
             },
         ],
     },
 
     {
-        headingId:
-            'Regarding Relics Choices:',
+        headingId: 'Regarding Relics Choices:',
 
-        global:
-            notes.relics.global,
+        global: notes.relics.global,
 
         groups: [
             {
                 headingId: 'Sets',
-                items:
-                    notes.relics.sets,
+                items: notes.relics.sets,
             },
 
             {
-                headingId:
-                    'Main Stats',
+                headingId: 'Main Stats',
 
-                items:
-                    notes.relics
-                        .mainstats,
+                items: notes.relics.mainstats,
             },
 
             {
-                headingId:
-                    'Substats',
+                headingId: 'Substats',
 
-                items:
-                    notes.relics
-                        .substats,
+                items: notes.relics.substats,
             },
         ],
     },
 
     {
-        headingId:
-            'Regarding Traces Choices:',
+        headingId: 'Regarding Traces Choices:',
 
-        global:
-            notes.traces.global,
+        global: notes.traces.global,
 
         groups: [
             {
-                items:
-                    notes.traces.items,
+                items: notes.traces.items,
             },
         ],
     },
 ].filter(hasNoteContent);
 
-const hasNotes =
-    noteSections.length > 0;
+const hasNotes = noteSections.length > 0;
 ---
 
 {
-    (
-        hasNotes ||
-        buildNote?.notes?.length > 0
-    ) && (
+    (hasNotes || buildNote?.notes?.length > 0) && (
         <div class="card notes-card">
-            <h2>
-                {t(
-                    locale,
-                    'ui',
-                    'Notes',
-                )}
-            </h2>
+            <h2>{t(locale, 'ui', 'Notes')}</h2>
 
             <div class="notes-content">
                 {buildNote && (
                     <div class="notes-block">
-                        {buildNote.notes
-                            ?.length > 0 && (
+                        {buildNote.notes?.length > 0 && (
                             <div class="build-note-list">
-                                {buildNote.notes.map(
-                                    (
-                                        note: string,
-                                    ) => (
-                                        <div
-                                            set:html={
-                                                note
-                                            }
-                                        />
-                                    ),
-                                )}
+                                {buildNote.notes.map((note: string) => (
+                                    <div set:html={note} />
+                                ))}
                             </div>
                         )}
                     </div>
                 )}
 
-                {noteSections.map(
-                    (section) => (
-                        <section class="notes-section">
-                            <h3>
-                                {t(
-                                    locale,
-                                    'ui',
-                                    section.headingId,
-                                )}
-                            </h3>
+                {noteSections.map((section) => (
+                    <section class="notes-section">
+                        <h3>{t(locale, 'ui', section.headingId)}</h3>
 
-                            {section.global.map(
-                                (note) => (
-                                    <p
-                                        set:html={
-                                            note
-                                        }
-                                    />
-                                ),
-                            )}
+                        {section.global.map((note) => (
+                            <p set:html={note} />
+                        ))}
 
-                            {section.groups
-                                .filter(
-                                    (group) =>
-                                        group
-                                            .items
-                                            .length >
-                                        0,
-                                )
-                                .map(
-                                    (group) => (
-                                        <div class="note-group">
-                                            {group.headingId && (
-                                                <h4>
-                                                    {t(
-                                                        locale,
-                                                        'ui',
-                                                        group.headingId,
-                                                    )}
-                                                </h4>
-                                            )}
+                        {section.groups
+                            .filter((group) => group.items.length > 0)
+                            .map((group) => (
+                                <div class="note-group">
+                                    {group.headingId && (
+                                        <h4>
+                                            {t(locale, 'ui', group.headingId)}
+                                        </h4>
+                                    )}
 
-                                            {group.items.map(
-                                                (
-                                                    note,
-                                                ) => (
-                                                    <div
-                                                        id={
-                                                            note.id
-                                                        }
-                                                        class="note-target"
-                                                        set:html={`<span class="element-bold">${note.name}:</span> ${note.note}`}
-                                                    />
-                                                ),
-                                            )}
-                                        </div>
-                                    ),
-                                )}
-                        </section>
-                    ),
-                )}
+                                    {group.items.map((note) => (
+                                        <div
+                                            id={note.id}
+                                            class="note-target"
+                                            set:html={`<span class="element-bold">${note.name}:</span> ${note.note}`}
+                                        />
+                                    ))}
+                                </div>
+                            ))}
+                    </section>
+                ))}
             </div>
         </div>
     )
