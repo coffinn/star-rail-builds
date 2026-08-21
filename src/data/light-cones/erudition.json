@@ -1,6 +1,7 @@
 {
    "a-dream-scented-in-wheat": {
         "rarity": 4,
+        "version_released": "3.4",
         "passive": {
             "en": "Increases the wearer's CRIT Rate by {{value}}%. The Ultimate DMG and Follow-up ATK DMG dealt by the wearer increase by {{value}}%."
         },
@@ -37,6 +38,7 @@
     },
     "a-star-that-lights-the-night": {
         "rarity": 5,
+        "version_released": "4.4",
         "passive": {
             "en": "The wearer ignores {{value}}% of the target's DEF when dealing DMG. When the wearer uses Assist Skill, they regenerate 6 Energy and gain \"Sail,\" lasting for 2 turns and stacking up to 3 time(s). Each stack of \"Sail\" increases Assist Skill DMG by {{value}}%. When \"Sail\" reaches 3 stacks, each stack of \"Sail\" increases Ultimate DMG by {{value}}%."
         },
@@ -78,6 +80,7 @@
     },
     "after-the-charmony-fall": {
         "rarity": 4,
+        "version_released": "2.3",
         "passive": {
             "en": "Increases the wearer's Break Effect by {{value}}%. After the wearer uses Ultimate, increases SPD by {{value}}%, lasting for 2 turn(s)."
         },
@@ -114,6 +117,7 @@
     },
     "an-instant-before-a-gaze": {
         "rarity": 5,
+        "version_released": "1.5",
         "passive": {
             "en": "Increases the wearer's CRIT DMG by {{value}}%. When the wearer uses Ultimate, increases DMG dealt by the wearer's Ultimate based on their Max Energy. Each point of Energy increases DMG dealt by Ultimate by {{value}}%. A max of 180 points of Energy will be taken into account for this."
         },
@@ -149,6 +153,7 @@
         }
     },"before-dawn": {
         "rarity": 5,
+        "version_released": "1.0",
         "passive": {
             "en": "Increases the wearer's CRIT DMG by {{value}}%. Increases DMG dealt by the wearer's Skill and Ultimate by {{value}}%. After the wearer uses Skill or Ultimate, gains \"Somnus Corpus.\" Upon triggering a Follow-Up ATK, consumes \"Somnus Corpus,\" and increases DMG dealt by Follow-Up ATK by {{value}}%."
         },
@@ -190,6 +195,7 @@
     },
     "data-bank": {
         "rarity": 3,
+        "version_released": "1.0",
         "passive": {
             "en": "Increases DMG dealt by the wearer's Ultimate by {{value}}%."
         },
@@ -220,6 +226,7 @@
         }
     },"eternal-calculus": {
         "rarity": 5,
+        "version_released": "2.3",
         "passive": {
             "en": "Increases the wearer's ATK by {{value}}%. After using an attack, for each enemy target hit, additionally increases ATK by {{value}}%. This effect can stack up to 5 times and last until the next attack. If there are 3 or more enemy targets hit, this unit's SPD increases by {{value}}%, lasting for 1 turn(s)."
         },
@@ -260,6 +267,7 @@
         }
     },"flickering-stars": {
         "rarity": 5,
+        "version_released": "4.4",
         "passive": {
             "en": "Increases the wearer's CRIT Rate by {{value}}%. When any ally character consumes a total of 4 or more Skill Points in a single turn, the wearer gains \"Radiant Crown,\" lasting for 3 turn(s). While the wearer holds \"Radiant Crown,\" all allies' DMG dealt ignores {{value}}% of the target's DEF, and the Skill DMG dealt by the wearer increases by {{value}}%. Effects of the same type cannot stack."
         },
@@ -301,6 +309,7 @@
     },
     "geniuses-repose": {
         "rarity": 4,
+        "version_released": "3.0",
         "passive": {
             "en": "Increases the wearer's ATK by {{value}}%. When the wearer defeats an enemy, the wearer's CRIT DMG increases by {{value}}% for 3 turn(s)."
         },
@@ -337,6 +346,7 @@
     },
     "into-the-unreachable-veil": {
         "rarity": 5,
+        "version_released": "3.0",
         "passive": {
             "en": "Increases the wearer's CRIT Rate by {{value}}%. When the wearer uses Ultimate, increases the Skill and Ultimate DMG dealt by the wearer by {{value}}%, lasting for 3 turn(s). After the wearer uses Ultimate, if this instance of Ultimate consumed 140 or more energy, recovers 1 Skill Point."
         },
@@ -373,6 +383,7 @@
     },
     "life-should-be-cast-to-flames": {
         "rarity": 5,
+        "version_released": "3.2",
         "passive": {
             "en": "When the wearer's turn starts, regenerates 10 Energy. If the enemy target has a Weakness implanted by the wearer, increases the wearer's DMG dealt to it by {{value}}%. When an enemy target gets attacked by the wearer, the wearer decreases the target's DEF by {{value}}%, lasting for 2 turn(s). The same types of effects cannot stack."
         },
@@ -409,6 +420,7 @@
     },
     "make-the-world-clamor": {
         "rarity": 4,
+        "version_released": "1.0",
         "passive": {
             "en": "The wearer regenerates {{value}} Energy immediately upon entering battle, and increases DMG dealt by the wearer's Ultimate by {{value}}%."
         },
@@ -445,6 +457,7 @@
     },
     "night-on-the-milky-way": {
         "rarity": 5,
+        "version_released": "1.0",
         "passive": {
             "en": "For every enemy on the field, increases the wearer's ATK by {{value}}%, up to 5 stacks. When an enemy is inflicted with Weakness Break, the DMG dealt by the wearer increases by {{value}}% for 1 turn."
         },
@@ -481,6 +494,7 @@
     },
     "ninjutsu-inscription-dazzling-evilbreaker": {
         "rarity": 5,
+        "version_released": "2.6",
         "passive": {
             "en": "Increases the wearer's Break Effect by {{value}}%. When entering battle, immediately regenerates {{value }} Energy. After the wearer uses Ultimate, obtains \"Raiton.\" After using 2 Basic ATKs, advances the wearer's action by {{value}}% and removes \"Raiton.\" After the wearer uses Ultimate, resets \"Raiton.\""
         },
@@ -522,6 +536,7 @@
     },
     "passkey": {
         "rarity": 3,
+        "version_released": "1.0",
         "passive": {
             "en": "After the wearer uses their Skill, additionally regenerates {{value}} Energy. This effect cannot be repeatedly triggered in a single turn."
         },
@@ -553,6 +568,7 @@
     },
     "sagacity": {
         "rarity": 3,
+        "version_released": "1.0",
         "passive": {
             "en": "When the wearer uses their Ultimate, increases ATK by {{value}}% for 2 turn(s)."
         },
@@ -584,6 +600,7 @@
     },
     "the-birth-of-the-self": {
         "rarity": 4,
+        "version_released": "1.0",
         "passive": {
             "en": "Increases DMG dealt by the wearer's Follow-Up ATKs by {{value}}%. If the current HP percentage of the enemy target is below or equal to 50%, increases DMG dealt by Follow-Up ATKs by an extra {{value}}%."
         },
@@ -620,6 +637,7 @@
     },
     "the-day-the-cosmos-fell": {
         "rarity": 4,
+        "version_released": "2.0",
         "passive": {
             "en": "Increases the wearer's ATK by {{value}}%. When the wearer uses an attack and at least 2 attacked enemies have the corresponding Weakness, the wearer's CRIT DMG increases by {{value}}%, lasting for 2 turn(s)."
         },
@@ -656,6 +674,7 @@
     },
     "the-great-cosmic-enterprise": {
         "rarity": 4,
+        "version_released": "3.2",
         "passive": {
             "en": "Increase the wearer's ATK by {{value}}%. For every 1 different Weakness Type an enemy target has, increase the DMG dealt to it by the wearer by {{value}}%. Up to a max of 7 Weakness Types can be taken into account for this effect."
         },
@@ -692,6 +711,7 @@
     },
     "the-seriousness-of-breakfast": {
         "rarity": 4,
+        "version_released": "1.0",
         "passive": {
             "en": "Increases the wearer's DMG by {{value}}%. For every enemy defeated by the wearer, the wearer's ATK increases by {{value}}%, stacking up to 3 time(s)."
         },
@@ -728,6 +748,7 @@
     },
     "today-is-another-peaceful-day": {
         "rarity": 4,
+        "version_released": "1.0",
         "passive": {
             "en": "After entering battle, increases the wearer's DMG based on their Max Energy. Each point of Energy increases DMG by {{value}}%. A max of 160 Energy will be taken into account for this."
         },
@@ -759,6 +780,7 @@
     },
     "yet-hope-is-priceless": {
         "rarity": 5,
+        "version_released": "2.3",
         "passive": {
             "en": "Increases the wearer's CRIT Rate by {{value}}%. While the wearer is in battle, for every 20% CRIT DMG that exceeds 120%, the DMG dealt by follow-up attack increases by {{value}}%. This effect can stack up to 4 time(s). When the battle starts or after the wearer uses their Basic ATK, enables the DMG dealt by Ultimate or follow-up attack to ignore {{value}}% of the target's DEF, lasting for 2 turn(s)."
         },
