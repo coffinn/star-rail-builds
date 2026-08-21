@@ -1,0 +1,157 @@
+{
+  "id": "guinaifen",
+  "name": "Guinaifen",
+  "rarity": 4,
+  "element": "fire",
+  "path": "nihility",
+  "version_released": "1.4",
+  "max_energy": 120,
+
+  "level_80_stats": {
+    "hp": 882,
+    "atk": 582,
+    "def": 441,
+    "spd": 106
+  },
+
+  "abilities": {
+    "basic": {
+        "type": "Basic ATK",
+        "name": "Standing Ovation",
+        "tag": "Single Target",
+        "energy_gain": 20,
+        "break": 10,
+        "min_level": 1,
+        "max_level": 7,
+        "default_level": 6,
+        "description_template": "Deals Fire DMG equal to {{value}}% of Guinaifen's ATK to a single enemy.",
+        "scaling": {
+            "value": [50, 60, 70, 80, 90, 100, 110]
+        }
+    },
+
+    "skill": {
+        "type": "Skill",
+        "name": "Blazing Welcome",
+        "tag": "Blast",
+        "energy_gain": 30,
+        "break": 20,
+        "min_level": 1,
+        "max_level": 12,
+        "default_level": 10,
+        "description_template": "Deals Fire DMG equal to {{damage}}% of Guinaifen's ATK to a single enemy and Fire DMG equal to {{adjacent_damage}}% of Guinaifen's ATK to any adjacent enemies, with a 100% base chance to Burn the target and adjacent targets. When Burned, enemies will take a Fire DoT equal to {{burn}}% of Guinaifen's ATK at the beginning of each turn, lasting for 2 turn(s).",
+        "scaling": {
+            "damage": [60, 66, 72, 78, 84, 90, 97.5, 105, 112.5, 120, 126, 132],
+            "adjacent_damage": [20, 22, 24, 26, 28, 30, 32.5, 35, 37.5, 40, 42, 44],
+            "burn": [83.904, 92.298, 100.692, 109.086, 117.48, 130.071, 146.859, 167.844, 193.026, 218.208, 229.1202, 240.0324]
+        }
+    },
+
+    "ultimate": {
+        "type": "Ultimate",
+        "name": "Watch This Showstopper",
+        "tag": "AoE",
+        "energy_cost": 120,
+        "energy_gain": 5,
+        "break": 20,
+        "min_level": 1,
+        "max_level": 12,
+        "default_level": 10,
+        "description_template": "Deals Fire DMG equal to {{damage}}% of Guinaifen's ATK to all enemies. If the target enemy is currently inflicted with Burn, then their Burn status immediately produces DMG equal to {{detonate}}% of their original DMG.",
+        "scaling": {
+            "damage": [72, 76.8, 81.6, 86.4, 91.2, 96, 102, 108, 114, 120, 124.8, 129.6],
+            "detonate": [72, 74, 76, 78, 80, 82, 84.5, 87, 89.5, 92, 94, 96]
+        }
+    },
+
+    "talent": {
+        "type": "Talent",
+        "name": "PatrAeon Benefits",
+        "tag": "Impair",
+        "min_level": 1,
+        "max_level": 12,
+        "default_level": 10,
+        "description_template": "When Guinaifen is on the field, there is a 100% base chance to apply Firekiss to an enemy after their Burn status causes DMG. While inflicted with Firekiss, the enemy receives {{vuln}}% increased DMG, which lasts for 3 turn(s) and can stack up to 3 time(s).",
+        "scaling": {
+            "vuln": [4, 4.3, 4.6, 4.9, 5.2, 5.5, 5.875, 6.25, 6.625, 7, 7.3, 7.6]
+        }
+    },
+
+    "technique": {
+        "type": "Technique",
+        "name": "Skill Showcase",
+        "break": 20,
+        "description": "Immediately attacks the enemy. After entering battle, deals DMG for 4 time(s), dealing Fire DMG equal to 50% of Guinaifen's ATK to a random single enemy target each time, with a 100% base chance of inflicting Firekiss on them."
+    }
+  },
+
+  "major_traces": {
+    "2": {
+        "name": "High Poles",
+        "description": "Basic ATK has a 80% base chance of inflicting an enemy with a Burn equivalent to that of Skill."
+    },
+
+    "4": {
+        "name": "Bladed Hoop",
+        "description": "When the battle begins, Guinaifen's action advances by 25%."
+    },
+
+    "6": {
+        "name": "Walking on Knives",
+        "description": "Deals 20% more DMG to Burned enemies."
+    }
+  },
+
+  "stat_bonuses": [
+    {
+        "stat": "Fire DMG",
+        "value": "22.40%"
+    },
+    {
+        "stat": "Effect HIT Rate",
+        "value": "10%%"
+    },
+    {
+        "stat": "Break Effect",
+        "value": "24.00%"
+    }
+  ],
+
+  "eidolons": [
+    {
+        "level": 1,
+        "name": "Slurping Noodles During Handstand",
+        "description": "When Skill is used, there is a 100% base chance to reduce the attacked target enemy's Effect RES by 10% for 2 turn(s)."
+    },
+
+    {
+        "level": 2,
+        "name": "Brushing Teeth While Whistling",
+        "description": "When an enemy target is being Burned, the DMG multiplier of the Burn status applied by her Basic ATK or Skill increases by 40%."
+    },
+
+    {
+        "level": 3,
+        "name": "Smashing Boulder on Chest",
+        "description": "Skill Lv. +2, up to a maximum of Lv. 15.\nBasic ATK Lv. +1, up to a maximum of Lv. 10."
+    },
+
+    {
+        "level": 4,
+        "name": "Blocking Pike with Neck",
+        "description": "Every time the Burn status inflicted by Guinaifen causes DMG, Guinaifen regenerates 2 Energy."
+    },
+
+    {
+        "level": 5,
+        "name": "Swallowing Sword to Stomach",
+        "description": "Ultimate Lv. +2, up to a maximum of Lv. 15.\nTalent Lv. +2, up to a maximum of Lv. 15."
+    },
+
+    {
+        "level": 6,
+        "name": "Catching Bullet with Hands",
+        "description": "Increases the stackable Firekiss count by 1."
+    }
+  ]
+}
