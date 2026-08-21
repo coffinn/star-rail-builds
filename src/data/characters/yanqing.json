@@ -8,10 +8,10 @@
   "max_energy": 140,
 
   "level_80_stats": {
-    "hp": ,
-    "atk": ,
-    "def": ,
-    "spd":
+    "hp": 892,
+    "atk": 679,
+    "def": 412,
+    "spd": 109
   },
 
   "abilities": {
@@ -130,27 +130,82 @@
       "max_level": 12,
       "default_level": 10,
 
-      "description_template": "When Soulsteel Sync is active, Yanqing is less likely to be attacked by enemies. Yanqing's CRIT Rate increases by {{crit_rate}}% and his CRIT DMG increases by {{crit_dmg}}%. After Yanqing attacks an enemy, there is a {{chance}}% fixed chance to launch Follow-up ATK, dealing Ice DMG equal to {{damage}}% of Yanqing's ATK to the enemy, which has a 65% base chance to Freeze the enemy for 1 turn. The Frozen target cannot take action and receives Ice Additional DMG equal to {{add_damage}}% of Yanqing's ATK at the beginning of each turn. When Yanqing receives DMG, the Soulsteel Sync effect will disappear. ",
+      "description_template": "When Soulsteel Sync is active, Yanqing is less likely to be attacked by enemies. Yanqing's CRIT Rate increases by {{crit_rate}}% and his CRIT DMG increases by {{crit_dmg}}%. After Yanqing attacks an enemy, there is a {{fua_chance}}% fixed chance to launch Follow-up ATK, dealing Ice DMG equal to {{damage}}% of Yanqing's ATK to the enemy, which has a 65% base chance to Freeze the enemy for 1 turn. The Frozen target cannot take action and receives Ice Additional DMG equal to {{add_damage}}% of Yanqing's ATK at the beginning of each turn. When Yanqing receives DMG, the Soulsteel Sync effect will disappear. ",
 
       "scaling": {
         "crit_rate": [
-
+        15,
+        15.5,
+        16,
+        16.5,
+        17,
+        17.5,
+        18.125
+        18.75,
+        19.375,
+        20,
+        20.5,
+        21
         ],
 
-        "chance" : [
-
+        "fua_chance" : [
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56.25,
+        57.5,
+        58.75,
+        60,
+        61,
+        62
         ],
 
         "crit_dmg" : [
-
+        15,
+        16.5,
+        18,
+        19.5,
+        21,
+        22.5,
+        24.375,
+        26.25,
+        28.125
+        30,
+        31.5,
+        33
         ],
 
         "add_damage": [
-
+        25,
+        27.5,
+        30,
+        32.5,
+        35,
+        37.5,
+        40.625,
+        43.75,
+        46.875,
+        50,
+        52.5,
+        55
         ],
 
         "damage": [
-
+        25,
+        27.5,
+        30,
+        32.5,
+        35,
+        37.5,
+        40.625,
+        43.75,
+        46.875,
+        50,
+        52.5,
+        55
         ]
       }
     },
