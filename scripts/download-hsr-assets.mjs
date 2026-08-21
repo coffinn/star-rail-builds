@@ -37,11 +37,38 @@ const supportedExtensions = [
 
 function normalizeName(value) {
     return String(value ?? '')
+        .normalize('NFKD')
         .toLowerCase()
-        .replace(/[\u2019']/g, '')
-        .replaceAll('&', ' and ')
+
+        // Remove essentially every common apostrophe-like mark.
+        .replace(
+            /['\u2018\u2019\u201B\u2032\u02BC\uFF07`´]/g,
+            '',
+        )
+
+        .replace(/&/g, ' and ')
         .replace(/[^a-z0-9]+/g, '-')
         .replace(/^-+|-+$/g, '');
+}
+
+/**
+ * Extremely tolerant comparison key.
+ *
+ * Examples:
+ *
+ * "Today's Good Luck"
+ * "Todays Good Luck"
+ * "Today's-Good-Luck"
+ *
+ * all become:
+ *
+ * todaysgoodluck
+ */
+function compactName(value) {
+    return String(value ?? '')
+        .normalize('NFKD')
+        .toLowerCase()
+        .replace(/[^a-z0-9]/g, '');
 }
 
 async function readJSON(filePath) {
@@ -418,12 +445,15 @@ function findSourceEntry(
         return entry;
     }
 
+    /*
+     * First try normal slug-style matching.
+     */
     const wantedName =
         normalizeName(
             localEntry.displayName,
         );
 
-    const matches =
+    let matches =
         Object.values(
             sourceEntries,
         ).filter(
@@ -433,9 +463,52 @@ function findSourceEntry(
                 ) === wantedName,
         );
 
+    /*
+     * If punctuation differs between our
+     * translation and StarRailRes, retry using
+     * letters/numbers only.
+     */
+    if (matches.length === 0) {
+        const compactWanted =
+            compactName(
+                localEntry.displayName,
+            );
+
+        matches =
+            Object.values(
+                sourceEntries,
+            ).filter(
+                (entry) =>
+                    compactName(
+                        entry.name,
+                    ) ===
+                    compactWanted,
+            );
+    }
+
+    /*
+     * Also try our canonical local slug.
+     */
+    if (matches.length === 0) {
+        const localKey =
+            compactName(
+                localEntry.key,
+            );
+
+        matches =
+            Object.values(
+                sourceEntries,
+            ).filter(
+                (entry) =>
+                    compactName(
+                        entry.name,
+                    ) === localKey,
+            );
+    }
+
     if (matches.length === 0) {
         throw new Error(
-            `Could not find "${localEntry.displayName}" in source data.`,
+            `Could not find "${localEntry.displayName}" (${localEntry.key}) in source data.`,
         );
     }
 
