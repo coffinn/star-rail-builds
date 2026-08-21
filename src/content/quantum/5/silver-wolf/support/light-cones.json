@@ -1,17 +1,9 @@
 {
-    "weapons": [
+    "light_cones": [
         {
             "items": [
                 {
                     "name": "incessant-rain",
-                    "superimposition": 1
-                }
-            ]
-        },
-        {
-            "items": [
-                {
-                    "name": "along-the-passing-shore",
                     "superimposition": 1
                 }
             ]
