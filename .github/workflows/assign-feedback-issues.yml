@@ -16,4 +16,4 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
-        run: gh issue edit "$ISSUE_NUMBER" --add-assignee AkhalaPlo --repo "$GITHUB_REPOSITORY"
+        run: gh issue edit "$ISSUE_NUMBER" --add-assignee coffinn --repo "$GITHUB_REPOSITORY"

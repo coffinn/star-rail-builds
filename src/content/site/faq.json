@@ -1,261 +1,214 @@
 {
     "intro": {
-        "en": "Hello and welcome to the Genshin Impact Helper Team Build Guide!<br><br>This website aims to help players build their characters as optimally as possible, by providing the best weapons, stats, and artifact sets for each individual released character. This FAQ should help better understand the website a little easier.",
-        "fr": "Bonjour et bienvenue sur le Guide de Builds par la Genshin Impact Helper Team !<br><br>Ce site a pour but d'aider les joueurs à build leurs personnages de la façon la plus optimale possible, en leur donnant les meilleures armes, stats, et set d'artéfacts pour chaque personnage. Cette FAQ devrait vous aider à mieux comprendre le site.",
-        "it": "Salve e benvenuti nella Guida alle Build del Team Helper di Genshin Impact!<br><br>L'obiettivo di questo sito è aiutare i giocatori a buildare i personaggi nel modo più ottimale possibile, fornendo loro le migliori armi, stat, e set di manufatti. Queste FAQ saranno d'aiuto per comprendere al meglio questo sito.",
-        "ru": "Добро пожаловать в руководство по билдам персонажей Genshin Impact!<br><br>Цель этого сайта - помочь игрокам как можно лучше собрать своих персонажей: выбрать оптимальное оружие и артефакты для каждого героя, существующего в игре. Раздел FAQ предназначен для того, чтобы помочь разобраться в данном веб-сайте."
+        "en": "Hello and welcome to Star Rail Builds!<br><br>This website aims to help players build their Honkai: Star Rail characters as effectively as possible by providing recommended Light Cones, Relic and Planar Ornament sets, main stats, substats, and Trace priorities. This FAQ explains how the guide works and how to interpret its recommendations."
     },
     "items": [
         {
             "question": {
-                "en": "What is featured on this build guide?",
-                "fr": "Que vais-je trouver dans ce guide?",
-                "it": "Cosa include questa guida?",
-                "ru": "Что можно найти в этом руководстве?"
+                "en": "Why use a website instead of a Google Sheet?"
             },
             "answer": {
-                "en": "This build doc features optimal weapons, artifacts, and stats for each individual character. This build doc assumes you are at least Adventure Rank 45, and are able to farm 5★ artifacts at the highest level domain.",
-                "fr": "Ce guide de build présente les armes, artéfacts et stats optimaux pour chaque personnage. Les conseils de ce document sont écrits en partant du principe que vous êtes au moins au Niveau d'Aventure 45, et que vous pouvez farm les artéfacts 5✩ du plus haut niveau de chaque donjon.",
-                "it": "La guida alle build include armi, stat, e set di manufatti migliori per ogni personaggio. La guida alle build presuppone che tu sia almeno **Livello d'Avventura 45**, e sia in grado di farmare manufatti 5✩ nei **domini di massimo livello**.",
-                "ru": "В нём содержится информация об оптимальном оружии, артефактах и их характеристиках для каждого персонажа. Предполагается, что вы достигли как минимум 45 Ранга приключений и можете получать 5✩ артефакты в подземельях последнего уровня."
+                "en": "The guide originally existed as a Google Sheet, but as the amount of Honkai: Star Rail build information grew, a website became a better way to organize and present it. The website makes it easier to browse characters, search and filter Light Cones and Relics, view detailed set and Light Cone information, manage multiple builds for a character, and expand the guide with new features without overcrowding a spreadsheet."
             }
         },
         {
             "question": {
-                "en": "Why a new website instead of a Google Sheet?",
-                "fr": "Pourquoi un nouveau site au lieu du Google Sheet?",
-                "it": "Perché un nuovo sito web al posto del Google Sheet?",
-                "ru": "Почему вы переехали на новый сайт, а не остались на табличной версии?"
+                "en": "What happened to the original Google Sheet?"
             },
             "answer": {
-                "en": "The Doc Team has decided that it was time to modernize the guide and allow for easy guide translations. We also decided that Google Sheets is just... just terrible.",
-                "fr": "L'équipe a décidé qu'il était temps de moderniser le guide et de le rendre plus simple à traduire. Nous avons aussi décidé que Google Sheets est juste... nul.",
-                "it": "Il team ha deciso che era giunto il momento di modernizzare la guida e di facilitarne la traduzione. Abbiamo anche deciso che Google Sheets è semplicemente... semplicemente terribile.",
-                "ru": "Команда решила, что пришла пора обновить руководство и упростить доступ к переводу. Помимо этого, мы считаем что Google Таблицы попросту ужасны."
+                "en": "The website is the continuation of the original Honkai: Star Rail build guide that was maintained in Google Sheets. The move to a website allows the guide to present the same kind of build information in a more organized and interactive format while making future updates and new features easier to manage."
             }
         },
         {
             "question": {
-                "en": "Will you go back to the old sheet?",
-                "fr": "Est-ce que vous reviendrez sur l'ancien gsheet?",
-                "it": "Tornerete al vecchio sito?",
-                "ru": "Вы вернетесь к старой таблице?"
+                "en": "What is featured on this build guide?"
             },
             "answer": {
-                "en": "Very very unlikely. We understand that changing to a brand new location and adapting to a whole new layout can be difficult. However, we are constantly improving the site as we go. The old sheet will still be available to the public, however it will no longer be maintained.",
-                "fr": "Il y a très peu de chances. Nous comprenons que s'adapter au nouveau site peut être compliqué, cependant nous améliorons le site constamment. L'ancien gsheet restera accessible mais ne sera plus mis à jour.",
-                "it": "Molto improbabile. Ci rendiamo conto che adattarsi ad un layout diverso possa risultare difficile. Tuttavia, stiamo migliorando costantemente il sito man mano che procediamo. Il vecchio sheet rimarrà comunque disponibile al pubblico, ma non verrà più aggiornato.",
-                "ru": "Маловероятно. Мы понимаем, что может быть сложно привыкнуть к новому месту и интерфейсу, но мы постоянно развиваем и улучшаем сайт. Старая таблица всё ещё останется в общем доступе, но больше не будет поддерживаться."
+                "en": "Each character guide can include recommended **Light Cones**, **Cavern Relics**, **Planar Ornaments**, **Relic main stats**, **substat priorities**, and **Trace priorities**. Some characters may also have multiple builds when they have meaningfully different playstyles or roles."
             }
         },
         {
             "question": {
-                "en": "How many supported translation languages are there?",
-                "fr": "En combien de langues avez-vous traduit le site?",
-                "it": "Quante lingue sono supportate?",
-                "ru": "Сколько в проекте поддерживаемых языков?"
+                "en": "Who is this guide intended for?"
             },
             "answer": {
-                "en": "The current supported languages are found in the dropdown menu at the top of the page. Not all languages are fully translated, but we are working on it.",
-                "fr": "Les langues supportées se trouvent dans le menu déroulant en haut à droite de la page. Toutes les notes ne sont actuellement pas traduites dans toutes les langues, mais nous y travaillons.",
-                "it": "Le lingue attualmente supportate sono elencate nel menu a tendina nella parte superiore della pagina. Non tutte le lingue sono state tradotte nella loro interezza, ma ci stiamo lavorando.",
-                "ru": "Поддерживаемые языки доступны в списке в верхней части страницы. Не всё содержимое переведено полностью, но мы работаем над этим."
+                "en": "The guide is primarily intended for players who are actively building characters and have access to normal endgame gearing options, including 5★ Relics. Newer players can still use the recommendations, but they may not yet have access to every Light Cone, Relic set, or stat combination shown."
             }
         },
         {
             "question": {
-                "en": "Can you add Baseline Stats and Statgoals?",
-                "fr": "Est-ce que vous pouvez ajouter les stats idéales à atteindre?",
-                "it": "Potete includere obiettivi di stat ideali da raggiungere?",
-                "ru": "Можно ли добавить базовые и целевые характеристики для каждого персонажа?"
+                "en": "How are Light Cones ranked?"
             },
             "answer": {
-                "en": "No. Because gearing weapons and artifacts will vary from account to account, alongside endgame modes' mechanics shifting and enemies' HP values fluctuating, it's very difficult to ascertain baseline stats and statgoals for every character in every scenario.",
-                "fr": "Non. Les armes et artéfacts équipés varient d'un compte à l'autre, les mécaniques des différents modes endgame et les PV des ennemis varient énormément aussi, ce qui rend très difficile le fait de donner une stat exacte à atteindre pour chaque personnage dans chaque scénario.",
-                "it": "No. Poiché l'equipaggiamento delle armi e dei manufatti varia da account a account, e poiché le meccaniche delle modalità di fine gioco ed i valori dei PS dei nemici cambiano continuamente, è molto difficile stabilire statistiche di riferimento ed obiettivi statistici per ogni personaggio in ogni scenario.",
-                "ru": "Нет. Установить базовые и целевые характеристики для всех персонажей под все сценарии достаточно затруднительно - всё зависит от имеющегося оружия и артефактов (что индивидуально для аккаунта), текущих условий в постоянно меняющихся эндгейм-режимах и колебаний HP врагов."
+                "en": "Light Cones are ranked based on how well they perform for the specific character and build being shown. Rankings may account for damage, support value, utility, consistency, and other effects relevant to that character. A Light Cone being strong in general does not necessarily mean it will rank highly for every character."
             }
         },
         {
             "question": {
-                "en": "X Character was just released and I don't see them on here, where are they?",
-                "fr": "X Personnage vient de sortir et je ne le vois pas dans le guide, où est-il?",
-                "it": "Il personaggio X è appena uscito e non lo vedo nella guida, dov'è?",
-                "ru": "Персонаж А только что вышел, но его нет на сайте, где его найти?"
+                "en": "What does S1, S2, S3, S4, or S5 mean?"
             },
             "answer": {
-                "en": "Please understand that it does take about a week, potentially more, for testing on live servers to happen. The guide contributors are actively working hard to gather relevant information for said character. We can add characters as WIP, however their sections won't be available until the content is ready. Please do not use the feedback form as a method of demanding a character to be added.",
-                "fr": "Gardez en tête que les tests en jeu peuvent prendre une semaine (voire plus). Les contributeurs du guide travaillent dur pour récolter les informations nécessaires à l'élaboration de chaque guide. Nous pouvons ajouter les personnages en tant que WIP, mais leur section ne sera disponible que lorsque le contenu sera prêt. S'il vous plaît, n'utilisez pas le formulaire de Feedback pour demander l'ajout d'un nouveau personnage.",
-                "it": "Ti preghiamo di tenere presente che i test sui server live richiedono circa una settimana, o forse anche di più. I collaboratori della guida stanno lavorando attivamente per raccogliere le informazioni rilevanti su quel personaggio. Possiamo aggiungere i personaggi come “in lavorazione” (WIP), ma le relative sezioni non saranno disponibili finché i contenuti non saranno pronti. Ti preghiamo di **non** utilizzare il modulo di feedback per richiedere l'aggiunta di un personaggio.",
-                "ru": "Обратите внимание, что тестирование сборок на игровых серверах занимает примерно неделю (а иногда и дольше). Авторы документа активно работают над сбором и обработкой информации о новых персонажах. Мы можем добавить персонажа с отметкой \"WIP\", однако раздел не будет доступен, пока не будет полностью готов. Пожалуйста, не используйте форму обратной связи для запросов на добавление персонажа."
+                "en": "**S** refers to a Light Cone's **Superimposition level**. For example, S1 means Superimposition 1 and S5 means Superimposition 5. Unless otherwise stated, limited 5★ Light Cones are generally compared at S1, while some accessible Light Cones may be shown at higher Superimposition levels when appropriate."
             }
         },
         {
             "question": {
-                "en": "When will you update X Character? They're extremely outdated!",
-                "fr": "Quand allez-vous mettre à jour X personnage? Le build est n'est plus à jour depuis longtemps!",
-                "it": "Quando aggiornerete personaggio X? La sezione è obsoleta!",
-                "ru": "Когда вы обновите персонажа А? Раздел устарел!"
+                "en": "Why are some Light Cones highlighted?"
             },
             "answer": {
-                "en": "It is difficult to update some characters due to their lacking presence in current endgame content, however, the Doc Team will aim to bring all characters up to speed eventually. There are over 100+ playable characters now, and managing each one can be very difficult for a team as small as ours. You can browse our [Update Priority List](https://github.com/orgs/Genshin-Impact-Helper-Team/projects/1) to see if a build is due for an update soon.",
-                "fr": "Il est compliqué de mettre à jour certains personnages à cause de leur faible présence dans le contenu endgame actuel. Cependant, l'objectif de l'équipe est de mettre à jour tous les personnages. Il y a cependant plus de 100 personnages jouables actuellement, et il est compliqué de s'occuper de tous pour une équipe aussi petite que la nôtre. Vous pouvez consulter notre [Liste de Priorité des MàJ](https://github.com/orgs/Genshin-Impact-Helper-Team/projects/1) pour voir si un build est prévu d'être mis à jour bientôt.",
-                "it": "Ci impegnamo ad aggiornare tutti i personaggi, ma con oltre 100 personaggi giocabili, può essere difficile mantenere tutto aggiornato con un team piccolo come il nostro. Puoi consultare la nostra [Lista priorità di aggiornamento](https://github.com/orgs/Genshin-Impact-Helper-Team/projects/1) per verificare se un build è in linea per un aggiornamento a breve.",
-                "ru": "Некоторых персонажей довольно сложно обновить из-за их неучастия в эндгейм-контенте, но команда старается со временем обновлять всех. В игре более сотни персонажей, и нашей довольно небольшой команде может быть непросто поддерживать всех в актуальном состоянии."
+                "en": "Highlighted Light Cones represent free or especially accessible options according to the site's Light Cone data. They are included to make sure players can identify useful alternatives even when they do not own the higher-ranked limited options. A highlighted option is not necessarily the character's strongest option."
             }
         },
         {
             "question": {
-                "en": "Where can I find such weapons and artifacts mentioned on the build guide?",
-                "fr": "Où puis-je trouver les armes et artéfacts mentionnés dans ce guide?",
-                "it": "Dove trovo le armi ed i manufatti menzionati nella guida?",
-                "ru": "Где достать оружие и артефакты, перечисленные в руководстве?"
+                "en": "How are Relic and Planar Ornament sets ranked?"
             },
             "answer": {
-                "en": "If you hover over a weapon, it will list a broad acquisition source at the very bottom (For example: Craft, Wish, Event, Fishing, etc.). For a more in-depth guide on acquisition methods, check out the [Genshin Fandom Wiki](https://genshin-impact.fandom.com/wiki/Genshin_Impact_Wiki).",
-                "fr": "Si vous survolez une arme sur un des guides, vous pourrez voir son détail ainsi qu'une catégorie d'obtention (par exemple: Forge, Voeux, Event, Pêche etc.). Pour plus de détails sur la méthode d'obtention, vous pouvez consulter le [Genshin Fandom Wiki](https://genshin-impact.fandom.com/wiki/Genshin_Impact_Wiki).",
-                "it": "Se passi il mouse su un'arma, in fondo alla pagina verrà visualizzata una fonte di acquisizione generica (ad esempio: Forgiatura, Desiderio, Evento, Pesca, ecc.). Per una guida più approfondita sui metodi di acquisizione, consulta la [Genshin Fandom Wiki](https://genshin-impact.fandom.com/wiki/Genshin_Impact_Wiki).",
-                "ru": "При наведении курсора на оружие появляется всплывающее окно, в нижней части которого указан источник получения данного оружия (кузня, молитвы, временное событие, рыбалка и другое). Подробности можно узнать на [Genshin Fandom Wiki](https://genshin-impact.fandom.com/wiki/Genshin_Impact_Wiki)."
+                "en": "Relic recommendations are based on the value of their set effects for the character's intended build. **Cavern Relics** can be recommended as 2-Pc or 4-Pc sets, while **Planar Ornaments** are 2-Pc sets. Rankings may change depending on team composition, Speed tuning, Eidolons, Light Cones, or other assumptions mentioned in the guide."
             }
         },
         {
             "question": {
-                "en": "I believe X weapon/artifact is good for Y Character, can you add it? Why is it not added? Why won't you add it?",
-                "fr": "Je pense que X arme/artéfact est bien pour Y personnage, pouvez-vous l'ajouter? Pourquoi n'est-ce pas ajouté? Pourquoi ne l'ajouterez vous pas?",
-                "it": "Credo che quest'arma/set di manufatti funzioni bene sul personaggio X, potete aggiungerli?",
-                "ru": "Я считаю, что оружие/артефакт А подходят для персонажа Б, можете ли вы добавить его в рейтинг? Почему оно не добавлено? Почему вы не можете его добавить?"
+                "en": "Why does the guide recommend a 2-Pc + 2-Pc Relic combination?"
             },
             "answer": {
-                "en": "The rankings for each weapon and artifact are meticulously tested and calculated to where they are placed on the build doc. Do keep in mind that as new weapons and artifacts come out, certain rankings may be subject to change. What you see may not always be a permanent ranking.",
-                "fr": "Les classements pour chaque arme et artéfact sont méticuleusement testés et calculés pour être placés où ils le sont dans ce guide. Veuillez garder en tête que lorsque de nouvelles armes et artéfacts sortent, certains classements peuvent être amenés à changer. Ce que vous voyez n'est peut-être pas toujours un classement définitif.",
-                "it": "Le classifiche per ogni arma e manufatto sono calcolate e testate meticolosamente. A mano a mano che nuove armi e manufatti diventano disponibili, alcune classifiche potrebbero essere soggette a modifiche - quelle che vedi non sono necessariamente permanenti. Controlla la sezione di ogni personaggio per vedere quando è stata aggiornata per l'ultima volta.",
-                "ru": "Место каждого оружия/артефактов в рейтинге тщательно проверяется и рассчитывается в ходе формирования. Обратите внимание, что содержимое может меняться при выпуске нового оружия/артефактов."
+                "en": "Some characters do not gain enough from a specific 4-Pc set to justify forcing it. In those cases, combining two useful 2-Pc bonuses can perform similarly or better while also making Relic farming and substat optimization easier."
             }
         },
         {
             "question": {
-                "en": "There is a niche build setup for X character, can it be added to the build guide?",
-                "fr": "Il y a un build niche pour X personnage, est-ce qu'il peut être ajouté au guide?",
-                "it": "C'è una build di nicchia per X personaggio, la potete aggiungere?",
-                "ru": "Для персонажа А есть нишевая сборка, можно ли добавить её в документ?"
+                "en": "How should I read the Relic main stat recommendations?"
             },
             "answer": {
-                "en": "The build guide focuses on optimizing character builds that best suit their desired playstyle and scalings. In other words, builds that the character functions best with. It wouldn't be in best interest to bloat the guide with meme builds such as Physical Zhongli or Machine Gun Gorou.",
-                "fr": "Les guides se concentrent sur optimiser le build des personnages qui conviennent le mieux à leur style de jeu et leurs ratios. En d'autres termes, les meilleurs builds pour chaque personnage. Il ne serait pas judicieux de remplir les guides de builds troll comme Zhongli Physique ou MachineGun Gorou.",
-                "it": "La guida alle build si concentra sull'ottimizzazione delle build dei personaggi che meglio si adattano al loro kit e stile di gioco e che dunque offrono le migliori prestazioni. Non sarebbe opportuno appesantire la guida con build “meme” come Zhongli fisico o Gorou mitragliatore.",
-                "ru": "Руководство предназначено для оптимальных билдов, наиболее подходящих под роль персонажа и его скейлы. Иными словами, это наиболее эффективные сборки для конкретного персонажа. Добавлять мемные сборки вроде физ Чжун Ли или machine gun Горо (пулемёт) нецелесообразно."
+                "en": "The guide separately lists recommended main stats for **Body**, **Feet**, **Planar Sphere**, and **Link Rope**. When multiple stats are listed for one slot, the best choice may depend on your build, team, Light Cone, or existing stats. Check the character's notes when additional context is provided."
             }
         },
         {
             "question": {
-                "en": "I see that Energy Recharge requirements are mentioned but a value isn't listed. Why is that?",
-                "fr": "Je vois que l'on parle d'un montant de Recharge d'Energie nécessaire, mais aucune valeur n'est mentionnée, pourquoi?",
-                "it": "Vedo che sono menzionati dei requisiti di Ricarica di Energia, ma non è indicato il valore preciso. Perché?",
-                "ru": "Я вижу, что в некоторых местах упоминается потребность персонажа в энергии, но нет точного значения ВЭ. Почему?"
+                "en": "How should I read the substat priority?"
             },
             "answer": {
-                "en": "Energy Recharge varies in different teams. It's also difficult to provide an exact number for every scenario. As such, it is best to consult the [Energy Recharge Calculator](https://docs.google.com/spreadsheets/d/1-vkmgp5n0bI9pvhUg110Aza3Emb2puLWdeoCgrxDlu4/edit?gid=613391376#gid=613391376).",
-                "fr": "La recharge d'énergie varie selon l'équipe, il est difficile de donner un montant exact pour tous les scénarios. Ainsi, il vaut mieux consulter le [Calculateur de Recharge d'Energie](https://docs.google.com/spreadsheets/d/1-vkmgp5n0bI9pvhUg110Aza3Emb2puLWdeoCgrxDlu4/edit?gid=613391376#gid=613391376).",
-                "it": "La **Ricarica di Energia necessaria varia a seconda del team**, dell'equipaggiamento e dello scenario. Per una stima, consigliamo di utilizzare il **[Calcolatore di Ricarica di Energia](https://docs.google.com/spreadsheets/d/1-vkmgp5n0bI9pvhUg110Aza3Emb2puLWdeoCgrxDlu4/edit?gid=613391376#gid=613391376)**.",
-                "ru": "Необходимый уровень ВЭ может меняться в разных отрядах. Указать точное значение для каждого сценария часто затруднительно. В целом, для таких расчётов лучше использовать [Energy Recharge Calculator](https://docs.google.com/spreadsheets/d/1-vkmgp5n0bI9pvhUg110Aza3Emb2puLWdeoCgrxDlu4/edit?gid=613391376#gid=613391376)."
+                "en": "Substats are listed in their general order of value for the build. This does **not** mean that every roll into the first-listed stat is always better than every roll into the next stat. Stat thresholds, Speed tuning, Crit balance, Effect Hit Rate requirements, and other character-specific mechanics can change the relative value of individual rolls."
             }
         },
         {
             "question": {
-                "en": "Is there data to back up your rankings?",
-                "fr": "Sur quelles données vous basez-vous pour établir ces classements?",
-                "it": "Su quali dati si basano le vostre classifiche?",
-                "ru": "На чем основывается рейтинг? Какие данные его подтверждают?"
+                "en": "Why don't you give exact stat goals for every character?"
             },
             "answer": {
-                "en": "Almost every section was planned out with TheoryCrafting in mind. As such, the rankings provided are backed up with calculations, and are not just it's good because we said so. Do note that the sources of our rankings do not contain Pre-TC or leak content.",
-                "fr": "La majorité des sections ont été conçues en s’appuyant sur du theorycraft. Ainsi, les classements proposés sont étayés par des calculs, et ne se basent pas simplement sur des affirmations subjectives. À noter que les sources utilisées pour établir ces classements n’incluent aucun contenu issu de leaks ou de pré-tc.",
-                "it": "La maggioranza delle sezioni è compilata sulla base di theorycrafting. Le classifiche sono basate su calcoli, non opinioni soggettive. Notiamo inoltre che le fonti dei nostri calcoli non contengono Pre-TC o leak.",
-                "ru": "Рейтинг создаётся с учетом общих принципов теорикрафтинга. Представленные рейтинги подкреплены расчётами, а не личным мнением авторов. Обратите внимание, что мы не основываемся на пре-TC или утечках."
+                "en": "Exact stat goals can vary substantially between accounts. Team composition, Light Cones, Relic sets, external buffs, Eidolons, enemy mechanics, and the content being played can all change how much of a stat is needed. When a character has an important threshold, such as a Speed or Effect Hit Rate requirement, it may be mentioned directly in the guide or its notes."
             }
         },
         {
             "question": {
-                "en": "Can you make sections for unreleased/teased characters?",
-                "fr": "Est-ce que vous pouvez faire des sections pour les personnages à venir?",
-                "it": "Potete creare una sezione per un personaggio non ancora uscito?",
-                "ru": "Можете ли вы создать раздел для невышедших/анонсированных персонажей?"
+                "en": "What does the Trace priority mean?"
             },
             "answer": {
-                "en": "The build doc DOES NOT run on leaks or beta content. Only content that is officially released onto global servers. As such we cannot and will not make sections for unreleased characters. Please see the [Genshin Terms of Service](https://genshin.hoyoverse.com/en/company/terms) for more information.",
-                "fr": "Ce guide NE S'APPUIE PAS sur les leaks ou le contenu de la bêta, uniquement sur le contenu qui est officiellement disponible sur les serveurs globaux. Ainsi, nous ne feront pas de sections pour les personnages qui ne sont pas encore disponibles. Veuillez lire les [Conditions Générales d'Utilisation de Genshin](https://genshin.hoyoverse.com/fr/company/terms) pour plus d'informations.",
-                "it": "No, questa guida tratta esclusivamente di **contenuti pubblicati ufficialmente**. Per ulteriori informazioni, consulta i [Termini di Servizio](https://genshin.hoyoverse.com/en/company/terms) di Genshin Impact.",
-                "ru": "Руководство НЕ СОДЕРЖИТ утечки или материалы с бета-тестирования. Только релизный контент. Мы не можем и не будем создавать раздел для невышедших персонажей. Перейдите на страницу [Условия обслуживания Genshin Impact](https://genshin.hoyoverse.com/en/company/terms), чтобы ознакомиться с подробностями."
+                "en": "Trace priority shows the relative importance of leveling a character's **Basic ATK**, **Skill**, **Ultimate**, and **Talent** for the selected build. The recommended levels can be adjusted using the Trace sliders on the character page so you can see how the ability values change at different levels."
             }
         },
         {
             "question": {
-                "en": "Can you provide team-building assistance?",
-                "fr": "Pouvez-vous m'aider à choisir une équipe?",
-                "it": "Potete aiutarmi a comporre un team?",
-                "ru": "Можете ли вы помочь с формированием отряда?"
+                "en": "Do I need to level every Trace?"
             },
             "answer": {
-                "en": "We do not cover full team-building. However, if there are important synergies between characters, the doc will mention them.",
-                "fr": "Nous ne nous occupons pas de la construction d'équipes. Cependant, s'il y a des synergies importantes entre des personnages, elles seront mentionnées.",
-                "it": "La guida non tratta di composizioni di team. Tuttavia, se esistono sinergie importanti tra certi personaggi, sarà menzionato nella loro sezione.",
-                "ru": "Документ не включает варианты отрядов. Однако при наличии значимого взаимодействия между персонажами информация отражается в руководстве."
+                "en": "No. Some characters gain little or no practical benefit from leveling certain abilities. The Trace priority is intended to show where your materials provide the most value. Major Traces and useful stat nodes should generally be unlocked as appropriate for the character."
             }
         },
         {
             "question": {
-                "en": "What are these random letters when discussing combos and rotations?",
-                "fr": "Que signifient ces lettres lorsque l'on parle de combos et de rotations?",
-                "it": "Cosa significano le lettere utilizzate per combo e rotazioni?",
-                "ru": "Что за странные буквы/цифры в описании комбо и ротаций?"
+                "en": "What Eidolon level does the guide assume?"
             },
             "answer": {
-                "en": "For simplification reasons, the doc roughly uses the default keybinds on PC to represent abilities. Below you can find a legend of commonly used keys and their meaning:\n\n**N/NA** = Normal Attack\n**E** = Elemental Skill (tE = Tap; hE = Hold)\n**Q/Ult/A** = Elemental Burst\n**C/CA** = Charged Attack\n**P** = Plunge Attack (HP = High Plunge; LP = Low Plunge)\n**D** = Dash\n**J** = Jump\n**W** = Walk\n**(text)** = Parenthesis/brackets may be used to specify when actions are performed less frequently, such as on the first rotation only, when available, or when optional.\n\nNumbers are sometimes used to specify the number of times an action is performed.\n\n**N#** = Normal Attack # times\n**#[combo]** = repeat combo # times\n\nFor example, 5N2CJP should be understood as performing two Normal Attacks into a Charged Attack followed by a Jump and Plunge Attack, five times.",
-                "fr": "Pour simplifier, le document utilise les touches PC par défaut pour représenter les aptitudes. Vous trouverez ci-dessous une légende des touches courantes et de leur signification :\n\n**N/NA** = Attaque normale\n**E** = Skill (tE = appui court ; hE = appui long)\n**Q/Ult/A** = Ulti\n**C/CA** = Attaque chargée\n**P** = Attaque plongeante (HP = plunge haute ; LP = plunge basse)\n**D** = Sprint\n**J** = Saut\n**W** = Marche\n**(text)** = Les parenthèses/crochets peuvent être utilisés pour préciser quand des actions sont effectuées moins fréquemment, par exemple uniquement lors de la première rotation, quand disponible, ou quand optionnel.\n\nLes nombres sont parfois utilisés pour préciser le nombre de fois qu'une action est effectuée.\n\n**N#** = Attaque normale # fois\n**#[combo]** = répéter le combo # fois\n\nPar exemple, 5N2CJP doit être compris comme deux Attaques normales suivies d'une Attaque chargée, puis d'un Saut et d'une Attaque plongeante, le tout cinq fois.",
-                "it": "Le lettere corrispondono alle scorciatoie da tastiera di default per le diverse abilità dei personaggi. Elenchiamo quelle più utilizzate:\n\n**N/NA** = Attacco Normale\n**E** = Abilità Elementale (tE = Cliccare; hE = Tenere premuta)\n**Q/Ult/A** = Tripudio Elementale\n**C/CA** = Attacco Caricato\n**P** = Attacco in picchiata (HP = Picchiata alta; LP = Picchiata bassa)\n**D** = Scatto\n**J** = Salto\n**W** = Camminare\n**(text)** = Le parentesi sono utilizzate per indicare azioni da compiere meno frequentemente, ad esempio solo durante la prima rotazione, quando disponibili, od opzionali.\n\nI numeri sono utilizzati per specificare quante volte deve essere compiuta un'azione.\n\n**N#** = Attacco Normale ripetuto # volte\n**#[combo]** = Ripeti combo # volte\n\nAd esempio, 5N2CJP indica una **combo** composta da due Attacchi Normali ed un Attacco Caricato seguiti da un Salto ed un Attacco in picchiata, **ripetuta cinque volte**.",
-                "ru": "Для удобства все навыки обозначены стандартными клавишами ПК для соответствующих действий. Полный список ниже:\n\n**N/NA** = Обычная атака\n**E** = Элементальный навык (tE = короткое нажатие; hE = долгое нажатие)\n**Q/Ult/A** = Взрыв стихии\n**C/CA** = Заряженная атака\n**P** = Атака в падении (HP = высокая; LP = низкая)\n**D** = Рывок\n**J** = Прыжок\n**W** = Ходьба\n**(text)** = Круглые/квадратные скобки могут использоваться для обозначения действий, выполняемых реже обычного: только в первой ротации, при наличии возмжности или по желанию.\n\nЦифры могут использоваться для указания того, сколько раз нужно выполнить действие.\n\n**N#** = Повторить атаку # раз\n**#[combo]** = Повторить комбо # раз\n\nНапример, 5N2CJP - это последовательное выполнение 2-х обычных атак, заряженной атаки, прыжка и атаки в падении,  весь цикл нужно повторить 5 раз."
+                "en": "Unless a guide specifically says otherwise, limited 5★ characters should generally be interpreted from an **E0 baseline**. Recommendations may change at higher Eidolons, and particularly important Eidolon-dependent differences can be mentioned in the build notes."
             }
         },
         {
             "question": {
-                "en": "Are there at least F2P Options for each character?",
-                "fr": "Y-a-t-il au moins une option F2P pour chaque personnage?",
-                "it": "Ci sono almeno delle opzioni F2P per ogni personaggio?",
-                "ru": "Есть ли F2P варианты оружия для персонажей?"
+                "en": "A new character was just released. Why aren't they on the site yet?"
             },
             "answer": {
-                "en": "Yes. The Build Doc ensures there is at least 1 permanently accessible F2P option for each character, even if said option isn't the absolute best for them. Permanently accessible options includes weapons that are free from crafting, overworld chests in Mondstadt and Liyue, weapons acquired from Quests, Fishing, or the easily obtainable 3★ Gacha Weapons. F2P options for characters are highlighted within their sections.",
-                "fr": "Oui. L'équipe s'assure de toujours lister au moins 1 option F2P accessible de façon permanente pour chaque personnage, même si cette option n'est pas la meilleure pour eux. Les armes accessibles de façon permanentes comprennent les armes de la forge, des coffres à Mondstadt/Liyue, celles obtenues pendantes les qauêtes, la pêche, ou les armes 3★ des voeux. Les options F2P sont surlignées dans la section Armes de chaque build.",
-                "it": "Sì. Il nostro team si impegna ad includere almeno 1 opzione F2P accessibile in maniera permanente, anche nel caso in cui tale opzione non sia la migliore in assoluto per quel personaggio. Le opzioni accessibili in modo permanente includono armi forgiabili, ottenute da bauli a Mondstadt e Liyue, ottenute tramite missioni o pesca, oppure armi gacha a 3★ facilmente ottenibili. Le opzioni F2P per i personaggi sono evidenziate nelle rispettive sezioni.",
-                "ru": "Да. Документ содержит как минимум 1 постоянно доступный бесплатный вариант, даже если он не является лучшим. В постоянно доступные бесплатные варианты включено оружие из кузни, рыбалки, сундуков Мондштадта/Ли Юэ, квестов, а также трёхзвёздочные опции из Молитв. Эти варианты подсвечиваются."
+                "en": "New character guides take time to research, calculate, test, write, and review. A character may appear as **WIP** while their guide is still being completed. We would rather take additional time to publish useful recommendations than rush a guide immediately after release."
             }
         },
         {
             "question": {
-                "en": "What are the Constellation assumptions for each character?",
-                "fr": "Quel niveau de constellation est supposé pour chaque personnage?",
-                "it": "Quali sono i presupposti per le Costellazioni dei personaggi?",
-                "ru": "Каковы требования к Созвездиям персонажей?"
+                "en": "When will an outdated character guide be updated?"
             },
             "answer": {
-                "en": "4★ Characters may have varying constellation level assumptions, when this affects build choices, it will be mentioned. 5★ Characters are assumed [C0].",
-                "fr": "Le niveau de constellation supposé pour les personnages 4✩ peut varier. Si cela impacte le choix du build, le niveau de constellation sera mentionné. Concernant les personnages 5✩, on suppose qu'ils sont [C0].",
-                "it": "I personaggi 4✩ hanno presupposti variabili - quando questo influenza le build, verrà menzionato. **I personaggi 5✩ sono considerati C0**.",
-                "ru": "Для 4✩ персонажей: может потребоваться различное количество Созвездий; если это влияет на сборку, то указывается в документе. Для 5✩ персонажей: отсутствие Созвездий."
+                "en": "Character builds can change when new Light Cones, Relic sets, teammates, enemies, or game modes are released. Maintaining every character at once takes time, so updates may be prioritized based on how significantly a character's recommendations have changed. Check the character's displayed update version to see when their guide was last reviewed."
             }
         },
         {
             "question": {
-                "en": "Do you have build docs for Honkai Star Rail and Zenless Zone Zero?",
-                "fr": "Avez-vous des document similaires pour Honkai Star Rail et Zenless Zone Zero?",
-                "it": "Avete documenti simili per Honkai Star Rail e/o Zenless Zone Zero?",
-                "ru": "Есть ли у вас аналогичные руководства для Honkai Star Rail и Zenless Zone Zero?"
+                "en": "I think a different Light Cone or Relic set should be ranked. Why isn't it included?"
             },
             "answer": {
-                "en": "They are out there, but the Genshin Doc team doesn't manage them. To find them, please head to their respective official Discord servers.",
-                "fr": "Il y en a, mais notre équipe ne s'en occupe pas. Pour les trouver, veuillez vous rendre sur leurs serveurs Discord officiels respectifs.",
-                "it": "Esistono, ma non sono gestiti dal nostro team. Per trovarli, si prega dirigersi ai rispettivi server Discord ufficiali.",
-                "ru": "Такие руководства есть, но разрабатываются не этой командой. Для ознакомления с ними перейдите на соответствующий Discord-сервер."
+                "en": "Recommendations are based on the assumptions and calculations used for that specific build. Some options may be very close in performance, highly situational, dependent on specific teams, or simply worse under the guide's assumptions. Rankings can also change as new characters, Light Cones, and Relics are released."
+            }
+        },
+        {
+            "question": {
+                "en": "Can niche or unusual builds be added?"
+            },
+            "answer": {
+                "en": "The guide focuses primarily on builds that make effective use of a character's intended kit and practical playstyles. A genuinely useful alternative playstyle may receive its own build, but extremely niche or novelty setups generally will not be prioritized."
+            }
+        },
+        {
+            "question": {
+                "en": "Why isn't an exact Energy Regeneration Rate requirement listed?"
+            },
+            "answer": {
+                "en": "Energy requirements depend heavily on team composition, enemy behavior, rotations, how often characters are hit or defeat enemies, and the Energy generated by teammates. Because of this, a single Energy Regeneration Rate value is not always accurate for every team or encounter. Important Energy considerations can instead be explained in the character's notes."
+            }
+        },
+        {
+            "question": {
+                "en": "Are the rankings backed by calculations?"
+            },
+            "answer": {
+                "en": "Where appropriate, recommendations are informed by theorycrafting, calculations, testing, and the mechanics relevant to each character. The goal is for rankings to have a practical or mathematical basis rather than simply being based on preference. When detailed calculations are available, the site may provide a link to them."
+            }
+        },
+        {
+            "question": {
+                "en": "Do you use leaks or beta information for character guides?"
+            },
+            "answer": {
+                "en": "No. The public build guide is intended to be based on officially released Honkai: Star Rail content. Unreleased characters, Light Cones, Relics, and beta changes are not used as the basis for published build recommendations."
+            }
+        },
+        {
+            "question": {
+                "en": "Do you provide full team recommendations?"
+            },
+            "answer": {
+                "en": "The site primarily focuses on **building individual characters**, rather than providing a complete team database. Important teammates, synergies, or team-dependent assumptions may still be mentioned when they materially affect a character's build."
+            }
+        },
+        {
+            "question": {
+                "en": "Why can the same character have more than one build?"
+            },
+            "answer": {
+                "en": "Some characters can be built for meaningfully different roles or playstyles. Separate builds allow the Light Cone, Relic, stat, and Trace recommendations to change without trying to force every possible setup into one ranking."
+            }
+        },
+        {
+            "question": {
+                "en": "What do the numbers next to Relic sets mean?"
+            },
+            "answer": {
+                "en": "The number indicates how many pieces of that set are being recommended. For example, **Eagle of Twilight Line (4)** means a 4-Pc Eagle of Twilight Line setup, while a Planar Ornament shown as **(2)** means its full 2-Pc set bonus is being used."
+            }
+        },
+        {
+            "question": {
+                "en": "Why do recommendations sometimes change after a patch?"
+            },
+            "answer": {
+                "en": "Honkai: Star Rail regularly introduces new characters, Light Cones, Relic sets, enemies, and game mechanics. Any of these can affect the relative value of existing options. Rankings should therefore be treated as recommendations based on the current state of the game rather than permanent placements."
             }
         }
     ]
