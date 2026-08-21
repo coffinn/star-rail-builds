@@ -8,10 +8,10 @@
   "max_energy": 140,
 
   "level_80_stats": {
-    "hp": ,
-    "atk": ,
-    "def": ,
-    "spd":
+    "hp": 892,
+    "atk": 679,
+    "def": 412,
+    "spd": 109
   },
 
   "abilities": {
@@ -230,7 +230,7 @@
     {
       "level": 6,
       "name": "Swift Swoop",
-      "description": "If the buffs from "Soulsteel Sync" or the Ultimate are in effect when an enemy is defeated, the duration of these buffs is extended by 1 turn."
+      "description": "If the buffs from \"Soulsteel Sync\" or the Ultimate are in effect when an enemy is defeated, the duration of these buffs is extended by 1 turn."
     }
   ]
 }

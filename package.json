@@ -11,8 +11,9 @@
         "build": "node scripts/check-duplicate-json-keys.mjs && node scripts/validate-content.mjs && astro build",
         "preview": "astro preview",
         "astro": "astro",
-        "download:artifact-assets": "node scripts/download-assets.mjs artifact",
-        "download:weapon-assets": "node scripts/download-assets.mjs weapon",
+        "download:character-assets": "node scripts/download-hsr-assets.mjs character",
+        "download:light-cone-assets": "node scripts/download-hsr-assets.mjs light-cone",
+        "download:relic-assets": "node scripts/download-hsr-assets.mjs relic",
         "project:plan": "node scripts/sync-build-project.mjs --print-plan",
         "project:sync": "node scripts/sync-build-project.mjs --dry-run",
         "project:sync:apply": "node scripts/sync-build-project.mjs --apply"

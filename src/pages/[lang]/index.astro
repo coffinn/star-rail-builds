@@ -15,67 +15,74 @@ import { getLanguageStaticPaths } from '../../utils/routes';
 export const getStaticPaths = getLanguageStaticPaths;
 
 const requestedLang = Array.isArray(Astro.params.lang)
-  ? Astro.params.lang[0]
-  : Astro.params.lang;
-const {
-  characters,
-  lang,
-  locale,
-  recentlyUpdatedCharacters,
-} = getHomePageData(requestedLang ?? 'en');
+    ? Astro.params.lang[0]
+    : Astro.params.lang;
+const { characters, lang, locale, recentlyUpdatedCharacters } = getHomePageData(
+    requestedLang ?? 'en',
+);
 const latestChangelogEntry = changelog.groups[0]?.entries?.[0];
 const lastUpdatedLabel =
-  t(locale, 'ui', 'Last Updated', undefined, false) || 'Last Updated';
+    t(locale, 'ui', 'Last Updated', undefined, false) || 'Last Updated';
 const changelogLabel = t(locale, 'ui', 'Changelog', undefined, false);
 const latestChangelogLabel = latestChangelogEntry
-  ? `${lastUpdatedLabel}: ${latestChangelogEntry.changes}`
-  : changelogLabel;
+    ? `${lastUpdatedLabel}: ${latestChangelogEntry.changes}`
+    : changelogLabel;
 ---
 
 <html lang={lang}>
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/webp" href={sitePath('favicon.webp')} />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Genshin Builds</title>
-  </head>
-  <body data-element="base">
-    <Header locale={locale} lang={lang} />
-    <main class="home-page">
-      <h1>Genshin Builds</h1>
-      <p class="home-disclaimer">
-        {t(locale, 'ui', 'Home translation disclaimer', undefined, false)}
-      </p>
-      {
-        latestChangelogEntry?.changes && (
-          <a
-            class="home-last-update"
-            href={localizedPath(lang, 'changelog')}
-            aria-label={latestChangelogLabel}
-          >
-            <h2>{lastUpdatedLabel}</h2>
-            <p class="home-last-update-change">
-              {latestChangelogEntry.changes}
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/webp" href={sitePath('favicon.webp')} />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>HSR Builds</title>
+    </head>
+    <body data-element="base">
+        <Header locale={locale} lang={lang} />
+        <main class="home-page">
+            <h1>HSR Builds</h1>
+            <p class="home-disclaimer">
+                {
+                    t(
+                        locale,
+                        'ui',
+                        'Home translation disclaimer',
+                        undefined,
+                        false,
+                    )
+                }
             </p>
-            <p class="home-last-update-meta">
-              <time>{latestChangelogEntry.date}</time>
-              {latestChangelogEntry.appliedBy && (
-                <span>Applied by {latestChangelogEntry.appliedBy}</span>
-              )}
-            </p>
-          </a>
-        )
-      }
-      <HomeFilters
-        locale={locale}
-        recentlyUpdatedCount={recentlyUpdatedCharacters.length}
-      />
-      <HomeRoster characters={characters} locale={locale} lang={lang} />
-    </main>
-    <Footer lang={lang} />
-    <script>
-      import '../../scripts/card-filters';
-    </script>
-  </body>
+            {
+                latestChangelogEntry?.changes && (
+                    <a
+                        class="home-last-update"
+                        href={localizedPath(lang, 'changelog')}
+                        aria-label={latestChangelogLabel}
+                    >
+                        <h2>{lastUpdatedLabel}</h2>
+                        <p class="home-last-update-change">
+                            {latestChangelogEntry.changes}
+                        </p>
+                        <p class="home-last-update-meta">
+                            <time>{latestChangelogEntry.date}</time>
+                            {latestChangelogEntry.appliedBy && (
+                                <span>
+                                    Applied by {latestChangelogEntry.appliedBy}
+                                </span>
+                            )}
+                        </p>
+                    </a>
+                )
+            }
+            <HomeFilters
+                locale={locale}
+                recentlyUpdatedCount={recentlyUpdatedCharacters.length}
+            />
+            <HomeRoster characters={characters} locale={locale} lang={lang} />
+        </main>
+        <Footer lang={lang} />
+        <script>
+            import '../../scripts/card-filters';
+        </script>
+    </body>
 </html>

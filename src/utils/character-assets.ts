@@ -1,34 +1,71 @@
-import type { ImageMetadata } from 'astro';
+import type {
+    ImageMetadata,
+} from 'astro';
 
-type CharacterAssetKind = 'image' | 'portrait';
-type CharacterAssetImage = Promise<{ default: ImageMetadata }>;
+type CharacterAssetKind =
+    | 'image'
+    | 'portrait';
+
+type CharacterAssetImage =
+    Promise<{
+        default: ImageMetadata;
+    }>;
 
 type CharacterAssetContext = {
-  element: string;
-  rarity: string;
-  character: string;
+    element: string;
+    rarity: string;
+    character: string;
 };
 
-const assetFileNames: Record<CharacterAssetKind, string> = {
-  image: 'splash_art.webp',
-  portrait: 'portrait.webp',
-};
+const assetBaseNames:
+    Record<
+        CharacterAssetKind,
+        string
+    > = {
+        image: 'splash_art',
+        portrait: 'portrait',
+    };
 
-const characterImages = import.meta.glob<{ default: ImageMetadata }>(
-  '/src/assets/character-assets/**/*.webp',
-);
+const extensions = [
+    'webp',
+    'png',
+] as const;
+
+const characterImages =
+    import.meta.glob<{
+        default: ImageMetadata;
+    }>([
+        '/src/assets/character-assets/**/*.webp',
+        '/src/assets/character-assets/**/*.png',
+    ]);
 
 export function resolveCharacterAssetImage(
-  context: CharacterAssetContext,
-  kind: CharacterAssetKind,
+    context: CharacterAssetContext,
+    kind: CharacterAssetKind,
 ): CharacterAssetImage | undefined {
-  const assetPath = [
-    '/src/assets/character-assets',
-    context.element,
-    context.rarity,
-    context.character,
-    assetFileNames[kind],
-  ].join('/');
+    const baseName =
+        assetBaseNames[kind];
 
-  return characterImages[assetPath]?.();
+    for (
+        const extension of extensions
+    ) {
+        const assetPath = [
+            '/src/assets/character-assets',
+            context.element,
+            context.rarity,
+            context.character,
+            `${baseName}.${extension}`,
+        ].join('/');
+
+        const image =
+            characterImages[
+                assetPath
+            ];
+
+        if (image) {
+            return image();
+        }
+    }
+
+    return undefined;
 }
