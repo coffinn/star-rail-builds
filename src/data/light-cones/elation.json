@@ -138,7 +138,7 @@
             "def": 264
         }
     },
-    "mushy-shroomy-s-adventures": {
+    "mushy-shroomys-adventures": {
         "rarity": 4,
         "passive": {
             "en": "Increases the wearer's Elation by {{value}}%. When the wearer uses an Elation Skill, increases Elation DMG taken by all enemies by {{value}}% for 2 turn(s)."
@@ -236,7 +236,7 @@
             "def": 0
         }
     },
-    "today-s-good-luck": {
+    "todays-good-luck": {
         "rarity": 4,
         "passive": {
             "en": "Increases the wearer's CRIT Rate by {{value}}%. When the wearer uses an Elation Skill, increases Elation by {{value}}%, stacking up to 2 times."
