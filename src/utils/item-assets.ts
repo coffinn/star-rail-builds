@@ -1,82 +1,196 @@
 import type { ImageMetadata } from 'astro';
 
-export type AssetImage = Promise<{ default: ImageMetadata }>;
+export type AssetImage = Promise<{
+    default: ImageMetadata;
+}>;
 
-const weaponTypes = [
-    'bow',
-    'catalyst',
-    'claymore',
-    'polearm',
-    'sword',
+const assetExtensions = [
+    'webp',
+    'png',
 ] as const;
 
-const itemImages = import.meta.glob<{ default: ImageMetadata }>(
-    '/src/assets/item-assets/**/*.webp',
-);
-const itemUrls = import.meta.glob<string>('/src/assets/item-assets/**/*.webp', {
-    eager: true,
-    import: 'default',
-    query: '?url',
-});
-export function resolveRelicAssetImage(id: string) {
-    return assetImage('relics', `${id}.webp`);
-}
-export function resolveRelicAssetUrl(id: string) {
-    return assetUrl('relics', `${id}.webp`);
-}
-function assetPath(...parts: string[]) {
-    return ['/src/assets/item-assets', ...parts].join('/');
-}
+const itemImages =
+    import.meta.glob<{
+        default: ImageMetadata;
+    }>([
+        '/src/assets/item-assets/**/*.webp',
+        '/src/assets/item-assets/**/*.png',
+    ]);
 
-function assetImage(...parts: string[]) {
-    return itemImages[assetPath(...parts)]?.() ?? '';
-}
-
-function assetUrl(...parts: string[]) {
-    return itemUrls[assetPath(...parts)] ?? '';
-}
-
-export function resolveWeaponAssetImage(type: string, id: string) {
-    return assetImage('weapons', type, `${id}.webp`);
-}
-
-function weaponAssetUrl(type: string, id: string) {
-    return assetUrl('weapons', type, `${id}.webp`);
-}
-
-export function resolveWeaponAssetUrlById(id: string) {
-    const type = weaponTypes.find(
-        (weaponType) => itemUrls[assetPath('weapons', weaponType, `${id}.webp`)],
+const itemUrls =
+    import.meta.glob<string>(
+        [
+            '/src/assets/item-assets/**/*.webp',
+            '/src/assets/item-assets/**/*.png',
+        ],
+        {
+            eager: true,
+            import: 'default',
+            query: '?url',
+        },
     );
 
-    return type ? weaponAssetUrl(type, id) : '';
+/**
+ * Builds the base path without an extension.
+ *
+ * Example:
+ * /src/assets/item-assets/relics/eagle-of-twilight-line
+ */
+function assetPath(
+    ...parts: string[]
+) {
+    return [
+        '/src/assets/item-assets',
+        ...parts,
+    ].join('/');
 }
 
-export function resolveLightConeAssetImage(pathName: string, id: string) {
-    return assetImage('light-cones', pathName, `${id}.webp`);
-}
+/**
+ * Returns all supported filename candidates.
+ *
+ * Example:
+ * [
+ *   ".../eagle-of-twilight-line.webp",
+ *   ".../eagle-of-twilight-line.png"
+ * ]
+ */
+function assetCandidates(
+    ...parts: string[]
+) {
+    const basePath =
+        assetPath(...parts);
 
-export function resolveLightConeAssetUrl(pathName: string, id: string) {
-    return assetUrl('light-cones', pathName, `${id}.webp`);
-}
-
-export function resolveLightConeAssetUrlById(id: string) {
-    const lightConeRoot = `${assetPath('light-cones')}/`;
-    const suffix = `/${id}.webp`;
-
-    const matchingPath = Object.keys(itemUrls).find(
-        (asset) =>
-            asset.startsWith(lightConeRoot) &&
-            asset.endsWith(suffix),
+    return assetExtensions.map(
+        (extension) =>
+            `${basePath}.${extension}`,
     );
-
-    return matchingPath ? itemUrls[matchingPath] : '';
 }
 
-export function resolveArtifactAssetImage(id: string) {
-    return assetImage('artifacts', `${id}.webp`);
+/**
+ * Resolves an Astro image import.
+ */
+function assetImage(
+    ...parts: string[]
+): AssetImage | '' {
+    for (const candidate of assetCandidates(
+        ...parts,
+    )) {
+        const loader =
+            itemImages[candidate];
+
+        if (loader) {
+            return loader();
+        }
+    }
+
+    return '';
 }
 
-export function resolveArtifactAssetUrl(id: string) {
-    return assetUrl('artifacts', `${id}.webp`);
+/**
+ * Resolves an image URL for popovers/etc.
+ */
+function assetUrl(
+    ...parts: string[]
+) {
+    for (const candidate of assetCandidates(
+        ...parts,
+    )) {
+        const url =
+            itemUrls[candidate];
+
+        if (url) {
+            return url;
+        }
+    }
+
+    return '';
+}
+
+/*
+ * Relics
+ */
+
+export function resolveRelicAssetImage(
+    id: string,
+) {
+    return assetImage(
+        'relics',
+        id,
+    );
+}
+
+export function resolveRelicAssetUrl(
+    id: string,
+) {
+    return assetUrl(
+        'relics',
+        id,
+    );
+}
+
+/*
+ * Light Cones
+ */
+
+export function resolveLightConeAssetImage(
+    pathName: string,
+    id: string,
+) {
+    return assetImage(
+        'light-cones',
+        pathName,
+        id,
+    );
+}
+
+export function resolveLightConeAssetUrl(
+    pathName: string,
+    id: string,
+) {
+    return assetUrl(
+        'light-cones',
+        pathName,
+        id,
+    );
+}
+
+/**
+ * Finds a Light Cone image by ID regardless
+ * of which Path folder contains it.
+ *
+ * Used by inline Light Cone popovers.
+ */
+export function resolveLightConeAssetUrlById(
+    id: string,
+) {
+    const lightConeRoot =
+        `${assetPath(
+            'light-cones',
+        )}/`;
+
+    for (const extension of assetExtensions) {
+        const suffix =
+            `/${id}.${extension}`;
+
+        const matchingPath =
+            Object.keys(
+                itemUrls,
+            ).find(
+                (candidate) =>
+                    candidate.startsWith(
+                        lightConeRoot,
+                    ) &&
+                    candidate.endsWith(
+                        suffix,
+                    ),
+            );
+
+        if (matchingPath) {
+            return itemUrls[
+                matchingPath
+            ];
+        }
+    }
+
+    return '';
 }
