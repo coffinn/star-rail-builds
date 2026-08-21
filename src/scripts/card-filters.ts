@@ -40,17 +40,63 @@ const kind = (Object.keys(selectors) as FilterKind[]).find((candidate) =>
 
 const cardValue = (card: HTMLElement, name: string) => card.dataset[name] ?? '';
 
+function compareVersionNewest(
+    left: string,
+    right: string,
+) {
+    const parseVersion = (version: string) => {
+        const match = version
+            .trim()
+            .match(/^(\d+)(?:\.(\d+))?/);
+
+        if (!match) {
+            return null;
+        }
+
+        return {
+            major: Number(match[1]),
+            minor: Number(match[2] ?? 0),
+        };
+    };
+
+    const leftVersion = parseVersion(left);
+    const rightVersion = parseVersion(right);
+
+    // If neither has a release version,
+    // leave their relative ordering to the name sort.
+    if (!leftVersion && !rightVersion) {
+        return 0;
+    }
+
+    // Missing release versions always go last.
+    if (!leftVersion) {
+        return 1;
+    }
+
+    if (!rightVersion) {
+        return -1;
+    }
+
+    return (
+        rightVersion.major - leftVersion.major ||
+        rightVersion.minor - leftVersion.minor
+    );
+}
+
 function compareCatalogCards(
     left: HTMLElement,
     right: HTMLElement,
     sort: string,
 ) {
-    const byName = cardValue(left, 'name').localeCompare(cardValue(right, 'name'));
+    const byName = cardValue(left, 'name')
+        .localeCompare(cardValue(right, 'name'));
 
     if (sort === 'release') {
         return (
-            Number.parseFloat(cardValue(right, 'versionReleased')) -
-            Number.parseFloat(cardValue(left, 'versionReleased')) || byName
+            compareVersionNewest(
+                cardValue(left, 'versionReleased'),
+                cardValue(right, 'versionReleased'),
+            ) || byName
         );
     }
 
