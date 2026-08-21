@@ -13,21 +13,25 @@ The site combines this data with `src/i18n` dictionaries and the build JSONs in
 
 ```txt
 src/data/
-|-- artifacts/
-|   |-- artifact_sets.json
-|-- weapons/
-|   |-- bow.json
-|   |-- catalyst.json
-|   |-- claymore.json
-|   |-- polearm.json
-|   |-- sword.json
+|-- relics/
+|   |-- relic_sets.json
+|-- light-cones/
+|   |-- abundance.json
+|   |-- destruction.json
+|   |-- elation.json
+|   |-- erudition.json
+|   |-- harmony.json
+|   |-- hunt.json
+|   |-- nihility.json
+|   |-- preservation.json
+|   |-- remembrance.json
 ```
 
 Matching static item images live separately under:
 
 ```txt
-src/assets/item-assets/artifacts/<artifact-set-id>.webp
-src/assets/item-assets/weapons/<weapon-type>/<weapon-id>.webp
+src/assets/item-assets/artifacts/<relic-set-id>.webp
+src/assets/item-assets/light-cones/<light-cone-path>/<light-cone-id>.webp
 ```
 
 ## How It Connects To Content
@@ -38,80 +42,75 @@ Example in a build file:
 
 ```json
 {
-  "name": "the-catch"
+  "name": "incessant-rain"
 }
 ```
 
 The site then uses:
 
-- `src/content/.../weapons.json` to know which weapon is recommended.
-- `src/i18n/<lang>/weapons.json` to display the localized weapon name.
-- `src/data/weapons/<weapon-type>.json` to display weapon rarity, stats, and
+- `src/content/.../light-cones.json` to know which weapon is recommended.
+- `src/i18n/<lang>/light-cones.json` to display the localized light cone name.
+- `src/data/weapons/<light-cone-path>.json` to display light cone rarity, stats, and
   passive information in the weapon popover.
-- `src/assets/item-assets/weapons/<weapon-type>/<weapon-id>.webp` to display its
+- `src/assets/item-assets/light-cones/<light-cone-path>/<light-cone-id>.webp` to display its
   image.
 
 Artifact sets work the same way:
 
-- `src/content/.../artifacts-sets.json` stores artifact set IDs.
-- `src/i18n/<lang>/artifact-sets.json` displays localized artifact set names.
-- `src/data/artifacts/artifact_sets.json` displays rarity and set effects in
-  the artifact popover.
-- `src/assets/item-assets/artifacts/<artifact-set-id>.webp` displays its image.
+- `src/content/.../relic-sets.json` stores relic set IDs.
+- `src/i18n/<lang>/relic-sets.json` displays localized relic set names.
+- `src/data/relics/relic_sets.json` displays rarity and set effects in
+  the relic popover.
+- `src/assets/item-assets/relics/<relic-set-id>.webp` displays its image.
 
-## Weapon Data
+## Light Cone Data
 
-Weapon data is split by weapon type.
+Light Cone data is split by path.
 
-Each weapon entry uses the same ID as the matching i18n entry:
+Each Light Cone entry uses the same ID as the matching i18n entry:
 
 ```txt
-src/i18n/<lang>/weapons.json
-src/data/weapons/<weapon-type>.json
+src/i18n/<lang>/light-cones.json
+src/data/light-cones/<light-cone-path>.json
 ```
 
-A weapon entry can include:
+A Light Cone entry can include:
 
-- `rarity`: weapon rarity.
-- `source`: special availability source ID shown in the weapon popover footer,
+- `rarity`: Light Cone rarity.
+- `source`: special availability source ID shown in the Light Cone popover footer,
   when relevant. The display text is translated through
-  `src/i18n/<lang>/ui.json` using keys like `Weapon source Craft`. Omitted
-  sources display the translated `Weapon source Wish` value. `Craft`,
-  `Fishing`, and `Exploration` are also marked as free weapons in rankings and
-  inline weapon popovers.
-- `passive`: localized passive text.
-- `substat`: stat ID, usually from `src/i18n/<lang>/stats.json`.
-- `level_1`: base attack and substat value at level 1.
-- `level_max`: base attack and substat value at max level.
-- `r1` to `r5`: refinement values inserted into the passive text.
+  `src/i18n/<lang>/ui.json` using keys like `Light Cone source Herta's Store`. Omitted
+  sources display the translated `Light Cone source Warp` value. `Herta's Store` and
+  `Light Cone Manifest` are also marked as free Light Cones in rankings and
+  inline Light Cone popovers.
+- `effects`: localized effect text.
+- `level_1`: base stats at level 1.
+- `level_max`: base stats at max level.
+- `s1` to `s5`: superimposition values inserted into the passive text.
 
-Passive text can use `{{value}}` placeholders. The popover replaces these with
-the correct refinement values.
+Effect text can use `{{value}}` placeholders. The popover replaces these with
+the correct superimposition values.
 
-## Artifact Set Data
+## Relic Set Data
 
-Artifact set data lives in:
-
-```txt
-src/data/artifacts/artifact_sets.json
-```
-
-Each artifact set entry uses the same ID as the matching i18n entry:
+Relic set data lives in:
 
 ```txt
-src/i18n/<lang>/artifact-sets.json
-src/data/artifacts/artifact_sets.json
+src/data/relics/relic_sets.json
 ```
 
-An artifact set entry can include:
+Each relic set entry uses the same ID as the matching i18n entry:
+
+```txt
+src/i18n/<lang>/relic-sets.json
+src/data/relics/relic_sets.json
+```
+
+A relic set entry can include:
 
 - `rarity`: highest rarity for the set.
-- `1p`: localized 1-piece effect, when the set has one.
-- `2p`: localized 2-piece effect, when the set has one.
-- `4p`: localized 4-piece effect, when the set has one.
-
-Most artifact sets only have `2p` and `4p`. Do not add an empty `1p` field when
-the set does not have a 1-piece effect.
+- `2p`: localized 2-piece effect.
+- `4p`: localized 4-piece effect.
 
 ## Item Images
 
@@ -143,11 +142,11 @@ When adding localized effect text:
 
 Edit this folder when you need to add or fix reusable gameplay data, such as:
 
-- a missing weapon passive;
-- an incorrect weapon stat;
-- a missing artifact set effect;
-- an incorrect artifact set rarity;
-- a new weapon or artifact set used by build content.
+- a missing light cone effect;
+- an incorrect light cone stat;
+- a missing relic set effect;
+- an incorrect relic set rarity;
+- a new light cone or relic set used by build content.
 
 Use the item image commands above when that ID also needs a local image.
 
@@ -164,6 +163,6 @@ name changes. Use these folders instead:
 - Use the same ID in `src/data`, `src/i18n`, and `src/content`.
 - Do not translate IDs.
 - Add English fallback text for any localized effect.
-- Keep weapon data in the correct weapon-type file.
+- Keep light cone data in the correct light-cone-path file.
 - Do not duplicate build-specific notes here. Put those in the relevant build
   JSON under `src/content`.
