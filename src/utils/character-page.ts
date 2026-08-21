@@ -3,7 +3,6 @@ import path from 'path';
 import { loadCharacterData } from './character-data';
 import { marked } from 'marked';
 import {
-    getPublicCharacterName,
     parsePublicCharacterSlug,
 } from './character-slugs';
 import { resolveCharacterAssetImage } from './character-assets';
@@ -967,9 +966,8 @@ export function getCharacterPageData({
     return {
         characterSlug,
         characterData,
-        characterName: slugParts.element
-            ? getPublicCharacterName(locale, slugParts)
-            : translatedCharacterName !== contentSlug
+        characterName:
+            translatedCharacterName !== contentSlug
                 ? translatedCharacterName
                 : toTitleCase(contentSlug),
         metadata: metadataWithAssets,
