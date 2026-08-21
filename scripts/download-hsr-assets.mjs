@@ -19,11 +19,14 @@ if (!validKinds.has(kind)) {
 
 const ROOT = process.cwd();
 
-const API_ROOT =
-    'https://vizualabstract.github.io/StarRailStaticAPI';
+const RESOURCE_ROOT =
+    'https://raw.githubusercontent.com/Mar-7th/StarRailRes/master';
 
-const DB_ROOT = `${API_ROOT}/db/en`;
-const ASSET_ROOT = `${API_ROOT}/assets`;
+const DB_ROOT =
+    `${RESOURCE_ROOT}/index_new/en`;
+
+const ASSET_ROOT =
+    RESOURCE_ROOT;
 
 const supportedExtensions = [
     '.webp',
