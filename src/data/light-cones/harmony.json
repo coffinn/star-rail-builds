@@ -35,7 +35,7 @@
             "def": 529
         }
     },
-    "but-the-battle-isn-t-over": {
+    "but-the-battle-isnt-over": {
         "rarity": 5,
         "passive": {
             "en": "Increases the wearer's Energy Regeneration Rate by {{value}}% and regenerates 1 Skill Point when the wearer uses their Ultimate on an ally. This effect can be triggered once after every 2 uses of the wearer's Ultimate. When the wearer uses their Skill, the next ally taking action (except the wearer) deals {{value}}% more DMG for 1 turn(s)."
@@ -143,7 +143,7 @@
             "def": 264
         }
     },
-    "dance-dance-dance-": {
+    "dance-dance-dance": {
         "rarity": 4,
         "passive": {
             "en": "When the wearer uses their Ultimate, all allies' actions are Advanced Forward by {{value}}%."
@@ -323,7 +323,7 @@
             "def": 463
         }
     },
-    "for-tomorrow-s-journey": {
+    "for-tomorrows-journey": {
         "rarity": 4,
         "passive": {
             "en": "Increases the wearer's ATK by {{value}}%. After the wearer uses their Ultimate, increases their DMG dealt by {{value}}%, lasting for 1 turn(s)."
