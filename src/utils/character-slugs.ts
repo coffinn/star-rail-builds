@@ -1,56 +1,47 @@
-const TRAVELER_SLUG = 'traveler';
-
 type CharacterSlugParts = {
-  character: string;
-  element?: string;
+    character: string;
 };
 
 /**
- * Converts content folder names into public URL slugs.
+ * Converts a character content folder name into its
+ * public URL slug.
  *
- * Traveler is the only character with one folder per element, so their public
- * slug includes the element to keep each page addressable.
+ * Each playable form should have its own unique folder
+ * name, so no character-specific routing logic is needed.
+ *
+ * Examples:
+ * - silver-wolf
+ * - destruction-trailblazer
+ * - preservation-trailblazer
+ * - harmony-trailblazer
  */
 export function getPublicCharacterSlug({
-  character,
-  element,
+    character,
 }: CharacterSlugParts) {
-  if (character === TRAVELER_SLUG && element) {
-    return `${element}-${TRAVELER_SLUG}`;
-  }
-
-  return character;
+    return character.toLowerCase();
 }
 
 /**
- * Converts a public URL slug back into the content folder lookup parts.
+ * Converts a public character URL slug back into the
+ * content folder lookup value.
  */
-export function parsePublicCharacterSlug(slug: string): CharacterSlugParts {
-  const normalizedSlug = slug.toLowerCase();
-
-  if (normalizedSlug.endsWith(`-${TRAVELER_SLUG}`)) {
+export function parsePublicCharacterSlug(
+    slug: string,
+): CharacterSlugParts {
     return {
-      character: TRAVELER_SLUG,
-      element: normalizedSlug.slice(0, -`-${TRAVELER_SLUG}`.length),
+        character: slug.toLowerCase(),
     };
-  }
-
-  return { character: normalizedSlug };
 }
 
 /**
- * Builds the display name that matches a public character slug.
+ * Gets the translated display name for a character slug.
  */
 export function getPublicCharacterName(
-  locale: any,
-  { character, element }: CharacterSlugParts,
+    locale: any,
+    { character }: CharacterSlugParts,
 ) {
-  const characterName = locale?.character?.[character] ?? character;
-
-  if (character === TRAVELER_SLUG && element) {
-    const elementName = locale?.element?.[element] ?? element;
-    return `${elementName} ${characterName}`;
-  }
-
-  return characterName;
+    return (
+        locale?.character?.[character] ??
+        character
+    );
 }

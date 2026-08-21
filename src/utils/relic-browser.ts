@@ -174,7 +174,7 @@ function getRelicSetEntries(
             const bonuses = bonusKeys
                 .map((key) => ({
                     id: key,
-                    label: key.toUpperCase(),
+                    label: `${key[0]}-Pc`,
                     html:
                         info[key]?.[lang] ??
                         info[key]?.en ??
@@ -187,13 +187,10 @@ function getRelicSetEntries(
 
                 image: resolveRelicAssetImage(id),
 
-                /*
-                 * We are still temporarily using
-                 * the "artifact" translation category.
-                 */
+
                 name: t(
                     locale,
-                    'artifact',
+                    'relic',
                     id,
                     undefined,
                     false,

@@ -109,31 +109,60 @@ export const toTitleCase = (str: string) =>
  * @param char Character slug.
  * @returns Character path information or null if not found.
  */
-export function findCharacterPath(base: string, char: string) {
-  const lookup = parsePublicCharacterSlug(char);
+export function findCharacterPath(
+    base: string,
+    char: string,
+) {
+    const lookup =
+        parsePublicCharacterSlug(char);
 
-  if (lookup.character === 'traveler' && !lookup.element) {
+    for (const element of fs.readdirSync(base)) {
+        const elementPath = path.join(
+            base,
+            element,
+        );
+
+        if (
+            !fs.statSync(elementPath).isDirectory()
+        ) {
+            continue;
+        }
+
+        for (const rarity of fs.readdirSync(
+            elementPath,
+        )) {
+            const rarityPath = path.join(
+                elementPath,
+                rarity,
+            );
+
+            if (
+                !fs
+                    .statSync(rarityPath)
+                    .isDirectory()
+            ) {
+                continue;
+            }
+
+            const candidate = path.join(
+                rarityPath,
+                lookup.character,
+            );
+
+            const metadataFile = path.join(
+                candidate,
+                'metadata.json',
+            );
+
+            if (fs.existsSync(metadataFile)) {
+                return {
+                    element,
+                    rarity,
+                    path: candidate,
+                };
+            }
+        }
+    }
+
     return null;
-  }
-
-  for (const element of fs.readdirSync(base)) {
-    if (lookup.element && element !== lookup.element) {
-      continue;
-    }
-
-    for (const rarity of fs.readdirSync(path.join(base, element))) {
-      const candidate = path.join(base, element, rarity, lookup.character);
-      const metadataFile = path.join(candidate, 'metadata.json');
-
-      if (fs.existsSync(metadataFile)) {
-        return {
-          element,
-          rarity,
-          path: candidate,
-        };
-      }
-    }
-  }
-
-  return null;
 }

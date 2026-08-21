@@ -1,1 +1,702 @@
-
+{
+    "a-grounded-ascent": {
+        "rarity": 5,
+        "passive": {
+            "en": "After the wearer uses Skill or Ultimate on one ally character, the wearer regenerates {{value}} Energy and the ability's target receives 1 stack of \"Hymn\" for 3 turn(s), stacking up to 3 time(s). Each stack of \"Hymn\" increases its holder's DMG dealt by {{value}}%. After every 2 instance(s) of Skill or Ultimate the wearer uses on one ally character, recovers 1 Skill Point."
+        },
+        "s1": [
+            6,
+            15
+        ],
+        "s2": [
+            6.5,
+            17.25
+        ],
+        "s3": [
+            7,
+            19.5
+        ],
+        "s4": [
+            7.5,
+            21.75
+        ],
+        "s5": [
+            8,
+            24
+        ],
+        "level_1": {
+            "hp": 52,
+            "atk": 21,
+            "def": 24
+        },
+        "level_max": {
+            "hp": 1164,
+            "atk": 476,
+            "def": 529
+        }
+    },
+    "but-the-battle-isn-t-over": {
+        "rarity": 5,
+        "passive": {
+            "en": "Increases the wearer's Energy Regeneration Rate by {{value}}% and regenerates 1 Skill Point when the wearer uses their Ultimate on an ally. This effect can be triggered once after every 2 uses of the wearer's Ultimate. When the wearer uses their Skill, the next ally taking action (except the wearer) deals {{value}}% more DMG for 1 turn(s)."
+        },
+        "s1": [
+            10,
+            30
+        ],
+        "s2": [
+            12,
+            35
+        ],
+        "s3": [
+            14,
+            40
+        ],
+        "s4": [
+            16,
+            45
+        ],
+        "s5": [
+            18,
+            50
+        ],
+        "level_1": {
+            "hp": 52,
+            "atk": 24,
+            "def": 21
+        },
+        "level_max": {
+            "hp": 1164,
+            "atk": 529,
+            "def": 463
+        }
+    },
+    "carve-the-moon-weave-the-clouds": {
+        "rarity": 4,
+        "passive": {
+            "en": "At the start of the battle and whenever the wearer's turn begins, one of the following effects is applied randomly: All allies' ATK increases by {{value}}%, all allies' CRIT DMG increases by {{value}}%, or all allies' Energy Regeneration Rate increases by {{value}}%. The applied effect cannot be identical to the last effect applied, and will replace the previous effect. The applied effect will be removed when the wearer has been knocked down. Effects of the same type cannot be stacked."
+        },
+        "s1": [
+            10,
+            12,
+            6
+        ],
+        "s2": [
+            12.5,
+            15,
+            7.5
+        ],
+        "s3": [
+            15,
+            18,
+            9
+        ],
+        "s4": [
+            17.5,
+            21,
+            10.5
+        ],
+        "s5": [
+            20,
+            24,
+            12
+        ],
+        "level_1": {
+            "hp": 43,
+            "atk": 21,
+            "def": 15
+        },
+        "level_max": {
+            "hp": 952,
+            "atk": 476,
+            "def": 330
+        }
+    },
+    "chorus": {
+        "rarity": 3,
+        "passive": {
+            "en": "After entering battle, increases the ATK of all allies by {{value}}%. Abilities of the same type cannot stack."
+        },
+        "s1": [
+            8
+        ],
+        "s2": [
+            9
+        ],
+        "s3": [
+            10
+        ],
+        "s4": [
+            11
+        ],
+        "s5": [
+            12
+        ],
+        "level_1": {
+            "hp": 38,
+            "atk": 14,
+            "def": 12
+        },
+        "level_max": {
+            "hp": 846,
+            "atk": 317,
+            "def": 264
+        }
+    },
+    "dance-dance-dance-": {
+        "rarity": 4,
+        "passive": {
+            "en": "When the wearer uses their Ultimate, all allies' actions are Advanced Forward by {{value}}%."
+        },
+        "s1": [
+            16
+        ],
+        "s2": [
+            18
+        ],
+        "s3": [
+            20
+        ],
+        "s4": [
+            22
+        ],
+        "s5": [
+            24
+        ],
+        "level_1": {
+            "hp": 43,
+            "atk": 19,
+            "def": 18
+        },
+        "level_max": {
+            "hp": 952,
+            "atk": 423,
+            "def": 396
+        }
+    },
+    "dreamville-adventure": {
+        "rarity": 4,
+        "passive": {
+            "en": "After the wearer uses a certain type of ability such as Basic ATK, Skill, or Ultimate, all allies gain Childishness, which increases allies' DMG for the same type of ability as used by the wearer by {{value}}%. Childishness only takes effect for the most recent type of ability the wearer used and cannot be stacked."
+        },
+        "s1": [
+            12
+        ],
+        "s2": [
+            14
+        ],
+        "s3": [
+            16
+        ],
+        "s4": [
+            18
+        ],
+        "s5": [
+            20
+        ],
+        "level_1": {
+            "hp": 43,
+            "atk": 19,
+            "def": 18
+        },
+        "level_max": {
+            "hp": 952,
+            "atk": 423,
+            "def": 396
+        }
+    },
+    "earthly-escapade": {
+        "rarity": 5,
+        "passive": {
+            "en": "Increases the wearer's CRIT DMG by {{value}}%. At the start of the battle, the wearer gains Mask, lasting for 3 turn(s). While the wearer has Mask, the wearer's allies have their CRIT Rate increased by {{value}}% and their CRIT DMG increased by {{value}}%. For every 1 Skill Point the wearer recovers (including Skill Points that exceed the limit), they gain 1 stack of Radiant Flame. And when the wearer has 4 stacks of Radiant Flame, all the stacks are removed, and they gain Mask, lasting for 4 turn(s)."
+        },
+        "s1": [
+            32,
+            10,
+            28
+        ],
+        "s2": [
+            39,
+            11,
+            35
+        ],
+        "s3": [
+            46,
+            12,
+            42
+        ],
+        "s4": [
+            53,
+            13,
+            49
+        ],
+        "s5": [
+            60,
+            14,
+            56
+        ],
+        "level_1": {
+            "hp": 52,
+            "atk": 24,
+            "def": 21
+        },
+        "level_max": {
+            "hp": 1164,
+            "atk": 529,
+            "def": 463
+        }
+    },
+    "epoch-etched-in-golden-blood": {
+        "rarity": 5,
+        "passive": {
+            "en": "Increases the wearer's ATK by {{value}}%. After using Ultimate to attack, recovers 1 Skill Point(s). After the wearer uses their Skill on one ally character, increases the Skill DMG dealt by the target by {{value}}% for 3 turn(s)."
+        },
+        "s1": [
+            64,
+            54
+        ],
+        "s2": [
+            80,
+            67.5
+        ],
+        "s3": [
+            96,
+            81
+        ],
+        "s4": [
+            112,
+            94.5
+        ],
+        "s5": [
+            128,
+            108
+        ],
+        "level_1": {
+            "hp": 43,
+            "atk": 28,
+            "def": 21
+        },
+        "level_max": {
+            "hp": 952,
+            "atk": 635,
+            "def": 463
+        }
+    },
+    "flowing-nightglow": {
+        "rarity": 5,
+        "passive": {
+            "en": "Every time an ally attacks, the wearer gains 1 stack of Cantillation. Each stack of Cantillation increases the wearer's Energy Regeneration Rate by {{value}}%, stacking up to 5 time(s). When the wearer uses their Ultimate, removes Cantillation and gains Cadenza. Cadenza increases the wearer's ATK by {{value}}% and increases all allies' DMG dealt by {{value}}%, lasting for 1 turn(s)."
+        },
+        "s1": [
+            3,
+            48,
+            24
+        ],
+        "s2": [
+            3.5,
+            60,
+            28
+        ],
+        "s3": [
+            4,
+            72,
+            32
+        ],
+        "s4": [
+            4.5,
+            84,
+            36
+        ],
+        "s5": [
+            5,
+            96,
+            40
+        ],
+        "level_1": {
+            "hp": 43,
+            "atk": 28,
+            "def": 21
+        },
+        "level_max": {
+            "hp": 952,
+            "atk": 635,
+            "def": 463
+        }
+    },
+    "for-tomorrow-s-journey": {
+        "rarity": 4,
+        "passive": {
+            "en": "Increases the wearer's ATK by {{value}}%. After the wearer uses their Ultimate, increases their DMG dealt by {{value}}%, lasting for 1 turn(s)."
+        },
+        "s1": [
+            16,
+            18
+        ],
+        "s2": [
+            20,
+            21
+        ],
+        "s3": [
+            24,
+            24
+        ],
+        "s4": [
+            28,
+            27
+        ],
+        "s5": [
+            32,
+            30
+        ],
+        "level_1": {
+            "hp": 43,
+            "atk": 21,
+            "def": 15
+        },
+        "level_max": {
+            "hp": 952,
+            "atk": 476,
+            "def": 330
+        }
+    },
+    "if-time-were-a-flower": {
+        "rarity": 5,
+        "passive": {
+            "en": "Increases the wearer's CRIT DMG by {{value}}%. After the wearer launches Follow-up ATK, additionally regenerates 12 Energy and gains \"Presage\", lasting for 2 turn(s). While the wearer has \"Presage\", all ally targets' CRIT DMG increases by {{value}}%. When entering battle, the wearer regenerates 21 Energy and gains \"Presage\", lasting for 2 turn(s)."
+        },
+        "s1": [
+            36,
+            48
+        ],
+        "s2": [
+            42,
+            60
+        ],
+        "s3": [
+            48,
+            72
+        ],
+        "s4": [
+            54,
+            84
+        ],
+        "s5": [
+            60,
+            96
+        ],
+        "level_1": {
+            "hp": 57,
+            "atk": 24,
+            "def": 18
+        },
+        "level_max": {
+            "hp": 1270,
+            "atk": 529,
+            "def": 396
+        }
+    },
+    "in-pursuit-of-the-wind": {
+        "rarity": 4,
+        "passive": {
+            "en": "After entering combat, increases all allies' Break DMG dealt by {{value}}%. Abilities of the same type cannot stack."
+        },
+        "s1": [
+            16
+        ],
+        "s2": [
+            18
+        ],
+        "s3": [
+            20
+        ],
+        "s4": [
+            22
+        ],
+        "s5": [
+            24
+        ],
+        "level_1": {
+            "hp": 48,
+            "atk": 21,
+            "def": 18
+        },
+        "level_max": {
+            "hp": 1058,
+            "atk": 476,
+            "def": 396
+        }
+    },
+    "mediation": {
+        "rarity": 3,
+        "passive": {
+            "en": "Upon entering battle, increases SPD of all allies by {{value}} points for 1 turn(s)."
+        },
+        "s1": [
+            12
+        ],
+        "s2": [
+            14
+        ],
+        "s3": [
+            16
+        ],
+        "s4": [
+            18
+        ],
+        "s5": [
+            20
+        ],
+        "level_1": {
+            "hp": 38,
+            "atk": 14,
+            "def": 12
+        },
+        "level_max": {
+            "hp": 846,
+            "atk": 317,
+            "def": 264
+        }
+    },
+    "memories-of-the-past": {
+        "rarity": 4,
+        "passive": {
+            "en": "Increases the wearer's Break Effect by {{value}}%. When the wearer attacks, additionally regenerates {{value}} Energy. This effect cannot be repeatedly triggered in a single turn."
+        },
+        "s1": [
+            28,
+            4
+        ],
+        "s2": [
+            35,
+            5
+        ],
+        "s3": [
+            42,
+            6
+        ],
+        "s4": [
+            49,
+            7
+        ],
+        "s5": [
+            56,
+            8
+        ],
+        "level_1": {
+            "hp": 43,
+            "atk": 19,
+            "def": 18
+        },
+        "level_max": {
+            "hp": 952,
+            "atk": 423,
+            "def": 396
+        }
+    },
+    "meshing-cogs": {
+        "rarity": 3,
+        "passive": {
+            "en": "After the wearer uses attacks or gets hit, additionally regenerates {{value}} Energy. This effect cannot be repeatedly triggered in a single turn."
+        },
+        "s1": [
+            4
+        ],
+        "s2": [
+            5
+        ],
+        "s3": [
+            6
+        ],
+        "s4": [
+            7
+        ],
+        "s5": [
+            8
+        ],
+        "level_1": {
+            "hp": 38,
+            "atk": 14,
+            "def": 12
+        },
+        "level_max": {
+            "hp": 846,
+            "atk": 317,
+            "def": 264
+        }
+    },
+    "past-and-future": {
+        "rarity": 4,
+        "passive": {
+            "en": "When the wearer uses their Skill, the next ally taking action (except the wearer) deals {{value}}% increased DMG for 1 turn(s)."
+        },
+        "s1": [
+            16
+        ],
+        "s2": [
+            20
+        ],
+        "s3": [
+            24
+        ],
+        "s4": [
+            28
+        ],
+        "s5": [
+            32
+        ],
+        "level_1": {
+            "hp": 43,
+            "atk": 19,
+            "def": 18
+        },
+        "level_max": {
+            "hp": 952,
+            "atk": 423,
+            "def": 396
+        }
+    },
+    "past-self-in-mirror": {
+        "rarity": 5,
+        "passive": {
+            "en": "Increases the wearer's Break Effect by {{value}}%. When the wearer uses their Ultimate, increases all allies' DMG by {{value}}%, lasting for 3 turn(s). If the wearer's Break Effect exceeds or equals 150%, 1 Skill Point will be recovered. At the start of each wave, all allies regenerate {{value}} Energy immediately. Abilities of the same type cannot stack."
+        },
+        "s1": [
+            60,
+            24,
+            10
+        ],
+        "s2": [
+            70,
+            28,
+            12.5
+        ],
+        "s3": [
+            80,
+            32,
+            15
+        ],
+        "s4": [
+            90,
+            36,
+            17.5
+        ],
+        "s5": [
+            100,
+            40,
+            20
+        ],
+        "level_1": {
+            "hp": 48,
+            "atk": 24,
+            "def": 24
+        },
+        "level_max": {
+            "hp": 1058,
+            "atk": 529,
+            "def": 529
+        }
+    },
+    "planetary-rendezvous": {
+        "rarity": 4,
+        "passive": {
+            "en": "After entering battle, if an ally deals the same DMG Type as the wearer, DMG dealt increases by {{value}}%."
+        },
+        "s1": [
+        12
+        ],
+        "s2": [
+        15
+        ],
+        "s3": [
+        18
+        ],
+        "s4": [
+        21
+        ],
+        "s5": [
+        24
+        ],
+        "level_1": {
+            "hp": 48,
+            "atk": 19,
+            "def": 15
+        },
+        "level_max": {
+            "hp": 1058,
+            "atk": 423,
+            "def": 330
+        }
+    },
+    "poised-to-bloom": {
+        "rarity": 4,
+        "passive": {
+            "en": "Increases the wearer's ATK by {{value}}%. Upon entering battle, if two or more characters follow the same Path, then these characters' CRIT DMG increases by {{value}}%. Abilities of the same type cannot stack."
+        },
+        "s1": [
+            16,
+            16
+        ],
+        "s2": [
+            20,
+            20
+        ],
+        "s3": [
+            24,
+            24
+        ],
+        "s4": [
+            28,
+            28
+        ],
+        "s5": [
+            32,
+            32
+        ],
+        "level_1": {
+            "hp": 43,
+            "atk": 19,
+            "def": 18
+        },
+        "level_max": {
+            "hp": 952,
+            "atk": 423,
+            "def": 396
+        }
+    },
+    "the-forever-victual": {
+        "rarity": 4,
+        "passive": {
+            "en": "Increases the wearer's ATK by {{value}}%. After the wearer uses Skill, increases ATK by {{value}}%, stacking up to 3 times."
+        },
+        "s1": [
+            16,
+            8
+        ],
+        "s2": [
+            20,
+            10
+        ],
+        "s3": [
+            24,
+            12
+        ],
+        "s4": [
+            28,
+            14
+        ],
+        "s5": [
+            32,
+            16
+        ],
+        "level_1": {
+            "hp": 43,
+            "atk": 21,
+            "def": 15
+        },
+        "level_max": {
+            "hp": 952,
+            "atk": 476,
+            "def": 330
+        }
+    }
+}
