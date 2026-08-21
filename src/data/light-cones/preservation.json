@@ -138,7 +138,7 @@
             "def": 264
         }
     },
-    "destiny-s-threads-forewoven": {
+    "destinys-threads-forewoven": {
         "rarity": 4,
         "passive": {
             "en": "Increases the wearer's Effect RES by {{value}}%. For every 100 of DEF the wearer has, increases the wearer's DMG dealt by {{value}}%, up to a maximum DMG increase of {{value}}%."
@@ -260,7 +260,7 @@
             "def": 529
         }
     },
-    "landau-s-choice": {
+    "landaus-choice": {
         "rarity": 4,
         "passive": {
             "en": "The wearer is more likely to be attacked, and DMG taken is reduced by {{value}}%."
@@ -450,7 +450,7 @@
             "def": 529
         }
     },
-    "this-is-me-": {
+    "this-is-me": {
         "rarity": 4,
         "passive": {
             "en": "Increases the wearer's DEF by {{value}}%. Increases the DMG of the wearer when they use their Ultimate by {{value}}% of the wearer's DEF. This effect only applies 1 time per enemy target during each use of the wearer's Ultimate."
