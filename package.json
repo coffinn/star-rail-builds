@@ -5,9 +5,10 @@
     "engines": {
         "node": ">=22.12.0"
     },
+    "validate": "node scripts/validate-content.mjs",
     "scripts": {
         "dev": "astro dev",
-        "build": "node scripts/check-duplicate-json-keys.mjs && astro build",
+        "build": "node scripts/check-duplicate-json-keys.mjs && node scripts/validate-content.mjs && astro build",
         "preview": "astro preview",
         "astro": "astro",
         "download:artifact-assets": "node scripts/download-assets.mjs artifact",
