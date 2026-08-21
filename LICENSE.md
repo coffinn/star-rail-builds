@@ -1,6 +1,6 @@
 # License and Copyright Notice
 
-Copyright (c) 2026 Genshin Impact Helper Team contributors. All rights
+Copyright (c) 2026 Honkai: Star Rail Navigator contributors. All rights
 reserved.
 
 This repository has no open-source license. Public access to the source does
@@ -19,17 +19,17 @@ maintainers.
 You may clone or download this repository only as reasonably needed to inspect
 the source, report issues, or submit pull requests back to this project.
 
-## HoYoverse and Genshin Impact
+## HoYoverse and Honkai: Star Rail
 
 This is an unofficial, non-commercial fan-made project. It is not affiliated
 with, endorsed, sponsored, or approved by COGNOSPHERE, HoYoverse, or miHoYo.
 
-Genshin Impact names, characters, artwork, images, icons, item assets, game
+Honkai: Star Rail names, characters, artwork, images, icons, item assets, game
 text, audio, audiovisual materials, trademarks, and related intellectual
 property belong to COGNOSPHERE, HoYoverse, and their respective rights holders.
 No ownership is claimed over those materials.
 
-This project is intended to use only officially published Genshin Impact
+This project is intended to use only officially published Honkai: Star Rail
 materials. Leaked, unreleased, or otherwise unauthorized materials are not
 allowed. See HoYoLAB's official Legal FAQ:
 

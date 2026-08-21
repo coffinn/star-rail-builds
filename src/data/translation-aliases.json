@@ -1,20 +1,6 @@
 {
     "lightcone": {},
     "set": {
-        "vv": "viridescent-venerer",
-        "noblesse": "noblesse-oblige",
-        "scroll": "scroll-of-the-hero-of-cinder-city",
-        "shimenawa": "shimenawas-reminiscence",
-        "gladiator": "gladiators-finale",
-        "emblem": "emblem-of-severed-fate",
-        "MH": "marechaussee-hunter",
-        "sms": "silken-moons-serenade",
-        "millelith": "tenacity-of-the-millelith",
-        "deepwood": "deepwood-memories",
-        "notsu": "night-of-the-skys-unveiling",
-        "deep-shadow": "disenchantment in deep shadow",
-        "aubade": "aubade-of-morningstar-and-moon",
-        "rising-winds": "a-day-carved-from-rising-winds",
-        "hotf": "heart-of-the-furnace"
+        
     }
 }
