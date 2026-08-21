@@ -1,0 +1,237 @@
+{
+  "id": "xueyi",
+  "name": "Xueyi",
+  "rarity": 4,
+  "element": "quantum",
+  "path": "destruction",
+  "version_released": "1.3",
+  "max_energy": 120,
+
+  "level_80_stats": {
+    "hp": 938,
+    "atk": 656,
+    "def": 352,
+    "spd": 103
+  },
+
+  "abilities": {
+    "basic": {
+      "type": "Basic ATK",
+      "name": "Mara-Sunder Awl",
+      "tag": "Single Target",
+      "energy_gain": 20,
+      "break": 10,
+
+      "min_level": 1,
+      "max_level": 7,
+      "default_level": 6,
+
+      "description_template": "Deals Quantum DMG equal to {{damage}}% of Xueyi's ATK to one designated enemy target.",
+
+      "scaling": {
+        "damage": [50, 60, 70, 80, 90, 100, 110]
+      }
+    },
+
+    "skill": {
+      "type": "Skill",
+      "name": "Iniquity Obliteration",
+      "tag": "Blast",
+      "energy_gain": 30,
+      "break_main": 20,
+      "break_aoe": 10,
+
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+
+      "description_template": "Deals Quantum DMG equal to {{main_damage}}% of Xueyi's ATK to one designated enemy, and Quantum DMG equal to {{adjacent_damage}}% of Xueyi's ATK to any adjacent enemies.",
+
+      "scaling": {
+        "main_damage": [
+          70.0,
+          77.0,
+          84.0,
+          91.0,
+          98.0,
+          105.0,
+          113.75,
+          122.5,
+          131.25,
+          140.0,
+          147.0,
+          154.0
+        ],
+        "adjacent_damage": [
+          35.0,
+          38.5,
+          42.0,
+          45.5,
+          49.0,
+          52.5,
+          56.875,
+          61.25,
+          65.625,
+          70.0,
+          73.5,
+          77.0
+        ]
+      }
+    },
+
+    "ultimate": {
+      "type": "Ultimate",
+      "name": "Divine Castigation",
+      "tag": "Single Target",
+      "energy_cost": 120,
+      "energy_gain": 5,
+      "break": 40,
+
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+
+      "description_template": "Deals Quantum DMG equal to {{damage}}% of Xueyi's ATK to one designated enemy target. This attack ignores Weakness Types and reduces the enemy's Toughness. When the enemy's Weakness is Broken, the Quantum Weakness Break effect is triggered. In this attack, the more Toughness is reduced, the higher the DMG will be dealt, up to a max of {{toughness_dmg_bonus}}% increase.",
+
+      "scaling": {
+        "damage": [
+          125.0,
+          137.5,
+          150.0,
+          162.5,
+          175.0,
+          187.5,
+          203.125,
+          218.75,
+          234.375,
+          250.0,
+          262.5,
+          275.0
+        ],
+        "toughness_dmg_bonus": [
+          30.0,
+          33.0,
+          36.0,
+          39.0,
+          42.0,
+          45.0,
+          48.75,
+          52.5,
+          56.25,
+          60.0,
+          63.0,
+          66.0
+        ]
+      }
+    },
+
+    "talent": {
+      "type": "Talent",
+      "name": "Karmic Perpetuation",
+      "tag": "Bounce",
+      "energy_gain_per_hit": 2,
+      "break_per_hit": 5,
+
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+
+      "description_template": "When Xueyi reduces enemy Toughness with attacks, \"Karma\" will be stacked. The more Toughness is reduced, the more stacks of \"Karma\" are added, up to 8 stacks. When Xueyi's teammates reduce enemy Toughness with attacks, Xueyi gains 1 stack(s) of \"Karma.\" When \"Karma\" reaches the max number of stacks, consumes all current \"Karma\" stacks and immediately launches a Follow-Up ATK against an enemy target, dealing DMG for 3 times, with each time dealing Quantum DMG equal to {{follow_up_damage}}% of Xueyi's ATK to a single random enemy. This Follow-Up ATK will not add \"Karma\" stacks.",
+
+      "scaling": {
+        "follow_up_damage": [
+          45.0,
+          49.5,
+          54.0,
+          58.5,
+          63.0,
+          67.5,
+          73.125,
+          78.75,
+          84.375,
+          90.0,
+          94.5,
+          99.0
+        ]
+      }
+    },
+
+    "technique": {
+      "type": "Technique",
+      "name": "Summary Execution",
+      "tag": "Attack",
+      "break": 20,
+      "description": "Immediately attacks the enemy. After entering combat, deals Quantum DMG equal to 80% of Xueyi's ATK to all enemies."
+    }
+  },
+
+  "major_traces": {
+    "2": {
+      "name": "Clairvoyant Loom",
+      "description": "Increases DMG dealt by this unit by an amount equal to 100% of Break Effect, up to a maximum DMG increase of 240%."
+    },
+
+    "4": {
+      "name": "Intrepid Rollerbearings",
+      "description": "If the enemy target's Toughness is equal to or higher than 50% of their Max Toughness, deals 10% more DMG when using Ultimate."
+    },
+
+    "6": {
+      "name": "Perspicacious Mainframe",
+      "description": "Xueyi will keep a tally of the number of Karma stacks that exceed the max stack limit, up to 6 stacks in the tally. After Xueyi's Talent is triggered, she will gain a corresponding number of tallied Karma stacks."
+    }
+  },
+
+  "stat_bonuses": [
+    {
+      "stat": "Break Effect",
+      "value": "+37.3%"
+    },
+    {
+      "stat": "HP",
+      "value": "+18.0%"
+    },
+    {
+      "stat": "Quantum DMG",
+      "value": "+8.0%"
+    }
+  ],
+
+  "eidolons": [
+    {
+      "level": 1,
+      "name": "Dvesha, Inhibited",
+      "description": "Increases the DMG dealt by the Talent's Follow-Up ATK by 40%."
+    },
+
+    {
+      "level": 2,
+      "name": "Klesha, Breached",
+      "description": "Talent's Follow-Up ATK reduces enemy Toughness regardless of Weakness types. At the same time, restores Xueyi's HP by an amount equal to 5% of her Max HP. When breaking Weakness, triggers the Quantum Break Effect."
+    },
+
+    {
+      "level": 3,
+      "name": "Duḥkha, Ceased",
+      "description": "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+    },
+
+    {
+      "level": 4,
+      "name": "Karma, Severed",
+      "description": "When using Ultimate, increases Break Effect by 40% for 2 turn(s)."
+    },
+
+    {
+      "level": 5,
+      "name": "Deva, Enthralled",
+      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+    },
+
+    {
+      "level": 6,
+      "name": "Saṃsāra, Mastered",
+      "description": "The max stack limit for Karma decreases to 6."
+    }
+  ]
+}

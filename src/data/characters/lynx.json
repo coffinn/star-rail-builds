@@ -1,0 +1,212 @@
+{
+  "id": "lynx",
+  "name": "Lynx",
+  "rarity": 4,
+  "element": "quantum",
+  "path": "abundance",
+  "version_released": "1.3",
+  "max_energy": 100,
+
+  "level_80_stats": {
+    "hp": 1052,
+    "atk": 485,
+    "def": 582,
+    "spd": 100
+  },
+
+  "abilities": {
+    "basic": {
+      "type": "Basic ATK",
+      "name": "Ice Crampon Technique",
+      "tag": "Single Target",
+      "energy_gain": 20,
+      "break": 10,
+
+      "min_level": 1,
+      "max_level": 7,
+      "default_level": 6,
+
+      "description_template": "Deals Quantum DMG equal to {{damage}}% of Lynx's Max HP to one designated enemy.",
+
+      "scaling": {
+        "damage": [25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0]
+      }
+    },
+
+    "skill": {
+      "type": "Skill",
+      "name": "Salted Camping Cans",
+      "tag": "Heal",
+      "energy_gain": 30,
+
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+
+      "description_template": "Applies \"Survival Response\" to a single target ally and increases their Max HP by {{hp_max_boost_pct}}% of Lynx's Max HP plus {{hp_max_boost_flat}}. If the target ally is a character on the Path of Destruction or Preservation, the chance of them being attacked by enemies will greatly increase. \"Survival Response\" lasts for 2 turn(s). Restores the target's HP by {{hp_restore_pct}}% of Lynx's Max HP plus {{hp_restore_flat}}.",
+
+      "scaling": {
+        "hp_max_boost_pct": [
+          2.5, 3.0, 3.5, 4.0, 4.5, 5.0,
+          5.625, 6.25, 6.875, 7.5,
+          8.0, 8.5
+        ],
+        "hp_max_boost_flat": [
+          100, 110, 120, 130, 140, 150,
+          162.5, 175.0, 187.5, 200,
+          210, 220
+        ],
+        "hp_restore_pct": [
+          6.0, 6.6, 7.2, 7.8, 8.4, 9.0,
+          9.75, 10.5, 11.25, 12.0,
+          12.6, 13.2
+        ],
+        "hp_restore_flat": [
+          160, 176, 192, 208, 224, 240,
+          260, 280, 300, 320,
+          336, 352
+        ]
+      }
+    },
+
+    "ultimate": {
+      "type": "Ultimate",
+      "name": "Snowfield First Aid",
+      "tag": "Heal",
+      "energy_cost": 100,
+      "energy_gain": 5,
+
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+
+      "description_template": "Dispels 1 debuff(s) from all allies and immediately restores their respective HP by an amount equal to {{hp_restore_pct}}% of Lynx's Max HP plus {{hp_restore_flat}}.",
+
+      "scaling": {
+        "hp_restore_pct": [
+          5.5, 6.3, 7.1, 7.9, 8.7, 9.5,
+          10.5, 11.5, 12.5, 13.5,
+          14.3, 15.1
+        ],
+        "hp_restore_flat": [
+          180, 198, 216, 234, 252, 270,
+          292.5, 315.0, 337.5, 360,
+          378, 396
+        ]
+      }
+    },
+
+    "talent": {
+      "type": "Talent",
+      "name": "Outdoor Survival Experience",
+      "tag": "Heal",
+      "energy_gain": 0,
+
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+
+      "description_template": "When using Lynx's Skill or Ultimate, applies continuous healing to the target ally for 2 turn(s), restoring the target ally's HP by an amount equal to {{base_heal_pct}}% of Lynx's Max HP plus {{base_heal_flat}} at the start of each turn. If the target has \"Survival Response,\" the continuous healing effect additionally restores HP by an amount equal to {{sr_bonus_pct}}% of Lynx's Max HP plus {{sr_bonus_flat}}.",
+
+      "scaling": {
+        "base_heal_pct": [
+          1.8, 1.98, 2.16, 2.34, 2.52, 2.7,
+          2.925, 3.15, 3.375, 3.6,
+          3.78, 3.96
+        ],
+        "base_heal_flat": [
+          48, 52.8, 57.6, 62.4, 67.2, 72,
+          78, 84, 90, 96,
+          100.8, 105.6
+        ],
+        "sr_bonus_pct": [
+          2.25, 2.475, 2.7, 2.925, 3.15, 3.375,
+          3.65625, 3.9375, 4.21875, 4.5,
+          4.725, 4.95
+        ],
+        "sr_bonus_flat": [
+          60, 66, 72, 78, 84, 90,
+          97.5, 105.0, 112.5, 120,
+          126, 132
+        ]
+      }
+    },
+
+    "technique": {
+      "type": "Technique",
+      "name": "Chocolate Energy Bar",
+      "tag": "Heal",
+      "description": "After Lynx uses her Technique, at the start of the next battle, all allies are granted her Talent's continuous healing effect, lasting for 2 turn(s)."
+    }
+  },
+
+  "major_traces": {
+    "2": {
+      "name": "Advance Surveying",
+      "description": "After a target with \"Survival Response\" is hit, Lynx regenerates 2 Energy immediately."
+    },
+
+    "4": {
+      "name": "Exploration Techniques",
+      "description": "Increases the chance to resist Crowd Control debuffs by 35.0%."
+    },
+
+    "6": {
+      "name": "Survival in the Extreme",
+      "description": "Extends the duration of the continuous healing effect granted by Talent for 1 turn(s)."
+    }
+  },
+
+  "stat_bonuses": [
+    {
+      "stat": "HP",
+      "value": "+28.0%"
+    },
+    {
+      "stat": "DEF",
+      "value": "+22.5%"
+    },
+    {
+      "stat": "Effect RES",
+      "value": "+10.0%"
+    }
+  ],
+
+  "eidolons": [
+    {
+      "level": 1,
+      "name": "Morning of Snow Hike",
+      "description": "When healing allies with HP percentage equal to or lower than 50.0%, Lynx's Outgoing Healing increases by 20.0%. This effect also works on continuous healing."
+    },
+
+    {
+      "level": 2,
+      "name": "Noon of Portable Furnace",
+      "description": "A target with \"Survival Response\" can resist debuff application for 1 time(s)."
+    },
+
+    {
+      "level": 3,
+      "name": "Afternoon of Avalanche Beacon",
+      "description": "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+    },
+
+    {
+      "level": 4,
+      "name": "Dusk of Warm Campfire",
+      "description": "When \"Survival Response\" is gained, increases the target's ATK by an amount equal to 3.0% of Lynx's Max HP for 1 turn(s)."
+    },
+
+    {
+      "level": 5,
+      "name": "Night of Aurora Tea",
+      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+    },
+
+    {
+      "level": 6,
+      "name": "Dawn of Explorers' Chart",
+      "description": "Additionally boosts the Max HP increasing effect of \"Survival Response\" by an amount equal to 6.0% of Lynx's Max HP and increases Effect RES by 30.0%."
+    }
+  ]
+}

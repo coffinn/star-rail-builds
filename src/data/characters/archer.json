@@ -1,0 +1,196 @@
+{
+    "id": "archer",
+    "name": "Archer",
+    "rarity": 5,
+    "element": "quantum",
+    "path": "hunt",
+    "version_released": "3.4",
+    "collaboration": "Fate/stay night: Unlimited Blade Works",
+    "max_energy": 220,
+    "max_charge": 4,
+    "level_80_stats": {
+        "hp": 1011,
+        "atk": 739,
+        "def": 422,
+        "spd": 105
+    },
+    "abilities": {
+        "basic": {
+            "type": "Basic ATK",
+            "name": "Kanshou and Bakuya",
+            "tag": "Single Target",
+            "energy_gain": 20,
+            "break": 10,
+            "min_level": 1,
+            "max_level": 7,
+            "default_level": 6,
+            "description_template": "Deals Quantum DMG equal to {{damage}}% of Archer's ATK to one designated enemy.",
+            "scaling": {
+                "damage": [
+                    50,
+                    60,
+                    70,
+                    80,
+                    90,
+                    100,
+                    110
+                ]
+            }
+        },
+        "skill": {
+            "type": "Skill",
+            "name": "Caladbolg II: Fake Spiral Sword",
+            "tag": "Single Target",
+            "energy_gain": 30,
+            "break": 20,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Enters the \"Circuit Connection\" state. Deals Quantum DMG equal to {{damage}}% of Archer's ATK to one designated enemy. After using Skill in the \"Circuit Connection\" state, the current turn does not end and the DMG dealt by Archer's Skill increases by 100%. This effect can stack up to 2 time(s), lasting until he exits the \"Circuit Connection\" state. After actively using Skill 5 time(s) or when Skill Points are insufficient, exits the \"Circuit Connection\" state. After all enemy targets are defeated in each wave, exits the \"Circuit Connection\" state.",
+            "scaling": {
+                "damage": [
+                    180.0,
+                    198.0,
+                    216.0,
+                    234.0,
+                    252.0,
+                    270.0,
+                    292.5,
+                    315.0,
+                    337.5,
+                    360.0,
+                    378.0,
+                    396.0
+                ]
+            }
+        },
+        "skill_end": {
+            "type": "Skill (End)",
+            "name": "End",
+            "tag": "Enhance",
+            "description": "Exits the \"Circuit Connection\" state and ends the current turn."
+        },
+        "ultimate": {
+            "type": "Ultimate",
+            "name": "Unlimited Blade Works",
+            "tag": "Single Target",
+            "energy_cost": 220,
+            "energy_gain": 5,
+            "break": 30,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Deals Quantum DMG equal to {{damage}}% of Archer's ATK to one designated enemy and gains 2 point(s) of Charge, up to a maximum of 4.",
+            "scaling": {
+                "damage": [
+                    500.0,
+                    550.0,
+                    600.0,
+                    650.0,
+                    700.0,
+                    750.0,
+                    812.5,
+                    875.0,
+                    937.5,
+                    1000.0,
+                    1060.0,
+                    1120.0
+                ]
+            }
+        },
+        "talent": {
+            "type": "Talent",
+            "name": "Mind's Eye (True)",
+            "tag": "Single Target",
+            "energy_gain": 5,
+            "break": 10,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "After Archer's teammates attack enemy targets, Archer consumes 1 Charge and immediately launches a Follow-Up ATK on the primary target, dealing Quantum DMG equal to {{damage}}% of Archer's ATK and recovering 1 Skill Point. If the target is defeated before the Follow-Up ATK is launched, it will instead target one random enemy.",
+            "scaling": {
+                "damage": [
+                    100.0,
+                    110.0,
+                    120.0,
+                    130.0,
+                    140.0,
+                    150.0,
+                    162.5,
+                    175.0,
+                    187.5,
+                    200.0,
+                    210.0,
+                    220.0
+                ]
+            }
+        },
+        "technique": {
+            "type": "Technique",
+            "name": "Clairvoyance",
+            "tag": "Attack",
+            "break": 20,
+            "description": "Immediately attacks enemies. After entering combat, deals Quantum DMG equal to 200% of Archer's ATK to all enemies and gains 1 point of Charge."
+        }
+    },
+    "major_traces": {
+        "2": {
+            "name": "Projection Magecraft",
+            "description": "When Archer is on the field, increases the maximum Skill Point limit by 2."
+        },
+        "4": {
+            "name": "Hero of Justice",
+            "description": "When Archer enters combat, gains 1 point of Charge."
+        },
+        "6": {
+            "name": "Guardian",
+            "description": "After allies gain a Skill Point, if there are 4 Skill Points or more, increases Archer's CRIT DMG by 120% for 1 turn."
+        }
+    },
+    "stat_bonuses": [
+        {
+            "stat": "Quantum DMG",
+            "value": "+22.4%"
+        },
+        {
+            "stat": "ATK",
+            "value": "+18%"
+        },
+        {
+            "stat": "CRIT Rate",
+            "value": "+6.7%"
+        }
+    ],
+    "eidolons": [
+        {
+            "level": 1,
+            "name": "The Unreached Dream",
+            "description": "After using Skill 3 time(s) within one turn, recovers 2 Skill Point(s) for allies."
+        },
+        {
+            "level": 2,
+            "name": "The Unfulfilled Happiness",
+            "description": "When using Ultimate, reduces the enemy target's Quantum RES by 20% and applies Quantum Weakness to it, lasting for 2 turn(s)."
+        },
+        {
+            "level": 3,
+            "name": "The Untamed Will",
+            "description": "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+        },
+        {
+            "level": 4,
+            "name": "The Unsung Life",
+            "description": "Increases the Ultimate DMG dealt by 150%."
+        },
+        {
+            "level": 5,
+            "name": "The Nameless Watch",
+            "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+        },
+        {
+            "level": 6,
+            "name": "The Endless Pilgrimage",
+            "description": "When the turn starts, recovers 1 Skill Point for allies. The maximum number of stacks for the DMG boost effect from this unit's Skill increases by 1. Skill DMG dealt ignores 20% of DEF."
+        }
+    ]
+}

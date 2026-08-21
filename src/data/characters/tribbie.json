@@ -1,0 +1,236 @@
+{
+  "id": "tribbie",
+  "name": "Tribbie",
+  "rarity": 5,
+  "element": "quantum",
+  "path": "harmony",
+  "version_released": "3.2",
+  "max_energy": 120,
+
+  "level_80_stats": {
+    "hp": 1001,
+    "atk": 530,
+    "def": 634,
+    "spd": 96
+  },
+
+  "abilities": {
+    "basic": {
+      "type": "Basic ATK",
+      "name": "Hundred Rockets",
+      "tag": "Blast",
+      "energy_gain": 20,
+      "break_main": 10,
+      "break_aoe": 5,
+
+      "min_level": 1,
+      "max_level": 7,
+      "default_level": 6,
+
+      "description_template": "Deals Quantum DMG equal to {{main_damage}}% of Tribbie's Max HP to one designated enemy. Deals Quantum DMG equal to {{adjacent_damage}}% of Tribbie's Max HP to adjacent targets.",
+
+      "scaling": {
+        "main_damage": [15.0, 18.0, 21.0, 24.0, 27.0, 30.0, 33.0],
+        "adjacent_damage": [7.5, 9.0, 10.5, 12.0, 13.5, 15.0, 16.5]
+      }
+    },
+
+    "skill": {
+      "type": "Skill",
+      "name": "Where'd the Gifts Go",
+      "tag": "Support",
+      "energy_gain": 30,
+
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+
+      "description_template": "Gains \"Numinosity,\" lasting for 3 turn(s). This duration decreases by 1 at the start of this unit's every turn. While Tribbie has \"Numinosity,\" increases all ally targets' All-Type RES PEN by {{res_pen}}%.",
+
+      "scaling": {
+        "res_pen": [
+          12.0,
+          13.2,
+          14.4,
+          15.6,
+          16.8,
+          18.0,
+          19.5,
+          21.0,
+          22.5,
+          24.0,
+          25.2,
+          26.4
+        ]
+      }
+    },
+
+    "ultimate": {
+      "type": "Ultimate",
+      "name": "Guess Who Lives Here",
+      "tag": "AoE",
+      "energy_cost": 120,
+      "energy_gain": 5,
+      "break_adjacent": 20,
+
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+
+      "description_template": "Activates a Zone and deals Quantum DMG equal to {{initial_damage}}% of Tribbie's Max HP to all enemies. While the Zone lasts, increases enemy targets' DMG taken by {{zone_dmg_taken}}%. After an ally target attacks, for every 1 target hit, deals 1 instance of Quantum Additional DMG equal to {{zone_additional_damage}}% of Tribbie's Max HP to the target that has the highest HP among the hit targets. The Zone lasts for 2 turn(s). This duration decreases by 1 at the start of this unit's every turn.",
+
+      "scaling": {
+        "initial_damage": [
+          15.0,
+          16.5,
+          18.0,
+          19.5,
+          21.0,
+          22.5,
+          24.375,
+          26.25,
+          28.125,
+          30.0,
+          31.5,
+          33.0
+        ],
+        "zone_dmg_taken": [
+          15.0,
+          16.5,
+          18.0,
+          19.5,
+          21.0,
+          22.5,
+          24.375,
+          26.25,
+          28.125,
+          30.0,
+          31.5,
+          33.0
+        ],
+        "zone_additional_damage": [
+          6.0,
+          6.6,
+          7.2,
+          7.8,
+          8.4,
+          9.0,
+          9.75,
+          10.5,
+          11.25,
+          12.0,
+          12.6,
+          13.2
+        ]
+      }
+    },
+
+    "talent": {
+      "type": "Talent",
+      "name": "Busy as Tribbie",
+      "tag": "AoE",
+      "energy_gain": 5,
+      "break_adjacent": 5,
+
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+
+      "description_template": "After other ally characters use Ultimate, Tribbie launches a Follow-Up ATK, dealing Quantum DMG equal to {{follow_up_damage}}% of Tribbie's Max HP to all enemies. This effect triggers up to 1 time per character. When Tribbie uses Ultimate, resets the trigger count for other ally characters. If the target was defeated before the Follow-Up ATK is launched, then launches the Follow-Up ATK against new enemy targets entering the battlefield.",
+
+      "scaling": {
+        "follow_up_damage": [
+          9.0,
+          9.9,
+          10.8,
+          11.7,
+          12.6,
+          13.5,
+          14.625,
+          15.75,
+          16.875,
+          18.0,
+          18.9,
+          19.8
+        ]
+      }
+    },
+
+    "technique": {
+      "type": "Technique",
+      "name": "If You're Happy and You Know It",
+      "tag": "Enhance",
+      "description": "After using Technique and upon entering battle, obtains \"Numinosity,\" lasting for 3 turn(s)."
+    }
+  },
+
+  "major_traces": {
+    "2": {
+      "name": "Lamb Outside the Wall...",
+      "description": "After using Talent's Follow-Up ATK, increases the DMG dealt by Tribbie by 72%. This effect can stack up to 3 time(s), lasting for 3 turn(s)."
+    },
+
+    "4": {
+      "name": "Glass Ball with Wings!",
+      "description": "While the Zone lasts, Tribbie's Max HP increases by an amount equal to 9% of the sum of all ally characters' Max HP."
+    },
+
+    "6": {
+      "name": "Pebble at Crossroads?",
+      "description": "At the start of battle, Tribbie regenerates 30 Energy. After other ally targets attack, Tribbie regenerates 1.5 Energy for each target hit."
+    }
+  },
+
+  "stat_bonuses": [
+    {
+      "stat": "CRIT DMG",
+      "value": "+37.3%"
+    },
+    {
+      "stat": "CRIT Rate",
+      "value": "+12.0%"
+    },
+    {
+      "stat": "HP",
+      "value": "+10.0%"
+    }
+  ],
+
+  "eidolons": [
+    {
+      "level": 1,
+      "name": "Rite of Sugar Scoop",
+      "description": "While the Zone lasts and after ally targets attack enemies, additionally deals True DMG equal to 24% of the total DMG of this attack to targets that have been dealt Additional DMG by the Zone."
+    },
+
+    {
+      "level": 2,
+      "name": "Guide of Dream Tour",
+      "description": "The Additional DMG dealt by the Zone increases to 120% of the original DMG. When the Zone deals Additional DMG, further deals 1 instance(s) of Additional DMG."
+    },
+
+    {
+      "level": 3,
+      "name": "Trove of Morning Glow",
+      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+    },
+
+    {
+      "level": 4,
+      "name": "Peace of Empathy Bond",
+      "description": "While \"Numinosity\" lasts, the DMG dealt by all allies ignores 18% of the target's DEF."
+    },
+
+    {
+      "level": 5,
+      "name": "Clock of Wonder Origin",
+      "description": "Skill Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+    },
+
+    {
+      "level": 6,
+      "name": "Morrow of Star Shine",
+      "description": "After Tribbie uses Ultimate, launches her Talent's Follow-Up ATK against all enemies. The DMG dealt by Talent's Follow-Up ATK increases by 729%."
+    }
+  ]
+}
