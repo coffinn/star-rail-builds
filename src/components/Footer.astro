@@ -8,29 +8,30 @@ const deployVersion = import.meta.env.PUBLIC_DEPLOY_VERSION;
 ---
 
 <footer class="site-footer">
-  <nav class="footer-links" aria-label="Footer">
-    <a href={localizedPath(lang, 'credits')}>
-      {t(locale, 'ui', 'Credits', undefined, false)}
-    </a>
-    <a href={localizedPath(lang, 'faq')}>
-      {t(locale, 'ui', 'FAQ', undefined, false)}
-    </a>
-    <a href={localizedPath(lang, 'changelog')}>
-      {t(locale, 'ui', 'Changelog', undefined, false)}
-    </a>
-    <button class="footer-feedback-button" type="button" data-feedback-open>
-      {t(locale, 'ui', 'Feedback', undefined, false)}
-    </button>
-  </nav>
+    <nav class="footer-links" aria-label="Footer">
+        <a href={localizedPath(lang, 'credits')}>
+            {t(locale, 'ui', 'Credits', undefined, false)}
+        </a>
+        <a href={localizedPath(lang, 'faq')}>
+            {t(locale, 'ui', 'FAQ', undefined, false)}
+        </a>
+        <a href={localizedPath(lang, 'changelog')}>
+            {t(locale, 'ui', 'Changelog', undefined, false)}
+        </a>
+        <button class="footer-feedback-button" type="button" data-feedback-open>
+            {t(locale, 'ui', 'Feedback', undefined, false)}
+        </button>
+    </nav>
 
-  <p>
-    Original code and guide content <a href={localizedPath(lang, 'credits')}
-      >&copy; Genshin Impact Helper Team contributors</a
-    >. This website is not affiliated with HoYoverse.
-  </p>
-  <p>
-    Genshin Impact, game content, and materials are trademarks and copyrights of
-    COGNOSPHERE, HoYoverse, and their respective owners.
-  </p>
-  {deployVersion && <p class="footer-version">Deploy #{deployVersion}</p>}
+    <p>
+        Original code modified by the Honkai: Star Rail Navigator team and
+        adapted from the Genshin Impact Helper Team project. This website is not
+        affiliated with HoYoverse.
+    </p>
+
+    <p>
+        Honkai: Star Rail, game content, and materials are trademarks and
+        copyrights of COGNOSPHERE, HoYoverse, and their respective owners.
+    </p>
+    {deployVersion && <p class="footer-version">Deploy #{deployVersion}</p>}
 </footer>

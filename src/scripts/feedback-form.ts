@@ -25,7 +25,7 @@ const STATUS_SELECTOR = '[data-feedback-status]';
 const CAPTCHA_SELECTOR = '[data-feedback-captcha]';
 const SUCCESS_TOAST_SELECTOR = '#feedback-success-toast';
 const FEEDBACK_ISSUE_PATH_PATTERN =
-  /^\/Genshin-Impact-Helper-Team\/genshin-builds\/issues\/\d+$/i;
+  /^\/coffinn\/star-rail-builds\/issues\/\d+$/i;
 const TURNSTILE_SCRIPT_URL =
   'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';
 

@@ -1,6 +1,7 @@
 {
-"a-trail-of-bygone-blood": {
+    "a-trail-of-bygone-blood": {
         "rarity": 4,
+        "version_released": "3.4",
         "passive": {
             "en": "Increases the wearer's CRIT Rate by {{value}}%. The Skill DMG and Ultimate DMG dealt by the wearer increase by {{value}}%."
         },
@@ -35,9 +36,9 @@
             "def": 330
         }
     },
-
-"a-secret-vow": {
+    "a-secret-vow": {
         "rarity": 4,
+        "version_released": "1.0",
         "passive": {
             "en": "Increases DMG dealt by the wearer by {{value}}%. The wearer also deals an extra {{value}}% of DMG to enemies whose current HP percentage is equal to or higher than the wearer's current HP percentage."
         },
@@ -72,9 +73,9 @@
             "def": 264
         }
     },
-
-"a-thankless-coronation": {
+    "a-thankless-coronation": {
         "rarity": 5,
+        "version_released": "3.4",
         "passive": {
             "en": "Increases the wearer's CRIT DMG by {{value}}%. When using Ultimate, increases the wearer's ATK by {{value}}%, and if the wearer's Max Energy is greater than or equal to 300, regenerates a fixed amount of Energy equal to 10% of the wearer's Max Energy and once again increases the wearer's ATK by {{value}}%, lasting for 2 turns."
         },
@@ -114,9 +115,9 @@
             "def": 529
         }
     },
-
-"brighter-than-the-sun": {
+    "brighter-than-the-sun": {
         "rarity": 5,
+        "version_released": "1.3",
         "passive": {
             "en": "Increases the wearer's CRIT Rate by {{value}}%. When the wearer uses their Basic ATK, they will gain 1 stack of Dragon's Call, lasting for 2 turns. Each Stack of Dragon's Call increases the wearer's ATK by {{value}}% and Energy Regeneration Rate by {{value}}%. Dragon's Call can be stacked up to 2 times."
         },
@@ -156,9 +157,9 @@
             "def": 396
         }
     },
-
-"collapsing-sky": {
+    "collapsing-sky": {
         "rarity": 3,
+        "version_released": "1.0",
         "passive": {
             "en": "The wearer's Basic ATK and Skill deal {{value}}% more DMG."
         },
@@ -188,9 +189,9 @@
             "def": 198
         }
     },
-
-"dance-at-sunset": {
+    "dance-at-sunset": {
         "rarity": 5,
+        "version_released": "2.4",
         "passive": {
             "en": "Greatly increases the wearer's chance of getting attacked and increases CRIT DMG by {{value}}%. After the wearer uses Ultimate, receives 1 stack of Firedance, lasting for 2 turns and stacking up to 2 time(s). Each stack of Firedance increases the DMG dealt by the wearer's follow-up attack by {{value}}%."
         },
@@ -225,9 +226,9 @@
             "def": 463
         }
     },
-
-"flame-of-blood-blaze-my-path": {
+    "flame-of-blood-blaze-my-path": {
         "rarity": 5,
+        "version_released": "3.1",
         "passive": {
             "en": "Increases the wearer's Max HP by {{value}}% and Incoming Healing by {{value}}%. When using Skill or Ultimate, consumes HP equal to 6.0% of the wearer's Max HP and increases the DMG dealt by this attack by {{value}}%. If this effect's consumed HP is greater than 500, the DMG additionally increases by {{value}}%. If the current HP is not sufficient, this effect reduces the wearer's current HP down to 1."
         },
@@ -277,9 +278,9 @@
             "def": 396
         }
     },
-
-"flames-afar": {
+    "flames-afar": {
         "rarity": 4,
+        "version_released": "2.0",
         "passive": {
             "en": "When the wearer's cumulative HP loss during one attack exceeds 25% of their Max HP, or if the amount of their own HP consumed at one time is greater than 25% of their Max HP, immediately heals the wearer for 15% of their Max HP, and at the same time, increases the DMG they deal by {{value}}% for 2 turn(s). This effect can only be triggered once every 3 turn(s)."
         },
@@ -309,9 +310,9 @@
             "def": 264
         }
     },
-
-"i-am-as-you-behold": {
+    "i-am-as-you-behold": {
         "rarity": 5,
+        "version_released": "4.4",
         "passive": {
             "en": "Increases the wearer's ATK by {{value}}% and Energy Regeneration Rate by {{value}}%. When the wearer uses Ultimate, for every 1 Energy consumed, increases the Ultimate DMG dealt this time by {{value}}%, up to a max increase of {{value}}%. When the wearer enters combat or uses Ultimate, the wearer gains \"King's Entertainment,\" lasting for 3 turn(s). While the wearer holds \"King's Entertainment,\" increases all allies' CRIT DMG by {{value}}%. Effects of the same type cannot stack."
         },
@@ -361,9 +362,9 @@
             "def": 463
         }
     },
-
-"i-shall-be-my-own-sword": {
+    "i-shall-be-my-own-sword": {
         "rarity": 5,
+        "version_released": "1.4",
         "passive": {
             "en": "Increases the wearer's CRIT DMG by {{value}}%. When an ally (excluding the wearer) gets attacked or loses HP, the wearer gains 1 stack of Eclipse, up to a max of 3 stack(s). Each stack of Eclipse increases the DMG of the wearer's next attack by {{value}}%. When 3 stack(s) are reached, additionally enables that attack to ignore {{value}}% of the enemy's DEF. This effect will be removed after the wearer uses an attack."
         },
@@ -403,9 +404,9 @@
             "def": 396
         }
     },
-
-"indelible-promise": {
+    "indelible-promise": {
         "rarity": 4,
+        "version_released": "2.0",
         "passive": {
             "en": "Increases the wearer’s Break Effect by {{value}}%. When the wearer uses their Ultimate, increases CRIT Rate by {{value}}%, lasting for 2 turn(s)."
         },
@@ -440,9 +441,9 @@
             "def": 330
         }
     },
-
-"mutual-demise": {
+    "mutual-demise": {
         "rarity": 3,
+        "version_released": "1.0",
         "passive": {
             "en": "If the wearer's current HP is lower than 80%, CRIT Rate increases by {{value}}%."
         },
@@ -472,9 +473,9 @@
             "def": 198
         }
     },
-
-"ninja-record-sound-hunt": {
+    "ninja-record-sound-hunt": {
         "rarity": 4,
+        "version_released": "2.6",
         "passive": {
             "en": "Increases the wearer's Max HP by {{value}}%. When losing or restoring this unit's HP, increases CRIT DMG by {{value}}%, lasting for 2 turn(s). This effect can only trigger once per turn."
         },
@@ -509,9 +510,9 @@
             "def": 264
         }
     },
-
-"nowhere-to-run": {
+    "nowhere-to-run": {
         "rarity": 4,
+        "version_released": "1.0",
         "passive": {
             "en": "Increases the wearer's ATK by {{value}}%. Whenever the wearer defeats an enemy, they restore HP equal to {{value}}% of their ATK."
         },
@@ -546,9 +547,9 @@
             "def": 264
         }
     },
-
-"on-the-fall-of-an-aeon": {
+    "on-the-fall-of-an-aeon": {
         "rarity": 5,
+        "version_released": "1.0",
         "passive": {
             "en": "When the wearer attacks, increases their ATK by {{value}}% in this battle. This effect can stack up to 4 time(s). After the wearer breaks an enemy's Weakness, increases DMG dealt by {{value}}%, lasting for 2 turn(s)."
         },
@@ -583,9 +584,9 @@
             "def": 396
         }
     },
-
-"shattered-home": {
+    "shattered-home": {
         "rarity": 3,
+        "version_released": "1.0",
         "passive": {
             "en": "The wearer deals {{value}}% more DMG to enemy targets whose HP percentage is greater than 50%."
         },
@@ -615,9 +616,9 @@
             "def": 198
         }
     },
-
-"something-irreplaceable": {
+    "something-irreplaceable": {
         "rarity": 5,
+        "version_released": "1.0",
         "passive": {
             "en": "Increases the wearer's ATK by {{value}}%. When the wearer defeats an enemy or is hit, immediately restores HP equal to {{value}}% of the wearer's ATK. At the same time, the wearer's DMG is increased by {{value}}% until the end of their next turn. This effect cannot stack and can only trigger 1 time per turn."
         },
@@ -657,9 +658,9 @@
             "def": 396
         }
     },
-
-"the-moles-welcome-you": {
+    "the-moles-welcome-you": {
         "rarity": 4,
+        "version_released": "1.0",
         "passive": {
             "en": "When the wearer uses Basic ATK, Skill, or Ultimate to attack enemies, the wearer gains one stack of Mischievous. Each stack increases the wearer's ATK by {{value}}%."
         },
@@ -689,9 +690,9 @@
             "def": 264
         }
     },
-
-"the-unreachable-side": {
+    "the-unreachable-side": {
         "rarity": 5,
+        "version_released": "1.2",
         "passive": {
             "en": "Increases the wearer's CRIT rate by {{value}}% and increases their Max HP by {{value}}%. When the wearer is attacked or consumes their own HP, their DMG increases by {{value}}%. This effect is removed after the wearer uses an attack."
         },
@@ -731,9 +732,9 @@
             "def": 330
         }
     },
-
-"thus-burns-the-dawn": {
+    "thus-burns-the-dawn": {
         "rarity": 5,
+        "version_released": "3.4",
         "passive": {
             "en": "The wearer's base SPD increases by {{value}}. When dealing DMG, ignores {{value}}% of the target's DEF. After the wearer uses Ultimate, gains \"Blazing Sun,\" which is removed at the start of the turn. While holding \"Blazing Sun,\" increases the wearer's DMG dealt by {{value}}%."
         },
@@ -773,9 +774,9 @@
             "def": 396
         }
     },
-
-"under-the-blue-sky": {
+    "under-the-blue-sky": {
         "rarity": 4,
+        "version_released": "1.0",
         "passive": {
             "en": "Increases the wearer's ATK by {{value}}%. When the wearer defeats an enemy, the wearer's CRIT Rate increases by {{value}}% for 3 turn(s)."
         },
@@ -810,9 +811,9 @@
             "def": 330
         }
     },
-
-"whereabouts-should-dreams-rest": {
+    "whereabouts-should-dreams-rest": {
         "rarity": 5,
+        "version_released": "2.3",
         "passive": {
             "en": "Increases the wearer's Break Effect by {{value}}%. When the wearer deals Break DMG to an enemy target, inflicts Routed on the enemy, lasting for 2 turn(s). Targets afflicted with Routed receive {{value}}% increased Break DMG from the wearer, and their SPD is lowered by 20%. Effects of the same type cannot be stacked."
         },
@@ -847,9 +848,9 @@
             "def": 529
         }
     },
-
-"woof-walk-time-": {
+    "woof-walk-time": {
         "rarity": 4,
+        "version_released": "1.0",
         "passive": {
             "en": "Increases the wearer's ATK by {{value}}%, and increases their DMG to enemies afflicted with Burn or Bleed by {{value}}%. This also applies to DoT."
         },

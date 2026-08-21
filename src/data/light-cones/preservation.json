@@ -1,3 +1,633 @@
 {
-    
+    "amber": {
+        "rarity": 3,
+        "version_released": "1.0",
+        "passive": {
+            "en": "Increases the wearer's DEF by {{value}}%. If the wearer's current HP is lower than 50%, increases their DEF by a further {{value}}%."
+        },
+        "s1": [
+            16,
+            16
+        ],
+        "s2": [
+            20,
+            20
+        ],
+        "s3": [
+            24,
+            24
+        ],
+        "s4": [
+            28,
+            28
+        ],
+        "s5": [
+            32,
+            32
+        ],
+        "level_1": {
+            "hp": 38,
+            "atk": 12,
+            "def": 15
+        },
+        "level_max": {
+            "hp": 846,
+            "atk": 264,
+            "def": 330
+        }
+    },
+    "concert-for-two": {
+        "rarity": 4,
+        "version_released": "2.1",
+        "passive": {
+            "en": "Increases the wearer's DEF by {{value}}%. For every on-field character that has a Shield, the DMG dealt by the wearer increases by {{value}}%."
+        },
+        "s1": [
+            16,
+            4
+        ],
+        "s2": [
+            20,
+            5
+        ],
+        "s3": [
+            24,
+            6
+        ],
+        "s4": [
+            28,
+            7
+        ],
+        "s5": [
+            32,
+            8
+        ],
+        "level_1": {
+            "hp": 43,
+            "atk": 16,
+            "def": 21
+        },
+        "level_max": {
+            "hp": 952,
+            "atk": 370,
+            "def": 463
+        }
+    },
+    "day-one-of-my-new-life": {
+        "rarity": 4,
+        "version_released": "1.0",
+        "passive": {
+            "en": "Increases the wearer's DEF by {{value}}%. After entering battle, increases All-Type RES of all allies by {{value}}%. Abilities of the same type cannot stack."
+        },
+        "s1": [
+            16,
+            8
+        ],
+        "s2": [
+            18,
+            9
+        ],
+        "s3": [
+            20,
+            10
+        ],
+        "s4": [
+            22,
+            11
+        ],
+        "s5": [
+            24,
+            12
+        ],
+        "level_1": {
+            "hp": 43,
+            "atk": 16,
+            "def": 21
+        },
+        "level_max": {
+            "hp": 952,
+            "atk": 370,
+            "def": 463
+        }
+    },
+    "defense": {
+        "rarity": 3,
+        "version_released": "1.0",
+        "passive": {
+            "en": "When the wearer unleashes their Ultimate, they restore HP by {{value}}% of their Max HP."
+        },
+        "s1": [
+            18
+        ],
+        "s2": [
+            21
+        ],
+        "s3": [
+            24
+        ],
+        "s4": [
+            27
+        ],
+        "s5": [
+            30
+        ],
+        "level_1": {
+            "hp": 43,
+            "atk": 12,
+            "def": 12
+        },
+        "level_max": {
+            "hp": 952,
+            "atk": 264,
+            "def": 264
+        }
+    },
+    "destinys-threads-forewoven": {
+        "rarity": 4,
+        "version_released": "2.0",
+        "passive": {
+            "en": "Increases the wearer's Effect RES by {{value}}%. For every 100 of DEF the wearer has, increases the wearer's DMG dealt by {{value}}%, up to a maximum DMG increase of {{value}}%."
+        },
+        "s1": [
+            12,
+            0.8,
+            32
+        ],
+        "s2": [
+            14,
+            0.9,
+            36
+        ],
+        "s3": [
+            16,
+            1,
+            40
+        ],
+        "s4": [
+            18,
+            1.1,
+            44
+        ],
+        "s5": [
+            20,
+            1.2,
+            48
+        ],
+        "level_1": {
+            "hp": 43,
+            "atk": 16,
+            "def": 21
+        },
+        "level_max": {
+            "hp": 952,
+            "atk": 370,
+            "def": 463
+        }
+    },
+    "inherently-unjust-destiny": {
+        "rarity": 5,
+        "version_released": "2.1",
+        "passive": {
+            "en": "Increases the wearer's DEF by {{value}}%. When the wearer provides a Shield to an ally, the wearer's CRIT DMG increases by {{value}}%, lasting for 2 turn(s). When the wearer's follow-up attack hits an enemy target, there is a {{value}}% base chance to increase the DMG taken by the attacked enemy target by {{value}}%, lasting for 2 turn(s)."
+        },
+        "s1": [
+            40,
+            40,
+            100,
+            10
+        ],
+        "s2": [
+            46,
+            46,
+            115,
+            11.5
+        ],
+        "s3": [
+            52,
+            52,
+            130,
+            13
+        ],
+        "s4": [
+            58,
+            58,
+            145,
+            14.5
+        ],
+        "s5": [
+            64,
+            64,
+            160,
+            16
+        ],
+        "level_1": {
+            "hp": 48,
+            "atk": 19,
+            "def": 30
+        },
+        "level_max": {
+            "hp": 1058,
+            "atk": 423,
+            "def": 661
+        }
+    },"journey-forever-peaceful": {
+        "rarity": 4,
+        "version_released": "3.4",
+        "passive": {
+            "en": "Increases the wearer's provided Shield Effect by {{value}}%. While an ally target has a Shield, their DMG dealt increases by {{value}}%."
+        },
+        "s1": [
+            12,
+            12
+        ],
+        "s2": [
+            15,
+            14
+        ],
+        "s3": [
+            18,
+            16
+        ],
+        "s4": [
+            21,
+            18
+        ],
+        "s5": [
+            24,
+            20
+        ],
+        "level_1": {
+            "hp": 48,
+            "atk": 16,
+            "def": 24
+        },
+        "level_max": {
+            "hp": 1058,
+            "atk": 370,
+            "def": 529
+        }
+    },
+    "landaus-choice": {
+        "rarity": 4,
+        "version_released": "1.0",
+        "passive": {
+            "en": "The wearer is more likely to be attacked, and DMG taken is reduced by {{value}}%."
+        },
+        "s1": [
+            16
+        ],
+        "s2": [
+            18
+        ],
+        "s3": [
+            20
+        ],
+        "s4": [
+            22
+        ],
+        "s5": [
+            24
+        ],
+        "level_1": {
+            "hp": 43,
+            "atk": 19,
+            "def": 18
+        },
+        "level_max": {
+            "hp": 952,
+            "atk": 423,
+            "def": 396
+        }
+    },
+    "moment-of-victory": {
+        "rarity": 5,
+        "version_released": "1.0",
+        "passive": {
+            "en": "Increases the wearer's DEF by {{value}}% and Effect Hit Rate by {{value}}%. Increases the chance for the wearer to be attacked by enemies. When the wearer is attacked, increase their DEF by an extra {{value}}% until the end of the wearer's turn."
+        },
+        "s1": [
+            24,
+            24,
+            24
+        ],
+        "s2": [
+            28,
+            28,
+            28
+        ],
+        "s3": [
+            32,
+            32,
+            32
+        ],
+        "s4": [
+            36,
+            36,
+            36
+        ],
+        "s5": [
+            40,
+            40,
+            40
+        ],
+        "level_1": {
+            "hp": 48,
+            "atk": 21,
+            "def": 27
+        },
+        "level_max": {
+            "hp": 1058,
+            "atk": 476,
+            "def": 595
+        }
+    },
+    "pioneering": {
+        "rarity": 3,
+        "version_released": "1.0",
+        "passive": {
+            "en": "When the wearer Breaks an enemy's Weakness, the wearer restores HP by {{value}}% of their Max HP."
+        },
+        "s1": [
+            12
+        ],
+        "s2": [
+            14
+        ],
+        "s3": [
+            16
+        ],
+        "s4": [
+            18
+        ],
+        "s5": [
+            20
+        ],
+        "level_1": {
+            "hp": 43,
+            "atk": 12,
+            "def": 12
+        },
+        "level_max": {
+            "hp": 952,
+            "atk": 264,
+            "def": 264
+        }
+    },
+    "she-already-shut-her-eyes": {
+        "rarity": 5,
+        "version_released": "1.3",
+        "passive": {
+            "en": "Increases the wearer's Max HP by {{value}}% and Energy Regeneration Rate by {{value}}%. When the wearer's HP is reduced, all allies' DMG dealt increases by {{value}}%, lasting for 2 turn(s). At the start of every wave, restores HP to all allies by an amount equal to {{value}}% of their respective lost HP."
+        },
+        "s1": [
+            24,
+            12,
+            9,
+            80
+        ],
+        "s2": [
+            28,
+            14,
+            10.5,
+            85
+        ],
+        "s3": [
+            32,
+            16,
+            12,
+            90
+        ],
+        "s4": [
+            36,
+            18,
+            13.5,
+            95
+        ],
+        "s5": [
+            40,
+            20,
+            15,
+            100
+        ],
+        "level_1": {
+            "hp": 57,
+            "atk": 19,
+            "def": 24
+        },
+        "level_max": {
+            "hp": 1270,
+            "atk": 423,
+            "def": 529
+        }
+    },
+    "texture-of-memories": {
+        "rarity": 5,
+        "version_released": "1.0",
+        "passive": {
+            "en": "Increases the wearer's Effect RES by {{value}}%. If the wearer is attacked and has no Shield, they gain a Shield equal to {{value}}% of their Max HP for 2 turn(s). This effect can only be triggered once every 3 turn(s). If the wearer has a Shield when attacked, the DMG they receive decreases by {{value}}%."
+        },
+        "s1": [
+            8,
+            16,
+            12
+        ],
+        "s2": [
+            10,
+            20,
+            15
+        ],
+        "s3": [
+            12,
+            24,
+            18
+        ],
+        "s4": [
+            14,
+            28,
+            21
+        ],
+        "s5": [
+            16,
+            32,
+            24
+        ],
+        "level_1": {
+            "hp": 48,
+            "atk": 19,
+            "def": 24
+        },
+        "level_max": {
+            "hp": 1058,
+            "atk": 423,
+            "def": 529
+        }
+    },
+    "this-is-me": {
+        "rarity": 4,
+        "version_released": "1.0",
+        "passive": {
+            "en": "Increases the wearer's DEF by {{value}}%. Increases the DMG of the wearer when they use their Ultimate by {{value}}% of the wearer's DEF. This effect only applies 1 time per enemy target during each use of the wearer's Ultimate."
+        },
+        "s1": [
+            16,
+            60
+        ],
+        "s2": [
+            20,
+            75
+        ],
+        "s3": [
+            24,
+            90
+        ],
+        "s4": [
+            28,
+            105
+        ],
+        "s5": [
+            32,
+            120
+        ],
+        "level_1": {
+            "hp": 38,
+            "atk": 16,
+            "def": 24
+        },
+        "level_max": {
+            "hp": 846,
+            "atk": 370,
+            "def": 529
+        }
+    },
+    "though-worlds-apart": {
+        "rarity": 5,
+        "version_released": "3.6",
+        "passive": {
+            "en": "Increases the wearer's ATK by {{value}}%. When the wearer uses Ultimate, restores HP equal to {{value}}% of the wearer's ATK for all allies, and additionally restores HP equal to {{value}}% of the wearer's ATK for the character with the lowest current HP, and grants \"Redoubt\" to all allies for 3 turn(s). Targets with \"Redoubt\" deal {{value}}% increased DMG, which further increases by {{value}}% if the targets have summons."
+        },
+        "s1": [
+            64,
+            10,
+            10,
+            24,
+            12
+        ],
+        "s2": [
+            80,
+            13,
+            13,
+            30,
+            15
+        ],
+        "s3": [
+            96,
+            15,
+            15,
+            36,
+            18
+        ],
+        "s4": [
+            112,
+            18,
+            18,
+            42,
+            21
+        ],
+        "s5": [
+            128,
+            20,
+            20,
+            48,
+            24
+        ],
+        "level_1": {
+            "hp": 48,
+            "atk": 26,
+            "def": 21
+        },
+        "level_max": {
+            "hp": 1058,
+            "atk": 582,
+            "def": 463
+        }
+    },
+    "trend-of-the-universal-market": {
+        "rarity": 4,
+        "version_released": "1.0",
+        "passive": {
+            "en": "Increases the wearer's DEF by {{value}}%. When the wearer is attacked, there is a {{value}}% base chance to Burn the enemy. For each turn, the wearer deals DoT that is equal to {{value}}% of the wearer's DEF for 2 turn(s)."
+        },
+        "s1": [
+            16,
+            100,
+            40
+        ],
+        "s2": [
+            20,
+            105,
+            50
+        ],
+        "s3": [
+            24,
+            110,
+            60
+        ],
+        "s4": [
+            28,
+            115,
+            70
+        ],
+        "s5": [
+            32,
+            120,
+            80
+        ],
+        "level_1": {
+            "hp": 48,
+            "atk": 16,
+            "def": 18
+        },
+        "level_max": {
+            "hp": 1058,
+            "atk": 370,
+            "def": 396
+        }
+    },
+    "we-are-wildfire": {
+        "rarity": 4,
+        "version_released": "1.0",
+        "passive": {
+            "en": "At the start of the battle, the DMG dealt to all allies decreases by {{value}}% for 5 turn(s). At the same time, immediately restores HP to all allies equal to {{value}}% of the respective HP difference between the characters' Max HP and current HP."
+        },
+        "s1": [
+            8,
+            30
+        ],
+        "s2": [
+            10,
+            35
+        ],
+        "s3": [
+            12,
+            40
+        ],
+        "s4": [
+            14,
+            45
+        ],
+        "s5": [
+            16,
+            50
+        ],
+        "level_1": {
+            "hp": 33,
+            "atk": 21,
+            "def": 21
+        },
+        "level_max": {
+            "hp": 740,
+            "atk": 476,
+            "def": 463
+        }
+    }
 }

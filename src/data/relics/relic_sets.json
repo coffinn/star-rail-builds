@@ -1,32 +1,18 @@
 {
-    "eagle-of-twilight-line": {
+    "as-navigator-isee-sees-it": {
         "type": "cavern",
         "rarity": 5,
-        "version_released": "1.0",
+        "version_released": "4.3",
         "tags": [
-            "wind-dmg",
-            "action-advance"
+            "atk",
+            "skill-dmg",
+            "ultimate-dmg"
         ],
         "2p": {
-            "en": "Increases Wind DMG by 10%."
+            "en": "Increases ATK by 12%."
         },
         "4p": {
-            "en": "After the wearer uses their Ultimate, their action is Advanced Forward by 25%."
-        }
-    },
-    "genius-of-brilliant-stars": {
-        "type": "cavern",
-        "rarity": 5,
-        "version_released": "1.0",
-        "tags": [
-            "quantum-dmg",
-            "def-ignore"
-        ],
-        "2p": {
-            "en": "Increases Quantum DMG by 10%."
-        },
-        "4p": {
-            "en": "When the wearer deals DMG to the target enemy, ignores 10% DEF. If the target enemy has Quantum Weakness, the wearer additionally ignores 10% DEF."
+            "en": "When the wearer enters combat or uses Skill, the DMG dealt by their Skill and Ultimate increases by 18%, stacking up to 3 times. At the start of the wearer's turn or after using Ultimate, removes 1 stack of this effec"
         }
     },
     "band-of-sizzling-thunder": {
@@ -57,6 +43,68 @@
             "en": "After the wearer attacks or is hit, their ATK increases by 5% for the rest of the battle. This effect can stack up to 5 time(s)."
         }
     },
+    "divine-querying-master-smith": {
+        "type": "cavern",
+        "rarity": 5,
+        "version_released": "4.3",
+        "tags": [
+            "hp",
+            "crit-dmg",
+            "debuff"
+        ],
+        "2p": {
+            "en": "Increases Max HP by 12%."
+        },
+        "4p": {
+            "en": "Increases the wearer's CRIT DMG dealt to enemy targets in the DEF reduction state by 28%. After the wearer inflicts the DEF reduction state on an enemy target, all allies gain \"Comburent\" for 2 turns. This effect cannot be stacked. DMG dealt by ally targets with \"Comburent\" increases by 15%. This effect can be triggered again after the wearer uses an attack."
+        }
+    },
+    "diviner-of-distant-reach": {
+        "type": "cavern",
+        "rarity": 5,
+        "version_released": "4.0",
+        "tags": [
+            "speed",
+            "crit-rate",
+            "elation"
+        ],
+        "2p": {
+            "en": "Increases SPD by 6%."
+        },
+        "4p": {
+            "en": "Before entering combat, if the wearer's SPD is greater than or equal to 120/160, increases the wearer's CRIT Rate by 10%/18%. When the wearer uses Elation Skill for the first time in each battle, enhances all allies' Elation by 10%. This effect cannot stack."
+        }
+    },
+    "eagle-of-twilight-line": {
+        "type": "cavern",
+        "rarity": 5,
+        "version_released": "1.0",
+        "tags": [
+            "wind-dmg",
+            "action-advance"
+        ],
+        "2p": {
+            "en": "Increases Wind DMG by 10%."
+        },
+        "4p": {
+            "en": "After the wearer uses their Ultimate, their action is Advanced Forward by 25%."
+        }
+    },
+    "ever-glorious-magical-girl": {
+        "type": "cavern",
+        "rarity": 5,
+        "version_released": "4.0",
+        "tags": [
+            "elation-dmg",
+            "def-ignore"
+        ],
+        "2p": {
+            "en": "Increases CRIT DMG by 16%."
+        },
+        "4p": {
+            "en": "The Elation DMG dealt by the wearer and their memosprites ignores 10% of targets' DEF. For every 5 accumulated Punchline allies gain, the Elation DMG dealt additionally ignores 1% of targets' DEF, stacking up to 10 time(s)."
+        }
+    },
     "firesmith-of-lava-forging": {
         "type": "cavern",
         "rarity": 5,
@@ -69,6 +117,21 @@
         },
         "4p": {
             "en": "Increases the wearer's Skill DMG by 12%. After unleashing Ultimate, increases the wearer's Fire DMG by 12% for the next attack."
+        }
+    },
+    "genius-of-brilliant-stars": {
+        "type": "cavern",
+        "rarity": 5,
+        "version_released": "1.0",
+        "tags": [
+            "quantum-dmg",
+            "def-ignore"
+        ],
+        "2p": {
+            "en": "Increases Quantum DMG by 10%."
+        },
+        "4p": {
+            "en": "When the wearer deals DMG to the target enemy, ignores 10% DEF. If the target enemy has Quantum Weakness, the wearer additionally ignores 10% DEF."
         }
     },
     "guard-of-wuthering-snow": {
@@ -85,6 +148,22 @@
             "en": "At the beginning of the turn, if the wearer's HP is equal to or less than 50%, restores HP equal to 8% of their Max HP and regenerates 5 Energy."
         }
     },
+    "hero-of-triumphant-song": {
+        "type": "cavern",
+        "rarity": 5,
+        "version_released": "3.0",
+        "tags": [
+            "atk",
+            "speed",
+            "crit-dmg"
+        ],
+        "2p": {
+            "en": "Increases ATK by 12%."
+        },
+        "4p": {
+            "en": "While the wearer's memosprite is on the field, increases the wearer's SPD by 6%. When the wearer's memosprite attacks, increases the wearer's and memosprite's CRIT DMG by 30%, lasting for 2 turn(s).."
+        }
+    },
     "hunter-of-glacial-forest": {
         "type": "cavern",
         "rarity": 5,
@@ -99,6 +178,21 @@
             "en": "After the wearer uses their Ultimate, their CRIT DMG increases by 25% for 2 turn(s)."
         }
     },
+    "iron-cavalry-against-the-scourge": {
+        "type": "cavern",
+        "rarity": 5,
+        "version_released": "2.3",
+        "tags": [
+            "break-effect",
+            "def-ignore"
+        ],
+        "2p": {
+            "en": "Increases Break Effect by 16%."
+        },
+        "4p": {
+            "en": "If the wearer's Break Effect is 150% or higher, the Break DMG dealt to the enemy target ignores 10% of their DEF. If the wearer's Break Effect is 250% or higher, the Super Break DMG dealt to the enemy target additionally ignores 15% of their DEF."
+        }
+    },
     "knight-of-purity-palace": {
         "type": "cavern",
         "rarity": 5,
@@ -111,6 +205,35 @@
         },
         "4p": {
             "en": "Increases the max DMG that can be absorbed by the Shield created by the wearer by 20%."
+        }
+    }, 
+    "longevous-disciple": {
+        "type": "cavern",
+        "rarity": 5,
+        "version_released": "1.2",
+        "tags": [
+            "speed",
+            "crit-rate"
+        ],
+        "2p": {
+            "en": "Increases the wearer's Max HP by 12%."
+        },
+        "4p": {
+            "en": "When the wearer is hit or has their HP consumed by an ally or themselves, their CRIT Rate increases by 8% for 2 turn(s) and up to 2 stacks."
+        }
+    },
+    "messenger-traversing-hackerspace": {
+        "type": "cavern",
+        "rarity": 5,
+        "version_released": "1.2",
+        "tags": [
+            "speed"
+        ],
+        "2p": {
+            "en": "Increases SPD by 6%."
+        },
+        "4p": {
+            "en": "When the wearer uses their Ultimate on an ally, SPD for all allies increases by 12% for 1 turn(s). This effect cannot be stacked."
         }
     },
     "musketeer-of-wild-wheat": {
@@ -132,13 +255,138 @@
         "rarity": 5,
         "version_released": "1.0",
         "tags": [
-            "ogh"
+            "outgoing-healing"
         ],
         "2p": {
             "en": "Increases Outgoing Healing by 10%."
         },
         "4p": {
             "en": "At the start of the battle, immediately regenerates 1 Skill Point."
+        }
+    },
+    "pioneer-diver-of-dead-waters": {
+        "type": "cavern",
+        "rarity": 5,
+        "version_released": "2.0",
+        "tags": [
+            "debuff",
+            "crit-rate",
+            "crit-dmg"
+        ],
+        "2p": {
+            "en": "Increases DMG dealt to enemies with debuffs by 12%."
+        },
+        "4p": {
+            "en": "Increases CRIT Rate by 4%. The wearer deals 8%/12% increased CRIT DMG to enemies with at least 2/3 debuffs. After the wearer inflicts a debuff on enemy targets, the aforementioned effects increase by 100%, lasting for 1 turn(s)."
+        }
+    },
+    "poet-of-mourning-collapse": {
+        "type": "cavern",
+        "rarity": 5,
+        "version_released": "3.0",
+        "tags": [
+            "quantum-dmg",
+            "crit-rate"
+        ],
+        "2p": {
+            "en": "Increases Quantum DMG by 10%."
+        },
+        "4p": {
+            "en": "Decreases the wearer's SPD by 8%. Before entering battle, if the wearer's SPD is lower than 110/95, increases the wearer's CRIT Rate by 20%/32%. This effect applies to the wearer's memosprite at the same time."
+        }
+    },
+    "prisoner-in-deep-confinement": {
+        "type": "cavern",
+        "rarity": 5,
+        "version_released": "1.5",
+        "tags": [
+            "atk",
+            "dot",
+            "def-ignore"
+        ],
+        "2p": {
+            "en": "ATK increases by 12%."
+        },
+        "4p": {
+            "en": "For every DoT the target enemy is afflicted with, the wearer will ignore 6% of its DEF when dealing DMG to it. This effect is valid for a max of 3 DoTs."
+        }
+    },
+    "sacerdos-relived-ordeal": {
+        "type": "cavern",
+        "rarity": 5,
+        "version_released": "2.6",
+        "tags": [
+            "speed",
+            "crit-dmg"
+        ],
+        "2p": {
+            "en": "Increases SPD by 6%."
+        },
+        "4p": {
+            "en": "When using Skill or Ultimate on one ally target, increases the ability target's CRIT DMG by 18%, lasting for 2 turn(s). This effect can stack up to 2 time(s)."
+        }
+    },
+    "scholar-lost-in-erudition": {
+        "type": "cavern",
+        "rarity": 5,
+        "version_released": "2.6",
+        "tags": [
+            "crit-rate",
+            "skill-dmg",
+            "ultimate-dmg"
+        ],
+        "2p": {
+            "en": "Increases CRIT Rate by 8%."
+        },
+        "4p": {
+            "en": "Increases DMG dealt by Skill and Ultimate by 20%. After using Ultimate, additionally increases the DMG dealt by the next Skill by 25%."
+        }
+    },
+    "self-enshrouded-recluse": {
+        "type": "cavern",
+        "rarity": 5,
+        "version_released": "3.6",
+        "tags": [
+            "shield-effect",
+            "crit-dmg"
+        ],
+        "2p": {
+            "en": "Increases Shield Effect by 10%."
+        },
+        "4p": {
+            "en": "Increases Shield Effect provided by the wearer by 12%. When an ally target has a Shield provided by the wearer, the ally target's CRIT DMG increases by 15%."
+        }
+    },
+    "the-ashblazing-grand-duke": {
+        "type": "cavern",
+        "rarity": 5,
+        "version_released": "1.5",
+        "tags": [
+            "fua-dmg",
+            "atk"
+        ],
+        "2p": {
+            "en": "Increases the DMG dealt by follow-up attacks by 20%."
+        },
+        "4p": {
+            "en": "When the wearer uses follow-up attacks, increases the wearer's ATK by 6% for every time the follow-up attack deals DMG. This effect can stack up to 8 time(s) and lasts for 3 turn(s). This effect is removed the next time the wearer uses a follow-up attack."
+        }
+    },
+    "the-wind-soaring-valorous": {
+        "type": "cavern",
+        "rarity": 5,
+        "version_released": "2.3",
+        "tags": [
+            "atk",
+            "crit-rate",
+            "ultimate-dmg"
+
+        ],
+        "2p": {
+            "en": "Increases ATK by 12%."
+        },
+        "4p": {
+            "en": "Increases the wearer's CRIT Rate by 6%. When the wearer uses a follow-up attack, increases the DMG dealt by Ultimate by 36%, lasting for 1 turn(s)."
         }
     },
     "thief-of-shooting-meteor": {
@@ -155,6 +403,22 @@
             "en": "Increases the wearer's Break Effect by 16%. After the wearer inflicts Weakness Break on an enemey, regenerates 3 Energy."
         }
     },
+    "warrior-goddess-of-sun-and-thunder": {
+        "type": "cavern",
+        "rarity": 5,
+        "version_released": "3.3",
+        "tags": [
+            "speed",
+            "outgoing-healing",
+            "crit-dmg"
+        ],
+        "2p": {
+            "en": "Increases SPD by 6%."
+        },
+        "4p": {
+            "en": "When the wearer or their memosprite provides healing to ally targets other than themselves, the wearer gains \"Gentle Rain,\" which lasts for 2 turn(s) and can only trigger once per turn. While the wearer has \"Gentle Rain,\" SPD increases by 6% and all allies' CRIT DMG increases by 15%. This effect cannot stack."
+        }
+    },
     "wastelander-of-banditry-desert": {
         "type": "cavern",
         "rarity": 5,
@@ -169,6 +433,106 @@
             "en": "When attacking debuffed enemies, the wearer's CRIT Rate increases by 10%, and their CRIT DMG increases by 20% against Imprisoned enemies."
         }
     },
+    "watchmaker-master-of-dream-machinations": {
+        "type": "cavern",
+        "rarity": 5,
+        "version_released": "2.0",
+        "tags": [
+            "break-effect"
+        ],
+        "2p": {
+            "en": "Increases Break Effect by 16%."
+        },
+        "4p": {
+            "en": "When the wearer uses their Ultimate on an ally, all allies' Break Effect increases by 30% for 2 turn(s). This effect cannot be stacked."
+        }
+    },
+    "wavestrider-captain": {
+        "type": "cavern",
+        "rarity": 5,
+        "version_released": "3.3",
+        "tags": [
+            "crit-dmg"
+        ],
+        "2p": {
+            "en": "Increases CRIT DMG by 16%."
+        },
+        "4p": {
+            "en": "When the wearer becomes the target of another ally target's ability, gains 1 stack of \"Help,\" stacking up to 2 time(s). If there are 2 stack(s) of \"Help\" when the wearer uses their Ultimate, consumes all \"Help\" to increase the wearer's ATK by 48% for 1 turn(s)."
+        }
+    },
+    "world-remaking-deliverer": {
+        "type": "cavern",
+        "rarity": 5,
+        "version_released": "3.6",
+        "tags": [
+            "crit-rate",
+            "hp",
+            "dmg-boost"
+        ],
+        "2p": {
+            "en": "Increases CRIT Rate by 8%."
+        },
+        "4p": {
+            "en": "After the wearer uses Basic ATK or Skill, if the wearer's memosprite is on the field, increases Max HP of the wearer and their memosprite by 24%, and increases all allies' DMG by 15% until the wearer's next Basic ATK or Skill."
+        }
+    },
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    "arcadia-of-woven-dreams": {
+        "type": "planar",
+        "rarity": 5,
+        "version_released": "3.4",
+        "tags": [
+            "dmg-boost"
+        ],
+        "2p": {
+            "en": "When there are currently more or less than 4 ally targets in battle, each additional/missing ally target increases the wearer and their memosprite's DMG by 9%/12%, up to a maximum of 4/3 stacks."
+        }
+    },
     "belobog-of-the-architects": {
         "type": "planar",
         "rarity": 5,
@@ -181,29 +545,28 @@
             "en": "Increases the wearer's DEF by 15%. When the wearer's Effect Hit Rate is 50% or higher, the wearer gains an extra 15% DEF."
         }
     },
-    "fleet-of-the-ageless": {
+    "bone-collections-serene-demesne": {
         "type": "planar",
         "rarity": 5,
-        "version_released": "1.0",
+        "version_released": "3.1",
         "tags": [
             "hp",
-            "atk"
+            "crit-dmg"
         ],
         "2p": {
-            "en": "Increases the wearer's Max HP by 12%. When the wearer's SPD reaches 120 or higher, all allies' ATK increases by 8%."
+            "en": "ncreases the wearer's Max HP by 12%. When the wearer's Max HP is 5000 or higher, increases the wearer's and their memosprite's CRIT DMG by 28%."
         }
     },
-    "inert-salsotto": {
+    "broken-keel": {
         "type": "planar",
         "rarity": 5,
-        "version_released": "1.0",
+        "version_released": "1.2",
         "tags": [
-            "ultimate-dmg",
-            "fua-dmg",
-            "crit-rate"
+            "effect-res",
+            "crit-dmg"
         ],
         "2p": {
-            "en": "Increases the wearer's Max HP by 12%. When the wearer's SPD reaches 120 or higher, all allies' ATK increases by 8%."
+            "en": "Increases the wearer's Effect RES by 10%. When the wearer's Effect RES is at 30% or higher, all allies' CRIT DMG increases by 10%."
         }
     },
     "celestial-differentiator": {
@@ -218,6 +581,138 @@
             "en": "Increases the wearer's CRIT DMG by 16%. When the wearer's current CRIT DMG reaches 120% or higher, after entering battle, the wearer's CRIT Rate increases by 60% until the end of their first attack."
         }
     },
+    "city-of-converging-stars": {
+        "type": "planar",
+        "rarity": 5,
+        "version_released": "4.1",
+        "tags": [
+            "follow-up-atk",
+            "crit-dmg"
+        ],
+        "2p": {
+            "en": "When the wearer uses a Follow-Up ATK, increases their ATK by 24% for 2 turns. When an enemy target is defeated, increases CRIT DMG for all allies by 12% for the rest of the current battle. This effect cannot stack."
+        }
+    },
+    "cosmic-life-sciences-institute": {
+        "type": "planar",
+        "rarity": 5,
+        "version_released": "4.4",
+        "tags": [
+            "dmg-boost"
+        ],
+        "2p": {
+            "en": "When entering combat, if the wearer's Max Energy is greater than or equal to 200, for every 1 excess point, increases the wearer's DMG dealt by 0.2%, up to a max increase of 32%."
+        }
+    },
+    "duran-dynasty-of-running wolves": {
+        "type": "planar",
+        "rarity": 5,
+        "version_released": "2.3",
+        "tags": [
+            "follow-up-atk",
+            "crit-dmg"
+        ],
+        "2p": {
+            "en": "When an ally uses follow-up attacks, the wearer gains 1 stack of Merit, stacking up to 5 time(s). Each stack of Merit increases the DMG dealt by the wearer's follow-up attacks by 5%. When there are 5 stacks, additionally increases the wearer's CRIT DMG by 25%."
+        }
+    },
+    "fallen-star-anchorage": {
+        "type": "planar",
+        "rarity": 5,
+        "version_released": "4.4",
+        "tags": [
+            "crit-rate",
+            "crit-dmg"
+        ],
+        "2p": {
+            "en": "Increases the wearer's CRIT Rate by 8%. When entering combat, if the wearer and another teammate are both Trailblaze Companions characters, increases the wearer's CRIT DMG by 32%."
+        }
+    },
+    "firament-frontline-:-glamoth": {
+        "type": "planar",
+        "rarity": 5,
+        "version_released": "1.5",
+        "tags": [
+            "atk",
+            "dmg-boost"
+        ],
+        "2p": {
+            "en": "Increases the wearer's ATK by 12%. When the wearer's SPD is equal to or higher than 135/160, the wearer deals 12%/18% more DMG."
+        }
+    },
+    "fleet-of-the-ageless": {
+        "type": "planar",
+        "rarity": 5,
+        "version_released": "1.0",
+        "tags": [
+            "hp",
+            "atk"
+        ],
+        "2p": {
+            "en": "Increases the wearer's Max HP by 12%. When the wearer's SPD reaches 120 or higher, all allies' ATK increases by 8%."
+        }
+    },
+    "forge-of-the-kalpagni-lantern": {
+        "type": "planar",
+        "rarity": 5,
+        "version_released": "2.3",
+        "tags": [
+            "speed",
+            "break-effect"
+        ],
+        "2p": {
+            "en": "Increases the wearer's SPD by 6%. When the wearer hits an enemy target that has Fire Weakness, the wearer's Break Effect increases by 40%, lasting for 1 turn(s)."
+        }
+    },
+    "giant-tree-of-rapt-brooding": {
+        "type": "planar",
+        "rarity": 5,
+        "version_released": "3.1",
+        "tags": [
+            "speed",
+            "outgoing-healing"
+        ],
+        "2p": {
+            "en": "Increases the wearer's SPD by 6%. When the wearer's Speed is 135/180 or higher, increases the wearer and their memosprite's Outgoing Healing by 12%/20%."
+        }
+    },
+    "inert-salsotto": {
+        "type": "planar",
+        "rarity": 5,
+        "version_released": "1.0",
+        "tags": [
+            "ultimate-dmg",
+            "follow-up-atk",
+            "crit-rate"
+        ],
+        "2p": {
+            "en": "Increases the wearer's CRIT Rate by 8%. When the wearer's current CRIT Rate reaches 50% or higher, the wearer's Ultimate and follow-up attack DMG increases by 15%."
+        }
+    },
+    "izumo-gensei-and-takama-divine-realm": {
+        "type": "planar",
+        "rarity": 5,
+        "version_released": "2.1",
+        "tags": [
+            "atk",
+            "crit-rate"
+        ],
+        "2p": {
+            "en": "Increases the wearer's ATK by 12%. When entering battle, if at least one other ally follows the same Path as the wearer, then the wearer's CRIT Rate increases by 12%."
+        }
+    },
+    "lushaka-the-sunken-seas": {
+        "type": "planar",
+        "rarity": 5,
+        "version_released": "2.5",
+        "tags": [
+            "energy-regen",
+            "atk"
+        ],
+        "2p": {
+            "en": "Increases the wearer's Energy Regeneration Rate by 5%. If the wearer is not the first character in the team lineup, then increases the ATK of the first character in the team lineup by 12%."
+        }
+    },
     "pan-cosmic-commercial-enterprise": {
         "type": "planar",
         "rarity": 5,
@@ -228,6 +723,68 @@
         ],
         "2p": {
             "en": "Increases the wearer's CRIT DMG by 16%. When the wearer's current CRIT DMG reaches 120% or higher, after entering battle, the wearer's CRIT Rate increases by 60% until the end of their first attack."
+        }
+    },
+    
+    "penacony,-land-of-the-dreams": {
+        "type": "planar",
+        "rarity": 5,
+        "version_released": "1.5",
+        "tags": [
+            "energy-regen",
+            "same-type-dmg"
+        ],
+        "2p": {
+            "en": "Increases wearer's Energy Regeneration Rate by 5%. Increases DMG by 10% for all other allies that are of the same Type as the wearer."
+        }
+    },
+    "punklorde-stage-zero": {
+        "type": "planar",
+        "rarity": 5,
+        "version_released": "4.1",
+        "tags": [
+            "elation",
+            "crit-dmg"
+        ],
+        "2p": {
+            "en": "Increases the wearer's Elation by 8%. When Elation reaches 40%/80% for the first time in battle, increases the wearer's CRIT DMG by 20%/32%."
+        }
+    },
+    "sigonia-the-unclaimed-desolation": {
+        "type": "planar",
+        "rarity": 5,
+        "version_released": "2.1",
+        "tags": [
+            "crit-rate",
+            "crit-dmg"
+        ],
+        "2p": {
+            "en": "Increases the wearer's CRIT Rate by 4%. When an enemy target gets defeated, the wearer's CRIT DMG increases by 4%, stacking up to 10 time(s)."
+        }
+    },
+    "revelry-by-the-sea": {
+        "type": "planar",
+        "rarity": 5,
+        "version_released": "3.4",
+        "tags": [
+            "atk",
+            "dot-dmg"
+        ],
+        "2p": {
+            "en": "Increases the wearer's ATK by 12%. When the wearer's ATK is higher than or equal to 2,400/3,600, increases the DoT DMG dealt by 12%/24%."
+        }
+    },
+    "rutilant-arena": {
+        "type": "planar",
+        "rarity": 5,
+        "version_released": "1.2",
+        "tags": [
+            "crit-rate",
+            "skill-dmg",
+            "basic-atk-dmg"
+        ],
+        "2p": {
+            "en": "Increases the wearer's CRIT Rate by 8%. When the wearer's current CRIT Rate reaches 70% or higher, the wearer's Basic ATK and Skill DMG increase by 20%."
         }
     },
     "space-sealing-station": {
@@ -253,5 +810,18 @@
         "2p": {
             "en": "Increases the wearer's Energy Regeneration Rate by 5%. When the wearer's SPD reaches 120 or higher, the wearer's action is Advanced Forward by 40% immediately upon entering battle."
         }
+    },
+    "the-wondrous-bananamusement-park": {
+        "type": "planar",
+        "rarity": 5,
+        "version_released": "2.5",
+        "tags": [
+            "crit-dmg"
+        ],
+        "2p": {
+            "en": "Increases the wearer's CRIT DMG by 16%. When a target summoned by the wearer is on the field, CRIT DMG additionally increases by 32%."
+        }
     }
+    
+    
 }

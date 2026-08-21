@@ -1,0 +1,291 @@
+{
+  "id": "yanqing",
+  "name": "Yanqing",
+  "rarity": 5,
+  "element": "ice",
+  "path": "hunt",
+  "version_released": "1.0",
+  "max_energy": 140,
+
+  "level_80_stats": {
+    "hp": 892,
+    "atk": 679,
+    "def": 412,
+    "spd": 109
+  },
+
+  "abilities": {
+    "basic": {
+      "type": "Basic ATK",
+      "name": "Frost Thorn",
+      "tag": "Single Target",
+      "energy_gain": 20,
+      "break": 10,
+
+      "min_level": 1,
+      "max_level": 7,
+      "default_level": 6,
+
+      "description_template": "Deals Ice DMG equal to {{damage}}% of Yanqing's ATK to a single enemy.",
+
+      "scaling": {
+        "damage": [
+          50,
+          60,
+          70,
+          80,
+          90,
+          100,
+          110
+        ]
+      }
+    },
+
+    "skill": {
+      "type": "Skill",
+      "name": "Darting Ironthorn",
+      "tag": "Single Target",
+      "energy_gain": 30,
+      "break": 20,
+
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+
+      "description_template": "Deals Ice DMG equal to {{damage}}% of Yanqing's ATK to a single enemy and activates Soulsteel Sync for 1 turn.",
+
+      "scaling": {
+        "damage": [
+          110,
+          121,
+          132,
+          143,
+          154,
+          165,
+          178.75,
+          192.5,
+          206.25,
+          220,
+          231,
+          242
+        ]
+      }
+    },
+
+    "ultimate": {
+      "type": "Ultimate",
+      "name": "Amidst the Raining Bliss",
+      "tag": "Single Target",
+      "energy_cost": 140,
+      "energy_gain": 5,
+      "break": 20,
+
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+
+      "description_template": "Increases Yanqing's CRIT Rate by 60%. When Soulsteel Sync is active, increases Yanqing's CRIT DMG by an extra {{crit_dmg}}%. This buff lasts for one turn. Afterwards, deals Ice DMG equal to {{damage}}% of Yanqing's ATK to a single enemy. ",
+
+      "scaling": {
+        "crit_dmg": [
+          80,
+          84,
+          88,
+          92,
+          96,
+          100,
+          105,
+          110,
+          115,
+          120,
+          124,
+          128
+        ],
+
+        "damage": [
+          210,
+          224,
+          238,
+          252,
+          266,
+          280,
+          297.5,
+          315,
+          332.5,
+          350,
+          364,
+          378
+        ]
+      }
+    },
+
+    "talent": {
+      "type": "Talent",
+      "name": "One With the Sword",
+      "tag": "Single Target",
+      "energy_gain": 10,
+      "break": 10,
+
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+
+      "description_template": "When Soulsteel Sync is active, Yanqing is less likely to be attacked by enemies. Yanqing's CRIT Rate increases by {{crit_rate}}% and his CRIT DMG increases by {{crit_dmg}}%. After Yanqing attacks an enemy, there is a {{fua_chance}}% fixed chance to launch Follow-up ATK, dealing Ice DMG equal to {{damage}}% of Yanqing's ATK to the enemy, which has a 65% base chance to Freeze the enemy for 1 turn. The Frozen target cannot take action and receives Ice Additional DMG equal to {{add_damage}}% of Yanqing's ATK at the beginning of each turn. When Yanqing receives DMG, the Soulsteel Sync effect will disappear. ",
+
+      "scaling": {
+        "crit_rate": [
+        15,
+        15.5,
+        16,
+        16.5,
+        17,
+        17.5,
+        18.125,
+        18.75,
+        19.375,
+        20,
+        20.5,
+        21
+        ],
+
+        "fua_chance" : [
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56.25,
+        57.5,
+        58.75,
+        60,
+        61,
+        62
+        ],
+
+        "crit_dmg" : [
+        15,
+        16.5,
+        18,
+        19.5,
+        21,
+        22.5,
+        24.375,
+        26.25,
+        28.125,
+        30,
+        31.5,
+        33
+        ],
+
+        "add_damage": [
+        25,
+        27.5,
+        30,
+        32.5,
+        35,
+        37.5,
+        40.625,
+        43.75,
+        46.875,
+        50,
+        52.5,
+        55
+        ],
+
+        "damage": [
+        25,
+        27.5,
+        30,
+        32.5,
+        35,
+        37.5,
+        40.625,
+        43.75,
+        46.875,
+        50,
+        52.5,
+        55
+        ]
+      }
+    },
+
+    "technique": {
+      "type": "Technique",
+      "name": "The One True Sword",
+      "tag": "Enhance",
+      "break": 0,
+      "description": "After using his Technique, at the start of the next battle, Yanqing deals 30% more DMG for 2 turn(s) to enemies whose current HP percentage is 50% or higher."
+    }
+  },
+
+  "major_traces": {
+    "2": {
+      "name": "Icing on the Kick",
+      "description": "After Yanqing attacks, deals Ice Additional DMG equal to 30% of Yanqing's ATK to enemies with Ice Weakness."
+    },
+
+    "4": {
+      "name": "Frost Favors the Brave",
+      "description": "When Soulsteel Sync is active, Effect RES increases by 20%."
+    },
+
+    "6": {
+      "name": "Gentle Blade",
+      "description": "When a CRIT Hit is triggered, increases SPD by 10% for 2 turn(s)."
+    }
+  },
+
+  "stat_bonuses": [
+    {
+      "stat": "HP",
+      "value": "+6%"
+    },
+    {
+      "stat": "ATK",
+      "value": "+18%"
+    },
+    {
+      "stat": "Ice DMG",
+      "value": "+10.8%"
+    }
+  ],
+
+  "eidolons": [
+    {
+      "level": 1,
+      "name": "Svelte Saber",
+      "description": "When Yanqing attacks a Frozen enemy, he deals Ice Additional DMG equal to 60% of his ATK."
+    },
+
+    {
+      "level": 2,
+      "name": "Supine Serenade",
+      "description": "When Soulsteel Sync is active, Energy Regeneration Rate increases by an extra 10%."
+    },
+
+    {
+      "level": 3,
+      "name": "Sword Savant",
+      "description": "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+    },
+
+    {
+      "level": 4,
+      "name": "Searing Sting",
+      "description": "When the current HP percentage is 80% or higher, this unit's Ice RES PEN increases by 12%."
+    },
+
+    {
+      "level": 5,
+      "name": "Surging Strife",
+      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+    },
+
+    {
+      "level": 6,
+      "name": "Swift Swoop",
+      "description": "If the buffs from \"Soulsteel Sync\" or the Ultimate are in effect when an enemy is defeated, the duration of these buffs is extended by 1 turn."
+    }
+  ]
+}

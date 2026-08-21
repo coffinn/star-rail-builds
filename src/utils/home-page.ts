@@ -59,7 +59,7 @@ function getBuildSummaries(
  * Builds the localized character list used by the home page.
  *
  * The content directory is the source of truth: element, rarity, and slug come
- * from folder names, weapon comes from metadata.json, and images come from
+ * from folder names, Path comes from metadata.json, and images come from
  * src/assets/character-assets.
  *
  * @param lang Requested language code.
@@ -82,7 +82,7 @@ export function getHomePageData(lang = 'en') {
             };
             const name = getPublicCharacterName(locale, {
                 character,
-                element,
+
             });
             const lastUpdated = normalizeVersion(metadata.last_updated);
             const versionReleased = normalizeVersion(metadata.version_released);
@@ -91,7 +91,7 @@ export function getHomePageData(lang = 'en') {
                 name,
                 slug: getPublicCharacterSlug({
                     character,
-                    element,
+
                 }),
                 element,
                 rarity,

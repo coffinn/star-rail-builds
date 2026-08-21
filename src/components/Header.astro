@@ -1,5 +1,6 @@
 ---
 import '../styles/header.css';
+import { features } from '../config/features';
 import '../styles/feedback-widget.scss';
 import '../styles/search-modal.scss';
 import { Banner } from 'webcoreui/astro';
@@ -21,9 +22,9 @@ const { locale, lang, character, page } = Astro.props as Props;
 
 const currentLang = lang || 'en';
 const searchShortcutBannerDismissedStorageKey =
-    'genshin-builds:search-shortcut-banner-dismissed';
+    'star-rail-builds:search-shortcut-banner-dismissed';
 const searchShortcutBannerDisabledStorageKey =
-    'genshin-builds:search-shortcut-banner-disabled';
+    'star-rail-builds:search-shortcut-banner-disabled';
 const searchShortcutBanner = t(
     locale,
     'ui',
@@ -200,12 +201,22 @@ const isInfoCurrent = infoLinks.some((link) => link.isCurrent);
     data-feedback-lang={currentLang}
 >
     <SpeedDial />
-    <SearchModal locale={locale} lang={currentLang} />
-    <FeedbackModal lang={currentLang} />
+
+    <SearchModal
+        locale={locale}
+        lang={currentLang}
+    />
+
+    {
+        features.feedback && (
+            <FeedbackModal
+                lang={currentLang}
+            />
+        )
+    }
 </div>
 
 <script>
     import '../scripts/header';
-    import '../scripts/feedback-form';
     import '../scripts/site-search';
 </script>

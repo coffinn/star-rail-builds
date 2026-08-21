@@ -1,5 +1,6 @@
 ---
 import { t } from '../utils/i18n';
+
 const { notes, buildNote, locale } = Astro.props;
 
 type RenderedNote = {
@@ -19,9 +20,6 @@ type NoteSection = {
     groups: NoteGroup[];
 };
 
-/**
- * Checks whether a note section has any global notes or item notes.
- */
 const hasNoteContent = (section: NoteSection) =>
     section.global.length +
         section.groups.reduce((total, group) => total + group.items.length, 0) >
@@ -29,23 +27,52 @@ const hasNoteContent = (section: NoteSection) =>
 
 const noteSections: NoteSection[] = [
     {
-        headingId: 'Regarding Weapons Choices:',
-        global: notes.weapons.global,
-        groups: [{ items: notes.weapons.items }],
-    },
-    {
-        headingId: 'Regarding Artifacts Choices:',
-        global: notes.artifacts.global,
+        headingId: 'Regarding Light Cone Choices:',
+
+        global: notes.lightCones.global,
+
         groups: [
-            { headingId: 'Sets', items: notes.artifacts.sets },
-            { headingId: 'Main Stats', items: notes.artifacts.mainstats },
-            { headingId: 'Substats', items: notes.artifacts.substats },
+            {
+                items: notes.lightCones.items,
+            },
         ],
     },
+
+    {
+        headingId: 'Regarding Relics Choices:',
+
+        global: notes.relics.global,
+
+        groups: [
+            {
+                headingId: 'Sets',
+                items: notes.relics.sets,
+            },
+
+            {
+                headingId: 'Main Stats',
+
+                items: notes.relics.mainstats,
+            },
+
+            {
+                headingId: 'Substats',
+
+                items: notes.relics.substats,
+            },
+        ],
+    },
+
     {
         headingId: 'Regarding Traces Choices:',
+
         global: notes.traces.global,
-        groups: [{ items: notes.traces.items }],
+
+        groups: [
+            {
+                items: notes.traces.items,
+            },
+        ],
     },
 ].filter(hasNoteContent);
 
@@ -62,7 +89,6 @@ const hasNotes = noteSections.length > 0;
                     <div class="notes-block">
                         {buildNote.notes?.length > 0 && (
                             <div class="build-note-list">
-                                {/* Build-level editorial notes are already localized and rendered. */}
                                 {buildNote.notes.map((note: string) => (
                                     <div set:html={note} />
                                 ))}
@@ -88,6 +114,7 @@ const hasNotes = noteSections.length > 0;
                                             {t(locale, 'ui', group.headingId)}
                                         </h4>
                                     )}
+
                                     {group.items.map((note) => (
                                         <div
                                             id={note.id}

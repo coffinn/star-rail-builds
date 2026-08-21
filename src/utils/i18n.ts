@@ -3,7 +3,7 @@ import { languageCodes, type LanguageCode } from './languages';
 type LocaleCategory = Record<string, string>;
 
 type LocaleBundle = {
-    weapon: LocaleCategory;
+    
     relic: LocaleCategory;
     character: LocaleCategory;
     stat: LocaleCategory;
@@ -16,7 +16,7 @@ type LocaleBundle = {
 };
 
 const localeFiles = {
-    weapon: 'weapons',
+    
     relic: 'relic-sets',
     lightcone: 'light-cones',
     character: 'characters',

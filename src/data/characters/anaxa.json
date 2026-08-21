@@ -1,0 +1,155 @@
+{
+  "id": "anaxa",
+  "name": "Anaxa",
+  "rarity": 5,
+  "element": "wind",
+  "path": "erudition",
+  "version_released": "3.2",
+  "max_energy": 140,
+
+  "level_80_stats": {
+    "hp": 970,
+    "atk": 756,
+    "def": 557,
+    "spd": 97
+  },
+
+  "abilities": {
+    "basic": {
+        "type": "Basic ATK",
+        "name": "Pain, Brews Truth",
+        "tag": "Single Target",
+        "energy_gain": 20,
+        "break": 10,
+        "min_level": 1,
+        "max_level": 7,
+        "default_level": 6,
+        "description_template": "Deals Wind DMG equal to {{value}}% of Anaxa's ATK to one designated enemy.",
+        "scaling": {
+            "value": [50, 60, 70, 80, 90, 100, 110]
+        }
+    },
+
+    "skill": {
+        "type": "Skill",
+        "name": "Fractal, Exiles Fallacy",
+        "tag": "Bounce",
+        "energy_gain": 6,
+        "break": 10,
+        "min_level": 1,
+        "max_level": 12,
+        "default_level": 10,
+        "description_template": "Deals Wind DMG equal to {{initial_bounce}}% of Anaxa's ATK to one designated enemy and additionally deals 4 instance(s) of DMG. Each instance of DMG deals Wind DMG equal to {{subsequent_bounces}}% of Anaxa's ATK to one random enemy, prioritizing Bouncing to enemy targets that have not been hit by this instance of Skill. When used, for each attackable enemy on the field, this Skill has its DMG dealt increased by 20%.",
+        "scaling": {
+            "initial_bounce": [35, 38.5, 42, 45.5, 49, 52.5, 56.88, 61.25, 65.63, 70, 73.5, 77],
+            "subsequent_bounces": [35, 38.5, 42, 45.5, 49, 52.5, 56.88, 61.25, 65.63, 70, 73.5, 77]
+        }
+    },
+
+    "ultimate": {
+        "type": "Ultimate",
+        "name": "Sprouting Life Sculpts Earth",
+        "tag": "AoE",
+        "energy_cost": 140,
+        "energy_gain": 5,
+        "break": 20,
+        "min_level": 1,
+        "max_level": 12,
+        "default_level": 10,
+        "description_template": "Inflicts the \"Sublimation\" state on all enemies, then deals Wind DMG equal to {{damage}}% of Anaxa's ATK to all enemies. In the \"Sublimation\" state, the targets will be simultaneously inflicted with Physical, Fire, Ice, Lightning, Wind, Quantum, and Imaginary Weaknesses, lasting until the start of the targets' turn. If the targets do not have Control RES, they are unable to take action in the \"Sublimation\" state.",
+        "scaling": {
+            "damage": [80, 88, 96, 104, 112, 120, 130, 140, 150, 160, 168, 176]
+        }
+    },
+
+    "talent": {
+        "type": "Talent",
+        "name": "Tetrad Wisdom Reigns Thrice",
+        "tag": "Impair",
+        "min_level": 1,
+        "max_level": 12,
+        "default_level": 10,
+        "description_template": "Each time Anaxa lands 1 hit on enemy targets, inflicts 1 Weakness of a random Type to the targets, lasting for 3 turn(s), with priority to the Weakness Type that the target doesn't already possess. While Anaxa is on the field, inflicts the \"Qualitative Disclosure\" state on enemy targets that have at least 5 different Types of Weaknesses. Anaxa deals {{increased_damage}}% increased DMG to targets afflicted with the \"Qualitative Disclosure\" state. In addition, after using Basic ATK or Skill on them, unleashes 1 additional instance of Skill on the targets. This additional Skill does not consume any Skill Points and cannot trigger this effect again. If the target has been defeated before the additional Skill is used, it will be cast on one random enemy instead.",
+        "scaling": {
+            "increased_damage": [18, 19.2, 20.4, 21.6, 22.8, 24, 25.5, 27, 28.5, 30, 31.2, 32.4]
+        }
+    },
+
+    "technique": {
+        "type": "Technique",
+        "name": "Prism of the Pupil",
+        "tag": "Impair",
+        "description": "After using Technique, inflicts the Terrified state on enemies in a set area. Terrified enemies will flee in a direction away from Anaxa for 10 second(s). When allies enter battle via actively attacking a Terrified enemy, it will always be considered as entering battle via attacking a Weakness. After entering battle, Anaxa applies 1 Weakness of the attacker's Type to every enemy target, lasting for 3 turn(s)."
+    }
+  },
+
+  "major_traces": {
+    "2": {
+        "name": "Roaming Signifier",
+        "description": "When using Basic ATK, additionally regenerates 10 Energy. At the start of the turn, if there are no enemy targets in the \"Qualitative Disclosure\" state, immediately regenerates 30 Energy."
+    },
+
+    "4": {
+        "name": "Imperative Hiatus",
+        "description": "Based on the number of \"Erudition\" characters in the team, one of the following effects will be triggered in the current battle:\n1 character: Increases Anaxa's CRIT DMG by 140%.\nAt least 2 characters: Increases DMG dealt by all allies by 50%."
+    },
+
+    "6": {
+        "name": "Qualitative Shift",
+        "description": "For every 1 different Weakness Type an enemy target has, the DMG that Anaxa deals to that target ignores 4% of their DEF. Up to a max of 7 Weakness Types can be taken into account for this effect."
+    }
+  },
+
+  "stat_bonuses": [
+    {
+        "stat": "CRIT Rate",
+        "value": "12%"
+    },
+    {
+        "stat": "HP",
+        "value": "10%"
+    },
+    {
+        "stat": "Wind DMG",
+        "value": "22.5%"
+    }
+  ],
+
+  "eidolons": [
+    {
+        "level": 1,
+        "name": "Magician, Isolated by Stars",
+        "description": "After using Skill for the first time, recovers 1 Skill Point(s). When using Skill to hit enemy targets, decreases the targets' DEF by 16%, lasting for 2 turn(s)."
+    },
+
+    {
+        "level": 2,
+        "name": "Soul, True to History",
+        "description": "When enemy targets enter the battlefield, triggers 1 instance of the Talent's Weakness Implant effect, and reduces their All-Type RES by 20%."
+    },
+
+    {
+        "level": 3,
+        "name": "Pupil, Etched into Cosmos",
+        "description": "Ultimate Lv. +2, up to a maximum of Lv. 15.\nBasic ATK Lv. +1, up to a maximum of Lv. 10."
+    },
+
+    {
+        "level": 4,
+        "name": "Blaze, Plunged to Canyon",
+        "description": "When using Skill, increases ATK by 30%, lasting for 2 turn(s). This effect can stack up to 2 time(s)."
+    },
+
+    {
+        "level": 5,
+        "name": "Embryo, Set Beyond Vortex",
+        "description": "Skill Lv. +2, up to a maximum of Lv. 15.\nTalent Lv. +2, up to a maximum of Lv. 15."
+    },
+
+    {
+        "level": 6,
+        "name": "Everything Is in Everything",
+        "description": "The DMG dealt by Anaxa is 130% of the original DMG. The 2 effects in the Trace \"Imperative Hiatus\" will be triggered directly and will no longer depend on the number of \"Erudition\" characters in the team."
+    }
+  ]
+}

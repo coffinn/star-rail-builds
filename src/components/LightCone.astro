@@ -2,12 +2,13 @@
 import InlineNoteLabel from './InlineNoteLabel.astro';
 import LightConeInfoPopover from './LightConeInfoPopover.astro';
 import { t } from '../utils/i18n';
+
 import type {
     LightConePassiveText,
     LightConePassiveValue,
 } from '../utils/light-cone-passive';
 
-type WeaponItem = {
+type LightConeItem = {
     id?: string;
     name: string;
     rarity: number;
@@ -38,67 +39,116 @@ type WeaponItem = {
         };
     };
 
-    superimposition?: number | string;
+    superimposition?:
+        | number
+        | string;
 
     note?: string;
     noteId?: string;
 };
 
-type WeaponRank = {
-    items: WeaponItem[];
+type LightConeRank = {
+    items: LightConeItem[];
 };
 
-type WeaponRecommendations = {
-    weapons: WeaponRank[];
-    conditional?: WeaponItem[];
+type LightConeRecommendations = {
+    light_cones: LightConeRank[];
+    conditional?: LightConeItem[];
 };
 
 const {
-    weapons,
+    lightCones,
     locale,
     lang = 'en',
 } = Astro.props as {
-    weapons: WeaponRecommendations;
+    lightCones:
+        LightConeRecommendations;
+
     locale: any;
     lang?: string;
 };
 
 /**
- * Formats a refinement value for display beside a weapon name.
- *
- * @param refinement Optional weapon refinement value.
- * @returns Formatted refinement suffix.
+ * Formats a Superimposition value.
  */
-const formatSuperimposition = (superimposition?: number | string) =>
-    superimposition ? ` [S${superimposition}]` : '';
+const formatSuperimposition = (
+    superimposition?:
+        | number
+        | string,
+) =>
+    superimposition
+        ? ` [S${superimposition}]`
+        : '';
 
-const hasNoteMarker = (item: WeaponItem) => item.noteId || item.note;
-const isFreeLightCone = (item: WeaponItem) =>
-    item.info?.free === true || item.rarity <= 3;
-const conditionalWeapons = weapons.conditional ?? [];
-const rankedWeaponGroups = weapons.weapons.map(
-    (position: WeaponRank, index: number) => ({
-        rank: index + 1,
-        mainItem: position.items[0],
-        alternativeItems: position.items.slice(1),
-    }),
-);
-const hasFreeWeapon =
-    rankedWeaponGroups.some(
+const hasNoteMarker = (
+    item: LightConeItem,
+) =>
+    item.noteId ||
+    item.note;
+
+const isFreeLightCone = (
+    item: LightConeItem,
+) =>
+    item.info?.free === true ||
+    item.rarity <= 3;
+
+const conditionalLightCones =
+    lightCones.conditional ?? [];
+
+const rankedLightConeGroups =
+    lightCones.light_cones.map(
+        (
+            position: LightConeRank,
+            index: number,
+        ) => ({
+            rank: index + 1,
+
+            mainItem:
+                position.items[0],
+
+            alternativeItems:
+                position.items.slice(1),
+        }),
+    );
+
+const hasFreeLightCone =
+    rankedLightConeGroups.some(
         (position) =>
-            Boolean(position.mainItem && isFreeLightCone(position.mainItem)) ||
-            position.alternativeItems.some((weapon) => isFreeLightCone(weapon)),
-    ) || conditionalWeapons.some((weapon) => isFreeLightCone(weapon));
+            Boolean(
+                position.mainItem &&
+                    isFreeLightCone(
+                        position.mainItem,
+                    ),
+            ) ||
+            position.alternativeItems.some(
+                (lightCone) =>
+                    isFreeLightCone(
+                        lightCone,
+                    ),
+            ),
+    ) ||
+    conditionalLightCones.some(
+        (lightCone) =>
+            isFreeLightCone(
+                lightCone,
+            ),
+    );
 ---
 
 <div class="card recommendation-card weapon-card">
-    <h2>{t(locale, 'ui', 'Light Cones')}</h2>
+    <h2>
+        {t(locale, 'ui', 'Light Cones')}
+    </h2>
 
     <div class="recommendation-card-body">
         {
-            hasFreeWeapon && (
+            hasFreeLightCone && (
                 <p class="free-weapon-note">
-                    <span class="free-weapon-note-mark" aria-hidden="true" />
+                    <span
+                        class="free-weapon-note-mark"
+                        aria-hidden="true"
+                    />
+
                     {t(
                         locale,
                         'ui',
@@ -107,144 +157,246 @@ const hasFreeWeapon =
                 </p>
             )
         }
-        {
-            /* Ranked lightcone  groups. Extra items in one rank render as approximate ties. */
-        }
+
         <div class="rank-list">
             {
-                rankedWeaponGroups.map((position) => {
-                    const mainItem = position.mainItem;
-                    const mainItemIsFree = mainItem && isFreeLightCone(mainItem);
+                rankedLightConeGroups.map(
+                    (position) => {
+                        const mainItem =
+                            position.mainItem;
 
-                    return (
-                        <div class="rank-group">
-                            {mainItem && (
-                                <div
-                                    class={`rank-row${mainItemIsFree ? ' is-free-weapon' : ''}`}
-                                >
-                                    <strong class="rank-number">
-                                        {position.rank}
-                                    </strong>
-                                    <span class="rank-content">
-                                        <span class="inline-info-label">
-                                            <LightConeInfoPopover
-                                                lightCone={mainItem}
-                                                locale={locale}
-                                                lang={lang}
-                                            />
-                                            {hasNoteMarker(mainItem) && (
-                                                <InlineNoteLabel
-                                                    label=""
-                                                    noteId={mainItem.noteId}
-                                                    hasNote={Boolean(
-                                                        hasNoteMarker(mainItem),
-                                                    )}
-                                                />
-                                            )}
-                                            <span class="bold">
-                                                ({mainItem.rarity}
-                                                {'\u2605'})
-                                                {formatSuperimposition(
-                                                    mainItem.superimposition,
-                                                )}
-                                            </span>
-                                        </span>
-                                    </span>
-                                </div>
-                            )}
+                        const mainItemIsFree =
+                            mainItem &&
+                            isFreeLightCone(
+                                mainItem,
+                            );
 
-                            {position.alternativeItems.map((weapon) => {
-                                const isFree = isFreeLightCone(weapon);
-
-                                return (
+                        return (
+                            <div class="rank-group">
+                                {mainItem && (
                                     <div
-                                        class={`rank-row alt${isFree ? ' is-free-weapon' : ''}`}
+                                        class={`rank-row${
+                                            mainItemIsFree
+                                                ? ' is-free-weapon'
+                                                : ''
+                                        }`}
                                     >
-                                        <span class="rank-approx">&asymp;</span>
+                                        <strong class="rank-number">
+                                            {
+                                                position.rank
+                                            }
+                                        </strong>
+
                                         <span class="rank-content">
                                             <span class="inline-info-label">
                                                 <LightConeInfoPopover
-                                                    lightCone={weapon}
-                                                    locale={locale}
-                                                    lang={lang}
+                                                    lightCone={
+                                                        mainItem
+                                                    }
+                                                    locale={
+                                                        locale
+                                                    }
+                                                    lang={
+                                                        lang
+                                                    }
                                                 />
-                                                {hasNoteMarker(weapon) && (
+
+                                                {hasNoteMarker(
+                                                    mainItem,
+                                                ) && (
                                                     <InlineNoteLabel
                                                         label=""
-                                                        noteId={weapon.noteId}
+                                                        noteId={
+                                                            mainItem.noteId
+                                                        }
                                                         hasNote={Boolean(
                                                             hasNoteMarker(
-                                                                weapon,
+                                                                mainItem,
                                                             ),
                                                         )}
                                                     />
                                                 )}
+
                                                 <span class="bold">
-                                                    ({weapon.rarity}
-                                                    {'\u2605'})
+                                                    (
+                                                    {
+                                                        mainItem.rarity
+                                                    }
+                                                    {
+                                                        '\u2605'
+                                                    }
+                                                    )
                                                     {formatSuperimposition(
-                                                        weapon.superimposition,
+                                                        mainItem.superimposition,
+                                                    )}
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </div>
+                                )}
+
+                                {position.alternativeItems.map(
+                                    (
+                                        lightCone,
+                                    ) => {
+                                        const isFree =
+                                            isFreeLightCone(
+                                                lightCone,
+                                            );
+
+                                        return (
+                                            <div
+                                                class={`rank-row alt${
+                                                    isFree
+                                                        ? ' is-free-weapon'
+                                                        : ''
+                                                }`}
+                                            >
+                                                <span class="rank-approx">
+                                                    &asymp;
+                                                </span>
+
+                                                <span class="rank-content">
+                                                    <span class="inline-info-label">
+                                                        <LightConeInfoPopover
+                                                            lightCone={
+                                                                lightCone
+                                                            }
+                                                            locale={
+                                                                locale
+                                                            }
+                                                            lang={
+                                                                lang
+                                                            }
+                                                        />
+
+                                                        {hasNoteMarker(
+                                                            lightCone,
+                                                        ) && (
+                                                            <InlineNoteLabel
+                                                                label=""
+                                                                noteId={
+                                                                    lightCone.noteId
+                                                                }
+                                                                hasNote={Boolean(
+                                                                    hasNoteMarker(
+                                                                        lightCone,
+                                                                    ),
+                                                                )}
+                                                            />
+                                                        )}
+
+                                                        <span class="bold">
+                                                            (
+                                                            {
+                                                                lightCone.rarity
+                                                            }
+                                                            {
+                                                                '\u2605'
+                                                            }
+                                                            )
+                                                            {formatSuperimposition(
+                                                                lightCone.superimposition,
+                                                            )}
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        );
+                                    },
+                                )}
+                            </div>
+                        );
+                    },
+                )
+            }
+        </div>
+
+        {
+            conditionalLightCones.length >
+                0 && (
+                <div class="conditional-list">
+                    <div class="conditional-heading">
+                        {t(
+                            locale,
+                            'ui',
+                            'Conditional (See Notes):',
+                        )}
+                    </div>
+
+                    <div class="rank-list">
+                        {conditionalLightCones.map(
+                            (
+                                lightCone:
+                                    LightConeItem,
+                            ) => {
+                                const isFree =
+                                    isFreeLightCone(
+                                        lightCone,
+                                    );
+
+                                return (
+                                    <div
+                                        class={`rank-row conditional-row${
+                                            isFree
+                                                ? ' is-free-weapon'
+                                                : ''
+                                        }`}
+                                    >
+                                        <span
+                                            class="rank-marker"
+                                            aria-hidden="true"
+                                        />
+
+                                        <span class="rank-content">
+                                            <span class="inline-info-label">
+                                                <LightConeInfoPopover
+                                                    lightCone={
+                                                        lightCone
+                                                    }
+                                                    locale={
+                                                        locale
+                                                    }
+                                                    lang={
+                                                        lang
+                                                    }
+                                                />
+
+                                                {hasNoteMarker(
+                                                    lightCone,
+                                                ) && (
+                                                    <InlineNoteLabel
+                                                        label=""
+                                                        noteId={
+                                                            lightCone.noteId
+                                                        }
+                                                        hasNote={Boolean(
+                                                            hasNoteMarker(
+                                                                lightCone,
+                                                            ),
+                                                        )}
+                                                    />
+                                                )}
+
+                                                <span class="bold">
+                                                    (
+                                                    {
+                                                        lightCone.rarity
+                                                    }
+                                                    {
+                                                        '\u2605'
+                                                    }
+                                                    )
+                                                    {formatSuperimposition(
+                                                        lightCone.superimposition,
                                                     )}
                                                 </span>
                                             </span>
                                         </span>
                                     </div>
                                 );
-                            })}
-                        </div>
-                    );
-                })
-            }
-        </div>
-
-        {/* Optional unranked recommendations that depend on build notes. */}
-        {
-            conditionalWeapons.length > 0 && (
-                <div class="conditional-list">
-                    <div class="conditional-heading">
-                        {t(locale, 'ui', 'Conditional (See Notes):')}
-                    </div>
-
-                    <div class="rank-list">
-                        {conditionalWeapons.map((weapon: WeaponItem) => {
-                            const isFree = isFreeLightCone(weapon);
-
-                            return (
-                                <div
-                                    class={`rank-row conditional-row${isFree ? ' is-free-weapon' : ''}`}
-                                >
-                                    <span
-                                        class="rank-marker"
-                                        aria-hidden="true"
-                                    />
-                                    <span class="rank-content">
-                                        <span class="inline-info-label">
-                                            <LightConeInfoPopover
-                                                lightCone={weapon}
-                                                locale={locale}
-                                                lang={lang}
-                                            />
-                                            {hasNoteMarker(weapon) && (
-                                                <InlineNoteLabel
-                                                    label=""
-                                                    noteId={weapon.noteId}
-                                                    hasNote={Boolean(
-                                                        hasNoteMarker(weapon),
-                                                    )}
-                                                />
-                                            )}
-                                            <span class="bold">
-                                                ({weapon.rarity}
-                                                {'\u2605'})
-                                                {formatSuperimposition(
-                                                    weapon.superimposition,
-                                                )}
-                                            </span>
-                                        </span>
-                                    </span>
-                                </div>
-                            );
-                        })}
+                            },
+                        )}
                     </div>
                 </div>
             )

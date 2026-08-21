@@ -1,6 +1,7 @@
 {
     "cornucopia": {
         "rarity": 3,
+        "version_released": "1.0",
         "passive": {
             "en": "When the wearer uses their Skill or Ultimate, their Outgoing Healing increases by {{value}}%."
         },
@@ -30,8 +31,9 @@
             "def": 264
         }
     },
-    "dream-s-montage": {
+    "dreams-montage": {
         "rarity": 4,
+        "version_released": "2.6",
         "passive": {
             "en": "Increases the wearer's SPD by {{value}}%. After attacking enemy targets that are Weakness Broken, regenerates {{value}} Energy. This effect can trigger up to 2 time(s) per turn."
         },
@@ -68,6 +70,7 @@
     },
     "echoes-of-the-coffin": {
         "rarity": 5,
+        "version_released": "1.1",
         "passive": {
             "en": "Increases the wearer's ATK by {{value}}%. After the wearer uses an attack, for each different enemy target the wearer hits, regenerates {{value}} Energy. Each attack can regenerate Energy up to 3 time(s) this way. After the wearer uses their Ultimate, all allies gain {{value}} SPD for 1 turn."
         },
@@ -109,6 +112,7 @@
     },
     "fine-fruit": {
         "rarity": 3,
+        "version_released": "1.0",
         "passive": {
             "en": "At the start of the battle, immediately regenerates {{value}} Energy for all allies."
         },
@@ -140,6 +144,7 @@
     },
     "hey-over-here": {
         "rarity": 4,
+        "version_released": "1.5",
         "passive": {
             "en": "Increases the wearer's Max HP by {{value}}%. When the wearer uses their Skill, increases Outgoing Healing by {{value}}%, lasting for 2 turn(s)."
         },
@@ -176,6 +181,7 @@
     },
     "multiplication": {
         "rarity": 3,
+        "version_released": "1.0",
         "passive": {
             "en": "After the wearer uses their Basic ATK, their next action will be Advanced Forward by {{value}}%."
         },
@@ -207,6 +213,7 @@
     },
     "night-of-fright": {
         "rarity": 5,
+        "version_released": "1.5",
         "passive": {
             "en": "Increases the wearer's Energy Regeneration Rate by {{value}}%. When any ally uses their Ultimate, the wearer restores HP for the ally currently with the lowest HP percentage by an amount equal to {{value}}% of the healed ally's Max HP. When the wearer provides healing for an ally, increases the healed ally's ATK by {{value}}%. This effect can stack up to 5 times and lasts for 2 turn(s)."
         },
@@ -248,6 +255,7 @@
     },
     "perfect-timing": {
         "rarity": 4,
+        "version_released": "1.0",
         "passive": {
             "en": "Increases the wearer's Effect RES by {{value}}% and increases Outgoing Healing by an amount that is equal to {{value}}% of Effect RES. Outgoing Healing can be increased this way by up to {{value}}%."
         },
@@ -289,6 +297,7 @@
     },
     "post-op-conversation": {
         "rarity": 4,
+        "version_released": "1.0",
         "passive": {
             "en": "Increases the wearer's Energy Regeneration Rate by {{value}}% and increases Outgoing Healing when they use their Ultimate by {{value}}%."
         },
@@ -325,6 +334,7 @@
     },
     "quid-pro-quo": {
         "rarity": 4,
+        "version_released": "1.0",
         "passive": {
             "en": "At the start of the wearer's turn, regenerates {{value}} Energy for a randomly chosen ally (excluding the wearer) whose current Energy is lower than 50%."
         },
@@ -356,6 +366,7 @@
     },
     "scent-alone-stays-true": {
         "rarity": 5,
+        "version_released": "2.5",
         "passive": {
             "en": "Increases the wearer's Break Effect by {{value}}%. After the wearer uses Ultimate to attack enemy targets, inflicts the targets with the \"Woefree\" state, lasting for 2 turn(s). While in \"Woefree,\" enemy targets take {{value}}% increased DMG. The effect of increasing DMG taken is additionally boosted by {{value}}% if the wearer's current Break Effect is 150% or higher."
         },
@@ -397,6 +408,7 @@
     },
     "shared-feeling": {
         "rarity": 4,
+        "version_released": "1.0",
         "passive": {
             "en": "Increases the wearer's Outgoing Healing by {{value}}%. When using Skill, regenerates {{value}} Energy for all allies."
         },
@@ -433,6 +445,7 @@
     },
     "time-waits-for-no-one": {
         "rarity": 5,
+        "version_released": "1.0",
         "passive": {
             "en": "Increases the wearer's Max HP by {{value}}% and Outgoing Healing by {{value}}%. When the wearer heals allies, record the amount of Outgoing Healing. When any ally launches an attack, a random attacked enemy takes Additional DMG equal to {{value}}% of the recorded Outgoing Healing value. The type of this Additional DMG is of the same Type as the wearer's. This Additional DMG is not affected by other buffs, and can only occur 1 time per turn."
         },
@@ -472,8 +485,9 @@
             "def": 463
         }
     },
-    "unto-tomorrow-s-morrow": {
+    "unto-tomorrows-morrow": {
         "rarity": 4,
+        "version_released": "3.4",
         "passive": {
             "en": "Increases the wearer's Outgoing Healing by {{value}}%. When an ally target's current HP percentage is greater than or equal to 50%, increases the DMG dealt by {{value}}%."
         },
@@ -510,6 +524,7 @@
     },
     "warmth-shortens-cold-nights": {
         "rarity": 4,
+        "version_released": "1.0",
         "passive": {
             "en": "Increases the wearer's Max HP by {{value}}%. When using Basic ATK or Skill, restores all allies' HP by an amount equal to {{value}}% of their respective Max HP."
         },
@@ -543,8 +558,10 @@
             "atk": 370,
             "def": 396
         }
-    },"what-is-real-": {
+    },
+    "what-is-real": {
         "rarity": 4,
+        "version_released": "2.0",
         "passive": {
             "en": "Increases the wearer's Break Effect by {{value}}%. After using Basic ATK, restores HP for the wearer by an amount equal to {{value}}% of Max HP plus 800."
         },

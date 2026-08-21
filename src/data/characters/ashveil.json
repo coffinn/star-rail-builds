@@ -1,0 +1,158 @@
+{
+  "id": "ashveil",
+"name": "Ashveil",
+"rarity": 5,
+"element": "lightning",
+"path": "hunt",
+"version_released": "4.1",
+"max_energy": 150,
+
+"level_80_stats": {
+    "hp": 853,
+    "atk": 776,
+    "def": 388,
+    "spd": 106
+},
+
+"abilities": {
+    "basic": {
+        "type": "Basic ATK",
+        "name": "Talons: Inculcate Decorum",
+        "tag": "Single Target",
+        "energy_gain": 20,
+        "break": 10,
+        "min_level": 1,
+        "max_level": 7,
+        "default_level": 6,
+        "description_template": "Deals Lightning DMG equal to {{value}}% of Ashveil's ATK to one designated enemy.",
+        "scaling": {
+            "value": [50, 60, 70, 80, 90, 100, 110]
+        }
+    },
+
+    "skill": {
+        "type": "Skill",
+        "name": "Flog: Smite Evil",
+        "tag": "Single Target",
+        "energy_gain": 30,
+        "break": 20,
+        "min_level": 1,
+        "max_level": 12,
+        "default_level": 10,
+        "description_template": "Makes one designated enemy become the \"Bait,\" dealing it Lightning DMG equal to {{damage}}% of Ashveil's ATK. If the target is already the \"Bait,\" additionally deals it Lightning DMG equal to {{additional_damage}}% of Ashveil's ATK, and recovers 1 Skill Point(s). When the \"Bait\" exists on the field, all enemies' DEF gets reduced by {{def_reduction}}%.\nWhen there is no \"Bait\" on the field, Ashveil immediately makes the enemy target with the lowest HP on the field become the \"Bait.\" The \"Bait\" state only takes effect on the most recently applied target.",
+        "scaling": {
+            "damage": [100, 110, 120, 130, 140, 150, 162.5, 175, 187.5, 200, 210, 220],
+            "additional_damage": [50, 55, 60, 65, 70, 75, 81.3, 87.5, 93.8, 100, 105, 110],
+            "def_reduction": [20, 22, 24, 26, 28, 30, 32.5, 35, 37.5, 40, 42, 44]
+        }
+    },
+
+    "ultimate": {
+        "type": "Ultimate",
+        "name": "Banquet: Insatiable Appetite",
+        "tag": "Single Target",
+        "energy_cost": 150,
+        "energy_gain": 5,
+        "break": 30,
+        "min_level": 1,
+        "max_level": 12,
+        "default_level": 10,
+        "description_template": "Makes one designated enemy become the \"Bait,\" dealing it Lightning DMG equal to {{damage}}% of Ashveil's ATK. Then, immediately launches 1 instance of enhanced Talent's Follow-Up ATK against the \"Bait.\" And Ashveil gains 3 Charge.\nThis enhanced Talent's Follow-Up ATK does not consume Charge. Whenever \"Gluttony\" reaches 4 stack(s) or more, consumes 4 stack(s) of \"Gluttony\" to additionally deal 1 instance of Lightning DMG equal to {{instance_damage}}% of Ashveil's ATK. And when this instance of Follow-Up ATK deals a killing blow to the target, it will continue to deal DMG to a new \"Bait.\" This triggers until \"Gluttony\" becomes lower than 4 stack(s). If all enemy targets currently on the field have been dealt killing blows, the enhanced Talent's Follow-Up ATK will immediately end.",
+        "scaling": {
+            "damage": [200, 220, 240, 260, 280, 300, 325, 350, 375, 400, 420, 440],
+            "instance_damage": [100, 110, 120, 130, 140, 150, 162.5, 175, 187.5, 200, 210, 220]
+        }
+    },
+
+    "talent": {
+        "type": "Talent",
+        "name": "Rancor: Enmity Reprisal",
+        "tag": "Single Target",
+        "energy_gain": 5,
+        "min_level": 1,
+        "max_level": 12,
+        "default_level": 10,
+        "description_template": "Ashveil has an initial Charge of 2 and can hold up to a max of 3. After the \"Bait\" gets attacked by other ally targets, Ashveil regenerates a fixed amount of 8 Energy, then consumes 1 Charge to launch Follow-Up ATK against the \"Bait,\" dealing Lightning DMG equal to {{damage}}% of Ashveil's ATK. Afterwards, gains 2 stack(s) of \"Gluttony,\" which can stack up to 12.",
+        "scaling": {
+            "damage": [100, 110, 120, 130, 140, 150, 162.5, 175, 187.5, 200, 210, 220]
+        }
+    },
+
+    "technique": {
+        "type": "Technique",
+        "name": "Devour: O Loathsome Hand",
+        "tag": "Impair",
+        "description": "After using Technique, inflicts Daze on enemies within a set area for 10 second(s). Dazed enemies will not actively attack ally targets. When entering combat via actively attacking a Dazed enemy, deals Lightning DMG to all enemies equal to 100% of Ashveil's ATK, and grants Ashveil 1 Charge."
+    }
+},
+
+"major_traces": {
+    "2": {
+        "name": "Damnation Trail",
+        "description": "When Ashveil uses Skill/Ultimate, gains 1/2 stacks of \"Gluttony.\" During Ashveil's Follow-Up ATK, for every 1 enemy(ies) suffer a killing blow, Ashveil gains 1 stack(s) of \"Gluttony.\""
+    },
+
+    "4": {
+        "name": "Phantom Limb",
+        "description": "DMG dealt by Ashveil's Follow-Up ATK increases by 80%. And for every 1 stack(s) of \"Gluttony\" in possession, DMG dealt by Follow-Up ATK additionally increases by 10%."
+    },
+
+    "6": {
+        "name": "First Fang",
+        "description": "While Ashveil is on the field, CRIT DMG dealt by ally targets increases by 40%, and CRIT DMG dealt by ally target's Follow-Up ATK additionally increases by 80%."
+    }
+},
+
+"stat_bonuses": [
+    {
+        "stat": "ATK",
+        "value": "10%"
+    },
+    {
+        "stat": "Lightning DMG",
+        "value": "14%"
+    },
+    {
+        "stat": "CRIT DMG",
+        "value": "37.30%"
+    }
+],
+
+"eidolons": [
+    {
+        "level": 1,
+        "name": "Beware: Venture Not at Full Moon",
+        "description": "While Ashveil is on the field, increases DMG taken by all enemies by 24%. When an enemy target's current HP percentage is 50% or lower, the DMG they take increases to 36%."
+    },
+
+    {
+        "level": 2,
+        "name": "Knock: Where Snickers Echo",
+        "description": "The max stack limit of \"Gluttony\" increases to 18. After each time Ashveil launches the enhanced Talent's Follow-Up ATK, refunds 35% of the removed \"Gluttony\" stacks."
+    },
+
+    {
+        "level": 3,
+        "name": "Hush: Unsaid Between Friends",
+        "description": "Ultimate Lv. +2, up to a maximum of Lv. 15.\nBasic ATK Lv. +1, up to a maximum of Lv. 10."
+    },
+
+    {
+        "level": 4,
+        "name": "Heed: Swallow Truth Whole",
+        "description": "When Ashveil uses Ultimate, increases ATK by 40% for 3 turn(s)."
+    },
+
+    {
+        "level": 5,
+        "name": "Caution: Sleuth Turns Slayer",
+        "description": "Skill Lv. +2, up to a maximum of Lv. 15.\nTalent Lv. +2, up to a maximum of Lv. 15."
+    },
+
+    {
+        "level": 6,
+        "name": "Finale: And Then There Were None",
+        "description": "When the \"Bait\" exists on the field, reduces all enemies' All-Type RES by 20%. For every 1 stack of \"Gluttony\" Ashveil has gained, the DMG dealt increases by 4%. This effect can stack up to 30 time(s)."
+    }
+]
+}
