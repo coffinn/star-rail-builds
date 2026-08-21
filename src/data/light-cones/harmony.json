@@ -1,6 +1,7 @@
 {
     "a-grounded-ascent": {
         "rarity": 5,
+        "version_released": "2.7",
         "passive": {
             "en": "After the wearer uses Skill or Ultimate on one ally character, the wearer regenerates {{value}} Energy and the ability's target receives 1 stack of \"Hymn\" for 3 turn(s), stacking up to 3 time(s). Each stack of \"Hymn\" increases its holder's DMG dealt by {{value}}%. After every 2 instance(s) of Skill or Ultimate the wearer uses on one ally character, recovers 1 Skill Point."
         },
@@ -37,6 +38,7 @@
     },
     "but-the-battle-isnt-over": {
         "rarity": 5,
+        "version_released": "1.0",
         "passive": {
             "en": "Increases the wearer's Energy Regeneration Rate by {{value}}% and regenerates 1 Skill Point when the wearer uses their Ultimate on an ally. This effect can be triggered once after every 2 uses of the wearer's Ultimate. When the wearer uses their Skill, the next ally taking action (except the wearer) deals {{value}}% more DMG for 1 turn(s)."
         },
@@ -73,6 +75,7 @@
     },
     "carve-the-moon-weave-the-clouds": {
         "rarity": 4,
+        "version_released": "1.0",
         "passive": {
             "en": "At the start of the battle and whenever the wearer's turn begins, one of the following effects is applied randomly: All allies' ATK increases by {{value}}%, all allies' CRIT DMG increases by {{value}}%, or all allies' Energy Regeneration Rate increases by {{value}}%. The applied effect cannot be identical to the last effect applied, and will replace the previous effect. The applied effect will be removed when the wearer has been knocked down. Effects of the same type cannot be stacked."
         },
@@ -114,6 +117,7 @@
     },
     "chorus": {
         "rarity": 3,
+        "version_released": "1.0",
         "passive": {
             "en": "After entering battle, increases the ATK of all allies by {{value}}%. Abilities of the same type cannot stack."
         },
@@ -145,6 +149,7 @@
     },
     "dance-dance-dance": {
         "rarity": 4,
+        "version_released": "1.0",
         "passive": {
             "en": "When the wearer uses their Ultimate, all allies' actions are Advanced Forward by {{value}}%."
         },
@@ -176,6 +181,7 @@
     },
     "dreamville-adventure": {
         "rarity": 4,
+        "version_released": "2.0",
         "passive": {
             "en": "After the wearer uses a certain type of ability such as Basic ATK, Skill, or Ultimate, all allies gain Childishness, which increases allies' DMG for the same type of ability as used by the wearer by {{value}}%. Childishness only takes effect for the most recent type of ability the wearer used and cannot be stacked."
         },
@@ -207,6 +213,7 @@
     },
     "earthly-escapade": {
         "rarity": 5,
+        "version_released": "2.0",
         "passive": {
             "en": "Increases the wearer's CRIT DMG by {{value}}%. At the start of the battle, the wearer gains Mask, lasting for 3 turn(s). While the wearer has Mask, the wearer's allies have their CRIT Rate increased by {{value}}% and their CRIT DMG increased by {{value}}%. For every 1 Skill Point the wearer recovers (including Skill Points that exceed the limit), they gain 1 stack of Radiant Flame. And when the wearer has 4 stacks of Radiant Flame, all the stacks are removed, and they gain Mask, lasting for 4 turn(s)."
         },
@@ -248,6 +255,7 @@
     },
     "epoch-etched-in-golden-blood": {
         "rarity": 5,
+        "version_released": "3.5",
         "passive": {
             "en": "Increases the wearer's ATK by {{value}}%. After using Ultimate to attack, recovers 1 Skill Point(s). After the wearer uses their Skill on one ally character, increases the Skill DMG dealt by the target by {{value}}% for 3 turn(s)."
         },
@@ -284,6 +292,7 @@
     },
     "flowing-nightglow": {
         "rarity": 5,
+        "version_released": "2.2",
         "passive": {
             "en": "Every time an ally attacks, the wearer gains 1 stack of Cantillation. Each stack of Cantillation increases the wearer's Energy Regeneration Rate by {{value}}%, stacking up to 5 time(s). When the wearer uses their Ultimate, removes Cantillation and gains Cadenza. Cadenza increases the wearer's ATK by {{value}}% and increases all allies' DMG dealt by {{value}}%, lasting for 1 turn(s)."
         },
@@ -325,6 +334,7 @@
     },
     "for-tomorrows-journey": {
         "rarity": 4,
+        "version_released": "2.2",
         "passive": {
             "en": "Increases the wearer's ATK by {{value}}%. After the wearer uses their Ultimate, increases their DMG dealt by {{value}}%, lasting for 1 turn(s)."
         },
@@ -361,6 +371,7 @@
     },
     "if-time-were-a-flower": {
         "rarity": 5,
+        "version_released": "3.1",
         "passive": {
             "en": "Increases the wearer's CRIT DMG by {{value}}%. After the wearer launches Follow-up ATK, additionally regenerates 12 Energy and gains \"Presage\", lasting for 2 turn(s). While the wearer has \"Presage\", all ally targets' CRIT DMG increases by {{value}}%. When entering battle, the wearer regenerates 21 Energy and gains \"Presage\", lasting for 2 turn(s)."
         },
@@ -397,6 +408,7 @@
     },
     "in-pursuit-of-the-wind": {
         "rarity": 4,
+        "version_released": "3.4",
         "passive": {
             "en": "After entering combat, increases all allies' Break DMG dealt by {{value}}%. Abilities of the same type cannot stack."
         },
@@ -428,6 +440,7 @@
     },
     "mediation": {
         "rarity": 3,
+        "version_released": "1.0",
         "passive": {
             "en": "Upon entering battle, increases SPD of all allies by {{value}} points for 1 turn(s)."
         },
@@ -459,6 +472,7 @@
     },
     "memories-of-the-past": {
         "rarity": 4,
+        "version_released": "1.0",
         "passive": {
             "en": "Increases the wearer's Break Effect by {{value}}%. When the wearer attacks, additionally regenerates {{value}} Energy. This effect cannot be repeatedly triggered in a single turn."
         },
@@ -495,6 +509,7 @@
     },
     "meshing-cogs": {
         "rarity": 3,
+        "version_released": "1.0",
         "passive": {
             "en": "After the wearer uses attacks or gets hit, additionally regenerates {{value}} Energy. This effect cannot be repeatedly triggered in a single turn."
         },
@@ -526,6 +541,7 @@
     },
     "past-and-future": {
         "rarity": 4,
+        "version_released": "1.0",
         "passive": {
             "en": "When the wearer uses their Skill, the next ally taking action (except the wearer) deals {{value}}% increased DMG for 1 turn(s)."
         },
@@ -557,6 +573,7 @@
     },
     "past-self-in-mirror": {
         "rarity": 5,
+        "version_released": "1.6",
         "passive": {
             "en": "Increases the wearer's Break Effect by {{value}}%. When the wearer uses their Ultimate, increases all allies' DMG by {{value}}%, lasting for 3 turn(s). If the wearer's Break Effect exceeds or equals 150%, 1 Skill Point will be recovered. At the start of each wave, all allies regenerate {{value}} Energy immediately. Abilities of the same type cannot stack."
         },
@@ -598,6 +615,7 @@
     },
     "planetary-rendezvous": {
         "rarity": 4,
+        "version_released": "1.0",
         "passive": {
             "en": "After entering battle, if an ally deals the same DMG Type as the wearer, DMG dealt increases by {{value}}%."
         },
@@ -629,6 +647,7 @@
     },
     "poised-to-bloom": {
         "rarity": 4,
+        "version_released": "2.4",
         "passive": {
             "en": "Increases the wearer's ATK by {{value}}%. Upon entering battle, if two or more characters follow the same Path, then these characters' CRIT DMG increases by {{value}}%. Abilities of the same type cannot stack."
         },
@@ -665,6 +684,7 @@
     },
     "the-forever-victual": {
         "rarity": 4,
+        "version_released": "3.5",
         "passive": {
             "en": "Increases the wearer's ATK by {{value}}%. After the wearer uses Skill, increases ATK by {{value}}%, stacking up to 3 times."
         },
