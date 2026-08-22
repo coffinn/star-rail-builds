@@ -3,7 +3,7 @@
     "name": "Argenti",
     "rarity": 5,
     "element": "physical",
-    "path": "Erudition",
+    "path": "erudition",
     "version_released": "1.5",
     "max_energy": 180,
     "level_80_stats": {

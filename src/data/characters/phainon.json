@@ -3,7 +3,7 @@
     "name": "Phainon",
     "rarity": 5,
     "element": "physical",
-    "path": "Destruction",
+    "path": "destruction",
     "version_released": "3.4",
     "max_energy": 12,
     "level_80_stats": {
