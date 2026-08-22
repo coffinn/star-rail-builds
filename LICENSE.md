@@ -31,9 +31,9 @@ No ownership is claimed over those materials.
 
 This project is intended to use only officially published Honkai: Star Rail
 materials. Leaked, unreleased, or otherwise unauthorized materials are not
-allowed. See HoYoLAB's official Legal FAQ:
+allowed. See HoYoLAB's official Honkai: Star Rail Fan Creations Guide:
 
-https://www.hoyolab.com/article/143107
+https://www.hoyolab.com/article/17883171
 
 ## Third-party software
 
