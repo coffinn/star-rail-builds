@@ -103,15 +103,15 @@
   "stat_bonuses": [
     {
         "stat": "CRIT Rate",
-        "value": "12%"
+        "value": "+12%"
     },
     {
         "stat": "HP",
-        "value": "10%"
+        "value": "+10%"
     },
     {
         "stat": "Wind DMG",
-        "value": "22.5%"
+        "value": "+22.5%"
     }
   ],
 
