@@ -1,326 +1,304 @@
 {
-  "id": "rin-tohsaka",
-  "name": "Rin Tohsaka",
+  "id": "mydei",
+  "name": "Mydei",
   "rarity": 5,
-  "element": "quantum",
-  "path": "erudition",
-  "version_released": "3.4",
-  "collaboration": "Fate/stay night: Unlimited Blade Works",
+  "element": "imaginary",
+  "path": "destruction",
+  "version_released": "3.1",
   "max_energy": 160,
-
   "level_80_stats": {
-    "hp": 915,
-    "atk": 835,
-    "def": 403,
-    "spd": 102
+    "hp": 1552,
+    "atk": 26,
+    "def": 194,
+    "spd": 95
   },
-
   "abilities": {
     "basic": {
       "type": "Basic ATK",
-      "name": "Bajiquan",
+      "name": "Vow of Voyage",
       "tag": "Single Target",
       "energy_gain": 20,
       "break": 10,
-
       "min_level": 1,
       "max_level": 7,
       "default_level": 6,
-
-      "description_template": "Deals Quantum DMG equal to {{damage}}% of Rin Tohsaka's ATK to one designated enemy target.",
-
+      "description_template": "Deals Imaginary DMG equal to {{damage_one_target}}% of Mydei's Max HP to one designated enemy.",
       "scaling": {
-        "damage": [
+        "damage_one_target": [
+          25,
+          30,
+          35,
+          40,
+          45,
           50,
-          60,
-          70,
-          80,
-          90,
-          100,
-          110
+          55
         ]
       }
     },
-
     "skill": {
       "type": "Skill",
-      "name": "Jeweled Sword Zelretch",
-      "tag": "Single Target",
+      "name": "Deaths are Legion, Regrets are None",
+      "tag": "Restore",
       "energy_gain": 30,
-      "break": 20,
-
+      "break": 30,
       "min_level": 1,
       "max_level": 12,
       "default_level": 10,
-
-      "description_template": "Deals Quantum DMG equal to {{damage}}% of Rin Tohsaka's ATK to one designated enemy target.",
-
+      "description_template": "Consumes HP by an amount equal to 50% of Mydei's current HP. Deals Imaginary DMG equal to {{healing_atk}}% of Mydei's Max HP to one designated enemy and Imaginary DMG equal to {{damage_side_targets}}% of Mydei's Max HP to adjacent targets. If the current HP is not sufficient, using Skill reduces Mydei's current HP to 1.",
       "scaling": {
-        "damage": [
-          100.0,
-          108.0,
-          116.0,
-          124.0,
-          132.0,
-          140.0,
-          150.0,
-          160.0,
-          170.0,
-          180.0,
-          188.0,
-          196.0
+        "damage_one_target": [
+          45,
+          49.5,
+          54,
+          58.5,
+          63,
+          67.5,
+          73.13,
+          78.75,
+          84.38,
+          90,
+          94.5,
+          99
+        ],
+        "damage_side_targets": [
+          25,
+          27.5,
+          40,
+          43.5,
+          35,
+          37.5,
+          40.63,
+          43.75,
+          46.88,
+          50,
+          52.5,
+          55
         ]
       },
-
       "variants": [
         {
           "type": "Enhanced Skill",
-          "name": "Second Magic Experiment",
-          "tag": "Bounce",
+          "name": "Kingslayer Be King",
+          "tag": "Restore",
           "energy_gain": 30,
-          "break": 20,
-
-          "description_template": "Deals Quantum DMG equal to {{aoe_damage}}% of Rin Tohsaka's ATK to all enemies. Then, consumes 3 point(s) of \"Gem Energy\" to deal additional Quantum DMG equal to {{bounce_damage}}% of Rin Tohsaka's ATK to one random enemy target. This repeats until \"Gem Energy\" is less than 3 or there are no enemy targets with current HP greater than 0, up to a maximum of 33 time(s). When used, if current Skill Points are greater than 2, consumes Skill Points until there are 2 point(s) left, immediately gaining 2 point(s) of \"Gem Energy\" for every 1 Skill Point consumed.",
-
+          "break": 30,
+          "description_template": "Consumes HP by an amount equal to 35% of Mydei's current HP. Deals Imaginary DMG equal to {{damage_one_target}}% of Mydei's Max HP to one enemy and Imaginary DMG equal to {{damage_adjacent}}% of Mydei's Max HP to adjacent targets. If the current HP is not sufficient, using Skill reduces Mydei's current HP to 1. This ability will be automatically used.",
           "scaling": {
-            "aoe_damage": [
-              50.0,
-              54.0,
-              58.0,
-              62.0,
-              66.0,
-              70.0,
-              75.0,
-              80.0,
-              85.0,
-              90.0,
-              94.0,
-              98.0
+            "damage_one_target": [
+              55,
+              60.5,
+              66,
+              71.5,
+              77,
+              82.5,
+              89.38,
+              96.25,
+              103.13,
+              110,
+              115.5,
+              121
             ],
-            "bounce_damage": [
-              50.0,
-              54.0,
-              58.0,
-              62.0,
-              66.0,
-              70.0,
-              75.0,
-              80.0,
-              85.0,
-              90.0,
-              94.0,
-              98.0
+            "damage_adjacent": [
+              33,
+              36.3,
+              39.6,
+              42.9,
+              46.2,
+              49.5,
+              53.63,
+              57.75,
+              61.88,
+              66,
+              69.3,
+              72.6
+            ]
+          }
+        },
+        {
+          "type": "Enhanced Skill",
+          "name": "Kingslayer Be King",
+          "tag": "Restore",
+          "energy_gain": 30,
+          "break": 30,
+          "description_template": "Consumes 150 point(s) of Charge. Deals Imaginary DMG equal to {{damage_one_target}}% of Mydei's Max HP to one enemy and Imaginary DMG equal to {{damage_adjacent}}% of Mydei's Max HP to adjacent targets. This ability will be automatically used. While this ability is in use, Charge cannot be accumulated.",
+          "scaling": {
+            "damage_one_target": [
+              140,
+              154,
+              168,
+              182,
+              196,
+              210,
+              228.5,
+              245,
+              262.5,
+              280,
+              294,
+              308
+            ],
+            "damage_adjacent": [
+              84,
+              92.4,
+              100.8,
+              109.2,
+              117.6,
+              126,
+              136.5,
+              147,
+              157.5,
+              168,
+              176.4,
+              184.8
             ]
           }
         }
       ]
     },
-
     "ultimate": {
       "type": "Ultimate",
-      "name": "An Gal Ta Ki Gal Šè",
-      "tag": "AoE",
+      "name": "Throne of Bones",
+      "tag33,": "Blast",
       "energy_cost": 160,
       "energy_gain": 5,
       "break": 20,
-
       "min_level": 1,
       "max_level": 12,
       "default_level": 10,
-
-      "description_template": "Deals Quantum DMG equal to {{main_damage}}% of Rin Tohsaka's ATK to one designated enemy, and Quantum DMG equal to {{aoe_damage}}% of Rin Tohsaka's ATK to other enemy targets. When used, recovers 1 Skill Point(s) for allies, and increases the DMG taken by all enemies by {{dmg_taken}}% for 3 turn(s).",
-
+      "description_template": "Restores HP by 15%—21% of Mydei's Max HP and accumulates 20 Talent's Charge point(s). Deals Imaginary DMG equal to 96%—172.8% of Mydei's Max HP to one designated enemy, and deals Imaginary DMG equal to 60%—108% of Mydei's Max HP to adjacent targets. Additionally, Taunts the target and targets adjacent to it, lasting for 2 turn(s). The next use of \"Godslayer Be God\" prioritizes attacking one designated enemy, and this effect only works on the latest target.",
       "scaling": {
-        "main_damage": [
-          300.0,
-          330.0,
-          360.0,
-          390.0,
-          420.0,
-          450.0,
-          487.5,
-          525.0,
-          562.5,
-          600.0,
-          630.0,
-          660.0
+        "restore_hp": [
+          96,
+          102.4,
+          108.8,
+          115.2,
+          121.6,
+          128,
+          136,
+          144,
+          152,
+          160,
+          166.4,
+          172.8
         ],
-        "aoe_damage": [
-          100.0,
-          110.0,
-          120.0,
-          130.0,
-          140.0,
-          150.0,
-          162.5,
-          175.0,
-          187.5,
-          200.0,
-          210.0,
-          220.0
+        "damage_one": [
+          60,
+          64,
+          68,
+          72,
+          76,
+          80,
+          85,
+          90,
+          95,
+          100,
+          104,
+          108
         ],
-        "dmg_taken": [
-          10.0,
-          11.0,
-          12.0,
-          13.0,
-          14.0,
-          15.0,
-          16.25,
+        "damage_adjacent": [
+          15,
+          15.5,
+          16,
+          16.5,
+          17,
           17.5,
-          18.75,
-          20.0,
-          21.0,
-          22.0
+          18.125,
+          19.375,
+          20,
+          20.5,
+          21
         ]
       }
     },
-
     "talent": {
       "type": "Talent",
-      "name": "Gem Magecraft",
+      "name": "Blood for Blood",
       "tag": "Enhance",
-
       "min_level": 1,
       "max_level": 12,
       "default_level": 10,
-
-      "description_template": "If Rin Tohsaka possesses 15 or more \"Gem Energy\" or if current Skill Points are 7 or more, her Skill is enhanced into \"Second Magic Experiment.\"\nWhen entering combat, gains 20 \"Gem Energy.\" When an ally target consumes or recovers Skill Points, increases their CRIT DMG by {{crit_dmg}}% for 2 turn(s). For every 1 Skill Point consumed or recovered, Rin Tohsaka gains 1 \"Gem Energy.\" If Rin Tohsaka possesses 15 or more \"Gem Energy\" or if current Skill Points are 7 or more, her Skill is enhanced into \"Second Magic Experiment.\"",
-
+      "description_template": "For each 1% of HP lost, accumulates 1 point of Charge (up to 200 points). When Charge reaches 100, consumes 100 points of Charge to enter the \"Vendetta\" state, restores HP equal to {{restore_hp}}% of Mydei's Max HP, and advances action by 100%. While the \"Vendetta\" state is active, Max HP increases by 50% of the current Max HP and DEF remains at 0. At the start of this unit's turn, automatically uses \"Kingslayer Be King.\"When Charge reaches 150 points during the \"Vendetta\" state, Mydei immediately gains 1 extra turn and automatically uses \"Godslayer Be God.\" When receiving a killing blow during the \"Vendetta\" state, Mydei will not be knocked down, but will clear his Charge, exits the \"Vendetta\" state, and restores HP by 50% of his Max HP.",
       "scaling": {
-        "crit_dmg": [
-          35.0,
-          38.5,
-          42.0,
-          45.5,
-          49.0,
-          52.5,
-          56.875,
-          61.25,
-          65.625,
-          70.0,
-          73.5,
-          77.0
+        "restore_hp": [
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21.25,
+          22.5,
+          23.75,
+          25,
+          26,
+          27
         ]
-      },
-
-      "variants": [
-        {
-          "type": "Joint Talent",
-          "name": "Freeform Tohsaka Style",
-          "tag": "AoE",
-
-          "description_template": "After Archer uses his Skill \"Caladbolg II: Fake Spiral Sword\" to attack, if there are 3 or fewer Skill Point(s) remaining or if \"Caladbolg II: Fake Spiral Sword\" has been actively used 5 times during the current \"Circuit Connection\" state, and the Joint Follow-Up ATK from \"Freeform Tohsaka Style\" has not been triggered, Rin Tohsaka and Archer will launch a Joint Follow-Up ATK on all enemies, dealing Quantum DMG equal to {{rin_damage}}% of Rin Tohsaka's ATK and {{archer_damage}}% of Archer's ATK respectively, and recovering 4 Skill Point(s) for allies. This Joint Follow-Up ATK can only trigger once. The trigger count resets when Rin Tohsaka's turn ends.",
-
-          "scaling": {
-            "rin_damage": [
-              150.0,
-              165.0,
-              180.0,
-              195.0,
-              210.0,
-              225.0,
-              243.75,
-              262.5,
-              281.25,
-              300.0,
-              315.0,
-              330.0
-            ],
-            "archer_damage": [
-              150.0,
-              165.0,
-              180.0,
-              195.0,
-              210.0,
-              225.0,
-              243.75,
-              262.5,
-              281.25,
-              300.0,
-              315.0,
-              330.0
-            ]
-          }
-        }
-      ]
+      }
     },
-
     "technique": {
       "type": "Technique",
-      "name": "Conversion Charge",
-      "tag": "Enhance",
-      "description": "After using the Technique, gains 10 point(s) of \"Gem Energy\" at the start of the next combat."
+      "name": "Cage of Broken Lance",
+      "tag": "Impair",
+      "description": "After using Technique, pulls in enemies within a certain area and inflicts Daze on them for 10 second(s). Dazed enemies will not actively attack ally targets. If actively attacking Dazed enemies, when entering battle, deals Imaginary DMG equal to 80% of Mydei's Max HP to all enemies, and Taunts the targets, lasting for 1 turn(s). This unit accumulates 50 point(s) of Talent's Charge."
     }
   },
-
   "major_traces": {
     "2": {
-      "name": "Elegant Conduct",
-      "description": "When Rin Tohsaka is on the field, additionally increases the max number of Skill Points by 2. When entering combat, Rin Tohsaka's ATK increases by 150%, and Quantum RES PEN increases by 15%. If Archer is in the team, Archer also gains this effect."
+      "name": "Earth and Water",
+      "description": "During the \"Vendetta\" state, Mydei will not exit the \"Vendetta\" state when receiving a killing blow. This effect can trigger 3 time(s) per battle."
     },
-
     "4": {
-      "name": "Ladylike Poise",
-      "description": "When entering combat and after using Enhanced Skill, Rin Tohsaka's SPD increases by 20%, lasting for 3 turn(s)."
+      "name": "Thirty Tyrants",
+      "description": "While in the \"Vendetta\" state, Mydei is immune to Crowd Control debuffs."
     },
-
     "6": {
-      "name": "Inbound Prosperity",
-      "description": "When Rin Tohsaka uses her Ultimate, she gains 12 point(s) of \"Gem Energy.\""
+      "name": "Bloodied Chiton",
+      "description": "When battle starts, if Mydei's Max HP exceeds 4000, for every 100 excess HP, Mydei's CRIT Rate increases by 1.2%, his Charge ratio from enemy targets' DMG increases by 2.5%, and his Incoming Healing increases by 0.75%. Up to 4000 excess HP can be taken into account for this effect."
     }
   },
-
   "stat_bonuses": [
     {
+      "stat": "HP",
+      "value": "+18%"
+    },
+    {
       "stat": "CRIT DMG",
-      "value": "+37.3%"
+      "value": "+32%"
     },
     {
-      "stat": "ATK",
-      "value": "+18.0%"
-    },
-    {
-      "stat": "Quantum DMG",
-      "value": "+8.0%"
+      "stat": "SPD",
+      "value": "+5"
     }
   ],
-
   "eidolons": [
     {
       "level": 1,
-      "name": "Zelretch's Apprentice",
-      "description": "If the amount of \"Gem Energy\" consumed by a single Enhanced Skill is 30 or more, Rin Tohsaka gains \"Shadow Gem\" equal to the amount of \"Gem Energy\" consumed. While possessing \"Shadow Gem,\" Skill is enhanced to \"Second Magic Experiment.\" The Enhanced Skill consumes all \"Shadow Gem,\" does not trigger the effect of converting Skill Points into \"Gem Energy,\" and does not consume \"Gem Energy.\""
+      "name": "Frost Hones Spine of Steel",
+      "description": "Increases the DMG multiplier dealt by \"Godslayer Be God\" to the primary target by 30%. This ability now deals to all enemies Imaginary DMG equal to the DMG multiplier dealt to the primary target."
     },
-
     {
       "level": 2,
-      "name": "Dimensional Traveler",
-      "description": "Increases Rin Tohsaka's Skill DMG by 30%. While Rin Tohsaka is on the field, Skill DMG dealt by all allies becomes 130% of the original DMG."
+      "name": "Strife Beholds Cry of Dead",
+      "description": "During \"Vendetta\", the DMG dealt by Mydei ignores 15% of enemy targets' DEF. After he receives healing, converts 40% of the healed amount to Charge. The tally of the converted Charge cannot exceed 40 point(s). Resets this tally of Charge after any unit takes action."
     },
-
     {
       "level": 3,
-      "name": "Holy Grail War: Victory Memorial",
-      "description": "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+      "name": "Honor Exalts Feast of Faith",
+      "description": "Skill Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
     },
-
     {
       "level": 4,
-      "name": "Red Devil: Triple Speed",
-      "description": "When the CRIT DMG boost effect from Talent \"Gem Magecraft\" takes effect on Rin Tohsaka, the effect can stack up to 2 time(s)."
+      "name": "Siren Jolts the Laconic Lion",
+      "description": "While in \"Vendetta\", increases CRIT DMG by 30% and restores HP by 10% of this unit's Max HP after receiving attacks from enemy targets."
     },
-
     {
       "level": 5,
-      "name": "Goddess of Venus's Favor",
-      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+      "name": "War Chisels Flesh of Flame",
+      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
     },
-
     {
       "level": 6,
-      "name": "Nailed It This Time!",
-      "description": "Rin Tohsaka's All-Type RES PEN increases by 20%. When using Ultimate, gains 24 point(s) of \"Gem Energy\" and 1 extra turn."
+      "name": "Legacy Scales Mound of Blood",
+      "description": "When entering battle, immediately enters the \"Vendetta\" state, and lowers the Charge required for \"Godslayer Be God\" to 100 point(s)."
     }
   ]
 }
