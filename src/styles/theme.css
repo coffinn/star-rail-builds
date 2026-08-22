@@ -10,43 +10,10 @@ body {
     color: var(--text);
 }
 
-body[data-element="anemo"] {
-    --bg: #153434;
-    --element: #30d8a0;
-}
 
-body[data-element="cryo"] {
-    --bg: #235d74;
-    --element: #7af0f0;
-}
-
-body[data-element="dendro"] {
-    --bg: #263d21;
-    --element: #9de43b;
-}
-
-body[data-element="electro"] {
-    --bg: #352a63;
-    --element: #c87fff;
-}
-
-body[data-element="geo"] {
-    --bg: #3d2c1d;
-    --element: #f3b530;
-}
-
-body[data-element="hydro"] {
-    --bg: #15315c;
-    --element: #02c0ff;
-}
-
-body[data-element="pyro"] {
-    --bg: #3d1818;
-    --element: #ff6640;
-}
 
 body[data-element="physical"] {
-    --bg: #3d1818;
+    --bg: #5B6770;
     --element: #b8b6b5;
 }
 
