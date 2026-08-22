@@ -5,6 +5,7 @@ import {
     type CharacterAbilityVariant,
     type CharacterData,
 } from '../utils/character-data';
+import HighlightedText from './HighlightedText.astro';
 
 const { character } = Astro.props as {
     character: CharacterData;
@@ -355,22 +356,26 @@ const renderVariantDescription = (
                                                         level !== defaultLevel
                                                     }
                                                 >
-                                                    {renderCharacterAbilityDescription(
-                                                        ability,
-                                                        level,
-                                                        minLevel,
-                                                        defaultLevel,
-                                                    )}
+                                                    <HighlightedText
+                                                        text={renderCharacterAbilityDescription(
+                                                            ability,
+                                                            level,
+                                                            minLevel,
+                                                            defaultLevel,
+                                                        )}
+                                                    />
                                                 </p>
                                             ))
                                         ) : (
                                             <p>
-                                                {renderCharacterAbilityDescription(
-                                                    ability,
-                                                    undefined,
-                                                    minLevel,
-                                                    defaultLevel,
-                                                )}
+                                                <HighlightedText
+                                                    text={renderCharacterAbilityDescription(
+                                                        ability,
+                                                        undefined,
+                                                        minLevel,
+                                                        defaultLevel,
+                                                    )}
+                                                />
                                             </p>
                                         )}
                                     </div>
@@ -483,19 +488,23 @@ const renderVariantDescription = (
                                                                     defaultLevel
                                                                 }
                                                             >
-                                                                {renderVariantDescription(
-                                                                    variant,
-                                                                    ability,
-                                                                    level,
-                                                                )}
+                                                                <HighlightedText
+                                                                    text={renderVariantDescription(
+                                                                        variant,
+                                                                        ability,
+                                                                        level,
+                                                                    )}
+                                                                />
                                                             </p>
                                                         ))
                                                     ) : (
                                                         <p>
-                                                            {renderVariantDescription(
-                                                                variant,
-                                                                ability,
-                                                            )}
+                                                            <HighlightedText
+                                                                text={renderVariantDescription(
+                                                                    variant,
+                                                                    ability,
+                                                                )}
+                                                            />
                                                         </p>
                                                     )}
                                                 </div>
@@ -529,7 +538,9 @@ const renderVariantDescription = (
                         </summary>
 
                         <div class="character-detail-body">
-                            <p>{trace.description}</p>
+                            <p>
+                                <HighlightedText text={trace.description} />
+                            </p>
                         </div>
                     </details>
                 ))
@@ -575,7 +586,9 @@ const renderVariantDescription = (
                         </summary>
 
                         <div class="character-detail-body">
-                            <p>{eidolon.description}</p>
+                            <p>
+                                <HighlightedText text={eidolon.description} />
+                            </p>
                         </div>
                     </details>
                 ))
