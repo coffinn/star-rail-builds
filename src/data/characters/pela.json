@@ -72,7 +72,7 @@
             "name": "Zone Suppression",
             "tag": "AoE",
             "energy_gain": 5,
-            "break": 20,
+            "break_aoe": 20,
             "energy_cost": 110,
             "min_level": 1,
             "max_level": 12,
@@ -146,7 +146,6 @@
         "technique": {
             "type": "Technique",
             "name": "Preemptive Strike",
-            "tag": "Technique",
             "break": 20,
             "description": "Immediately attacks the enemy. Upon entering battle, Pela deals Ice DMG equal to 80% of her ATK to a random enemy, with a 100% base chance of lowering the DEF of all enemies by 20% for 2 turn(s)."
         }
