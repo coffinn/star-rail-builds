@@ -1,0 +1,182 @@
+{
+  "id": "robin",
+  "name": "Robin",
+  "rarity": 5,
+  "element": "physical",
+  "path": "harmony",
+  "version_released": "2.2",
+  "max_energy": 160,
+
+  "level_80_stats": {
+    "hp": 1280,
+    "atk": 640,
+    "def": 485,
+    "spd": 102
+  },
+
+  "abilities": {
+    "basic": {
+      "type": "Basic ATK",
+      "name": "Wingflip White Noise",
+      "tag": "Single Target",
+      "energy_gain": 20,
+      "break": 10,
+
+      "min_level": 1,
+      "max_level": 7,
+      "default_level": 6,
+
+      "description_template": "Deals Physical DMG equal to {{damage}}% of Robin's ATK to a single target enemy. ",
+
+      "scaling": {
+        "damage": [
+          50,
+          60,
+          70,
+          80,
+          90,
+          100,
+          110
+        ]
+      }
+    },
+
+    "skill": {
+      "type": "Skill",
+      "name": "Pinion's Aria",
+      "tag": "Support",
+      "energy_gain": 30,
+
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+
+      "description_template": "Increase DMG dealt by all allies by {{dmg_boost}}%, lasting for 3 turn(s). This duration decreases by 1 at the start of Robin's every turn. ",
+
+      "scaling": {
+        "dmg_boost": [25, 27.5, 30, 32.5, 35, 37.5, 40.625, 43.75, 46.875, 50, 52.5, 55]
+
+      }
+    },
+
+    "ultimate": {
+      "type": "Ultimate",
+      "name": "Vox Harmonique, Opus Cosmique",
+      "tag": "Support",
+      "energy_cost": 160,
+      "energy_gain": 5,
+
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+
+      "description_template": "Robin enters the Concerto state and makes all teammates (i.e., excluding this unit) immediately take action. \n While in the Concerto state, increases all allies' ATK by {{atk_boost}}% of Robin's ATK plus {{atk_boost_flat}}. Moreover, after every attack by ally targets, Robin deals Physical Additional DMG equal to {{additional_dmg}}% of her ATK for 1 time, with a fixed CRIT Rate for this damage set at 100% and fixed CRIT DMG set at 150%.\n While in the Concerto state, Robin is immune to Crowd Control debuffs and cannot enter her turn or take action until the Concerto state ends. \nA Concerto countdown appears on the Action Order bar. When the countdown's turn begins, Robin exits the Concerto state and immediately takes action. The countdown has its own fixed SPD of 90. ",
+
+      "scaling": {
+        "atk_boost": [15.2, 15.96, 16.72, 17.48, 18.24, 19, 19.95, 20.9, 21.85, 22.8, 23.56, 24.32],
+        "atk_boost_flat": [50, 65, 80, 95, 110, 125, 143.75, 162.5, 181.25, 200, 215, 230],
+        "additional_dmg": [2, 76.8, 81.6, 86.4, 91.2, 96, 102, 108, 114, 120, 124.8, 129.6]
+      }
+    },
+
+    "talent": {
+      "type": "Talent",
+      "name": "Tonal Resonance",
+      "tag": "Support",
+
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+
+      "description_template": "Increase all allies's CRIT DMG by {{crit_dmg}}%. Moreover, after allies attack enemy targets, Robin additionally regenerates 2 Energy for herself. ",
+
+      "scaling": {
+        "crit_dmg": [5, 6.5, 8, 9.5, 11, 12.5, 14.375, 16.25, 18.125, 20, 21.5, 23]
+      }
+    },
+
+    "technique": {
+      "type": "Technique",
+      "name": "Overture of Inebriation",
+      "tag": "Support",
+
+      "description": "After using Technique, creates a Special Dimension around the character that lasts for 15 seconds. Enemies within this dimension will not attack Robin and will follow Robin while the dimension is active. After entering battle while the dimension is active, Robin regenerates 5 Energy at the start of each wave. Only 1 Dimension Effect created by allies can exist at the same time."
+    }
+  },
+
+  "major_traces": {
+    "2": {
+      "name": "Coloratura Cadenza",
+      "description": "When the battle begins, action advances this character by 25%."
+    },
+
+    "4": {
+      "name": "Impromptu Flourish",
+      "description": "While the Concerto state is active, the CRIT DMG dealt when all allies launch Follow-up ATK increases by 25%."
+    },
+
+    "6": {
+      "name": "Sequential Passage",
+      "description": "When using Skill, additionally regenerates 5 Energy."
+    }
+  },
+
+  "stat_bonuses": [
+    {
+      "stat": "SPD",
+      "value": "+5"
+    },
+    {
+      "stat": "ATK",
+      "value": "+28%"
+    },
+    {
+      "stat": "HP",
+      "value": "+18%"
+    }
+  ],
+
+  "eidolons": [
+    {
+      "level": 1,
+      "name": "Land of Smiles",
+      "description": "While the 'Concerto' state is active, all allies' All-Type RES PEN increases by 24%."
+    },
+
+    {
+      "level": 2,
+      "name": "Afternoon Tea For Two",
+      "description": "While the Concerto state is active, all allies' SPD increases by 16%. The Talent's Energy Regeneration effect additionally increases by 1."
+    },
+
+    {
+      "level": 3,
+      "name": "Inverted Tuning",
+      "description": "Skill Lv. +2, up to a maximum of Lv. 15. Ultimate Lv. +2, up to a maximum of Lv. 15."
+    },
+
+    {
+      "level": 4,
+      "name": "Raindrop Key",
+      "description": "When using the Ultimate, dispels Crowd Control debuffs from all allies. While Robin is in the 'Concerto' state, increases the Effect RES of all allies by 50%."
+    },
+
+    {
+      "level": 5,
+      "name": "Lonestar's Lament",
+      "description": "Basic ATK Lv. +1, up to a maximum of Lv. 10. Talent Lv. +2, up to a maximum of Lv. 15."
+    },
+
+    {
+      "level": 6,
+      "name": "Moonless Midnight",
+      "description": "While the 'Concerto' state is active, the CRIT DMG for the Physical Additional DMG caused by the Ultimate increases by 450%. The effect of 'Moonless Midnight' can trigger up to 8 time(s) and the trigger count is resets each time the Ultimate is used."
+    }
+  ],
+
+  "charmony_dove": [
+    {
+      "string": "One day, after dinner, while my younger sister and I were lounging about in Mr. Gopher Wood's yard, we spotted a fledgling Charmony Dove all on its own. That baby bird was tiny, it didn't even have all of its feathers, and it couldn't sing. When we found it, it was already on its last breath, having fallen into a shrub -- probably abandoned by its parents. We decided to build a nest for it right there and then. However, thinking back, that winter was unusually cold, with fierce winds at night in the yard, not to mention the many poisonous bugs and wild beasts in the vicinity… It was clear that if we left the fledgling in the yard, it stood no chance of surviving until spring. So, I suggested we take it inside, place it on the shelf by the window, and asked the adults to fashion a cage for it. We decided that when it regained its strength enough to spread its wings, we would release it back into the wild. The tragic part -- something that we'd never considered -- was that this bird's fate had already been determined long before this moment… Its destiny was determined by our momentary whim. Now, I pass the power of choice to you all. Faced with this situation, what choice would you make? Stick to the original plan, and build a nest with soft net where the Charmony Dove fell? Or build a cage for it, and feed it, giving it the utmost care from within the warmth of a home? I eagerly await your answer."
+    }
+  ]
+}
