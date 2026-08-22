@@ -1,0 +1,156 @@
+{
+  "id": "dr-ratio",
+  "name": "Dr. Ratio",
+  "rarity": 5,
+  "element": "imaginary",
+  "path": "hunt",
+  "version_released": "1.6",
+  "max_energy": 140,
+
+  "level_80_stats": {
+    "hp": 1047,
+    "atk": 776,
+    "def": 460,
+    "spd": 103
+  },
+
+  "abilities": {
+    "basic": {
+        "type": "Basic ATK",
+        "name": "Mind is Might",
+        "tag": "Single Target",
+        "energy_gain": 20,
+        "break": 10,
+        "min_level": 1,
+        "max_level": 7,
+        "default_level": 6,
+        "description_template": "Deals Imaginary DMG equal to {{img_dmg}}% of Dr. Ratio's ATK to a single target enemy.",
+        "scaling": {
+            "img_dmg": [50, 60, 70, 80, 90, 100, 110]
+        }
+    },
+
+    "skill": {
+        "type": "Skill",
+        "name": "Fractal, Exiles Fallacy",
+        "tag": "Single",
+        "energy_gain": 6,
+        "break": 10,
+        "min_level": 1,
+        "max_level": 12,
+        "default_level": 10,
+        "description_template": "Deals Imaginary DMG equal to {{img_dmg}}% of Dr. Ratio's ATK to a single target enemy.",
+        "scaling": {
+            "img_dmg": [75, 82.5, 90, 97.5, 105, 112.5, 121.875, 131.25, 14.625, 150, 157.5, 165]
+        }
+    },
+
+    "ultimate": {
+        "type": "Ultimate",
+        "name": "Syllogistic Paradox",
+        "tag": "Single Target",
+        "energy_cost": 140,
+        "energy_gain": 5,
+        "break": 30,
+        "min_level": 1,
+        "max_level": 12,
+        "default_level": 10,
+        "description_template": "Deals Imaginary DMG equal to {{img_dmg}}% of Dr. Ratio's ATK to a single target enemy and applies Wiseman's Folly. When Dr. Ratio's teammates attack a target afflicted with Wiseman's Folly, Dr. Ratio launches 1 instance of his Talent's Follow-up ATK against this target.\nWiseman's Folly can be triggered for up to 2 times and only affects the most recent target of Dr. Ratio's Ultimate. This trigger count resets after Dr. Ratio's Ultimate is used.",
+        "scaling": {
+            "img_dmg": [144, 53.6, 163.2, 172.8, 182.4,	192, 204, 216, 228, 240, 249.6, 259.2]
+        }
+    },
+
+    "talent": {
+        "type": "Talent",
+        "name": "Cogito, Ergo Sum",
+        "tag": "Single Target",
+        "energy_gain": 5,
+        "break": 10,
+        "min_level": 1,
+        "max_level": 12,
+        "default_level": 10,
+        "description_template": "When using his Skill, Dr. Ratio has a 40% fixed chance of launching a Follow-up ATK against his target for 1 time, dealing Imaginary DMG equal to {{img_dmg}}% of Dr. Ratio's ATK. For each debuff the target enemy has, the fixed chance of launching Follow-up ATK increases by 20%. If the target enemy is defeated before the Follow-up ATK triggers, the Follow-up ATK will be directed at a single random enemy instead.",
+        "scaling": {
+            "img_dmg": [135, 148.5, 162, 175.5, 189, 202.5, 219.375, 236.25, 253.125, 270, 283.5, 297]
+        }
+    },
+
+    "technique": {
+        "type": "Technique",
+        "name": "Mold of Idolatry",
+        "tag": "Impair",
+        "description": "After using Technique, creates a Special Dimension that Taunts nearby enemies, lasting for 10 second(s). After entering battle with enemies in this Special Dimension, there is a 100% base chance to reduce each single enemy target's SPD by 15% for 2 turn(s). Only 1 Dimension Effect created by allies can exist at the same time."
+    }
+  },
+
+  "major_traces": {
+    "2": {
+        "name": "Summation",
+        "description": "When Dr. Ratio uses his Skill, for every debuff on the target, his CRIT Rate increases by 2.5% and CRIT DMG by 5%. This effect can stack up to 6 time(s)."
+    },
+
+    "4": {
+        "name": "Inference",
+        "description": "When Skill is used to attack an enemy target, there is a 100% base chance to reduce the attacked enemy target's Effect RES by 10% for 2 turn(s)."
+    },
+
+    "6": {
+        "name": "Deduction",
+        "description": "When dealing DMG to a target that has 3 or more debuff(s), for each debuff the target has, the DMG dealt by Dr. Ratio to this target increases by 10%, up to a maximum increase of 50%."
+    }
+  },
+
+  "stat_bonuses": [
+    {
+        "stat": "ATK",
+        "value": "+28%"
+    },
+    {
+        "stat": "CRIT Rate",
+        "value": "+12%"
+    },
+    {
+        "stat": "DEF",
+        "value": "+12.5%"
+    }
+  ],
+
+  "eidolons": [
+    {
+        "level": 1,
+        "name": "Pride Comes Before a Fall",
+        "description": "The maximum stackable count for the Trace \"Summation\" increases by 4. When a battle begins, immediately obtains 4 stacks of Summation. Needs to unlock Summation first."
+    },
+
+    {
+        "level": 2,
+        "name": "The Divine Is in the Details",
+        "description": "When his Talent's Follow-up ATK hits a target, for every debuff the target has, deals Imaginary Additional DMG equal to 20% of Dr. Ratio's ATK. This effect can be triggered for a maximum of 4 time(s) during each Follow-up ATK."
+    },
+
+    {
+        "level": 3,
+        "name": "Know Thyself",
+        "description": "Ultimate Lv. +2, up to a maximum of Lv. 15.\nBasic ATK Lv. +1, up to a maximum of Lv. 10."
+    },
+
+    {
+        "level": 4,
+        "name": "Ignorance Is Blight",
+        "description": "When triggering the Talent, additionally regenerates 15 Energy for Dr. Ratio."
+    },
+
+    {
+        "level": 5,
+        "name": "Sic Itus Ad Astra",
+        "description": "Skill Lv. +2, up to a maximum of Lv. 15.\nTalent Lv. +2, up to a maximum of Lv. 15."
+    },
+
+    {
+        "level": 6,
+        "name": "Vincit Omnia Veritas",
+        "description": "Additionally increases the trigger count for \"Wiseman's Folly\" by 1. The DMG dealt by the Talent's Follow-up ATK increases by 50%."
+    }
+  ]
+}

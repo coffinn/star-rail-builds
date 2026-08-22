@@ -1,0 +1,155 @@
+{
+  "id": "yukong",
+  "name": "Yukong",
+  "rarity": 4,
+  "element": "imaginary",
+  "path": "harmony",
+  "version_released": "1.1",
+  "max_energy": 140,
+
+  "level_80_stats": {
+    "hp": 917,
+    "atk": 599,
+    "def": 474,
+    "spd": 107
+  },
+
+  "abilities": {
+    "basic": {
+        "type": "Basic ATK",
+        "name": "Arrowslinger",
+        "tag": "Single Target",
+        "energy_gain": 20,
+        "break": 10,
+        "min_level": 1,
+        "max_level": 7,
+        "default_level": 6,
+        "description_template": "Deals Imaginary DMG equal to {{img_dmg}}% of Yukong's ATK to a target enemy.",
+        "scaling": {
+            "img_dmg": [50, 60, 70, 80, 90, 100, 110]
+        }
+    },
+
+    "skill": {
+        "type": "Skill",
+        "name": "Emboldening Salvo",
+        "tag": "Support",
+        "energy_gain": 30,
+        "min_level": 1,
+        "max_level": 12,
+        "default_level": 10,
+        "description_template": "Obtains 2 stack(s) of \"Roaring Bowstrings\" (to a maximum of 2 stacks). When \"Roaring Bowstrings\" is active, the ATK of all allies increases by {{atk_buff}}%, and every time an ally's turn (including Yukong's) ends, Yukong loses 1 stack of \"Roaring Bowstrings.\"\nWhen it's the turn where Yukong gains \"Roaring Bowstrings\" by using Skill, \"Roaring Bowstrings\" will not be removed.",
+        "scaling": {
+            "atk_buff": [40, 44, 48, 52, 56, 60, 65, 70, 75, 80, 84, 88]
+        }
+    },
+
+    "ultimate": {
+        "type": "Ultimate",
+        "name": "Diving Kestrel",
+        "tag": "Single Target",
+        "energy_cost": 130,
+        "energy_gain": 5,
+        "break": 30,
+        "min_level": 1,
+        "max_level": 12,
+        "default_level": 10,
+        "description_template": "If \"Roaring Bowstrings\" is active on Yukong when her Ultimate is used, additionally increases all allies' CRIT Rate by {{crit_rate}}% and CRIT DMG by {{crit_dmg}}%. At the same time, deals Imaginary DMG equal to {{img_dmg}}% of Yukong's ATK to a single enemy.",
+        "scaling": {
+            "crit_rate": [21, 21.7, 22.4, 23.1,	23.8, 24.5,	25.375,	26.25, 27.125, 28, 28.7, 29.4],
+            "crit_dmg": [39, 41.6, 44.2, 46.8, 49.4, 52, 55.25, 58.5, 61.75, 65, 67.6, 70.2],
+            "img_dmg": [228, 243.2, 258.4, 273.6, 288.8, 304, 323, 342, 361, 380, 395.2, 410.4]
+        }
+    },
+
+    "talent": {
+        "type": "Talent",
+        "name": "Seven Layers, One Arrow",
+        "tag": "Enhance",
+        "min_level": 1,
+        "max_level": 12,
+        "default_level": 10,
+        "description_template": "Basic ATK additionally deals Imaginary DMG equal to {{basic_increase}}% of Yukong's ATK, and increases the Toughness Reduction of this attack by 100%. This effect can be triggered again after 1 turn(s).",
+        "scaling": {
+            "basic_increase": [40, 44,48, 52, 56, 60, 65, 70, 75, 80, 84, 88]
+        }
+    },
+
+    "technique": {
+        "type": "Technique",
+        "name": "Windchaser",
+        "tag": "Enhance",
+        "description": "After using her Technique, Yukong enters Sprint mode for 20 seconds. In Sprint mode, her movement speed increases by 35%, and Yukong gains 2 stack(s) of \"Roaring Bowstrings\" when she enters battle by attacking enemies."
+    }
+  },
+
+  "major_traces": {
+    "2": {
+        "name": "Acherion",
+        "description": "Yukong can resist 1 debuff application for 1 time. This effect can be triggered again after 2 turn(s)."
+    },
+
+    "4": {
+        "name": "Bowmaster",
+        "description": "When Yukong is on the field, Imaginary DMG dealt by all allies increases by 12%."
+    },
+
+    "6": {
+        "name": "Majestas",
+        "description": "When \"Roaring Bowstrings\" is active, Yukong regenerates 2 additional Energy every time an ally takes action."
+    }
+  },
+
+  "stat_bonuses": [
+    {
+        "stat": "ATK",
+        "value": "+10%"
+    },
+    {
+        "stat": "Imaginary DMG",
+        "value": "+22.4%"
+    },
+    {
+        "stat": "HP",
+        "value": "+18%"
+    }
+  ],
+
+  "eidolons": [
+    {
+        "level": 1,
+        "name": "Aerial Marshal",
+        "description": "At the start of battle, increases the SPD of all allies by 10% for 2 turn(s)."
+    },
+
+    {
+        "level": 2,
+        "name": "Skyward Command",
+        "description": "When any ally's current energy is equal to its energy limit, Yukong regenerates an additional 5 energy. This effect can only be triggered once for each ally. The trigger count is reset after Yukong uses her Ultimate."
+    },
+
+    {
+        "level": 3,
+        "name": "Torrential Fusillade",
+        "description": "Ultimate Lv. +2, up to a maximum of Lv. 15.\nBasic ATK Lv. +1, up to a maximum of Lv. 10."
+    },
+
+    {
+        "level": 4,
+        "name": "Zephyrean Echoes",
+        "description": "When Yukong uses her Ultimate, she immediately gains 1 stack(s) of \"Roaring Bowstrings.\""
+    },
+
+    {
+        "level": 5,
+        "name": "August Deadshot",
+        "description": "Skill Lv. +2, up to a maximum of Lv. 15.\nTalent Lv. +2, up to a maximum of Lv. 15."
+    },
+
+    {
+        "level": 6,
+        "name": "Bowstring Thunderclap",
+        "description": "When Yukong uses her Ultimate, she immediately gains 1 stack(s) of \"Roaring Bowstrings.\""
+    }
+  ]
+}
