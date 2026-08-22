@@ -3,7 +3,7 @@
 `talents.json` defines talent priority groups for one build.
 
 ```txt
-src/content/<element>/<rarity>/<character>/<build>/talents.json
+src/content/<type>/<rarity>/<character>/<build>/traces.json
 ```
 
 ## Expected Shape
@@ -17,15 +17,11 @@ src/content/<element>/<rarity>/<character>/<build>/talents.json
   ],
   "talents": [
     {
-      "items": [
-        {
-          "name": "na",
-          "note": {
-            "en": "Level this first for Charged Attack builds.",
-            "fr": "A monter en premier pour les builds d'attaques chargees."
-          }
-        }
-      ]
+        "items": [
+            {
+                "name": "ba"
+            }
+        ]
     },
     {
       "approx": true,
@@ -34,7 +30,10 @@ src/content/<element>/<rarity>/<character>/<build>/talents.json
           "name": "skill"
         },
         {
-          "name": "burst"
+          "name": "ultimate"
+        },
+        {
+          "name": "talent"
         }
       ]
     }
@@ -44,30 +43,30 @@ src/content/<element>/<rarity>/<character>/<build>/talents.json
 
 ## Fields
 
-- `talents`: Ordered priority groups.
+- `traces`: Ordered priority groups.
 - `notes`: Optional section-level notes shown under
-  `Regarding Talents Choices:` without adding a `*` marker to any talent.
-- `talents[].items`: Talents in the same priority position. Multiple items
+  `Regarding Talents Choices:` without adding a `*` marker to any trace.
+- `traces[].items`: Traces in the same priority position. Multiple items
   render on one line with `=`.
-- `talents[].approx`: Optional boolean. Use `true` when multiple talents are
+- `traces[].approx`: Optional boolean. Use `true` when multiple traces are
   close alternatives instead of exactly equal. Later items render below the
   numbered line with `≈`.
-- `items[].name`: Talent ID from `src/i18n/<lang>/talents.json`.
-  Current IDs are `na`, `ca`, `skill`, and `burst`.
+- `traces[].name`: Trace ID from `src/i18n/<lang>/traces.json`.
+  Current IDs are `ba`, `skill`, `ultimate`, and `talent`.
 - `items[].note`: Optional localized editorial note. Adds a `*` marker beside
-  the talent and renders in the talent notes section.
+  the trace and renders in the trace notes section.
 
 ## Notes
 
-- Use talent IDs instead of display names when possible.
-- Existing display strings such as `"Normal Attack"` still work, but they are
+- Use trace IDs instead of display names when possible.
+- Existing display strings such as `"Basic ATK"` still work, but they are
   not translated.
-- Adding `note` to a talent automatically adds a `*` marker next to that talent
-  in the talent priority list.
+- Adding `note` to a talent automatically adds a `*` marker next to that trace
+  in the trace priority list.
 - The same `note` also automatically creates a matching note entry under
-  `Regarding Talents Choices:`.
-- Notes support Markdown, inline translation tokens such as
-  `[[ability:skill]]`, and rotation notation popovers such as `{rot:N2C}`.
+  `Regarding Trace Choices:`.
+- Notes support Markdown and inline translation tokens such as
+  `[[ability:skill]]`.
 
 ## Equal Priority
 
@@ -80,7 +79,7 @@ equally:
     {
       "items": [
         {
-          "name": "burst"
+          "name": "ultimate"
         },
         {
           "name": "skill",
@@ -115,7 +114,7 @@ Use `approx: true` when later talents should render as approximate alternatives:
           "name": "skill"
         },
         {
-          "name": "na"
+          "name": "ba"
         }
       ]
     }
@@ -127,17 +126,17 @@ This renders as:
 
 ```txt
 1. Skill
-≈ Normal Attack
+≈ Basic ATK
 ```
 
 ## Translated Note Example
 
 ```json
 {
-  "name": "burst",
+  "name": "skill",
   "note": {
-    "en": "Level [[ability:burst]] first if most of the build's damage comes from it.",
-    "fr": "Montez l'[[ability:burst]] en premier si la majorite des degats du build viennent de lui."
+    "en": "Level [[ability:skill]] first if most of the build's damage comes from it.",
+    "fr": "Montez l'[[ability:skill]] en premier si la majorite des degats du build viennent de lui."
   }
 }
 ```
