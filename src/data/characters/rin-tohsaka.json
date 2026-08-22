@@ -1,330 +1,292 @@
 {
-  "id": "rin-tohsaka",
-  "name": "Rin Tohsaka",
-  "rarity": 5,
-  "element": "quantum",
-  "path": "erudition",
-  "version_released": "3.4",
-  "collaboration": "Fate/stay night: Unlimited Blade Works",
-  "max_energy": 160,
-
-  "level_80_stats": {
-    "hp": 915,
-    "atk": 835,
-    "def": 403,
-    "spd": 102
-  },
-
-  "abilities": {
-    "basic": {
-      "type": "Basic ATK",
-      "name": "Bajiquan",
-      "tag": "Single Target",
-      "energy_gain": 20,
-      "break": 10,
-
-      "min_level": 1,
-      "max_level": 7,
-      "default_level": 6,
-
-      "description_template": "Deals Quantum DMG equal to {{damage}}% of Rin Tohsaka's ATK to one designated enemy target.",
-
-      "scaling": {
-        "damage": [
-          50,
-          60,
-          70,
-          80,
-          90,
-          100,
-          110
-        ]
-      }
+    "id": "rin-tohsaka",
+    "name": "Rin Tohsaka",
+    "rarity": 5,
+    "element": "quantum",
+    "path": "erudition",
+    "version_released": "3.4",
+    "collaboration": "Fate/stay night: Unlimited Blade Works",
+    "max_energy": 160,
+    "level_80_stats": {
+        "hp": 915,
+        "atk": 835,
+        "def": 403,
+        "spd": 102
     },
-
-    "skill": {
-      "type": "Skill",
-      "name": "Jeweled Sword Zelretch",
-      "tag": "Single Target",
-      "energy_gain": 30,
-      "break": 20,
-
-      "min_level": 1,
-      "max_level": 12,
-      "default_level": 10,
-
-      "description_template": "Deals Quantum DMG equal to {{damage}}% of Rin Tohsaka's ATK to one designated enemy target.",
-
-      "scaling": {
-        "damage": [
-          100.0,
-          108.0,
-          116.0,
-          124.0,
-          132.0,
-          140.0,
-          150.0,
-          160.0,
-          170.0,
-          180.0,
-          188.0,
-          196.0
-        ]
-      },
-
-      "variants": [
-        {
-          "type": "Enhanced Skill",
-          "name": "Second Magic Experiment",
-          "tag": "Bounce",
-          "energy_gain": 30,
-          "break": 20,
-
-          "description_template": "Deals Quantum DMG equal to {{aoe_damage}}% of Rin Tohsaka's ATK to all enemies. Then, consumes 3 point(s) of \"Gem Energy\" to deal additional Quantum DMG equal to {{bounce_damage}}% of Rin Tohsaka's ATK to one random enemy target. This repeats until \"Gem Energy\" is less than 3 or there are no enemy targets with current HP greater than 0, up to a maximum of 33 time(s). When used, if current Skill Points are greater than 2, consumes Skill Points until there are 2 point(s) left, immediately gaining 2 point(s) of \"Gem Energy\" for every 1 Skill Point consumed.",
-
-          "scaling": {
-            "aoe_damage": [
-              50.0,
-              54.0,
-              58.0,
-              62.0,
-              66.0,
-              70.0,
-              75.0,
-              80.0,
-              85.0,
-              90.0,
-              94.0,
-              98.0
-            ],
-
-            "bounce_damage": [
-              50.0,
-              54.0,
-              58.0,
-              62.0,
-              66.0,
-              70.0,
-              75.0,
-              80.0,
-              85.0,
-              90.0,
-              94.0,
-              98.0
+    "abilities": {
+        "basic": {
+            "type": "Basic ATK",
+            "name": "Bajiquan",
+            "tag": "Single Target",
+            "energy_gain": 20,
+            "break": 10,
+            "min_level": 1,
+            "max_level": 7,
+            "default_level": 6,
+            "description_template": "Deals Quantum DMG equal to {{damage}}% of Rin Tohsaka's ATK to one designated enemy target.",
+            "scaling": {
+                "damage": [
+                    50,
+                    60,
+                    70,
+                    80,
+                    90,
+                    100,
+                    110
+                ]
+            }
+        },
+        "skill": {
+            "type": "Skill",
+            "name": "Jeweled Sword Zelretch",
+            "tag": "Single Target",
+            "energy_gain": 30,
+            "break": 20,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Deals Quantum DMG equal to {{damage}}% of Rin Tohsaka's ATK to one designated enemy target.",
+            "scaling": {
+                "damage": [
+                    100.0,
+                    108.0,
+                    116.0,
+                    124.0,
+                    132.0,
+                    140.0,
+                    150.0,
+                    160.0,
+                    170.0,
+                    180.0,
+                    188.0,
+                    196.0
+                ]
+            },
+            "variants": [
+                {
+                    "type": "Skill (Enhanced)",
+                    "name": "Second Magic Experiment",
+                    "tag": "Bounce",
+                    "energy_gain": 30,
+                    "break": 20,
+                    "description_template": "Deals Quantum DMG equal to {{aoe_damage}}% of Rin Tohsaka's ATK to all enemies. Then, consumes 3 point(s) of \"Gem Energy\" to deal additional Quantum DMG equal to {{bounce_damage}}% of Rin Tohsaka's ATK to one random enemy target. This repeats until \"Gem Energy\" is less than 3 or there are no enemy targets with current HP greater than 0, up to a maximum of 33 time(s). When used, if current Skill Points are greater than 2, consumes Skill Points until there are 2 point(s) left, immediately gaining 2 point(s) of \"Gem Energy\" for every 1 Skill Point consumed.",
+                    "scaling": {
+                        "aoe_damage": [
+                            50.0,
+                            54.0,
+                            58.0,
+                            62.0,
+                            66.0,
+                            70.0,
+                            75.0,
+                            80.0,
+                            85.0,
+                            90.0,
+                            94.0,
+                            98.0
+                        ],
+                        "bounce_damage": [
+                            50.0,
+                            54.0,
+                            58.0,
+                            62.0,
+                            66.0,
+                            70.0,
+                            75.0,
+                            80.0,
+                            85.0,
+                            90.0,
+                            94.0,
+                            98.0
+                        ]
+                    }
+                }
             ]
-          }
-        }
-      ]
-    },
-
-    "ultimate": {
-      "type": "Ultimate",
-      "name": "An Gal Ta Ki Gal Šè",
-      "tag": "AoE",
-      "energy_cost": 160,
-      "energy_gain": 5,
-      "break": 20,
-
-      "min_level": 1,
-      "max_level": 12,
-      "default_level": 10,
-
-      "description_template": "Deals Quantum DMG equal to {{main_damage}}% of Rin Tohsaka's ATK to one designated enemy, and Quantum DMG equal to {{aoe_damage}}% of Rin Tohsaka's ATK to other enemy targets. When used, recovers 1 Skill Point(s) for allies, and increases the DMG taken by all enemies by {{dmg_taken}}% for 3 turn(s).",
-
-      "scaling": {
-        "main_damage": [
-          300.0,
-          330.0,
-          360.0,
-          390.0,
-          420.0,
-          450.0,
-          487.5,
-          525.0,
-          562.5,
-          600.0,
-          630.0,
-          660.0
-        ],
-
-        "aoe_damage": [
-          100.0,
-          110.0,
-          120.0,
-          130.0,
-          140.0,
-          150.0,
-          162.5,
-          175.0,
-          187.5,
-          200.0,
-          210.0,
-          220.0
-        ],
-
-        "dmg_taken": [
-          10.0,
-          11.0,
-          12.0,
-          13.0,
-          14.0,
-          15.0,
-          16.25,
-          17.5,
-          18.75,
-          20.0,
-          21.0,
-          22.0
-        ]
-      }
-    },
-
-    "talent": {
-      "type": "Talent",
-      "name": "Gem Magecraft",
-      "tag": "Enhance",
-
-      "min_level": 1,
-      "max_level": 12,
-      "default_level": 10,
-
-      "description_template": "If Rin Tohsaka possesses 15 or more \"Gem Energy\" or if current Skill Points are 7 or more, her Skill is enhanced into \"Second Magic Experiment.\"\nWhen entering combat, gains 20 \"Gem Energy.\" When an ally target consumes or recovers Skill Points, increases their CRIT DMG by {{crit_dmg}}% for 2 turn(s). For every 1 Skill Point consumed or recovered, Rin Tohsaka gains 1 \"Gem Energy.\" If Rin Tohsaka possesses 15 or more \"Gem Energy\" or if current Skill Points are 7 or more, her Skill is enhanced into \"Second Magic Experiment.\"",
-
-      "scaling": {
-        "crit_dmg": [
-          35.0,
-          38.5,
-          42.0,
-          45.5,
-          49.0,
-          52.5,
-          56.875,
-          61.25,
-          65.625,
-          70.0,
-          73.5,
-          77.0
-        ]
-      },
-
-      "variants": [
-        {
-          "type": "Joint Talent",
-          "name": "Freeform Tohsaka Style",
-          "tag": "AoE",
-
-          "description_template": "After Archer uses his Skill \"Caladbolg II: Fake Spiral Sword\" to attack, if there are 3 or fewer Skill Point(s) remaining or if \"Caladbolg II: Fake Spiral Sword\" has been actively used 5 times during the current \"Circuit Connection\" state, and the Joint Follow-Up ATK from \"Freeform Tohsaka Style\" has not been triggered, Rin Tohsaka and Archer will launch a Joint Follow-Up ATK on all enemies, dealing Quantum DMG equal to {{rin_damage}}% of Rin Tohsaka's ATK and {{archer_damage}}% of Archer's ATK respectively, and recovering 4 Skill Point(s) for allies. This Joint Follow-Up ATK can only trigger once. The trigger count resets when Rin Tohsaka's turn ends.",
-
-          "scaling": {
-            "rin_damage": [
-              150.0,
-              165.0,
-              180.0,
-              195.0,
-              210.0,
-              225.0,
-              243.75,
-              262.5,
-              281.25,
-              300.0,
-              315.0,
-              330.0
-            ],
-
-            "archer_damage": [
-              150.0,
-              165.0,
-              180.0,
-              195.0,
-              210.0,
-              225.0,
-              243.75,
-              262.5,
-              281.25,
-              300.0,
-              315.0,
-              330.0
+        },
+        "ultimate": {
+            "type": "Ultimate",
+            "name": "An Gal Ta Ki Gal Šè",
+            "tag": "AoE",
+            "energy_cost": 160,
+            "energy_gain": 5,
+            "break": 20,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Deals Quantum DMG equal to {{main_damage}}% of Rin Tohsaka's ATK to one designated enemy, and Quantum DMG equal to {{aoe_damage}}% of Rin Tohsaka's ATK to other enemy targets. When used, recovers 1 Skill Point(s) for allies, and increases the DMG taken by all enemies by {{dmg_taken}}% for 3 turn(s).",
+            "scaling": {
+                "main_damage": [
+                    300.0,
+                    330.0,
+                    360.0,
+                    390.0,
+                    420.0,
+                    450.0,
+                    487.5,
+                    525.0,
+                    562.5,
+                    600.0,
+                    630.0,
+                    660.0
+                ],
+                "aoe_damage": [
+                    100.0,
+                    110.0,
+                    120.0,
+                    130.0,
+                    140.0,
+                    150.0,
+                    162.5,
+                    175.0,
+                    187.5,
+                    200.0,
+                    210.0,
+                    220.0
+                ],
+                "dmg_taken": [
+                    10.0,
+                    11.0,
+                    12.0,
+                    13.0,
+                    14.0,
+                    15.0,
+                    16.25,
+                    17.5,
+                    18.75,
+                    20.0,
+                    21.0,
+                    22.0
+                ]
+            }
+        },
+        "talent": {
+            "type": "Talent",
+            "name": "Gem Magecraft",
+            "tag": "Enhance",
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "If Rin Tohsaka possesses 15 or more \"Gem Energy\" or if current Skill Points are 7 or more, her Skill is enhanced into \"Second Magic Experiment.\"\nWhen entering combat, gains 20 \"Gem Energy.\" When an ally target consumes or recovers Skill Points, increases their CRIT DMG by {{crit_dmg}}% for 2 turn(s). For every 1 Skill Point consumed or recovered, Rin Tohsaka gains 1 \"Gem Energy.\" If Rin Tohsaka possesses 15 or more \"Gem Energy\" or if current Skill Points are 7 or more, her Skill is enhanced into \"Second Magic Experiment.\"",
+            "scaling": {
+                "crit_dmg": [
+                    35.0,
+                    38.5,
+                    42.0,
+                    45.5,
+                    49.0,
+                    52.5,
+                    56.875,
+                    61.25,
+                    65.625,
+                    70.0,
+                    73.5,
+                    77.0
+                ]
+            },
+            "variants": [
+                {
+                    "type": "Joint Talent",
+                    "name": "Freeform Tohsaka Style",
+                    "tag": "AoE",
+                    "description_template": "After Archer uses his Skill \"Caladbolg II: Fake Spiral Sword\" to attack, if there are 3 or fewer Skill Point(s) remaining or if \"Caladbolg II: Fake Spiral Sword\" has been actively used 5 times during the current \"Circuit Connection\" state, and the Joint Follow-Up ATK from \"Freeform Tohsaka Style\" has not been triggered, Rin Tohsaka and Archer will launch a Joint Follow-Up ATK on all enemies, dealing Quantum DMG equal to {{rin_damage}}% of Rin Tohsaka's ATK and {{archer_damage}}% of Archer's ATK respectively, and recovering 4 Skill Point(s) for allies. This Joint Follow-Up ATK can only trigger once. The trigger count resets when Rin Tohsaka's turn ends.",
+                    "scaling": {
+                        "rin_damage": [
+                            150.0,
+                            165.0,
+                            180.0,
+                            195.0,
+                            210.0,
+                            225.0,
+                            243.75,
+                            262.5,
+                            281.25,
+                            300.0,
+                            315.0,
+                            330.0
+                        ],
+                        "archer_damage": [
+                            150.0,
+                            165.0,
+                            180.0,
+                            195.0,
+                            210.0,
+                            225.0,
+                            243.75,
+                            262.5,
+                            281.25,
+                            300.0,
+                            315.0,
+                            330.0
+                        ]
+                    }
+                }
             ]
-          }
+        },
+        "technique": {
+            "type": "Technique",
+            "name": "Conversion Charge",
+            "tag": "Enhance",
+            "description": "After using the Technique, gains 10 point(s) of \"Gem Energy\" at the start of the next combat."
         }
-      ]
     },
-
-    "technique": {
-      "type": "Technique",
-      "name": "Conversion Charge",
-      "tag": "Enhance",
-      "description": "After using the Technique, gains 10 point(s) of \"Gem Energy\" at the start of the next combat."
-    }
-  },
-
-  "major_traces": {
-    "2": {
-      "name": "Elegant Conduct",
-      "description": "When Rin Tohsaka is on the field, additionally increases the max number of Skill Points by 2. When entering combat, Rin Tohsaka's ATK increases by 150%, and Quantum RES PEN increases by 15%. If Archer is in the team, Archer also gains this effect."
+    "major_traces": {
+        "2": {
+            "name": "Elegant Conduct",
+            "description": "When Rin Tohsaka is on the field, additionally increases the max number of Skill Points by 2. When entering combat, Rin Tohsaka's ATK increases by 150%, and Quantum RES PEN increases by 15%. If Archer is in the team, Archer also gains this effect."
+        },
+        "4": {
+            "name": "Ladylike Poise",
+            "description": "When entering combat and after using Enhanced Skill, Rin Tohsaka's SPD increases by 20%, lasting for 3 turn(s)."
+        },
+        "6": {
+            "name": "Inbound Prosperity",
+            "description": "When Rin Tohsaka uses her Ultimate, she gains 12 point(s) of \"Gem Energy.\""
+        }
     },
-
-    "4": {
-      "name": "Ladylike Poise",
-      "description": "When entering combat and after using Enhanced Skill, Rin Tohsaka's SPD increases by 20%, lasting for 3 turn(s)."
-    },
-
-    "6": {
-      "name": "Inbound Prosperity",
-      "description": "When Rin Tohsaka uses her Ultimate, she gains 12 point(s) of \"Gem Energy.\""
-    }
-  },
-
-  "stat_bonuses": [
-    {
-      "stat": "CRIT DMG",
-      "value": "+37.3%"
-    },
-    {
-      "stat": "ATK",
-      "value": "+18.0%"
-    },
-    {
-      "stat": "Quantum DMG",
-      "value": "+8.0%"
-    }
-  ],
-
-  "eidolons": [
-    {
-      "level": 1,
-      "name": "Zelretch's Apprentice",
-      "description": "If the amount of \"Gem Energy\" consumed by a single Enhanced Skill is 30 or more, Rin Tohsaka gains \"Shadow Gem\" equal to the amount of \"Gem Energy\" consumed. While possessing \"Shadow Gem,\" Skill is enhanced to \"Second Magic Experiment.\" The Enhanced Skill consumes all \"Shadow Gem,\" does not trigger the effect of converting Skill Points into \"Gem Energy,\" and does not consume \"Gem Energy.\""
-    },
-
-    {
-      "level": 2,
-      "name": "Dimensional Traveler",
-      "description": "Increases Rin Tohsaka's Skill DMG by 30%. While Rin Tohsaka is on the field, Skill DMG dealt by all allies becomes 130% of the original DMG."
-    },
-
-    {
-      "level": 3,
-      "name": "Holy Grail War: Victory Memorial",
-      "description": "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
-    },
-
-    {
-      "level": 4,
-      "name": "Red Devil: Triple Speed",
-      "description": "When the CRIT DMG boost effect from Talent \"Gem Magecraft\" takes effect on Rin Tohsaka, the effect can stack up to 2 time(s)."
-    },
-
-    {
-      "level": 5,
-      "name": "Goddess of Venus's Favor",
-      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
-    },
-
-    {
-      "level": 6,
-      "name": "Nailed It This Time!",
-      "description": "Rin Tohsaka's All-Type RES PEN increases by 20%. When using Ultimate, gains 24 point(s) of \"Gem Energy\" and 1 extra turn."
-    }
-  ]
+    "stat_bonuses": [
+        {
+            "stat": "CRIT DMG",
+            "value": "+37.3%"
+        },
+        {
+            "stat": "ATK",
+            "value": "+18.0%"
+        },
+        {
+            "stat": "Quantum DMG",
+            "value": "+8.0%"
+        }
+    ],
+    "eidolons": [
+        {
+            "level": 1,
+            "name": "Zelretch's Apprentice",
+            "description": "If the amount of \"Gem Energy\" consumed by a single Enhanced Skill is 30 or more, Rin Tohsaka gains \"Shadow Gem\" equal to the amount of \"Gem Energy\" consumed. While possessing \"Shadow Gem,\" Skill is enhanced to \"Second Magic Experiment.\" The Enhanced Skill consumes all \"Shadow Gem,\" does not trigger the effect of converting Skill Points into \"Gem Energy,\" and does not consume \"Gem Energy.\""
+        },
+        {
+            "level": 2,
+            "name": "Dimensional Traveler",
+            "description": "Increases Rin Tohsaka's Skill DMG by 30%. While Rin Tohsaka is on the field, Skill DMG dealt by all allies becomes 130% of the original DMG."
+        },
+        {
+            "level": 3,
+            "name": "Holy Grail War: Victory Memorial",
+            "description": "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+        },
+        {
+            "level": 4,
+            "name": "Red Devil: Triple Speed",
+            "description": "When the CRIT DMG boost effect from Talent \"Gem Magecraft\" takes effect on Rin Tohsaka, the effect can stack up to 2 time(s)."
+        },
+        {
+            "level": 5,
+            "name": "Goddess of Venus's Favor",
+            "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+        },
+        {
+            "level": 6,
+            "name": "Nailed It This Time!",
+            "description": "Rin Tohsaka's All-Type RES PEN increases by 20%. When using Ultimate, gains 24 point(s) of \"Gem Energy\" and 1 extra turn."
+        }
+    ]
 }

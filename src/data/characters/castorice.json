@@ -77,7 +77,7 @@
             },
             "variants": [
                 {
-                    "type": "Enhanced Skill",
+                    "type": "Skill (Enhanced)",
                     "name": "Boneclaw, Doomdrake's Embrace",
                     "tag": "AoE",
                     "break_adjacent": 20,

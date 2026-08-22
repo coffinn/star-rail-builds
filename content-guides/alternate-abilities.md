@@ -41,7 +41,7 @@ For example, an Enhanced Skill belongs inside `skill`:
 
   "variants": [
     {
-      "type": "Enhanced Skill",
+      "type": "Skill (Enhanced)",
       "name": "Enhanced Skill Name",
       "tag": "Bounce",
 
@@ -93,7 +93,7 @@ This is useful for characters with multiple enhanced skills or alternate forms.
 ```json
 "variants": [
   {
-    "type": "Enhanced Skill",
+    "type": "Skill (Enhanced)",
     "name": "Enhanced Skill A",
 
     "description_template": "Deals {{damage}}% DMG.",
@@ -116,7 +116,7 @@ This is useful for characters with multiple enhanced skills or alternate forms.
     }
   },
   {
-    "type": "Enhanced Skill",
+    "type": "Skill (Enhanced)",
     "name": "Enhanced Skill B",
 
     "description_template": "Deals {{damage}}% DMG.",
@@ -203,7 +203,7 @@ Common `type` labels include:
 
   "variants": [
     {
-      "type": "Enhanced Skill",
+      "type": "Skill (Enhanced)",
       "name": "Second Magic Experiment",
       "tag": "Bounce",
 
