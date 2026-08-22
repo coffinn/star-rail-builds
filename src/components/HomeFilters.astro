@@ -607,13 +607,15 @@ const pathOptions = [
     }
 
     /* =====================================================
-       Selected
-       ===================================================== */
+   Selected
+   ===================================================== */
 
     .home-filter-choice > input:checked + .home-filter-button {
-        background: var(--accent);
+        background: rgba(255, 255, 255, 0.04);
 
-        color: white;
+        color: var(--text);
+
+        box-shadow: inset 0 0 0 2px var(--accent);
     }
 
     .home-filter-choice > input:checked + .home-filter-button img {
