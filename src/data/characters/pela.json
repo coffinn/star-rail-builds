@@ -1,0 +1,214 @@
+{
+    "id": "pela",
+    "name": "Pela",
+    "rarity": "4",
+    "element": "ice",
+    "path": "nihility",
+    "version_released": "1.0",
+    "max_energy": 110,
+    "level_80_stat": {
+        "hp": 987,
+        "atk": 546,
+        "def": 463,
+        "spd": 105
+    },
+    "abilities": {
+        "basic": {
+            "type": "Basic ATK",
+            "name": "Frost Shot",
+            "tag": "Single Target",
+            "energy_gain": 20,
+            "break": 10,
+            "min_level": 1,
+            "max_level": 7,
+            "default_level": 6,
+            "description_template": "Deals Ice DMG equal to {{scaling1}}% of Pela's ATK to a single target enemy.",
+            "scaling": {
+                "scaling1": [
+                    50,
+                    60,
+                    70,
+                    80,
+                    90,
+                    100,
+                    110,
+                    120,
+                    130
+                ]
+            }
+        },
+        "skill": {
+            "type": "Skill",
+            "name": "Frostbite",
+            "tag": "Single Target",
+            "energy_gain": 30,
+            "break": 20,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Removes 1 buff(s) and deals Ice DMG equal to {{scaling1}}% of Pela's ATK to one designated target enemy.",
+            "scaling": {
+                "scaling1": [
+                    105,
+                    116,
+                    126,
+                    136,
+                    147,
+                    158,
+                    171,
+                    184,
+                    197,
+                    210,
+                    220,
+                    231,
+                    242,
+                    252,
+                    262
+                ]
+            }
+        },
+        "ultimate": {
+            "type": "Ultimate",
+            "name": "Zone Suppression",
+            "tag": "AoE",
+            "energy_gain": 5,
+            "break": 20,
+            "energy_cost": 110,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Deals Ice DMG equal to {{scaling1}}% of Pela's ATK to all enemies, with a 100% base chance to inflict Exposed on all enemies. When Exposed, enemies' DEF is reduced by {{scaling2}}% for 2 turn(s).",
+            "scaling": {
+                "scaling1": [
+                    60,
+                    64,
+                    68,
+                    72,
+                    76,
+                    80,
+                    85,
+                    90,
+                    95,
+                    100,
+                    104,
+                    108,
+                    112,
+                    116,
+                    120
+                ],
+                "scaling2": [
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42,
+                    43,
+                    44,
+                    45
+                ]
+            }
+        },
+        "talent": {
+            "type": "Talent",
+            "name": "Data Collecting",
+            "tag": "Support",
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "If the enemy is debuffed after Pela's attack, Pela will restore {{scaling1}} additional Energy. This effect can only be triggered 1 time per attack.",
+            "scaling": {
+                "scaling1": [
+                    5,
+                    6,
+                    6,
+                    6,
+                    7,
+                    8,
+                    8,
+                    9,
+                    9,
+                    10,
+                    10,
+                    11,
+                    12,
+                    12,
+                    12
+                ]
+            }
+        },
+        "technique": {
+            "type": "Technique",
+            "name": "Preemptive Strike",
+            "tag": "Technique",
+            "break": 20,
+            "description": "Immediately attacks the enemy. Upon entering battle, Pela deals Ice DMG equal to 80% of her ATK to a random enemy, with a 100% base chance of lowering the DEF of all enemies by 20% for 2 turn(s)."
+        }
+    },
+    "major_traces": {
+        "2": {
+            "name": "Bash",
+            "description": "Deals 20% more DMG to debuffed enemy targets."
+        },
+        "4": {
+            "name": "The Secret Strategy",
+            "description": "When Pela is on the battlefield, all allies' Effect Hit Rate increases by 10%."
+        },
+        "6": {
+            "name": "Wipe Out",
+            "description": "When using Skill to dispel buff(s), increases the DMG dealt by the next attack by 20%."
+        }
+    },
+    "stat_bonuses": [
+        {
+            "stat": "ATK",
+            "value": "+18%"
+        },
+        {
+            "stat": "Effect Hit Rate",
+            "value": "+10%"
+        },
+        {
+            "stat": "Ice DMG",
+            "value": "+22.4%"
+        }
+    ],
+    "eidolons": [
+        {
+            "level": 1,
+            "name": "Victory Report",
+            "description": "When an enemy is defeated, Pela regenerates 5 Energy."
+        },
+        {
+            "level": 2,
+            "name": "Adamant Charge",
+            "description": "Using Skill to dispel buff(s) increases SPD by 10% for 2 turn(s)."
+        },
+        {
+            "level": 3,
+            "name": "Suppressive Force",
+            "description": "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+        },
+        {
+            "level": 4,
+            "name": "Full Analysis",
+            "description": "When using Skill, there is a 100% base chance to reduce the target enemy's Ice RES by 12% for 2 turn(s)."
+        },
+        {
+            "level": 5,
+            "name": "Absolute Jeopardy",
+            "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+        },
+        {
+            "level": 6,
+            "name": "Feeble Pursuit",
+            "description": "After Pela attacks, if the enemy target is debuffed, deals Ice Additional DMG equal to 40% of Pela's ATK to the enemy."
+        }
+    ]
+}

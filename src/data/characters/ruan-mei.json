@@ -1,0 +1,226 @@
+{
+    "id": "ruan-mei",
+    "name": "Ruan Mei",
+    "rarity": "5",
+    "element": "ice",
+    "path": "harmony",
+    "version_released": "1.6",
+    "max_energy": 130,
+    "level_80_stat": {
+        "hp": 1086,
+        "atk": 659,
+        "def": 485,
+        "spd": 104
+    },
+    "abilities": {
+        "basic": {
+            "type": "Basic ATK",
+            "name": "Threading Fragrance",
+            "tag": "Single Target",
+            "energy_gain": 20,
+            "break": 10,
+            "min_level": 1,
+            "max_level": 7,
+            "default_level": 6,
+            "description_template": "Deals Ice DMG equal to {{scaling1}}% of Ruan Mei's ATK to a single target enemy.",
+            "scaling": {
+                "scaling1": [
+                    50,
+                    60,
+                    70,
+                    80,
+                    90,
+                    100,
+                    110
+                ]
+            }
+        },
+        "skill": {
+            "type": "Skill",
+            "name": "String Sings Slow Swirls",
+            "tag": "Support",
+            "energy_gain": 30,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "After using her Skill, Ruan Mei gains Overtone, lasting for 3 turn(s). This duration decreases by 1 at the start of Ruan Mei's every turn. When Ruan Mei has Overtone, all allies' DMG increases by {{scaling1}}% and Weakness Break Efficiency increases by 50%.",
+            "scaling": {
+                "scaling1": [
+                    16,
+                    18,
+                    19,
+                    21,
+                    22,
+                    24,
+                    26,
+                    28,
+                    30,
+                    32,
+                    34,
+                    35,
+                    37,
+                    38,
+                    40
+                ]
+            }
+        },
+        "talent": {
+            "type": "Talent",
+            "name": "Somatotypical Helix",
+            "tag": "Support",
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Increases SPD by {{scaling1}}% for all teammates (i.e., excluding this unit). When allies Break an enemy target's Weakness, Ruan Mei deals to this enemy target Break DMG equal to {{scaling2}}% of her Ice Break DMG.",
+            "scaling": {
+                "scaling1": [
+                    8,
+                    8,
+                    8,
+                    9,
+                    9,
+                    9,
+                    9,
+                    10,
+                    10,
+                    10,
+                    10,
+                    10,
+                    11,
+                    11,
+                    11
+                ],
+                "scaling2": [
+                    60,
+                    66,
+                    72,
+                    78,
+                    84,
+                    90,
+                    98,
+                    105,
+                    112,
+                    120,
+                    126,
+                    132,
+                    138,
+                    144,
+                    150
+                ]
+            }
+        },
+        "technique": {
+            "type": "Technique",
+            "name": "Silken Serenade",
+            "tag": "Enhance",
+            "description": "After using the Technique, gains Silken Serenade. At the start of the next battle, automatically triggers the Skill for 1 time(s) without consuming Skill Points. In Simulated Universe or Divergent Universe, when Ruan Mei has Silken Serenade, the team actively attacking enemies will always be regarded as attacking their Weakness to enter battle, and this attack can reduce all enemies' Toughness regardless of Weakness types. When breaking Weakness, triggers Weakness Break Effect corresponding to the attacker's Type. For every Blessing in possession (up to a max of 20 Blessings will be taken into account), additionally increases the Toughness Reduction of this attack by 100%. After breaking an enemy target's Weakness, additionally deals to the enemy target Break DMG equal to 100% of Ruan Mei's Ice Break DMG."
+        },
+        "ultimate": {
+            "type": "Ultimate",
+            "name": "Petals to Stream, Repose in Dream",
+            "tag": "Support",
+            "energy_gain": 5,
+            "energy_cost": 130,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Ruan Mei deploys a Zone that lasts for 2 turns. The Zone's duration decreases by 1 at the start of her turn. While inside the Zone, all allies' All-Type RES PEN increases by {{scaling1}}% and their attacks apply Thanatoplum Rebloom to the enemies hit. When these enemies attempt to recover from Weakness Break, Thanatoplum Rebloom is triggered, extending the duration of their Weakness Break, delaying their action|Action Delayed by an amount equal to 20% of Ruan Mei's Break Effect plus 10%, and dealing Break DMG equal to {{scaling2}}% of Ruan Mei's Ice Break DMG. Enemy targets cannot have Thanatoplum Rebloom re-applied to them until they recover from Weakness Break.",
+            "scaling": {
+                "scaling1": [
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30
+                ],
+                "scaling2": [
+                    30,
+                    32,
+                    34,
+                    36,
+                    38,
+                    40,
+                    42,
+                    45,
+                    48,
+                    50,
+                    52,
+                    54,
+                    56,
+                    58,
+                    60
+                ]
+            }
+        }
+    },
+    "major_traces": {
+        "2": {
+            "name": "Inert Respiration",
+            "description": "Increases Break Effect by 20% for all allies."
+        },
+        "4": {
+            "name": "Days Wane, Thoughts Wax",
+            "description": "Ruan Mei regenerates 5 Energy at the start of her turn."
+        },
+        "6": {
+            "name": "Candle Lights on Still Waters",
+            "description": "In battle, for every 10% of Ruan Mei's Break Effect that exceeds 120%, her Skill additionally increases allies' DMG by 6%, up to a maximum of 36%."
+        }
+    },
+    "stat_bonuses": [
+        {
+            "stat": "DEF",
+            "value": "+22.5%"
+        },
+        {
+            "stat": "SPD",
+            "value": "+5"
+        },
+        {
+            "stat": "Break Effect",
+            "value": "+37.3%"
+        }
+    ],
+    "eidolons": [
+        {
+            "level": 1,
+            "name": "Neuronic Embroidery",
+            "description": "While the Ultimate's Zone is deployed, the DMG dealt by all allies ignores 20% of the target's DEF."
+        },
+        {
+            "level": 2,
+            "name": "Reedside Promenade",
+            "description": "While Ruan Mei is on the field, all allies increase their ATK by 40% when dealing DMG to enemies that are Weakness Broken."
+        },
+        {
+            "level": 3,
+            "name": "Viridescent Pirouette",
+            "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+        },
+        {
+            "level": 4,
+            "name": "Chatoyant  clat",
+            "description": "When an enemy target's Weakness is Broken, Ruan Mei's Break Effect increases by 100% for 3 turn(s)."
+        },
+        {
+            "level": 5,
+            "name": "Languid Barrette",
+            "description": "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+        },
+        {
+            "level": 6,
+            "name": "Sash Cascade",
+            "description": "Extends the duration of the Ultimate's Zone by 1 turn(s). The Talent's Break DMG multiplier additionally increases by 200%."
+        }
+    ]
+}
