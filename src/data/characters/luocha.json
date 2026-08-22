@@ -1,0 +1,242 @@
+{
+  "id": "luocha",
+  "name": "Luocha",
+  "rarity": 5,
+  "element": "imaginary",
+  "path": "abundance",
+  "version_released": "1.1",
+  "max_energy": 100,
+
+  "level_80_stats": {
+    "hp": 1280,
+    "atk": 756,
+    "def": 363,
+    "spd": 101
+  },
+
+  "abilities": {
+    "basic": {
+      "type": "Basic ATK",
+      "name": "Thorns of the Abyss",
+      "tag": "Single Target",
+      "energy_gain": 20,
+      "break": 10,
+
+      "min_level": 1,
+      "max_level": 7,
+      "default_level": 6,
+
+      "description_template": "Deals Imaginary DMG equal to {{damage}}% of Luocha's ATK to a single enemy.",
+
+      "scaling": {
+        "damage": [
+          50,
+          60,
+          70,
+          80,
+          90,
+          100,
+          110
+        ]
+      }
+    },
+
+    "skill": {
+      "type": "Skill",
+      "name": "Prayer of Abyss Flower",
+      "tag": "Restore",
+      "energy_gain": 30,
+
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+
+      "description_template": "After using his Skill, Luocha immediately restores the target ally's HP equal to {{healing_atk}}% of Luocha's ATK plus {{healing_flat}}. When any ally's HP percentage drops to 50% or lower, an effect equivalent to Luocha's Skill will immediately be triggered and applied to this ally for one time (without consuming Skill Points). This effect can be triggered again after 2 turn(s).",
+
+      "scaling": {
+        "healing_atk": [
+          40,
+          42.5,
+          45,
+          47.5,
+          50,
+          52,
+          54,
+          56,
+          18,
+          60,
+          62,
+          64
+        ],
+        "healing_flat": [
+          200,
+          320,
+          410,
+          500,
+          560,
+          620,
+          665,
+          710,
+          755,
+          800,
+          845,
+          890
+        ]
+      }
+    },
+
+    "ultimate": {
+      "type": "Ultimate",
+      "name": "Death  Wish",
+      "tag": "AoE",
+      "energy_cost": 100,
+      "energy_gain": 5,
+      "break": 20,
+
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+
+      "description_template": "Removes 1 buff(s) from all enemies and deals all enemies Imaginary DMG equal to {{damage}}% of Luocha's ATK. At the same time, Luocha gains 1 stack of Abyss Flower.",
+
+      "scaling": {
+
+        "damage": [
+          120,
+          128,
+          136,
+          144,
+          152,
+          160,
+          170,
+          180,
+          190,
+          200,
+          208,
+          216
+        ]
+      }
+    },
+
+    "talent": {
+      "type": "Talent",
+      "name": "Cycle of Life",
+      "tag": "Restore",
+
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+
+      "description_template": "When Abyss Flower reaches 2 stacks, Luocha consumes all stacks of Abyss Flower to deploy a Zone against the enemy. When any enemy in the Zone is attacked by an ally, the attacking ally's HP is immediately restored by an amount equal to {{healing_atk}}% of Luocha's ATK plus {{healing_flat}}. The Zone's effect lasts for 2 turns. When Luocha is knocked down, the Zone will be dispelled.",
+
+      "scaling": {
+        "healing_atk": [
+          12,
+          12.75,
+          13.5,
+          14.24,
+          15,
+          15.6,
+          16.2,
+          16.8,
+          17.4,
+          18,
+          18.6,
+          19.2
+        ],
+
+        "healing_flat": [
+          60,
+          96,
+          123,
+          150,
+          168,
+          186,
+          199.5,
+          213,
+          226.5,
+          240,
+          253.3,
+          267
+        ]
+      }
+    },
+
+    "technique": {
+      "type": "Technique",
+      "name": "Mercy of a Fool",
+      "tag": "Restore",
+      "description": "After the Technique is used, the Talent will be immediately triggered at the start of the next battle."
+    }
+  },
+
+  "major_traces": {
+    "2": {
+      "name": "Cleansing Revival",
+      "description": "When Skill's effect is triggered, dispel 1 debuff(s) from one designated ally."
+    },
+
+    "4": {
+      "name": "Sanctified",
+      "description": "When any enemy in the Zone is attacked by an ally, all allies (except the attacker) restore HP equal to 7% of Luocha's ATK plus 93."
+    },
+
+    "6": {
+      "name": "Through the Valley",
+      "description": "Increases the chance to resist Crowd Control debuffs by 70%."
+    }
+  },
+
+  "stat_bonuses": [
+    {
+      "stat": "HP",
+      "value": "+16%"
+    },
+    {
+      "stat": "ATK",
+      "value": "+24%"
+    },
+    {
+      "stat": "DEF",
+      "value": "+12.5%"
+    }
+  ],
+
+  "eidolons": [
+    {
+      "level": 1,
+      "name": "Ablution of the Quick",
+      "description": "While the Zone is active, ATK of all allies increases by 20%."
+    },
+
+    {
+      "level": 2,
+      "name": "Bestowal From the Pure",
+      "description": "When his Skill is triggered, if the target ally's HP percentage is lower than 50%, Luocha's Outgoing Healing increases by 30%. If the target ally's HP percentage is at 50% or higher, the ally receives a Shield that can absorb DMG equal to 18% of Luocha's ATK plus 240, lasting for 2 turns."
+    },
+
+    {
+      "level": 3,
+      "name": "Surveyal by the Fool",
+      "description": "Skill Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+    },
+
+    {
+      "level": 4,
+      "name": "Heavy Lies the Crown",
+      "description": "When Luocha's Zone is active, enemies become Weakened and deal 12% less DMG."
+    },
+
+    {
+      "level": 5,
+      "name": "Cicatrix 'Neath the Pain",
+      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+    },
+
+    {
+      "level": 6,
+      "name": "Reunion With the Dust",
+      "description": "When Ultimate is used, there is a 100% fixed chance to reduce all enemies' All-Type RES by 20% for 2 turn(s)."
+    }
+  ]
+}

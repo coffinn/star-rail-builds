@@ -1,0 +1,239 @@
+{
+  "id": "sunday",
+  "name": "Sunday",
+  "rarity": 5,
+  "element": "imaginary",
+  "path": "harmony",
+  "version_released": "2.7",
+  "max_energy": 130,
+
+  "level_80_stats": {
+    "hp": 1241,
+    "atk": 640,
+    "def": 533,
+    "spd": 96
+  },
+
+  "abilities": {
+    "basic": {
+      "type": "Basic ATK",
+      "name": "Gleaming Admonition",
+      "tag": "Single Target",
+      "energy_gain": 20,
+      "break": 10,
+
+      "min_level": 1,
+      "max_level": 7,
+      "default_level": 6,
+
+      "description_template": "Deals Imaginary DMG equal to {{damage}}% of Sunday's ATK to one designated enemy.",
+
+      "scaling": {
+        "damage": [
+          50,
+          60,
+          70,
+          80,
+          90,
+          100,
+          110
+        ]
+      }
+    },
+
+    "skill": {
+      "type": "Skill",
+      "name": "Benison of Paper and Rites",
+      "tag": "Support",
+      "energy_gain": 30,
+
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+
+      "description_template": "Enables one designated ally character and their summon to immediately take action, and increases their DMG dealt by {{damage}}%. If the target has a summon, then the dealt DMG increase is further boosted by an additional {{damage_boost}}%, lasting for 2 turn(s). After using Skill on The Beatified, recovers 1 Skill Point. When Sunday uses this ability on characters following the Path of Harmony, cannot trigger the \"immediate action\" effect.",
+
+      "scaling": {
+        "damage": [
+          15,
+          16.5,
+          18,
+          19.5,
+          21,
+          22.5,
+          24.375,
+          26.25,
+          28.125,
+          30,
+          31.5,
+          33
+
+        ],
+        "damage_boost": [
+          15,
+          17.5,
+          30,
+          32.5,
+          35,
+          37.5,
+          40.625,
+          43.75,
+          46.875,
+          50,
+          52.5,
+          55
+        ]
+      }
+    },
+
+    "ultimate": {
+      "type": "Ultimate",
+      "name": "Ode to Caress and Cicatrix",
+      "tag": "Support",
+      "energy_cost": 130,
+      "energy_gain": 5,
+
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+
+      "description_template": "Regenerates Energy by 20% of Max Energy for one designated ally character, and turns the target and their summon into \"The Beatified\". \"The Beatified\" have their CRIT DMG increased by an amount equal to {{set_crit_dmg}}% of Sunday's CRIT DMG plus {{additional_crit_dmg}}%. At the start of Sunday's each turn, the duration of \"The Beatified\" decreases by 1 turn, lasting for a total of 3 turn(s). And it only takes effect on the most recent target of the Ultimate (excluding Sunday himself). When Sunday is knocked down, \"The Beatified\" will also be dispelled.",
+
+      "scaling": {
+
+        "set_crit_dmg": [
+          12,
+          16.8,
+          15.6,
+          17.4,
+          19.2,
+          21,
+          23.25,
+          25.5,
+          27.75,
+          30,
+          31.8,
+          33.6
+        ],
+        "additional_crit_dmg": [
+          8,
+          8.4,
+          9.2,
+          9.6,
+          10,
+          10.5,
+          11,
+          11.5,
+          12,
+          12.4,
+          12.8
+        ]
+      }
+    },
+
+    "talent": {
+      "type": "Talent",
+      "name": "The Sorrowing Body",
+      "tag": "Support",
+
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+
+      "description_template": "When using Skill, increases the target's CRIT Rate by {{crit_rate}}%, lasting for 3 turn(s).",
+
+      "scaling": {
+        "crit_rate": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16.25,
+          18.75,
+          20,
+          21,
+          22
+        ]
+      }
+    },
+
+    "technique": {
+      "type": "Technique",
+      "name": "The Glorious Mysteries",
+      "tag": "Support",
+      "description": "After this Technique is used, the first time Sunday uses an ability on an ally target in the next battle, the target's DMG dealt increases by 50%, lasting for 2 turn(s)."
+    }
+  },
+
+  "major_traces": {
+    "2": {
+      "name": "Rest Day's Longing",
+      "description": "When using Ultimate, if the Energy regenerated for the target is less than 40, increases the regenerated Energy to 40."
+    },
+
+    "4": {
+      "name": "Exalted Sweep",
+      "description": "When battle starts, Sunday regenerates 25 Energy."
+    },
+
+    "6": {
+      "name": "Haven in Palm",
+      "description": "When using Skill, dispels 1 debuff(s) from the target."
+    }
+  },
+
+  "stat_bonuses": [
+    {
+      "stat": "DEF",
+      "value": "+7.5%"
+    },
+    {
+      "stat": "CRIT DMG",
+      "value": "+32%"
+    },
+    {
+      "stat": "Effect RES",
+      "value": "+18%"
+    }
+  ],
+
+  "eidolons": [
+    {
+      "level": 1,
+      "name": "Millennium's Quietus",
+      "description": "When Sunday uses Skill, the target character can ignore 16% of enemy target's DEF to deal DMG and their summon can ignore 40% of enemy target's DEF to deal DMG, lasting for 2 turn(s)."
+    },
+
+    {
+      "level": 2,
+      "name": "Faith Outstrips Failty",
+      "description": "After the first use of Ultimate, recovers 2 Skill Point(s). The DMG dealt by \"The Beatified\" increases by 30%."
+    },
+
+    {
+      "level": 3,
+      "name": "Hermitage of Thorns",
+      "description": "Skill Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+    },
+
+    {
+      "level": 4,
+      "name": "Sculpture's Preamble",
+      "description": "When the turn starts, regenerates 8 Energy."
+    },
+
+    {
+      "level": 5,
+      "name": "Paper Raft in Silver Bay",
+      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+    },
+
+    {
+      "level": 6,
+      "name": "Dawn of Sidereal Cacophony",
+      "description": "The Talent's CRIT Rate boost effect becomes stackable up to 3 time(s), and the Talent's duration increases by 1 turn(s). When Sunday uses Ultimate, can also apply the Talent's CRIT Rate boost effect to the target. When the Talent's CRIT Rate boost takes effect and the target's CRIT Rate exceeds 100%, every 1% of excess CRIT Rate increases CRIT DMG by 2%."
+    }
+  ]
+}
