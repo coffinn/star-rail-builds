@@ -29,7 +29,7 @@
             },
             "variants": [
                 {
-                    "type": "Enhanced Basic ATK",
+                    "type": "Basic ATK (Enhanced)",
                     "name": "Bonus Stage: αWolf Instant",
                     "tag": "Bounce",
                     "break_per_bounce": 0.1,

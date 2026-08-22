@@ -1,0 +1,194 @@
+{
+  "id": "hook",
+  "name": "Hook",
+  "rarity": 5,
+  "element": "fire",
+  "path": "destruction",
+  "version_released": "1.0",
+  "max_energy": 120,
+
+  "level_80_stats": {
+    "hp": 1340,
+    "atk": 617,
+    "def": 352,
+    "spd": 94
+  },
+
+  "abilities": {
+    "basic": {
+      "type": "Basic ATK",
+      "name": "Hehe! Don't Get Burned!",
+      "tag": "Single Target",
+      "energy_gain": 20,
+      "break": 10,
+
+      "min_level": 1,
+      "max_level": 7,
+      "default_level": 6,
+
+      "description_template": "Deals Fire DMG equal to {{damage}}% of Hook's ATK to a single enemy.",
+
+      "scaling": {
+        "damage": [
+          50,
+          60,
+          70,
+          80,
+          90,
+          100,
+          110
+        ]
+      }
+    },
+
+    "skill": {
+      "type": "Skill",
+      "name": "Hey! Remember Hook?",
+      "tag": "Single Target",
+      "energy_gain": 30,
+      "break": 20,
+
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+
+      "description_template": "Deals Fire DMG equal to {{damage}}% of Hook's ATK to a single enemy. In addition, there is a 100% base chance to inflict Burn for 2 turn(s). \nWhen afflicted with Burn, enemies will take Fire DoT equal to {{dot}}% of Hook's ATK at the beginning of each turn.",
+
+      "scaling": {
+        "damage": [120, 132, 144, 156, 168, 180, 195, 210, 225, 240, 252, 264],
+        "dot": [25, 28.75, 32.5, 36.25, 40, 43.75, 48.4375, 53.125, 57.8125, 62.5, 66.25, 70]
+      },
+      "variants": [
+        {
+            "type": "Enhanced Skill",
+            "name": "Hey! Remember Hook?",
+            "tag": "blast",
+            "energy_gain": 30,
+            "break_main": 20,
+            "break_aoe": 10,
+
+            "description_template": "Deals Fire DMG equal to {{main_damage}}% of Hook's ATK to a single enemy, with a 100% base chance to Burn them for 2 turn(s). Additionally, deals Fire DMG equal to {{adjacent_damage}}% of Hook's ATK to enemies adjacent to it. \n When afflicted with Burn, enemies will take Fire DoT equal to {{dot}}% of Hook's ATK at the beginning of each turn.",
+
+            "scaling": {
+                "main_damage": [140, 154, 168, 182, 196, 210, 227.5, 245, 262.5, 280, 294, 308],
+                "adjacent_damage": [25, 28.75, 32.5, 36.25, 40, 43.75, 48.4375, 53.125, 57.8125, 62.5, 66.25, 70],
+                "dot": [40, 44, 48, 52, 56, 60, 65, 70, 75, 80, 84, 88]
+            }
+        }
+      ]
+    },
+
+    "ultimate": {
+      "type": "Ultimate",
+      "name": "Boom! Here Comes the Fire!",
+      "tag": "Single Target",
+      "energy_cost": 120,
+      "energy_gain": 5,
+
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+
+      "description_template": "Deals Fire DMG equal to {{damage}}% of Hook's ATK to a single enemy. \nAfter using Ultimate, the next Skill to be used is Enhanced, which deals DMG to a single enemy and enemies adjacent to it.",
+
+      "scaling": {
+        "damage": [240, 256, 272, 288, 304, 320, 340, 360, 380, 400, 416, 432]
+      }
+    },
+
+    "talent": {
+      "type": "Talent",
+      "name": "Ha! Oil to the Flames!",
+      "tag": "Enhance",
+
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+
+      "description_template": "When attacking a target afflicted with Burn, deals Additional Fire DMG equal to {{additional_dmg}}% of Hook's ATK and regenerates 5 extra Energy.",
+
+      "scaling": {
+        "additional_dmg": [50, 55, 60, 65, 70, 75, 81.25, 87.5, 93.75, 100, 105, 110]
+      }
+    },
+
+    "technique": {
+      "type": "Technique",
+      "name": "Ack! Look at This Mess!",
+      "tag": "Attack",
+      "break": 20,
+
+      "description": "Immediately attacks the enemy. Upon entering battle, Hook deals Fire DMG equal to 50% of her ATK to a random enemy. In addition, there is a 100% base chance to inflict Burn on every enemy for 3 turn(s). \nWhen afflicted with Burn, enemies will take Fire DoT equal to 50% of Hook's ATK at the beginning of each turn."
+    }
+  },
+
+  "major_traces": {
+    "2": {
+      "name": "Innocence",
+      "description": "Hook restores HP equal to 5% of her Max HP whenever her Talent is triggered."
+    },
+
+    "4": {
+      "name": "Naivete",
+      "description": "The chance to resist Crowd Control Debuffs increases by 35%."
+    },
+
+    "6": {
+      "name": "Playing With Fire",
+      "description": "When using her Ultimate, Hook has her action Advanced Forward by 20% and Hook additionally regenerates 5 Energy."
+    }
+  },
+
+  "stat_bonuses": [
+    {
+      "stat": "CRIT DMG",
+      "value": "+13.3"
+    },
+    {
+      "stat": "ATK",
+      "value": "+28%"
+    },
+    {
+      "stat": "HP",
+      "value": "+18%"
+    }
+  ],
+
+  "eidolons": [
+    {
+      "level": 1,
+      "name": "Early to Bed. Early to Rise",
+      "description": "Enhanced Skill deals 20% increased DMG."
+    },
+
+    {
+      "level": 2,
+      "name": "Happy Tummy. Happy Body",
+      "description": "Extends the duration of Burn caused by Skill by 1 turn(s)."
+    },
+
+    {
+      "level": 3,
+      "name": "Don’t Be Picky. Nothing’s Icky",
+      "description": "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1. up to a maximum of Lv. 10."
+    },
+
+    {
+      "level": 4,
+      "name": "It's Okay to Not Know",
+      "description": "When Talent is triggered, there is a 100% base chance to Burn enemies adjacent to the target enemy, equivalent to that of Skill."
+    },
+
+    {
+      "level": 5,
+      "name": "Let the Moles' Deeds Be Known",
+      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+    },
+
+    {
+      "level": 6,
+      "name": "Always Ready to Punch and Kick",
+      "description": "Hook deals 20% more DMG to enemies inflicted with Burn."
+    }
+  ]
+}
