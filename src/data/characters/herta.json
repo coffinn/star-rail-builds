@@ -6,7 +6,7 @@
     "path": "erudition",
     "version_released": "1.0",
     "max_energy": 110,
-    "level_80_stat": {
+    "level_80_stats": {
         "hp": 952,
         "atk": 582,
         "def": 396,

@@ -6,7 +6,7 @@
     "path": "destruction",
     "version_released": "2.0",
     "max_energy": 100,
-    "level_80_stat": {
+    "level_80_stats": {
         "hp": 1270,
         "atk": 599,
         "def": 396,
