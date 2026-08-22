@@ -628,7 +628,7 @@
             "en": "Increases the wearer's CRIT Rate by 8%. When entering combat, if the wearer and another teammate are both Trailblaze Companions characters, increases the wearer's CRIT DMG by 32%."
         }
     },
-    "firmament-frontline-:-glamoth": {
+    "firmament-frontline-glamoth": {
         "type": "planar",
         "rarity": 5,
         "version_released": "1.5",
