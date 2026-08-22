@@ -13,7 +13,7 @@ body {
 
 
 body[data-element="physical"] {
-    --bg: #5B6770;
+    --bg: #404d4f;
     --element: #b8b6b5;
 }
 
@@ -28,7 +28,7 @@ body[data-element="ice"] {
 }
 
 body[data-element="lightning"] {
-    --bg: #352a63;
+    --bg: #320345;
     --element: #c87fff;
 }
 
