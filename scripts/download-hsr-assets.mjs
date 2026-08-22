@@ -9,11 +9,12 @@ const validKinds = new Set([
     'character',
     'light-cone',
     'relic',
+    'filter',
 ]);
 
 if (!validKinds.has(kind)) {
     throw new Error(
-        'Expected asset kind: character, light-cone, or relic.',
+        'Expected asset kind: character, light-cone, relic, or filter.',
     );
 }
 
@@ -552,7 +553,7 @@ async function downloadCharacter(
      */
     await downloadAsset(
         sourceEntry.preview ??
-            sourceEntry.portrait,
+        sourceEntry.portrait,
         path.join(
             directory,
             'splash_art',
@@ -593,16 +594,127 @@ async function downloadRelic(
         force,
     );
 }
+/*
+ * Filter icons
+ */
 
+const filterElementIds = {
+    Physical: 'physical',
+    Fire: 'fire',
+    Ice: 'ice',
+    Thunder: 'lightning',
+    Wind: 'wind',
+    Quantum: 'quantum',
+    Imaginary: 'imaginary',
+};
+
+const filterPathIds = {
+    Destruction: 'destruction',
+    'The Hunt': 'hunt',
+    Erudition: 'erudition',
+    Harmony: 'harmony',
+    Nihility: 'nihility',
+    Preservation: 'preservation',
+    Abundance: 'abundance',
+    Remembrance: 'remembrance',
+    Elation: 'elation',
+};
+
+async function downloadFilterAssets(force) {
+    const elements =
+        await fetchJSON(
+            `${DB_ROOT}/elements.json`,
+        );
+
+    const paths =
+        await fetchJSON(
+            `${DB_ROOT}/paths.json`,
+        );
+
+    console.log('\nDownloading Type icons...');
+
+    for (
+        const [sourceId, localId]
+        of Object.entries(filterElementIds)
+    ) {
+        const entry =
+            elements[sourceId];
+
+        if (!entry) {
+            console.error(
+                `failed     element ${sourceId}: not found in source data`,
+            );
+
+            continue;
+        }
+
+        await downloadAsset(
+            entry.icon,
+            path.join(
+                ROOT,
+                'src/assets/filter-icons/elements',
+                localId,
+            ),
+            force,
+        );
+    }
+
+    console.log('\nDownloading Path icons...');
+
+    for (
+        const [displayName, localId]
+        of Object.entries(filterPathIds)
+    ) {
+        const entry =
+            Object.values(paths).find(
+                (item) =>
+                    item.name === displayName,
+            );
+
+        if (!entry) {
+            console.error(
+                `failed     path ${displayName}: not found in source data`,
+            );
+
+            continue;
+        }
+
+        await downloadAsset(
+            entry.icon,
+            path.join(
+                ROOT,
+                'src/assets/filter-icons/paths',
+                localId,
+            ),
+            force,
+        );
+    }
+
+    console.log(
+        '\nFilter assets complete.',
+    );
+}
 async function main() {
-    const config =
-        sourceConfig[kind];
-
     const {
         all,
         force,
         requested,
     } = parseArguments();
+
+    /*
+     * Filter icons are a fixed set and do
+     * not depend on local character/item data.
+     */
+    if (kind === 'filter') {
+        await downloadFilterAssets(
+            force,
+        );
+
+        return;
+    }
+
+    const config =
+        sourceConfig[kind];
 
     const localEntries =
         await config.loadLocal();
@@ -635,14 +747,14 @@ Options:
 
     const requests = all
         ? [...localEntries.keys()].map(
-              (key) => ({
-                  key,
-                  sourceId: null,
-              }),
-          )
+            (key) => ({
+                key,
+                sourceId: null,
+            }),
+        )
         : requested.map(
-              parseRequestedKey,
-          );
+            parseRequestedKey,
+        );
 
     let failed = 0;
 
@@ -696,10 +808,9 @@ Options:
             }
         } catch (error) {
             console.error(
-                `failed     ${localEntry.key}: ${
-                    error instanceof Error
-                        ? error.message
-                        : String(error)
+                `failed     ${localEntry.key}: ${error instanceof Error
+                    ? error.message
+                    : String(error)
                 }`,
             );
 

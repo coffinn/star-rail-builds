@@ -4,6 +4,11 @@
             "version": "Site Conversion",
             "entries": [
                 {
+                    "date": "August 22, 2026",
+                    "changes": "Continued data population, modified filter bar to be more user friendly",
+                    "appliedBy": "Navigator Team"
+                },
+                {
                     "date": "August 21, 2026",
                     "changes": "Honkai: Star Rail site conversion finished, starting to populate with data",
                     "appliedBy": "Navigator Team"

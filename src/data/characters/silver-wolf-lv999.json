@@ -1,0 +1,282 @@
+{
+    "id": "silver-wolf-lv999",
+    "name": "Silver Wolf LV.999",
+    "rarity": 5,
+    "element": "imaginary",
+    "path": "elation",
+    "version_released": "4.2",
+    "max_energy": null,
+    "abilities": {
+        "basic": {
+            "type": "Basic ATK",
+            "name": "One Punch!",
+            "tag": "Single Target",
+            "break": "10",
+            "min_level": 1,
+            "max_level": 7,
+            "default_level": 6,
+            "description_template": "Deals Imaginary DMG equal to {{img_dmg}}% of Silver Wolf LV.999's ATK to one designated enemy.",
+            "scaling": {
+                "img_dmg": [
+                    50,
+                    60,
+                    70,
+                    80,
+                    90,
+                    100,
+                    110
+                ]
+            },
+            "variants": [
+                {
+                    "type": "Enhanced Basic ATK",
+                    "name": "Bonus Stage: αWolf Instant",
+                    "tag": "Bounce",
+                    "break_per_bounce": 0.1,
+                    "break_final_hit": 10,
+                    "break_total": 50,
+                    "description_template": "Deals Imaginary DMG equal to a total of {{damage}}% of Silver Wolf LV.999's ATK, split evenly into 100 hits that bounce onto random enemies. After every set number of bounces, the bouncing pauses and the Top Loot Box triggers 1 time. Can trigger up to 3 time(s) in total. When dealing fatal damage to all enemies on the field, this ability ends. After attackable enemy targets appear, gains 1 extra turn and uses this ability again based on the remaining number of bounces and Top Loot Box triggers. The first time this effect triggers in each turn, extends the duration of all buffs on this unit by 1 turn. After all of the above DMG is dealt, launches a Final Hit that deals Imaginary DMG equal to {{final_hit}}% of Silver Wolf LV.999's ATK, split evenly among all enemies. Enhanced Basic ATK cannot recover Skill Points. For every 60 points of \"Hidden MMR\" held, increases DMG dealt during Enhanced Basic ATK by 15% of the original DMG, stacking up to 2 time(s).",
+                    "scaling": {
+                        "damage": [
+                            120,
+                            144,
+                            168,
+                            192,
+                            216,
+                            240,
+                            264
+                        ],
+                        "final_hit": [
+                            50,
+                            60,
+                            70,
+                            80,
+                            90,
+                            100,
+                            110
+                        ]
+                    }
+                }
+            ]
+        },
+        "skill": {
+            "type": "Skill",
+            "name": "Trigger Happy",
+            "tag": "AoE",
+            "energy_gain": "0",
+            "break": "10",
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Gains 5 Punchline point(s) and deals Imaginary DMG equal to {{damage}}% of Silver Wolf LV.999's ATK to all enemies.",
+            "scaling": {
+                "damage": [
+                    80,
+                    88,
+                    96,
+                    104,
+                    112,
+                    120,
+                    130,
+                    140,
+                    150,
+                    160,
+                    168,
+                    176
+                ]
+            }
+        },
+        "ultimate": {
+            "type": "Ultimate",
+            "name": "God Mode: ON!",
+            "tag": "Enhance",
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Enters the \"Godmode Player\" state, and advances action  by 100%. Deploys a Zone while in the \"Godmode Player\" state. While Silver Wolf LV.999 holds \"Certified Banger,\" for every 1 Skill Point consumed by an ally target within the Zone, there is a chance to trigger 1 instance of Silver Wolf LV.999's \"Top Loot Box\": Deals {{distributed_damage}}% Imaginary Elation DMG that is distributed evenly among all enemies, and randomly triggers 1 of the following effects: \"Big Flipping Sword\": Additionally deals True DMG equal to 20% of the total DMG dealt this time to the enemy target with the highest HP. \"Kaboom Eggsplosion\": Recovers 2 Skill Point(s). \"Funky Munch Bean\": Gains 3 Punchline point(s). The initial fixed chance to trigger the effect is 100%. After a successfully trigger, the fixed chance for the next trigger is reduced to 20% of the current chance. If the target is defeated before it triggers, it will instead trigger on a newly entering enemy target.",
+            "scaling": {
+                "distributed_damage": [
+                    45,
+                    50,
+                    54,
+                    58,
+                    63,
+                    68,
+                    73,
+                    79,
+                    84,
+                    90,
+                    94,
+                    99
+                ]
+            }
+        },
+        "talent": {
+            "type": "Talent",
+            "name": "I Carry, We Win",
+            "tag": "Enhance",
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "After \"Hidden MMR\" reaches 60, can activate Ultimate. And after reaching its maximum limit, it can overflow by an additional 240 point(s).\nWhen gaining Punchline, Silver Wolf LV.999 gains an equal amount of \"Hidden MMR.\" Each point of \"Hidden MMR\" increases CRIT Rate by {{increased_crit_rate}}%. Once CRIT Rate reaches 100%, each additional point of \"Hidden MMR\" instead increases CRIT DMG by {{increased_crit_dmg}}%.\nWhile in the \"Godmode Player\" state, Silver Wolf LV.999 becomes immune to Crowd Control debuffs, cannot use Ultimate, and gains Enhanced Basic ATK and Enhanced Elation Skill. After fully using Enhanced Basic ATK 3 time(s), she exits the \"Godmode Player\" state. When exiting the \"Godmode Player\" state, clears \"Hidden MMR\". \nWhile holding \"Certified Banger,\" using Basic ATK or Skill deals {{imaginary_dmg}}% Imaginary Elation DMG to the attacked enemy targets. And the Enhanced Basic ATK's ability DMG changes to Elation DMG at the same multiplier.",
+            "scaling": {
+                "increased_crit_rate": [
+                    0.2,
+                    0.22,
+                    0.24,
+                    0.26,
+                    0.28,
+                    0.3,
+                    0.325,
+                    0.35,
+                    0.375,
+                    0.4,
+                    0.42,
+                    0.44
+                ],
+                "increased_crit_dmg": [
+                    0.4,
+                    0.44,
+                    0.48,
+                    0.52,
+                    0.56,
+                    0.6,
+                    0.65,
+                    0.7,
+                    0.75,
+                    0.8,
+                    0.84,
+                    0.88
+                ],
+                "imaginary_dmg": [
+                    20,
+                    22,
+                    24,
+                    26,
+                    28,
+                    30,
+                    32,
+                    35,
+                    38,
+                    40,
+                    42,
+                    44
+                ]
+            }
+        },
+        "technique": {
+            "type": "Technique",
+            "name": "This? Absolute Meta!",
+            "tag": "Summon",
+            "description": "Summons \"Funky Munch Bean.\" Use again to dismiss. Using Technique does not consume Technique Points. When Technique Points reach 0, the summon is dismissed and Technique cannot be used. \"Funky Munch Bean\" causes Normal Enemies within a certain range to enter a Terrified state. It will also automatically search for and attack Normal Enemies, consuming 1 Technique Point to instantly defeat them without entering combat. While \"Funky Munch Bean\" is present, after entering combat, 1 instance of \"Top Loot Box\" from \"Funky Munch Bean\" is triggered at the start of each wave. A fixed amount of 99 \"Certified Banger\" is taken into account for the Elation DMG dealt in this instance."
+        }
+    },
+    "major_traces": {
+        "2": {
+            "name": "False Ending Speedrun",
+            "description": "When SPD is 160 or higher, increases this unit's Elation by 50%. For every 1 SPD exceeded, increases this unit's Elation by 2%. Up to a max of 100 excess SPD can be taken into account for this effect."
+        },
+        "4": {
+            "name": "True Ending Unlocked",
+            "description": "If the number of Punchline points taken into account when using Elation Skill is 20 or more, additionally gains 20 \"Hidden MMR\" points (And if it's 40 or more, then gains 20 more points on top of that)."
+        },
+        "6": {
+            "name": "Secret Level Maxed",
+            "description": "After entering the \"Godmode Player\" state, gains 20 \"Hidden MMR\" point(s)."
+        }
+    },
+    "stat_bonuses": [
+        {
+            "stat": "Elation",
+            "value": "+10%"
+        },
+        {
+            "stat": "SPD",
+            "value": "+9"
+        },
+        {
+            "stat": "CRIT Rate",
+            "value": "+18.7%"
+        }
+    ],
+    "eidolons": [
+        {
+            "level": 1,
+            "name": "Aether Editing: Eidolon +1",
+            "description": "Enemy targets in the Zone take 20% increased DMG. When exiting the \"Godmode Player\" state, \"Hidden MMR\" will not be cleared. Instead, 20% of \"Hidden MMR\" will be retained."
+        },
+        {
+            "level": 2,
+            "name": "It's a Feature, Not a Bug",
+            "description": "After entering the \"Godmode Player\" state, extends the duration of all buffs on this unit by 1 turn. In the current \"Godmode Player\" state, for every 120 point(s) of \"Hidden MMR\" increased (including the initial \"Hidden MMR\"), Silver Wolf LV.999 gains 1 extra turn and regains 1 use of Enhanced Basic ATK."
+        },
+        {
+            "level": 3,
+            "name": "Max Lv. 15? Says who?",
+            "description": "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10. Elation Skill Lv. +1, up to a maximum of Lv. 15."
+        },
+        {
+            "level": 4,
+            "name": "I Came. I Saw. I One-Shot.",
+            "description": "Elation DMG dealt by \"Honkai-DMG Demo\" additionally takes into account Punchline, equal to the original amount multiplied by 5."
+        },
+        {
+            "level": 5,
+            "name": "Basic ATK Is the New Ultimate",
+            "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15. Elation Skill Lv. +1, up to a maximum of Lv. 15."
+        },
+        {
+            "level": 6,
+            "name": "Solo Maxxing!",
+            "description": "Elation DMG dealt during Enhanced Basic ATK merrymakes by 50%. When enemy targets enter combat, they are implanted with \"Absolute Weakness\": Has All-Type Weakness, and reduces their All-Type Base RES to 0. (If Base RES is already at 0, then the corresponding Type RES decreases by 20% instead)."
+        }
+    ],
+    "level_80_stats": {
+        "hp": 1047,
+        "atk": 388,
+        "def": 654,
+        "spd": 110
+    },
+    "elation": {
+        "skills": {
+            "skill": {
+                "type": "Elation Skill",
+                "name": "Pro-Gamer Move",
+                "tag": "Enhance",
+                "description": "Gains 15 \"Hidden MMR\" point(s)."
+            },
+            "skill-2": {
+                "type": "Elation Skill",
+                "name": "Honkai-DMG Demo",
+                "tag": "Bounce",
+                "break": "10 (Per Hit)",
+                "min_level": 1,
+                "max_level": 12,
+                "default_level": 10,
+                "description_template": "Deals 6 instances of DMG, with each instance dealing {{imaginary_elation_dmg}}% Imaginary Elation DMG to one random enemy. Then, resets the fixed chance to trigger \"Top Loot Box\" to its initial value.",
+                "scaling": {
+                    "imaginary_elation_dmg": [
+                        45,
+                        49.5,
+                        54,
+                        58.5,
+                        63,
+                        67.5,
+                        73.1,
+                        78.8,
+                        84.4,
+                        90,
+                        94.5,
+                        99
+                    ]
+                }
+            },
+            "mcawolfee": {
+                "type": "Elation Talent",
+                "name": "McAwolfee 999",
+                "tag": "Support",
+                "description": "After obtaining \"Silver Wolf LV.999\" or when \"Silver Wolf LV.999\" is present in the current team, gains the following effect: During combat, if an enemy target inflicts a Crowd Control debuff on an ally, all allies gain \"Firewall\" for 1 turn. While in the \"Firewall\" state, ally targets are immune to Crowd Control debuffs inflicted by enemy targets.\nThis effect can trigger at most 1 time per wave."
+            }
+        }
+    }
+}
