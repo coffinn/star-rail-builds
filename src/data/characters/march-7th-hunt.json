@@ -1,169 +1,219 @@
 {
-  "id": "march-7th-hunt",
-  "name": "March 7th: Hunt",
-  "rarity": 4,
-  "element": "imaginary",
-  "path": "hunt",
-  "version_released": "2.4",
-  "max_energy": 140,
-
-  "level_80_stats": {
-    "hp": 1058,
-    "atk": 564,
-    "def": 441,
-    "spd": 102
-  },
-
-  "abilities": {
-    "basic": {
-        "type": "Basic ATK",
-        "name": "My Sword Zaps Demons",
-        "tag": "Single Target",
-        "energy_gain": 20,
-        "break": 10,
-        "min_level": 1,
-        "max_level": 7,
-        "default_level": 6,
-        "description_template": "Deals Imaginary DMG equal to {{img_dmg}}% of March 7th's ATK to a single target enemy and gains 1 point(s) of Charge.",
-        "scaling": {
-            "img_dmg": [50, 60, 70, 80, 90, 100, 110]
+    "id": "march-7th-hunt",
+    "name": "March 7th: Hunt",
+    "rarity": 4,
+    "element": "imaginary",
+    "path": "hunt",
+    "version_released": "2.4",
+    "max_energy": 140,
+    "level_80_stats": {
+        "hp": 1058,
+        "atk": 564,
+        "def": 441,
+        "spd": 102
+    },
+    "abilities": {
+        "basic": {
+            "type": "Basic ATK",
+            "name": "My Sword Zaps Demons",
+            "tag": "Single Target",
+            "energy_gain": 20,
+            "break": 10,
+            "min_level": 1,
+            "max_level": 7,
+            "default_level": 6,
+            "description_template": "Deals Imaginary DMG equal to {{img_dmg}}% of March 7th's ATK to a single target enemy and gains 1 point(s) of Charge.",
+            "scaling": {
+                "img_dmg": [
+                    50,
+                    60,
+                    70,
+                    80,
+                    90,
+                    100,
+                    110
+                ]
+            },
+            "variants": [
+                {
+                    "type": "Basic ATK (Enhanced)",
+                    "name": "Brows Be Smitten, Heart Be Bitten",
+                    "tag": "Single Target",
+                    "energy_gain": 30,
+                    "break": 5,
+                    "description_template": "Initially, deals 3 hits, each causing Imaginary DMG equal to {{img_dmg}}% of March 7th's ATK to a single target enemy. Whenever dealing the final hit, there is a 60% fixed chance to deal 1 additional hit of DMG, up to a max of 3 additional hit(s). Energy regenerated from using Enhanced Basic ATK does not increase with the number of hits. Enhanced Basic ATK cannot recover Skill Points.",
+                    "scaling": {
+                        "img_dmg": [
+                            40,
+                            48,
+                            56,
+                            64,
+                            72,
+                            80,
+                            88
+                        ]
+                    }
+                }
+            ]
+        },
+        "skill": {
+            "type": "Skill",
+            "name": "Fractal, Exiles Fallacy",
+            "tag": "Support",
+            "energy_gain": 30,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Designates one ally (excluding this unit) as \"Shifu\" and increases \"Shifu\"'s SPD by {{increased_spd}}%. Only the most recent target of March 7th's Skill is considered as \"Shifu.\"\nWhenever using Basic ATK or dealing 1 hit of Enhanced Basic ATK's DMG, triggers the corresponding effect if \"Shifu\" with the specified Path is present on the field:\nErudition, Destruction, The Hunt, Remembrance, Elation: Deals Additional DMG (DMG Type based on \"Shifu\"'s Combat Type) equal to {{additional_dmg}}% of March 7th's ATK.\nHarmony, Nihility, Preservation, Abundance: Increases the Toughness Reduction of this instance of DMG by 100%.",
+            "scaling": {
+                "increased_spd": [
+                    6,
+                    6.4,
+                    6.8,
+                    7.2,
+                    7.6,
+                    8,
+                    8.5,
+                    9,
+                    9.5,
+                    10,
+                    10.4,
+                    10.8
+                ],
+                "additional_dmg": [
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16.25,
+                    17.5,
+                    18.75,
+                    20,
+                    21,
+                    22
+                ]
+            }
+        },
+        "ultimate": {
+            "type": "Ultimate",
+            "name": "March 7th, the Apex Heroine",
+            "tag": "Single Target",
+            "energy_cost": 110,
+            "energy_gain": 5,
+            "break": 30,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Deals Imaginary DMG equal to {{img_dmg}}% of March 7th's ATK to a single target enemy.\nIncreases the initial Hits Per Action of the next Enhanced Basic ATK by 2 hits and increase the fixed chance of additionally dealing DMG by 20%.",
+            "scaling": {
+                "img_dmg": [
+                    144,
+                    153.6,
+                    163.2,
+                    172.8,
+                    182.4,
+                    192,
+                    204,
+                    216,
+                    228,
+                    240,
+                    249.6,
+                    259.2
+                ]
+            }
+        },
+        "talent": {
+            "type": "Talent",
+            "name": "Master, I've Ascended!",
+            "tag": "Enhance",
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "After Shifu uses an attack or Ultimate, March 7th gains up to 1 point of Charge each time.\nUpon reaching 7 or more points of Charge, March 7th immediately takes action and increases the DMG she deals by {{increased_damage}}%. Her Basic ATK gets Enhanced, and her Skill cannot be used. After using Enhanced Basic ATK, consumes 7 point(s) of Charge. Charge is capped at 10 points.",
+            "scaling": {
+                "increased_damage": [
+                    40,
+                    44,
+                    48,
+                    52,
+                    56,
+                    60,
+                    65,
+                    70,
+                    75,
+                    80,
+                    84,
+                    88
+                ]
+            }
+        },
+        "technique": {
+            "type": "Technique",
+            "name": "Feast in One Go",
+            "tag": "Enhance",
+            "description": "If March 7th is on the team, she gains 1 point of Charge at the start of the next battle whenever a teammate uses Technique, up to a max of 3 point(s).\nAfter using Technique, March 7th regenerates 30 Energy when the next battle starts."
         }
     },
-
-    "basic_enhanced": {
-        "type": "Enhanced Basic ATK",
-        "name": "Brows Be Smitten, Heart Be Bitten",
-        "tag": "Single Target",
-        "energy_gain": 30,
-        "break": 5,
-        "min_level": 1,
-        "max_level": 7,
-        "default_level": 6,
-        "description_template": "Initially, deals 3 hits, each causing Imaginary DMG equal to {{img_dmg}}% of March 7th's ATK to a single target enemy. Whenever dealing the final hit, there is a 60% fixed chance to deal 1 additional hit of DMG, up to a max of 3 additional hit(s). Energy regenerated from using Enhanced Basic ATK does not increase with the number of hits. Enhanced Basic ATK cannot recover Skill Points.",
-        "scaling": {
-            "img_dmg": [40,48, 56, 64, 72, 80, 88]
+    "major_traces": {
+        "2": {
+            "name": "Swan Soar",
+            "description": "When the battle starts, March 7th's action advances by 25%."
+        },
+        "4": {
+            "name": "Filigree",
+            "description": "March 7th can reduce the Toughness of enemies whose Weakness Type is the same as Shifu's Combat Type. When Breaking Weakness, triggers the Imaginary Weakness Break effect."
+        },
+        "6": {
+            "name": "Tide Tamer",
+            "description": "After using Enhanced Basic ATK, increases Shifu's CRIT DMG by 60% and Break Effect by 36%, lasting for 2 turn(s)."
         }
     },
-
-    "skill": {
-        "type": "Skill",
-        "name": "Fractal, Exiles Fallacy",
-        "tag": "Support",
-        "energy_gain": 30,
-        "min_level": 1,
-        "max_level": 12,
-        "default_level": 10,
-        "description_template": "Designates one ally (excluding this unit) as \"Shifu\" and increases \"Shifu\"'s SPD by {{increased_spd}}%. Only the most recent target of March 7th's Skill is considered as \"Shifu.\"\nWhenever using Basic ATK or dealing 1 hit of Enhanced Basic ATK's DMG, triggers the corresponding effect if \"Shifu\" with the specified Path is present on the field:\nErudition, Destruction, The Hunt, Remembrance, Elation: Deals Additional DMG (DMG Type based on \"Shifu\"'s Combat Type) equal to {{additional_dmg}}% of March 7th's ATK.\nHarmony, Nihility, Preservation, Abundance: Increases the Toughness Reduction of this instance of DMG by 100%.",
-        "scaling": {
-            "increased_spd": [6, 6.4, 6.8, 7.2, 7.6, 8, 8.5, 9, 9.5, 10, 10.4, 10.8],
-            "additional_dmg": [10, 11, 12, 13, 14, 15, 16.25, 17.5, 18.75, 20, 21, 22]
+    "stat_bonuses": [
+        {
+            "stat": "CRIT DMG",
+            "value": "+24%"
+        },
+        {
+            "stat": "ATK",
+            "value": "+28%"
+        },
+        {
+            "stat": "DEF",
+            "value": "+10%"
         }
-    },
-
-    "ultimate": {
-        "type": "Ultimate",
-        "name": "March 7th, the Apex Heroine",
-        "tag": "Single Target",
-        "energy_cost": 110,
-        "energy_gain": 5,
-        "break": 30,
-        "min_level": 1,
-        "max_level": 12,
-        "default_level": 10,
-        "description_template": "Deals Imaginary DMG equal to {{img_dmg}}% of March 7th's ATK to a single target enemy.\nIncreases the initial Hits Per Action of the next Enhanced Basic ATK by 2 hits and increase the fixed chance of additionally dealing DMG by 20%.",
-        "scaling": {
-            "img_dmg": [144, 153.6, 163.2, 172.8, 182.4,192, 204,216, 228, 240, 249.6, 259.2]
+    ],
+    "eidolons": [
+        {
+            "level": 1,
+            "name": "My Sword Stirs Starlight",
+            "description": "When Shifu is on the field, increases March 7th's SPD by 10%."
+        },
+        {
+            "level": 2,
+            "name": "Blade Dances on Waves' Fight",
+            "description": "After \"Shifu\" uses Basic ATK or Skill to attack an enemy target, March 7th immediately launches a Follow-up ATK and deals Imaginary DMG equal to 60% of March 7th's ATK to the primary target of this attack. Additionally, triggers the corresponding effect based on \"Shifu\"'s Path and then gains 1 point(s) of Charge. If there is no primary target available to attack, then she attacks a single random enemy instead. This effect can only trigger once per turn."
+        },
+        {
+            "level": 3,
+            "name": "Sharp Wit Martial Might",
+            "description": "Ultimate Lv. +2, up to a maximum of Lv. 15.\nBasic ATK Lv. +1, up to a maximum of Lv. 10."
+        },
+        {
+            "level": 4,
+            "name": "Being Fabulous Never Frights",
+            "description": "At the start of the turn, regenerates 5 Energy."
+        },
+        {
+            "level": 5,
+            "name": "Sword Delights, Sugar Blights",
+            "description": "Skill Lv. +2, up to a maximum of Lv. 15.\nTalent Lv. +2, up to a maximum of Lv. 15."
+        },
+        {
+            "level": 6,
+            "name": "Me, the Best Girl in Sight",
+            "description": "After using Ultimate, increases the CRIT DMG dealt by the next Enhanced Basic ATK by 50%."
         }
-    },
-
-    "talent": {
-        "type": "Talent",
-        "name": "Master, I've Ascended!",
-        "tag": "Enhance",
-        "min_level": 1,
-        "max_level": 12,
-        "default_level": 10,
-        "description_template": "After Shifu uses an attack or Ultimate, March 7th gains up to 1 point of Charge each time.\nUpon reaching 7 or more points of Charge, March 7th immediately takes action and increases the DMG she deals by {{damage}}%. Her Basic ATK gets Enhanced, and her Skill cannot be used. After using Enhanced Basic ATK, consumes 7 point(s) of Charge. Charge is capped at 10 points.",
-        "scaling": {
-            "increased_damage": [40, 44, 48, 52, 56, 60, 65, 70, 75, 80, 84, 88]
-        }
-    },
-
-    "technique": {
-        "type": "Technique",
-        "name": "Feast in One Go",
-        "tag": "Enhance",
-        "description": "If March 7th is on the team, she gains 1 point of Charge at the start of the next battle whenever a teammate uses Technique, up to a max of 3 point(s).\nAfter using Technique, March 7th regenerates 30 Energy when the next battle starts.."
-    }
-  },
-
-  "major_traces": {
-    "2": {
-        "name": "Swan Soar",
-        "description": "When the battle starts, March 7th's action advances by 25%."
-    },
-
-    "4": {
-        "name": "Filigree",
-        "description": "March 7th can reduce the Toughness of enemies whose Weakness Type is the same as Shifu's Combat Type. When Breaking Weakness, triggers the Imaginary Weakness Break effect."
-    },
-
-    "6": {
-        "name": "Tide Tamer",
-        "description": "After using Enhanced Basic ATK, increases Shifu's CRIT DMG by 60% and Break Effect by 36%, lasting for 2 turn(s)."
-    }
-  },
-
-  "stat_bonuses": [
-    {
-        "stat": "CRIT DMG",
-        "value": "+24%"
-    },
-    {
-        "stat": "ATK",
-        "value": "+28%"
-    },
-    {
-        "stat": "DEF",
-        "value": "+10%"
-    }
-  ],
-
-  "eidolons": [
-    {
-        "level": 1,
-        "name": "My Sword Stirs Starlight",
-        "description": "When Shifu is on the field, increases March 7th's SPD by 10%."
-    },
-
-    {
-        "level": 2,
-        "name": "Blade Dances on Waves' Fight",
-        "description": "After \"Shifu\" uses Basic ATK or Skill to attack an enemy target, March 7th immediately launches a Follow-up ATK and deals Imaginary DMG equal to 60% of March 7th's ATK to the primary target of this attack. Additionally, triggers the corresponding effect based on \"Shifu\"'s Path and then gains 1 point(s) of Charge. If there is no primary target available to attack, then she attacks a single random enemy instead. This effect can only trigger once per turn."
-    },
-
-    {
-        "level": 3,
-        "name": "Sharp Wit Martial Might",
-        "description": "Ultimate Lv. +2, up to a maximum of Lv. 15.\nBasic ATK Lv. +1, up to a maximum of Lv. 10."
-    },
-
-    {
-        "level": 4,
-        "name": "Being Fabulous Never Frights",
-        "description": "At the start of the turn, regenerates 5 Energy."
-    },
-
-    {
-        "level": 5,
-        "name": "Sword Delights, Sugar Blights",
-        "description": "Skill Lv. +2, up to a maximum of Lv. 15.\nTalent Lv. +2, up to a maximum of Lv. 15."
-    },
-
-    {
-        "level": 6,
-        "name": "Me, the Best Girl in Sight",
-        "description": "After using Ultimate, increases the CRIT DMG dealt by the next Enhanced Basic ATK by 50%."
-    }
-  ]
+    ]
 }

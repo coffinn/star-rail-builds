@@ -11,7 +11,11 @@ export type CharacterAbilityVariant = {
 
     energy_gain?: number;
     energy_cost?: number;
+
     break?: number | string;
+    break_main?: number | string;
+    break_adjacent?: number | string;
+    break_aoe?: number | string;
 
     description?: string;
 
@@ -31,7 +35,11 @@ export type CharacterAbility = {
 
     energy_gain?: number;
     energy_cost?: number;
+
     break?: number | string;
+    break_main?: number | string;
+    break_adjacent?: number | string;
+    break_aoe?: number | string;
 
     description?: string;
 
@@ -47,6 +55,25 @@ export type CharacterAbility = {
     >;
 
     variants?: CharacterAbilityVariant[];
+};
+
+export type CharacterMemosprite = {
+    name: string;
+
+    initial_spd?: number;
+    hp_source?: string;
+
+    skills: Record<
+        string,
+        CharacterAbility
+    >;
+};
+
+export type CharacterElation = {
+    skills: Record<
+        string,
+        CharacterAbility
+    >;
 };
 
 export type CharacterMajorTrace = {
@@ -73,7 +100,7 @@ export type CharacterData = {
     path: string;
 
     version_released?: string;
-    max_energy?: number;
+    max_energy?: number | null;
 
     level_80_stats?: {
         hp?: number;
@@ -86,6 +113,10 @@ export type CharacterData = {
         string,
         CharacterAbility
     >;
+
+    memosprite?: CharacterMemosprite;
+
+    elation?: CharacterElation;
 
     major_traces: Record<
         string,

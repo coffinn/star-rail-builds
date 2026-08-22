@@ -1,0 +1,298 @@
+{
+    "id": "imbibitor-lunae",
+    "name": "Dan Heng • Imbibitor Lunae",
+    "rarity": "5",
+    "element": "imaginary",
+    "path": "destruction",
+    "version_released": "1.3",
+    "max_energy": "",
+    "level_80_stat": {
+        "hp": 1241,
+        "atk": 698,
+        "def": 363,
+        "spd": 102
+    },
+    "abilities": {
+        "basic": {
+            "type": "Basic ATK",
+            "name": "Beneficent Lotus",
+            "tag": "Single Target",
+            "energy_gain": "20",
+            "break": "10",
+            "min_level": 1,
+            "max_level": 7,
+            "default_level": 6,
+            "description_template": "Uses a 2-hit attack and deals Imaginary DMG equal to {{two_hit_damage}}% of Dan Heng • Imbibitor Lunae's ATK to a single enemy target.",
+            "scaling": {
+                "two_hit_damage": [
+                    50,
+                    60,
+                    70,
+                    80,
+                    90,
+                    100,
+                    110
+                ]
+            },
+            "variants": [
+                {
+                    "type": "Basic ATK (Enhanced)",
+                    "name": "Transcendence",
+                    "tag": "Single Target",
+                    "energy_gain": "30",
+                    "break": "20",
+                    "description_template": "Uses a 3-hit attack and deals Imaginary DMG equal to {{three_hit_damage}}% of Dan Heng • Imbibitor Lunae's ATK to a single enemy target.",
+                    "scaling": {
+                        "three_hit_damage": [
+                            130,
+                            156,
+                            182,
+                            208,
+                            234,
+                            260,
+                            286
+                        ]
+                    }
+                },
+                {
+                    "type": "Basic ATK (Enhanced)",
+                    "name": "Divine Spear",
+                    "tag": "Blast",
+                    "energy_gain": "35",
+                    "break_main": 30,
+                    "break_adjacent": 10,
+                    "min_level": 1,
+                    "max_level": 7,
+                    "default_level": 6,
+                    "description_template": "Uses a 5-hit attack and deals Imaginary DMG equal to {{damage_main}}% of Dan Heng • Imbibitor Lunae's ATK to a single enemy target. From the fourth hit onward, simultaneously deals Imaginary DMG equal to {{damage_adjacent}}% of Dan Heng • Imbibitor Lunae's ATK to adjacent targets.",
+                    "scaling": {
+                        "damage_main": [
+                            190,
+                            228,
+                            266,
+                            304,
+                            342,
+                            380,
+                            418
+                        ],
+                        "damage_adjacent": [
+                            30,
+                            36,
+                            42,
+                            48,
+                            54,
+                            60,
+                            66
+                        ]
+                    }
+                },
+                {
+                    "type": "Basic ATK (Enhanced)",
+                    "name": "Fulgurant Leap",
+                    "tag": "Blast",
+                    "energy_gain": "40",
+                    "break_main": 40,
+                    "break_adjacent": 20,
+                    "min_level": 1,
+                    "max_level": 7,
+                    "default_level": 6,
+                    "description_template": "Uses a 7-hit attack and deals Imaginary DMG equal to {{seven_hit_damage}}% of Dan Heng • Imbibitor Lunae's ATK to a single enemy target. From the fourth hit onward, simultaneously deal Imaginary DMG equal to {{after_fourth_hit_damage}}% of Dan Heng • Imbibitor Lunae's ATK to adjacent targets.",
+                    "scaling": {
+                        "seven_hit_damage": [
+                            250,
+                            300,
+                            350,
+                            400,
+                            450,
+                            500,
+                            550
+                        ],
+                        "after_fourth_hit_damage": [
+                            90,
+                            108,
+                            126,
+                            144,
+                            162,
+                            180,
+                            198
+                        ]
+                    }
+                }
+            ]
+        },
+        "skill": {
+            "type": "Skill",
+            "name": "Dracore Libre",
+            "tag": "Enhance",
+            "energy_gain": "0",
+            "break": "",
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Enhances Basic ATK. Enhancements may be applied up to 3 times consecutively. Using this ability does not consume Skill Points and is not considered as using a Skill. Enhanced once, Beneficent Lotus becomes Transcendence. Enhanced twice, Beneficent Lotus becomes Divine Spear. Enhanced thrice, Beneficent Lotus becomes Fulgurant Leap. When using Divine Spear or Fulgurant Leap, starting from the fourth hit, 1 stack of Outroar is gained before every hit. Each stack of Outroar increases Dan Heng • Imbibitor Lunae's CRIT DMG by {{increased_crit_dmg}}%, for a max of 4 stacks. These stacks last until the end of his turn.",
+            "scaling": {
+                "increased_crit_dmg": [
+                    6,
+                    7,
+                    7,
+                    8,
+                    8,
+                    9,
+                    10,
+                    10,
+                    11,
+                    12,
+                    13,
+                    13,
+                    14,
+                    14,
+                    15
+                ]
+            }
+        },
+        "ultimate": {
+            "type": "Ultimate",
+            "name": "Azure's Aqua Ablutes All",
+            "tag": "Blast",
+            "energy_gain": "5",
+            "break": "20",
+            "energy_cost": "140",
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Uses a 3-hit attack and deals Imaginary DMG equal to {{post_three_hit_damage}}% of Dan Heng • Imbibitor Lunae's ATK to a single enemy target. At the same time, deals Imaginary DMG equal to {{adjacent_damage}}% of Dan Heng • Imbibitor Lunae's ATK to adjacent targets. Then, obtains 2 Squama Sacrosancta. It's possible to hold up to 3 Squama Sacrosancta, which can be used to offset Dan Heng • Imbibitor Lunae's consumption of skill points. Consuming Squama Sacrosancta is considered equivalent to consuming skill points.",
+            "scaling": {
+                "post_three_hit_damage": [
+                    180,
+                    192,
+                    204,
+                    216,
+                    228,
+                    240,
+                    255,
+                    270,
+                    285,
+                    300,
+                    312,
+                    324,
+                    336,
+                    348,
+                    360
+                ],
+                "adjacent_damage": [
+                    84,
+                    90,
+                    95,
+                    101,
+                    106,
+                    112,
+                    119,
+                    126,
+                    133,
+                    140,
+                    146,
+                    151,
+                    157,
+                    162,
+                    168
+                ]
+            }
+        },
+        "talent": {
+            "type": "Talent",
+            "name": "Righteous Heart",
+            "tag": "Enhance",
+            "energy_gain": "",
+            "break": "",
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "After each hit dealt during an attack, Dan Heng • Imbibitor Lunae gains 1 stack of Righteous Heart, increasing his DMG by {{increased_damage}}%. This effect can stack up to 6 time(s), lasting until the end of his turn.",
+            "scaling": {
+                "increased_damage": [
+                    5,
+                    6,
+                    6,
+                    6,
+                    7,
+                    8,
+                    8,
+                    9,
+                    9,
+                    10,
+                    10,
+                    11,
+                    12,
+                    12,
+                    12
+                ]
+            }
+        },
+        "technique": {
+            "type": "Technique",
+            "name": "Heaven-Quelling Prismadrakon",
+            "tag": "Enhance",
+            "description": "After using his Technique, Dan Heng • Imbibitor Lunae enters the Leaping Dragon state for 20 seconds. While in the Leaping Dragon state, using his attack enables him to move forward rapidly for a set distance, attacking all enemies he touches and blocking all incoming attacks. After entering combat via attacking enemies in the Leaping Dragon state, Dan Heng • Imbibitor Lunae deals Imaginary DMG equal to 120% of his ATK to all enemies, and gains 1 Squama Sacrosancta."
+        }
+    },
+    "major_traces": {
+        "2": {
+            "name": "Star Veil",
+            "description": "At the start of the battle, immediately regenerates 15 Energy."
+        },
+        "4": {
+            "name": "Aqua Reign",
+            "description": "Increases the chance to resist Crowd Control debuffs by 35%."
+        },
+        "6": {
+            "name": "Jolt Anew",
+            "description": "When dealing DMG to enemy targets with Imaginary Weakness, CRIT DMG increases by 24%."
+        }
+    },
+    "stat_bonuses": [
+        {
+            "stat": "CRIT Rate",
+            "value": "+12%"
+        },
+        {
+            "stat": "Imaginary DMG",
+            "value": "+19.2%"
+        },
+        {
+            "stat": "HP",
+            "value": "+10%"
+        }
+    ],
+    "eidolons": [
+        {
+            "level": 1,
+            "name": "Tethered to Sky",
+            "description": "Increases the stackable Righteous Heart count by 4, and gains 1 extra stack of Righteous Heart for each hit during an attack."
+        },
+        {
+            "level": 2,
+            "name": "Imperium On Cloud Nine",
+            "description": "After using his Ultimate, Dan Heng • Imbibitor Lunae's action advances by 100% and gains 1 extra \"Squama Sacrosancta.\""
+        },
+        {
+            "level": 3,
+            "name": "Clothed in Clouds",
+            "description": "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+        },
+        {
+            "level": 4,
+            "name": "Zephyr's Bliss",
+            "description": "The buff effect granted by \"Outroar\" lasts until the end of this unit's next turn."
+        },
+        {
+            "level": 5,
+            "name": "Fall is the Pride",
+            "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+        },
+        {
+            "level": 6,
+            "name": "Reign, Returned",
+            "description": "After another ally character uses their Ultimate, the Imaginary RES PEN of Dan Heng • Imbibitor Lunae's next \"Fulgurant Leap\" attack increases by 20%. This effect can stack up to 3 time(s)."
+        }
+    ]
+}

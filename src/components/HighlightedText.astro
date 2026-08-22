@@ -1,0 +1,30 @@
+---
+const { text } = Astro.props as {
+    text: string;
+};
+
+const numberPattern =
+    /((?<![A-Za-z0-9])[+-]?\d+(?:\.\d+)?(?:%|x|×)?(?:\s*[–—-]\s*[+-]?\d+(?:\.\d+)?(?:%|x|×)?)?(?![A-Za-z0-9]))/g;
+
+const exactNumberPattern =
+    /^[+-]?\d+(?:\.\d+)?(?:%|x|×)?(?:\s*[–—-]\s*[+-]?\d+(?:\.\d+)?(?:%|x|×)?)?$/;
+
+const parts = text.split(numberPattern).filter(Boolean);
+---
+
+{
+    parts.map((part) =>
+        exactNumberPattern.test(part) ? (
+            <span class="number-highlight">{part}</span>
+        ) : (
+            part
+        ),
+    )
+}
+
+<style>
+    .number-highlight {
+        color: var(--accent);
+        font-weight: 750;
+    }
+</style>
