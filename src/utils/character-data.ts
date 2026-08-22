@@ -3,6 +3,26 @@ import path from 'path';
 
 import { readJSONFile } from './content';
 
+export type CharacterAbilityVariant = {
+    type: string;
+    name: string;
+
+    tag?: string;
+
+    energy_gain?: number;
+    energy_cost?: number;
+    break?: number | string;
+
+    description?: string;
+
+    description_template?: string;
+
+    scaling?: Record<
+        string,
+        Array<number | string>
+    >;
+};
+
 export type CharacterAbility = {
     type: string;
     name: string;
@@ -13,10 +33,8 @@ export type CharacterAbility = {
     energy_cost?: number;
     break?: number | string;
 
-    // Static abilities such as Technique can use this.
     description?: string;
 
-    // Level-scaled abilities use these.
     min_level?: number;
     max_level?: number;
     default_level?: number;
@@ -27,6 +45,8 @@ export type CharacterAbility = {
         string,
         Array<number | string>
     >;
+
+    variants?: CharacterAbilityVariant[];
 };
 
 export type CharacterMajorTrace = {
@@ -102,9 +122,21 @@ export function loadCharacterData(
  * Builds an ability description at a chosen
  * trace level.
  */
+type ScalableAbility = {
+    description?: string;
+    description_template?: string;
+
+    scaling?: Record<
+        string,
+        Array<number | string>
+    >;
+};
+
 export function renderCharacterAbilityDescription(
-    ability: CharacterAbility,
+    ability: ScalableAbility,
     requestedLevel?: number,
+    minLevel = 1,
+    defaultLevel = minLevel,
 ) {
     if (
         !ability.description_template ||
@@ -113,34 +145,18 @@ export function renderCharacterAbilityDescription(
         return ability.description ?? '';
     }
 
-    const minLevel =
-        ability.min_level ?? 1;
+    const level =
+        requestedLevel ??
+        defaultLevel;
 
-    const maxLevel =
-        ability.max_level ?? minLevel;
-
-    const defaultLevel =
-        ability.default_level ??
-        maxLevel;
-
-    const level = Math.max(
-        minLevel,
-        Math.min(
-            requestedLevel ?? defaultLevel,
-            maxLevel,
-        ),
-    );
-
-    const index = level - minLevel;
+    const index =
+        level - minLevel;
 
     return ability.description_template.replace(
         /\{\{([a-zA-Z0-9_-]+)\}\}/g,
         (match, key: string) => {
-            const values =
-                ability.scaling?.[key];
-
             const value =
-                values?.[index];
+                ability.scaling?.[key]?.[index];
 
             return value === undefined
                 ? match
