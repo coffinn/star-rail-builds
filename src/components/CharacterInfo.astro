@@ -12,7 +12,7 @@ const { character } = Astro.props as {
 
 const abilityOrder = ['basic', 'skill', 'ultimate', 'talent', 'technique'];
 
-const abilities = abilityOrder
+const normalAbilities = abilityOrder
     .map((id) => {
         const ability = character.abilities?.[id];
 
@@ -33,6 +33,48 @@ const abilities = abilityOrder
             ability: CharacterAbility;
         } => item !== null,
     );
+
+const memospriteAbilities = Object.entries(
+    character.memosprite?.skills ?? {},
+).map(([id, ability]) => ({
+    id: `memosprite:${id}`,
+    ability,
+}));
+
+const elationAbilities = Object.entries(character.elation?.skills ?? {}).map(
+    ([id, ability]) => ({
+        id: `elation:${id}`,
+        ability,
+    }),
+);
+
+const abilitySections = [
+    {
+        id: 'normal',
+        title: 'Abilities',
+        abilities: normalAbilities,
+    },
+
+    ...(character.memosprite && memospriteAbilities.length > 0
+        ? [
+              {
+                  id: 'memosprite',
+                  title: `Memosprite — ${character.memosprite.name}`,
+                  abilities: memospriteAbilities,
+              },
+          ]
+        : []),
+
+    ...(elationAbilities.length > 0
+        ? [
+              {
+                  id: 'elation',
+                  title: 'Elation',
+                  abilities: elationAbilities,
+              },
+          ]
+        : []),
+];
 
 const majorTraces = Object.entries(character.major_traces ?? {}).sort(
     ([a], [b]) => Number(a) - Number(b),
@@ -136,7 +178,7 @@ const renderVariantDescription = (
                         </span>
                     )}
 
-                    {character.max_energy !== undefined && (
+                    {character.max_energy != null && (
                         <span>
                             Energy
                             <strong>{character.max_energy}</strong>
@@ -151,233 +193,323 @@ const renderVariantDescription = (
     <!-- Abilities                 -->
     <!-- ========================= -->
 
-    <section class="character-info-section">
-        <h3>Abilities</h3>
+    {
+        abilitySections.map((section) => (
+            <section class="character-info-section">
+                <h3>{section.title}</h3>
 
-        <div class="character-info-details">
-            {
-                abilities.map(({ id, ability }) => {
-                    console.log(
-                        '[CHARACTER ABILITY]',
-                        id,
-                        ability.name,
-                        ability.variants?.map((variant) => ({
-                            type: variant.type,
-                            name: variant.name,
-                        })),
-                    );
-                    const minLevel = ability.min_level ?? 1;
+                {section.id === 'memosprite' && character.memosprite && (
+                    <div class="character-detail-meta character-mechanic-meta">
+                        {character.memosprite.initial_spd !== undefined && (
+                            <span>
+                                Initial SPD:{' '}
+                                <strong>
+                                    {character.memosprite.initial_spd}
+                                </strong>
+                            </span>
+                        )}
 
-                    const maxLevel = ability.max_level ?? minLevel;
+                        {character.memosprite.hp_source && (
+                            <span>
+                                Max HP:{' '}
+                                <strong>
+                                    {character.memosprite.hp_source}
+                                </strong>
+                            </span>
+                        )}
+                    </div>
+                )}
 
-                    const defaultLevel = getDefaultLevel(ability);
+                <div class="character-info-details">
+                    {section.abilities.map(({ id, ability }) => {
+                        const minLevel = ability.min_level ?? 1;
 
-                    const levels = getAbilityLevels(ability);
+                        const maxLevel = ability.max_level ?? minLevel;
 
-                    const scalable =
-                        Boolean(
-                            ability.description_template && ability.scaling,
-                        ) && maxLevel > minLevel;
+                        const defaultLevel = getDefaultLevel(ability);
 
-                    return (
-                        <details open data-character-ability={id}>
-                            <summary>
-                                <strong>{ability.type}</strong>
+                        const levels = getAbilityLevels(ability);
 
-                                <span>{ability.name}</span>
+                        const scalable =
+                            Boolean(
+                                ability.description_template && ability.scaling,
+                            ) && maxLevel > minLevel;
 
-                                {scalable && (
-                                    <span
-                                        class="character-ability-level"
-                                        data-character-level-value
-                                    >
-                                        Lv. {defaultLevel}
-                                    </span>
-                                )}
-                            </summary>
+                        return (
+                            <details open data-character-ability={id}>
+                                <summary>
+                                    <strong>{ability.type}</strong>
 
-                            <div class="character-detail-body">
-                                {ability.tag && (
-                                    <p class="character-ability-tag">
-                                        <strong>Type:</strong> {ability.tag}
-                                    </p>
-                                )}
+                                    <span>{ability.name}</span>
 
-                                <div class="character-detail-meta">
-                                    {ability.energy_gain !== undefined && (
-                                        <span>
-                                            Energy Gain:{' '}
-                                            <strong>
-                                                {ability.energy_gain}
-                                            </strong>
+                                    {scalable && (
+                                        <span
+                                            class="character-ability-level"
+                                            data-character-level-value
+                                        >
+                                            Lv. {defaultLevel}
                                         </span>
                                     )}
+                                </summary>
 
-                                    {ability.energy_cost !== undefined && (
-                                        <span>
-                                            Energy Cost:{' '}
-                                            <strong>
-                                                {ability.energy_cost}
-                                            </strong>
-                                        </span>
-                                    )}
-
-                                    {ability.break !== undefined && (
-                                        <span>
-                                            Break:{' '}
-                                            <strong>{ability.break}</strong>
-                                        </span>
-                                    )}
-                                </div>
-
-                                {scalable && (
-                                    <div class="character-trace-slider">
-                                        <div class="character-slider-header">
-                                            <strong>Trace Level</strong>
-
-                                            <span data-character-level-value>
-                                                Lv. {defaultLevel}
-                                            </span>
-                                        </div>
-
-                                        <input
-                                            type="range"
-                                            min={minLevel}
-                                            max={maxLevel}
-                                            step="1"
-                                            value={defaultLevel}
-                                            data-character-level-slider
-                                            aria-label={`${ability.name} Trace Level`}
-                                        />
-
-                                        <div class="character-slider-bounds">
-                                            <span>Lv. {minLevel}</span>
-
-                                            <span>Lv. {maxLevel}</span>
-                                        </div>
-                                    </div>
-                                )}
-
-                                <div class="character-ability-description">
-                                    {scalable ? (
-                                        levels.map((level) => (
-                                            <p
-                                                data-character-level-panel={
-                                                    level
-                                                }
-                                                hidden={level !== defaultLevel}
-                                            >
-                                                {renderCharacterAbilityDescription(
-                                                    ability,
-                                                    level,
-                                                )}
-                                            </p>
-                                        ))
-                                    ) : (
-                                        <p>
-                                            {renderCharacterAbilityDescription(
-                                                ability,
-                                            )}
+                                <div class="character-detail-body">
+                                    {ability.tag && (
+                                        <p class="character-ability-tag">
+                                            <strong>Type:</strong> {ability.tag}
                                         </p>
                                     )}
-                                </div>
 
-                                {ability.variants?.map((variant) => {
-                                    const variantScalable =
-                                        Boolean(
-                                            variant.description_template &&
-                                            variant.scaling,
-                                        ) && maxLevel > minLevel;
+                                    <div class="character-detail-meta">
+                                        {ability.energy_gain !== undefined && (
+                                            <span>
+                                                Energy Gain:{' '}
+                                                <strong>
+                                                    {ability.energy_gain}
+                                                </strong>
+                                            </span>
+                                        )}
 
-                                    return (
-                                        <section class="character-ability-variant">
-                                            <div class="character-ability-variant-header">
-                                                <strong>{variant.type}</strong>
+                                        {ability.energy_cost !== undefined && (
+                                            <span>
+                                                Energy Cost:{' '}
+                                                <strong>
+                                                    {ability.energy_cost}
+                                                </strong>
+                                            </span>
+                                        )}
 
-                                                <span>{variant.name}</span>
+                                        {ability.break !== undefined && (
+                                            <span>
+                                                Break:{' '}
+                                                <strong>{ability.break}</strong>
+                                            </span>
+                                        )}
+
+                                        {ability.break_main !== undefined && (
+                                            <span>
+                                                Break (Main):{' '}
+                                                <strong>
+                                                    {ability.break_main}
+                                                </strong>
+                                            </span>
+                                        )}
+
+                                        {ability.break_adjacent !==
+                                            undefined && (
+                                            <span>
+                                                Break (Adjacent):{' '}
+                                                <strong>
+                                                    {ability.break_adjacent}
+                                                </strong>
+                                            </span>
+                                        )}
+
+                                        {ability.break_aoe !== undefined && (
+                                            <span>
+                                                Break (AoE):{' '}
+                                                <strong>
+                                                    {ability.break_aoe}
+                                                </strong>
+                                            </span>
+                                        )}
+                                    </div>
+
+                                    {scalable && (
+                                        <div class="character-trace-slider">
+                                            <div class="character-slider-header">
+                                                <strong>Trace Level</strong>
+
+                                                <span
+                                                    data-character-level-value
+                                                >
+                                                    Lv. {defaultLevel}
+                                                </span>
                                             </div>
 
-                                            {variant.tag && (
-                                                <p class="character-ability-tag">
-                                                    <strong>Type:</strong>{' '}
-                                                    {variant.tag}
+                                            <input
+                                                type="range"
+                                                min={minLevel}
+                                                max={maxLevel}
+                                                step="1"
+                                                value={defaultLevel}
+                                                data-character-level-slider
+                                                aria-label={`${ability.name} Trace Level`}
+                                            />
+
+                                            <div class="character-slider-bounds">
+                                                <span>Lv. {minLevel}</span>
+
+                                                <span>Lv. {maxLevel}</span>
+                                            </div>
+                                        </div>
+                                    )}
+
+                                    <div class="character-ability-description">
+                                        {scalable ? (
+                                            levels.map((level) => (
+                                                <p
+                                                    data-character-level-panel={
+                                                        level
+                                                    }
+                                                    hidden={
+                                                        level !== defaultLevel
+                                                    }
+                                                >
+                                                    {renderCharacterAbilityDescription(
+                                                        ability,
+                                                        level,
+                                                        minLevel,
+                                                        defaultLevel,
+                                                    )}
                                                 </p>
-                                            )}
+                                            ))
+                                        ) : (
+                                            <p>
+                                                {renderCharacterAbilityDescription(
+                                                    ability,
+                                                    undefined,
+                                                    minLevel,
+                                                    defaultLevel,
+                                                )}
+                                            </p>
+                                        )}
+                                    </div>
 
-                                            <div class="character-detail-meta">
-                                                {variant.energy_gain !==
-                                                    undefined && (
-                                                    <span>
-                                                        Energy Gain:{' '}
-                                                        <strong>
-                                                            {
-                                                                variant.energy_gain
-                                                            }
-                                                        </strong>
-                                                    </span>
+                                    {ability.variants?.map((variant) => {
+                                        const variantScalable =
+                                            Boolean(
+                                                variant.description_template &&
+                                                variant.scaling,
+                                            ) && maxLevel > minLevel;
+
+                                        return (
+                                            <section class="character-ability-variant">
+                                                <div class="character-ability-variant-header">
+                                                    <strong>
+                                                        {variant.type}
+                                                    </strong>
+
+                                                    <span>{variant.name}</span>
+                                                </div>
+
+                                                {variant.tag && (
+                                                    <p class="character-ability-tag">
+                                                        <strong>Type:</strong>{' '}
+                                                        {variant.tag}
+                                                    </p>
                                                 )}
 
-                                                {variant.energy_cost !==
-                                                    undefined && (
-                                                    <span>
-                                                        Energy Cost:{' '}
-                                                        <strong>
-                                                            {
-                                                                variant.energy_cost
-                                                            }
-                                                        </strong>
-                                                    </span>
-                                                )}
+                                                <div class="character-detail-meta">
+                                                    {variant.energy_gain !==
+                                                        undefined && (
+                                                        <span>
+                                                            Energy Gain:{' '}
+                                                            <strong>
+                                                                {
+                                                                    variant.energy_gain
+                                                                }
+                                                            </strong>
+                                                        </span>
+                                                    )}
 
-                                                {variant.break !==
-                                                    undefined && (
-                                                    <span>
-                                                        Break:{' '}
-                                                        <strong>
-                                                            {variant.break}
-                                                        </strong>
-                                                    </span>
-                                                )}
-                                            </div>
+                                                    {variant.energy_cost !==
+                                                        undefined && (
+                                                        <span>
+                                                            Energy Cost:{' '}
+                                                            <strong>
+                                                                {
+                                                                    variant.energy_cost
+                                                                }
+                                                            </strong>
+                                                        </span>
+                                                    )}
 
-                                            <div class="character-ability-description">
-                                                {variantScalable ? (
-                                                    levels.map((level) => (
-                                                        <p
-                                                            data-character-level-panel={
-                                                                level
-                                                            }
-                                                            hidden={
-                                                                level !==
-                                                                defaultLevel
-                                                            }
-                                                        >
+                                                    {variant.break !==
+                                                        undefined && (
+                                                        <span>
+                                                            Break:{' '}
+                                                            <strong>
+                                                                {variant.break}
+                                                            </strong>
+                                                        </span>
+                                                    )}
+
+                                                    {variant.break_main !==
+                                                        undefined && (
+                                                        <span>
+                                                            Break (Main):{' '}
+                                                            <strong>
+                                                                {
+                                                                    variant.break_main
+                                                                }
+                                                            </strong>
+                                                        </span>
+                                                    )}
+
+                                                    {variant.break_adjacent !==
+                                                        undefined && (
+                                                        <span>
+                                                            Break (Adjacent):{' '}
+                                                            <strong>
+                                                                {
+                                                                    variant.break_adjacent
+                                                                }
+                                                            </strong>
+                                                        </span>
+                                                    )}
+
+                                                    {variant.break_aoe !==
+                                                        undefined && (
+                                                        <span>
+                                                            Break (AoE):{' '}
+                                                            <strong>
+                                                                {
+                                                                    variant.break_aoe
+                                                                }
+                                                            </strong>
+                                                        </span>
+                                                    )}
+                                                </div>
+
+                                                <div class="character-ability-description">
+                                                    {variantScalable ? (
+                                                        levels.map((level) => (
+                                                            <p
+                                                                data-character-level-panel={
+                                                                    level
+                                                                }
+                                                                hidden={
+                                                                    level !==
+                                                                    defaultLevel
+                                                                }
+                                                            >
+                                                                {renderVariantDescription(
+                                                                    variant,
+                                                                    ability,
+                                                                    level,
+                                                                )}
+                                                            </p>
+                                                        ))
+                                                    ) : (
+                                                        <p>
                                                             {renderVariantDescription(
                                                                 variant,
                                                                 ability,
-                                                                level,
                                                             )}
                                                         </p>
-                                                    ))
-                                                ) : (
-                                                    <p>
-                                                        {renderVariantDescription(
-                                                            variant,
-                                                            ability,
-                                                        )}
-                                                    </p>
-                                                )}
-                                            </div>
-                                        </section>
-                                    );
-                                })}
-                            </div>
-                        </details>
-                    );
-                })
-            }
-        </div>
-    </section>
+                                                    )}
+                                                </div>
+                                            </section>
+                                        );
+                                    })}
+                                </div>
+                            </details>
+                        );
+                    })}
+                </div>
+            </section>
+        ))
+    }
 
     <!-- ========================= -->
     <!-- Major Traces              -->
@@ -489,6 +621,9 @@ const renderVariantDescription = (
 </script>
 
 <style>
+    .character-mechanic-meta {
+        margin-bottom: 0.75rem;
+    }
     .character-ability-variant {
         box-sizing: border-box;
 
