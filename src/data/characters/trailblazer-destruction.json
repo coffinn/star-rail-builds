@@ -1,0 +1,148 @@
+{
+    "id": "trailblazer-destruction",
+    "name": "Trailblazer: Destruction",
+    "rarity": 5,
+    "element": "physical",
+    "path": "destruction",
+    "version_released": "1.0",
+    "max_energy": 120,
+    "level_80_stats": {
+        "hp": 1203,
+        "atk": 621,
+        "def": 461,
+        "spd": 100
+    },
+    "abilities": {
+        "basic": {
+            "type": "Basic ATK",
+            "name": "Farewell Hit",
+            "tag": "Single Target",
+            "energy_gain": 20,
+            "break": 10,
+            "min_level": 1,
+            "max_level": 7,
+            "default_level": 6,
+            "description_template": "Deals Physical DMG equal to {{damage}}% of The Trailblazer's ATK to one designated enemy.",
+            "scaling": {
+                "damage": [
+                    50,
+                    60,
+                    70,
+                    80,
+                    90,
+                    100,
+                    110
+                ]
+            }
+        },
+        "skill": {
+            "type": "Skill",
+            "name": "RIP Home Run",
+            "tag": "Blast",
+            "energy_gain": 30,
+            "break_main": 20,
+            "break_aoe": 10,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Deals Physical DMG equal to {{skill_damage}}% of the Trailblazer's ATK to one designated enemy and enemies adjacent to it.",
+            "scaling": {
+                "skill_damage": [62.5, 68.75, 75.0, 81.25, 87.5, 93.75, 101.5625, 109.375, 117.1875, 125.0, 131.25, 137.5]
+            }
+        },
+        "ultimate": {
+            "type": "Ultimate",
+            "name": "Stardust Ace",
+            "tag": "Enhance",
+            "energy_cost": 120,
+            "energy_gain": 5,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Choose between two attack modes to deliver a full strike. \"Blowout: Farewell Hit\" deals Physical DMG equal to {{ult_st}}% of the Trailblazer's ATK to one designated enemy. \"Blowout: RIP Home Run\" deals Physical DMG equal to {{ult_blast_main}}% of the Trailblazer's ATK to one designated enemy, and Physical DMG equal to {{ult_blast_adj}}% of the Trailblazer's ATK to enemies adjacent to it.",
+            "scaling": {
+                "ult_st": [300.0, 315.0, 330.0, 345.0, 360.0, 375.0, 393.75, 412.5, 431.25, 450.0, 465.0, 480.0],
+                "ult_blast_main": [180.0, 189.0, 198.0, 207.0, 216.0, 225.0, 236.25, 247.5, 258.75, 270.0, 279.0, 288.0],
+                "ult_blast_adj": [108.0, 113.4, 118.8, 124.2, 129.6, 135.0, 141.75, 148.5, 155.25, 162.0, 167.4, 172.8]
+            }
+        },
+        "talent": {
+            "type": "Talent",
+            "name": "Perfect Pickoff",
+            "tag": "Enhance",
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Each time after this character inflicts Weakness Break on an enemy, ATK increases by {{atk_buff}}%. This effect stacks up to 2 time(s).",
+            "scaling": {
+                "atk_buff": [10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.25, 17.5, 18.75, 20.0, 21.0, 22.0]
+            }
+        },
+        "technique": {
+            "type": "Technique",
+            "name": "Immortal Third Strike",
+            "tag": "Restore",
+            "description": "Immediately heals all allies for 15% of their respective Max HP after using this Technique."
+        }
+    },
+    "major_traces": {
+        "2": {
+            "name": "Ready for Battle",
+            "description": "At the start of battle, immediately regenerates 15 energy."
+        },
+        "4": {
+            "name": "Tenacity",
+            "description": "Each Talent stack increases the Trailblazer's DEF by 10%."
+        },
+        "6": {
+            "name": "Fighting Will",
+            "description": "When using Skill or Ultimate \"Blowout: RIP Home Run\", DMG dealt to the target enemy is increased by 25%"
+        }
+    },
+    "stat_bonuses": [
+        {
+            "stat": "HP",
+            "value": "+18%"
+        },
+        {
+            "stat": "ATK",
+            "value": "+18%"
+        },
+        {
+            "stat": "DEF",
+            "value": "+12.5%"
+        }
+    ],
+    "eidolons": [
+        {
+            "level": 1,
+            "name": "A Falling Star",
+            "description": "When enemies are defeated due to the Trailblazer's Ultimate, the Trailblazer regenerates 10 extra Energy. This effect can only be triggered once per attack."
+        },
+        {
+            "level": 2,
+            "name": "An Unwilling Host",
+            "description": "Attacking enemies with Physical Weakness restores the Trailblazer's HP equal to 5% of the Trailblazer's ATK."
+        },
+        {
+            "level": 3,
+            "name": "A Leading Whisper",
+            "description": "Skill Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+        },
+        {
+            "level": 4,
+            "name": "A Destructing Glance",
+            "description": "When attacking an enemy that is Weakness Broken, increases CRIT Rate by 25%."
+        },
+        {
+            "level": 5,
+            "name": "A Surviving Hope",
+            "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+        },
+        {
+            "level": 6,
+            "name": "A Trailblazing Will",
+            "description": "The Trailblazer's Talent is also triggered when they defeat an enemy."
+        }
+    ]
+}

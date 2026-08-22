@@ -161,7 +161,7 @@
       "min_level": 1,
       "max_level": 12,
       "default_level": 10,
-      "description_template": "Deals Ice DMG equal to {{scaling}}% of Jingliu's Max HP to one designated enemy, and deals Ice DMG equal to {{scaling}}% of Jingliu's Max HP to their adjacent enemies. Gains 1 stack(s) of \"Syzygy\" after attack ends.",
+      "description_template": "Deals Ice DMG equal to {{scaling1}}% of Jingliu's Max HP to one designated enemy, and deals Ice DMG equal to {{scaling2}}% of Jingliu's Max HP to their adjacent enemies. Gains 1 stack(s) of \"Syzygy\" after attack ends.",
       "scaling": {
         "scaling1": [
           90,

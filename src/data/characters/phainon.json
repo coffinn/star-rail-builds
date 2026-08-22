@@ -1,0 +1,195 @@
+{
+    "id": "phainon",
+    "name": "Phainon",
+    "rarity": 5,
+    "element": "physical",
+    "path": "destruction",
+    "version_released": "3.4",
+    "max_energy": 12,
+    "level_80_stats": {
+        "hp": 1436,
+        "atk": 582,
+        "def": 703,
+        "spd": 94
+    },
+    "abilities": {
+        "basic": {
+            "type": "Basic ATK",
+            "name": "Stride to Deliverance",
+            "tag": "Single Target",
+            "energy_gain": 20,
+            "break": 10,
+            "min_level": 1,
+            "max_level": 7,
+            "default_level": 6,
+            "description_template": "Deals Physical DMG equal to {{damage}}% of Phainon's ATK to one designated enemy.",
+            "scaling": {
+                "damage": [50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0]
+            },    
+        
+            "variants": [
+                {
+                    "type": "Basic ATK (Enhanced)",
+                    "name": "Creation: Bloodthorn Ferry",
+                    "tag": "Blast",
+                    "break_main": 30,
+                    "break_aoe": 20,
+                    "description_template": "Gains 2 point(s) of \"Scourge\", dealing Physical DMG equal to {{main_damage}}% of Khaslana's ATK to one designated enemy and Physical DMG equal to {{adj_damage}}% of Khaslana's ATK to adjacent targets.",
+                    "scaling": {
+                        "main_damage": [125.0, 150.0, 175.0, 200.0, 225.0, 250.0, 275.0],
+                        "adj_damage": [37.5, 45.0, 52.5, 60.0, 67.5, 75.0, 82.5]
+                    }
+                }
+            ]
+        },    
+        "skill": {
+            "type": "Skill",
+            "name": "Let There Be Light",
+            "tag": "Blast",
+            "break_main": 20,
+            "break_aoe": 10,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Gains 2 point(s) of \"Coreflame\", dealing Physical DMG equal to {{skill_main}}% of Phainon's ATK to one designated enemy and Physical DMG equal to {{skill_adj}}% of Phainon's ATK to adjacent targets.",
+            "scaling": {
+                "skill_main": [150.0, 165.0, 180.0, 195.0, 210.0, 225.0, 243.75, 262.5, 281.25, 300.0, 315.0, 330.0],
+                "skill_adj": [60.0, 66.0, 72.0, 78.0, 84.0, 90.0, 97.5, 105.0, 112.5, 120.0, 126.0, 132.0]
+            },
+        
+            "variants": [
+                {
+                    "type": "Skill (Enhanced)",
+                    "name": "Calamity: Soulscorch Edict",
+                    "tag": "Enhance",
+                    "break_main": 10,
+                    "break_aoe": 5,
+                    "description_template": "Gains \"Scourge\" by an amount equal to the number of enemies and 1 stack of \"Soulscorch,\" then causes all enemies to immediately take action. While in the \"Soulscorch\" state, Khaslana takes 75% reduced DMG. After an enemy target attacks or takes action, gains 1 more stack of \"Soulscorch.\" After said enemy targets finish their actions, immediately launches Counter, deals Physical DMG to all enemies equal to {{main_damage}}% of Khaslana's ATK, and additionally deals 4 instance(s) of DMG, with each instance being Physical DMG equal to {{bounce_damage}}% of Khaslana's ATK dealt to one random enemy. Afterward, \"Soulscorch\" is dispelled. Each \"Soulscorch\" stack increases the DMG multiplier of said Counter by 20% of its original multiplier value. DMG dealt through this ability is considered as Skill DMG. If \"Soulscorch\" is still active at the start of Khaslana's extra turn, immediately launches Counter.",
+                    "scaling": {
+                        "main_damage": [20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.5, 35.0, 37.5, 40.0, 42.0, 44.0],
+                        "bounce_damage": [15.0, 16.5, 18.0, 19.5, 21.0, 22.5, 24.375, 26.25, 28.125, 30.0, 31.5, 33.0]
+                    }
+                },                    
+            {
+                "type": "Skill (Enhanced)",
+                "name": "Foundation: Stardeath Verdict",
+                "tag": "Bounce",
+                "break_main": 3.33,
+                "break_aoe": 20,
+                "description_template": "Dispels all debuffs on this unit, then deals Physical DMG equal to a max of {{total_damage}}% of Khaslana's ATK. For every 1 point of \"Scourge\" consumed, deals 4 instance(s) of DMG, with each instance being Physical DMG equal to {{bounce_damage}}% of Khaslana's ATK dealt to one random enemy. When consuming 4 point(s) of \"Scourge\", additionally deals Physical DMG equal to {{final_hit}}% of Khaslana's ATK, which is evenly distributed across all enemies.",
+                "scaling": {
+                    "total_damage": [585.0, 643.5, 702.0, 760.5, 819.0, 877.5, 950.625, 1023.75, 1096.875, 1170.0, 1228.5, 1287.0],
+                    "bounce_damage": [22.5, 24.75, 27.0, 29.25, 31.5, 33.75, 36.5625, 39.375, 42.1875, 45.0, 47.25, 49.5],
+                    "final_hit": [225.0, 247.5, 270.0, 292.5, 315.0, 337.5, 365.625, 393.75, 421.875, 450.0, 472.5, 495.0]
+                }
+            }
+            ]
+        },
+        "ultimate": {
+            "type": "Ultimate",
+            "name": "He Who Bears the World Must Burn",
+            "tag": "AoE",
+            "energy_cost": 12,
+            "break_aoe": 20,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Transforms into Khaslana. During the transformation, deploys the Territory \"Ruinous Irontomb.\" Within the Territory, other teammates depart and cannot take action, and all enemies have Physical Weaknesses. Khaslana does not enter his own turn, but has 8 Khaslana's extra turn(s), with a SPD set at 60% of Khaslana's base SPD. When the last of Khaslana's extra turns starts, immediately launches a final hit and deals Physical Ultimate DMG equal to {{detransformation}}% of Khaslana's ATK that is distributed evenly across all enemies.",
+            "scaling": {
+                "detransformation": [480.0, 528.0, 576.0, 624.0, 672.0, 720.0, 780.0, 840.0, 900.0, 960.0, 1008.0, 1056.0]
+            }
+        },
+        "talent": {
+            "type": "Talent",
+            "name": "Pyric Corpus",
+            "tag": "Enhance",
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Phainon's Talent. When \"Coreflame\" reaches 12 point(s), can activate Ultimate. Even after reaching the limit, can still hold up to 3 overflow point(s). When the transformation ends, gains \"Coreflame\" based on the number of overflow points. When Phainon is targeted by an ability from any other target, gains 1 \"Coreflame\" point. And if the ability is cast by one of Phainon's teammates, can also increase Phainon's CRIT DMG by {{crit_buff}}% for 3 turn(s).",
+            "scaling": {
+                "crit_buff": [15.0, 16.5, 18.0, 19.5, 21.0, 22.5, 24.375, 26.25, 28.125, 30.0, 31.5, 33.0]
+            }
+        },
+        "talent_enhanced": {
+            "type": "Talent (Enhanced)",
+            "name": "Fate: Divive Vessel",
+            "tag": "Enhance",
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Khaslana's Talent. Upon transformation, gains 4 point(s) of \"Scourge\". If this happens during an ally target's turn, then the duration of all buffs on that target is extended by 1 turn and the current turn ends. Khaslana is immune to Crowd Control debuffs, has 1 Enhanced Basic ATK and 2 Enhanced Skills, but cannot use Ultimate. During the transformation, increases ATK by {{atk_buff}}% and Max HP by {{hp_buff}}%. After using an attack, restores HP equal to 20% of his Max HP. When Khaslana takes a killing blow, he will not get knocked down. Instead, he will restore HP equal to 25% of Max HP and immediately launch a final hit. For every 1 remaining Khaslana's extra turn, the final hit's DMG multiplier decreases by 12.5% of its original multiplier value. When the transformation ends, increases all allies' SPD by 15% for 1 turn.",
+            "scaling": {
+                "atk_buff": [40.0, 44.5, 48.0, 52.0, 56.0, 60.0, 65.0, 70.0, 75.0, 80.0, 84.0, 88.0],
+                "hp_buff": [135.0, 148.5, 162.0, 175.5, 189.0, 202.5, 219.375, 236.25, 253.125, 270.0, 283.5, 297.0]
+            }
+        },        
+        "technique": {
+            "type": "Technique",
+            "name": "Beginning of the End",
+            "tag": "Attack",
+            "break_main": 20,
+            "description": "While Phainon is in the team, increases Max Technique Points by 3. When actively using this Technique, consumes 2 Technique Points and immediately attacks all enemies within a certain range. After entering combat, regenerates 25 Energy for allies and gains 2 \"Scourge\" and 1 Skill Point(s). Deals Physical DMG equal to 200% of Phainon's ATK to all enemies at the start of each wave. If attacking a normal enemy, immediately defeats them without entering combat. No Technique Points are consumed if no enemies are hit."
+        }
+    },
+    "major_traces": {
+        "2": {
+            "name": "March to Oblivion",
+            "description": "When the battle starts, gains 1 point(s) of \"Coreflame.\" When the transformation ends, gains 3 point(s) of \"Coreflame.\""
+        },
+        "4": {
+            "name": "Bide in Flames",
+            "description": "When receiving healing or a Shield from a teammate, deals 45% increased DMG for 4 turn(s). This effect cannot trigger repeatedly within one turn. When receiving an Energy Regeneration effect from a teammate's ability, gains 1 point(s) of \"Coreflame.\""
+        },
+        "6": {
+            "name": "Shine with Valor",
+            "description": "When entering combat or ending transformation, increases ATK by 50%. This effect can stack up to 2 time(s)."
+        }
+    },
+    "stat_bonuses": [
+        {
+            "stat": "SPD",
+            "value": "+5"
+        },
+        {
+            "stat": "CRIT Rate",
+            "value": "+12%"
+        },
+        {
+            "stat": "CRIT DMG",
+            "value": "+37.3%"
+        }
+    ],
+    "eidolons": [
+        {
+            "level": 1,
+            "name": "Fire and Light Bind Virtue and Vice",
+            "description": "The base SPD inheritance ratio for Khaslana's extra turn increases to 66%. For every enemy target defeated in one battle, additionally increases this ratio by 1.5%, up to a max of 84%. When using Ultimate, increases CRIT DMG by 50%, lasting for 3 turn(s)."
+        },
+        {
+            "level": 2,
+            "name": "Sky and Earth Churn Mortal Froth",
+            "description": "Khaslana's Physical RES PEN increases by 20%. When one use of \"Foundation: Stardeath Verdict\" consumes 4 \"Scourge\" point(s), gains 1 extra turn."
+        },
+        {
+            "level": 3,
+            "name": "Depths of Quiet, Entombed in Ruin",
+            "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+        },
+        {
+            "level": 4,
+            "name": "Faces of Titans, Blurred by Time",
+            "description": "When using \"Calamity: Soulscorch Edict,\" additionally gains 4 stack(s) of \"Soulscorch.\""
+        },
+        {
+            "level": 5,
+            "name": "The Wheel Spins Forevermore",
+            "description": "Skill Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+        },
+        {
+            "level": 6,
+            "name": "Embers of Old Rise Still",
+            "description": "The number of overflow points allowed for \"Coreflame\" no longer has an upper limit. When the battle starts, gains 6 point(s) of \"Coreflame.\" After using the attack from \"Foundation: Stardeath Verdict,\" additionally deals True DMG equal to 36% of the total DMG dealt in this attack to the enemy target with the highest HP."
+        }
+    ]
+}

@@ -22,7 +22,20 @@
             "min_level": 1,
             "max_level": 7,
             "default_level": 6,
-            "description_template": "Deals Ice DMG equal to {{scaling}}% of Misha's ATK to a single target enemy."
+            "description_template": "Deals Ice DMG equal to {{scaling1}}% of Misha's ATK to a single target enemy.",
+            "scaling": {
+                "scaling1": [
+                    50,
+                    60,
+                    70,
+                    80,
+                    90,
+                    100,
+                    110,
+                    120,
+                    130
+                ]
+            }
         },
         "skill": {
             "type": "Skill",

@@ -13,8 +13,7 @@
         "astro": "astro",
         "download:character-assets": "node scripts/download-hsr-assets.mjs character",
         "download:light-cone-assets": "node scripts/download-hsr-assets.mjs light-cone",
-        "download:relic-assets": "node scripts/download-hsr-assets.mjs relic",
-        "download:filter-assets": "node scripts/download-hsr-assets.mjs filter"
+        "download:relic-assets": "node scripts/download-hsr-assets.mjs relic"
     },
     "dependencies": {
         "astro": "^7.2.0",
@@ -29,5 +28,9 @@
         "jsonc-parser": "^3.3.1",
         "prettier": "^3.8.3",
         "prettier-plugin-astro": "^0.14.1"
+    },
+    "allowScripts": {
+        "@parcel/watcher@2.6.0": true,
+        "esbuild@0.28.2": true
     }
 }
