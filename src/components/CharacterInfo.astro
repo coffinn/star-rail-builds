@@ -2,6 +2,7 @@
 import {
     renderCharacterAbilityDescription,
     type CharacterAbility,
+    type CharacterAbilityVariant,
     type CharacterData,
 } from '../utils/character-data';
 
@@ -59,6 +60,37 @@ const getAbilityLevels = (ability: CharacterAbility) => {
             length: max - min + 1,
         },
         (_, index) => min + index,
+    );
+};
+const renderVariantDescription = (
+    variant: CharacterAbilityVariant,
+    parentAbility: CharacterAbility,
+    requestedLevel?: number,
+) => {
+    if (!variant.description_template || !variant.scaling) {
+        return variant.description ?? '';
+    }
+
+    const minLevel = parentAbility.min_level ?? 1;
+
+    const maxLevel = parentAbility.max_level ?? minLevel;
+
+    const defaultLevel = parentAbility.default_level ?? maxLevel;
+
+    const level = Math.max(
+        minLevel,
+        Math.min(requestedLevel ?? defaultLevel, maxLevel),
+    );
+
+    const index = level - minLevel;
+
+    return variant.description_template.replace(
+        /\{\{([a-zA-Z0-9_-]+)\}\}/g,
+        (match, key: string) => {
+            const value = variant.scaling?.[key]?.[index];
+
+            return value === undefined ? match : String(value);
+        },
     );
 };
 ---
@@ -125,6 +157,15 @@ const getAbilityLevels = (ability: CharacterAbility) => {
         <div class="character-info-details">
             {
                 abilities.map(({ id, ability }) => {
+                    console.log(
+                        '[CHARACTER ABILITY]',
+                        id,
+                        ability.name,
+                        ability.variants?.map((variant) => ({
+                            type: variant.type,
+                            name: variant.name,
+                        })),
+                    );
                     const minLevel = ability.min_level ?? 1;
 
                     const maxLevel = ability.max_level ?? minLevel;
@@ -240,6 +281,96 @@ const getAbilityLevels = (ability: CharacterAbility) => {
                                         </p>
                                     )}
                                 </div>
+
+                                {ability.variants?.map((variant) => {
+                                    const variantScalable =
+                                        Boolean(
+                                            variant.description_template &&
+                                            variant.scaling,
+                                        ) && maxLevel > minLevel;
+
+                                    return (
+                                        <section class="character-ability-variant">
+                                            <div class="character-ability-variant-header">
+                                                <strong>{variant.type}</strong>
+
+                                                <span>{variant.name}</span>
+                                            </div>
+
+                                            {variant.tag && (
+                                                <p class="character-ability-tag">
+                                                    <strong>Type:</strong>{' '}
+                                                    {variant.tag}
+                                                </p>
+                                            )}
+
+                                            <div class="character-detail-meta">
+                                                {variant.energy_gain !==
+                                                    undefined && (
+                                                    <span>
+                                                        Energy Gain:{' '}
+                                                        <strong>
+                                                            {
+                                                                variant.energy_gain
+                                                            }
+                                                        </strong>
+                                                    </span>
+                                                )}
+
+                                                {variant.energy_cost !==
+                                                    undefined && (
+                                                    <span>
+                                                        Energy Cost:{' '}
+                                                        <strong>
+                                                            {
+                                                                variant.energy_cost
+                                                            }
+                                                        </strong>
+                                                    </span>
+                                                )}
+
+                                                {variant.break !==
+                                                    undefined && (
+                                                    <span>
+                                                        Break:{' '}
+                                                        <strong>
+                                                            {variant.break}
+                                                        </strong>
+                                                    </span>
+                                                )}
+                                            </div>
+
+                                            <div class="character-ability-description">
+                                                {variantScalable ? (
+                                                    levels.map((level) => (
+                                                        <p
+                                                            data-character-level-panel={
+                                                                level
+                                                            }
+                                                            hidden={
+                                                                level !==
+                                                                defaultLevel
+                                                            }
+                                                        >
+                                                            {renderVariantDescription(
+                                                                variant,
+                                                                ability,
+                                                                level,
+                                                            )}
+                                                        </p>
+                                                    ))
+                                                ) : (
+                                                    <p>
+                                                        {renderVariantDescription(
+                                                            variant,
+                                                            ability,
+                                                        )}
+                                                    </p>
+                                                )}
+                                            </div>
+                                        </section>
+                                    );
+                                })}
                             </div>
                         </details>
                     );
@@ -358,6 +489,40 @@ const getAbilityLevels = (ability: CharacterAbility) => {
 </script>
 
 <style>
+    .character-ability-variant {
+        box-sizing: border-box;
+
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+
+        margin-top: 1rem;
+        padding-top: 1rem;
+
+        border-top: 1px solid color-mix(in srgb, currentColor 15%, transparent);
+    }
+
+    .character-ability-variant-header {
+        display: flex;
+        align-items: baseline;
+        flex-wrap: wrap;
+
+        gap: 0.5rem 0.75rem;
+
+        margin-bottom: 0.75rem;
+    }
+
+    .character-ability-variant-header > strong {
+        font-size: 0.85rem;
+
+        text-transform: uppercase;
+
+        opacity: 0.7;
+    }
+
+    .character-ability-variant-header > span {
+        font-weight: 600;
+    }
     .character-info-card {
         box-sizing: border-box;
 

@@ -4,6 +4,11 @@
             "version": "Site Conversion",
             "entries": [
                 {
+                    "date": "August 21, 2026",
+                    "changes": "Honkai: Star Rail site conversion finished, starting to populate with data",
+                    "appliedBy": "Navigator Team"
+                },
+                {
                     "date": "August 20, 2026",
                     "changes": "Initial Honkai: Star Rail site conversion.",
                     "appliedBy": "Navigator Team"
