@@ -6,7 +6,7 @@
     "path": "harmony",
     "version_released": "1.6",
     "max_energy": 130,
-    "level_80_stat": {
+    "level_80_stats": {
         "hp": 1086,
         "atk": 659,
         "def": 485,
