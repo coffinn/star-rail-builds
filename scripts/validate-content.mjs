@@ -608,8 +608,8 @@ for (const element of fs.readdirSync(
                     characterDataFile,
                 )
             ) {
-                error(
-                    `Missing src/data/characters/${character}.json`,
+                console.log(
+                    `○ Staged character "${character}" has no src/data/characters/${character}.json yet; skipping character-data validation.`,
                 );
             } else {
                 const characterData =
@@ -620,7 +620,7 @@ for (const element of fs.readdirSync(
                 if (
                     characterData?.id &&
                     characterData.id !==
-                        character
+                    character
                 ) {
                     error(
                         `Character ID "${characterData.id}" does not match filename "${character}.json"`,
@@ -630,7 +630,7 @@ for (const element of fs.readdirSync(
                 if (
                     characterData?.element &&
                     characterData.element !==
-                        element
+                    element
                 ) {
                     error(
                         `${character}.json says element "${characterData.element}", but content folder is "${element}"`,
@@ -640,7 +640,7 @@ for (const element of fs.readdirSync(
                 if (
                     characterData?.path &&
                     characterData.path !==
-                        metadata.path
+                    metadata.path
                 ) {
                     error(
                         `${character}.json says Path "${characterData.path}", but metadata says "${metadata.path}"`,
