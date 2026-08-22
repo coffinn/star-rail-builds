@@ -1,0 +1,179 @@
+{
+  "id": "arlan",
+  "name": "Arlan",
+  "rarity": 4,
+  "element": "lightning",
+  "path": "destruction",
+  "version_released": "1.0",
+  "max_energy": 110,
+
+  "level_80_stats": {
+    "hp": 1199,
+    "atk": 599,
+    "def": 330,
+    "spd": 102
+  },
+
+  "abilities": {
+    "basic": {
+      "type": "Basic ATK",
+      "name": "Lightning Rush",
+      "tag": "Single Target",
+      "energy_gain": 20,
+      "break": 10,
+
+      "min_level": 1,
+      "max_level": 7,
+      "default_level": 6,
+
+      "description_template": "Deals Lightning DMG equal to {{damage}}% of Arlan's ATK to a single enemy.",
+
+      "scaling": {
+        "damage": [
+          50,
+          60,
+          70,
+          80,
+          90,
+          100,
+          110
+        ]
+      }
+    },
+
+    "skill": {
+      "type": "Skill",
+      "name": "Shackle Breaker",
+      "tag": "Single Target",
+      "energy_gain": 30,
+      "break_main": 20,
+      "break_aoe": 10,
+
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+
+      "description_template": "Consumes Arlan's HP equal to 15% of his Max HP to deal Lightning DMG equal to {{damage}}% of Arlan's ATK to a single enemy. If Arlan does not have sufficient HP, his HP will be reduced to 1 after using his Skill.",
+
+      "scaling": {
+        "damage": [120, 132, 144, 156, 168, 180, 195, 210, 225, 240, 252, 264]
+
+      }
+    },
+
+    "ultimate": {
+      "type": "Ultimate",
+      "name": "Frenzied Punishment",
+      "tag": "Blast",
+      "energy_cost": 110,
+      "energy_gain": 5,
+      "break_main": 20,
+      "break_aoe": 10,
+
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+
+      "description_template": "Deals Lightning DMG equal to {{main_damage}}% of Arlan's ATK to a single enemy and Lightning DMG equal to {{adjacent_damage}}% of Arlan's ATK to enemies adjacent to it.",
+
+      "scaling": {
+        "main_damage": [192, 204.8, 217.6, 230.4, 243.2, 256, 272, 288, 304, 320, 332.8, 345.6],
+        "adjacent_damage": [96,102.4, 108.8, 115.2, 121.6, 128, 136, 144, 152, 160, 166.4 , 172.8]
+      }
+    },
+
+    "talent": {
+      "type": "Talent",
+      "name": "Pain and Anger",
+      "tag": "Enhance",
+
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+
+      "description_template": "Based on Arlan's current missing HP percentage, gains DMG bonus, up to a maximum increase of {{dmg_boost}}% DMG dealt by Arlan.",
+
+      "scaling": {
+        "dmg_boost": [36, 39.6, 43.2, 46.8, 50.4, 54, 58.5, 63, 67.5, 72, 75.6, 79.2]
+      }
+    },
+
+    "technique": {
+      "type": "Technique",
+      "name": "Swift Harvest",
+      "tag": "Attack",
+      "break": 20,
+      "description": "Immediately attacks the enemy. After entering battle, deals Lightning DMG equal to 80% of Arlan's ATK to all enemies."
+    }
+  },
+
+  "major_traces": {
+    "2": {
+      "name": "Revival",
+      "description": "If the current HP percentage is 30% or lower when defeating an enemy, immediately restores HP equal to 20% of Max HP."
+    },
+
+    "4": {
+      "name": "Endurance",
+      "description": "The chance to resist DoT Debuffs increases by 50%."
+    },
+
+    "6": {
+      "name": "Repel",
+      "description": "Upon entering battle, if Arlan's HP percentage is less than or equal to 50%, he can nullify all DMG received except for DoTs until he is attacked."
+    }
+  },
+
+  "stat_bonuses": [
+    {
+      "stat": "HP",
+      "value": "+10%"
+    },
+    {
+      "stat": "ATK",
+      "value": "+24%"
+    },
+    {
+      "stat": "Effect RES",
+      "value": "+28%"
+    }
+  ],
+
+  "eidolons": [
+    {
+      "level": 1,
+      "name": "To the Bitter End",
+      "description": "When HP percentage is lower than or equal to 50% of Max HP, increases DMG dealt by Skill by 10%."
+    },
+
+    {
+      "level": 2,
+      "name": "Breaking Free",
+      "description": "Using Skill or Ultimate removes 1 debuff from this unit."
+    },
+
+    {
+      "level": 3,
+      "name": "Power Through",
+      "description": "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+    },
+
+    {
+      "level": 4,
+      "name": "Turn the Tables",
+      "description": "When struck by a killing blow after entering battle, instead of becoming knocked down, Arlan immediately restores his HP to 25% of his Max HP. This effect is automatically removed after it is triggered once or after 2 turn(s) have elapsed."
+    },
+
+    {
+      "level": 5,
+      "name": "Hammer and Tongs",
+      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+    },
+
+    {
+      "level": 6,
+      "name": "Self-Sacrifice",
+      "description": "When the current HP percentage drops to 50% or below, Ultimate deals 20% more DMG, and the DMG multiplier for adjacent targets is raised to the same level as that for the primary target."
+    }
+  ]
+}
