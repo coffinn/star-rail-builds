@@ -1,345 +1,305 @@
 {
-  "id": "mydei",
-  "name": "Mydei",
-  "rarity": 5,
-  "element": "imaginary",
-  "path": "destruction",
-  "version_released": "3.1",
-  "max_energy": 160,
-
-  "level_80_stats": {
-    "hp": 1552,
-    "atk": 26,
-    "def": 194,
-    "spd": 95
-  },
-
-  "abilities": {
-    "basic": {
-      "type": "Basic ATK",
-      "name": "Vow of Voyage",
-      "tag": "Single Target",
-      "energy_gain": 20,
-      "break": 10,
-
-      "min_level": 1,
-      "max_level": 7,
-      "default_level": 6,
-
-      "description_template": "Deals Imaginary DMG equal to {{damage_one_target}}% of Mydei's Max HP to one designated enemy.",
-
-      "scaling": {
-        "damage_one_target": [
-          25,
-          30,
-          35,
-          40,
-          45,
-          50,
-          55
-        ]
-      }
+    "id": "mydei",
+    "name": "Mydei",
+    "rarity": 5,
+    "element": "imaginary",
+    "path": "destruction",
+    "version_released": "3.1",
+    "max_energy": 160,
+    "level_80_stats": {
+        "hp": 1552,
+        "atk": 26,
+        "def": 194,
+        "spd": 95
     },
-
-    "skill": {
-      "type": "Skill",
-      "name": "Deaths are Legion, Regrets are None",
-      "tag": "Restore",
-      "energy_gain": 30,
-      "break": 30,
-
-      "min_level": 1,
-      "max_level": 12,
-      "default_level": 10,
-
-      "description_template": "Consumes HP by an amount equal to 50% of Mydei's current HP. Deals Imaginary DMG equal to {{healing_atk}}% of Mydei's Max HPto one designated enemy and Imaginary DMG equal to {{damage_side_targets}}% of Mydei's Max HP to adjacent targets. If the current HP is not sufficient, using Skill reduces Mydei's current HP to 1.",
-      
-      "scaling": {
-        "damage_one_target": [
-          45,
-          49.5,
-          54,
-          58.5,
-          63,
-          67.5,
-          73.13,
-          78.75,
-          84.38,
-          90,
-          94.5,
-          99
-        ],
-        "damage_side_targets": [
-          25,
-          27.5,
-          40,
-          43.5,
-          35,
-          37.5,
-          40.63,
-          43.75,
-          46.88,
-          50,
-          52.5,
-          55
-       
-        ]
-      }
+    "abilities": {
+        "basic": {
+            "type": "Basic ATK",
+            "name": "Vow of Voyage",
+            "tag": "Single Target",
+            "energy_gain": 20,
+            "break": 10,
+            "min_level": 1,
+            "max_level": 7,
+            "default_level": 6,
+            "description_template": "Deals Imaginary DMG equal to {{damage_one_target}}% of Mydei's Max HP to one designated enemy.",
+            "scaling": {
+                "damage_one_target": [
+                    25,
+                    30,
+                    35,
+                    40,
+                    45,
+                    50,
+                    55
+                ]
+            }
+        },
+        "skill": {
+            "type": "Skill",
+            "name": "Deaths are Legion, Regrets are None",
+            "tag": "Blast",
+            "energy_gain": 30,
+            "break": 30,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Consumes HP by an amount equal to 50% of Mydei's current HP. Deals Imaginary DMG equal to {{healing_atk}}% of Mydei's Max HP to one designated enemy and Imaginary DMG equal to {{damage_side_targets}}% of Mydei's Max HP to adjacent targets. If the current HP is not sufficient, using Skill reduces Mydei's current HP to 1.",
+            "scaling": {
+                "damage_one_target": [
+                    45,
+                    49.5,
+                    54,
+                    58.5,
+                    63,
+                    67.5,
+                    73.13,
+                    78.75,
+                    84.38,
+                    90,
+                    94.5,
+                    99
+                ],
+                "damage_side_targets": [
+                    25,
+                    27.5,
+                    40,
+                    43.5,
+                    35,
+                    37.5,
+                    40.63,
+                    43.75,
+                    46.88,
+                    50,
+                    52.5,
+                    55
+                ]
+            },
+            "variants": [
+                {
+                    "type": "Enhanced Skill",
+                    "name": "Kingslayer Be King",
+                    "tag": "Blast",
+                    "energy_gain": 30,
+                    "break": 30,
+                    "description_template": "Consumes HP by an amount equal to 35% of Mydei's current HP. Deals Imaginary DMG equal to {{damage_one_target}}% of Mydei's Max HP to one enemy and Imaginary DMG equal to {{damage_adjacent}}% of Mydei's Max HP to adjacent targets. If the current HP is not sufficient, using Skill reduces Mydei's current HP to 1. This ability will be automatically used.",
+                    "scaling": {
+                        "damage_one_target": [
+                            55,
+                            60.5,
+                            66,
+                            71.5,
+                            77,
+                            82.5,
+                            89.38,
+                            96.25,
+                            103.13,
+                            110,
+                            115.5,
+                            121
+                        ],
+                        "damage_adjacent": [
+                            33,
+                            36.3,
+                            39.6,
+                            42.9,
+                            46.2,
+                            49.5,
+                            53.63,
+                            57.75,
+                            61.88,
+                            66,
+                            69.3,
+                            72.6
+                        ]
+                    }
+                },
+                {
+                    "type": "Enhanced Skill",
+                    "name": "Godslayer be God",
+                    "tag": "Blast",
+                    "energy_gain": 30,
+                    "break": 30,
+                    "description_template": "Consumes 150 point(s) of Charge. Deals Imaginary DMG equal to {{damage_one_target}}% of Mydei's Max HP to one enemy and Imaginary DMG equal to {{damage_adjacent}}% of Mydei's Max HP to adjacent targets. This ability will be automatically used. While this ability is in use, Charge cannot be accumulated.",
+                    "scaling": {
+                        "damage_one_target": [
+                            140,
+                            154,
+                            168,
+                            182,
+                            196,
+                            210,
+                            228.5,
+                            245,
+                            262.5,
+                            280,
+                            294,
+                            308
+                        ],
+                        "damage_adjacent": [
+                            84,
+                            92.4,
+                            100.8,
+                            109.2,
+                            117.6,
+                            126,
+                            136.5,
+                            147,
+                            157.5,
+                            168,
+                            176.4,
+                            184.8
+                        ]
+                    }
+                }
+            ]
+        },
+        "ultimate": {
+            "type": "Ultimate",
+            "name": "Throne of Bones",
+            "tag33,": "Blast",
+            "energy_cost": 160,
+            "energy_gain": 5,
+            "break": 20,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Restores HP by {{restore_hp}}% of Mydei's Max HP and accumulates 20 Talent's Charge point(s). Deals Imaginary DMG equal to {{damage_one}}% of Mydei's Max HP to one designated enemy, and deals Imaginary DMG equal to {{damage_adjacent}}% of Mydei's Max HP to adjacent targets. Additionally, Taunts the target and targets adjacent to it, lasting for 2 turn(s). The next use of \"Godslayer Be God\" prioritizes attacking one designated enemy, and this effect only works on the latest target.",
+            "scaling": {
+                "damage_one": [
+                    96,
+                    102.4,
+                    108.8,
+                    115.2,
+                    121.6,
+                    128,
+                    136,
+                    144,
+                    152,
+                    160,
+                    166.4,
+                    172.8
+                ],
+                "damage_adjacent": [
+                    60,
+                    64,
+                    68,
+                    72,
+                    76,
+                    80,
+                    85,
+                    90,
+                    95,
+                    100,
+                    104,
+                    108
+                ],
+                "restore_hp": [
+                    15,
+                    15.5,
+                    16,
+                    16.5,
+                    17,
+                    17.5,
+                    18.125,
+                    18.75,
+                    19.375,
+                    20,
+                    20.5,
+                    21
+                ]
+            }
+        },
+        "talent": {
+            "type": "Talent",
+            "name": "Blood for Blood",
+            "tag": "Enhance",
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "For each 1% of HP lost, accumulates 1 point of Charge (up to 200 points). When Charge reaches 100, consumes 100 points of Charge to enter the \"Vendetta\" state, restores HP equal to {{restore_hp}}% of Mydei's Max HP, and advances action by 100%. While the \"Vendetta\" state is active, Max HP increases by 50% of the current Max HP and DEF remains at 0. At the start of this unit's turn, automatically uses \"Kingslayer Be King.\"When Charge reaches 150 points during the \"Vendetta\" state, Mydei immediately gains 1 extra turn and automatically uses \"Godslayer Be God.\" When receiving a killing blow during the \"Vendetta\" state, Mydei will not be knocked down, but will clear his Charge, exits the \"Vendetta\" state, and restores HP by 50% of his Max HP.",
+            "scaling": {
+                "restore_hp": [
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21.25,
+                    22.5,
+                    23.75,
+                    25,
+                    26,
+                    27
+                ]
+            }
+        },
+        "technique": {
+            "type": "Technique",
+            "name": "Cage of Broken Lance",
+            "tag": "Impair",
+            "description": "After using Technique, pulls in enemies within a certain area and inflicts Daze on them for 10 second(s). Dazed enemies will not actively attack ally targets. If actively attacking Dazed enemies, when entering battle, deals Imaginary DMG equal to 80% of Mydei's Max HP to all enemies, and Taunts the targets, lasting for 1 turn(s). This unit accumulates 50 point(s) of Talent's Charge."
+        }
     },
-    "enhanced-skill": {
-      "type": "Enhanced Skill",
-      "name": "Kingslayer Be King",
-      "tag": "Restore",
-      "energy_gain": 30,
-      "break": 30,
-
-      "min_level": 1,
-      "max_level": 12,
-      "default_level": 10,
-
-      "description_template": "Consumes HP by an amount equal to 35% of Mydei's current HP. Deals Imaginary DMG equal to {{damage_one_target}}% of Mydei's Max HP to one enemy and Imaginary DMG equal to {{damage_adjacent}}% of Mydei's Max HP to adjacent targets. If the current HP is not sufficient, using Skill reduces Mydei's current HP to 1. This ability will be automatically used.",
-      
-      "scaling": {
-        "damage_one_target": [
-          55,
-          60.5,
-          66,
-          71.5,
-          77,
-          82.5,
-          89.38,
-          96.25,
-          103.13,
-          110,
-          115.5,
-          121
-        ],
-        "damage_adjacent": [
-          33,
-          36.3,
-          39.6,
-          42.9,
-          46.2,
-          49.5,
-          53.63,
-          57.75,
-          61.88,
-          66,
-          69.3,
-          72.6
-       
-        ]
-      }
+    "major_traces": {
+        "2": {
+            "name": "Earth and Water",
+            "description": "During the \"Vendetta\" state, Mydei will not exit the \"Vendetta\" state when receiving a killing blow. This effect can trigger 3 time(s) per battle."
+        },
+        "4": {
+            "name": "Thirty Tyrants",
+            "description": "While in the \"Vendetta\" state, Mydei is immune to Crowd Control debuffs."
+        },
+        "6": {
+            "name": "Bloodied Chiton",
+            "description": "When battle starts, if Mydei's Max HP exceeds 4000, for every 100 excess HP, Mydei's CRIT Rate increases by 1.2%, his Charge ratio from enemy targets' DMG increases by 2.5%, and his Incoming Healing increases by 0.75%. Up to 4000 excess HP can be taken into account for this effect."
+        }
     },
-    "enhanced-skill2": {
-      "type": "Enhanced Skill",
-      "name": "Kingslayer Be King",
-      "tag": "Restore",
-      "energy_gain": 30,
-      "break": 30,
-
-      "min_level": 1,
-      "max_level": 12,
-      "default_level": 10,
-
-      "description_template": "Consumes 150 point(s) of Charge. Deals Imaginary DMG equal to {{damage_one_target}}% of Mydei's Max HP to one enemy and Imaginary DMG equal to {{damage_adjacent}}% of Mydei's Max HP to adjacent targets. This ability will be automatically used. While this ability is in use, Charge cannot be accumulated.",
-      
-      "scaling": {
-        "damage_one_target": [
-          140,
-          154,
-          168,
-          182,
-          196,
-          210,
-          228.5,
-          245,
-          262.5,
-          280,
-          294,
-          308
-        ],
-        "damage_adjacent": [
-          84,
-          92.4,
-          100.8,
-          109.2,
-          117.6,
-          126,
-          136.5,
-          147,
-          157.5,
-          168,
-          176.4,
-          184.8       
-        ]
-      }
-    },
-
-    "ultimate": {
-      "type": "Ultimate",
-      "name": "Throne of Bones",
-      "tag33,": "Blast",
-      "energy_cost": 160,
-      "energy_gain": 5,
-      "break": 20,
-
-      "min_level": 1,
-      "max_level": 12,
-      "default_level": 10,
-
-      "description_template": "Restores HP by 15%—21% of Mydei's Max HP and accumulates 20 Talent's Charge point(s). Deals Imaginary DMG equal to 96%—172.8% of Mydei's Max HP to one designated enemy, and deals Imaginary DMG equal to 60%—108% of Mydei's Max HP to adjacent targets. Additionally, Taunts the target and targets adjacent to it, lasting for 2 turn(s). The next use of \"Godslayer Be God\" prioritizes attacking one designated enemy, and this effect only works on the latest target.",
-
-      "scaling": {
-
-        "restore_hp": [
-          96,
-          102.4,
-          108.8,
-          115.2,
-          121.6,
-          128,
-          136,
-          144,
-          152,
-          160,
-          166.4,
-          172.8
-        ],
-        "damage_one": [
-          60,
-          64,
-          68,
-          72,
-          76,
-          80,
-          85,
-          90,
-          95,
-          100,
-          104,
-          108
-        ],
-        "damage_adjacent": [
-          15,
-          15.5,
-          16,
-          16.5,
-          17,
-          17.5,
-          18.125,
-          19.375,
-          20,
-          20.5,
-          21
-        ]
-      }
-    },
-
-    "talent": {
-      "type": "Talent",
-      "name": "Blood for Blood",
-      "tag": "Enhance",
-
-      "min_level": 1,
-      "max_level": 12,
-      "default_level": 10,
-
-      "description_template": "For each 1% of HP lost, accumulates 1 point of Charge (up to 200 points). When Charge reaches 100, consumes 100 points of Charge to enter the \"Vendetta\" state, restores HP equal to {{restore_hp}}% of Mydei's Max HP, and advances action by 100%. While the \"Vendetta\" state is active, Max HP increases by 50% of the current Max HP and DEF remains at 0. At the start of this unit's turn, automatically uses \"Kingslayer Be King.\"When Charge reaches 150 points during the \"Vendetta\" state, Mydei immediately gains 1 extra turn and automatically uses \"Godslayer Be God.\" When receiving a killing blow during the \"Vendetta\" state, Mydei will not be knocked down, but will clear his Charge, exits the \"Vendetta\" state, and restores HP by 50% of his Max HP.",
-
-      "scaling": {
-        "restore_hp": [
-          15,
-          16,
-          17,
-          18,
-          19,
-          20,
-          21.25,
-          22.5,
-          23.75,
-          25,
-          26,
-          27
-        ]
-      }
-    },
-
-    "technique": {
-      "type": "Technique",
-      "name": "Cage of Broken Lance",
-      "tag": "Impair",
-      "description": "After using Technique, pulls in enemies within a certain area and inflicts Daze on them for 10 second(s). Dazed enemies will not actively attack ally targets. If actively attacking Dazed enemies, when entering battle, deals Imaginary DMG equal to 80% of Mydei's Max HP to all enemies, and Taunts the targets, lasting for 1 turn(s). This unit accumulates 50 point(s) of Talent's Charge."
-    }
-  },
-
-  "major_traces": {
-    "2": {
-      "name": "Earth and Water",
-      "description": "During the \"Vendetta\" state, Mydei will not exit the \"Vendetta\" state when receiving a killing blow. This effect can trigger 3 time(s) per battle."
-    },
-
-    "4": {
-      "name": "Thirty Tyrants",
-      "description": "While in the \"Vendetta\" state, Mydei is immune to Crowd Control debuffs."
-    },
-
-    "6": {
-      "name": "Bloodied Chiton",
-      "description": "When battle starts, if Mydei's Max HP exceeds 4000, for every 100 excess HP, Mydei's CRIT Rate increases by 1.2%, his Charge ratio from enemy targets' DMG increases by 2.5%, and his Incoming Healing increases by 0.75%. Up to 4000 excess HP can be taken into account for this effect."
-    }
-  },
-
-  "stat_bonuses": [
-    {
-      "stat": "HP",
-      "value": "+18%"
-    },
-    {
-      "stat": "CRIT DMG",
-      "value": "+32%"
-    },
-    {
-      "stat": "SPD",
-      "value": "+5"
-    }
-  ],
-
-  "eidolons": [
-    {
-      "level": 1,
-      "name": "Frost Hones Spine of Steel",
-      "description": "Increases the DMG multiplier dealt by \"Godslayer Be God\" to the primary target by 30%. This ability now deals to all enemies Imaginary DMG equal to the DMG multiplier dealt to the primary target."
-    },
-
-    {
-      "level": 2,
-      "name": "Strife Beholds Cry of Dead",
-      "description": "During \"Vendetta\", the DMG dealt by Mydei ignores 15% of enemy targets' DEF. After he receives healing, converts 40% of the healed amount to Charge. The tally of the converted Charge cannot exceed 40 point(s). Resets this tally of Charge after any unit takes action."
-    },
-
-    {
-      "level": 3,
-      "name": "Honor Exalts Feast of Faith",
-      "description": "Skill Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
-    },
-
-    {
-      "level": 4,
-      "name": "Siren Jolts the Laconic Lion",
-      "description": "While in \"Vendetta\", increases CRIT DMG by 30% and restores HP by 10% of this unit's Max HP after receiving attacks from enemy targets."
-    },
-
-    {
-      "level": 5,
-      "name": "War Chisels Flesh of Flame",
-      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
-    },
-
-    {
-      "level": 6,
-      "name": "Legacy Scales Mound of Blood",
-      "description": "When entering battle, immediately enters the \"Vendetta\" state, and lowers the Charge required for \"Godslayer Be God\" to 100 point(s)."
-    }
-  ]
+    "stat_bonuses": [
+        {
+            "stat": "HP",
+            "value": "+18%"
+        },
+        {
+            "stat": "CRIT DMG",
+            "value": "+32%"
+        },
+        {
+            "stat": "SPD",
+            "value": "+5"
+        }
+    ],
+    "eidolons": [
+        {
+            "level": 1,
+            "name": "Frost Hones Spine of Steel",
+            "description": "Increases the DMG multiplier dealt by \"Godslayer Be God\" to the primary target by 30%. This ability now deals to all enemies Imaginary DMG equal to the DMG multiplier dealt to the primary target."
+        },
+        {
+            "level": 2,
+            "name": "Strife Beholds Cry of Dead",
+            "description": "During \"Vendetta\", the DMG dealt by Mydei ignores 15% of enemy targets' DEF. After he receives healing, converts 40% of the healed amount to Charge. The tally of the converted Charge cannot exceed 40 point(s). Resets this tally of Charge after any unit takes action."
+        },
+        {
+            "level": 3,
+            "name": "Honor Exalts Feast of Faith",
+            "description": "Skill Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+        },
+        {
+            "level": 4,
+            "name": "Siren Jolts the Laconic Lion",
+            "description": "While in \"Vendetta\", increases CRIT DMG by 30% and restores HP by 10% of this unit's Max HP after receiving attacks from enemy targets."
+        },
+        {
+            "level": 5,
+            "name": "War Chisels Flesh of Flame",
+            "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+        },
+        {
+            "level": 6,
+            "name": "Legacy Scales Mound of Blood",
+            "description": "When entering battle, immediately enters the \"Vendetta\" state, and lowers the Charge required for \"Godslayer Be God\" to 100 point(s)."
+        }
+    ]
 }
