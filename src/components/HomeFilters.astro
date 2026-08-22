@@ -1,8 +1,28 @@
 ---
 import { t } from '../utils/i18n';
 
+import physicalIcon from '../assets/filter-icons/elements/physical.png';
+import fireIcon from '../assets/filter-icons/elements/fire.png';
+import iceIcon from '../assets/filter-icons/elements/ice.png';
+import lightningIcon from '../assets/filter-icons/elements/lightning.png';
+import windIcon from '../assets/filter-icons/elements/wind.png';
+import quantumIcon from '../assets/filter-icons/elements/quantum.png';
+import imaginaryIcon from '../assets/filter-icons/elements/imaginary.png';
+
+import destructionIcon from '../assets/filter-icons/paths/destruction.png';
+import huntIcon from '../assets/filter-icons/paths/hunt.png';
+import eruditionIcon from '../assets/filter-icons/paths/erudition.png';
+import harmonyIcon from '../assets/filter-icons/paths/harmony.png';
+import nihilityIcon from '../assets/filter-icons/paths/nihility.png';
+import preservationIcon from '../assets/filter-icons/paths/preservation.png';
+import abundanceIcon from '../assets/filter-icons/paths/abundance.png';
+import remembranceIcon from '../assets/filter-icons/paths/remembrance.png';
+import elationIcon from '../assets/filter-icons/paths/elation.png';
+
 const { locale, recentlyUpdatedCount = 0 } = Astro.props;
+
 const hasRecentUpdates = recentlyUpdatedCount > 0;
+
 const recentlyUpdatedLabel = t(
     locale,
     'ui',
@@ -10,135 +30,700 @@ const recentlyUpdatedLabel = t(
     undefined,
     false,
 );
+
 const versionText = t(locale, 'ui', 'Last 2 versions', undefined, false);
 
-// Filter options mirror metadata values written onto each character card.
-const elements = [
-    'physical',
-    'fire',
-    'ice',
-    'lightning',
-    'wind',
-    'quantum',
-    'imaginary',
-];
-const rarities = ['4', '5'];
-const paths = [
-    'destruction',
-    'hunt',
-    'erudition',
-    'harmony',
-    'nihility',
-    'preservation',
-    'abundance',
-    'remembrance',
-    'elation',
-];
 const allLabel = t(locale, 'ui', 'All');
 
-const elementOptions = [
-    { value: '', label: allLabel },
-    ...elements.map((element) => ({
-        value: element,
-        label: t(locale, 'element', element),
-    })),
-];
 const rarityOptions = [
-    { value: '', label: allLabel },
-    ...rarities.map((rarity) => ({
-        value: rarity,
-        label: `${rarity}\u2605`,
-    })),
+    {
+        value: '4',
+        label: '4★',
+    },
+    {
+        value: '5',
+        label: '5★',
+    },
 ];
+
+const elementOptions = [
+    {
+        value: 'physical',
+        icon: physicalIcon,
+    },
+    {
+        value: 'fire',
+        icon: fireIcon,
+    },
+    {
+        value: 'ice',
+        icon: iceIcon,
+    },
+    {
+        value: 'lightning',
+        icon: lightningIcon,
+    },
+    {
+        value: 'wind',
+        icon: windIcon,
+    },
+    {
+        value: 'quantum',
+        icon: quantumIcon,
+    },
+    {
+        value: 'imaginary',
+        icon: imaginaryIcon,
+    },
+];
+
 const pathOptions = [
-    { value: '', label: allLabel },
-    ...paths.map((path) => ({
-        value: path,
-        label: t(locale, 'path', path),
-    })),
+    {
+        value: 'destruction',
+        icon: destructionIcon,
+    },
+    {
+        value: 'hunt',
+        icon: huntIcon,
+    },
+    {
+        value: 'erudition',
+        icon: eruditionIcon,
+    },
+    {
+        value: 'harmony',
+        icon: harmonyIcon,
+    },
+    {
+        value: 'nihility',
+        icon: nihilityIcon,
+    },
+    {
+        value: 'preservation',
+        icon: preservationIcon,
+    },
+    {
+        value: 'abundance',
+        icon: abundanceIcon,
+    },
+    {
+        value: 'remembrance',
+        icon: remembranceIcon,
+    },
+    {
+        value: 'elation',
+        icon: elationIcon,
+    },
 ];
 ---
 
 <form class="home-filters" id="character-filters" data-character-filters>
-    <label class="home-search">
-        {t(locale, 'ui', 'Search')}
-        <input
-            type="search"
-            name="search"
-            placeholder={t(locale, 'ui', 'Search by name')}
-            autocomplete="off"
-        />
-    </label>
+    <!-- ============================================= -->
+    <!-- Search / Recently Updated                     -->
+    <!-- ============================================= -->
 
-    <div class="home-select-filter">
-        {t(locale, 'ui', 'Element')}
-        <select
-            class="home-native-select"
-            name="element"
-            aria-label={t(locale, 'ui', 'Element')}
-        >
-            {
-                elementOptions.map((option) => (
-                    <option value={option.value}>{option.label}</option>
-                ))
-            }
-        </select>
-    </div>
+    <div class="home-filter-top">
+        <label class="home-search">
+            {t(locale, 'ui', 'Search')}
 
-    <div class="home-select-filter">
-        {t(locale, 'ui', 'Rarity')}
-        <select
-            class="home-native-select"
-            name="rarity"
-            aria-label={t(locale, 'ui', 'Rarity')}
-        >
-            {
-                rarityOptions.map((option) => (
-                    <option value={option.value}>{option.label}</option>
-                ))
-            }
-        </select>
-    </div>
+            <input
+                type="search"
+                name="search"
+                placeholder={t(locale, 'ui', 'Search by name')}
+                autocomplete="off"
+            />
+        </label>
 
-    <div class="home-select-filter">
-        {t(locale, 'ui', 'Path')}
-        <select
-            class="home-native-select"
-            name="path"
-            aria-label={t(locale, 'ui', 'Path')}
-        >
-            {
-                pathOptions.map((option) => (
-                    <option value={option.value}>{option.label}</option>
-                ))
-            }
-        </select>
-    </div>
+        {
+            hasRecentUpdates && (
+                <label class="home-updated-toggle">
+                    <input
+                        class="home-updated-toggle-input"
+                        type="checkbox"
+                        name="updated"
+                        value="true"
+                    />
 
-    {
-        hasRecentUpdates && (
-            <label class="home-updated-toggle">
-                <input
-                    class="home-updated-toggle-input"
-                    type="checkbox"
-                    name="updated"
-                    value="true"
-                />
-                <span class="home-updated-toggle-mark" aria-hidden="true" />
-                <span class="home-updated-text">
-                    <span class="home-updated-toggle-title">
-                        {recentlyUpdatedLabel}
-                    </span>
-                    {versionText && (
-                        <span class="home-updated-toggle-version">
-                            {versionText}
+                    <span class="home-updated-toggle-mark" aria-hidden="true" />
+
+                    <span class="home-updated-text">
+                        <span class="home-updated-toggle-title">
+                            {recentlyUpdatedLabel}
                         </span>
-                    )}
-                </span>
-                <span class="home-updated-toggle-count">
-                    {recentlyUpdatedCount}
-                </span>
-            </label>
-        )
-    }
+
+                        {versionText && (
+                            <span class="home-updated-toggle-version">
+                                {versionText}
+                            </span>
+                        )}
+                    </span>
+
+                    <span class="home-updated-toggle-count">
+                        {recentlyUpdatedCount}
+                    </span>
+                </label>
+            )
+        }
+    </div>
+
+    <!-- ============================================= -->
+    <!-- Rarity / Type / Path                          -->
+    <!-- ============================================= -->
+
+    <div class="home-icon-toolbar">
+        <!-- Rarity -->
+        <fieldset class="home-icon-group home-icon-group-rarity">
+            <legend>
+                {t(locale, 'ui', 'Rarity')}
+            </legend>
+
+            <div class="home-segmented-filter">
+                <label class="home-filter-choice" title={allLabel}>
+                    <input type="radio" name="rarity" value="" checked />
+
+                    <span class="home-filter-button home-filter-all"> ✦ </span>
+                </label>
+
+                {
+                    rarityOptions.map((option) => (
+                        <label class="home-filter-choice" title={option.label}>
+                            <input
+                                type="radio"
+                                name="rarity"
+                                value={option.value}
+                            />
+
+                            <span class="home-filter-button home-filter-rarity">
+                                {option.label}
+                            </span>
+                        </label>
+                    ))
+                }
+            </div>
+        </fieldset>
+
+        <!-- Type / Element -->
+        <fieldset class="home-icon-group home-icon-group-element">
+            <legend>
+                {t(locale, 'ui', 'Element')}
+            </legend>
+
+            <div class="home-segmented-filter">
+                <label class="home-filter-choice" title={allLabel}>
+                    <input type="radio" name="element" value="" checked />
+
+                    <span class="home-filter-button home-filter-all"> ✦ </span>
+                </label>
+
+                {
+                    elementOptions.map((option) => {
+                        const label = t(locale, 'element', option.value);
+
+                        return (
+                            <label
+                                class="home-filter-choice"
+                                title={label}
+                                aria-label={label}
+                            >
+                                <input
+                                    type="radio"
+                                    name="element"
+                                    value={option.value}
+                                />
+
+                                <span class="home-filter-button">
+                                    <img
+                                        src={option.icon.src}
+                                        alt=""
+                                        width="28"
+                                        height="28"
+                                        aria-hidden="true"
+                                    />
+                                </span>
+                            </label>
+                        );
+                    })
+                }
+            </div>
+        </fieldset>
+
+        <!-- Path -->
+        <fieldset class="home-icon-group home-icon-group-path">
+            <legend>
+                {t(locale, 'ui', 'Path')}
+            </legend>
+
+            <div class="home-segmented-filter">
+                <label class="home-filter-choice" title={allLabel}>
+                    <input type="radio" name="path" value="" checked />
+
+                    <span class="home-filter-button home-filter-all"> ✦ </span>
+                </label>
+
+                {
+                    pathOptions.map((option) => {
+                        const label = t(locale, 'path', option.value);
+
+                        return (
+                            <label
+                                class="home-filter-choice"
+                                title={label}
+                                aria-label={label}
+                            >
+                                <input
+                                    type="radio"
+                                    name="path"
+                                    value={option.value}
+                                />
+
+                                <span class="home-filter-button">
+                                    <img
+                                        src={option.icon.src}
+                                        alt=""
+                                        width="30"
+                                        height="30"
+                                        aria-hidden="true"
+                                    />
+                                </span>
+                            </label>
+                        );
+                    })
+                }
+            </div>
+        </fieldset>
+    </div>
 </form>
+
+<style>
+    /* =====================================================
+       Main container
+
+       Overrides the old grid layout from home.css.
+       ===================================================== */
+
+    .home-filters {
+        display: block !important;
+
+        box-sizing: border-box;
+
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin: 0 0 14px;
+
+        border: 1px solid rgba(255, 255, 255, 0.09);
+
+        border-radius: 8px;
+
+        padding: 10px 12px 12px;
+
+        background:
+            linear-gradient(
+                180deg,
+                rgba(255, 255, 255, 0.055),
+                rgba(255, 255, 255, 0.015)
+            ),
+            rgba(5, 8, 12, 0.28);
+    }
+
+    /* =====================================================
+       Search / Updated
+       ===================================================== */
+
+    .home-filter-top {
+        display: flex;
+        align-items: stretch;
+
+        gap: 10px;
+
+        width: 100%;
+
+        margin-bottom: 11px;
+    }
+
+    .home-filter-top .home-search {
+        flex: 1 1 400px;
+
+        min-width: 200px;
+    }
+
+    .home-filter-top .home-updated-toggle {
+        flex: 0 1 260px;
+    }
+
+    /* =====================================================
+       Full-width icon toolbar
+
+       3 buttons  = rarity
+       8 buttons  = type
+       10 buttons = path
+
+       This makes every individual button approximately the
+       same width while the entire toolbar fills the row.
+       ===================================================== */
+
+    .home-icon-toolbar {
+        display: grid !important;
+
+        grid-template-columns:
+            minmax(150px, 3fr)
+            minmax(360px, 8fr)
+            minmax(460px, 10fr);
+
+        align-items: end;
+
+        width: 100%;
+
+        gap: 12px;
+    }
+
+    /* =====================================================
+       Filter groups
+       ===================================================== */
+
+    .home-filters .home-icon-group {
+        display: block !important;
+
+        box-sizing: border-box;
+
+        width: 100% !important;
+        min-width: 0 !important;
+
+        margin: 0 !important;
+        border: 0 !important;
+        padding: 0 !important;
+
+        background: none !important;
+    }
+
+    .home-filters .home-icon-group legend {
+        margin: 0 0 5px;
+
+        padding: 0;
+
+        color: color-mix(in srgb, var(--text) 62%, transparent);
+
+        font-size: 0.68rem;
+        font-weight: 800;
+
+        line-height: 1;
+
+        letter-spacing: 0.05em;
+
+        text-transform: uppercase;
+    }
+
+    /* =====================================================
+       Segmented strips
+       ===================================================== */
+
+    .home-segmented-filter {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+
+        box-sizing: border-box;
+
+        width: 100% !important;
+
+        gap: 0 !important;
+
+        border: 1px solid rgba(255, 255, 255, 0.14);
+
+        border-radius: 5px;
+
+        overflow: hidden;
+
+        background: rgba(8, 11, 16, 0.58);
+    }
+
+    /* =====================================================
+       Individual choices
+
+       Each button divides its group equally.
+       ===================================================== */
+
+    .home-filters label.home-filter-choice {
+        position: relative !important;
+
+        contain: none !important;
+
+        display: block !important;
+
+        flex: 1 1 0 !important;
+
+        width: auto !important;
+        min-width: 0 !important;
+
+        height: 44px !important;
+        min-height: 44px !important;
+
+        margin: 0 !important;
+
+        border: 0 !important;
+
+        border-right: 1px solid rgba(255, 255, 255, 0.12) !important;
+
+        border-radius: 0 !important;
+
+        padding: 0 !important;
+
+        background: transparent !important;
+
+        cursor: pointer;
+    }
+
+    .home-filters label.home-filter-choice:last-child {
+        border-right: 0 !important;
+    }
+
+    /* =====================================================
+       Hide native radio
+       ===================================================== */
+
+    .home-filters label.home-filter-choice > input {
+        position: absolute !important;
+
+        width: 1px !important;
+        min-width: 1px !important;
+
+        height: 1px !important;
+        min-height: 1px !important;
+
+        margin: -1px !important;
+
+        border: 0 !important;
+
+        padding: 0 !important;
+
+        overflow: hidden !important;
+
+        clip: rect(0 0 0 0) !important;
+        clip-path: inset(50%) !important;
+
+        opacity: 0 !important;
+
+        pointer-events: none !important;
+    }
+
+    /* =====================================================
+       Visible button
+       ===================================================== */
+
+    .home-filter-button {
+        box-sizing: border-box;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        height: 44px;
+
+        padding: 6px;
+
+        background: rgba(255, 255, 255, 0.025);
+
+        color: color-mix(in srgb, var(--text) 75%, transparent);
+
+        line-height: 1;
+
+        transition:
+            background 0.12s ease,
+            color 0.12s ease,
+            opacity 0.12s ease;
+    }
+
+    /* =====================================================
+       Type icons
+       ===================================================== */
+
+    .home-icon-group-element .home-filter-button img {
+        display: block !important;
+
+        width: 28px !important;
+        min-width: 28px !important;
+        max-width: 28px !important;
+
+        height: 28px !important;
+        min-height: 28px !important;
+        max-height: 28px !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        object-fit: contain !important;
+
+        opacity: 0.82;
+
+        transition:
+            opacity 0.12s ease,
+            transform 0.12s ease;
+    }
+
+    /* =====================================================
+       Path icons
+
+       Slightly larger because Path symbols are more detailed.
+       ===================================================== */
+
+    .home-icon-group-path .home-filter-button img {
+        display: block !important;
+
+        width: 30px !important;
+        min-width: 30px !important;
+        max-width: 30px !important;
+
+        height: 30px !important;
+        min-height: 30px !important;
+        max-height: 30px !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        object-fit: contain !important;
+
+        opacity: 0.86;
+
+        transition:
+            opacity 0.12s ease,
+            transform 0.12s ease;
+    }
+
+    /* =====================================================
+       Hover
+       ===================================================== */
+
+    .home-filter-choice:hover .home-filter-button {
+        background: rgba(255, 255, 255, 0.09);
+
+        color: var(--text);
+    }
+
+    .home-filter-choice:hover .home-filter-button img {
+        opacity: 1;
+
+        transform: scale(1.06);
+    }
+
+    /* =====================================================
+       Selected
+       ===================================================== */
+
+    .home-filter-choice > input:checked + .home-filter-button {
+        background: var(--accent);
+
+        color: white;
+    }
+
+    .home-filter-choice > input:checked + .home-filter-button img {
+        opacity: 1;
+
+        transform: scale(1.08);
+    }
+
+    /* =====================================================
+       Keyboard focus
+       ===================================================== */
+
+    .home-filter-choice > input:focus-visible + .home-filter-button {
+        outline: 2px solid color-mix(in srgb, var(--accent) 70%, white);
+
+        outline-offset: -2px;
+    }
+
+    /* =====================================================
+       All / rarity text
+       ===================================================== */
+
+    .home-filter-all {
+        font-size: 1.05rem;
+        font-weight: 850;
+    }
+
+    .home-filter-rarity {
+        font-size: 0.85rem;
+        font-weight: 850;
+
+        white-space: nowrap;
+    }
+
+    /* =====================================================
+       Responsive
+
+       Keep the large full-width layout when space permits.
+       Once it can no longer fit comfortably, allow horizontal
+       scrolling instead of shrinking icons into unreadability.
+       ===================================================== */
+
+    @media (max-width: 1100px) {
+        .home-icon-toolbar {
+            display: flex !important;
+            flex-wrap: nowrap !important;
+
+            width: 100%;
+
+            gap: 10px;
+
+            overflow-x: auto;
+
+            padding-bottom: 4px;
+        }
+
+        .home-icon-group-rarity {
+            flex: 0 0 155px;
+        }
+
+        .home-icon-group-element {
+            flex: 0 0 390px;
+        }
+
+        .home-icon-group-path {
+            flex: 0 0 500px;
+        }
+    }
+
+    @media (max-width: 700px) {
+        .home-filter-top {
+            flex-wrap: wrap;
+        }
+
+        .home-filter-top .home-search,
+        .home-filter-top .home-updated-toggle {
+            flex: 1 1 100%;
+        }
+
+        .home-filters {
+            padding: 9px 9px 10px;
+        }
+
+        .home-filters label.home-filter-choice {
+            height: 40px !important;
+            min-height: 40px !important;
+        }
+
+        .home-filter-button {
+            height: 40px;
+        }
+
+        .home-icon-group-element .home-filter-button img {
+            width: 25px !important;
+            min-width: 25px !important;
+            max-width: 25px !important;
+
+            height: 25px !important;
+            min-height: 25px !important;
+            max-height: 25px !important;
+        }
+
+        .home-icon-group-path .home-filter-button img {
+            width: 27px !important;
+            min-width: 27px !important;
+            max-width: 27px !important;
+
+            height: 27px !important;
+            min-height: 27px !important;
+            max-height: 27px !important;
+        }
+    }
+</style>
