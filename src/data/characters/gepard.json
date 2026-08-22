@@ -6,7 +6,7 @@
     "path": "preservation",
     "version_released": "1.0",
     "max_energy": 100,
-    "level_80_stat": {
+    "level_80_stats": {
         "hp": 1397,
         "atk": 543,
         "def": 654,
