@@ -4,403 +4,682 @@ import { Image } from 'astro:assets';
 import type { AssetImage } from '../utils/item-assets';
 import { t } from '../utils/i18n';
 
+import destructionIcon from '../assets/filter-icons/paths/destruction.png';
+import huntIcon from '../assets/filter-icons/paths/hunt.png';
+import eruditionIcon from '../assets/filter-icons/paths/erudition.png';
+import harmonyIcon from '../assets/filter-icons/paths/harmony.png';
+import nihilityIcon from '../assets/filter-icons/paths/nihility.png';
+import preservationIcon from '../assets/filter-icons/paths/preservation.png';
+import abundanceIcon from '../assets/filter-icons/paths/abundance.png';
+import remembranceIcon from '../assets/filter-icons/paths/remembrance.png';
+import elationIcon from '../assets/filter-icons/paths/elation.png';
+
 type LightConeBrowserData = {
-  rarities: number[];
+    rarities: number[];
 
-  paths: {
-    id: string;
-    label: string;
-  }[];
-
-  lightCones: {
-    id: string;
-    image: AssetImage | '';
-    name: string;
-    rarity: number;
-
-    path: string;
-    pathLabel: string;
-
-    versionReleased: string;
-    sourceName: string;
-
-    level1Hp: string;
-    levelMaxHp: string;
-
-    level1Atk: string;
-    levelMaxAtk: string;
-
-    level1Def: string;
-    levelMaxDef: string;
-
-    passivePanels: {
-      superimposition: number;
-      html: string;
+    paths: {
+        id: string;
+        label: string;
     }[];
-  }[];
+
+    lightCones: {
+        id: string;
+        image: AssetImage | '';
+        name: string;
+        rarity: number;
+
+        path: string;
+        pathLabel: string;
+
+        versionReleased: string;
+        sourceName: string;
+
+        level1Hp: string;
+        levelMaxHp: string;
+        level1Atk: string;
+        levelMaxAtk: string;
+
+        level1Def: string;
+        levelMaxDef: string;
+
+        passivePanels: {
+            superimposition: number;
+            html: string;
+        }[];
+    }[];
 };
 
 const { data, locale } = Astro.props as {
-  data: LightConeBrowserData;
-  locale: any;
+    data: LightConeBrowserData;
+    locale: any;
 };
 
 const allLabel = t(locale, 'ui', 'All', undefined, false);
 const resultsLabel = t(locale, 'ui', 'Results', undefined, false);
 
 const noResultsLabel = t(
-  locale,
-  'ui',
-  'No light cones found',
-  undefined,
-  false,
+    locale,
+    'ui',
+    'No light cones found',
+    undefined,
+    false,
 );
 
-const sourceLabel = t(
-  locale,
-  'ui',
-  'Source',
-  undefined,
-  false,
-);
+const sourceLabel = t(locale, 'ui', 'Source', undefined, false);
 
-const searchByNameLabel = t(
-  locale,
-  'ui',
-  'Search by name',
-  undefined,
-  false,
-);
+const searchByNameLabel = t(locale, 'ui', 'Search by name', undefined, false);
 
-const lightConeLabel = t(
-  locale,
-  'ui',
-  'Light Cone',
-  undefined,
-  false,
-);
+const lightConeLabel = t(locale, 'ui', 'Light Cone', undefined, false);
 
-const pathLabel = t(
-  locale,
-  'ui',
-  'Path',
-  undefined,
-  false,
-);
+const pathLabel = t(locale, 'ui', 'Path', undefined, false);
 
-const rarityLabel = t(
-  locale,
-  'ui',
-  'Rarity',
-  undefined,
-  false,
-);
+const rarityLabel = t(locale, 'ui', 'Rarity', undefined, false);
 
-const searchLabel = t(
-  locale,
-  'ui',
-  'Search',
-  undefined,
-  false,
-);
+const searchLabel = t(locale, 'ui', 'Search', undefined, false);
 
-const descriptionLabel = t(
-  locale,
-  'ui',
-  'Description',
-  undefined,
-  false,
-);
+const descriptionLabel = t(locale, 'ui', 'Description', undefined, false);
 
-const level1Label = t(
-  locale,
-  'ui',
-  'Level 1',
-  undefined,
-  false,
-);
+const level1Label = t(locale, 'ui', 'Level 1', undefined, false);
 
-const maxLevelLabel = t(
-  locale,
-  'ui',
-  'Max Level',
-  undefined,
-  false,
-);
+const maxLevelLabel = t(locale, 'ui', 'Max Level', undefined, false);
 
-const statLabel = t(
-  locale,
-  'ui',
-  'Stat',
-  undefined,
-  false,
-);
+const statLabel = t(locale, 'ui', 'Stat', undefined, false);
 
-const sortByLabel = t(
-  locale,
-  'ui',
-  'Sort by',
-  undefined,
-  false,
-);
+const sortByLabel = t(locale, 'ui', 'Sort by', undefined, false);
 
-const releaseDateLabel = t(
-  locale,
-  'ui',
-  'Release date',
-  undefined,
-  false,
-);
+const releaseDateLabel = t(locale, 'ui', 'Release date', undefined, false);
 
-const newestLabel = t(
-  locale,
-  'ui',
-  'Newest',
-  undefined,
-  false,
-);
+const newestLabel = t(locale, 'ui', 'Newest', undefined, false);
 
 const sortOptions = [
-  {
-    value: 'name',
-    label: `${lightConeLabel} - A-Z`,
-  },
-  {
-    value: 'release',
-    label: `${releaseDateLabel} - ${newestLabel}`,
-  },
+    {
+        value: 'name',
+        label: `${lightConeLabel} - A-Z`,
+    },
+    {
+        value: 'release',
+        label: `${releaseDateLabel} - ${newestLabel}`,
+    },
 ];
+
+const pathIcons = {
+    destruction: destructionIcon,
+    hunt: huntIcon,
+    erudition: eruditionIcon,
+    harmony: harmonyIcon,
+    nihility: nihilityIcon,
+    preservation: preservationIcon,
+    abundance: abundanceIcon,
+    remembrance: remembranceIcon,
+    elation: elationIcon,
+};
+
+const pathOrder = [
+    'destruction',
+    'hunt',
+    'erudition',
+    'harmony',
+    'nihility',
+    'preservation',
+    'abundance',
+    'remembrance',
+    'elation',
+];
+
+const orderedPaths = [...data.paths].sort((a, b) => {
+    const ai = pathOrder.indexOf(a.id);
+    const bi = pathOrder.indexOf(b.id);
+
+    if (ai === -1 && bi === -1) {
+        return a.label.localeCompare(b.label);
+    }
+
+    if (ai === -1) return 1;
+    if (bi === -1) return -1;
+
+    return ai - bi;
+});
 ---
 
-<section
-  class="weapon-browser"
-  data-light-cone-browser
->
-  <form
-    class="home-filters weapon-filters"
-    id="light-cone-filters"
-    data-light-cone-filters
-  >
-    <label class="home-search">
-      {searchLabel}
-
-      <input
-        type="search"
-        name="search"
-        placeholder={searchByNameLabel}
-        autocomplete="off"
-      />
-    </label>
-
-    <div class="home-select-filter">
-      {pathLabel}
-
-      <select
-        class="home-native-select"
-        name="path"
-        aria-label={pathLabel}
-      >
-        <option value="">
-          {allLabel}
-        </option>
-
-        {
-          data.paths.map((path) => (
-            <option value={path.id}>
-              {path.label}
-            </option>
-          ))
-        }
-      </select>
-    </div>
-
-    <div class="home-select-filter">
-      {rarityLabel}
-
-      <select
-        class="home-native-select"
-        name="rarity"
-        aria-label={rarityLabel}
-      >
-        <option value="">
-          {allLabel}
-        </option>
-
-        {
-          data.rarities.map((rarity) => (
-            <option value={String(rarity)}>
-              {rarity}
-              {'\u2605'}
-            </option>
-          ))
-        }
-      </select>
-    </div>
-  </form>
-
-  <div class="weapon-browser-header">
-    <p
-      data-light-cone-count
-      data-results-label={resultsLabel}
-      aria-live="polite"
+<section class="weapon-browser" data-light-cone-browser>
+    <form
+        class="home-filters weapon-filters light-cone-filters"
+        id="light-cone-filters"
+        data-light-cone-filters
     >
-      {data.lightCones.length}
-      {' '}
-      {resultsLabel}
-    </p>
+        <label class="home-search">
+            {searchLabel}
 
-    <label class="roster-sort">
-      {sortByLabel}
+            <input
+                type="search"
+                name="search"
+                placeholder={searchByNameLabel}
+                autocomplete="off"
+            />
+        </label>
 
-      <select
-        class="home-native-select"
-        name="sort"
-        form="light-cone-filters"
-        aria-label={sortByLabel}
-      >
-        {
-          sortOptions.map((option) => (
-            <option
-              value={option.value}
-              selected={option.value === 'name'}
-            >
-              {option.label}
-            </option>
-          ))
-        }
-      </select>
-    </label>
-  </div>
+        <div class="light-cone-filter-toolbar">
+            <!-- Rarity -->
+            <fieldset class="light-cone-filter-group light-cone-rarity-group">
+                <legend>{rarityLabel}</legend>
 
-  <div class="weapon-grid">
-    {
-      data.lightCones.map((lightCone) => (
-        <article
-          class={`weapon-entry rarity-${lightCone.rarity}`}
-          data-light-cone-card
-          data-name={lightCone.name}
-          data-rarity={lightCone.rarity}
-          data-path={lightCone.path}
-          data-version-released={lightCone.versionReleased}
-        >
-          <header class="weapon-entry-header">
-            <div class="weapon-entry-title">
-              <div
-                class={`weapon-entry-image${
-                  lightCone.image ? '' : ' is-empty'
-                }`}
-              >
-                {lightCone.image && (
-                  <Image
-                    src={lightCone.image}
-                    alt=""
-                    loading="lazy"
-                    decoding="async"
-                    width={72}
-                    height={72}
-                    densities={[1, 2]}
-                  />
-                )}
-              </div>
+                <div class="light-cone-filter-strip">
+                    <label class="light-cone-filter-choice" title={allLabel}>
+                        <input type="radio" name="rarity" value="" checked />
 
-              <div>
-                <h2>{lightCone.name}</h2>
-                <p>{lightCone.pathLabel}</p>
-              </div>
-            </div>
+                        <span class="light-cone-filter-button"> ✦ </span>
+                    </label>
 
-            <span class="weapon-entry-rarity">
-              {lightCone.rarity}
-              {'\u2605'}
-            </span>
-          </header>
+                    {
+                        data.rarities.map((rarity) => (
+                            <label
+                                class="light-cone-filter-choice"
+                                title={`${rarity}★`}
+                            >
+                                <input
+                                    type="radio"
+                                    name="rarity"
+                                    value={String(rarity)}
+                                />
 
-          <table class="weapon-stat-table">
-            <thead>
-              <tr>
-                <th>{statLabel}</th>
-                <th>{level1Label}</th>
-                <th>{maxLevelLabel}</th>
-              </tr>
-            </thead>
-
-            <tbody>
-              <tr>
-                <th scope="row">HP</th>
-                <td>{lightCone.level1Hp || '-'}</td>
-                <td>{lightCone.levelMaxHp || '-'}</td>
-              </tr>
-
-              <tr>
-                <th scope="row">ATK</th>
-                <td>{lightCone.level1Atk || '-'}</td>
-                <td>{lightCone.levelMaxAtk || '-'}</td>
-              </tr>
-
-              <tr>
-                <th scope="row">DEF</th>
-                <td>{lightCone.level1Def || '-'}</td>
-                <td>{lightCone.levelMaxDef || '-'}</td>
-              </tr>
-            </tbody>
-          </table>
-
-          {lightCone.passivePanels.length > 0 && (
-            <section
-              class="weapon-entry-passive"
-              aria-label={`${lightCone.name} ${descriptionLabel}`}
-            >
-              <div class="weapon-entry-section-header">
-                <h3>{descriptionLabel}</h3>
-
-                <div class="weapon-refinement-buttons">
-                  {lightCone.passivePanels.map((panel) => (
-                    <button
-                      class="weapon-refinement-button"
-                      type="button"
-                      data-light-cone-superimposition={`s${panel.superimposition}`}
-                      aria-pressed={
-                        panel.superimposition === 1
-                          ? 'true'
-                          : 'false'
-                      }
-                    >
-                      S{panel.superimposition}
-                    </button>
-                  ))}
+                                <span class="light-cone-filter-button light-cone-rarity-button">
+                                    {rarity}★
+                                </span>
+                            </label>
+                        ))
+                    }
                 </div>
-              </div>
+            </fieldset>
 
-              <div class="weapon-passive-copy">
-                {lightCone.passivePanels.map((panel) => (
-                  <div
-                    data-light-cone-superimposition-panel={`s${panel.superimposition}`}
-                    hidden={panel.superimposition !== 1}
-                    set:html={panel.html}
-                  />
-                ))}
-              </div>
-            </section>
-          )}
+            <!-- Path -->
+            <fieldset class="light-cone-filter-group light-cone-path-group">
+                <legend>{pathLabel}</legend>
 
-          <footer class="weapon-entry-footer">
-            <span>{sourceLabel}</span>
-            <strong>{lightCone.sourceName || '-'}</strong>
-          </footer>
-        </article>
-      ))
-    }
-  </div>
+                <div class="light-cone-filter-strip">
+                    <label class="light-cone-filter-choice" title={allLabel}>
+                        <input type="radio" name="path" value="" checked />
 
-  <p
-    class="weapon-empty"
-    data-light-cone-empty
-    hidden
-  >
-    {noResultsLabel}
-  </p>
+                        <span class="light-cone-filter-button"> ✦ </span>
+                    </label>
+
+                    {
+                        orderedPaths.map((path) => {
+                            const icon =
+                                pathIcons[path.id as keyof typeof pathIcons];
+
+                            return (
+                                <label
+                                    class="light-cone-filter-choice"
+                                    title={path.label}
+                                    aria-label={path.label}
+                                >
+                                    <input
+                                        type="radio"
+                                        name="path"
+                                        value={path.id}
+                                    />
+
+                                    <span class="light-cone-filter-button">
+                                        {icon ? (
+                                            <img
+                                                src={icon.src}
+                                                alt=""
+                                                width="30"
+                                                height="30"
+                                                aria-hidden="true"
+                                            />
+                                        ) : (
+                                            path.label
+                                        )}
+                                    </span>
+                                </label>
+                            );
+                        })
+                    }
+                </div>
+            </fieldset>
+        </div>
+    </form>
+
+    <div class="weapon-browser-header">
+        <p
+            data-light-cone-count
+            data-results-label={resultsLabel}
+            aria-live="polite"
+        >
+            {data.lightCones.length}
+            {' '}
+            {resultsLabel}
+        </p>
+
+        <label class="roster-sort">
+            {sortByLabel}
+
+            <select
+                class="home-native-select"
+                name="sort"
+                form="light-cone-filters"
+                aria-label={sortByLabel}
+            >
+                {
+                    sortOptions.map((option) => (
+                        <option
+                            value={option.value}
+                            selected={option.value === 'name'}
+                        >
+                            {option.label}
+                        </option>
+                    ))
+                }
+            </select>
+        </label>
+    </div>
+
+    <div class="weapon-grid">
+        {
+            data.lightCones.map((lightCone) => (
+                <article
+                    class={`weapon-entry rarity-${lightCone.rarity}`}
+                    data-light-cone-card
+                    data-name={lightCone.name}
+                    data-rarity={lightCone.rarity}
+                    data-path={lightCone.path}
+                    data-version-released={lightCone.versionReleased}
+                >
+                    <header class="weapon-entry-header">
+                        <div class="weapon-entry-title">
+                            <div
+                                class={`weapon-entry-image${
+                                    lightCone.image ? '' : ' is-empty'
+                                }`}
+                            >
+                                {lightCone.image && (
+                                    <Image
+                                        src={lightCone.image}
+                                        alt=""
+                                        loading="lazy"
+                                        decoding="async"
+                                        width={72}
+                                        height={72}
+                                        densities={[1, 2]}
+                                    />
+                                )}
+                            </div>
+
+                            <div>
+                                <h2>{lightCone.name}</h2>
+                                <p>{lightCone.pathLabel}</p>
+                            </div>
+                        </div>
+
+                        <span class="weapon-entry-rarity">
+                            {lightCone.rarity}
+                            {'\u2605'}
+                        </span>
+                    </header>
+
+                    <table class="weapon-stat-table">
+                        <thead>
+                            <tr>
+                                <th>{statLabel}</th>
+                                <th>{level1Label}</th>
+                                <th>{maxLevelLabel}</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <th scope="row">HP</th>
+                                <td>{lightCone.level1Hp || '-'}</td>
+                                <td>{lightCone.levelMaxHp || '-'}</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">ATK</th>
+                                <td>{lightCone.level1Atk || '-'}</td>
+                                <td>{lightCone.levelMaxAtk || '-'}</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">DEF</th>
+                                <td>{lightCone.level1Def || '-'}</td>
+                                <td>{lightCone.levelMaxDef || '-'}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    {lightCone.passivePanels.length > 0 && (
+                        <section
+                            class="weapon-entry-passive"
+                            aria-label={`${lightCone.name} ${descriptionLabel}`}
+                        >
+                            <div class="weapon-entry-section-header">
+                                <h3>{descriptionLabel}</h3>
+
+                                <div class="weapon-refinement-buttons">
+                                    {lightCone.passivePanels.map((panel) => (
+                                        <button
+                                            class="weapon-refinement-button"
+                                            type="button"
+                                            data-light-cone-superimposition={`s${panel.superimposition}`}
+                                            aria-pressed={
+                                                panel.superimposition === 1
+                                                    ? 'true'
+                                                    : 'false'
+                                            }
+                                        >
+                                            S{panel.superimposition}
+                                        </button>
+                                    ))}
+                                </div>
+                            </div>
+
+                            <div class="weapon-passive-copy">
+                                {lightCone.passivePanels.map((panel) => (
+                                    <div
+                                        data-light-cone-superimposition-panel={`s${panel.superimposition}`}
+                                        hidden={panel.superimposition !== 1}
+                                        set:html={panel.html}
+                                    />
+                                ))}
+                            </div>
+                        </section>
+                    )}
+
+                    <footer class="weapon-entry-footer">
+                        <span>{sourceLabel}</span>
+                        <strong>{lightCone.sourceName || '-'}</strong>
+                    </footer>
+                </article>
+            ))
+        }
+    </div>
+
+    <p class="weapon-empty" data-light-cone-empty hidden>
+        {noResultsLabel}
+    </p>
 </section>
 
 <script>
-  import '../scripts/card-filters';
+    import '../scripts/card-filters';
 </script>
+
+<style>
+    /*
+   * Override the old dropdown layout from weapons.css/home.css.
+   */
+    .light-cone-filters {
+        display: grid !important;
+        grid-template-columns: minmax(260px, 0.9fr) minmax(0, 2.1fr) !important;
+        align-items: end;
+
+        width: 100% !important;
+
+        gap: 12px;
+
+        padding: 10px 12px 12px;
+    }
+
+    .light-cone-filters > .home-search {
+        min-width: 0;
+    }
+
+    .light-cone-filter-toolbar {
+        display: grid;
+
+        grid-template-columns:
+            minmax(150px, 4fr)
+            minmax(360px, 10fr);
+
+        align-items: end;
+
+        min-width: 0;
+
+        gap: 12px;
+    }
+
+    .light-cone-filter-group {
+        min-width: 0;
+
+        margin: 0;
+        border: 0;
+        padding: 0;
+    }
+
+    .light-cone-filter-group legend {
+        margin: 0 0 5px;
+        padding: 0;
+
+        color: color-mix(in srgb, var(--text) 62%, transparent);
+
+        font-size: 0.68rem;
+        font-weight: 800;
+        line-height: 1;
+
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+
+    .light-cone-filter-strip {
+        display: flex;
+
+        width: 100%;
+
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        border-radius: 5px;
+
+        overflow: hidden;
+
+        background: rgba(8, 11, 16, 0.58);
+    }
+
+    /*
+   * Override generic .home-filters label styling.
+   */
+    .light-cone-filters label.light-cone-filter-choice {
+        position: relative !important;
+
+        contain: none !important;
+
+        display: block !important;
+
+        flex: 1 1 0 !important;
+
+        width: auto !important;
+        min-width: 0 !important;
+
+        height: 44px !important;
+        min-height: 44px !important;
+
+        margin: 0 !important;
+        border: 0 !important;
+        border-right: 1px solid rgba(255, 255, 255, 0.12) !important;
+        border-radius: 0 !important;
+        padding: 0 !important;
+
+        background: transparent !important;
+
+        cursor: pointer;
+    }
+
+    .light-cone-filters label.light-cone-filter-choice:last-child {
+        border-right: 0 !important;
+    }
+
+    /*
+   * Hide the actual radios while keeping them in the form.
+   */
+    .light-cone-filters label.light-cone-filter-choice > input {
+        position: absolute !important;
+
+        width: 1px !important;
+        min-width: 1px !important;
+
+        height: 1px !important;
+        min-height: 1px !important;
+
+        margin: -1px !important;
+        border: 0 !important;
+        padding: 0 !important;
+
+        overflow: hidden !important;
+
+        clip: rect(0 0 0 0) !important;
+        clip-path: inset(50%) !important;
+
+        opacity: 0 !important;
+    }
+
+    .light-cone-filter-button {
+        box-sizing: border-box;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        height: 44px;
+
+        padding: 5px;
+
+        color: color-mix(in srgb, var(--text) 80%, transparent);
+
+        font-weight: 800;
+        line-height: 1;
+
+        background: rgba(255, 255, 255, 0.025);
+
+        transition:
+            background 0.12s ease,
+            box-shadow 0.12s ease,
+            color 0.12s ease;
+    }
+
+    .light-cone-filter-button img {
+        display: block !important;
+
+        width: 30px !important;
+        min-width: 30px !important;
+        max-width: 30px !important;
+
+        height: 30px !important;
+        min-height: 30px !important;
+        max-height: 30px !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        object-fit: contain !important;
+
+        opacity: 0.78;
+    }
+
+    .light-cone-filter-choice:hover .light-cone-filter-button {
+        background: rgba(255, 255, 255, 0.08);
+        color: var(--text);
+    }
+
+    .light-cone-filter-choice:hover .light-cone-filter-button img {
+        opacity: 1;
+    }
+
+    /*
+   * Selected = outline, not yellow fill.
+   */
+    .light-cone-filter-choice > input:checked + .light-cone-filter-button {
+        background: rgba(255, 255, 255, 0.035);
+
+        color: var(--text);
+
+        box-shadow: inset 0 0 0 2px var(--accent);
+    }
+
+    .light-cone-filter-choice > input:checked + .light-cone-filter-button img {
+        opacity: 1;
+    }
+
+    .light-cone-filter-choice
+        > input:focus-visible
+        + .light-cone-filter-button {
+        outline: 2px solid var(--accent);
+        outline-offset: -2px;
+    }
+
+    .light-cone-rarity-button {
+        font-size: 0.86rem;
+        white-space: nowrap;
+    }
+
+    /*
+   * Tablet: put Search above Rarity + Path.
+   */
+    @media (max-width: 900px) {
+        .light-cone-filters {
+            grid-template-columns: 1fr !important;
+        }
+
+        .light-cone-filter-toolbar {
+            grid-template-columns: minmax(150px, 4fr) minmax(0, 10fr);
+        }
+    }
+
+    /*
+   * Mobile: Rarity row, then Path row.
+   * No horizontal scroll.
+   */
+    @media (max-width: 700px) {
+        .light-cone-filters {
+            padding: 8px;
+            gap: 8px;
+        }
+
+        .light-cone-filter-toolbar {
+            display: grid;
+            grid-template-columns: 1fr;
+
+            width: 100%;
+
+            gap: 8px;
+        }
+
+        .light-cone-rarity-group,
+        .light-cone-path-group {
+            width: 100%;
+            min-width: 0;
+        }
+
+        .light-cone-filter-strip {
+            width: 100%;
+        }
+
+        .light-cone-filters label.light-cone-filter-choice {
+            height: 34px !important;
+            min-height: 34px !important;
+        }
+
+        .light-cone-filter-button {
+            height: 34px;
+            padding: 3px;
+        }
+
+        .light-cone-filter-button img {
+            width: 21px !important;
+            min-width: 21px !important;
+            max-width: 21px !important;
+
+            height: 21px !important;
+            min-height: 21px !important;
+            max-height: 21px !important;
+        }
+
+        .light-cone-filter-group legend {
+            margin-bottom: 3px;
+
+            font-size: 0.6rem;
+        }
+
+        .light-cone-rarity-button {
+            font-size: 0.74rem;
+        }
+    }
+</style>
