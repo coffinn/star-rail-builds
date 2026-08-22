@@ -1,0 +1,218 @@
+{
+  "id": "sparkle",
+  "name": "Sparkle",
+  "rarity": 5,
+  "element": "quantum",
+  "path": "harmony",
+  "version_released": "2.0",
+  "rework_version": "3.x",
+  "max_energy": 110,
+
+  "level_80_stats": {
+    "hp": 1216,
+    "atk": 530,
+    "def": 422,
+    "spd": 101
+  },
+
+  "abilities": {
+    "basic": {
+      "type": "Basic ATK",
+      "name": "Monodrama",
+      "tag": "Single Target",
+      "energy_gain": 20,
+      "break": 10,
+
+      "min_level": 1,
+      "max_level": 7,
+      "default_level": 6,
+
+      "description_template": "Deals Quantum DMG equal to {{damage}}% of Sparkle's ATK to one designated enemy target.",
+
+      "scaling": {
+        "damage": [50, 60, 70, 80, 90, 100, 110]
+      }
+    },
+
+    "skill": {
+      "type": "Skill",
+      "name": "Dreamdiver",
+      "tag": "Support",
+      "energy_gain": 30,
+
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+
+      "description_template": "Increases the CRIT DMG of a designated ally by {{crit_dmg_ratio}}% of Sparkle's CRIT DMG plus {{crit_dmg_flat}}%, lasting for 2 turn(s). And at the same time, advances this ally's action by 50%. When Sparkle uses this ability on herself, the Action Advance effect will not trigger.",
+
+      "scaling": {
+        "crit_dmg_ratio": [
+          12.0,
+          13.2,
+          14.4,
+          15.6,
+          16.8,
+          18.0,
+          19.5,
+          21.0,
+          22.5,
+          24.0,
+          25.2,
+          26.4
+        ],
+        "crit_dmg_flat": [
+          22.5,
+          24.75,
+          27.0,
+          29.25,
+          31.5,
+          33.75,
+          36.5625,
+          39.375,
+          42.1875,
+          45.0,
+          47.25,
+          49.5
+        ]
+      }
+    },
+
+    "ultimate": {
+      "type": "Ultimate",
+      "name": "The Hero with a Thousand Faces",
+      "tag": "Support",
+      "energy_cost": 110,
+      "energy_gain": 5,
+
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+
+      "description_template": "Recovers 6 Skill Point(s) for allies. If Skill Points overflow during recovery, the excess points will be recorded, up to a max of 10 points. When an ally character's turn ends, if Skill Points are below the maximum, Sparkle consumes the recorded value to recover Skill Points until the upper limit is reached. Then, grants all allies \"Cipher.\" For ally targets with \"Cipher,\" each stack of the DMG taken increase against enemies provided by Sparkle's Talent additionally increases by {{cipher_dmg_bonus}}% per stack, lasting for 3 turn(s).",
+
+      "scaling": {
+        "cipher_dmg_bonus": [
+          3.0,
+          3.3,
+          3.6,
+          3.9,
+          4.2,
+          4.5,
+          4.875,
+          5.25,
+          5.625,
+          6.0,
+          6.3,
+          6.6
+        ]
+      }
+    },
+
+    "talent": {
+      "type": "Talent",
+      "name": "Red Herring",
+      "tag": "Support",
+
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+
+      "description_template": "While Sparkle is on the battlefield, additionally increases the max number of Skill Points by 2. Whenever an ally target consumes 1 Skill Point, Sparkle gains 1 stack of \"Figment,\" with each stack increasing the DMG taken by all enemies by {{dmg_taken}}%. This effect lasts for 2 turn(s) and can stack up to 3 time(s).",
+
+      "scaling": {
+        "dmg_taken": [
+          2.0,
+          2.2,
+          2.4,
+          2.6,
+          2.8,
+          3.0,
+          3.25,
+          3.5,
+          3.75,
+          4.0,
+          4.2,
+          4.4
+        ]
+      }
+    },
+
+    "technique": {
+      "type": "Technique",
+      "name": "Unreliable Narrator",
+      "tag": "Support",
+      "description": "After using Technique, grants all allies Misdirect for 20 seconds. Characters with Misdirect will not be detected by enemies, and entering combat in the Misdirect state recovers 3 Skill Point(s) for the team and regenerates 20 Energy for Sparkle."
+    }
+  },
+
+  "major_traces": {
+    "2": {
+      "name": "Almanac",
+      "description": "Using Basic ATK additionally regenerates 10 Energy. When an ally character who holds the CRIT DMG Boost effect provided by the Skill consumes Skill Points, Sparkle additionally regenerates 1 Energy."
+    },
+
+    "4": {
+      "name": "Artificial Flower",
+      "description": "If an ally character consumes 3 or more Skill Points in a single turn, Sparkle's next use of Skill will not consume Skill Points."
+    },
+
+    "6": {
+      "name": "Nocturne",
+      "description": "Increases all allies' ATK by 45%. When an ally character holds the CRIT DMG Boost effect provided by the Skill, All-Type RES PEN increases by 10%."
+    }
+  },
+
+  "stat_bonuses": [
+    {
+      "stat": "HP",
+      "value": "+28.0%"
+    },
+    {
+      "stat": "CRIT DMG",
+      "value": "+24.0%"
+    },
+    {
+      "stat": "Effect RES",
+      "value": "+10.0%"
+    }
+  ],
+
+  "eidolons": [
+    {
+      "level": 1,
+      "name": "Suspension of Disbelief",
+      "description": "Increases the ATK of ally targets with \"Cipher\" by 40%. When the battle starts or when using Skill, increases Sparkle's SPD by 15%, lasting for 2 turn(s)."
+    },
+
+    {
+      "level": 2,
+      "name": "Purely Fictitious",
+      "description": "Each stack of the Talent's effect additionally reduces the enemy target's DEF by 10%."
+    },
+
+    {
+      "level": 3,
+      "name": "Pipedream",
+      "description": "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+    },
+
+    {
+      "level": 4,
+      "name": "Life Is a Gamble",
+      "description": "The Ultimate recovers 1 more Skill Point. The Talent additionally increases the Max Skill Points by 1."
+    },
+
+    {
+      "level": 5,
+      "name": "Parallax Truth",
+      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+    },
+
+    {
+      "level": 6,
+      "name": "Narrative Polysemy",
+      "description": "The CRIT DMG Boost effect provided by the Skill additionally increases by an amount equal to 30% of Sparkle's CRIT DMG. When Sparkle uses Skill, her Skill's CRIT DMG Boost effect will apply to all teammates with \"Cipher.\" When Sparkle uses her Ultimate, any single ally who benefits from her Skill's CRIT DMG Boost will spread that effect to teammates with \"Cipher.\""
+    }
+  ]
+}

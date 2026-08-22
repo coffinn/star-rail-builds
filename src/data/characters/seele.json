@@ -1,0 +1,200 @@
+{
+    "id": "seele",
+    "name": "Seele",
+    "rarity": 5,
+    "element": "quantum",
+    "path": "hunt",
+    "version_released": "1.0",
+    "rework_version": "3.x (Novaflare Update)",
+    "max_energy": 120,
+    "level_80_stats": {
+        "hp": 813,
+        "atk": 766,
+        "def": 320,
+        "spd": 115
+    },
+    "abilities": {
+        "basic": {
+            "type": "Basic ATK",
+            "name": "Thwack",
+            "tag": "Single Target",
+            "energy_gain": 20,
+            "break": 10,
+            "min_level": 1,
+            "max_level": 7,
+            "default_level": 6,
+            "description_template": "Deals Quantum DMG equal to {{damage}}% of Seele's ATK to one designated enemy.",
+            "scaling": {
+                "damage": [
+                    50,
+                    60,
+                    70,
+                    80,
+                    90,
+                    100,
+                    110
+                ]
+            }
+        },
+        "skill": {
+            "type": "Skill",
+            "name": "Sheathed Blade",
+            "tag": "Single Target",
+            "energy_gain": 30,
+            "break": 20,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Increases Seele's SPD by {{spd_boost}}% for 3 turn(s) and deals Quantum DMG equal to {{damage}}% of Seele's ATK to one designated enemy. After an ally target attacks, if the attack target's current HP percentage is 50% or below, Seele will automatically use her Skill on that target 1 time. This Skill does not consume Skill Points or regenerate Energy. This effect can only be triggered 1 time per turn and resets at the start of Seele's turn. If there are no valid targets, she attacks the enemy with the lowest HP percentage instead.",
+            "scaling": {
+                "damage": [
+                    180.0,
+                    198.0,
+                    216.0,
+                    234.0,
+                    252.0,
+                    270.0,
+                    292.5,
+                    315.0,
+                    337.5,
+                    360.0,
+                    378.0,
+                    396.0
+                ],
+                "spd_boost": [
+                    12.5,
+                    13.75,
+                    15.0,
+                    16.25,
+                    17.5,
+                    18.75,
+                    20.3125,
+                    21.875,
+                    23.4375,
+                    25.0,
+                    26.25,
+                    27.5
+                ]
+            }
+        },
+        "ultimate": {
+            "type": "Ultimate",
+            "name": "Butterfly Flurry",
+            "tag": "Single Target",
+            "energy_cost": 120,
+            "energy_gain": 5,
+            "break": 30,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Seele enters the Amplification state and deals Quantum DMG equal to {{damage}}% of her ATK to one designated enemy.",
+            "scaling": {
+                "damage": [
+                    360.0,
+                    396.0,
+                    432.0,
+                    468.0,
+                    504.0,
+                    540.0,
+                    585.0,
+                    630.0,
+                    675.0,
+                    720.0,
+                    756.0,
+                    792.0
+                ]
+            }
+        },
+        "talent": {
+            "type": "Talent",
+            "name": "Resurgence",
+            "tag": "Enhance",
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Upon defeating an enemy with Basic ATK, Skill, or Ultimate, enters the Amplification state and receives an extra turn. While in the Amplification state, the DMG dealt by Seele increases by {{dmg_boost}}% for 3 turn(s). Enemies defeated in the extra turn provided by \"Resurgence\" will not trigger another \"Resurgence.\"",
+            "scaling": {
+                "dmg_boost": [
+                    40.0,
+                    44.0,
+                    48.0,
+                    52.0,
+                    56.0,
+                    60.0,
+                    65.0,
+                    70.0,
+                    75.0,
+                    80.0,
+                    84.0,
+                    88.0
+                ]
+            }
+        },
+        "technique": {
+            "type": "Technique",
+            "name": "Phantom Illusion",
+            "tag": "Enhance",
+            "description": "After using her Technique, Seele gains Stealth for 20 second(s). While Stealth is active, Seele cannot be detected by enemies. When entering battle by attacking enemies, Seele immediately enters the Amplification state and deals Quantum DMG equal to her Skill DMG multiplier to one random enemy. This DMG is a guaranteed CRIT Hit."
+        }
+    },
+    "major_traces": {
+        "2": {
+            "name": "Nightshade",
+            "description": "When defeating an enemy target, increases Seele's DMG dealt by 50%. This effect can stack up to 3 time(s) and lasts for 3 turn(s)."
+        },
+        "4": {
+            "name": "Lacerate",
+            "description": "While Seele is in the Amplification state, her Quantum RES PEN increases by 25%."
+        },
+        "6": {
+            "name": "Rippling Waves",
+            "description": "After using a Basic ATK, Seele's next action advances by 20%."
+        }
+    },
+    "stat_bonuses": [
+        {
+            "stat": "ATK",
+            "value": "+28%"
+        },
+        {
+            "stat": "CRIT DMG",
+            "value": "+24%"
+        },
+        {
+            "stat": "DEF",
+            "value": "+12.5%"
+        }
+    ],
+    "eidolons": [
+        {
+            "level": 1,
+            "name": "Extirpating Slash",
+            "description": "When dealing DMG to an enemy whose HP percentage is 80% or lower, increases CRIT Rate by 15% and DMG ignores 20% of the target's DEF."
+        },
+        {
+            "level": 2,
+            "name": "Dancing Butterfly",
+            "description": "The SPD Boost effect of Seele's Skill can stack up to 2 time(s)."
+        },
+        {
+            "level": 3,
+            "name": "Dazzling Tumult",
+            "description": "Skill Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+        },
+        {
+            "level": 4,
+            "name": "Flitting Phantasm",
+            "description": "Seele regenerates 15 Energy when she defeats an enemy."
+        },
+        {
+            "level": 5,
+            "name": "Piercing Shards",
+            "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+        },
+        {
+            "level": 6,
+            "name": "Shattering Shambles",
+            "description": "After attacking with Ultimate, Seele inflicts \"Butterfly Flurry\" on the target for 3 turn(s). Enemy targets in \"Butterfly Flurry\" will additionally take 1 instance of True DMG equal to 30% of Seele's Ultimate DMG after receiving an attack. When the target under the \"Butterfly Flurry\" state is defeated by any unit, Seele's Talent will also be triggered. When Seele is knocked down, the \"Butterfly Flurry\" inflicted on enemies will be removed."
+        }
+    ]
+}

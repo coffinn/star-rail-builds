@@ -1,0 +1,217 @@
+{
+  "id": "cipher",
+  "name": "Cipher",
+  "rarity": 5,
+  "element": "quantum",
+  "path": "nihility",
+  "version_released": "3.4",
+  "max_energy": 130,
+
+  "level_80_stats": {
+    "hp": 940,
+    "atk": 756,
+    "def": 442,
+    "spd": 106
+  },
+
+  "abilities": {
+    "basic": {
+      "type": "Basic ATK",
+      "name": "Oops, a Missed Catch",
+      "tag": "Single Target",
+      "energy_gain": 20,
+      "break": 10,
+
+      "min_level": 1,
+      "max_level": 7,
+      "default_level": 6,
+
+      "description_template": "Deals Quantum DMG equal to {{damage}}% of Cipher's ATK to one designated enemy.",
+
+      "scaling": {
+        "damage": [50, 60, 70, 80, 90, 100, 110]
+      }
+    },
+
+    "skill": {
+      "type": "Skill",
+      "name": "Hey, Jackpot for the Taking",
+      "tag": "Blast",
+      "energy_gain": 30,
+      "break_main": 20,
+      "break_aoe": 10,
+
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+
+      "description_template": "Has a {{weaken_chance}}% base chance to Weaken one designated enemy and its adjacent targets (decreasing their DMG dealt by 10%) and increases Cipher's ATK by {{atk_boost}}%, lasting for 2 turn(s). Moreover, deals Quantum DMG equal to {{main_damage}}% of Cipher's ATK to one designated enemy, and Quantum DMG equal to {{adjacent_damage}}% of Cipher's ATK to the adjacent targets.",
+
+      "scaling": {
+        "weaken_chance": [
+          60.0, 66.0, 72.0, 78.0, 84.0, 90.0,
+          97.5, 105.0, 112.5, 120.0,
+          126.0, 132.0
+        ],
+        "atk_boost": [
+          15.0, 16.5, 18.0, 19.5, 21.0, 22.5,
+          24.375, 26.25, 28.125, 30.0,
+          31.5, 33.0
+        ],
+        "main_damage": [
+          100.0, 110.0, 120.0, 130.0, 140.0, 150.0,
+          162.5, 175.0, 187.5, 200.0,
+          210.0, 220.0
+        ],
+        "adjacent_damage": [
+          50.0, 55.0, 60.0, 65.0, 70.0, 75.0,
+          81.25, 87.5, 93.75, 100.0,
+          105.0, 110.0
+        ]
+      }
+    },
+
+    "ultimate": {
+      "type": "Ultimate",
+      "name": "Yours Truly, Kitty Phantom Thief!",
+      "tag": "Blast",
+      "energy_cost": 130,
+      "energy_gain": 5,
+      "break_main": 30,
+      "break_aoe": 20,
+
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+
+      "description_template": "Deals Quantum DMG equal to {{primary_damage}}% of Cipher's ATK to one designated enemy. Then, deals True DMG equal to {{true_dmg_primary}}% of the current tally to that enemy. Moreover, deals Quantum DMG equal to {{adjacent_damage}}% of Cipher's ATK alongside True DMG equal to {{true_dmg_adjacent}}% of the current tally to the designated enemy and its adjacent targets. The True DMG is distributed evenly among all targets. After using Ultimate, clears the tally.",
+
+      "scaling": {
+        "primary_damage": [
+          60.0, 66.0, 72.0, 78.0, 84.0, 90.0,
+          97.5, 105.0, 112.5, 120.0,
+          126.0, 132.0
+        ],
+        "true_dmg_primary": [
+          12.5, 13.75, 15.0, 16.25, 17.5, 18.75,
+          20.3125, 21.875, 23.4375, 25.0,
+          26.25, 27.5
+        ],
+        "adjacent_damage": [
+          20.0, 22.0, 24.0, 26.0, 28.0, 30.0,
+          32.5, 35.0, 37.5, 40.0,
+          42.0, 44.0
+        ],
+        "true_dmg_adjacent": [
+          37.5, 41.25, 45.0, 48.75, 52.5, 56.25,
+          60.9375, 65.625, 70.3125, 75.0,
+          78.75, 82.5
+        ]
+      }
+    },
+
+    "talent": {
+      "type": "Talent",
+      "name": "The Hospitable Dolosian",
+      "tag": "Single Target",
+      "energy_gain": 5,
+      "break_main": 20,
+
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+
+      "description_template": "When there are no enemies in the \"Patron\" state, Cipher causes the enemy with the highest Max HP to become the \"Patron.\" When using Skill or Ultimate, the primary target becomes the \"Patron.\" After the \"Patron\" is attacked by other ally targets, Cipher launches a Follow-Up ATK against the \"Patron,\" dealing Quantum DMG equal to {{follow_up_damage}}% of Cipher's ATK. This effect can trigger up to 1 time per turn, and resets at the start of Cipher's turn. Cipher tallies {{tally_rate}}% of the non-True DMG dealt by ally targets to the \"Patron.\" Overflow DMG is not tallied. The tally is cleared after using Ultimate.",
+
+      "scaling": {
+        "follow_up_damage": [
+          75.0, 82.5, 90.0, 97.5, 105.0, 112.5,
+          121.875, 131.25, 140.625, 150.0,
+          157.5, 165.0
+        ],
+        "tally_rate": [
+          6.0, 6.6, 7.2, 7.8, 8.4, 9.0,
+          9.75, 10.5, 11.25, 12.0,
+          12.6, 13.2
+        ]
+      }
+    },
+
+    "technique": {
+      "type": "Technique",
+      "name": "Puss in Boots",
+      "tag": "Enhance",
+      "description": "Gains \"Zagreus's Blessing\" for 15 second(s). During this time, Cipher is undetectable by enemies and movement speed increases by 50%. When approaching an enemy, can immediately gain a random Consumable (up to 50 times per Earth day). When entering battle with \"Zagreus's Blessing\" active, deals Quantum DMG equal to 100% of Cipher's ATK to all enemies, and the tallied amount from this DMG increases by 200%."
+    }
+  },
+
+  "major_traces": {
+    "2": {
+      "name": "Empyrean Strides",
+      "description": "When Cipher's SPD is greater than or equal to 140, CRIT Rate increases by 25.0% and tally gain increases by 50.0%. When Cipher's SPD is greater than or equal to 170, CRIT Rate instead increases by 50.0% and tally gain instead increases by 100.0%."
+    },
+
+    "4": {
+      "name": "300 Rogues",
+      "description": "Cipher can tally 8.0% of the non-True DMG dealt by ally targets to enemy targets other than the \"Patron.\" Overflow DMG is not tallied."
+    },
+
+    "6": {
+      "name": "Sleight of Sky",
+      "description": "Increases the CRIT DMG dealt by the Talent's Follow-Up ATK by 100%. While Cipher is on the battlefield, DMG received by all enemy targets increases by 40.0%."
+    }
+  },
+
+  "stat_bonuses": [
+    {
+      "stat": "SPD",
+      "value": "+14"
+    },
+    {
+      "stat": "Quantum DMG",
+      "value": "+14.4%"
+    },
+    {
+      "stat": "Effect Hit Rate",
+      "value": "+10.0%"
+    }
+  ],
+
+  "eidolons": [
+    {
+      "level": 1,
+      "name": "Read the Room, Seek the Glee",
+      "description": "Cipher's tally of DMG is 150.0% of its original value. When using the Talent's Follow-Up ATK, increases Cipher's ATK by 80.0%, lasting for 2 turn(s)."
+    },
+
+    {
+      "level": 2,
+      "name": "In the Fray, Nab On a Spree",
+      "description": "When Cipher hits an enemy target, there is a 120.0% base chance to increase the DMG it receives by 30.0%, lasting for 2 turn(s)."
+    },
+
+    {
+      "level": 3,
+      "name": "From Thin Air, Hard to Foresee",
+      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+    },
+
+    {
+      "level": 4,
+      "name": "The Jig Is Up, Quick to Flee",
+      "description": "After the \"Patron\" is attacked by an ally target, Cipher deals Quantum Additional DMG to it equal to 50.0% of Cipher's ATK."
+    },
+
+    {
+      "level": 5,
+      "name": "Safe in Numbers, Light as a Bee",
+      "description": "Skill Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+    },
+
+    {
+      "level": 6,
+      "name": "The Thief's Game, Unsung and Free",
+      "description": "The DMG dealt by the Talent's Follow-Up ATK increases by 350.0%. During the tally, an additional 16.0% of non-Overflow DMG dealt by this attack is tallied. After the tally is cleared by using Ultimate, 20.0% of the cleared tally is returned."
+    }
+  ]
+}

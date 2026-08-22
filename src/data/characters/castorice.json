@@ -1,0 +1,461 @@
+{
+  "id": "castorice",
+  "name": "Castorice",
+  "rarity": 5,
+  "element": "quantum",
+  "path": "remembrance",
+  "version_released": "3.2",
+  "max_energy": null,
+  "uses_newbud": true,
+
+  "level_80_stats": {
+    "hp": 1421,
+    "atk": 625,
+    "def": 422,
+    "spd": 95
+  },
+
+  "abilities": {
+    "basic": {
+      "type": "Basic ATK",
+      "name": "Lament, Nethersea's Ripple",
+      "tag": "Single Target",
+      "break": 10,
+
+      "min_level": 1,
+      "max_level": 7,
+      "default_level": 6,
+
+      "description_template": "Deals Quantum DMG equal to {{damage}}% of Castorice's Max HP to one designated enemy.",
+
+      "scaling": {
+        "damage": [
+          25,
+          30,
+          35,
+          40,
+          45,
+          50,
+          55
+        ]
+      }
+    },
+
+    "skill": {
+      "type": "Skill",
+      "name": "Silence, Wraithfly's Caress",
+      "tag": "Blast",
+      "break_main": 20,
+      "break_aoe": 10,
+
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+
+      "description_template": "Consumes 30% of all allies' current HP. Deals Quantum DMG equal to {{damage_main}}% of Castorice's Max HP to one designated enemy and Quantum DMG equal to {{damage_adjacent}}% of Castorice's Max HP to adjacent targets. If current HP is insufficient, reduces current HP down to 1. If Netherwing is on the battlefield, the Skill becomes \"Boneclaw, Doomdrake's Embrace\" instead.",
+
+      "scaling": {
+        "damage_main": [
+          25.0,
+          27.5,
+          30.0,
+          32.5,
+          35.0,
+          37.5,
+          40.625,
+          43.75,
+          46.875,
+          50.0,
+          52.5,
+          55.0
+        ],
+
+        "damage_adjacent": [
+          15.0,
+          16.5,
+          18.0,
+          19.5,
+          21.0,
+          22.5,
+          24.375,
+          26.25,
+          28.125,
+          30.0,
+          31.5,
+          33.0
+        ]
+      }
+    },
+
+    "skill_enhanced": {
+      "type": "Skill (Enhanced)",
+      "name": "Boneclaw, Doomdrake's Embrace",
+      "tag": "AoE",
+      "break_adjacent": 20,
+
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+
+      "description_template": "Consumes 40% of the current HP of all allies (except Netherwing). Castorice and Netherwing launch a Joint ATK on all targets, dealing Quantum DMG equal to {{damage_castorice}}% plus {{damage_netherwing}}% of Castorice's Max HP to all enemies. If current HP is insufficient, reduces current HP down to 1.",
+
+      "scaling": {
+        "damage_castorice": [
+          15.0,
+          16.5,
+          18.0,
+          19.5,
+          21.0,
+          22.5,
+          24.375,
+          26.25,
+          28.125,
+          30.0,
+          31.5,
+          33.0
+        ],
+
+        "damage_netherwing": [
+          25.0,
+          27.5,
+          30.0,
+          32.5,
+          35.0,
+          37.5,
+          40.625,
+          43.75,
+          46.875,
+          50.0,
+          52.5,
+          55.0
+        ]
+      }
+    },
+
+    "ultimate": {
+      "type": "Ultimate",
+      "name": "Doomshriek, Dawn's Chime",
+      "tag": "Summon",
+
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+
+      "description_template": "Summons the Memosprite Netherwing and advances its action by 100%. Deploys the Territory \"Lost Netherland,\" decreasing all enemies' All-Type RES by {{res_reduction}}%. If Castorice has the DMG Boost effect from her Talent, this effect spreads to Netherwing. Netherwing has an initial SPD of 165 and Max HP equal to 100% of max Newbud. After Netherwing experiences 3 turns or when its HP reaches 0, it disappears and dispels \"Lost Netherland.\"",
+
+      "scaling": {
+        "res_reduction": [
+          10.0,
+          11.0,
+          12.0,
+          13.0,
+          14.0,
+          15.0,
+          16.25,
+          17.5,
+          18.75,
+          20.0,
+          21.0,
+          22.0
+        ]
+      }
+    },
+
+    "talent": {
+      "type": "Talent",
+      "name": "Desolation Across Palms",
+      "tag": "Enhance",
+
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+
+      "description_template": "The maximum limit of Newbud is tied to the levels of all characters on the battlefield. For every 1 point of HP lost by all allies, Castorice gains 1 point of Newbud. When Newbud reaches its maximum, the Ultimate can be activated. When allies lose HP, Castorice's and Netherwing's DMG dealt increases by {{dmg_boost}}%. This effect stacks up to 3 time(s), lasting for 3 turn(s). When Netherwing is on the field, Newbud cannot be gained through Talent, and every 1 point of HP lost by all allies (except Netherwing) is converted to an equal amount of HP for Netherwing.",
+
+      "scaling": {
+        "dmg_boost": [
+          10.0,
+          11.0,
+          12.0,
+          13.0,
+          14.0,
+          15.0,
+          16.25,
+          17.5,
+          18.75,
+          20.0,
+          21.0,
+          22.0
+        ]
+      }
+    },
+
+    "technique": {
+      "type": "Technique",
+      "name": "Wail, Death's Herald",
+      "tag": "Attack",
+      "description": "After using the Technique, enters the \"Netherveil\" state for 20 seconds. While active, enemies are unable to actively approach Castorice. Active attacks during Netherveil cause all enemies within range to enter combat. At the same time, summons Netherwing, advances its action by 100%, and deploys the Territory \"Lost Netherland.\" Netherwing's current HP equals 50% of max Newbud. After entering battle, consumes 40% of the current HP of all allies (except Netherwing). If Netherwing is not summoned after entering battle, Castorice gains Newbud equal to 30% of max Newbud."
+    }
+  },
+
+  "memosprite": {
+    "name": "Netherwing",
+    "initial_spd": 165,
+    "hp_source": "100% of max Newbud",
+
+    "skills": {
+      "claw": {
+        "type": "Memosprite Skill",
+        "name": "Claw Splits the Veil",
+        "tag": "AoE",
+        "break_adjacent": 10,
+
+        "min_level": 1,
+        "max_level": 10,
+        "default_level": 6,
+
+        "description_template": "Deals Quantum DMG equal to {{damage}}% of Castorice's Max HP to all enemies.",
+
+        "scaling": {
+          "damage": [
+            20.0,
+            24.0,
+            28.0,
+            32.0,
+            36.0,
+            40.0,
+            44.0,
+            48.0,
+            52.0,
+            56.0
+          ]
+        }
+      },
+
+      "breath": {
+        "type": "Memosprite Skill",
+        "name": "Breath Scorches the Shadow",
+        "tag": "AoE",
+        "break_adjacent": 10,
+
+        "min_level": 1,
+        "max_level": 10,
+        "default_level": 6,
+
+        "description_template": "Consumes {{hp_cost}}% of Netherwing's Max HP to deal Quantum DMG equal to {{damage_first}}% of Castorice's Max HP to all enemies. In one attack, this ability can be launched repeatedly with progressively increasing DMG multipliers of {{damage_second}}% then {{damage_third}}%. After reaching the maximum, the multiplier does not increase further. When Netherwing's current HP is equal to or less than 25% of its Max HP, launching this ability reduces HP to 1 and triggers \"Wings Sweep the Ruins.\"",
+
+        "scaling": {
+          "hp_cost": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            30
+          ],
+
+          "damage_first": [
+            12.0,
+            14.4,
+            16.8,
+            19.2,
+            21.6,
+            24.0,
+            26.4,
+            28.8,
+            31.2,
+            33.6
+          ],
+
+          "damage_second": [
+            14.0,
+            16.8,
+            19.6,
+            22.4,
+            25.2,
+            28.0,
+            30.8,
+            33.6,
+            36.4,
+            39.2
+          ],
+
+          "damage_third": [
+            17.0,
+            20.4,
+            23.8,
+            27.2,
+            30.6,
+            34.0,
+            37.4,
+            40.8,
+            44.2,
+            47.6
+          ]
+        }
+      },
+
+      "mooncocoon": {
+        "type": "Memosprite Talent",
+        "name": "Mooncocoon Shrouds the Form",
+        "tag": "Support",
+        "description": "When Netherwing is on the field, it acts as backup for allies. When allies take DMG or consume HP, their current HP can be reduced down to a minimum of 1, after which Netherwing bears the HP loss at 500% of the original value. This lasts until Netherwing disappears."
+      },
+
+      "roar": {
+        "type": "Memosprite Talent",
+        "name": "Roar Rumbles the Realm",
+        "tag": "Support",
+
+        "min_level": 1,
+        "max_level": 10,
+        "default_level": 6,
+
+        "description_template": "When Netherwing is summoned, increases DMG dealt by all allies by {{dmg_boost}}%, lasting for 3 turn(s).",
+
+        "scaling": {
+          "dmg_boost": [
+            5.0,
+            6.0,
+            7.0,
+            8.0,
+            9.0,
+            10.0,
+            11.0,
+            12.0,
+            13.0,
+            14.0
+          ]
+        }
+      },
+
+      "wings": {
+        "type": "Memosprite Talent",
+        "name": "Wings Sweep the Ruins",
+        "tag": "Bounce",
+        "break_main": 5,
+
+        "min_level": 1,
+        "max_level": 10,
+        "default_level": 6,
+
+        "description_template": "When Netherwing disappears, deals 6 instances of Quantum DMG, each dealing {{damage}}% of Castorice's Max HP to one random enemy. At the same time, restores HP equal to {{heal}}% of Castorice's Max HP plus {{heal_flat}} for all allies.",
+
+        "scaling": {
+          "damage": [
+            20.0,
+            24.0,
+            28.0,
+            32.0,
+            36.0,
+            40.0,
+            44.0,
+            48.0,
+            52.0,
+            56.0
+          ],
+
+          "heal": [
+            3.0,
+            3.6,
+            4.2,
+            4.8,
+            5.4,
+            6.0,
+            6.6,
+            7.2,
+            7.8,
+            8.4
+          ],
+
+          "heal_flat": [
+            400,
+            480,
+            560,
+            640,
+            720,
+            800,
+            880,
+            960,
+            1040,
+            1120
+          ]
+        }
+      }
+    }
+  },
+
+  "major_traces": {
+    "2": {
+      "name": "Contained Dark Tide",
+      "description": "After ally targets (excluding Netherwing) receive healing, converts 100% of the healed amount into Newbud. If Netherwing is on the field, this is converted to Netherwing's HP instead. Each ally can accumulate a conversion amount up to 12% of max Newbud. After any unit takes action, all units reset their accumulated conversion amount."
+    },
+
+    "4": {
+      "name": "Inverted Torch",
+      "description": "When Castorice's current HP is higher than or equal to 50% of her Max HP, her SPD increases by 40. When Netherwing uses \"Breath Scorches the Shadow\" and deals fatal damage to all enemies on the field or brings them to a point where their HP cannot be reduced further, Netherwing's SPD increases by 100%, lasting for 1 turn."
+    },
+
+    "6": {
+      "name": "Where The West Wind Dwells",
+      "description": "Each time Netherwing uses \"Breath Scorches the Shadow,\" the DMG dealt increases by 30%. This effect stacks up to 6 time(s) and lasts until the end of this turn."
+    }
+  },
+
+  "stat_bonuses": [
+    {
+      "stat": "CRIT Rate",
+      "value": "+18.7%"
+    },
+    {
+      "stat": "Quantum DMG",
+      "value": "+14.4%"
+    },
+    {
+      "stat": "CRIT DMG",
+      "value": "+13.3%"
+    }
+  ],
+
+  "eidolons": [
+    {
+      "level": 1,
+      "name": "Snowbound Maiden, Memory to Tomb",
+      "description": "When the enemy target's current HP is at or below 80% of Max HP, DMG dealt by \"Boneclaw, Doomdrake's Embrace,\" \"Claw Splits the Veil,\" \"Breath Scorches the Shadow,\" and \"Wings Sweep the Ruins\" is 120% of the original DMG. When the enemy's HP is at or below 50% of Max HP, this increases to 140% of original DMG."
+    },
+
+    {
+      "level": 2,
+      "name": "Crown on Wings of Bloom",
+      "description": "After summoning the Memosprite Netherwing, Castorice gains 2 stacks of \"Ardent Will\" (max 2). Ardent Will can be used to offset the HP cost of Netherwing's \"Breath Scorches the Shadow\" and advance Castorice's action by 100%. When using the next Enhanced Skill, Castorice gains Newbud equal to 30% of max Newbud."
+    },
+
+    {
+      "level": 3,
+      "name": "Pious Pilgrim, Dance in Doom",
+      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10. Memosprite Talent Lv. +1, up to a maximum of Lv. 10."
+    },
+
+    {
+      "level": 4,
+      "name": "Rest in Songs of Gloom",
+      "description": "While Castorice is on the field, all allies' HP restored when receiving healing increases by 20%."
+    },
+
+    {
+      "level": 5,
+      "name": "Pristine Pages, Prophecy as Plume",
+      "description": "Skill Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15. Memosprite Skill Lv. +1, up to a maximum of Lv. 10."
+    },
+
+    {
+      "level": 6,
+      "name": "Await for Years to Loom",
+      "description": "When Castorice or Netherwing deals DMG, increases Quantum RES PEN by 20%. During Netherwing's attacks, can reduce enemy Toughness regardless of Weakness Types. When breaking Weaknesses, triggers the Quantum Weakness Break effect. The number of Bounces for Netherwing's Talent \"Wings Sweep the Ruins\" additionally increases by 3."
+    }
+  ]
+}
