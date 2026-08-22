@@ -26,7 +26,7 @@
       "max_level": 7,
       "default_level": 6,
 
-      "description_template": "Deals Physical DMG equal to {{damage}}% of Robin's ATK to a single target enemy. ",
+      "description_template": "Deals Fire DMG equal to {{damage}}% of Hook's ATK to a single enemy.",
 
       "scaling": {
         "damage": [
