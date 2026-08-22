@@ -656,33 +656,6 @@ const pathOptions = [
        scrolling instead of shrinking icons into unreadability.
        ===================================================== */
 
-    @media (max-width: 1100px) {
-        .home-icon-toolbar {
-            display: flex !important;
-            flex-wrap: nowrap !important;
-
-            width: 100%;
-
-            gap: 10px;
-
-            overflow-x: auto;
-
-            padding-bottom: 4px;
-        }
-
-        .home-icon-group-rarity {
-            flex: 0 0 155px;
-        }
-
-        .home-icon-group-element {
-            flex: 0 0 390px;
-        }
-
-        .home-icon-group-path {
-            flex: 0 0 500px;
-        }
-    }
-
     @media (max-width: 700px) {
         .home-filter-top {
             flex-wrap: wrap;
@@ -694,36 +667,87 @@ const pathOptions = [
         }
 
         .home-filters {
-            padding: 9px 9px 10px;
+            padding: 8px;
         }
 
+        /* Stack Rarity, Type, and Path vertically */
+        .home-icon-toolbar {
+            display: grid !important;
+            grid-template-columns: 1fr !important;
+
+            width: 100%;
+
+            gap: 8px;
+
+            overflow: visible;
+            padding-bottom: 0;
+        }
+
+        /* Each group fills its own row */
+        .home-icon-group-rarity,
+        .home-icon-group-element,
+        .home-icon-group-path {
+            width: 100% !important;
+            flex: none !important;
+        }
+
+        /* Each strip fills the row */
+        .home-segmented-filter {
+            width: 100% !important;
+        }
+
+        /* Buttons divide the available width evenly */
         .home-filters label.home-filter-choice {
-            height: 40px !important;
-            min-height: 40px !important;
+            flex: 1 1 0 !important;
+
+            width: auto !important;
+            min-width: 0 !important;
+
+            height: 34px !important;
+            min-height: 34px !important;
         }
 
         .home-filter-button {
-            height: 40px;
+            width: 100% !important;
+            height: 34px;
+
+            padding: 4px;
         }
 
+        /* Type icons */
         .home-icon-group-element .home-filter-button img {
-            width: 25px !important;
-            min-width: 25px !important;
-            max-width: 25px !important;
+            width: 20px !important;
+            min-width: 20px !important;
+            max-width: 20px !important;
 
-            height: 25px !important;
-            min-height: 25px !important;
-            max-height: 25px !important;
+            height: 20px !important;
+            min-height: 20px !important;
+            max-height: 20px !important;
         }
 
+        /* Path icons */
         .home-icon-group-path .home-filter-button img {
-            width: 27px !important;
-            min-width: 27px !important;
-            max-width: 27px !important;
+            width: 21px !important;
+            min-width: 21px !important;
+            max-width: 21px !important;
 
-            height: 27px !important;
-            min-height: 27px !important;
-            max-height: 27px !important;
+            height: 21px !important;
+            min-height: 21px !important;
+            max-height: 21px !important;
+        }
+
+        .home-filter-all {
+            font-size: 0.85rem;
+        }
+
+        .home-filter-rarity {
+            font-size: 0.72rem;
+        }
+
+        .home-filters .home-icon-group legend {
+            margin-bottom: 3px;
+
+            font-size: 0.6rem;
         }
     }
 </style>
