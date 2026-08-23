@@ -36,6 +36,70 @@ const supportedExtensions = [
     '.jpeg',
 ];
 
+/*
+ * Trailblazer source IDs.
+ *
+ * Change this once depending on which Trailblazer
+ * artwork the site should use.
+ */
+const TRAILBLAZER_GENDER = 'female';
+
+const TRAILBLAZER_SOURCE_IDS = {
+    male: {
+        destruction: '8001',
+        preservation: '8003',
+        harmony: '8005',
+        remembrance: '8007',
+        elation: '8009',
+    },
+
+    female: {
+        destruction: '8002',
+        preservation: '8004',
+        harmony: '8006',
+        remembrance: '8008',
+        elation: '8010',
+    },
+};
+
+function getAutomaticCharacterSourceId(
+    localEntry,
+) {
+    const key =
+        normalizeName(localEntry.key);
+
+    /*
+     * Supports both:
+     *
+     * trailblazer-destruction
+     * destruction-trailblazer
+     */
+    const normalMatch =
+        key.match(
+            /^trailblazer-(destruction|preservation|harmony|remembrance|elation)$/,
+        );
+
+    const reverseMatch =
+        key.match(
+            /^(destruction|preservation|harmony|remembrance|elation)-trailblazer$/,
+        );
+
+    const pathName =
+        normalMatch?.[1] ??
+        reverseMatch?.[1];
+
+    if (!pathName) {
+        return null;
+    }
+
+    return (
+        TRAILBLAZER_SOURCE_IDS[
+        TRAILBLAZER_GENDER
+        ]?.[pathName] ??
+        null
+    );
+}
+
 function normalizeName(value) {
     return String(value ?? '')
         .normalize('NFKD')
@@ -433,6 +497,41 @@ function findSourceEntry(
     localEntry,
     sourceId,
 ) {
+    /*
+     * Explicit IDs still take priority.
+     *
+     * Otherwise, special characters such as
+     * Trailblazer can resolve automatically.
+     */
+    const automaticSourceId =
+        kind === 'character'
+            ? getAutomaticCharacterSourceId(
+                localEntry,
+            )
+            : null;
+
+    const resolvedSourceId =
+        sourceId ??
+        automaticSourceId;
+
+    if (resolvedSourceId) {
+        const entry =
+            sourceEntries[
+            resolvedSourceId
+            ];
+
+        if (!entry) {
+            throw new Error(
+                `No source entry with ID "${resolvedSourceId}".`,
+            );
+        }
+
+        return entry;
+    }
+
+    /*
+     * First try normal slug-style matching.
+     */
     if (sourceId) {
         const entry =
             sourceEntries[sourceId];
