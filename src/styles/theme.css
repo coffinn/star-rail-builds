@@ -28,12 +28,12 @@ body[data-element="ice"] {
 }
 
 body[data-element="lightning"] {
-    --bg: #320345;
+    --bg: #22052c;
     --element: #c87fff;
 }
 
 body[data-element="wind"] {
-    --bg: #263d21;
+    --bg: #153434;
     --element: #9de43b;
 }
 
