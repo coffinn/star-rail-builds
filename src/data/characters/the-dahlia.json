@@ -1,0 +1,228 @@
+{
+  "id": "the-dahlia",
+  "name": "The Dahlia",
+  "rarity": "5",
+  "element": "fire",
+  "path": "nihility",
+  "version_released": "3.8",
+  "max_energy": 130,
+  "level_80_stats": {
+    "hp": 1086,
+    "atk": 679,
+    "def": 606,
+    "spd": 96
+  },
+  "abilities": {
+    "talent": {
+      "type": "Talent",
+      "name": "Who's Afraid of Constance?",
+      "tag": "Bounce",
+      "energy_gain": 10,
+      "break": 3,
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "When entering combat, The Dahlia regenerates 35 Energy and becomes \"Dance Partners\" along with the teammate that triggered combat. Whenever there is no other \"Dance Partner\" on the field, this unit and the teammate with the highest Break Effect become \"Dance Partners\" together. After a \"Dance Partner\" attacks a Weakness Broken enemy target, the Toughness Reduction from this attack will be converted into 1 instance of Super Break DMG at {{scaling1}}%. After an enemy target gets attacked by the other \"Dance Partner,\" The Dahlia launches Follow-Up ATK and deals 5 instance(s) of DMG, each dealing Fire DMG equal to {{scaling2}}% of The Dahlia's ATK to one random enemy. After each instance of DMG dealt to a Weakness Broken enemy target, the Toughness Reduction from this DMG will be converted into 1 instance of Super Break DMG at {{scaling3}}%. This effect can only trigger once per turn. If the target is defeated before the Follow-Up ATK is used, it will be launched at one random enemy instead.",
+      "scaling": {
+        "scaling1": [
+          30,
+          33,
+          36,
+          39,
+          42,
+          45,
+          49,
+          53,
+          56,
+          60,
+          63,
+          66
+        ],
+        "scaling2": [
+          15,
+          16.5,
+          18,
+          19.5,
+          21,
+          22.5,
+          24.3,
+          26,
+          28,
+          30,
+          32,
+          33
+        ],
+        "scaling3": [
+          100,
+          110,
+          120,
+          130,
+          140,
+          150,
+          163,
+          175,
+          188,
+          200,
+          210,
+          220
+        ]
+      }
+    },
+    "skill": {
+      "type": "Skill",
+      "name": "Lick... Enkindled Betrayal",
+      "tag": "Blast",
+      "energy_gain": 30,
+      "break": 10,
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "Deploys a Zone that lasts for 3 turn(s). This duration decreases by 1 at the start of The Dahlia's turn. Then, deals Fire DMG equal to {{scaling1}}% of The Dahlia's ATK to one designated enemy and their adjacent targets. While the Zone lasts, increases all allies' Weakness Break Efficiency by 50%. Toughness Reduction taken by enemy targets while not Weakness Broken can also be converted into Super Break DMG.",
+      "scaling": {
+        "scaling1": [
+          80,
+          88,
+          96,
+          104,
+          112,
+          120,
+          130,
+          140,
+          150,
+          160,
+          168
+        ]
+      }
+    },
+    "ultimate": {
+      "type": "Ultimate",
+      "name": "Wallow... Entombed Ash",
+      "tag": "AoE",
+      "energy_gain": 5,
+      "break_aoe": 20,
+      "energy_cost": 130,
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "Inflicts a \"Wilt\" state on all enemies, lasting for 4 turn(s). Then, deals Fire DMG equal to {{scaling1}}% of The Dahlia's ATK, which is distributed evenly across all enemies. Enemy targets in the \"Wilt\" state have their DEF reduced by {{scaling2}}% and will be implanted with Weakness of all Dance Partners' Types.",
+      "scaling": {
+        "scaling1": [
+          180,
+          192,
+          204,
+          216,
+          228,
+          240,
+          255,
+          270,
+          285,
+          300,
+          312,
+          324
+        ],
+        "scaling2": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      }
+    },
+    "basic": {
+      "type": "Basic ATK",
+      "name": "Fiddle... Fissured Memory",
+      "tag": "Single Target",
+      "energy_gain": 20,
+      "break": 10,
+      "min_level": 1,
+      "max_level": 7,
+      "default_level": 6,
+      "description_template": "Deals Fire DMG equal to {{scaling1}}% of The Dahlia's ATK to one designated enemy.",
+      "scaling": {
+        "scaling1": [
+          50,
+          60,
+          70,
+          80,
+          90,
+          100,
+          110
+        ]
+      }
+    },
+    "technique": {
+      "type": "Technique",
+      "name": "The Heart Makes the Finest Tomb",
+      "tag": "Impair",
+      "description": "After using Technique, creates a Special Dimension that lasts for 20 second(s). Enemies within this dimension will not actively attack ally targets. After entering combat with enemies in the Special Dimension, The Dahlia immediately deploys her Skill's Zone, and converts the combat-triggering Toughness Reduction into 1 instance of Super Break DMG at 60% against enemy targets that are Weakness Broken. Only 1 Dimension Effect created by allies can exist at the same time."
+    }
+  },
+  "major_traces": {
+    "2": {
+      "name": "Yet Another Funeral",
+      "description": "When entering combat, increases other characters' Break Effect by an amount equal to 24% of The Dahlia's Break Effect plus 50%, lasting for 1 turn(s). When The Dahlia receives healing or a Shield provided by a teammate, this effect triggers again, lasting for 3 turn(s). Cannot trigger repeatedly within one turn."
+    },
+    "4": {
+      "name": "Lament, Lost Soul",
+      "description": "When using Talent's Follow-Up ATK, recovers 1 Skill Point for allies. For every 2 instance(s) of Talent's Follow-Up ATK used, this effect can trigger once."
+    },
+    "6": {
+      "name": "Outgrow the Old, Espouse the New",
+      "description": "When an ally target adds Weakness to an enemy target, increases SPD by 30% for 2 turn(s). If a Fire ally character has implanted a Weakness when using an attack, then after the attack, additionally deals a fixed amount of 20 Fire Toughness Reduction to every target implanted with Weakness. Also, regenerates Energy equal to 10% of Max Energy. This effect can regenerate Energy up to 50% of Max Energy."
+    }
+  },
+  "stat_bonuses": [
+    {
+      "stat": "SPD",
+      "value": "+5"
+    },
+    {
+      "stat": "Break Effect",
+      "value": "+37.3%"
+    },
+    {
+      "stat": "Effect RES",
+      "value": "+18%"
+    }
+  ],
+  "eidolons": [
+    {
+      "level": 1,
+      "name": "When a Bud Readies to Bloom",
+      "description": "The Super Break DMG multiplier provided by Talent to \"Dance Partners\" now applies to all ally characters, with \"Dance Partners\" additionally receiving a 40% boost. After \"Dance Partners\" use an attack, additionally deals the attacked enemy targets a fixed amount of Toughness Reduction equal to 25% of their Max Toughness (minimum 10, maximum 300). This effect can only trigger once per enemy target, and this trigger count resets after the enemy target receives a killing blow."
+    },
+    {
+      "level": 2,
+      "name": "Fresh, Ethereal, and Beloved",
+      "description": "When The Dahlia is on the field, decreases all enemies' All-Type RES by 20%. When an enemy target enters the field, immediately inflicts \"Wilt\" on them, lasting for 3 turn(s)."
+    },
+    {
+      "level": 3,
+      "name": "Pity Its Petals Thin as Mist",
+      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+    },
+    {
+      "level": 4,
+      "name": "Pity Its Heart Gnawed by Worms",
+      "description": "Increases the number of DMG instances dealt by Talent's Follow-Up ATK by 5. Upon its use, the DMG taken by all enemy targets increases by 12%, lasting for 2 turn(s)."
+    },
+    {
+      "level": 5,
+      "name": "Fallen, Decayed, and Despised",
+      "description": "Skill Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+    },
+    {
+      "level": 6,
+      "name": "And Yet, Always, Deathly Beautiful",
+      "description": "Increases Dance Partners' Break Effect by 150%. When using Talent's Follow-Up ATK, advances the next action of all \"Dance Partners\" by 20%."
+    }
+  ]
+}

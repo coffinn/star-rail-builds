@@ -1,0 +1,324 @@
+{
+  "id": "lingsha",
+  "name": "Lingsha",
+  "rarity": "5",
+  "element": "fire",
+  "path": "abundance",
+  "version_released": "2.5",
+  "max_energy": 110,
+  "level_80_stats": {
+    "hp": 1358,
+    "atk": 679,
+    "def": 436,
+    "spd": 98
+  },
+  "abilities": {
+    "basic": {
+      "type": "Basic ATK",
+      "name": "Votive Incense",
+      "tag": "Single Target",
+      "energy_gain": 20,
+      "break": 10,
+      "min_level": 1,
+      "max_level": 7,
+      "default_level": 6,
+      "description_template": "Deals Fire DMG equal to {{scaling1}}% of Lingsha's ATK to a single target enemy.",
+      "scaling": {
+        "scaling1": [
+          50,
+          60,
+          70,
+          80,
+          90,
+          100,
+          110
+        ]
+      }
+    },
+    "skill": {
+      "type": "Skill",
+      "name": "Smoke and Splendor",
+      "tag": "AoE",
+      "energy_gain": 30,
+      "break_aoe": 10,
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "Deals Fire DMG equal to {{scaling1}}% of Lingsha's ATK to all enemies and at the same time, restores HP equal to {{scaling2}}% of Lingsha's ATK plus {{scaling3}} for all allies. Fuyuan's action advances by 20%.",
+      "scaling": {
+        "scaling1": [
+          40,
+          44,
+          48,
+          52,
+          56,
+          60,
+          65,
+          70,
+          75,
+          80,
+          84,
+          88,
+          92,
+          96,
+          100
+        ],
+        "scaling2": [
+          10,
+          10.5,
+          11,
+          11.5,
+          12,
+          12.4,
+          12.8,
+          13.2,
+          14,
+          14.4,
+          14.8,
+          15.2,
+          15.6,
+          16
+        ],
+        "scaling3": [
+          105,
+          168,
+          215025,
+          262.5,
+          294,
+          325.5,
+          349.125,
+          396.375,
+          420
+        ]
+      }
+    },
+    "ultimate": {
+      "type": "Ultimate",
+      "name": "Dripping Mistscape",
+      "tag": "AoE",
+      "energy_gain": 5,
+      "break_aoe": 20,
+      "energy_cost": 110,
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "Inflicts \"Befog\" on all enemies. While in \"Befog,\" targets receive {{scaling1}}% increased Break DMG, lasting for 2 turn(s). Deals Fire DMG equal to {{scaling2}}% of Lingsha's ATK to all enemies, and at the same time restores HP equal to {{scaling3}}% of Lingsha's ATK plus {{scaling4}} for all allies. Fuyuan's action advances by 100%.",
+      "scaling": {
+        "scaling1": [
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21.25,
+          22.5,
+          23.75,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "scaling2": [
+          90,
+          96,
+          102,
+          108,
+          114,
+          120,
+          128,
+          135,
+          142,
+          150,
+          156,
+          162,
+          168,
+          174,
+          180
+        ],
+        "scaling3": [
+          8,
+          8.5,
+          9,
+          9.5,
+          10,
+          10.4,
+          10.8,
+          11.2,
+          11.6,
+          12,
+          12.4,
+          12.8,
+          13.2,
+          13.6,
+          14
+        ],
+        "scaling4": [
+          90,
+          144,
+          184.5,
+          225,
+          252,
+          279,
+          299.25,
+          319.5,
+          339.75,
+          360,
+          380.25,
+          400.5,
+          420.75,
+          441,
+          461.25
+        ]
+      }
+    },
+    "talent": {
+      "type": "Talent",
+      "name": "Mistdance Manifest",
+      "tag": "AoE",
+      "break_aoe": 10,
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "When using Skill, summons Fuyuan, with an initial SPD of 90 and an initial action count of 3. When taking action, Fuyuan launches Follow-Up ATK, dealing Fire DMG equal to {{scaling1}}% of Lingsha's ATK to all enemies. Additionally deals Fire DMG equal to {{scaling2}}% of Lingsha's ATK to a single random enemy, and this DMG prioritizes targets that have both Toughness greater than 0 and Fire Weakness. Dispels 1 debuff(s) from all allies and restores HP equal to {{scaling3}}% of Lingsha's ATK plus {{scaling4}}. Fuyuan's action count can accumulate up to 5. When the action count reaches 0 or when Lingsha is knocked down, Fuyuan disappears. While Fuyuan is on the field, using Skill can increase Fuyuan's action count by 3.",
+      "scaling": {
+        "scaling1": [
+          38,
+          41,
+          45,
+          49,
+          52,
+          56,
+          61,
+          66,
+          70,
+          75,
+          79,
+          82,
+          86,
+          90,
+          94
+        ],
+        "scaling2": [
+          38,
+          41,
+          45,
+          49,
+          52,
+          56,
+          61,
+          66,
+          70,
+          75,
+          79,
+          82,
+          86,
+          90,
+          94
+        ],
+        "scaling3": [
+          8,
+          8,
+          9,
+          9,
+          10,
+          10,
+          10,
+          11,
+          12,
+          12,
+          12,
+          13,
+          13,
+          14,
+          14
+        ],
+        "scaling4": [
+          90,
+          144,
+          184.5,
+          225,
+          252,
+          279,
+          299.25,
+          319.5,
+          339.75,
+          360,
+          380.25,
+          400.5,
+          420.75,
+          441,
+          461.25
+        ]
+      }
+    },
+    "technique": {
+      "type": "Technique",
+      "name": "Wisps of Aurora",
+      "tag": "Support",
+      "description": "After using Technique, immediately summons Fuyuan at the start of the next battle and inflicts \"Befog\" on all enemies, lasting for 2 turn(s)."
+    }
+  },
+  "major_traces": {
+    "4": {
+      "name": "Sylvan Smoke",
+      "description": "When using Basic ATK, additionally regenerates 10 Energy."
+    },
+    "2": {
+      "name": "Vermilion Waft",
+      "description": "Increases this unit's ATK or Outgoing Healing by an amount equal to 25%/10% of Break Effect, up to a maximum increase of 50%/20% respectively."
+    },
+    "6": {
+      "name": "Ember's Echo",
+      "description": "While \"Fuyuan\" is on the field and any ally character takes DMG or consumes HP, if a character in the team has their current HP percentage lower than or equal to 60%, \"Fuyuan\" will immediately launch the Talent's Follow-Up ATK against enemies. This does not consume Fuyuan's action count. This effect can trigger again after 2 turn(s)."
+    }
+  },
+  "stat_bonuses": [
+    {
+      "stat": "HP",
+      "value": "+18%"
+    },
+    {
+      "stat": "ATK",
+      "value": "+10%"
+    },
+    {
+      "stat": "Break Effect",
+      "value": "+37.3%"
+    }
+  ],
+  "eidolons": [
+    {
+      "level": 1,
+      "name": "Bloom on Vileward Bouquet",
+      "description": "Lingsha's Weakness Break Efficiency increases by 50%. When an enemy unit's Weakness is Broken, reduces their DEF by 20%."
+    },
+    {
+      "level": 2,
+      "name": "Leisure in Carmine Smokeveil",
+      "description": "When using Ultimate, increases all allies' Break Effect by 40%, lasting for 3 turn(s)."
+    },
+    {
+      "level": 3,
+      "name": "Shine of Floral Wick",
+      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+    },
+    {
+      "level": 4,
+      "name": "Redolence from Canopied Banquet",
+      "description": "When Fuyuan takes action, restores HP equal to 40% of Lingsha's ATK for the ally target whose current HP is the lowest."
+    },
+    {
+      "level": 5,
+      "name": "Poise Atop Twists and Turns",
+      "description": "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+    },
+    {
+      "level": 6,
+      "name": "Arcadia Under Deep Seclusion",
+      "description": "While \"Fuyuan\" is on the field, reduces all enemies' All-Type RES by 20%. When \"Fuyuan\" attacks, additionally deals 4 instance(s) of DMG, with each instance dealing Fire DMG equal to 50% of Lingsha's ATK and 5 Toughness Reduction to one random enemy. This prioritizes targets with both Toughness greater than 0 and Fire Weakness."
+    }
+  ]
+}
