@@ -1,0 +1,246 @@
+{
+  "id": "himeko",
+  "name": "Himeko",
+  "rarity": "5",
+  "element": "fire",
+  "path": "erudition",
+  "version_released": "1.0",
+  "max_energy": 120,
+  "level_80_stats": {
+    "hp": 1047,
+    "atk": 756,
+    "def": 436,
+    "spd": 96
+  },
+  "abilities": {
+    "basic": {
+      "type": "Basic ATK",
+      "name": "Sawblade Tuning",
+      "tag": "Single Target",
+      "energy_gain": 20,
+      "break": 10,
+      "min_level": 1,
+      "max_level": 7,
+      "default_level": 6,
+      "description_template": "Deals Fire DMG equal to {{scaling1}}% of Himeko's ATK to a single enemy.",
+      "scaling": {
+        "scaling1": [
+          50,
+          60,
+          70,
+          80,
+          90,
+          100,
+          110,
+          120,
+          130
+        ]
+      }
+    },
+    "skill": {
+      "type": "Skill",
+      "name": "Molten Detonation",
+      "tag": "Blast",
+      "energy_gain": 30,
+      "break_main": 20,
+      "break_adjacent": 10,
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "Deals Fire DMG equal to {{scaling1}}% of Himeko's ATK to a single enemy and Fire DMG equal to {{scaling2}}% of Himeko's ATK to enemies adjacent to it.",
+      "scaling": {
+        "scaling1": [
+          100,
+          110,
+          120,
+          130,
+          140,
+          150,
+          162,
+          175,
+          188,
+          200,
+          210,
+          220,
+          230,
+          240,
+          250
+        ],
+        "scaling2": [
+          40,
+          44,
+          48,
+          52,
+          56,
+          60,
+          65,
+          70,
+          75,
+          80,
+          84,
+          88,
+          92,
+          96,
+          100
+        ]
+      }
+    },
+    "ultimate": {
+      "type": "Ultimate",
+      "name": "Heavenly Flare",
+      "tag": "AoE",
+      "energy_gain": 5,
+      "break_aoe": 20,
+      "energy_cost": 120,
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "Deals Fire DMG equal to {{scaling1}}% of Himeko's ATK to all enemies. Himeko regenerates 5 extra Energy for each enemy defeated.",
+      "scaling": {
+        "scaling1": [
+          138,
+          147,
+          156,
+          166,
+          175,
+          184,
+          196,
+          207,
+          218,
+          230,
+          239,
+          248,
+          258,
+          267,
+          276
+        ]
+      }
+    },
+    "technique": {
+      "type": "Technique",
+      "name": "Incomplete Combustion",
+      "tag": "Impair",
+      "description": "After using Technique, creates a Special Dimension that lasts for 15 second(s). After entering battle with enemies in the Special Dimension, there is a 100% base chance to increase Fire DMG taken by enemies by 10% for 2 turn(s). Only 1 Dimension Effect created by allies can exist at the same time."
+    },
+    "talent": {
+      "type": "Talent",
+      "name": "Victory Rush",
+      "tag": "AoE",
+      "energy_gain": 10,
+      "break_aoe": 10,
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "When an enemy is inflicted with Weakness Break, Himeko gains 1 point of Charge (max 3 points). If Himeko is fully Charged when an ally performs an attack, Himeko immediately performs 1 Follow-Up ATK and deals Fire DMG equal to {{scaling1}}% of her ATK to all enemies, consuming all Charge points. At the start of the battle, Himeko gains 1 point of Charge.",
+      "scaling": {
+        "scaling1": [
+          70,
+          77,
+          84,
+          91,
+          98,
+          105,
+          114,
+          122,
+          131,
+          140,
+          147,
+          154,
+          161,
+          168,
+          175
+        ]
+      }
+    }
+  },
+  "major_traces": {
+    "2": {
+      "name": "Starfire",
+      "description": "After using an attack, there is a 50% base chance to inflict Burn on enemies for 2 turn(s)."
+    },
+    "4": {
+      "name": "Magma",
+      "description": "Skill deals 20% more DMG to enemies currently afflicted with Burn."
+    },
+    "6": {
+      "name": "Benchmark",
+      "description": "When current HP percentage is 80% or higher, CRIT Rate increases by 15%."
+    }
+  },
+  "stat_bonuses": [
+    {
+      "stat": "ATK",
+      "value": "+18%"
+    },
+    {
+      "stat": "Effect Res",
+      "value": "+10%"
+    },
+    {
+      "stat": "Fire DMG",
+      "value": "+22.4%"
+    }
+  ],
+  "eidolons": [
+    {
+      "level": 1,
+      "name": "Childhood",
+      "description": "After \"Victory Rush\" is triggered, Himeko's SPD increases by 20% for 2 turn(s)."
+    },
+    {
+      "level": 2,
+      "name": "Convergence",
+      "description": "Deals 15% more DMG to enemies whose HP percentage is 50% or less."
+    },
+    {
+      "level": 3,
+      "name": "Poised",
+      "description": "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+    },
+    {
+      "level": 4,
+      "name": "Dedication",
+      "description": "When Himeko's Skill inflicts Weakness Break on an enemy, she gains 1 extra point(s) of Charge."
+    },
+    {
+      "level": 5,
+      "name": "Aspiration",
+      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+    },
+    {
+      "level": 6,
+      "name": "Trailblaze!",
+      "description": "Ultimate deals DMG 2 extra times, each of which deals Fire DMG equal to 40% of the original DMG to a random enemy."
+    },
+    {
+      "level": 1,
+      "name": "That Which We Stride Is the Trailblaze",
+      "description": "The number of extra Assist Skill uses from Talent additionally increases by 1. While in the \"Companion Protocol: Verdict\" state, reduces the number of Ultimate uses required to launch Assist Skill by 1. While in the \"Companion Protocol: Decimation\" state, reduces the Charge required to launch Assist Skill by 3. When Himeko \u2022 Nova launches Assist Skill, the number of extra DMG instances increases by 1."
+    },
+    {
+      "level": 2,
+      "name": "The Colors We Never Strike",
+      "description": "The cap of Himeko \u2022 Nova's Assist Skill uses increases to 2, and the DMG dealt by Ultimate and Assist Skill becomes 130% of their original DMG. During the \"Navigator's Semaphore\" state, at the start of {{sic|each turn ,}} additionally recovers 1 use of Assist Skill immediately. When a non-Trailblaze Companions character uses Assist Skill, the Trace \"Hark! The Express's Pulse Roars\" now also grants them 1 extra turn."
+    },
+    {
+      "level": 4,
+      "name": "Let No Skyward Hand Stay Unheld",
+      "description": "When using Assist Skill via the Talent \"Of Fire and Far Faring,\" the All-Type RES PEN boost now applies to all allies. And when Himeko \u2022 Nova gains this effect, her All-Type RES PEN additionally increases by 10%."
+    },
+    {
+      "level": 6,
+      "name": "Ours Is the Oath to Sail Starward",
+      "description": "Himeko \u2022 Nova's Fire RES PEN increases by 20%. The cap of \"Source Energy\"  increases to 6. When an ally uses or launches Assist Skill, DMG dealt by Assist Skill increases by 75%, and Himeko \u2022 Nova gains 1 \"Source Energy.\"  When launching \"Hyperluminal Particle Beam\" during Ultimate, additionally gains 1 \"Source Energy\" . When launching \"Orbital Annihilation Pulse,\" if the current \"Source Energy\"  is 6 or more, additionally deals 1 instance of Fire DMG to all enemies, equal to 160% of Himeko \u2022 Nova's ATK."
+    },
+    {
+      "level": 3,
+      "name": "We Who Are Starborn Muse Starward",
+      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+    },
+    {
+      "level": 5,
+      "name": "To Cross the Cosmos and Beyond",
+      "description": "Skill Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+    }
+  ]
+}
