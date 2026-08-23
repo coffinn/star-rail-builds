@@ -13,8 +13,11 @@ The site combines this data with `src/i18n` dictionaries and the build JSONs in
 
 ```txt
 src/data/
-|-- relics/
-|   |-- relic_sets.json
+|-- characters/
+|   |-- <character-name-1>.json
+|   |-- <character-name-2>.json
+|   |-- <character-name-3>.json
+|   |-- ...
 |-- light-cones/
 |   |-- abundance.json
 |   |-- destruction.json
@@ -25,6 +28,8 @@ src/data/
 |   |-- nihility.json
 |   |-- preservation.json
 |   |-- remembrance.json
+|-- relics/
+|   |-- relic_sets.json
 ```
 
 Matching static item images live separately under:
@@ -52,7 +57,7 @@ The site then uses:
 - `src/i18n/<lang>/light-cones.json` to display the localized light cone name.
 - `src/data/weapons/<light-cone-path>.json` to display light cone rarity, stats, and
   passive information in the weapon popover.
-- `src/assets/item-assets/light-cones/<light-cone-path>/<light-cone-id>.webp` to display its
+- `src/assets/item-assets/light-cones/<light-cone-path>/<light-cone-id>.png` to display its
   image.
 
 Artifact sets work the same way:
@@ -77,19 +82,40 @@ src/data/light-cones/<light-cone-path>.json
 A Light Cone entry can include:
 
 - `rarity`: Light Cone rarity.
-- `source`: special availability source ID shown in the Light Cone popover footer,
-  when relevant. The display text is translated through
-  `src/i18n/<lang>/ui.json` using keys like `Light Cone source Herta's Store`. Omitted
-  sources display the translated `Light Cone source Warp` value. `Herta's Store` and
-  `Light Cone Manifest` are also marked as free Light Cones in rankings and
-  inline Light Cone popovers.
-- `effects`: localized effect text.
+- `passive`: localized effect text.
 - `level_1`: base stats at level 1.
 - `level_max`: base stats at max level.
 - `s1` to `s5`: superimposition values inserted into the passive text.
 
 Effect text can use `{{value}}` placeholders. The popover replaces these with
 the correct superimposition values.
+
+## Character Data
+
+Character data lives in
+
+```txt
+src/data/characters/<character-name>.json
+```
+
+Each character entry uses the same ID as the matching i18n entry:
+
+```txt
+src/i18n/<lang>/characters.json
+src/data/characters/<character-name>.json
+```
+
+A character entry can include:
+
+- `name`: character's name.
+- `rarity`: character's rarity.
+- `element`: character's type.
+- `path`: character's path.
+- `level_80_stats`: character's hp, atk, def, and spd stats at level 80.
+- `abilities`: character's abilities (Basic ATK, Skill, Ultimate, Talent, etc.).
+- `major_traces`: character's major trace names and descriptions.
+- `stat_bonuses`: what stats character's gain from their minor traces.
+- `eidolons`: character's eidolon names and descriptions.
 
 ## Relic Set Data
 
@@ -117,8 +143,9 @@ A relic set entry can include:
 Download matching WebPs from HoYoWiki with:
 
 ```sh
-npm run download:weapon-assets -- <weapon-id>
-npm run download:artifact-assets -- <artifact-set-id>
+npm run download:character-assets -- <character-id>
+npm run download:light-cone-assets -- <light-cone-id>
+npm run download:relic-assets -- <relic-id>
 ```
 
 Both commands also accept `--all`, `--file <path>`, `--force`, and `--dry-run`.

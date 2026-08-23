@@ -1,6 +1,10 @@
-.character-page {
+.page.character-page {
+    box-sizing: border-box;
+
     width: 100%;
     max-width: 1600px;
+
+    margin-inline: auto;
 
     padding: 14px 20px 44px;
 }

@@ -11,6 +11,18 @@ const { character } = Astro.props as {
     character: CharacterData;
 };
 
+type SelectableAbilityVariant = CharacterAbilityVariant & {
+    id?: string;
+    selector_label?: string;
+};
+
+type SelectableCharacterAbility = CharacterAbility & {
+    variant_selector?: {
+        label?: string;
+    };
+    variants?: SelectableAbilityVariant[];
+};
+
 const abilityOrder = ['basic', 'skill', 'ultimate', 'talent', 'technique'];
 
 const normalAbilities = abilityOrder
@@ -243,6 +255,14 @@ const renderVariantDescription = (
                                 ability.description_template && ability.scaling,
                             ) && maxLevel > minLevel;
 
+                        const selectableAbility =
+                            ability as SelectableCharacterAbility;
+
+                        const variants = selectableAbility.variants ?? [];
+
+                        const variantSelector =
+                            selectableAbility.variant_selector;
+
                         return (
                             <details
                                 open
@@ -393,139 +413,204 @@ const renderVariantDescription = (
                                         )}
                                     </div>
 
-                                    {ability.variants?.map((variant) => {
-                                        const variantScalable =
-                                            Boolean(
-                                                variant.description_template &&
-                                                variant.scaling,
-                                            ) && maxLevel > minLevel;
-
-                                        return (
-                                            <section class="character-ability-variant">
-                                                <div class="character-ability-variant-header">
-                                                    <strong>
-                                                        {variant.type}
-                                                    </strong>
-
-                                                    <span class="character-ability-name">
-                                                        {variant.name}
+                                    {variants.length > 0 && (
+                                        <div
+                                            class="character-ability-variants"
+                                            data-ability-variants
+                                        >
+                                            {variantSelector && (
+                                                <label class="character-variant-selector">
+                                                    <span>
+                                                        {variantSelector.label ??
+                                                            'Select'}
                                                     </span>
-                                                </div>
 
-                                                {variant.tag && (
-                                                    <p class="character-ability-tag">
-                                                        <strong>Type:</strong>{' '}
-                                                        {variant.tag}
-                                                    </p>
-                                                )}
+                                                    <select
+                                                        data-variant-select
+                                                        aria-label={
+                                                            variantSelector.label ??
+                                                            'Select alternate ability'
+                                                        }
+                                                    >
+                                                        {variants.map(
+                                                            (
+                                                                variant,
+                                                                index,
+                                                            ) => (
+                                                                <option
+                                                                    value={
+                                                                        variant.id ??
+                                                                        String(
+                                                                            index,
+                                                                        )
+                                                                    }
+                                                                >
+                                                                    {variant.selector_label ??
+                                                                        variant.name}
+                                                                </option>
+                                                            ),
+                                                        )}
+                                                    </select>
+                                                </label>
+                                            )}
 
-                                                <div class="character-detail-meta">
-                                                    {variant.energy_gain !==
-                                                        undefined && (
-                                                        <span>
-                                                            Energy Gain:{' '}
+                                            {variants.map((variant, index) => {
+                                                const variantScalable =
+                                                    Boolean(
+                                                        variant.description_template &&
+                                                        variant.scaling,
+                                                    ) && maxLevel > minLevel;
+
+                                                const variantId =
+                                                    variant.id ?? String(index);
+
+                                                return (
+                                                    <section
+                                                        class="character-ability-variant"
+                                                        data-ability-variant
+                                                        data-variant-id={
+                                                            variantId
+                                                        }
+                                                        hidden={
+                                                            variantSelector
+                                                                ? index !== 0
+                                                                : false
+                                                        }
+                                                    >
+                                                        <div class="character-ability-variant-header">
                                                             <strong>
-                                                                {
-                                                                    variant.energy_gain
-                                                                }
+                                                                {variant.type}
                                                             </strong>
-                                                        </span>
-                                                    )}
 
-                                                    {variant.energy_cost !==
-                                                        undefined && (
-                                                        <span>
-                                                            Energy Cost:{' '}
-                                                            <strong>
-                                                                {
-                                                                    variant.energy_cost
-                                                                }
-                                                            </strong>
-                                                        </span>
-                                                    )}
+                                                            <span class="character-ability-name">
+                                                                {variant.name}
+                                                            </span>
+                                                        </div>
 
-                                                    {variant.break !==
-                                                        undefined && (
-                                                        <span>
-                                                            Break:{' '}
-                                                            <strong>
-                                                                {variant.break}
-                                                            </strong>
-                                                        </span>
-                                                    )}
-
-                                                    {variant.break_main !==
-                                                        undefined && (
-                                                        <span>
-                                                            Break (Main):{' '}
-                                                            <strong>
-                                                                {
-                                                                    variant.break_main
-                                                                }
-                                                            </strong>
-                                                        </span>
-                                                    )}
-
-                                                    {variant.break_adjacent !==
-                                                        undefined && (
-                                                        <span>
-                                                            Break (Adjacent):{' '}
-                                                            <strong>
-                                                                {
-                                                                    variant.break_adjacent
-                                                                }
-                                                            </strong>
-                                                        </span>
-                                                    )}
-
-                                                    {variant.break_aoe !==
-                                                        undefined && (
-                                                        <span>
-                                                            Break (AoE):{' '}
-                                                            <strong>
-                                                                {
-                                                                    variant.break_aoe
-                                                                }
-                                                            </strong>
-                                                        </span>
-                                                    )}
-                                                </div>
-
-                                                <div class="character-ability-description">
-                                                    {variantScalable ? (
-                                                        levels.map((level) => (
-                                                            <p
-                                                                data-character-level-panel={
-                                                                    level
-                                                                }
-                                                                hidden={
-                                                                    level !==
-                                                                    defaultLevel
-                                                                }
-                                                            >
-                                                                <HighlightedText
-                                                                    text={renderVariantDescription(
-                                                                        variant,
-                                                                        ability,
-                                                                        level,
-                                                                    )}
-                                                                />
+                                                        {variant.tag && (
+                                                            <p class="character-ability-tag">
+                                                                <strong>
+                                                                    Type:
+                                                                </strong>{' '}
+                                                                {variant.tag}
                                                             </p>
-                                                        ))
-                                                    ) : (
-                                                        <p>
-                                                            <HighlightedText
-                                                                text={renderVariantDescription(
-                                                                    variant,
-                                                                    ability,
-                                                                )}
-                                                            />
-                                                        </p>
-                                                    )}
-                                                </div>
-                                            </section>
-                                        );
-                                    })}
+                                                        )}
+
+                                                        <div class="character-detail-meta">
+                                                            {variant.energy_gain !==
+                                                                undefined && (
+                                                                <span>
+                                                                    Energy Gain:{' '}
+                                                                    <strong>
+                                                                        {
+                                                                            variant.energy_gain
+                                                                        }
+                                                                    </strong>
+                                                                </span>
+                                                            )}
+
+                                                            {variant.energy_cost !==
+                                                                undefined && (
+                                                                <span>
+                                                                    Energy Cost:{' '}
+                                                                    <strong>
+                                                                        {
+                                                                            variant.energy_cost
+                                                                        }
+                                                                    </strong>
+                                                                </span>
+                                                            )}
+
+                                                            {variant.break !==
+                                                                undefined && (
+                                                                <span>
+                                                                    Break:{' '}
+                                                                    <strong>
+                                                                        {
+                                                                            variant.break
+                                                                        }
+                                                                    </strong>
+                                                                </span>
+                                                            )}
+
+                                                            {variant.break_main !==
+                                                                undefined && (
+                                                                <span>
+                                                                    Break
+                                                                    (Main):{' '}
+                                                                    <strong>
+                                                                        {
+                                                                            variant.break_main
+                                                                        }
+                                                                    </strong>
+                                                                </span>
+                                                            )}
+
+                                                            {variant.break_adjacent !==
+                                                                undefined && (
+                                                                <span>
+                                                                    Break
+                                                                    (Adjacent):{' '}
+                                                                    <strong>
+                                                                        {
+                                                                            variant.break_adjacent
+                                                                        }
+                                                                    </strong>
+                                                                </span>
+                                                            )}
+
+                                                            {variant.break_aoe !==
+                                                                undefined && (
+                                                                <span>
+                                                                    Break (AoE):{' '}
+                                                                    <strong>
+                                                                        {
+                                                                            variant.break_aoe
+                                                                        }
+                                                                    </strong>
+                                                                </span>
+                                                            )}
+                                                        </div>
+
+                                                        <div class="character-ability-description">
+                                                            {variantScalable ? (
+                                                                levels.map(
+                                                                    (level) => (
+                                                                        <p
+                                                                            data-character-level-panel={
+                                                                                level
+                                                                            }
+                                                                            hidden={
+                                                                                level !==
+                                                                                defaultLevel
+                                                                            }
+                                                                        >
+                                                                            <HighlightedText
+                                                                                text={renderVariantDescription(
+                                                                                    variant,
+                                                                                    ability,
+                                                                                    level,
+                                                                                )}
+                                                                            />
+                                                                        </p>
+                                                                    ),
+                                                                )
+                                                            ) : (
+                                                                <p>
+                                                                    <HighlightedText
+                                                                        text={renderVariantDescription(
+                                                                            variant,
+                                                                            ability,
+                                                                        )}
+                                                                    />
+                                                                </p>
+                                                            )}
+                                                        </div>
+                                                    </section>
+                                                );
+                                            })}
+                                        </div>
+                                    )}
                                 </div>
                             </details>
                         );
@@ -704,6 +789,34 @@ const renderVariantDescription = (
 
             slider.addEventListener('input', updateLevel);
         });
+
+    document
+        .querySelectorAll<HTMLElement>('[data-ability-variants]')
+        .forEach((container) => {
+            const select = container.querySelector<HTMLSelectElement>(
+                '[data-variant-select]',
+            );
+
+            if (!select) {
+                return;
+            }
+
+            const variantPanels = Array.from(
+                container.querySelectorAll<HTMLElement>(
+                    '[data-ability-variant]',
+                ),
+            );
+
+            const updateVariant = () => {
+                variantPanels.forEach((panel) => {
+                    panel.hidden = panel.dataset.variantId !== select.value;
+                });
+            };
+
+            select.addEventListener('change', updateVariant);
+
+            updateVariant();
+        });
 </script>
 
 <style>
@@ -725,6 +838,7 @@ const renderVariantDescription = (
     .character-info-details details[data-static-detail] > summary::marker {
         display: none;
     }
+
 
     /* =====================================================
        Main Character Info surfaces
@@ -777,6 +891,7 @@ const renderVariantDescription = (
         margin-bottom: 10px;
     }
 
+
     /* =====================================================
        Stats
        ===================================================== */
@@ -808,6 +923,7 @@ const renderVariantDescription = (
         background: rgba(255, 255, 255, 0.04);
     }
 
+
     /* =====================================================
        Detail grids
        ===================================================== */
@@ -835,6 +951,11 @@ const renderVariantDescription = (
     }
 
     .character-info-details > details {
+        display: flex;
+        flex-direction: column;
+
+        height: 100%;
+
         border: 1px solid rgba(255, 255, 255, 0.08);
         border-radius: 8px;
 
@@ -856,11 +977,6 @@ const renderVariantDescription = (
         align-items: stretch;
     }
 
-    .character-ability-grid > details,
-    .character-major-trace-grid > details,
-    .character-eidolon-grid > details {
-        height: 100%;
-    }
 
     /* =====================================================
        Detail headers
@@ -884,6 +1000,8 @@ const renderVariantDescription = (
     }
 
     .character-info-details > details > summary {
+        flex: 0 0 auto;
+
         border-bottom: 1px solid rgba(255, 255, 255, 0.065);
 
         background: rgba(255, 255, 255, 0.025);
@@ -903,6 +1021,7 @@ const renderVariantDescription = (
         opacity: 0.75;
     }
 
+
     /* =====================================================
        Detail body
        ===================================================== */
@@ -919,11 +1038,41 @@ const renderVariantDescription = (
         background: rgba(0, 0, 0, 0.16);
     }
 
+    .character-info-details > details > .character-detail-body {
+        flex: 1 1 auto;
+
+        width: auto;
+        max-width: none;
+        min-height: 0;
+
+        margin: 2px;
+
+        padding: 10px 12px;
+
+        border-radius: 5px;
+
+        background: rgba(0, 0, 0, 0.18);
+    }
+
     .character-detail-body p {
         max-width: 100%;
         min-width: 0;
 
         overflow-wrap: anywhere;
+    }
+
+    .character-info-details
+        > details
+        > .character-detail-body
+        > p:first-child {
+        margin-top: 0;
+    }
+
+    .character-info-details
+        > details
+        > .character-detail-body
+        > p:last-child {
+        margin-bottom: 0;
     }
 
     .character-ability-tag {
@@ -952,6 +1101,7 @@ const renderVariantDescription = (
 
         opacity: 0.8;
     }
+
 
     /* =====================================================
        Trace slider
@@ -1006,6 +1156,7 @@ const renderVariantDescription = (
         opacity: 0.65;
     }
 
+
     /* =====================================================
        Ability descriptions
        ===================================================== */
@@ -1038,6 +1189,71 @@ const renderVariantDescription = (
 
         overflow-wrap: anywhere;
     }
+
+
+    /* =====================================================
+       Selectable alternate abilities
+       ===================================================== */
+
+    .character-ability-variants {
+        min-width: 0;
+    }
+
+    .character-variant-selector {
+        box-sizing: border-box;
+
+        display: flex;
+        align-items: center;
+
+        width: 100%;
+
+        gap: 10px;
+
+        margin-top: 10px;
+        padding: 6px 8px;
+
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 6px;
+
+        background: rgba(255, 255, 255, 0.045);
+    }
+
+    .character-variant-selector > span {
+        flex: 0 0 auto;
+
+        font-size: 0.85rem;
+        font-weight: 750;
+    }
+
+    .character-variant-selector select {
+        box-sizing: border-box;
+
+        min-width: 215px;
+        max-width: 60%;
+
+        margin-left: auto;
+
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 6px;
+
+        padding: 6px 10px;
+
+        background: rgba(255, 255, 255, 0.045);
+
+        color: var(--text);
+
+        font: inherit;
+        font-size: 0.85rem;
+        font-weight: 650;
+
+        cursor: pointer;
+    }
+
+    .character-variant-selector select option {
+        background: #e4e4e4;
+        color: #111;
+    }
+
 
     /* =====================================================
        Alternate / enhanced abilities
@@ -1098,6 +1314,7 @@ const renderVariantDescription = (
         margin: 8px 10px 10px;
     }
 
+
     /* =====================================================
        Ability names
        ===================================================== */
@@ -1129,6 +1346,7 @@ const renderVariantDescription = (
         content: '';
     }
 
+
     /* =====================================================
        Major Traces
        ===================================================== */
@@ -1157,6 +1375,7 @@ const renderVariantDescription = (
         font-size: 0.68rem;
         font-weight: 750;
     }
+
 
     /* =====================================================
        Global Passives
@@ -1265,8 +1484,9 @@ const renderVariantDescription = (
         line-height: 1.5;
     }
 
+
     /* =====================================================
-       Responsive
+       Mobile
        ===================================================== */
 
     @media (max-width: 700px) {
@@ -1277,23 +1497,112 @@ const renderVariantDescription = (
         }
 
         .character-info-section {
-            padding: 8px;
+            padding: 4px 0;
+
+            border-radius: 0;
+
+            background: transparent;
+
+            box-shadow: none;
         }
 
-        .character-detail-body {
-            padding: 8px;
+        .character-info-section + .character-info-section {
+            margin-top: 1rem;
+        }
+
+        .character-info-details
+            > details
+            > .character-detail-body {
+            padding: 8px 9px;
+        }
+
+        .character-detail-meta {
+            box-sizing: border-box;
+
+            width: 100%;
+            max-width: 100%;
+
+            margin: 6px 0;
+
+            padding: 5px 6px;
+
+            background: rgba(255, 255, 255, 0.025);
+        }
+
+        .character-trace-slider {
+            width: 100%;
+            max-width: 100%;
+            min-width: 0;
+
+            margin: 6px 0;
+
+            padding: 5px 6px;
+
+            background: rgba(255, 255, 255, 0.02);
         }
 
         .character-ability-description {
-            padding: 8px;
-        }
-    }
+            margin: 6px 0 0;
 
-    @media (max-width: 600px) {
-        .character-trace-slider {
-            width: 100%;
-            max-width: none;
+            padding: 7px 8px;
+
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+        .character-detail-body p,
+        .character-ability-description p,
+        .character-info-details summary > span,
+        .character-global-passive-body,
+        .character-global-passive-title {
             min-width: 0;
+            max-width: 100%;
+
+            overflow-wrap: anywhere;
+            word-break: normal;
+        }
+
+        /*
+         * The original cascade left these selectors in a column on mobile.
+         * Only keep the declarations that actually survive the later
+         * desktop selector rules.
+         */
+        .character-variant-selector {
+            flex-direction: column;
+        }
+
+        .character-variant-selector select {
+            width: 100%;
+        }
+
+        .character-ability-variant {
+            margin-top: 8px;
+        }
+
+        .character-ability-variant > .character-detail-meta,
+        .character-ability-variant > .character-ability-description {
+            width: auto;
+            max-width: none;
+
+            margin-right: 7px;
+            margin-left: 7px;
+        }
+
+        .character-info-details > details > summary {
+            gap: 0.5rem;
+
+            padding: 0.6rem 0.7rem;
+        }
+
+        .character-global-passive-title {
+            padding: 0.6rem 0.7rem;
+        }
+
+        .character-global-passive-body {
+            box-sizing: border-box;
+
+            width: 100%;
+
+            padding: 0.7rem 0.8rem;
         }
     }
 </style>
