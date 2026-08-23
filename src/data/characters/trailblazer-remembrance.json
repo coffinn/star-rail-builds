@@ -6,7 +6,7 @@
   "path": "remembrance",
   "version_released": "3.0",
   "max_energy": 160,
-  "level_80_stat": {
+  "level_80_stats": {
     "hp": 1047,
     "atk": 543,
     "def": 630,
@@ -235,7 +235,6 @@
           "type": "Memosprite Talent",
           "name": "Friends! Together!",
           "tag": "Support",
-
           "min_level": 1,
           "max_level": 7,
           "default_level": 6,
@@ -265,7 +264,6 @@
           "type": "Memosprite Talent",
           "name": "Go, Mem, Go!",
           "tag": "Enhance",
-
           "min_level": 1,
           "max_level": 7,
           "default_level": 6,
