@@ -56,9 +56,9 @@
           130,
           140,
           150,
-          162,
+          162.5,
           175,
-          188,
+          187.5,
           200,
           210,
           220,
@@ -99,19 +99,19 @@
       "scaling": {
         "scaling1": [
           138,
-          147,
-          156,
-          166,
-          175,
+          147.2,
+          156.4,
+          165.6,
+          174.8,
           184,
-          196,
+          195.5,
           207,
-          218,
+          218.5,
           230,
-          239,
-          248,
-          258,
-          267,
+          239.2,
+          248.4,
+          257.6,
+          266.8,
           276
         ]
       }
@@ -140,9 +140,9 @@
           91,
           98,
           105,
-          114,
-          122,
-          131,
+          113.75,
+          122.5,
+          131.25,
           140,
           147,
           154,
@@ -211,36 +211,6 @@
       "level": 6,
       "name": "Trailblaze!",
       "description": "Ultimate deals DMG 2 extra times, each of which deals Fire DMG equal to 40% of the original DMG to a random enemy."
-    },
-    {
-      "level": 1,
-      "name": "That Which We Stride Is the Trailblaze",
-      "description": "The number of extra Assist Skill uses from Talent additionally increases by 1. While in the \"Companion Protocol: Verdict\" state, reduces the number of Ultimate uses required to launch Assist Skill by 1. While in the \"Companion Protocol: Decimation\" state, reduces the Charge required to launch Assist Skill by 3. When Himeko \u2022 Nova launches Assist Skill, the number of extra DMG instances increases by 1."
-    },
-    {
-      "level": 2,
-      "name": "The Colors We Never Strike",
-      "description": "The cap of Himeko \u2022 Nova's Assist Skill uses increases to 2, and the DMG dealt by Ultimate and Assist Skill becomes 130% of their original DMG. During the \"Navigator's Semaphore\" state, at the start of {{sic|each turn ,}} additionally recovers 1 use of Assist Skill immediately. When a non-Trailblaze Companions character uses Assist Skill, the Trace \"Hark! The Express's Pulse Roars\" now also grants them 1 extra turn."
-    },
-    {
-      "level": 4,
-      "name": "Let No Skyward Hand Stay Unheld",
-      "description": "When using Assist Skill via the Talent \"Of Fire and Far Faring,\" the All-Type RES PEN boost now applies to all allies. And when Himeko \u2022 Nova gains this effect, her All-Type RES PEN additionally increases by 10%."
-    },
-    {
-      "level": 6,
-      "name": "Ours Is the Oath to Sail Starward",
-      "description": "Himeko \u2022 Nova's Fire RES PEN increases by 20%. The cap of \"Source Energy\"  increases to 6. When an ally uses or launches Assist Skill, DMG dealt by Assist Skill increases by 75%, and Himeko \u2022 Nova gains 1 \"Source Energy.\"  When launching \"Hyperluminal Particle Beam\" during Ultimate, additionally gains 1 \"Source Energy\" . When launching \"Orbital Annihilation Pulse,\" if the current \"Source Energy\"  is 6 or more, additionally deals 1 instance of Fire DMG to all enemies, equal to 160% of Himeko \u2022 Nova's ATK."
-    },
-    {
-      "level": 3,
-      "name": "We Who Are Starborn Muse Starward",
-      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
-    },
-    {
-      "level": 5,
-      "name": "To Cross the Cosmos and Beyond",
-      "description": "Skill Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
     }
   ]
 }

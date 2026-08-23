@@ -50,19 +50,19 @@
       "scaling": {
         "scaling1": [
           12,
-          13,
-          14,
-          16,
-          17,
+          13.2,
+          14.4,
+          15.6,
+          16.8,
           18,
-          20,
+          19.5,
           21,
-          22,
+          22.5,
           24,
-          25,
-          26,
-          28,
-          29,
+          25.2,
+          26.4,
+          27.6,
+          28.8,
           30
         ]
       }
@@ -83,9 +83,9 @@
           39,
           42,
           45,
-          49,
-          52,
-          56,
+          48.75,
+          52.5,
+          56.25,
           60,
           63,
           66,
@@ -165,131 +165,129 @@
           38
         ]
       }
-    },
-    "memosprite": {
-      "name": "Evey",
-      "initial_spd": 160,
-      "hp_source": "50% of Evernight's Max HP",
-      "skills": {
-        "dream": {
-          "type": "Memosprite Skill",
-          "name": "Dream, Dissolving, as Dew",
-          "tag": "AoE",
-          "energy_gain": 10,
-          "break": 30,
-          "min_level": 1,
-          "max_level": 7,
-          "default_level": 6,
-          "description_template": "This ability is used when Evernight's \"Memoria\" is greater than or equal to 16 and she is not affected by Crowd Control. For every 1 \"Memoria\" point currently held, deals Ice DMG equal to {{scaling1}}% of Evey's Max HP to the primary target, and Ice DMG equal to {{scaling2}}% of Evey's Max HP to the other enemy targets. After use, consumes all \"Memoria\" and HP, and makes Evey disappear.",
-          "scaling": {
-            "scaling1": [
-              6,
-              7,
-              8,
-              10,
-              11,
-              12,
-              13,
-              14,
-              16,
-              17
-            ],
-            "scaling2": [
-              3,
-              4,
-              4,
-              5,
-              5,
-              6,
-              7,
-              7,
-              8,
-              8
-            ]
-          }
-        },
-        "whirling": {
-          "type": "Memosprite Skill",
-          "name": "Remembrance, Whirling, Like Rain",
-          "tag": "Single Target",
-          "energy_gain": 20,
-          "break": 10,
-          "min_level": 1,
-          "max_level": 7,
-          "default_level": 6,
-          "description_template": "This ability automatically selects a target, prioritizing the enemy target that Evernight last attacked. Deals Ice DMG equal to {{scaling}}% of Evey's Max HP to one enemy. For every 4 \"Memoria\" Evernight currently has, further deals Ice DMG equal to {{scaling}}% of Evey's Max HP. After use, Evernight gains 1 \"Memoria.\"",
-          "scaling": {
-            "scaling1": [
-              25,
-              30,
-              35,
-              40,
-              45,
-              50,
-              55,
-              60,
-              65,
-              70
-            ],
-            "scaling2": [
-              5,
-              6,
-              7,
-              8,
-              9,
-              10,
-              11,
-              12,
-              13,
-              14
-            ]
-          }
-        },
-        "trailing": {
-          "type": "Memosprite Talent",
-          "name": "Night, Trailing, In Step",
-          "tag": "Enhance",
-
-          "min_level": 1,
-          "max_level": 7,
-          "default_level": 6,
-          "description_template": "When summoned, this unit immediately takes action."
-        },
-        "solitude": {
-          "type": "Memosprite Talent",
-          "name": "Solitude, Drifting, In Murk",
-          "tag": "Support",
-          "energy_gain": "",
-          "break": "",
-          "min_level": 1,
-          "max_level": 7,
-          "default_level": 6,
-          "description_template": "Evey is immune to Crowd Control debuffs and has an increased chance of getting attacked. While Evey is on the field, Evernight and Evey deal {{scaling1}}% increased DMG.",
-          "scaling": {
-            "scaling1": [
-              25,
-              30,
-              35,
-              40,
-              45,
-              50,
-              55,
-              60,
-              65,
-              70
-            ]
-          }
-        },
-        "parting": {
-          "type": "Memosprite Talent",
-          "name": "You, Parting, Beyond Reach",
-          "tag": "Enhance",
-
-          "min_level": 1,
-          "max_level": 7,
-          "default_level": 6,
-          "description_template": "Upon disappearing, increases Evernight's SPD by 10%. If the disappearance is due to using \"Dream, Dissolving, as Dew,\" then, for every 1 \"Memoria\" point consumed by the attack, additionally increases Evernight's SPD by 1%. Up to 40 \"Memoria\" points can be taken into account for this. The SPD Boost effect cannot stack and is removed at the start of Evernight's next turn."
+    }
+  },
+  "memosprite": {
+    "name": "Evey",
+    "initial_spd": 160,
+    "hp_source": "50% of Evernight's Max HP",
+    "skills": {
+      "dream": {
+        "type": "Memosprite Skill",
+        "name": "Dream, Dissolving, as Dew",
+        "tag": "AoE",
+        "energy_gain": 10,
+        "break": 30,
+        "min_level": 1,
+        "max_level": 7,
+        "default_level": 6,
+        "description_template": "This ability is used when Evernight's \"Memoria\" is greater than or equal to 16 and she is not affected by Crowd Control. For every 1 \"Memoria\" point currently held, deals Ice DMG equal to {{scaling1}}% of Evey's Max HP to the primary target, and Ice DMG equal to {{scaling2}}% of Evey's Max HP to the other enemy targets. After use, consumes all \"Memoria\" and HP, and makes Evey disappear.",
+        "scaling": {
+          "scaling1": [
+            6,
+            7.2,
+            8.4,
+            9.6,
+            10.8,
+            12,
+            13.2,
+            14.4,
+            15.6,
+            16.8
+          ],
+          "scaling2": [
+            3,
+            3.6,
+            4.2,
+            4.8,
+            5.4,
+            6,
+            6.6,
+            7.2,
+            7.8,
+            8.4
+          ]
         }
+      },
+      "whirling": {
+        "type": "Memosprite Skill",
+        "name": "Remembrance, Whirling, Like Rain",
+        "tag": "Single Target",
+        "energy_gain": 20,
+        "break": 10,
+        "min_level": 1,
+        "max_level": 7,
+        "default_level": 6,
+        "description_template": "This ability automatically selects a target, prioritizing the enemy target that Evernight last attacked. Deals Ice DMG equal to {{scaling}}% of Evey's Max HP to one enemy. For every 4 \"Memoria\" Evernight currently has, further deals Ice DMG equal to {{scaling}}% of Evey's Max HP. After use, Evernight gains 1 \"Memoria.\"",
+        "scaling": {
+          "scaling1": [
+            25,
+            30,
+            35,
+            40,
+            45,
+            50,
+            55,
+            60,
+            65,
+            70
+          ],
+          "scaling2": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
+        }
+      },
+      "trailing": {
+        "type": "Memosprite Talent",
+        "name": "Night, Trailing, In Step",
+        "tag": "Enhance",
+        "min_level": 1,
+        "max_level": 7,
+        "default_level": 6,
+        "description": "When summoned, this unit immediately takes action."
+      },
+      "solitude": {
+        "type": "Memosprite Talent",
+        "name": "Solitude, Drifting, In Murk",
+        "tag": "Support",
+        "energy_gain": "",
+        "break": "",
+        "min_level": 1,
+        "max_level": 7,
+        "default_level": 6,
+        "description_template": "Evey is immune to Crowd Control debuffs and has an increased chance of getting attacked. While Evey is on the field, Evernight and Evey deal {{scaling1}}% increased DMG.",
+        "scaling": {
+          "scaling1": [
+            25,
+            30,
+            35,
+            40,
+            45,
+            50,
+            55,
+            60,
+            65,
+            70
+          ]
+        }
+      },
+      "parting": {
+        "type": "Memosprite Talent",
+        "name": "You, Parting, Beyond Reach",
+        "tag": "Enhance",
+        "min_level": 1,
+        "max_level": 7,
+        "default_level": 6,
+        "description": "Upon disappearing, increases Evernight's SPD by 10%. If the disappearance is due to using \"Dream, Dissolving, as Dew,\" then, for every 1 \"Memoria\" point consumed by the attack, additionally increases Evernight's SPD by 1%. Up to 40 \"Memoria\" points can be taken into account for this. The SPD Boost effect cannot stack and is removed at the start of Evernight's next turn."
       }
     }
   },

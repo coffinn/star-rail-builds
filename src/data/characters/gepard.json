@@ -1,229 +1,229 @@
 {
-    "id": "gepard",
-    "name": "Gepard",
-    "rarity": "5",
-    "element": "ice",
-    "path": "preservation",
-    "version_released": "1.0",
-    "max_energy": 100,
-    "level_80_stats": {
-        "hp": 1397,
-        "atk": 543,
-        "def": 654,
-        "spd": 92
+  "id": "gepard",
+  "name": "Gepard",
+  "rarity": "5",
+  "element": "ice",
+  "path": "preservation",
+  "version_released": "1.0",
+  "max_energy": 100,
+  "level_80_stats": {
+    "hp": 1397,
+    "atk": 543,
+    "def": 654,
+    "spd": 92
+  },
+  "abilities": {
+    "basic": {
+      "type": "Basic ATK",
+      "name": "Fist of Conviction",
+      "tag": "Single Target",
+      "energy_gain": 10,
+      "break": 10,
+      "min_level": 1,
+      "max_level": 7,
+      "default_level": 6,
+      "description_template": "Deals Ice DMG equal to {{scaling1}}% of Gepard's ATK to a single enemy.",
+      "scaling": {
+        "scaling1": [
+          50,
+          60,
+          70,
+          80,
+          90,
+          100,
+          110,
+          120,
+          130
+        ]
+      }
     },
-    "abilities": {
-        "basic": {
-            "type": "Basic ATK",
-            "name": "Fist of Conviction",
-            "tag": "Single Target",
-            "energy_gain": 10,
-            "break": 10,
-            "min_level": 1,
-            "max_level": 7,
-            "default_level": 6,
-            "description_template": "Deals Ice DMG equal to {{scaling1}}% of Gepard's ATK to a single enemy.",
-            "scaling": {
-                "scaling1": [
-                    50,
-                    60,
-                    70,
-                    80,
-                    90,
-                    100,
-                    110,
-                    120,
-                    130
-                ]
-            }
-        },
-        "skill": {
-            "type": "Skill",
-            "name": "Daunting Smite",
-            "tag": "Single Target",
-            "energy_gain": 30,
-            "break": 20,
-            "min_level": 1,
-            "max_level": 12,
-            "default_level": 10,
-            "description_template": "Deals Ice DMG equal to {{scaling1}}% of Gepard's ATK to a single enemy, with a 65% base chance to Freeze the enemy for 1 turn(s). While Frozen, the enemy cannot take action and will take Ice Additional DMG equal to {{scaling2}}% of Gepard's ATK at the beginning of each turn.",
-            "scaling": {
-                "scaling1": [
-                    100,
-                    110,
-                    120,
-                    130,
-                    140,
-                    150,
-                    162,
-                    175,
-                    188,
-                    200,
-                    210,
-                    220,
-                    230,
-                    240,
-                    250
-                ],
-                "scaling2": [
-                    30,
-                    33,
-                    36,
-                    39,
-                    42,
-                    45,
-                    49,
-                    52,
-                    56,
-                    60,
-                    63,
-                    66,
-                    69,
-                    72,
-                    75
-                ]
-            }
-        },
-        "ultimate": {
-            "type": "Ultimate",
-            "name": "Enduring Bulwark",
-            "tag": "Defense",
-            "energy_gain": 5,
-            "energy_cost": "100",
-            "min_level": 1,
-            "max_level": 12,
-            "default_level": 10,
-            "description_template": "Applies a Shield to all allies, absorbing DMG equal to {{scaling1}}% of Gepard's DEF plus {{scaling2}} for 3 turn(s).",
-            "scaling": {
-                "scaling1": [
-                    30,
-                    32,
-                    34,
-                    36,
-                    38,
-                    39,
-                    40,
-                    42,
-                    44,
-                    45,
-                    46,
-                    48,
-                    50,
-                    51,
-                    52
-                ],
-                "scaling2": [
-                    150,
-                    240,
-                    308,
-                    375,
-                    420,
-                    465,
-                    499,
-                    532,
-                    566,
-                    600,
-                    634,
-                    668,
-                    701,
-                    735,
-                    769
-                ]
-            }
-        },
-        "talent": {
-            "type": "Talent",
-            "name": "Unyielding Will",
-            "tag": "Restore",
-            "min_level": 1,
-            "max_level": 12,
-            "default_level": 10,
-            "description_template": "When struck with a killing blow, instead of becoming knocked down, Gepard's HP immediately restores to {{scaling}}% of his Max HP. This effect can only trigger once per battle.",
-            "scaling": {
-                "scaling1": [
-                    25,
-                    28,
-                    30,
-                    32,
-                    35,
-                    38,
-                    41,
-                    44,
-                    47,
-                    50,
-                    52,
-                    55,
-                    58,
-                    60,
-                    62
-                ]
-            }
-        },
-        "technique": {
-            "type": "Technique",
-            "name": "Comradery",
-            "tag": "Defense",
-            "description": "After Gepard uses his Technique, when the next battle begins, a Shield will be applied to all allies, absorbing DMG equal to 24% of Gepard's DEF plus 150 for 2 turn(s)."
-        }
+    "skill": {
+      "type": "Skill",
+      "name": "Daunting Smite",
+      "tag": "Single Target",
+      "energy_gain": 30,
+      "break": 20,
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "Deals Ice DMG equal to {{scaling1}}% of Gepard's ATK to a single enemy, with a 65% base chance to Freeze the enemy for 1 turn(s). While Frozen, the enemy cannot take action and will take Ice Additional DMG equal to {{scaling2}}% of Gepard's ATK at the beginning of each turn.",
+      "scaling": {
+        "scaling1": [
+          100,
+          110,
+          120,
+          130,
+          140,
+          150,
+          162.5,
+          175,
+          187.5,
+          200,
+          210,
+          220,
+          230,
+          240,
+          250
+        ],
+        "scaling2": [
+          30,
+          33,
+          36,
+          39,
+          42,
+          45,
+          48.75,
+          52.5,
+          56.25,
+          60,
+          63,
+          66,
+          69,
+          72,
+          75
+        ]
+      }
     },
-    "major_traces": {
-        "2": {
-            "name": "Integrity",
-            "description": "Gepard has a higher chance to be attacked by enemies."
-        },
-        "4": {
-            "name": "Commander",
-            "description": "When \"Unyielding Will\" is triggered, Gepard's Energy will be restored to 100%."
-        },
-        "6": {
-            "name": "Grit",
-            "description": "Gepard's ATK increases by 35% of his current DEF. This effect will refresh at the start of each turn."
-        }
+    "ultimate": {
+      "type": "Ultimate",
+      "name": "Enduring Bulwark",
+      "tag": "Defense",
+      "energy_gain": 5,
+      "energy_cost": "100",
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "Applies a Shield to all allies, absorbing DMG equal to {{scaling1}}% of Gepard's DEF plus {{scaling2}} for 3 turn(s).",
+      "scaling": {
+        "scaling1": [
+          30,
+          31.875,
+          33.75,
+          35.625,
+          37.5,
+          39,
+          40.5,
+          42,
+          43.5,
+          45,
+          46.5,
+          48,
+          49.5,
+          51,
+          52.5
+        ],
+        "scaling2": [
+          150,
+          240,
+          307.5,
+          375,
+          420,
+          465,
+          498.75,
+          532.5,
+          566.25,
+          600,
+          633.75,
+          667.5,
+          701.25,
+          735,
+          768.75
+        ]
+      }
     },
-    "stat_bonuses": [
-        {
-            "stat": "DEF",
-            "value": "+12.5%"
-        },
-        {
-            "stat": "Effect RES",
-            "value": "+18%"
-        },
-        {
-            "stat": "Ice DMG",
-            "value": "+22.4%"
-        }
-    ],
-    "eidolons": [
-        {
-            "level": 1,
-            "name": "Due Diligence",
-            "description": "When using Skill, increases the base chance to Freeze the attacked target enemy by 35%."
-        },
-        {
-            "level": 2,
-            "name": "Lingering Cold",
-            "description": "After an enemy Frozen by Skill is unfrozen, their SPD is reduced by 20% for 1 turn(s)."
-        },
-        {
-            "level": 3,
-            "name": "Never Surrender",
-            "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
-        },
-        {
-            "level": 4,
-            "name": "Faith Moves Mountains",
-            "description": "When Gepard is in battle, all allies' Effect RES increases by 20%."
-        },
-        {
-            "level": 5,
-            "name": "Cold Iron Fist",
-            "description": "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
-        },
-        {
-            "level": 6,
-            "name": "Unyielding Resolve",
-            "description": "When his Talent is triggered, Gepard immediately takes action and restores extra HP equal to 50% of his Max HP."
-        }
-    ]
+    "talent": {
+      "type": "Talent",
+      "name": "Unyielding Will",
+      "tag": "Restore",
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "When struck with a killing blow, instead of becoming knocked down, Gepard's HP immediately restores to {{scaling}}% of his Max HP. This effect can only trigger once per battle.",
+      "scaling": {
+        "scaling1": [
+          25,
+          27.5,
+          30,
+          32.5,
+          35,
+          37.5,
+          40.625,
+          43.75,
+          46.875,
+          50,
+          52.5,
+          55,
+          57.5,
+          60,
+          62.5
+        ]
+      }
+    },
+    "technique": {
+      "type": "Technique",
+      "name": "Comradery",
+      "tag": "Defense",
+      "description": "After Gepard uses his Technique, when the next battle begins, a Shield will be applied to all allies, absorbing DMG equal to 24% of Gepard's DEF plus 150 for 2 turn(s)."
+    }
+  },
+  "major_traces": {
+    "2": {
+      "name": "Integrity",
+      "description": "Gepard has a higher chance to be attacked by enemies."
+    },
+    "4": {
+      "name": "Commander",
+      "description": "When \"Unyielding Will\" is triggered, Gepard's Energy will be restored to 100%."
+    },
+    "6": {
+      "name": "Grit",
+      "description": "Gepard's ATK increases by 35% of his current DEF. This effect will refresh at the start of each turn."
+    }
+  },
+  "stat_bonuses": [
+    {
+      "stat": "DEF",
+      "value": "+12.5%"
+    },
+    {
+      "stat": "Effect RES",
+      "value": "+18%"
+    },
+    {
+      "stat": "Ice DMG",
+      "value": "+22.4%"
+    }
+  ],
+  "eidolons": [
+    {
+      "level": 1,
+      "name": "Due Diligence",
+      "description": "When using Skill, increases the base chance to Freeze the attacked target enemy by 35%."
+    },
+    {
+      "level": 2,
+      "name": "Lingering Cold",
+      "description": "After an enemy Frozen by Skill is unfrozen, their SPD is reduced by 20% for 1 turn(s)."
+    },
+    {
+      "level": 3,
+      "name": "Never Surrender",
+      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+    },
+    {
+      "level": 4,
+      "name": "Faith Moves Mountains",
+      "description": "When Gepard is in battle, all allies' Effect RES increases by 20%."
+    },
+    {
+      "level": 5,
+      "name": "Cold Iron Fist",
+      "description": "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+    },
+    {
+      "level": 6,
+      "name": "Unyielding Resolve",
+      "description": "When his Talent is triggered, Gepard immediately takes action and restores extra HP equal to 50% of his Max HP."
+    }
+  ]
 }

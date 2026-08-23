@@ -49,7 +49,7 @@
           "min_level": 1,
           "max_level": 7,
           "default_level": 6,
-          "description_template": "Restores HP by an amount equal to 20% of this unit's Max HP. Deals Fire DMG equal to {{scaling2}}% of SAM's ATK to a single target enemy.",
+          "description_template": "Restores HP by an amount equal to 20% of this unit's Max HP. Deals Fire DMG equal to {{scaling1}}% of SAM's ATK to a single target enemy.",
           "scaling": {
             "scaling1": [
               100,
@@ -72,7 +72,7 @@
       "min_level": 1,
       "max_level": 12,
       "default_level": 10,
-      "description_template": "Consumes HP equal to 40% of this unit's Max HP and regenerates a fixed amount of Energy equal to {{scaling1}}% of this unit's Max Energy. Deals Fire DMG equal to {{scaling2}}% of SAM's ATK to a single target enemy. If the current HP is not sufficient, reduces SAM's HP to 1 when using this Skill. Advances|Action Advanced this unit's next Action by 25%.",
+      "description_template": "Consumes HP equal to 40% of this unit's Max HP and regenerates a fixed amount of Energy equal to {{scaling1}}% of this unit's Max Energy. Deals Fire DMG equal to {{scaling2}}% of SAM's ATK to a single target enemy. If the current HP is not sufficient, reduces SAM's HP to 1 when using this Skill. Advances this unit's next Action by 25%.",
       "scaling": {
         "scaling1": [
           50,
@@ -81,9 +81,9 @@
           53,
           54,
           55,
-          56,
-          58,
-          59,
+          56.25,
+          57.5,
+          58.75,
           60,
           61,
           62,
@@ -100,7 +100,7 @@
           150,
           162.5,
           175,
-          188.5,
+          187.5,
           200,
           210,
           220,
@@ -128,9 +128,9 @@
               130,
               140,
               150,
-              162,
+              162.5,
               175,
-              188,
+              187.5,
               200,
               210,
               220
@@ -142,9 +142,9 @@
               65,
               70,
               75,
-              81,
-              88,
-              94,
+              81.25,
+              87.5,
+              93.75,
               100,
               105,
               110,
@@ -174,9 +174,9 @@
           13,
           14,
           15,
-          16,
-          18,
-          19,
+          16.25,
+          17.5,
+          18.75,
           20,
           21,
           22,
@@ -233,9 +233,9 @@
           16,
           18,
           20,
-          22,
+          22.5,
           25,
-          28,
+          27.5,
           30,
           32,
           34,
@@ -248,11 +248,11 @@
   },
   "major_traces": {
     "2": {
-      "name": "Module α: Antilag Outburst/Enhanced",
+      "name": "Module α: Antilag Outburst",
       "description": "While in the Complete Combustion state, SAM's Break Effect increases by 25%. When using Enhanced Basic ATK or Enhanced Skill to inflict Weakness Break on a target, the Complete Combustion countdown is delayed by 10%. This effect can trigger a maximum of 3 time(s) during each Complete Combustion state."
     },
     "4": {
-      "name": "Module β: Autoreactive Armor/Enhanced",
+      "name": "Module β: Autoreactive Armor",
       "description": "When SAM is in Complete Combustion with a Break Effect that is equal to or greater than 150%/300%, attacking a Weakness-Broken enemy target will convert the Toughness Reduction of this attack into 1 instance of 100%/150% Super Break DMG."
     },
     "6": {

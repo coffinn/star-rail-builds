@@ -1,231 +1,231 @@
 {
-    "id": "march-7th",
-    "name": "March 7th",
-    "rarity": "4",
-    "element": "ice",
-    "path": "preservation",
-    "version_released": "1.0",
-    "max_energy": 120,
-    "level_80_stats": {
-        "hp": 1058,
-        "atk": 511,
-        "def": 573,
-        "spd": 101
+  "id": "march-7th",
+  "name": "March 7th",
+  "rarity": "4",
+  "element": "ice",
+  "path": "preservation",
+  "version_released": "1.0",
+  "max_energy": 120,
+  "level_80_stats": {
+    "hp": 1058,
+    "atk": 511,
+    "def": 573,
+    "spd": 101
+  },
+  "abilities": {
+    "basic": {
+      "type": "Basic ATK",
+      "name": "Frigid Cold Arrow",
+      "tag": "Single Target",
+      "energy_gain": 20,
+      "break": 10,
+      "min_level": 1,
+      "max_level": 7,
+      "default_level": 6,
+      "description_template": "Deals Ice DMG equal to {{scaling1}}% of March 7th's ATK to a single enemy.",
+      "scaling": {
+        "scaling1": [
+          50,
+          60,
+          70,
+          80,
+          90,
+          100,
+          110,
+          120,
+          130
+        ]
+      }
     },
-    "abilities": {
-        "basic": {
-            "type": "Basic ATK",
-            "name": "Frigid Cold Arrow",
-            "tag": "Single Target",
-            "energy_gain": 20,
-            "break": 10,
-            "min_level": 1,
-            "max_level": 7,
-            "default_level": 6,
-            "description_template": "Deals Ice DMG equal to {{scaling1}}% of March 7th's ATK to a single enemy.",
-            "scaling": {
-                "scaling1": [
-                    50,
-                    60,
-                    70,
-                    80,
-                    90,
-                    100,
-                    110,
-                    120,
-                    130
-                ]
-            }
-        },
-        "skill": {
-            "type": "Skill",
-            "name": "The Power of Cuteness",
-            "tag": "Defense",
-            "energy_gain": 30,
-            "min_level": 1,
-            "max_level": 12,
-            "default_level": 10,
-            "description_template": "Provides a single ally with a Shield that can absorb DMG equal to {{scaling1}}% of March 7th's DEF plus {{scaling2}} for 3 turn(s). If the ally's current HP percentage is 30% or higher, greatly increases the chance of enemies attacking that ally.",
-            "scaling": {
-                "scaling1": [
-                    38,
-                    40,
-                    43,
-                    45,
-                    48,
-                    49,
-                    51,
-                    53,
-                    55,
-                    57,
-                    59,
-                    61,
-                    63,
-                    65,
-                    66
-                ],
-                "scaling2": [
-                    190,
-                    304,
-                    390,
-                    475,
-                    532,
-                    589,
-                    632,
-                    674,
-                    717,
-                    760,
-                    803,
-                    846,
-                    888,
-                    931,
-                    974
-                ]
-            }
-        },
-        "ultimate": {
-            "type": "Ultimate",
-            "name": "Glacial Cascade",
-            "tag": "AoE",
-            "energy_gain": 5,
-            "break_aoe": 20,
-            "energy_cost": 120,
-            "min_level": 1,
-            "max_level": 12,
-            "default_level": 10,
-            "description_template": "Deals Ice DMG equal to {{scaling1}}% of March 7th's ATK to all enemies. Hit enemies have a 50% base chance to be Frozen for 1 turn(s). While Frozen, enemies cannot take action and will receive Ice Additional DMG equal to {{scaling2}}% of March 7th's ATK at the beginning of each turn.",
-            "scaling": {
-                "scaling1": [
-                    90,
-                    96,
-                    102,
-                    108,
-                    114,
-                    120,
-                    128,
-                    135,
-                    142,
-                    150,
-                    156,
-                    162,
-                    168,
-                    174,
-                    180
-                ],
-                "scaling2": [
-                    30,
-                    33,
-                    36,
-                    39,
-                    42,
-                    45,
-                    49,
-                    52,
-                    56,
-                    60,
-                    63,
-                    66,
-                    69,
-                    72,
-                    75
-                ]
-            }
-        },
-        "talent": {
-            "type": "Talent",
-            "name": "Girl Power",
-            "tag": "Single Target",
-            "energy_gain": 10,
-            "break": 10,
-            "min_level": 1,
-            "max_level": 12,
-            "default_level": 10,
-            "description_template": "After a Shielded ally is attacked by an enemy, March 7th immediately Counters, dealing Ice DMG equal to {{scaling}}% of her ATK. This effect can be triggered 2 time(s) each turn.",
-            "scaling": {
-                "scaling1": [
-                    50,
-                    55,
-                    60,
-                    65,
-                    70,
-                    75,
-                    81,
-                    88,
-                    94,
-                    100,
-                    105,
-                    110,
-                    115,
-                    120,
-                    125
-                ]
-            }
-        },
-        "technique": {
-            "type": "Technique",
-            "name": "Freezing Beauty",
-            "break": 20,
-            "description": "Immediately attacks the enemy. After entering battle, there is a 100% base chance to Freeze a random enemy for 1 turn(s). While Frozen, the enemy cannot take action and will take Ice Additional DMG equal to 50% of March 7th's ATK at the beginning of each turn."
-        }
+    "skill": {
+      "type": "Skill",
+      "name": "The Power of Cuteness",
+      "tag": "Defense",
+      "energy_gain": 30,
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "Provides a single ally with a Shield that can absorb DMG equal to {{scaling1}}% of March 7th's DEF plus {{scaling2}} for 3 turn(s). If the ally's current HP percentage is 30% or higher, greatly increases the chance of enemies attacking that ally.",
+      "scaling": {
+        "scaling1": [
+          38,
+          40.38,
+          42.75,
+          45.13,
+          47.5,
+          49.4,
+          51.3,
+          53.2,
+          55.1,
+          57,
+          58.9,
+          60.8,
+          62.7,
+          64.6,
+          66.5
+        ],
+        "scaling2": [
+          190,
+          304,
+          389.5,
+          475,
+          532,
+          589,
+          631.75,
+          674.5,
+          717.25,
+          760,
+          802.75,
+          845.5,
+          888.25,
+          931,
+          973.75
+        ]
+      }
     },
-    "major_traces": {
-        "2": {
-            "name": "Purify",
-            "description": "When using Skill, dispels 1 debuff from one designated ally."
-        },
-        "4": {
-            "name": "Reinforce",
-            "description": "The duration of the Shield generated from Skill is extended for 1 turn(s)."
-        },
-        "6": {
-            "name": "Ice Spell",
-            "description": "When using Ultimate, increases the base chance to Freeze enemies by 15%."
-        }
+    "ultimate": {
+      "type": "Ultimate",
+      "name": "Glacial Cascade",
+      "tag": "AoE",
+      "energy_gain": 5,
+      "break_aoe": 20,
+      "energy_cost": 120,
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "Deals Ice DMG equal to {{scaling1}}% of March 7th's ATK to all enemies. Hit enemies have a 50% base chance to be Frozen for 1 turn(s). While Frozen, enemies cannot take action and will receive Ice Additional DMG equal to {{scaling2}}% of March 7th's ATK at the beginning of each turn.",
+      "scaling": {
+        "scaling1": [
+          90,
+          96,
+          102,
+          108,
+          114,
+          120,
+          127.5,
+          135,
+          142.5,
+          150,
+          156,
+          162,
+          168,
+          174,
+          180
+        ],
+        "scaling2": [
+          30,
+          33,
+          36,
+          39,
+          42,
+          45,
+          48.75,
+          52.5,
+          56.25,
+          60,
+          63,
+          66,
+          69,
+          72,
+          75
+        ]
+      }
     },
-    "stat_bonuses": [
-        {
-            "stat": "DEF",
-            "value": "+22.5%"
-        },
-        {
-            "stat": "Effect RES",
-            "value": "+10%"
-        },
-        {
-            "stat": "Ice DMG",
-            "value": "+22.4%"
-        }
-    ],
-    "eidolons": [
-        {
-            "level": 1,
-            "name": "Memory of You",
-            "description": "Every time March 7th's Ultimate Freezes a target, she regenerates 6 Energy."
-        },
-        {
-            "level": 2,
-            "name": "Memory of It",
-            "description": "Upon entering battle, grants a Shield equal to 24% of March 7th's DEF plus 320 to the ally with the lowest HP percentage, lasting for 3 turn(s)."
-        },
-        {
-            "level": 3,
-            "name": "Memory of Everything",
-            "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
-        },
-        {
-            "level": 4,
-            "name": "Never Forfeit Again",
-            "description": "The Talent's Counter effect can be triggered 1 more time in each turn. The DMG dealt by Counter increases by an amount that is equal to 30% of March 7th's DEF."
-        },
-        {
-            "level": 5,
-            "name": "Never Forget Again",
-            "description": "Skill Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
-        },
-        {
-            "level": 6,
-            "name": "Just Like This, Always...",
-            "description": "Allies under the protection of the Shield granted by the Skill restore HP equal to 4% of their Max HP plus 106 at the beginning of each turn."
-        }
-    ]
+    "talent": {
+      "type": "Talent",
+      "name": "Girl Power",
+      "tag": "Single Target",
+      "energy_gain": 10,
+      "break": 10,
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "After a Shielded ally is attacked by an enemy, March 7th immediately Counters, dealing Ice DMG equal to {{scaling}}% of her ATK. This effect can be triggered 2 time(s) each turn.",
+      "scaling": {
+        "scaling1": [
+          50,
+          55,
+          60,
+          65,
+          70,
+          75,
+          81.25,
+          87.5,
+          93.75,
+          100,
+          105,
+          110,
+          115,
+          120,
+          125
+        ]
+      }
+    },
+    "technique": {
+      "type": "Technique",
+      "name": "Freezing Beauty",
+      "break": 20,
+      "description": "Immediately attacks the enemy. After entering battle, there is a 100% base chance to Freeze a random enemy for 1 turn(s). While Frozen, the enemy cannot take action and will take Ice Additional DMG equal to 50% of March 7th's ATK at the beginning of each turn."
+    }
+  },
+  "major_traces": {
+    "2": {
+      "name": "Purify",
+      "description": "When using Skill, dispels 1 debuff from one designated ally."
+    },
+    "4": {
+      "name": "Reinforce",
+      "description": "The duration of the Shield generated from Skill is extended for 1 turn(s)."
+    },
+    "6": {
+      "name": "Ice Spell",
+      "description": "When using Ultimate, increases the base chance to Freeze enemies by 15%."
+    }
+  },
+  "stat_bonuses": [
+    {
+      "stat": "DEF",
+      "value": "+22.5%"
+    },
+    {
+      "stat": "Effect RES",
+      "value": "+10%"
+    },
+    {
+      "stat": "Ice DMG",
+      "value": "+22.4%"
+    }
+  ],
+  "eidolons": [
+    {
+      "level": 1,
+      "name": "Memory of You",
+      "description": "Every time March 7th's Ultimate Freezes a target, she regenerates 6 Energy."
+    },
+    {
+      "level": 2,
+      "name": "Memory of It",
+      "description": "Upon entering battle, grants a Shield equal to 24% of March 7th's DEF plus 320 to the ally with the lowest HP percentage, lasting for 3 turn(s)."
+    },
+    {
+      "level": 3,
+      "name": "Memory of Everything",
+      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+    },
+    {
+      "level": 4,
+      "name": "Never Forfeit Again",
+      "description": "The Talent's Counter effect can be triggered 1 more time in each turn. The DMG dealt by Counter increases by an amount that is equal to 30% of March 7th's DEF."
+    },
+    {
+      "level": 5,
+      "name": "Never Forget Again",
+      "description": "Skill Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+    },
+    {
+      "level": 6,
+      "name": "Just Like This, Always...",
+      "description": "Allies under the protection of the Shield granted by the Skill restore HP equal to 4% of their Max HP plus 106 at the beginning of each turn."
+    }
+  ]
 }
