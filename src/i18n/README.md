@@ -25,14 +25,13 @@ Missing translations will also appear as `[i18n] Missing translation...` warning
 Use:
 
 - `light-cones.json` for light cone names. light cone stats and passive data live in `src/data/light-cones`.
-- `artifact-sets.json` for artifact set names. Artifact set effects live in `src/data/artifacts/artifact_sets.json`.
+- `relic-sets.json` for relic set names. Relic set effects live in `src/data/relics/relic_sets.json`.
 - `characters.json` for character names.
 - `stats.json` for stats and stat-like labels, such as `er`, `atk%`, `em-set`,
   or `atk-set`.
-- `elements.json` for elements and reactions, such as `pyro`, `melt`,
-  `vaporize`, or `bloom`.
-- `abilities.json` for talent names, such as `normal-attack`, `charged-attack`,
-  `skill`, and `burst`.
+- `elements.json` for elements, such as `ice`, `fire`,
+  and `quantum`.
+- `abilities.json` for trace names, such as `basic-atk`, `skill`, and `ultimate`.
 - `notes.json` for reusable note labels referenced by inline tokens.
 - `ui.json` for website labels, section titles, buttons, and general interface
   text.
@@ -44,9 +43,9 @@ Use:
    Use lowercase English words separated with hyphens:
 
    ```txt
-   emblem-of-severed-fate
-   the-catch
-   kamisato-ayaka
+   eagle-of-twilight-line
+   incessant-rain
+   silver-wolf
    ```
 
 2. Add the ID to the English dictionary first.
@@ -57,7 +56,7 @@ Use:
 
    ```json
    {
-     "the-catch": "The Catch"
+     "incessant-rain": "Incessant Rain"
    }
    ```
 
@@ -67,7 +66,7 @@ Use:
 
    ```json
    {
-     "the-catch": "La Prise"
+     "incessant-rain": "Pluie incessante"
    }
    ```
 
@@ -77,7 +76,7 @@ Use:
 
    ```json
    {
-     "name": "the-catch"
+     "name": "incessant-rain"
    }
    ```
 
@@ -111,8 +110,8 @@ Add `|text` when a sentence needs a different visible form, while still
 resolving the original ID for translations and popovers:
 
 ```txt
-[[light-cone:favonius-greatsword|Двуручного меча Фавония]]
-[[set:noblesse-oblige|Noblesse Oblige]]
+[[light-cone:incessant-rain|Pluie incessante]]
+[[set:eagle-of-twilight-line|Eagle of Twilight Line]]
 ```
 
 This is useful for languages with case or grammar changes. For light cone and set
@@ -134,10 +133,10 @@ in inline tokens and in content item `name` fields.
 ```json
 {
   "light-cone": {
-    "pjws": "primordial-jade-winged-spear"
+    "ddd": "dance-dance-dance"
   },
   "set": {
-    "vv": "viridescent-venerer"
+    "gobs": "genius-of-brilliant-stars"
   }
 }
 ```
@@ -145,23 +144,23 @@ in inline tokens and in content item `name` fields.
 Then both of these resolve to the same translated name and light-cone popover:
 
 ```txt
-[[light-cone:primordial-jade-winged-spear]]
-[[light-cone:pjws]]
+[[light-cone:dance-dance-dance]]
+[[light-cone:ddd]]
 ```
 
 And both of these resolve to the same translated artifact set name and set
 popover:
 
 ```txt
-[[set:viridescent-venerer]]
-[[set:vv]]
+[[set:genius-of-brilliant-stars]]
+[[set:gobs]]
 ```
 
 You can also use the alias directly in content:
 
 ```json
 {
-  "name": "vv",
+  "name": "gobs",
   "pieces": 4
 }
 ```
