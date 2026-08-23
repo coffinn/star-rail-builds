@@ -1,0 +1,280 @@
+{
+  "id": "jiaoqiu",
+  "name": "Jiaoqiu",
+  "rarity": "5",
+  "element": "fire",
+  "path": "nihility",
+  "version_released": "2.4",
+  "max_energy": 100,
+  "level_80_stats": {
+    "hp": 1358,
+    "atk": 601,
+    "def": 509,
+    "spd": 98
+  },
+  "abilities": {
+    "basic": {
+      "type": "Basic ATK",
+      "name": "Heart Afire",
+      "tag": "Single Target",
+      "energy_gain": 20,
+      "break": 10,
+      "min_level": 1,
+      "max_level": 7,
+      "default_level": 6,
+      "description_template": "Deals Fire DMG equal to {{scaling1}}% of Jiaoqiu's ATK to a single target enemy.",
+      "scaling": {
+        "scaling1": [
+          50,
+          60,
+          70,
+          80,
+          90,
+          100,
+          110
+        ]
+      }
+    },
+    "skill": {
+      "type": "Skill",
+      "name": "Scorch Onslaught",
+      "tag": "Blast",
+      "energy_gain": 30,
+      "break_main": 20,
+      "break_adjacent": 10,
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "Deals Fire DMG equal to {{scaling1}}% of Jiaoqiu's ATK to a single target enemy and Fire DMG equal to {{scaling2}}% of Jiaoqiu's ATK to adjacent targets, with a 100% base chance to inflict 1 stack of Ashen Roast on the primary target.",
+      "scaling": {
+        "scaling1": [
+          75,
+          82,
+          90,
+          98,
+          105,
+          112,
+          122,
+          131,
+          141,
+          150,
+          158,
+          165,
+          172,
+          180,
+          188
+        ],
+        "scaling2": [
+          45,
+          50,
+          54,
+          58,
+          63,
+          68,
+          73,
+          79,
+          84,
+          90,
+          94,
+          99,
+          104,
+          108,
+          112
+        ]
+      }
+    },
+    "talent": {
+      "type": "Talent",
+      "name": "Quartet Finesse, Octave Finery",
+      "tag": "Impair",
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "When Jiaoqiu hits an enemy with Basic ATK, Skill or Ultimate, there is a 100% base chance to inflict 1 stack of Ashen Roast on them. At 1 stack, increases DMG received by the enemy by {{scaling1}}%. Then, each subsequent stack increases this by {{scaling2}}%. Ashen Roast is capped at 5 stack(s) and lasts for 2 turn(s). When an enemy target is afflicted with Ashen Roast, they are also considered as being Burned at the same time, taking Fire DoT equal to {{scaling3}}% of Jiaoqiu's ATK at the start of each turn.",
+      "scaling": {
+        "scaling1": [
+          8,
+          8,
+          9,
+          10,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          16,
+          17,
+          18,
+          19
+        ],
+        "scaling2": [
+          2,
+          3,
+          3,
+          3,
+          4,
+          4,
+          4,
+          4,
+          5,
+          5,
+          5,
+          6,
+          6,
+          6,
+          6
+        ],
+        "scaling3": [
+          90,
+          99,
+          108,
+          117,
+          126,
+          135,
+          146,
+          158,
+          169,
+          180,
+          189,
+          198,
+          207,
+          216,
+          225
+        ]
+      }
+    },
+    "technique": {
+      "type": "Technique",
+      "name": "Fiery Queller",
+      "tag": "Impair",
+      "description": "After using Technique, creates a Special Dimension that lasts for 15 second(s). After entering combat with enemies in this Special Dimension, deals Fire DMG equal to 100% of Jiaoqiu's ATK to all enemies, with a 100% base chance of applying 1 \"Ashen Roast\" stack. Only 1 dimension created by allies can exist at the same time."
+    },
+    "ultimate": {
+      "type": "Ultimate",
+      "name": "Pyrograph Arcanum",
+      "tag": "AoE",
+      "energy_gain": 5,
+      "break_aoe": 20,
+      "energy_cost": 100,
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "Sets the number of \"Ashen Roast\" stacks on enemy targets to the highest number of \"Ashen Roast\" stacks present on the battlefield. Then, activates a Zone and deals Fire DMG equal to {{scaling1}}% of Jiaoqiu's ATK to all enemies. While inside the Zone, enemy targets receive {{scaling2}}% increased Ultimate DMG, with a {{scaling3}}% base chance of being inflicted with 1 stack of Ashen Roast when taking action. While the Zone exists, this effect can trigger up to 6 time(s). And for each enemy target, it can only trigger once per turn. This trigger count resets every time Jiaoqiu uses Ultimate. The Zone lasts for 3 turn(s), and its duration decreases by 1 at the start of this unit's every turn. If Jiaoqiu gets knocked down, the Zone will also be dispelled.",
+      "scaling": {
+        "scaling1": [
+          60,
+          64,
+          68,
+          72,
+          76,
+          80,
+          85,
+          90,
+          95,
+          100,
+          104,
+          108,
+          112,
+          116,
+          120
+        ],
+        "scaling2": [
+          9,
+          10,
+          10,
+          11,
+          11,
+          12,
+          13,
+          14,
+          14,
+          15,
+          16,
+          16,
+          17,
+          17,
+          18
+        ],
+        "scaling3": [
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65
+        ]
+      }
+    }
+  },
+  "major_traces": {
+    "2": {
+      "name": "Pyre Cleanse",
+      "description": "When battle starts, immediately regenerates 15 Energy."
+    },
+    "4": {
+      "name": "Hearth Kindle",
+      "description": "For every 15% of Jiaoqiu's Effect Hit Rate that exceeds 80%, additionally increases ATK by 60%, up to 240%."
+    },
+    "6": {
+      "name": "Seared Scent",
+      "description": "While the Zone exists, enemies entering combat will be inflicted with Ashen Roast. The number of stacks applied will match the highest number of \"Ashen Roast\" stacks possessed by any unit while the Zone is active, with a minimum of 1 stack(s)."
+    }
+  },
+  "stat_bonuses": [
+    {
+      "stat": "SPD",
+      "value": "+5"
+    },
+    {
+      "stat": "Effect Hit Rate",
+      "value": "+28%"
+    },
+    {
+      "stat": "Fire DMG",
+      "value": "+14.4%"
+    }
+  ],
+  "eidolons": [
+    {
+      "level": 1,
+      "name": "Pentapathic Transference",
+      "description": "Allies deal 40% increased DMG to enemy targets afflicted with Ashen Roast. Whenever inflicting Ashen Roast on an enemy target via triggering the Talent's effect, additionally increases the number of \"Ashen Roast\" stacks applied this time by 1."
+    },
+    {
+      "level": 2,
+      "name": "From Savor Comes Suffer",
+      "description": "When an enemy target is afflicted with Ashen Roast, increases the multiplier for the Fire DoT dealt by Ashen Roast to this target by 300%."
+    },
+    {
+      "level": 3,
+      "name": "Flavored Euphony Reigns Supreme",
+      "description": "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+    },
+    {
+      "level": 4,
+      "name": "Leisure In, Luster Out",
+      "description": "When the Zone exists, reduces enemy target's ATK by 15%."
+    },
+    {
+      "level": 5,
+      "name": "Duel in Dawn, Dash in Dusk",
+      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+    },
+    {
+      "level": 6,
+      "name": "Nonamorphic Pyrobind",
+      "description": "When an enemy target gets defeated, their accumulated \"Ashen Roast\" stacks will transfer to the enemy with the lowest number of \"Ashen Roast\" stacks on the battlefield. The maximum stack limit of Ashen Roast increases to 9, and each \"Ashen Roast\" stack reduces the target's All-Type RES by 3%."
+    }
+  ]
+}
