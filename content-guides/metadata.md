@@ -42,7 +42,7 @@ When a character should appear under the `Recently updated` filter, set
 
 ```json
 {
-  "last_updated": "4.2"
+  "last_updated": "4.4"
 }
 ```
 
