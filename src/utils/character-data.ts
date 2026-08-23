@@ -9,6 +9,8 @@ export type CharacterAbilityVariant = {
 
     tag?: string;
 
+    id?: string;
+    selector_label?: string;
     energy_gain?: number;
     energy_cost?: number;
 
@@ -32,7 +34,9 @@ export type CharacterAbility = {
     name: string;
 
     tag?: string;
-
+    variant_selector?: {
+        label?: string;
+    };
     energy_gain?: number;
     energy_cost?: number;
 
