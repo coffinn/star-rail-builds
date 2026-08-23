@@ -34,37 +34,39 @@
           110
         ]
       },
-      "variants": {
-        "type": "Basic ATK (Enhanced)",
-        "name": "Nectar Blitz",
-        "tag": "Single Target",
-        "energy_gain": "20",
-        "break": "30",
-        "min_level": 1,
-        "max_level": 7,
-        "default_level": 6,
-        "description_template": "Deals Fire DMG equal to {{scaling1}}% of Gallagher's ATK to a single target enemy. Reduces the target's ATK by {{scaling2}}%, lasting for 2 turn(s).",
-        "scaling": {
-          "scaling1": [
-            125,
-            150,
-            175,
-            200,
-            225,
-            250,
-            275
-          ],
-          "scaling2": [
-            10,
-            11,
-            12,
-            13,
-            14,
-            15,
-            16
-          ]
+      "variants": [
+        {
+          "type": "Basic ATK (Enhanced)",
+          "name": "Nectar Blitz",
+          "tag": "Single Target",
+          "energy_gain": "20",
+          "break": "30",
+          "min_level": 1,
+          "max_level": 7,
+          "default_level": 6,
+          "description_template": "Deals Fire DMG equal to {{scaling1}}% of Gallagher's ATK to a single target enemy. Reduces the target's ATK by {{scaling2}}%, lasting for 2 turn(s).",
+          "scaling": {
+            "scaling1": [
+              125,
+              150,
+              175,
+              200,
+              225,
+              250,
+              275
+            ],
+            "scaling2": [
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ]
+          }
         }
-      }
+      ]
     },
     "skill": {
       "type": "Skill",

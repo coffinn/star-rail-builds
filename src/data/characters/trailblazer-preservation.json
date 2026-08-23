@@ -36,42 +36,44 @@
           130
         ]
       },
-      "variants": {
-        "type": "Basic ATK (Enhanced)",
-        "name": "Ice-Breaking Light",
-        "tag": "Blast",
-        "energy_gain": 30,
-        "break_main": 20,
-        "break_adjacent": 10
-        "min_level": 1,
-        "max_level": 7,
-        "default_level": 6,
-        "description_template": "Consumes 4 stacks of Magma Will to enhance Basic ATK, dealing Fire DMG equal to {{scaling1}}% of the Trailblazer's ATK to a single enemy and Fire DMG to equal to {{scaling2}}% of the Trailblazer's ATK to enemies adjacent to it.",
-        "scaling": {
-          "scaling1": [
-            90,
-            99,
-            108,
-            117,
-            126,
-            135,
-            146,
-            158,
-            169
-          ],
-          "scaling2": [
-            36,
-            40,
-            43,
-            47,
-            50,
-            54,
-            58,
-            63,
-            68
-          ]
+      "variants": [
+        {
+          "type": "Basic ATK (Enhanced)",
+          "name": "Ice-Breaking Light",
+          "tag": "Blast",
+          "energy_gain": 30,
+          "break_main": 20,
+          "break_adjacent": 10
+          "min_level": 1,
+          "max_level": 7,
+          "default_level": 6,
+          "description_template": "Consumes 4 stacks of Magma Will to enhance Basic ATK, dealing Fire DMG equal to {{scaling1}}% of the Trailblazer's ATK to a single enemy and Fire DMG to equal to {{scaling2}}% of the Trailblazer's ATK to enemies adjacent to it.",
+          "scaling": {
+            "scaling1": [
+              90,
+              99,
+              108,
+              117,
+              126,
+              135,
+              146,
+              158,
+              169
+            ],
+            "scaling2": [
+              36,
+              40,
+              43,
+              47,
+              50,
+              54,
+              58,
+              63,
+              68
+            ]
+          }
         }
-      }
+      ]
     },
     "skill": {
       "type": "Skill",
@@ -154,7 +156,6 @@
       "type": "Talent",
       "name": "Treasure of the Architects",
       "tag": "Enhance",
-
       "min_level": 1,
       "max_level": 12,
       "default_level": 10,
