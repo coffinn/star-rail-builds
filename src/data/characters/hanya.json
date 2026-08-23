@@ -1,0 +1,138 @@
+{
+    "id": "hanya",
+    "name": "Hanya",
+    "rarity": 5,
+    "element": "physical",
+    "path": "harmony",
+    "version_released": "1.5",
+    "max_energy": 140,
+    "level_80_stats": {
+        "hp": 917,
+        "atk": 564,
+        "def": 353,
+        "spd": 110
+    },
+    "abilities": {
+        "basic": {
+            "type": "Basic ATK",
+            "name": "Oracle Brush",
+            "tag": "Single Target",
+            "energy_gain": 20,
+            "break": 10,
+            "min_level": 1,
+            "max_level": 7,
+            "default_level": 6,
+            "description_template": "Deals Physical DMG equal to {{damage}}% of 's ATK to one designated enemy.",
+            "scaling": {
+                "damage": [50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0]
+            }
+        },
+        "skill": {
+            "type": "Skill",
+            "name": "Samsara, Locked",
+            "tag": "Single Target",
+            "energy_gain": 30,
+            "break": 20,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Deals Physical DMG equal to {{skill_damage}}% of Hanya's ATK to one designated enemy target, then applies \"Burden\" to them. For every 2 Basic ATKs, Skills, or Ultimates allies use on an enemy with \"Burden,\" allies will immediately recover 1 Skill Point. \"Burden\" is only active on the latest target it is applied to, and will be dispelled automatically after the Skill Point recovery effect has been triggered 2 times.",
+            "scaling": {
+                "skill_damage": [120.0, 132.0, 144.0, 156.0, 168.0, 180.0, 195.0, 210.0, 225.0, 240.0, 252.0, 264.0]
+            }
+        },
+        "ultimate": {
+            "type": "Ultimate",
+            "name": "Ten-Lords' Decree, All Shall Obey",
+            "tag": "Enhance",
+            "energy_cost": 140,
+            "energy_gain": 5,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Increases the SPD of a target ally by {{spd_buff}}% of Hanya's SPD and increases the same target ally's ATK by {{atk_buff}}%, lasting for 2 turn(s).",
+            "scaling": {
+                "spd_buff": [15.0, 15.5, 16.0, 16.5, 17.0, 17.5, 18.125, 18.75, 19.375, 20.0, 20.5, 21.0],
+                "atk_buff": [36.0, 38.4, 40.8, 43.2, 45.6, 48.0, 51.0, 54.0, 57.0, 60.0, 62.4, 64.8]
+            }
+        },
+        "talent": {
+            "type": "Talent",
+            "name": "Sanction",
+            "tag": "Support",
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "When an ally uses a Basic ATK, Skill, or Ultimate on an enemy inflicted with Burden, the DMG dealt increases by {{dmg_buff}}%, lasting for 2 turn(s).",
+            "scaling": {
+                "dmg_buff": [15.0, 16.5, 18.0, 19.5, 21.0, 22.5, 24.375, 26.25, 28.125, 30.0, 31.5, 33.0]
+            }
+        },
+        "technique": {
+            "type": "Technique",
+            "name": "Netherworld Judgment",
+            "tag": "Attack",
+            "description": "Immediately attacks the enemy. After entering battle, applies Burden equivalent to that applied by the Skill to a random enemy."
+        }
+    },
+    "major_traces": {
+        "2": {
+            "name": "Scrivener",
+            "description": "Allies triggering Burden's Skill Point recovery effect have their ATK increased by 10% for 1 turn(s)."
+        },
+        "4": {
+            "name": "Netherworld",
+            "description": "If the trigger count for the Burden's Skill Point recovery effect is 1 or lower when an enemy with Burden is defeated, then additionally recovers 1 Skill Point(s)."
+        },
+        "6": {
+            "name": "Reanimated",
+            "description": "When Burden's Skill Point recovery effect is triggered, this character regenerates 2 Energy."
+        }
+    },
+    "stat_bonuses": [
+        {
+            "stat": "HP",
+            "value": "+10%"
+        },
+        {
+            "stat": "ATK",
+            "value": "+28%"
+        },
+        {
+            "stat": "SPD",
+            "value": "+9"
+        }
+    ],
+    "eidolons": [
+        {
+            "level": 1,
+            "name": "One Heart",
+            "description": "When an ally target with Hanya's Ultimate effect defeats an enemy, Hanya's action advances by 15%. This effect can only be triggered 1 time(s) per turn."
+        },
+        {
+            "level": 2,
+            "name": "Two Views",
+            "description": "After using the Skill, this character's SPD increases by 20% for 1 turn(s)."
+        },
+        {
+            "level": 3,
+            "name": "Three Temptations",
+            "description": "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+        },
+        {
+            "level": 4,
+            "name": "Four Truths",
+            "description": "The Ultimate's duration is additionally extended for 1 turn(s)."
+        },
+        {
+            "level": 5,
+            "name": "Five Skandhas",
+            "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+        },
+        {
+            "level": 6,
+            "name": "Six Reverences",
+            "description": "Increase the DMG Boost effect of the Talent by an additional 10%."
+        }
+    ]
+}
