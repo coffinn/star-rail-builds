@@ -1460,42 +1460,44 @@ const renderVariantDescription = (
         }
     }
     /* =====================================================
-   ALL CHARACTER INFO CARDS — CONSISTENT INNER BODY
-   Applies to Abilities, Talents, Major Traces, Eidolons,
-   Memosprite abilities, Elation abilities, etc.
+   CONSISTENT FULL-HEIGHT INNER BODY
+   Abilities / Major Traces / Eidolons / etc.
    ===================================================== */
 
     .character-info-details > details {
-        display: grid;
-
-        grid-template-rows:
-            auto
-            1fr;
+        display: flex;
+        flex-direction: column;
 
         height: 100%;
     }
 
-    /* Inner dark panel fills the remaining card height */
+    /* Header stays at natural height */
+    .character-info-details > details > summary {
+        flex: 0 0 auto;
+    }
+
+    /* Body fills all remaining vertical space */
     .character-info-details > details > .character-detail-body {
         box-sizing: border-box;
+
+        flex: 1 1 auto;
 
         width: auto;
         max-width: none;
         min-width: 0;
-
-        height: auto;
         min-height: 0;
 
-        margin: 8px;
+        /* Tiny inset — basically at the card edge */
+        margin: 2px;
 
         padding: 10px 12px;
 
-        border-radius: 6px;
+        border-radius: 5px;
 
         background: rgba(0, 0, 0, 0.18);
     }
 
-    /* Prevent paragraphs from creating odd extra spacing */
+    /* Remove unwanted paragraph spacing */
     .character-info-details > details > .character-detail-body > p:first-child {
         margin-top: 0;
     }
@@ -1504,12 +1506,12 @@ const renderVariantDescription = (
         margin-bottom: 0;
     }
 
-    /* Slightly tighter on mobile */
+    /* Mobile */
     @media (max-width: 700px) {
         .character-info-details > details > .character-detail-body {
-            margin: 6px;
+            margin: 2px;
 
-            padding: 8px 10px;
+            padding: 8px 9px;
         }
     }
 </style>
