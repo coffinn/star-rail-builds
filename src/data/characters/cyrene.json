@@ -603,7 +603,7 @@
                         "selector_label": "Cyrene / Demiurge",
                         "type": "Memosprite Skill",
                         "name": "Ode to Ego",
-                        "tag": "Support",
+                        "tag": "Bounce",
                         "energy_gain": 0,
                         "break": "1.666... (Per Hit)",
                         "description_template": "For every 1 different teammate (i.e., excluding Demiurge) from whom Cyrene has gained \"Recollection,\" additionally deals 1 instance of Ice DMG equal to {{scaling1}}% of Demiurge's Max HP to one random enemy when Demiurge uses \"Minuet of Blooms and Plumes.\" After Cyrene uses Ultimate or when Demiurge is summoned, Demiurge immediately gains 1 \"Story.\" When \"Story\" reaches 3, Demiurge consumes all \"Story\" points to immediately gain 1 extra turn  and automatically use \"Minuet of Blooms and Plumes.\"",
