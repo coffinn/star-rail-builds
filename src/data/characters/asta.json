@@ -102,15 +102,15 @@
 "stat_bonuses": [
     {
         "stat": "Fire DMG",
-        "value": "+22.40%"
+        "value": "+22.4%"
     },
     {
         "stat": "DEF",
-        "value": "+22.50%"
+        "value": "+22.5%"
     },
     {
         "stat": "CRIT Rate",
-        "value": "+6.70%"
+        "value": "+6.7%"
     }
 ],
 

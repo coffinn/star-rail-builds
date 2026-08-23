@@ -142,7 +142,7 @@
   "stat_bonuses": [
     {
       "stat": "CRIT DMG",
-      "value": "+13.3"
+      "value": "+13.3%"
     },
     {
       "stat": "ATK",

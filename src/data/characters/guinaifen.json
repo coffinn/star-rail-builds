@@ -105,15 +105,15 @@
   "stat_bonuses": [
     {
         "stat": "Fire DMG",
-        "value": "+22.40%"
+        "value": "+22.4%"
     },
     {
-        "stat": "Effect HIT Rate",
-        "value": "+10%%"
+        "stat": "Effect Hit Rate",
+        "value": "+10%"
     },
     {
         "stat": "Break Effect",
-        "value": "+24.00%"
+        "value": "+24%"
     }
   ],
 

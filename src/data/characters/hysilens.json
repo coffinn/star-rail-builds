@@ -106,15 +106,15 @@
   "stat_bonuses": [
     {
         "stat": "ATK",
-        "value": "18%"
+        "value": "+18%"
     },
     {
         "stat": "Speed",
-        "value": "14"
+        "value": "+14"
     },
     {
-        "stat": "Effect HIT Rate",
-        "value": "10%"
+        "stat": "Effect Hit Rate",
+        "value": "+10%"
     }
   ],
 

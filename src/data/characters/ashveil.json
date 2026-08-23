@@ -106,15 +106,15 @@
 "stat_bonuses": [
     {
         "stat": "ATK",
-        "value": "10%"
+        "value": "+10%"
     },
     {
         "stat": "Lightning DMG",
-        "value": "14%"
+        "value": "+14%"
     },
     {
         "stat": "CRIT DMG",
-        "value": "37.30%"
+        "value": "+37.30%"
     }
 ],
 
