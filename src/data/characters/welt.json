@@ -1,0 +1,240 @@
+{
+    "id": "welt",
+    "name": "Welt",
+    "rarity": "5",
+    "element": "imaginary",
+    "path": "nihility",
+    "version_released": "1.0",
+    "max_energy": "",
+    "level_80_stats": {
+        "hp": 1125,
+        "atk": 620,
+        "def": 509,
+        "spd": 102
+    },
+    "abilities": {
+        "basic": {
+            "type": "Basic ATK",
+            "name": "Gravity Suppression",
+            "tag": "Single Target",
+            "energy_gain": 20,
+            "break": 10,
+            "min_level": 1,
+            "max_level": 7,
+            "default_level": 6,
+            "description_template": "Deals Imaginary DMG equal to {{damage}}% of Welt's ATK to a single enemy.",
+            "scaling": {
+                "damage": [
+                    50,
+                    60,
+                    70,
+                    80,
+                    90,
+                    100,
+                    110,
+                    120,
+                    130
+                ]
+            }
+        },
+        "skill": {
+            "type": "Skill",
+            "name": "Edge of the Void",
+            "tag": "Bounce",
+            "energy_gain": 30,
+            "break": 10,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Deals Imaginary DMG equal to {{attack_designated}}% of Welt's ATK to one designated enemy and additionally deals DMG 4 times, with each time dealing Imaginary DMG equal to {{attack_random}}% of Welt's ATK to one random enemy. On hit, there is a {{reduce_spd}}% base chance to reduce the enemy's SPD by 10% for 2 turn(s).",
+            "scaling": {
+                "attack_designated": [
+                    36,
+                    40,
+                    43,
+                    47,
+                    50,
+                    54,
+                    58,
+                    63,
+                    68,
+                    72,
+                    76,
+                    79,
+                    83,
+                    86,
+                    90
+                ],
+                "attack_random": [
+                    36,
+                    40,
+                    43,
+                    47,
+                    50,
+                    54,
+                    58,
+                    63,
+                    68,
+                    72,
+                    76,
+                    79,
+                    83,
+                    86,
+                    90
+                ],
+                "reduce_spd": [
+                    65,
+                    66,
+                    67,
+                    68,
+                    69,
+                    70,
+                    71,
+                    72,
+                    74,
+                    75,
+                    76,
+                    77,
+                    78,
+                    79,
+                    80
+                ]
+            }
+        },
+        "ultimate": {
+            "type": "Ultimate",
+            "name": "Synthetic Black Hole",
+            "tag": "AoE",
+            "energy_gain": 5,
+            "energy_cost": 120,
+            "break": 20,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Deals Imaginary DMG equal to {{imaginary_dmg}}% of Welt's ATK to all enemies. Has a 100% base chance to Imprison hit enemy targets for 1 turn. While Imprisoned, enemy targets have their actions delayed  by {{action_delay}}% and their SPD reduced by 10%. After using his Ultimate, inflicts the \"Weightless\" state on all enemies. When targets in \"Weightless\" state get attacked, their actions are delayed  by 4.0%. This effect can trigger up to 8 time(s) per target per turn. \"Weightless\" lasts for 2 turn(s).",
+            "scaling": {
+                "imaginary_dmg": [
+                    90,
+                    96,
+                    102,
+                    108,
+                    114,
+                    120,
+                    128,
+                    135,
+                    142,
+                    150,
+                    156,
+                    162
+                ],
+                "action_delay": [
+                    6,
+                    7,
+                    7,
+                    8,
+                    8,
+                    9,
+                    10,
+                    10,
+                    11,
+                    12,
+                    13,
+                    13
+                ]
+            }
+        },
+        "talent": {
+            "type": "Talent",
+            "name": "Time Distortion",
+            "tag": "Enhance",
+            "energy_gain": "",
+            "break": "",
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Enemy targets in the \"Weightless\" state have their DEF reduced by 40% and their SPD reduced by 5%. When Welt attacks an enemy that is already Slowed, he additionally deals Imaginary Additional DMG equal to {{additional_dmg}}% of his ATK to the enemy.",
+            "scaling": {
+                "additional_dmg": [
+                    50,
+                    55,
+                    60,
+                    65,
+                    70,
+                    75,
+                    81,
+                    88,
+                    94,
+                    100,
+                    105,
+                    110
+                ]
+            }
+        },
+        "technique": {
+            "type": "Technique",
+            "name": "Gravitational Imprisonment",
+            "tag": "Impair",
+            "description": "After using Welt's Technique, create a Special Dimension that lasts for 15 second(s). Enemies in this Special Dimension have their movement speed reduced by 50%. After entering battle with enemies in the Special Dimension, there is a 100% base chance to Imprison the enemies for 1 turn. Imprisoned enemies have their actions delayed|Action Delayed by 20% and SPD reduced by 10%. Only 1 Dimension Effect created by allies can exist at the same time."
+        }
+    },
+    "major_traces": {
+        "2": {
+            "name": "Retribution",
+            "description": "When ally targets attack targets under the \"Weightless\" state, their DMG dealt increases by 10%. This effect stacks up to 10 times and lasts for 2 turn(s). At the start of the battle, Welt regenerates 30 Energy."
+        },
+        "4": {
+            "name": "Judgment",
+            "description": "When Welt uses Basic ATK or Skill, additionally deals 1 extra instance of Additional DMG to the enemy target. The Additional DMG dealt when using Basic ATK is equal to 80% of Basic ATK DMG multiplier. The Additional DMG dealt when using Skill is equal to 120% of Skill DMG multiplier."
+        },
+        "6": {
+            "name": "Punishment",
+            "description": "When Welt's Effect Hit Rate is greater than 40%, for every 10% that exceeds this value, increases ATK by 20%, up to a maximum increase of 80%. When using Ultimate, additionally restores 5 Energy."
+        }
+    },
+    "stat_bonuses": [
+        {
+            "stat": "Imaginary DMG",
+            "value": "+14.4%"
+        },
+        {
+            "stat": "Effect Hit Rate",
+            "value": "+28%"
+        },
+        {
+            "stat": "Effect RES",
+            "value": "+10%"
+        }
+    ],
+    "eidolons": [
+        {
+            "level": 1,
+            "name": "Legacy of Honor",
+            "description": "After using a Skill or Ultimate to hit a target in the \"Weightless\" state, additionally deals 1 instance of Imaginary Additional DMG equal to 40% of the Ultimate's DMG multiplier. This effect can only be triggered once per target per attack."
+        },
+        {
+            "level": 2,
+            "name": "Conflux of Stars",
+            "description": "When his Talent is triggered, Welt regenerates 3 Energy."
+        },
+        {
+            "level": 3,
+            "name": "Prayer of Peace",
+            "description": "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+        },
+        {
+            "level": 4,
+            "name": "Appellation of Justice",
+            "description": "Enemy targets in the \"Weightless\" state have their All-Type RES reduced by 30%."
+        },
+        {
+            "level": 5,
+            "name": "Power of Kindness",
+            "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+        },
+        {
+            "level": 6,
+            "name": "Prospect of Glory",
+            "description": "When using Skill or Ultimate to hit an enemy target in the Slow state, increases CRIT Rate by 30% and CRIT DMG by 60% for the DMG dealt."
+        }
+    ]
+}
