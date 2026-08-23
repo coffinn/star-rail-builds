@@ -1,0 +1,280 @@
+{
+  "id": "mortenax-blade",
+  "name": "Mortenax Blade",
+  "rarity": "5",
+  "element": "fire",
+  "path": "nihility",
+  "version_released": "4.3",
+  "max_energy": 160,
+  "level_80_stats": {
+    "hp": 1358,
+    "atk": 543,
+    "def": 485,
+    "spd": 107
+  },
+  "abilities": {
+    "basic": {
+      "type": "Basic ATK",
+      "name": "A Broken Blade Still Slays",
+      "tag": "Single Target",
+      "energy_gain": 20,
+      "break": 10,
+      "min_level": 1,
+      "max_level": 7,
+      "default_level": 6,
+      "description_template": "Deals Fire DMG equal to {{scaling1}}% of Mortenax Blade's Max HP to one designated enemy, and causes the target to enter the Taunt state for 1 turn.",
+      "scaling": {
+        "scaling1": [
+          25,
+          30,
+          35,
+          40,
+          45,
+          50,
+          55
+        ]
+      },
+      "variants": [
+        {
+          "type": "Basic ATK (Enhanced)",
+          "name": "A Tempered Blade Severs Souls",
+          "tag": "Single Target",
+          "energy_gain": 20,
+          "break": 10,
+          "min_level": 1,
+          "max_level": 7,
+          "default_level": 6,
+          "description_template": "Deals Fire DMG equal to {{scaling1}}% of Mortenax Blade's Max HP to one designated enemy, and causes the target to enter the Taunt state for 1 turn.",
+          "scaling": {
+            "scaling1": [
+              50,
+              60,
+              70,
+              80,
+              90,
+              100,
+              110
+            ]
+          }
+        }
+      ]
+    },
+    "ultimate": {
+      "type": "Ultimate",
+      "name": "Fornax Ex Corpore",
+      "tag": "Enhance",
+      "energy_gain": 5,
+      "energy_cost": 160,
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "Inflicts \"Balefire Bind\" on all enemies. Enemy targets in the \"Balefire Bind\" state have their DEF reduced by {{scaling1}}% and the DMG they receive increases by {{scaling2}}%, lasting for 2 turn(s). Then, consumes HP equal to 20% of Mortenax Blade's Max HP to deploy a Zone. While the Zone is active, Mortenax Blade enters the \"Infinite Fury\" state. During the \"Infinite Fury\" state, increases CRIT Rate by 20%, increases CRIT DMG by {{scaling3}}%, enhances Basic ATK, unlocks Skill, and gains a new Ultimate \"Tenax Per Ignem.\" When receiving a killing blow, this unit will not be knocked down, but will dispel the Zone, exit the \"Infinite Fury\" state, and restore HP equal to 50% of this unit's Max HP. When gaining the \"Infinite Fury\" state, a corresponding countdown appears on the Action Order. The countdown has a fixed SPD of 70. At the start of the countdown's turn, dispels the Zone and exits the \"Infinite Fury\" state. If the current HP is insufficient, Mortenax Blade's current HP will be reduced to 1 when he uses this ability.",
+      "scaling": {
+        "scaling1": [
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          28,
+          29,
+          30,
+          31,
+          32
+        ],
+        "scaling2": [
+          30,
+          32,
+          34,
+          36,
+          38,
+          40,
+          42,
+          45,
+          48,
+          50,
+          52,
+          54
+        ],
+        "scaling3": [
+          30,
+          33,
+          36,
+          39,
+          42,
+          45,
+          49,
+          52,
+          56,
+          60,
+          63,
+          66
+        ]
+      },
+      "variants": [
+        {
+          "type": "Ultimate (Enhanced)",
+          "name": "Tenax Per Ignem",
+          "tag": "AoE",
+          "energy_gain": "5",
+          "break": "20",
+          "energy_cost": "160",
+          "min_level": 1,
+          "max_level": 12,
+          "default_level": 10,
+          "description_template": "Deals Fire DMG equal to {{scaling1}}% of Mortenax Blade's Max HP to all enemies.",
+          "scaling": {
+            "scaling1": [
+              210,
+              224,
+              238,
+              252,
+              266,
+              280,
+              298,
+              315,
+              332,
+              350,
+              364,
+              378
+            ]
+          }
+        }
+      ]
+    },
+    "talent": {
+      "type": "Talent",
+      "name": "All Karma Comes Due",
+      "tag": "Support",
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "While the Zone is active, after each attack an ally target uses on an enemy, inflicts the \"Balefire Bind\" state on the corresponding enemy target and grants 1 Charge to Mortenax Blade. When Charge reaches 9 points and the current HP is more than 1, consumes 9 Charge, regenerates {{scaling1}} Energy, and enables Mortenax Blade to use Skill 1 extra time. This extra Skill use is considered as Follow-Up ATK.",
+      "scaling": {
+        "scaling1": [
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          24,
+          25,
+          26,
+          27
+        ]
+      }
+    },
+    "technique": {
+      "type": "Technique",
+      "name": "Blade's Reach Spares None",
+      "tag": "",
+      "description": "Immediately attacks all enemies within a certain range. After entering combat, inflicts the Taunt state on all enemies for 1 turn and decreases DMG taken by this unit by 90% for 2 turn(s)."
+    },
+    "skill": {
+      "type": "Skill",
+      "name": "A Rain of Blades Seals Fate",
+      "tag": "AoE",
+      "energy_gain": 30,
+      "break_aoe": 10,
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "Consumes HP equal to 10% of Mortenax Blade's Max HP and deals Fire DMG equal to {{scaling1}}% of Mortenax Blade's Max HP to all enemies, and additionally deals 4 instance(s) of DMG, with each instance dealing Fire DMG equal to {{scaling2}}% of Mortenax Blade's Max HP to one random enemy. If the current HP is insufficient, Mortenax Blade's current HP will be reduced to 1 when he uses Skill. While not in the \"Infinite Fury\" state or when the current HP is 1 or lower, Mortenax Blade cannot use his Skill. Using Skill does not consume Skill Points.",
+      "scaling": {
+        "scaling1": [
+          36,
+          40,
+          43,
+          47,
+          50,
+          54,
+          58,
+          63,
+          68,
+          72,
+          76,
+          79
+        ],
+        "scaling2": [
+          12,
+          13,
+          14,
+          16,
+          17,
+          18,
+          20,
+          21,
+          22,
+          24,
+          25,
+          26
+        ]
+      }
+    }
+  },
+  "major_traces": {
+    "2": {
+      "name": "Bone, Hardened ad Nauseam",
+      "description": "Mortenax Blade can accumulate up to 80 overflow Energy. After using Ultimate, clears it and regenerates a corresponding amount of Energy. When the battle starts or when the Zone is dispelled, if Energy is below 75%, it is immediately regenerated to 75%. When Energy is regenerated to its maximum, dispels all debuffs from this unit."
+    },
+    "4": {
+      "name": "Soul, Tempered ad Mortem",
+      "description": "While the Zone is active, increases the chance of being attacked by enemies, decreases DMG taken by this unit by 50%, and increases Incoming Healing by 50%. After being attacked, inflicts the \"Balefire Bind\" state on the corresponding target, and enables Mortenax Blade to gain 1 Charge."
+    },
+    "6": {
+      "name": "Heart, Refined ad Infinitum",
+      "description": "While the Zone is active, ally targets deal 50% increased DMG. If there are other Nihility characters aside from Mortenax Blade in the team, Ultimate DMG dealt by ally targets increases by 75%. Otherwise, DMG dealt by Mortenax Blade additionally increases by 75%."
+    }
+  },
+  "stat_bonuses": [
+    {
+      "stat": "HP",
+      "value": "+10%"
+    },
+    {
+      "stat": "CRIT Rate",
+      "value": "+12%"
+    },
+    {
+      "stat": "Fire DMG",
+      "value": "+22.4%"
+    }
+  ],
+  "eidolons": [
+    {
+      "level": 1,
+      "name": "Ere My Death, I Stood Unmade",
+      "description": "While the Zone is active, decreases all enemies' All-Type RES by 20%. After using the extra Skill from Talent, the \"Infinite Fury\" countdown has its action delayed by 15%."
+    },
+    {
+      "level": 2,
+      "name": "Ash Was My Heart, Yet the Flame Stayed",
+      "description": "When an ally character uses Ultimate to deal DMG, it is considered as having launched Follow-Up ATK. And the Follow-Up ATK DMG dealt by ally targets increases by 75%. The upper limit of Mortenax Blade's Charge decreases to 7."
+    },
+    {
+      "level": 4,
+      "name": "Odium I've Smitten, Thence Came the Blade",
+      "description": "\"Heart, Refined ad Infinitum\" additionally increases ally targets' DMG dealt by 50%."
+    },
+    {
+      "level": 6,
+      "name": "If Immortality Could Die, I Swore THEM Slain",
+      "description": "As the Zone persists, when Mortenax Blade takes DMG or consumes HP, he gains 1 Charge. This effect can trigger again after any target's turn ends. The DMG multiplier of \"Tenax Per Ignem\" increases to 150% of its original value."
+    },
+    {
+      "level": 3,
+      "name": "Across the Shore, Wrath Laid Bare",
+      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+    },
+    {
+      "level": 5,
+      "name": "I Severed My Woes, Knowing Death Begets Life",
+      "description": "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+    }
+  ]
+}
