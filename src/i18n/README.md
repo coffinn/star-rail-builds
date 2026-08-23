@@ -10,10 +10,10 @@ same dictionary files**. After a language is registered in
 
 Build files and inline translation tokens store IDs instead of display names. The site looks up that ID in the current language dictionary and displays the translated text. Shared weapon and artifact popover details come from `src/data`.
 
-For example, `the-catch` is stored in:
+For example, `incessant-rain` is stored in:
 
 ```txt
-src/i18n/<lang>/weapons.json
+src/i18n/<lang>/light-cones.json
 ```
 
 If a translation is missing in the current language, the site falls back to
@@ -24,15 +24,14 @@ Missing translations will also appear as `[i18n] Missing translation...` warning
 
 Use:
 
-- `weapons.json` for weapon names. Weapon stats and passive data live in `src/data/weapons`.
-- `artifact-sets.json` for artifact set names. Artifact set effects live in `src/data/artifacts/artifact_sets.json`.
+- `light-cones.json` for light cone names. light cone stats and passive data live in `src/data/light-cones`.
+- `relic-sets.json` for relic set names. Relic set effects live in `src/data/relics/relic_sets.json`.
 - `characters.json` for character names.
 - `stats.json` for stats and stat-like labels, such as `er`, `atk%`, `em-set`,
   or `atk-set`.
-- `elements.json` for elements and reactions, such as `pyro`, `melt`,
-  `vaporize`, or `bloom`.
-- `abilities.json` for talent names, such as `normal-attack`, `charged-attack`,
-  `skill`, and `burst`.
+- `elements.json` for elements, such as `ice`, `fire`,
+  and `quantum`.
+- `abilities.json` for trace names, such as `basic-atk`, `skill`, and `ultimate`.
 - `notes.json` for reusable note labels referenced by inline tokens.
 - `ui.json` for website labels, section titles, buttons, and general interface
   text.
@@ -44,30 +43,30 @@ Use:
    Use lowercase English words separated with hyphens:
 
    ```txt
-   emblem-of-severed-fate
-   the-catch
-   kamisato-ayaka
+   eagle-of-twilight-line
+   incessant-rain
+   silver-wolf
    ```
 
 2. Add the ID to the English dictionary first.
 
    English is the fallback language, so every new ID should exist in `en`.
 
-   Example in `src/i18n/en/weapons.json`:
+   Example in `src/i18n/en/light-cones.json`:
 
    ```json
    {
-     "the-catch": "The Catch"
+     "incessant-rain": "Incessant Rain"
    }
    ```
 
 3. Add the same ID to other language folders when possible.
 
-   Example in `src/i18n/fr/weapons.json`:
+   Example in `src/i18n/fr/light-cones.json`:
 
    ```json
    {
-     "the-catch": "La Prise"
+     "incessant-rain": "Pluie incessante"
    }
    ```
 
@@ -77,7 +76,7 @@ Use:
 
    ```json
    {
-     "name": "the-catch"
+     "name": "incessant-rain"
    }
    ```
 
@@ -88,19 +87,19 @@ Notes can include translation tokens.
 Typed tokens search one specific dictionary:
 
 ```txt
-[[weapon:the-catch]]
-[[set:emblem-of-severed-fate]]
-[[character:xiangling]]
-[[stat:er]]
-[[element:vaporize]]
-[[ability:burst]]
+[[light-cone:incessant-rain]]
+[[set:eagle-of-twilight-line]]
+[[character:silver-wolf]]
+[[stat:spd]]
+[[element:quantum]]
+[[ability:ultimate]]
 ```
 
 Untyped tokens search known gameplay dictionaries automatically:
 
 ```txt
-[[er]]
-[[vaporize]]
+[[spd]]
+[[ultimate]]
 ```
 
 Typed tokens are safer when an ID could exist in more than one dictionary.
@@ -111,13 +110,13 @@ Add `|text` when a sentence needs a different visible form, while still
 resolving the original ID for translations and popovers:
 
 ```txt
-[[weapon:favonius-greatsword|Двуручного меча Фавония]]
-[[set:noblesse-oblige|Noblesse Oblige]]
+[[light-cone:incessant-rain|Pluie incessante]]
+[[set:eagle-of-twilight-line|Eagle of Twilight Line]]
 ```
 
-This is useful for languages with case or grammar changes. For weapon and set
+This is useful for languages with case or grammar changes. For light cone and set
 tokens, the custom text is used as the hover/click trigger, while the popover
-still loads the canonical weapon or set details.
+still loads the canonical light cone or set details.
 
 ## Aliases
 
@@ -127,41 +126,41 @@ Short aliases live in:
 src/data/translation-aliases.json
 ```
 
-Use aliases when you want shorter IDs to point to the same canonical weapon or
+Use aliases when you want shorter IDs to point to the same canonical light cone or
 artifact set ID without duplicating translations or gameplay data. Aliases work
 in inline tokens and in content item `name` fields.
 
 ```json
 {
-  "weapon": {
-    "pjws": "primordial-jade-winged-spear"
+  "light-cone": {
+    "ddd": "dance-dance-dance"
   },
   "set": {
-    "vv": "viridescent-venerer"
+    "gobs": "genius-of-brilliant-stars"
   }
 }
 ```
 
-Then both of these resolve to the same translated name and weapon popover:
+Then both of these resolve to the same translated name and light-cone popover:
 
 ```txt
-[[weapon:primordial-jade-winged-spear]]
-[[weapon:pjws]]
+[[light-cone:dance-dance-dance]]
+[[light-cone:ddd]]
 ```
 
 And both of these resolve to the same translated artifact set name and set
 popover:
 
 ```txt
-[[set:viridescent-venerer]]
-[[set:vv]]
+[[set:genius-of-brilliant-stars]]
+[[set:gobs]]
 ```
 
 You can also use the alias directly in content:
 
 ```json
 {
-  "name": "vv",
+  "name": "gobs",
   "pieces": 4
 }
 ```
@@ -178,6 +177,6 @@ the canonical ID.
 - Add new English entries first, then translate them into other languages.
 - If you are unsure about JSON formatting, add the `Needs Format Check` label
   to your Pull Request.
-- Each language folder must contain `weapons.json`, `artifact-sets.json`,
+- Each language folder must contain `light-cones.json`, `artifact-sets.json`,
   `characters.json`, `stats.json`, `elements.json`, `abilities.json`, `ui.json`,
   and `notes.json`, even when a dictionary is empty (`{}`).

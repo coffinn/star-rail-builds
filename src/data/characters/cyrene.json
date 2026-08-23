@@ -6,7 +6,7 @@
   "path": "remembrance",
   "version_released": "3.7",
   "max_energy": 24,
-  "level_80_stat": {
+  "level_80_stats": {
     "hp": 1397,
     "atk": 446,
     "def": 582,
@@ -165,7 +165,7 @@
     "memosprite": {
       "name": "Demiurge",
       "initial_spd": 0,
-      "hp_scale": "100% of Cyrene's Max HP",
+      "hp_source": "100% of Cyrene's Max HP",
       "skills": {
         "minuet": {
           "type": "Memosprite Skill",
