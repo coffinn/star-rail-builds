@@ -49,6 +49,13 @@ const elationAbilities = Object.entries(character.elation?.skills ?? {}).map(
     }),
 );
 
+const globalPassives = Object.entries(character.global_passives ?? {}).map(
+    ([id, passive]) => ({
+        id,
+        passive,
+    }),
+);
+
 const abilitySections = [
     {
         id: 'normal',
@@ -237,11 +244,17 @@ const renderVariantDescription = (
                             ) && maxLevel > minLevel;
 
                         return (
-                            <details open data-character-ability={id}>
+                            <details
+                                open
+                                data-character-ability={id}
+                                data-static-detail
+                            >
                                 <summary>
                                     <strong>{ability.type}</strong>
 
-                                    <span>{ability.name}</span>
+                                    <span class="character-ability-name">
+                                        {ability.name}
+                                    </span>
 
                                     {scalable && (
                                         <span
@@ -394,7 +407,9 @@ const renderVariantDescription = (
                                                         {variant.type}
                                                     </strong>
 
-                                                    <span>{variant.name}</span>
+                                                    <span class="character-ability-name">
+                                                        {variant.name}
+                                                    </span>
                                                 </div>
 
                                                 {variant.tag && (
@@ -520,6 +535,48 @@ const renderVariantDescription = (
         ))
     }
 
+    {
+        globalPassives.length > 0 && (
+            <section class="character-info-section">
+                <h3>Global Passives</h3>
+
+                <div class="character-global-passive-grid">
+                    {globalPassives.map(({ id, passive }) => (
+                        <article
+                            class="character-global-passive-card"
+                            data-global-passive={id}
+                        >
+                            <div class="character-global-passive-header">
+                                <strong class="character-global-passive-type">
+                                    Global
+                                    <small>Passive</small>
+                                </strong>
+
+                                <div class="character-global-passive-title">
+                                    <span class="character-ability-name">
+                                        {passive.name}
+                                    </span>
+
+                                    {passive.tag && (
+                                        <small>{passive.tag}</small>
+                                    )}
+                                </div>
+                            </div>
+
+                            <div class="character-global-passive-body">
+                                <p>
+                                    <HighlightedText
+                                        text={passive.description}
+                                    />
+                                </p>
+                            </div>
+                        </article>
+                    ))}
+                </div>
+            </section>
+        )
+    }
+
     <!-- ========================= -->
     <!-- Major Traces              -->
     <!-- ========================= -->
@@ -530,7 +587,7 @@ const renderVariantDescription = (
         <div class="character-info-details character-major-trace-grid">
             {
                 majorTraces.map(([ascension, trace]) => (
-                    <details open>
+                    <details open data-static-detail>
                         <summary>
                             <strong class="character-major-trace-label">
                                 <span>A{ascension}</span>
@@ -581,7 +638,7 @@ const renderVariantDescription = (
         <div class="character-info-details character-eidolon-grid">
             {
                 eidolons.map((eidolon) => (
-                    <details open>
+                    <details open data-static-detail>
                         <summary>
                             <strong>E{eidolon.level}</strong>
 
@@ -601,6 +658,19 @@ const renderVariantDescription = (
 </section>
 
 <script>
+    document
+        .querySelectorAll<HTMLDetailsElement>('details[data-static-detail]')
+        .forEach((detail) => {
+            const summary = detail.querySelector('summary');
+
+            if (!summary) {
+                return;
+            }
+
+            summary.addEventListener('click', (event) => {
+                event.preventDefault();
+            });
+        });
     document
         .querySelectorAll<HTMLElement>('[data-character-ability]')
         .forEach((ability) => {
@@ -637,6 +707,21 @@ const renderVariantDescription = (
 </script>
 
 <style>
+    .character-info-details details[data-static-detail] > summary {
+        cursor: default;
+
+        list-style: none;
+    }
+
+    .character-info-details
+        details[data-static-detail]
+        > summary::-webkit-details-marker {
+        display: none;
+    }
+
+    .character-info-details details[data-static-detail] > summary::marker {
+        display: none;
+    }
     .character-mechanic-meta {
         margin-bottom: 0.75rem;
     }
@@ -681,7 +766,7 @@ const renderVariantDescription = (
         max-width: 100%;
         min-width: 0;
 
-        margin-top: 1.5rem;
+        margin-top: 0;
     }
 
     .character-info-section {
@@ -945,5 +1030,129 @@ const renderVariantDescription = (
     .character-major-trace-label > small {
         font-size: 0.68rem;
         font-weight: 750;
+    }
+    .character-ability-name {
+        font-weight: 700;
+
+        color: color-mix(in srgb, var(--text) 96%, var(--accent) 4%);
+
+        letter-spacing: 0.01em;
+    }
+    .character-ability-name {
+        position: relative;
+
+        font-weight: 750;
+
+        color: var(--text);
+    }
+
+    .character-ability-name::before {
+        content: '';
+
+        display: inline-block;
+
+        width: 3px;
+        height: 0.9em;
+
+        margin-right: 7px;
+
+        border-radius: 999px;
+
+        background: var(--accent);
+
+        vertical-align: -0.05em;
+    }
+    .character-global-passive-grid {
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        width: 100%;
+        min-width: 0;
+
+        gap: 0.5rem;
+    }
+
+    .character-global-passive-card {
+        box-sizing: border-box;
+
+        width: 100%;
+        min-width: 0;
+
+        border: 1px solid color-mix(in srgb, currentColor 15%, transparent);
+
+        border-radius: 0.5rem;
+
+        overflow: hidden;
+    }
+
+    .character-global-passive-header {
+        display: grid;
+
+        grid-template-columns:
+            82px
+            minmax(0, 1fr);
+
+        min-width: 0;
+    }
+
+    .character-global-passive-type {
+        display: grid;
+        place-content: center;
+
+        min-height: 58px;
+
+        padding: 0.5rem;
+
+        background: color-mix(in srgb, var(--accent) 38%, #2a1b10 62%);
+
+        color: #fff4d6;
+
+        font-size: 0.85rem;
+        font-weight: 850;
+
+        line-height: 1.05;
+        text-align: center;
+    }
+
+    .character-global-passive-type small {
+        font-size: 0.68rem;
+        font-weight: 750;
+    }
+
+    .character-global-passive-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        min-width: 0;
+
+        gap: 0.2rem;
+
+        padding: 0.7rem 0.9rem;
+    }
+
+    .character-global-passive-title > span {
+        font-weight: 750;
+
+        overflow-wrap: anywhere;
+    }
+
+    .character-global-passive-title > small {
+        font-size: 0.8rem;
+
+        opacity: 0.7;
+    }
+
+    .character-global-passive-body {
+        padding: 0.8rem 0.9rem;
+
+        border-top: 1px solid color-mix(in srgb, currentColor 12%, transparent);
+    }
+
+    .character-global-passive-body p {
+        margin: 0;
+
+        line-height: 1.5;
     }
 </style>

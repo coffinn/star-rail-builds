@@ -237,6 +237,13 @@
         "def": 654,
         "spd": 110
     },
+    "global_passives": {
+        "mcawolfee-999": {
+            "name": "McAwolfee 999",
+            "tag": "Support",
+            "description": "After obtaining \"Silver Wolf LV.999\" or when \"Silver Wolf LV.999\" is present in the current team, gains the following effect: During combat, if an enemy target inflicts a Crowd Control debuff on an ally, all allies gain \"Firewall\" for 1 turn. While in the \"Firewall\" state, ally targets are immune to Crowd Control debuffs inflicted by enemy targets.\nThis effect can trigger at most 1 time per wave."
+        }
+    },
     "elation": {
         "skills": {
             "skill": {
@@ -270,12 +277,6 @@
                         99
                     ]
                 }
-            },
-            "mcawolfee": {
-                "type": "Elation Talent",
-                "name": "McAwolfee 999",
-                "tag": "Support",
-                "description": "After obtaining \"Silver Wolf LV.999\" or when \"Silver Wolf LV.999\" is present in the current team, gains the following effect: During combat, if an enemy target inflicts a Crowd Control debuff on an ally, all allies gain \"Firewall\" for 1 turn. While in the \"Firewall\" state, ally targets are immune to Crowd Control debuffs inflicted by enemy targets.\nThis effect can trigger at most 1 time per wave."
             }
         }
     }

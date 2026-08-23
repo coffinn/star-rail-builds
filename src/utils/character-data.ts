@@ -91,7 +91,11 @@ export type CharacterEidolon = {
     name: string;
     description: string;
 };
-
+export type CharacterGlobalPassive = {
+    name: string;
+    tag?: string;
+    description: string;
+};
 export type CharacterData = {
     id: string;
     name: string;
@@ -117,7 +121,10 @@ export type CharacterData = {
     memosprite?: CharacterMemosprite;
 
     elation?: CharacterElation;
-
+    global_passives?: Record<
+        string,
+        CharacterGlobalPassive
+    >;
     major_traces: Record<
         string,
         CharacterMajorTrace

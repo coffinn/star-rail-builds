@@ -340,6 +340,13 @@
             }
         }
     },
+    "global_passives": {
+        "sanctuary-of-mooncocoon": {
+            "name": "Sanctuary of Mooncocoon",
+            "tag": "Support",
+            "description": "After obtaining Castorice, this effect is available globally. When an ally would be downed by a killing blow, they temporarily enter the Mooncocoon state instead. If they recover HP or gain a Shield before the effect expires, they survive; otherwise they are downed. This can trigger once per battle."
+        }
+    },
     "major_traces": {
         "2": {
             "name": "Contained Dark Tide",
