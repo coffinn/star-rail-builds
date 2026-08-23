@@ -1459,4 +1459,57 @@ const renderVariantDescription = (
             padding: 0.7rem 0.8rem;
         }
     }
+    /* =====================================================
+   ALL CHARACTER INFO CARDS — CONSISTENT INNER BODY
+   Applies to Abilities, Talents, Major Traces, Eidolons,
+   Memosprite abilities, Elation abilities, etc.
+   ===================================================== */
+
+    .character-info-details > details {
+        display: grid;
+
+        grid-template-rows:
+            auto
+            1fr;
+
+        height: 100%;
+    }
+
+    /* Inner dark panel fills the remaining card height */
+    .character-info-details > details > .character-detail-body {
+        box-sizing: border-box;
+
+        width: auto;
+        max-width: none;
+        min-width: 0;
+
+        height: auto;
+        min-height: 0;
+
+        margin: 8px;
+
+        padding: 10px 12px;
+
+        border-radius: 6px;
+
+        background: rgba(0, 0, 0, 0.18);
+    }
+
+    /* Prevent paragraphs from creating odd extra spacing */
+    .character-info-details > details > .character-detail-body > p:first-child {
+        margin-top: 0;
+    }
+
+    .character-info-details > details > .character-detail-body > p:last-child {
+        margin-bottom: 0;
+    }
+
+    /* Slightly tighter on mobile */
+    @media (max-width: 700px) {
+        .character-info-details > details > .character-detail-body {
+            margin: 6px;
+
+            padding: 8px 10px;
+        }
+    }
 </style>
