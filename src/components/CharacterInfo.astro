@@ -839,7 +839,6 @@ const renderVariantDescription = (
         display: none;
     }
 
-
     /* =====================================================
        Main Character Info surfaces
        ===================================================== */
@@ -891,7 +890,6 @@ const renderVariantDescription = (
         margin-bottom: 10px;
     }
 
-
     /* =====================================================
        Stats
        ===================================================== */
@@ -922,7 +920,6 @@ const renderVariantDescription = (
 
         background: rgba(255, 255, 255, 0.04);
     }
-
 
     /* =====================================================
        Detail grids
@@ -977,7 +974,6 @@ const renderVariantDescription = (
         align-items: stretch;
     }
 
-
     /* =====================================================
        Detail headers
        ===================================================== */
@@ -1021,7 +1017,6 @@ const renderVariantDescription = (
         opacity: 0.75;
     }
 
-
     /* =====================================================
        Detail body
        ===================================================== */
@@ -1061,17 +1056,11 @@ const renderVariantDescription = (
         overflow-wrap: anywhere;
     }
 
-    .character-info-details
-        > details
-        > .character-detail-body
-        > p:first-child {
+    .character-info-details > details > .character-detail-body > p:first-child {
         margin-top: 0;
     }
 
-    .character-info-details
-        > details
-        > .character-detail-body
-        > p:last-child {
+    .character-info-details > details > .character-detail-body > p:last-child {
         margin-bottom: 0;
     }
 
@@ -1101,7 +1090,6 @@ const renderVariantDescription = (
 
         opacity: 0.8;
     }
-
 
     /* =====================================================
        Trace slider
@@ -1156,7 +1144,6 @@ const renderVariantDescription = (
         opacity: 0.65;
     }
 
-
     /* =====================================================
        Ability descriptions
        ===================================================== */
@@ -1189,7 +1176,6 @@ const renderVariantDescription = (
 
         overflow-wrap: anywhere;
     }
-
 
     /* =====================================================
        Selectable alternate abilities
@@ -1254,7 +1240,6 @@ const renderVariantDescription = (
         color: #111;
     }
 
-
     /* =====================================================
        Alternate / enhanced abilities
        ===================================================== */
@@ -1314,7 +1299,6 @@ const renderVariantDescription = (
         margin: 8px 10px 10px;
     }
 
-
     /* =====================================================
        Ability names
        ===================================================== */
@@ -1346,7 +1330,6 @@ const renderVariantDescription = (
         content: '';
     }
 
-
     /* =====================================================
        Major Traces
        ===================================================== */
@@ -1375,7 +1358,6 @@ const renderVariantDescription = (
         font-size: 0.68rem;
         font-weight: 750;
     }
-
 
     /* =====================================================
        Global Passives
@@ -1484,7 +1466,6 @@ const renderVariantDescription = (
         line-height: 1.5;
     }
 
-
     /* =====================================================
        Mobile
        ===================================================== */
@@ -1510,9 +1491,7 @@ const renderVariantDescription = (
             margin-top: 1rem;
         }
 
-        .character-info-details
-            > details
-            > .character-detail-body {
+        .character-info-details > details > .character-detail-body {
             padding: 8px 9px;
         }
 
@@ -1604,5 +1583,8 @@ const renderVariantDescription = (
 
             padding: 0.7rem 0.8rem;
         }
+    }
+    .character-ability-variant > .character-ability-tag {
+        margin: 8px 10px 0;
     }
 </style>
