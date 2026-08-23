@@ -1160,23 +1160,40 @@ const renderVariantDescription = (
         min-width: 0;
     }
 
-    .character-variant-selector {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    .character-variant-selector select {
+        box-sizing: border-box;
 
-        min-width: 0;
+        min-width: 190px;
+        max-width: 60%;
 
-        gap: 10px;
-
-        margin-top: 10px;
-
-        padding: 6px 8px;
-
-        border: 1px solid rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(0, 0, 0, 0.18);
         border-radius: 6px;
 
-        background: rgba(255, 255, 255, 0.045);
+        padding: 6px 30px 6px 10px;
+
+        background: #d8d8d8;
+
+        color: #111;
+
+        font: inherit;
+        font-size: 0.85rem;
+        font-weight: 650;
+
+        cursor: pointer;
+    }
+
+    .character-variant-selector select option {
+        background: #e4e4e4;
+
+        color: #111;
+    }
+    .character-variant-selector select:hover {
+        background: #e5e5e5;
+    }
+
+    .character-variant-selector select:focus {
+        outline: 2px solid var(--accent);
+        outline-offset: 1px;
     }
 
     .character-variant-selector > span {
