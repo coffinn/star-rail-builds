@@ -40,9 +40,8 @@
                     "name": "Ningu: Demonbane Petalblade",
                     "tag": "Blast",
                     "energy_gain": 20,
-                    "break_main": 10,
-                    "break_adjacent": 5,
-                    "break_third": 5,
+                    "break_main": 25,
+                    "break_adjacent": 15,
                     "description_template": "Launches \"Ningu: Demonbane Petalblade.\" The first 2 hits deal Imaginary DMG equal to {{break_main}}% of Rappa's ATK to one designated enemy and Imaginary DMG equal to {{break_adjacent}}% of Rappa's ATK to adjacent targets, and the 3rd hit deals Imaginary DMG equal to {{break_third}}% of Rappa's ATK to all enemies. Enhanced Basic ATK will not recover Skill Points. Attacking enemies that don't have Imaginary Weakness can also reduce Toughness, whose effect is equal to 50% of the original Toughness Reduction. When Breaking Weakness, triggers the Imaginary Weakness Break effect.",
                     "scaling": {
                         "break_main": [
@@ -107,8 +106,8 @@
             "type": "Ultimate",
             "name": "Nindō Supreme: Aishiteru",
             "tag,": "Enhance",
-            "energy_cost": 140,
             "energy_gain": 5,
+            "energy_cost": 140,
             "min_level": 1,
             "max_level": 12,
             "default_level": 10,
