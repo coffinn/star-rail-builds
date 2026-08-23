@@ -1296,4 +1296,167 @@ const renderVariantDescription = (
             min-width: 0;
         }
     }
+    /* =====================================================
+   MOBILE — FLATTER / LESS CRAMPED CHARACTER INFO
+   ===================================================== */
+
+    @media (max-width: 700px) {
+        /*
+     * Remove one visual layer:
+     * Sections no longer get their own heavy panel.
+     */
+        .character-info-section {
+            padding: 4px 0;
+
+            border-radius: 0;
+
+            background: transparent;
+
+            box-shadow: none;
+        }
+
+        .character-info-section + .character-info-section {
+            margin-top: 1rem;
+        }
+
+        /*
+     * Keep individual ability / trace / eidolon cards
+     * as the main visible surface.
+     */
+        .character-info-details > details {
+            width: 100%;
+            max-width: 100%;
+            min-width: 0;
+
+            box-sizing: border-box;
+
+            background: rgba(255, 255, 255, 0.035);
+        }
+
+        /*
+     * Give text a little breathing room from
+     * the left and right edges.
+     */
+        .character-detail-body {
+            box-sizing: border-box;
+
+            width: 100%;
+            max-width: 100%;
+            min-width: 0;
+
+            padding: 8px 10px 10px;
+        }
+
+        /*
+     * Tone down the extra inner surfaces.
+     */
+        .character-detail-meta {
+            box-sizing: border-box;
+
+            width: 100%;
+            max-width: 100%;
+
+            margin: 6px 0;
+
+            padding: 5px 6px;
+
+            background: rgba(255, 255, 255, 0.025);
+        }
+
+        .character-trace-slider {
+            box-sizing: border-box;
+
+            width: 100%;
+            max-width: 100%;
+            min-width: 0;
+
+            margin: 6px 0;
+
+            padding: 5px 6px;
+
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .character-ability-description {
+            box-sizing: border-box;
+
+            width: 100%;
+            max-width: 100%;
+            min-width: 0;
+
+            margin: 6px 0 0;
+
+            padding: 7px 8px;
+
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+        /*
+     * Prevent long text from clipping at right edge.
+     */
+        .character-detail-body p,
+        .character-ability-description p,
+        .character-info-details summary > span,
+        .character-global-passive-body,
+        .character-global-passive-title {
+            min-width: 0;
+            max-width: 100%;
+
+            overflow-wrap: anywhere;
+            word-break: normal;
+        }
+
+        /*
+     * Variant cards can overflow because desktop rules
+     * use horizontal margins on 100%-wide children.
+     */
+        .character-ability-variant {
+            box-sizing: border-box;
+
+            width: 100%;
+            max-width: 100%;
+
+            margin-top: 8px;
+        }
+
+        .character-ability-variant > .character-detail-meta,
+        .character-ability-variant > .character-ability-description {
+            width: auto;
+            max-width: none;
+
+            margin-right: 7px;
+            margin-left: 7px;
+        }
+
+        /*
+     * Slightly tighter headers on phones.
+     */
+        .character-info-details > details > summary {
+            gap: 0.5rem;
+
+            padding: 0.6rem 0.7rem;
+        }
+
+        /*
+     * Global passive: reduce nested visual weight too.
+     */
+        .character-global-passive-card {
+            box-sizing: border-box;
+
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .character-global-passive-title {
+            padding: 0.6rem 0.7rem;
+        }
+
+        .character-global-passive-body {
+            box-sizing: border-box;
+
+            width: 100%;
+
+            padding: 0.7rem 0.8rem;
+        }
+    }
 </style>
