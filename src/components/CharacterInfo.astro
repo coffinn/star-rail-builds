@@ -839,6 +839,7 @@ const renderVariantDescription = (
         display: none;
     }
 
+
     /* =====================================================
        Main Character Info surfaces
        ===================================================== */
@@ -890,6 +891,7 @@ const renderVariantDescription = (
         margin-bottom: 10px;
     }
 
+
     /* =====================================================
        Stats
        ===================================================== */
@@ -921,6 +923,7 @@ const renderVariantDescription = (
         background: rgba(255, 255, 255, 0.04);
     }
 
+
     /* =====================================================
        Detail grids
        ===================================================== */
@@ -948,6 +951,11 @@ const renderVariantDescription = (
     }
 
     .character-info-details > details {
+        display: flex;
+        flex-direction: column;
+
+        height: 100%;
+
         border: 1px solid rgba(255, 255, 255, 0.08);
         border-radius: 8px;
 
@@ -969,11 +977,6 @@ const renderVariantDescription = (
         align-items: stretch;
     }
 
-    .character-ability-grid > details,
-    .character-major-trace-grid > details,
-    .character-eidolon-grid > details {
-        height: 100%;
-    }
 
     /* =====================================================
        Detail headers
@@ -997,6 +1000,8 @@ const renderVariantDescription = (
     }
 
     .character-info-details > details > summary {
+        flex: 0 0 auto;
+
         border-bottom: 1px solid rgba(255, 255, 255, 0.065);
 
         background: rgba(255, 255, 255, 0.025);
@@ -1016,6 +1021,7 @@ const renderVariantDescription = (
         opacity: 0.75;
     }
 
+
     /* =====================================================
        Detail body
        ===================================================== */
@@ -1032,11 +1038,41 @@ const renderVariantDescription = (
         background: rgba(0, 0, 0, 0.16);
     }
 
+    .character-info-details > details > .character-detail-body {
+        flex: 1 1 auto;
+
+        width: auto;
+        max-width: none;
+        min-height: 0;
+
+        margin: 2px;
+
+        padding: 10px 12px;
+
+        border-radius: 5px;
+
+        background: rgba(0, 0, 0, 0.18);
+    }
+
     .character-detail-body p {
         max-width: 100%;
         min-width: 0;
 
         overflow-wrap: anywhere;
+    }
+
+    .character-info-details
+        > details
+        > .character-detail-body
+        > p:first-child {
+        margin-top: 0;
+    }
+
+    .character-info-details
+        > details
+        > .character-detail-body
+        > p:last-child {
+        margin-bottom: 0;
     }
 
     .character-ability-tag {
@@ -1065,6 +1101,7 @@ const renderVariantDescription = (
 
         opacity: 0.8;
     }
+
 
     /* =====================================================
        Trace slider
@@ -1119,6 +1156,7 @@ const renderVariantDescription = (
         opacity: 0.65;
     }
 
+
     /* =====================================================
        Ability descriptions
        ===================================================== */
@@ -1152,6 +1190,7 @@ const renderVariantDescription = (
         overflow-wrap: anywhere;
     }
 
+
     /* =====================================================
        Selectable alternate abilities
        ===================================================== */
@@ -1160,20 +1199,48 @@ const renderVariantDescription = (
         min-width: 0;
     }
 
+    .character-variant-selector {
+        box-sizing: border-box;
+
+        display: flex;
+        align-items: center;
+
+        width: 100%;
+
+        gap: 10px;
+
+        margin-top: 10px;
+        padding: 6px 8px;
+
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 6px;
+
+        background: rgba(255, 255, 255, 0.045);
+    }
+
+    .character-variant-selector > span {
+        flex: 0 0 auto;
+
+        font-size: 0.85rem;
+        font-weight: 750;
+    }
+
     .character-variant-selector select {
         box-sizing: border-box;
 
-        min-width: 190px;
+        min-width: 215px;
         max-width: 60%;
 
-        border: 1px solid rgba(0, 0, 0, 0.18);
+        margin-left: auto;
+
+        border: 1px solid rgba(255, 255, 255, 0.12);
         border-radius: 6px;
 
-        padding: 6px 30px 6px 10px;
+        padding: 6px 10px;
 
-        background: #d8d8d8;
+        background: rgba(255, 255, 255, 0.045);
 
-        color: #111;
+        color: var(--text);
 
         font: inherit;
         font-size: 0.85rem;
@@ -1184,43 +1251,9 @@ const renderVariantDescription = (
 
     .character-variant-selector select option {
         background: #e4e4e4;
-
         color: #111;
     }
-    .character-variant-selector select:hover {
-        background: #e5e5e5;
-    }
 
-    .character-variant-selector select:focus {
-        outline: 2px solid var(--accent);
-        outline-offset: 1px;
-    }
-
-    .character-variant-selector > span {
-        min-width: 0;
-
-        font-size: 0.85rem;
-        font-weight: 750;
-    }
-
-    .character-variant-selector select {
-        box-sizing: border-box;
-
-        min-width: 190px;
-        max-width: 60%;
-
-        border: 1px solid rgba(255, 255, 255, 0.12);
-        border-radius: 5px;
-
-        padding: 5px 8px;
-
-        background: rgba(0, 0, 0, 0.28);
-
-        color: var(--text);
-
-        font: inherit;
-        font-size: 0.85rem;
-    }
 
     /* =====================================================
        Alternate / enhanced abilities
@@ -1281,6 +1314,7 @@ const renderVariantDescription = (
         margin: 8px 10px 10px;
     }
 
+
     /* =====================================================
        Ability names
        ===================================================== */
@@ -1312,6 +1346,7 @@ const renderVariantDescription = (
         content: '';
     }
 
+
     /* =====================================================
        Major Traces
        ===================================================== */
@@ -1340,6 +1375,7 @@ const renderVariantDescription = (
         font-size: 0.68rem;
         font-weight: 750;
     }
+
 
     /* =====================================================
        Global Passives
@@ -1448,8 +1484,9 @@ const renderVariantDescription = (
         line-height: 1.5;
     }
 
+
     /* =====================================================
-       Responsive
+       Mobile
        ===================================================== */
 
     @media (max-width: 700px) {
@@ -1459,35 +1496,6 @@ const renderVariantDescription = (
             grid-template-columns: 1fr;
         }
 
-        .character-info-section {
-            padding: 8px;
-        }
-
-        .character-detail-body {
-            padding: 8px;
-        }
-
-        .character-ability-description {
-            padding: 8px;
-        }
-    }
-
-    @media (max-width: 600px) {
-        .character-trace-slider {
-            width: 100%;
-            max-width: none;
-            min-width: 0;
-        }
-    }
-    /* =====================================================
-   MOBILE — FLATTER / LESS CRAMPED CHARACTER INFO
-   ===================================================== */
-
-    @media (max-width: 700px) {
-        /*
-     * Remove one visual layer:
-     * Sections no longer get their own heavy panel.
-     */
         .character-info-section {
             padding: 4px 0;
 
@@ -1502,37 +1510,12 @@ const renderVariantDescription = (
             margin-top: 1rem;
         }
 
-        /*
-     * Keep individual ability / trace / eidolon cards
-     * as the main visible surface.
-     */
-        .character-info-details > details {
-            width: 100%;
-            max-width: 100%;
-            min-width: 0;
-
-            box-sizing: border-box;
-
-            background: rgba(255, 255, 255, 0.035);
+        .character-info-details
+            > details
+            > .character-detail-body {
+            padding: 8px 9px;
         }
 
-        /*
-     * Give text a little breathing room from
-     * the left and right edges.
-     */
-        .character-detail-body {
-            box-sizing: border-box;
-
-            width: 100%;
-            max-width: 100%;
-            min-width: 0;
-
-            padding: 8px 10px 10px;
-        }
-
-        /*
-     * Tone down the extra inner surfaces.
-     */
         .character-detail-meta {
             box-sizing: border-box;
 
@@ -1547,8 +1530,6 @@ const renderVariantDescription = (
         }
 
         .character-trace-slider {
-            box-sizing: border-box;
-
             width: 100%;
             max-width: 100%;
             min-width: 0;
@@ -1561,12 +1542,6 @@ const renderVariantDescription = (
         }
 
         .character-ability-description {
-            box-sizing: border-box;
-
-            width: 100%;
-            max-width: 100%;
-            min-width: 0;
-
             margin: 6px 0 0;
 
             padding: 7px 8px;
@@ -1574,9 +1549,6 @@ const renderVariantDescription = (
             background: rgba(0, 0, 0, 0.1);
         }
 
-        /*
-     * Prevent long text from clipping at right edge.
-     */
         .character-detail-body p,
         .character-ability-description p,
         .character-info-details summary > span,
@@ -1590,32 +1562,19 @@ const renderVariantDescription = (
         }
 
         /*
-     * Variant cards can overflow because desktop rules
-     * use horizontal margins on 100%-wide children.
-     */
+         * The original cascade left these selectors in a column on mobile.
+         * Only keep the declarations that actually survive the later
+         * desktop selector rules.
+         */
         .character-variant-selector {
-            align-items: stretch;
             flex-direction: column;
-
-            gap: 5px;
-
-            margin-top: 8px;
-
-            padding: 6px;
         }
 
         .character-variant-selector select {
             width: 100%;
-            max-width: none;
-            min-width: 0;
         }
 
         .character-ability-variant {
-            box-sizing: border-box;
-
-            width: 100%;
-            max-width: 100%;
-
             margin-top: 8px;
         }
 
@@ -1628,23 +1587,10 @@ const renderVariantDescription = (
             margin-left: 7px;
         }
 
-        /*
-     * Slightly tighter headers on phones.
-     */
         .character-info-details > details > summary {
             gap: 0.5rem;
 
             padding: 0.6rem 0.7rem;
-        }
-
-        /*
-     * Global passive: reduce nested visual weight too.
-     */
-        .character-global-passive-card {
-            box-sizing: border-box;
-
-            width: 100%;
-            max-width: 100%;
         }
 
         .character-global-passive-title {
@@ -1657,61 +1603,6 @@ const renderVariantDescription = (
             width: 100%;
 
             padding: 0.7rem 0.8rem;
-        }
-    }
-    /* =====================================================
-   CONSISTENT FULL-HEIGHT INNER BODY
-   Abilities / Major Traces / Eidolons / etc.
-   ===================================================== */
-
-    .character-info-details > details {
-        display: flex;
-        flex-direction: column;
-
-        height: 100%;
-    }
-
-    /* Header stays at natural height */
-    .character-info-details > details > summary {
-        flex: 0 0 auto;
-    }
-
-    /* Body fills all remaining vertical space */
-    .character-info-details > details > .character-detail-body {
-        box-sizing: border-box;
-
-        flex: 1 1 auto;
-
-        width: auto;
-        max-width: none;
-        min-width: 0;
-        min-height: 0;
-
-        /* Tiny inset — basically at the card edge */
-        margin: 2px;
-
-        padding: 10px 12px;
-
-        border-radius: 5px;
-
-        background: rgba(0, 0, 0, 0.18);
-    }
-
-    /* Remove unwanted paragraph spacing */
-    .character-info-details > details > .character-detail-body > p:first-child {
-        margin-top: 0;
-    }
-
-    .character-info-details > details > .character-detail-body > p:last-child {
-        margin-bottom: 0;
-    }
-
-    /* Mobile */
-    @media (max-width: 700px) {
-        .character-info-details > details > .character-detail-body {
-            margin: 2px;
-
-            padding: 8px 9px;
         }
     }
 </style>
