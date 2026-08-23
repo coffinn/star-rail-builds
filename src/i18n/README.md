@@ -10,10 +10,10 @@ same dictionary files**. After a language is registered in
 
 Build files and inline translation tokens store IDs instead of display names. The site looks up that ID in the current language dictionary and displays the translated text. Shared weapon and artifact popover details come from `src/data`.
 
-For example, `the-catch` is stored in:
+For example, `incessant-rain` is stored in:
 
 ```txt
-src/i18n/<lang>/weapons.json
+src/i18n/<lang>/light-cones.json
 ```
 
 If a translation is missing in the current language, the site falls back to
@@ -24,7 +24,7 @@ Missing translations will also appear as `[i18n] Missing translation...` warning
 
 Use:
 
-- `weapons.json` for weapon names. Weapon stats and passive data live in `src/data/weapons`.
+- `light-cones.json` for light cone names. light cone stats and passive data live in `src/data/light-cones`.
 - `artifact-sets.json` for artifact set names. Artifact set effects live in `src/data/artifacts/artifact_sets.json`.
 - `characters.json` for character names.
 - `stats.json` for stats and stat-like labels, such as `er`, `atk%`, `em-set`,
@@ -53,7 +53,7 @@ Use:
 
    English is the fallback language, so every new ID should exist in `en`.
 
-   Example in `src/i18n/en/weapons.json`:
+   Example in `src/i18n/en/light-cones.json`:
 
    ```json
    {
@@ -63,7 +63,7 @@ Use:
 
 3. Add the same ID to other language folders when possible.
 
-   Example in `src/i18n/fr/weapons.json`:
+   Example in `src/i18n/fr/light-cones.json`:
 
    ```json
    {
@@ -88,19 +88,19 @@ Notes can include translation tokens.
 Typed tokens search one specific dictionary:
 
 ```txt
-[[weapon:the-catch]]
-[[set:emblem-of-severed-fate]]
-[[character:xiangling]]
-[[stat:er]]
-[[element:vaporize]]
-[[ability:burst]]
+[[light-cone:incessant-rain]]
+[[set:eagle-of-twilight-line]]
+[[character:silver-wolf]]
+[[stat:spd]]
+[[element:quantum]]
+[[ability:ultimate]]
 ```
 
 Untyped tokens search known gameplay dictionaries automatically:
 
 ```txt
-[[er]]
-[[vaporize]]
+[[spd]]
+[[ultimate]]
 ```
 
 Typed tokens are safer when an ID could exist in more than one dictionary.
@@ -111,13 +111,13 @@ Add `|text` when a sentence needs a different visible form, while still
 resolving the original ID for translations and popovers:
 
 ```txt
-[[weapon:favonius-greatsword|Двуручного меча Фавония]]
+[[light-cone:favonius-greatsword|Двуручного меча Фавония]]
 [[set:noblesse-oblige|Noblesse Oblige]]
 ```
 
-This is useful for languages with case or grammar changes. For weapon and set
+This is useful for languages with case or grammar changes. For light cone and set
 tokens, the custom text is used as the hover/click trigger, while the popover
-still loads the canonical weapon or set details.
+still loads the canonical light cone or set details.
 
 ## Aliases
 
@@ -127,13 +127,13 @@ Short aliases live in:
 src/data/translation-aliases.json
 ```
 
-Use aliases when you want shorter IDs to point to the same canonical weapon or
+Use aliases when you want shorter IDs to point to the same canonical light cone or
 artifact set ID without duplicating translations or gameplay data. Aliases work
 in inline tokens and in content item `name` fields.
 
 ```json
 {
-  "weapon": {
+  "light-cone": {
     "pjws": "primordial-jade-winged-spear"
   },
   "set": {
@@ -142,11 +142,11 @@ in inline tokens and in content item `name` fields.
 }
 ```
 
-Then both of these resolve to the same translated name and weapon popover:
+Then both of these resolve to the same translated name and light-cone popover:
 
 ```txt
-[[weapon:primordial-jade-winged-spear]]
-[[weapon:pjws]]
+[[light-cone:primordial-jade-winged-spear]]
+[[light-cone:pjws]]
 ```
 
 And both of these resolve to the same translated artifact set name and set
@@ -178,6 +178,6 @@ the canonical ID.
 - Add new English entries first, then translate them into other languages.
 - If you are unsure about JSON formatting, add the `Needs Format Check` label
   to your Pull Request.
-- Each language folder must contain `weapons.json`, `artifact-sets.json`,
+- Each language folder must contain `light-cones.json`, `artifact-sets.json`,
   `characters.json`, `stats.json`, `elements.json`, `abilities.json`, `ui.json`,
   and `notes.json`, even when a dictionary is empty (`{}`).
