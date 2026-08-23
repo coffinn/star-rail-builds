@@ -221,7 +221,7 @@ const renderVariantDescription = (
                     </div>
                 )}
 
-                <div class="character-info-details">
+                <div class="character-info-details character-ability-grid">
                     {section.abilities.map(({ id, ability }) => {
                         const minLevel = ability.min_level ?? 1;
 
@@ -527,12 +527,15 @@ const renderVariantDescription = (
     <section class="character-info-section">
         <h3>Major Traces</h3>
 
-        <div class="character-info-details">
+        <div class="character-info-details character-major-trace-grid">
             {
                 majorTraces.map(([ascension, trace]) => (
                     <details open>
                         <summary>
-                            <strong>Ascension {ascension}</strong>
+                            <strong class="character-major-trace-label">
+                                <span>A{ascension}</span>
+                                <small>Major Trace</small>
+                            </strong>
 
                             <span>{trace.name}</span>
                         </summary>
@@ -575,7 +578,7 @@ const renderVariantDescription = (
     <section class="character-info-section">
         <h3>Eidolons</h3>
 
-        <div class="character-info-details">
+        <div class="character-info-details character-eidolon-grid">
             {
                 eidolons.map((eidolon) => (
                     <details open>
@@ -879,5 +882,68 @@ const renderVariantDescription = (
         line-height: 1.5;
 
         overflow-wrap: anywhere;
+    }
+    /* ========================================
+   Character Info multi-column layout
+   ======================================== */
+
+    /* Abilities / Memosprite / Elation */
+    .character-ability-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: stretch;
+    }
+
+    /* A2 / A4 / A6 all on one row */
+    .character-major-trace-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        align-items: stretch;
+    }
+
+    /* E1-E6 */
+    .character-eidolon-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: stretch;
+    }
+
+    /* Make cards fill their grid cell */
+    .character-ability-grid > details,
+    .character-major-trace-grid > details,
+    .character-eidolon-grid > details {
+        height: 100%;
+    }
+
+    /* ========================================
+   Mobile
+   ======================================== */
+
+    @media (max-width: 700px) {
+        .character-ability-grid,
+        .character-major-trace-grid,
+        .character-eidolon-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    .character-major-trace-label {
+        display: grid;
+        place-items: center;
+
+        flex: 0 0 72px;
+
+        width: 72px;
+        min-width: 72px;
+
+        gap: 2px;
+
+        text-align: center;
+        line-height: 1.05;
+    }
+    .character-major-trace-label > span {
+        font-size: 0.95rem;
+        font-weight: 850;
+    }
+
+    .character-major-trace-label > small {
+        font-size: 0.68rem;
+        font-weight: 750;
     }
 </style>

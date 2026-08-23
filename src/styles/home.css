@@ -586,22 +586,35 @@
 
 .roster-character-copy {
     z-index: 2;
+
     display: grid;
+    align-content: center;
+
     min-width: 0;
+    min-height: 46px;
+
     gap: 3px;
+
     border-top: 1px solid var(--roster-rarity);
-    padding: 12px 8px 12px;
+
+    padding: 8px;
+
     background: rgba(3, 5, 8, 0.72);
 }
-
 .roster-character-name {
-    overflow: hidden;
+    display: block;
+
+    min-width: 0;
+
     color: #fff;
+
     font-size: 0.85rem;
     font-weight: 820;
-    line-height: 1.12;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    line-height: 1.15;
+
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: normal;
 }
 
 .roster-character-updated {
