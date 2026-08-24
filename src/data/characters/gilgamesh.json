@@ -96,7 +96,7 @@
             "name": "Enuma Elish",
             "tag": "AoE",
             "energy_gain": 5,
-            "break": 40,
+            "break_aoe": 40,
             "break_per_bounce": 2,
             "energy_cost": 360,
             "min_level": 1,
