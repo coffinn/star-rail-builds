@@ -218,7 +218,7 @@
         "min_level": 1,
         "max_level": 7,
         "default_level": 6,
-        "description_template": "This ability automatically selects a target, prioritizing the enemy target that Evernight last attacked. Deals Ice DMG equal to {{scaling}}% of Evey's Max HP to one enemy. For every 4 \"Memoria\" Evernight currently has, further deals Ice DMG equal to {{scaling}}% of Evey's Max HP. After use, Evernight gains 1 \"Memoria.\"",
+        "description_template": "This ability automatically selects a target, prioritizing the enemy target that Evernight last attacked. Deals Ice DMG equal to {{scaling1}}% of Evey's Max HP to one enemy. For every 4 \"Memoria\" Evernight currently has, further deals Ice DMG equal to {{scaling2}}% of Evey's Max HP. After use, Evernight gains 1 \"Memoria.\"",
         "scaling": {
           "scaling1": [
             25,
