@@ -1,0 +1,142 @@
+{
+    "id": "bronya",
+    "name": "Bronya",
+    "rarity": "5",
+    "element": "wind",
+    "path": "harmony",
+    "version_released": "1.0",
+    "max_energy": "",
+    "level_80_stats": {
+        "hp": 1241,
+        "atk": 582,
+        "def": 533,
+        "spd": 99
+    },
+    "abilities": {
+        "basic": {
+            "type": "Basic ATK",
+            "name": "Windrider Bullet",
+            "tag": "Single Target",
+            "energy_gain": "",
+            "break": "",
+            "min_level": 1,
+            "max_level": 7,
+            "default_level": 6,
+            "description_template": "Deals Wind DMG equal to {{scaling1}}% of Bronya's ATK to a single enemy.",
+            "scaling": {
+                "scaling1": [50,60,70,80,90,100,110,120,130]
+            }
+        },
+        "skill": {
+            "type": "Skill",
+            "name": "Combat Redeployment",
+            "tag": "Support",
+            "energy_gain": "",
+            "break": "",
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Dispels a debuff from a single ally, allows them to immediately take action, and increases their DMG by {{scaling1}}% for 1 turn(s). When this Skill is used on Bronya herself, she cannot immediately take action again.",
+            "scaling": {
+                "scaling1": [33,36.3,39.6,42.9,46.2,49.5,53.63,57.75,61.88,66,69.3,72.6,75.9,79.2,82.5]
+            }
+        },
+        "ultimate": {
+            "type": "Ultimate",
+            "name": "The Belobog March",
+            "tag": "Support",
+            "energy_gain": "",
+            "break": "",
+            "energy_cost": "120",
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Increases the ATK of all allies by {{scalin1}}%, and increases their CRIT DMG equal to {{scalin2g}}% of Bronya's CRIT DMG plus {{scaling3}}% for 2 turn(s).",
+            "scaling": {
+                "scaling1": [33,35.2,37.4,39.6,41.8,44,46.75,49.5,52.25,55,57.2,59.4,61.6,63.8,66],
+                "scaling2": [12,12.4,12.8,13.2,13.6,14,14.5,15,15.5,16,16.4,16.8,17.2,17.6,18],
+                "scaling3": [12,12.8,13.6,14.4,15.2,16,17,18,19,20,20.8,21.6,22.4,23.2,24]
+            }
+        },
+        "technique": {
+            "type": "Technique",
+            "name": "Banner of Command",
+            "tag": "Support",
+            "description": "After using Bronya's Technique, at the start of the next battle, all allies' ATK increases by 15% for 2 turn(s)."
+        },
+        "talent": {
+            "type": "Talent",
+            "name": "Leading the Way",
+            "tag": "Enhance",
+            "energy_gain": "",
+            "break": "",
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "After using her Basic ATK, Bronya's next action will be Advanced Forward by {{scaling1}}%.",
+            "scaling": {
+                "scaling1": [15,16.5,18,19.5,21,22.5,24.375,26.25,28.125,30,31.5,33,34.5,36,37.5]
+            }
+        }
+    },
+    "major_traces": {
+        "2": {
+            "name": "Command",
+            "description": "The CRIT Rate for Basic ATK increases to 100%."
+        },
+        "4": {
+            "name": "Battlefield",
+            "description": "At the start of the battle, all allies' DEF increases by 20% for 2 turn(s)."
+        },
+        "6": {
+            "name": "Military Might",
+            "description": "When Bronya is on the field, all allies deal 10% more DMG."
+        }
+    },
+    "stat_bonuses": [
+        {
+            "stat": "Wind DMG",
+            "value": "+22.4%"
+        },
+        {
+            "stat": "CRIT DMG",
+            "value": "+24%"
+        },
+        {
+            "stat": "Effect RES",
+            "value": "+10%"
+        }
+    ],
+    "eidolons": [
+        {
+            "level": 1,
+            "name": "Hone Your Strength",
+            "description": "When using Skill, there is a 50% fixed chance of recovering 1 Skill Point. This effect has a 1-turn cooldown."
+        },
+        {
+            "level": 2,
+            "name": "Quick March",
+            "description": "When using Skill, the target ally's SPD increases by 30% after taking action, lasting for 1 turn."
+        },
+        {
+            "level": 3,
+            "name": "Bombardment",
+            "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+        },
+        {
+            "level": 4,
+            "name": "Take by Surprise",
+            "description": "After any other ally character uses Basic ATK on an enemy target that has Wind Weakness, Bronya immediately launches 1 instance of Follow-up ATK, dealing Wind DMG to this target equal to 80% of her Basic ATK DMG. This effect can only trigger once per turn."
+        },
+        {
+            "level": 5,
+            "name": "Unstoppable",
+            "description": "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+        },
+        {
+            "level": 6,
+            "name": "Piercing Rainbow",
+            "description": "The duration of the DMG Boost effect placed by the Skill on the target ally increases by 1 turn(s)."
+        }
+    ]
+}

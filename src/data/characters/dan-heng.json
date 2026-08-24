@@ -1,0 +1,215 @@
+{
+    "id": "dan-heng",
+    "name": "Dan Heng",
+    "rarity": "4",
+    "element": "wind",
+    "path": "hunt",
+    "version_released": "1.0",
+    "max_energy": "",
+    "level_80_stats": {
+        "hp": 882,
+        "atk": 546,
+        "def": 396,
+        "spd": 110
+    },
+    "abilities": {
+        "basic": {
+            "type": "Basic ATK",
+            "name": "Cloudlancer Art: North Wind",
+            "tag": "Single Target",
+            "energy_gain": "",
+            "break": "",
+            "min_level": 1,
+            "max_level": 7,
+            "default_level": 6,
+            "description_template": "Deals Wind DMG equal to {{scaling1}}% of Dan Heng's ATK to a single enemy.",
+            "scaling": {
+                "scaling1": [
+                    50,
+                    60,
+                    70,
+                    80,
+                    90,
+                    100,
+                    110,
+                    120,
+                    130
+                ]
+            }
+        },
+        "skill": {
+            "type": "Skill",
+            "name": "Cloudlancer Art: Torrent",
+            "tag": "Single Target",
+            "energy_gain": "",
+            "break": "20",
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Deals Wind DMG equal to {{scaling1}}% of Dan Heng's ATK to a single enemy. When DMG dealt by Skill triggers CRIT Hit, there is a 100% base chance to reduce the target's SPD by 12%, lasting for 2 turn(s).",
+            "scaling": {
+                "scaling1": [
+                    130,
+                    143,
+                    156,
+                    169,
+                    182,
+                    195,
+                    211.25,
+                    227.5,
+                    243.75,
+                    260,
+                    273,
+                    286,
+                    299,
+                    312,
+                    325
+                ]
+            }
+        },
+        "ultimate": {
+            "type": "Ultimate",
+            "name": "Ethereal Dream",
+            "tag": "Single Target",
+            "energy_gain": "",
+            "break": "30",
+            "energy_cost": "100",
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Deals Wind DMG equal to {{scaling1}}% of Dan Heng's ATK to a single target enemy. If the attacked enemy is Slowed, the multiplier for the DMG dealt by Ultimate increases by {{scaling2}}%.",
+            "scaling": {
+                "scaling1": [
+                    240,
+                    256,
+                    272,
+                    288,
+                    304,
+                    320,
+                    340,
+                    360,
+                    380,
+                    400,
+                    416,
+                    432,
+                    448,
+                    464,
+                    480
+                ],
+                "scaling2": [
+                    72,
+                    76.8,
+                    81.6,
+                    86.4,
+                    91.2,
+                    96,
+                    102,
+                    108,
+                    114,
+                    120,
+                    124.8,
+                    129.6,
+                    134.4,
+                    139.2,
+                    144
+                ]
+            }
+        },
+        "talent": {
+            "type": "Talent",
+            "name": "Superiority of Reach",
+            "tag": "Enhance",
+            "energy_gain": "",
+            "break": "",
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "When Dan Heng becomes the target of an ally's ability, his next attack's Wind RES PEN increases by {{scaling1}}%. This effect can be triggered again after 2 turn(s).",
+            "scaling": {
+                "scaling1": [
+                    18,
+                    19.8,
+                    21.6,
+                    23.4,
+                    25.2,
+                    27,
+                    29.25,
+                    31.5,
+                    33.75,
+                    36,
+                    37.8,
+                    39.6,
+                    41.4,
+                    43.2,
+                    45
+                ]
+            }
+        },
+        "technique": {
+            "type": "Technique",
+            "name": "Splitting Spearhead",
+            "tag": "Enhance",
+            "description": "After Dan Heng uses his Technique, his ATK increases by 40% at the start of the next battle for 3 turn(s)."
+        }
+    },
+    "major_traces": {
+        "2": {
+            "name": "Hidden Dragon",
+            "description": "When current HP percentage is 50% or lower, reduces the chance of being attacked by enemies."
+        },
+        "4": {
+            "name": "Faster Than Light",
+            "description": "After launching an attack, there is a 50% fixed chance to increase this unit's SPD by 20% for 2 turn(s)."
+        },
+        "6": {
+            "name": "High Gale",
+            "description": "Basic ATK deals 40% more DMG to Slowed enemies."
+        }
+    },
+    "stat_bonuses": [
+        {
+            "stat": "Wind DMG",
+            "value": "+22.4%"
+        },
+        {
+            "stat": "ATK",
+            "value": "+18%"
+        },
+        {
+            "stat": "DEF",
+            "value": "+12.5%"
+        }
+    ],
+    "eidolons": [
+        {
+            "level": 1,
+            "name": "The Higher You Fly, the Harder You Fall",
+            "description": "When the target enemy's current HP percentage is greater than or equal to 50%, CRIT Rate increases by 12%."
+        },
+        {
+            "level": 2,
+            "name": "Quell the Venom Octet, Quench the Vice O'Flame",
+            "description": "Reduces Talent cooldown by 1 turn."
+        },
+        {
+            "level": 3,
+            "name": "Seen and Unseen",
+            "description": "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+        },
+        {
+            "level": 4,
+            "name": "Roaring Dragon and Soaring Sun",
+            "description": "When Dan Heng uses his Ultimate to defeat an enemy, he will immediately take action again."
+        },
+        {
+            "level": 5,
+            "name": "A Drop of Rain Feeds a Torrent",
+            "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+        },
+        {
+            "level": 6,
+            "name": "The Troubled Soul Lies in Wait",
+            "description": "The Slow state triggered by Skill reduces the enemy's SPD by an extra 8%."
+        }
+    ]
+}

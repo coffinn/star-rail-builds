@@ -1,0 +1,215 @@
+{
+    "id": "cerydra",
+    "name": "Cerydra",
+    "rarity": "5",
+    "element": "wind",
+    "path": "harmony",
+    "version_released": "3.5",
+    "max_energy": "",
+    "level_80_stats": {
+        "hp": 1358,
+        "atk": 620,
+        "def": 485,
+        "spd": 99
+    },
+    "abilities": {
+        "basic": {
+            "type": "Basic ATK",
+            "name": "King's Castling",
+            "tag": "Single Target",
+            "energy_gain": "20",
+            "break": "10",
+            "min_level": 1,
+            "max_level": 7,
+            "default_level": 6,
+            "description_template": "Deals Wind DMG equal to {{scaling1}}% of Cerydra's ATK to one designated enemy.",
+            "scaling": {
+                "scaling1": [
+                    50,
+                    60,
+                    70,
+                    80,
+                    90,
+                    100,
+                    110
+                ]
+            }
+        },
+        "skill": {
+            "type": "Skill",
+            "name": "Pawn's Promotion",
+            "tag": "Support",
+            "energy_gain": "30",
+            "break": "",
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Grants \"Military Merit\" to one designated ally character and gives Cerydra 1 points of Charge. Charge is capped at 8 points. When Charge reaches 6 points, automatically upgrades the character's \"Military Merit\" to \"Peerage\" and dispels their Crowd Control debuffs . The character with \"Peerage\" is considered to have \"Military Merit\" simultaneously. The character with \"Peerage\" increases the CRIT DMG for their dealt Skill DMG by {{scaling1}}%, increases their All-Type RES PEN  by {{scaling2}}%, and triggers Coup de Main  when using their Skill on enemy targets. After Coup de Main  ends, consumes 6 points of Charge to revert \"Peerage\" to \"Military Merit.\"",
+            "scaling": {
+                "scaling1": [
+                    36,
+                    39.6,
+                    43.2,
+                    46.8,
+                    50.4,
+                    54,
+                    58.5,
+                    63,
+                    67.5,
+                    72,
+                    75.6,
+                    79.2
+                ],
+                "scaling2": [
+                    8,
+                    8.2,
+                    8.4,
+                    8.6,
+                    8.8,
+                    9,
+                    9.25,
+                    9.5,
+                    9.75,
+                    10,
+                    10.2,
+                    10.4
+                ]
+            }
+        },
+        "talent": {
+            "type": "Talent",
+            "name": "Ave Imperator",
+            "tag": "Support",
+            "energy_gain": "",
+            "break": "",
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "The character with \"Military Merit\" increases ATK by an amount equal to {{scaling1}}% of Cerydra's ATK. When the character uses Basic ATK or Skill, Cerydra gains 1 Charge. During Coup de Main , Cerydra cannot gain Charge. After the character with \"Military Merit\" uses an attack, Cerydra additionally deals 1 instance of Wind Additional DMG  equal to {{scaling2}}% of her ATK. This effect can trigger up to 20 time(s). The trigger count resets every time Cerydra uses her Ultimate. \"Military Merit\" only takes effect on the most recent target. When the target changes, Cerydra's Charge is reset to 0.",
+            "scaling": {
+                "scaling1": [
+                    18,
+                    18.6,
+                    19.2,
+                    19.8,
+                    20.4,
+                    21,
+                    21.75,
+                    22.5,
+                    23.25,
+                    24,
+                    24.6,
+                    25.2
+                ],
+                "scaling2": [
+                    30,
+                    33,
+                    36,
+                    39,
+                    42,
+                    45,
+                    48.75,
+                    52.5,
+                    56.25,
+                    60,
+                    63,
+                    66
+                ]
+            }
+        },
+        "technique": {
+            "type": "Technique",
+            "name": "First-Move Advantage",
+            "tag": "Support",
+            "description": "After using Technique, gains \"Military Merit.\" When switching the active character, \"Military Merit\" transfers to the current active character. At the start of the next battle, automatically uses Skill 1 time on the character with \"Military Merit\" without consuming any Skill Points."
+        },
+        "ultimate": {
+            "type": "Ultimate",
+            "name": "Scholar's Mate",
+            "tag": "AoE",
+            "energy_gain": "5",
+            "break": "20",
+            "energy_cost": "130",
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Gains 2 Charge. Deals Wind DMG equal to {{scaling1}}% of Cerydra's ATK to all enemies. If no character on the field has \"Military Merit,\" prioritizes granting \"Military Merit\" to the first character in the current team.",
+            "scaling": {
+                "scaling1": [
+                    144,
+                    153.6,
+                    163.2,
+                    172.8,
+                    182.4,
+                    192,
+                    204,
+                    216,
+                    228,
+                    240,
+                    249.6,
+                    259.2
+                ]
+            }
+        }
+    },
+    "major_traces": {
+        "2": {
+            "name": "Veni",
+            "description": "For every 100 of Cerydra's ATK that exceeds 2000, increases her CRIT DMG by 18%, up to a max increase of 360%."
+        },
+        "4": {
+            "name": "Vidi",
+            "description": "Increases Cerydra's CRIT Rate by 100%. While Cerydra's Charge is below its maximum, the character with \"Military Merit\" using their Ultimate grants Cerydra 1 Charge. This effect can trigger once per battle."
+        },
+        "6": {
+            "name": "Vici",
+            "description": "When using Skill, increases SPD by 20 for this unit and the teammate with \"Military Merit,\" lasting for 3 turn(s). When the character with \"Military Merit\" uses Basic ATK or Skill, regenerates 5 Energy for Cerydra."
+        }
+    },
+    "stat_bonuses": [
+        {
+            "stat": "ATK",
+            "value": "+18%"
+        },
+        {
+            "stat": "Wind DMG",
+            "value": "+22.4%"
+        },
+        {
+            "stat": "HP",
+            "value": "+10%"
+        }
+    ],
+    "eidolons": [
+        {
+            "level": 1,
+            "name": "Seize the Crowns of All",
+            "description": "The character with \"Military Merit\" ignores 16% of the targets' DEF when dealing DMG. If \"Military Merit\" has been upgraded to \"Peerage,\" then the character additionally ignores 20% of the targets' DEF when dealing Skill DMG. When Cerydra uses her Skill, regenerates 2 Energy for the designated ally target."
+        },
+        {
+            "level": 2,
+            "name": "Forge the Dreams of Many",
+            "description": "The character with \"Military Merit\" deals 40% increased DMG. While a teammate on the field has \"Military Merit,\" Cerydra's DMG dealt increases by 160%."
+        },
+        {
+            "level": 3,
+            "name": "Torch the Laws of Old",
+            "description": "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+        },
+        {
+            "level": 4,
+            "name": "Remake the Realms of Men",
+            "description": "Increases Ultimate's DMG multiplier by 240%."
+        },
+        {
+            "level": 5,
+            "name": "Help and Hurt Repaid in Full",
+            "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+        },
+        {
+            "level": 6,
+            "name": "A Journey Set Starward",
+            "description": "The character with \"Military Merit\" increases their All-Type RES PEN  by 20%, and the multiplier for the Additional DMG triggered via \"Military Merit\" increases by 300%. While a teammate on the field has \"Military Merit,\" Cerydra's All-Type RES PEN  increases by 20%."
+        }
+    ]
+}
