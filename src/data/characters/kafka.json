@@ -28,7 +28,7 @@
       "min_level": 1,
       "max_level": 7,
       "default_level": 6,
-      "description_template": "Deals Lightning DMG equal to {{scaling}}% of Kafka's ATK to a single enemy.",
+      "description_template": "Deals Lightning DMG equal to {{scaling1}}% of Kafka's ATK to a single enemy.",
       "scaling": {
         "scaling1": [
             50,
@@ -52,7 +52,7 @@
         "min_level": 1,
         "max_level": 12,
         "default_level": 10,
-        "description_template": "After Kafka's teammate uses an attack on an enemy target, Kafka immediately launches Follow-Up ATK  and deals Lightning DMG equal to {{scaling}}% of Kafka's ATK to the primary target, with a 100% base chance  to inflict Shock equivalent to that applied by her Ultimate to the attacked enemy target, lasting for 2 turns. This effect can be triggered up to 2 time(s), with 1 use(s) recovered at the end of Kafka's turn.",
+        "description_template": "After Kafka's teammate uses an attack on an enemy target, Kafka immediately launches Follow-Up ATK  and deals Lightning DMG equal to {{scaling1}}% of Kafka's ATK to the primary target, with a 100% base chance  to inflict Shock equivalent to that applied by her Ultimate to the attacked enemy target, lasting for 2 turns. This effect can be triggered up to 2 time(s), with 1 use(s) recovered at the end of Kafka's turn.",
         "scaling": {
           "scaling1": [
             42,
@@ -80,7 +80,7 @@
         "min_level": 1,
         "max_level": 12,
         "default_level": 10,
-        "description_template": "Deals Lightning DMG equal to {{scaling}}% of Kafka's ATK to one designated enemy and Lightning DMG equal to {{scaling}}% of Kafka's ATK to their adjacent units. If the designated enemy or their adjacent target(s) is currently receiving DoT, all DoTs currently placed on that enemy immediately produce DMG equal to {{scaling}}% or {{scaling}}% of their original DMG.",
+        "description_template": "Deals Lightning DMG equal to {{scaling1}}% of Kafka's ATK to one designated enemy and Lightning DMG equal to {{scaling2}}% of Kafka's ATK to their adjacent units. If the designated enemy or their adjacent target(s) is currently receiving DoT, all DoTs currently placed on that enemy immediately produce DMG equal to {{scaling3}}% or {{scaling4}}% of their original DMG.",
         "scaling": {
           "scaling1": [
             80,
@@ -150,7 +150,7 @@
         "min_level": 1,
         "max_level": 12,
         "default_level": 10,
-        "description_template": "Deals Lightning DMG equal to {{scaling}}% of Kafka's ATK to all enemies, with a 100% base chance  for attacked enemy targets to become Shocked and immediately take DMG from their current DoT debuff(s), equal to {{scaling}}% of its original DMG. Shock lasts for 2 turn(s). While Shocked, enemy targets receive Lightning DoT equal to {{scaling}}% of Kafka's ATK at the beginning of each turn.",
+        "description_template": "Deals Lightning DMG equal to {{scaling1}}% of Kafka's ATK to all enemies, with a 100% base chance  for attacked enemy targets to become Shocked and immediately take DMG from their current DoT debuff(s), equal to {{scaling2}}% of its original DMG. Shock lasts for 2 turn(s). While Shocked, enemy targets receive Lightning DoT equal to {{scaling3}}% of Kafka's ATK at the beginning of each turn.",
         "scaling": {
           "scaling1": [
             48,
