@@ -1,1 +1,260 @@
-
+{
+  "id": "kafka",
+  "name": "Kafka",
+  "rarity": 5,
+  "element": "lightning",
+  "path": "nihility",
+  "version_released": "1.2",
+  "max_energy": 120,
+  "level_80_stats": {
+    "hp": 1086,
+    "atk": 679,
+    "def": 485,
+    "spd": 100
+  },
+  "abilities": {
+    "technique": {
+      "type": "Technique",
+      "name": "Mercy Is Not Forgiveness",
+      "tag": "Attack",
+      "description": "Immediately attacks all enemies within a set range. After entering battle, deals Lightning DMG equal to 50% of Kafka's ATK to all enemies, with a 100% base chance to inflict Shock equivalent to that applied by her Ultimate on every enemy target for 2 turn(s)."
+    },
+    "basic": {
+      "type": "Basic ATK",
+      "name": "Midnight Tumult",
+      "tag": "Single Target",
+      "energy_gain": 20,
+      "break": 10,
+      "min_level": 1,
+      "max_level": 7,
+      "default_level": 6,
+      "description_template": "Deals Lightning DMG equal to {{scaling}}% of Kafka's ATK to a single enemy.",
+      "scaling": {
+        "scaling1": [
+            50,
+            60,
+            70,
+            80,
+            90,
+            100,
+            110,
+            120,
+            130
+        ]
+      }
+    },
+    "talent": {
+        "type": "Talent",
+        "name": "Gentle but Cruel",
+        "tag": "Single Target",
+        "energy_gain": 10,
+        "break": 10,
+        "min_level": 1,
+        "max_level": 12,
+        "default_level": 10,
+        "description_template": "After Kafka's teammate uses an attack on an enemy target, Kafka immediately launches Follow-Up ATK  and deals Lightning DMG equal to {{scaling}}% of Kafka's ATK to the primary target, with a 100% base chance  to inflict Shock equivalent to that applied by her Ultimate to the attacked enemy target, lasting for 2 turns. This effect can be triggered up to 2 time(s), with 1 use(s) recovered at the end of Kafka's turn.",
+        "scaling": {
+          "scaling1": [
+            42,
+            51.8,
+            61.6,
+            71.4,
+            81.2,
+            91,
+            103.25,
+            115.5,
+            127.75,
+            140,
+            149.8,
+            159.6
+        ]
+      }
+    },
+    "skill": {
+        "type": "Skill",
+        "name": "Caressing Moonlight",
+        "tag": "Blast",
+        "energy_gain": 30,
+        "break_main": 20,
+        "break_adjacent": 10,
+        "min_level": 1,
+        "max_level": 12,
+        "default_level": 10,
+        "description_template": "Deals Lightning DMG equal to {{scaling}}% of Kafka's ATK to one designated enemy and Lightning DMG equal to {{scaling}}% of Kafka's ATK to their adjacent units. If the designated enemy or their adjacent target(s) is currently receiving DoT, all DoTs currently placed on that enemy immediately produce DMG equal to {{scaling}}% or {{scaling}}% of their original DMG.",
+        "scaling": {
+          "scaling1": [
+            80,
+            88,
+            96,
+            104,
+            112,
+            120,
+            130,
+            140,
+            150,
+            160,
+            168,
+            176
+        ],
+          "scaling2": [
+            60,
+            61.5,
+            63,
+            64.5,
+            66,
+            67.5,
+            69.375,
+            71.25,
+            73.125,
+            75,
+            76.5,
+            78
+        ],
+          "scaling3": [
+            30,
+            33,
+            36,
+            39,
+            42,
+            45,
+            48.75,
+            52.5,
+            56.25,
+            60,
+            63,
+            66
+        ],
+          "scaling4": [
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46.25,
+            47.5,
+            48.75,
+            50,
+            51,
+            52
+        ]
+      }
+    },
+    "ultimate": {
+        "type": "Ultimate",
+        "name": "Twilight Trill",
+        "tag": "AoE",
+        "energy_gain": 5,
+        "break": 20,
+        "energy_cost": 120,
+        "min_level": 1,
+        "max_level": 12,
+        "default_level": 10,
+        "description_template": "Deals Lightning DMG equal to {{scaling}}% of Kafka's ATK to all enemies, with a 100% base chance  for attacked enemy targets to become Shocked and immediately take DMG from their current DoT debuff(s), equal to {{scaling}}% of its original DMG. Shock lasts for 2 turn(s). While Shocked, enemy targets receive Lightning DoT equal to {{scaling}}% of Kafka's ATK at the beginning of each turn.",
+        "scaling": {
+          "scaling1": [
+            48,
+            51.2,
+            54.4,
+            57.6,
+            60.8,
+            64,
+            68,
+            72,
+            76,
+            80,
+            83.2,
+            86.4
+        ],
+          "scaling2": [
+            116,
+            126.875,
+            137.75,
+            148.625,
+            159.5,
+            175.8125,
+            197.5625,
+            224.75,
+            257.375,
+            290,
+            304.1375,
+            318.275
+        ],
+          "scaling3": [
+            100,
+            102,
+            104,
+            106,
+            108,
+            110,
+            112.5,
+            115,
+            117.5,
+            120,
+            122,
+            124
+        ]
+      }
+    }
+  },
+  "major_traces": {
+    "2": {
+      "name": "Torture",
+      "description": "When an ally target's Effect Hit Rate is 75% or more, Kafka increases the target's ATK by 100%."
+    },
+    "4": {
+      "name": "Plunder",
+      "description": "If an enemy is defeated while Shocked, Kafka additionally regenerates 5 Energy."
+    },
+    "6": {
+      "name": "Thorns",
+      "description": "After using Ultimate, restores the triggerable count of Talent's Follow-Up ATK  by 1. And the Talent's  Follow-Up ATK  can cause all DoTs debuffs currently on the target to immediately produce DMG equal to 80% of the original DMG."
+    }
+  },
+  "stat_bonuses": [
+    {
+      "stat": "HP",
+      "value": "+10%"
+    },
+    {
+      "stat": "ATK",
+      "value": "+28%"
+    },
+    {
+      "stat": "Effect Hit Rate",
+      "value": "+18%"
+    }
+  ],
+  "eidolons": [
+    {
+      "level": 1,
+      "name": "Da Capo",
+      "description": "When using an attack, has a 100% base chance to increase the DoT taken by the target by 30% for 2 turn(s)."
+    },
+    {
+      "level": 2,
+      "name": "Fortississimo",
+      "description": "While Kafka is on the field, DoT dealt by all allies increases by 33%."
+    },
+    {
+      "level": 3,
+      "name": "Capriccio",
+      "description": "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+    },
+    {
+      "level": 4,
+      "name": "Recitativo",
+      "description": "When an enemy target takes DMG from the Shock status inflicted by Kafka, Kafka additionally regenerates 2 Energy."
+    },
+    {
+      "level": 5,
+      "name": "Doloroso",
+      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+    },
+    {
+      "level": 6,
+      "name": "Leggiero",
+      "description": "The Shock state inflicted on the enemy target by the Ultimate, Technique, or the Talent-triggered Follow-Up ATK has a DMG multiplier increase of 156% and lasts 1 turn(s) longer."
+    }
+  ]
+}
