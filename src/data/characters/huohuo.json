@@ -1,0 +1,259 @@
+{
+    "id": "huohuo",
+    "name": "Huohuo",
+    "rarity": "5",
+    "element": "wind",
+    "path": "abundance",
+    "version_released": "1.5",
+    "max_energy": 140,
+    "level_80_stats": {
+        "hp": 1358,
+        "atk": 601,
+        "def": 509,
+        "spd": 98
+    },
+    "abilities": {
+        "basic": {
+            "type": "Basic ATK",
+            "name": "Banner: Stormcaller",
+            "tag": "Single Target",
+            "energy_gain": 20,
+            "break": 10,
+            "min_level": 1,
+            "max_level": 7,
+            "default_level": 6,
+            "description_template": "Deals Wind DMG equal to {{scaling1}}% of Huohuo's Max HP to a target enemy.",
+            "scaling": {
+                "scaling1": [
+                    25,
+                    30,
+                    35,
+                    40,
+                    45,
+                    50,
+                    55
+                ]
+            }
+        },
+        "skill": {
+            "type": "Skill",
+            "name": "Talisman: Protection",
+            "tag": "Restore",
+            "energy_gain": 30,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Dispels 1 debuff(s) from one designated ally and immediately restores this ally's HP by an amount equal to {{scaling1}}% of Huohuo's Max HP plus {{scaling2}}%. At the same time, restores HP for allies that are adjacent to this target ally by an amount equal to {{scaling3}}% of Huohuo's Max HP plus {{scaling4}}. ",
+            "scaling": {
+                "scaling1": [
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    20.8,
+                    21.6,
+                    22.4,
+                    23.2,
+                    24,
+                    24.8,
+                    25.6
+                ],
+                "scaling2": [
+                    160,
+                    256,
+                    328,
+                    400,
+                    448,
+                    496,
+                    532,
+                    568,
+                    604,
+                    640,
+                    676,
+                    712
+                ],
+                "scaling3": [
+                    12.8,
+                    13.6,
+                    14.4,
+                    15.2,
+                    16,
+                    16.64,
+                    17.28,
+                    17.92,
+                    18.56,
+                    19.2,
+                    19.84,
+                    20.48
+                ],
+                "scaling4": [
+                    128,
+                    204.8,
+                    262.4,
+                    320,
+                    358.4,
+                    396.8,
+                    425.6,
+                    454.4,
+                    483.2,
+                    512,
+                    540.8,
+                    569.6
+                ]
+            }
+        },
+        "ultimate": {
+            "type": "Ultimate",
+            "name": "Tail: Spiritual Domination",
+            "tag": "Support",
+            "energy_gain": 5,
+            "energy_cost": 140,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Regenerates Energy for all teammates (i.e., excluding this unit) by an amount equal to {{scaling1}}% of their respective Max Energy. At the same time, increases their ATK by {{scaling2}}% for 2 turn(s).",
+            "scaling": {
+                "scaling1": [
+                    15,
+                    15.5,
+                    16,
+                    16.5,
+                    17,
+                    17.5,
+                    18.125,
+                    18.75,
+                    19.375,
+                    20,
+                    20.5,
+                    21,
+                    21.5,
+                    22,
+                    22.5
+                ],
+                "scaling2": [
+                    24,
+                    25.6,
+                    27.2,
+                    28.8,
+                    30.4,
+                    32,
+                    34,
+                    36,
+                    38,
+                    40,
+                    41.6,
+                    43.2,
+                    44.8,
+                    46.4,
+                    48
+                ]
+            }
+        },
+        "talent": {
+            "type": "Talent",
+            "name": "Possession: Ethereal Metaflow",
+            "tag": "Restore",
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "After using her Skill or Ultimate, Huohuo gains \"Divine Provision,\" lasting for 3 turn(s). This duration decreases by 1 turn at the start of Huohuo's every turn. When Huohuo has \"Divine Provision\" at the start of an ally target's turn or when they use their Ultimate, restores HP for that ally target and the ally target with the lowest HP percentage by an amount equal to {{scaling1}}% of Huohuo's Max HP plus {{scaling2}}. Then, restores HP for every ally with a current HP percentage at or below 50% by an amount equal to {{scaling1}}% of Huohuo's Max HP plus {{scaling2}}. \nWhen \"Divine Provision\" is triggered to heal an ally target, dispels 1 debuff(s) from that target. This effect can be triggered 6 time(s). Gaining \"Divine Provision\" again resets the effect's trigger count.",
+            "scaling": {
+                "scaling1": [
+                    3,
+                    3.1875,
+                    3.375,
+                    3.5625,
+                    3.75,
+                    3.9,
+                    4.05,
+                    4.2,
+                    4.35,
+                    4.5,
+                    4.65,
+                    4.8
+                ],
+                "scaling2": [
+                    30,
+                    48,
+                    61.5,
+                    75,
+                    84,
+                    93,
+                    99.75,
+                    106.5,
+                    113.25,
+                    120,
+                    126.75,
+                    133.5
+                ]
+            }
+        },
+        "technique": {
+            "type": "Technique",
+            "name": "Fiend: Impeachment of Evil",
+            "tag": "Impair",
+            "description": "Huohuo terrorizes surrounding enemies, afflicting Horror-Struck on them. Enemies in Horror-Struck will flee away from Huohuo for 10 second(s). When entering battle with enemies in Horror-Struck, there is a 100% base chance of reducing every single enemy's ATK by 25% for 2 turn(s)."
+        }
+    },
+    "major_traces": {
+        "2": {
+            "name": "Fearful to Act",
+            "description": "When battle starts, Huohuo gains 30 Energy and \"Divine Provision,\" lasting for 2 turn(s)."
+        },
+        "4": {
+            "name": "The Cursed One",
+            "description": "Increases the chance to resist Crowd Control debuffs by 35%. When using Ultimate, if an ally target's Max Energy is 160 or higher, additionally increases their ATK by 24%."
+        },
+        "6": {
+            "name": "Stress Reaction to Horror",
+            "description": "When her Talent is triggered to heal allies, Huohuo regenerates 1 Energy."
+        }
+    },
+    "stat_bonuses": [
+        {
+            "stat": "HP",
+            "value": "+28%"
+        },
+        {
+            "stat": "Effect RES",
+            "value": "+18%"
+        },
+        {
+            "stat": "SPD",
+            "value": "+5"
+        }
+    ],
+    "eidolons": [
+        {
+            "level": 1,
+            "name": "Anchored to Vessel, Specters Nestled",
+            "description": "The duration of \"Divine Provision\" produced by the Talent is extended by 1 turn(s). When Huohuo possesses \"Divine Provision,\" her Outgoing Healing increases by 20%, all allies' SPD increases by 12%."
+        },
+        {
+            "level": 2,
+            "name": "Sealed in Tail, Wraith Subdued",
+            "description": "If Huohuo possesses \"Divine Provision\" when an ally target is struck by a killing blow, the ally will not be knocked down and their HP will immediately be restored by an amount equal to 50% of their Max HP. This reduces the duration of \"Divine Provision\" by 1 turn. This effect can only be triggered 2 time(s) per battle."
+        },
+        {
+            "level": 3,
+            "name": "Cursed by Fate, Moths to Flame",
+            "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+        },
+        {
+            "level": 4,
+            "name": "Tied in Life, Bound to Strife",
+            "description": "When healing a target ally via Skill or Talent, the less HP the target ally currently has, the higher the amount of healing they will receive. The maximum increase in healing provided by Huohuo is 80%."
+        },
+        {
+            "level": 5,
+            "name": "Mandated by Edict, Evils Evicted",
+            "description": "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+        },
+        {
+            "level": 6,
+            "name": "Woven Together, Cohere Forever",
+            "description": "When healing a target ally, increases the target ally's DMG dealt by 50% for 2 turn(s)."
+        }
+    ]
+}

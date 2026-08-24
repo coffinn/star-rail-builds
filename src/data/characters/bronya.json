@@ -5,7 +5,7 @@
     "element": "wind",
     "path": "harmony",
     "version_released": "1.0",
-    "max_energy": "",
+    "max_energy": 120,
     "level_80_stats": {
         "hp": 1241,
         "atk": 582,
@@ -17,8 +17,8 @@
             "type": "Basic ATK",
             "name": "Windrider Bullet",
             "tag": "Single Target",
-            "energy_gain": "",
-            "break": "",
+            "energy_gain": 20,
+            "break": 10,
             "min_level": 1,
             "max_level": 7,
             "default_level": 6,
@@ -31,8 +31,7 @@
             "type": "Skill",
             "name": "Combat Redeployment",
             "tag": "Support",
-            "energy_gain": "",
-            "break": "",
+            "energy_gain": 30,
             "min_level": 1,
             "max_level": 12,
             "default_level": 10,
@@ -45,9 +44,8 @@
             "type": "Ultimate",
             "name": "The Belobog March",
             "tag": "Support",
-            "energy_gain": "",
-            "break": "",
-            "energy_cost": "120",
+            "energy_gain": 5,
+            "energy_cost": 120,
             "min_level": 1,
             "max_level": 12,
             "default_level": 10,
@@ -58,18 +56,11 @@
                 "scaling3": [12,12.8,13.6,14.4,15.2,16,17,18,19,20,20.8,21.6,22.4,23.2,24]
             }
         },
-        "technique": {
-            "type": "Technique",
-            "name": "Banner of Command",
-            "tag": "Support",
-            "description": "After using Bronya's Technique, at the start of the next battle, all allies' ATK increases by 15% for 2 turn(s)."
-        },
+        
         "talent": {
             "type": "Talent",
             "name": "Leading the Way",
             "tag": "Enhance",
-            "energy_gain": "",
-            "break": "",
             "min_level": 1,
             "max_level": 12,
             "default_level": 10,
@@ -77,6 +68,12 @@
             "scaling": {
                 "scaling1": [15,16.5,18,19.5,21,22.5,24.375,26.25,28.125,30,31.5,33,34.5,36,37.5]
             }
+        },
+        "technique": {
+            "type": "Technique",
+            "name": "Banner of Command",
+            "tag": "Support",
+            "description": "After using Bronya's Technique, at the start of the next battle, all allies' ATK increases by 15% for 2 turn(s)."
         }
     },
     "major_traces": {

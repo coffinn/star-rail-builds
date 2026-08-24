@@ -5,7 +5,7 @@
     "element": "wind",
     "path": "nihility",
     "version_released": "2.0",
-    "max_energy": "",
+    "max_energy": 120,
     "level_80_stats": {
         "hp": 1086,
         "atk": 659,
@@ -13,13 +13,13 @@
         "spd": 102
     },
     "abilities": {
-        "basic": [
+        "basic": 
             {
                 "type": "Basic ATK",
                 "name": "Percipience, Silent Dawn",
                 "tag": "Single Target",
-                "energy_gain": "20",
-                "break": "10",
+                "energy_gain": 20,
+                "break": 10,
                 "min_level": 1,
                 "max_level": 7,
                 "default_level": 6,
@@ -27,15 +27,16 @@
                 "scaling": {
                     "scaling1": [50,60,70,80,90,100,110]
                 }
-            }
-        ],
-        "skill": [
+            },
+  
+        "skill": 
             {
                 "type": "Skill",
                 "name": "Decadence, False Twilight",
                 "tag": "Blast",
-                "energy_gain": "30",
-                "break": "20 (Main)",
+                "energy_gain": 30,
+                "break_main": 20,
+                "break_adjacent": 10,
                 "min_level": 1,
                 "max_level": 12,
                 "default_level": 10,
@@ -44,15 +45,30 @@
                     "scaling1": [45,49.5,54,58.5,63,67.5,73.125,78.75,84.375,90,94.5,99,103.5,108,112.5],
                     "scaling2": [14.8,15.4,16,16.6,17.2,17.8,18.55,19.3,20.05,20.8,21.4,22,22.6,23.2,23.8]
                 }
-            }
-        ],
-        "talent": [
+            },
+            "ultimate": 
+            {
+                "type": "Ultimate",
+                "name": "Bliss of Otherworld's Embrace/Enhanced",
+                "tag": "AoE",
+                "energy_gain": 5,
+                "break": 20,
+                "energy_cost": 120,
+                "min_level": 1,
+                "max_level": 12,
+                "default_level": 10,
+                "description_template": "Inflicts \"Epiphany\" state on all enemies for 2 turn(s). Then deals Wind DMG to all enemies equal to {{scaling1}}% of Black Swan's ATK. While in the \"Epiphany\" state, enemy targets take {{scaling2}}% increased DMG. For every 1 stack of \"Arcana inflicted,\" there is a 50% fixed chance to additionally increase the number of \"Arcana\" stacked this time by 1. And \"Arcana\" stacks won't be halved after dealing DMG at the start of the turn.",
+                "scaling": {
+                    "scaling1": [72,76.8,81.6,86.4,91.2,96,102,108,114,120,124.8,129.6,134.4,139.2,144],
+                    "scaling2": [15,16,17,18,19,20,21.25,22.5,23.75,25,26,27,28,29,30]
+                }
+            },
+
+        "talent": 
             {
                 "type": "Talent",
                 "name": "Loom of Fate's Caprice",
                 "tag": "Impair",
-                "energy_gain": "",
-                "break": "",
                 "min_level": 1,
                 "max_level": 12,
                 "default_level": 10,
@@ -63,32 +79,15 @@
                     "scaling3": [4.8,5.592,6.384,7.176,7.968,8.76,9.48,10.2,11.1,12,12.6,13.2],
                     "scaling4": [72,83.88,95.76,107.64,119.52,131.4,142.2,153,166.5,180,189,198]
                 }
-            }
-        ],
+            },
+
         "technique": {
             "type": "Technique",
             "name": "From From Façade to Vérité",
             "tag": "Enhance",
             "description": "After this Technique is used, there is a 150% base chance for each enemy to be inflicted with 1 stack of Arcana at the start of the next battle. For each successful application of Arcana on a target, inflicts another stack of Arcana on the same target. This process repeats until Arcana fails to be inflicted on this target. For each successive application of Arcana on a target, its base chance of success is equal to 50% of the base chance of the previous successful infliction of Arcana on that target."
-        },
-        "ultimate": [
-            {
-                "type": "Ultimate",
-                "name": "Bliss of Otherworld's Embrace/Enhanced",
-                "tag": "AoE",
-                "energy_gain": "5",
-                "break": "20",
-                "energy_cost": "120",
-                "min_level": 1,
-                "max_level": 12,
-                "default_level": 10,
-                "description_template": "Inflicts \"Epiphany\" state on all enemies for 2 turn(s). Then deals Wind DMG to all enemies equal to {{scaling1}}% of Black Swan's ATK. While in the \"Epiphany\" state, enemy targets take {{scaling2}}% increased DMG. For every 1 stack of \"Arcana inflicted,\" there is a 50% fixed chance to additionally increase the number of \"Arcana\" stacked this time by 1. And \"Arcana\" stacks won't be halved after dealing DMG at the start of the turn.",
-                "scaling": {
-                    "scaling1": [72,76.8,81.6,86.4,91.2,96,102,108,114,120,124.8,129.6,134.4,139.2,144],
-                    "scaling2": [15,16,17,18,19,20,21.25,22.5,23.75,25,26,27,28,29,30]
-                }
-            }
-        ]
+        }
+        
     },
     "major_traces": {
         "2": {
