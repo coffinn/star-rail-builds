@@ -79,10 +79,30 @@
             "min_level": 1,
             "max_level": 7,
             "default_level": 6,
-            "description_template": "Deals Lightning DMG equal to {{scaling}}% of ATK to one enemy and Lightning DMG equal to {{scaling}}% of ATK to adjacent targets.",
+            "description_template": "Deals Lightning DMG equal to {{scaling1}}% of ATK to one enemy and Lightning DMG equal to {{scaling2}}% of ATK to adjacent targets.",
             "scaling": {
-                "scaling1": "55,66,77,88,99,110,121,132,143",
-                "scaling2": "33,39.6,46.2,52.8,59.4,66,72.6,79.2,85.8"
+                "scaling1": [
+                    55,
+                    66,
+                    77,
+                    88,
+                    99,
+                    110,
+                    121,
+                    132,
+                    143
+                ],
+                "scaling2": [
+                    33,
+                    39.6,
+                    46.2,
+                    52.8,
+                    59.4,
+                    66,
+                    72.6,
+                    79.2,
+                    85.8
+                ]
             }
         },
         "memosprite_talent": [
@@ -90,22 +110,26 @@
                 "type": "Memosprite Talent",
                 "name": "A Body Brewed by Tears",
                 "tag": "Enhance",
-                "energy_gain": "",
-                "break": "",
                 "min_level": 1,
                 "max_level": 7,
                 "default_level": 6,
-                "description_template": "After attacking an enemy afflicted with \"Seam Stitch,\" increases this unit's SPD by {{scaling}}, stacking up to 6 time(s). When Garmentmaker takes action, automatically uses \"Thorned Snare,\" prioritizing enemies under the \"Seam Stitch\" state.",
+                "description_template": "After attacking an enemy afflicted with \"Seam Stitch,\" increases this unit's SPD by {{scaling1}}, stacking up to 6 time(s). When Garmentmaker takes action, automatically uses \"Thorned Snare,\" prioritizing enemies under the \"Seam Stitch\" state.",
                 "scaling": {
-                    "scaling1": "44,46.2,48.4,50.6,52.8,55,57.2"
+                    "scaling1": [
+                        44,
+                        46.2,
+                        48.4,
+                        50.6,
+                        52.8,
+                        55,
+                        57.2
+                    ]
                 }
             },
             {
                 "type": "Memosprite Talent",
                 "name": "The Speeding Summer",
                 "tag": "Enhance",
-                "energy_gain": "",
-                "break": "",
                 "min_level": 1,
                 "max_level": 7,
                 "default_level": 6,
@@ -115,8 +139,6 @@
                 "type": "Memosprite Talent",
                 "name": "Bloom of Drying Grass",
                 "tag": "Enhance",
-                "energy_gain": "",
-                "break": "",
                 "min_level": 1,
                 "max_level": 7,
                 "default_level": 6,
@@ -127,51 +149,114 @@
             "type": "Skill",
             "name": "Rise, Exalted Renown",
             "tag": "Summon",
-            "energy_gain": "20",
-            "break": "",
+            "energy_gain": 20,
             "min_level": 1,
             "max_level": 12,
             "default_level": 10,
-            "description_template": "Restores HP to Garmentmaker by {{scaling}}% of its Max HP. If Garmentmaker is absent, then summons the memosprite Garmentmaker and makes this unit immediately take action.",
+            "description_template": "Restores HP to Garmentmaker by {{scaling1}}% of its Max HP. If Garmentmaker is absent, then summons the memosprite Garmentmaker and makes this unit immediately take action.",
             "scaling": {
-                "scaling1": "25,27.5,30,32.5,35,37.5,40.63,43.75,46.88,50,52.5,55,57.5,60,62.5"
+                "scaling1": [
+                    25,
+                    27.5,
+                    30,
+                    32.5,
+                    35,
+                    37.5,
+                    40.63,
+                    43.75,
+                    46.88,
+                    50,
+                    52.5,
+                    55,
+                    57.5,
+                    60,
+                    62.5]
             }
         },
         "talent": {
             "type": "Talent",
             "name": "Rosy-Fingered",
             "tag": "Enhance",
-            "energy_gain": "",
-            "break": "",
             "min_level": 1,
             "max_level": 12,
             "default_level": 10,
             "description_template": "The memosprite Garmentmaker has an initial SPD equal to 35% of Aglaea's SPD and a Max HP equal to {{scaling}}% of Aglaea's Max HP plus {{scaling}}% of Aglaea's ATK. \"Seam Stitch\" only takes effect on the most recently inflicted target.",
             "scaling": {
-                "scaling1": "12,13.8,15.6,17.4,19.2,21,23.25,25.5,27.75,30,31.8,33.6",
-                "scaling2": "44,46.75,49.5,52.25,55,57.2,59.4,61.6,63.8,66,68.2,70.4",
-                "scaling3": "180,247.5,315,382.5,450,504,558,612,666,720,774,828"
+                "scaling1": [
+                    12,
+                    13.8,
+                    15.6,
+                    17.4,
+                    19.2,
+                    21,
+                    23.25,
+                    25.5,
+                    27.75,
+                    30,
+                    31.8,
+                    33.6
+                ],
+                "scaling2": [
+                    44,
+                    46.75,
+                    49.5,
+                    52.25,
+                    55,
+                    57.2,
+                    59.4,
+                    61.6,
+                    63.8,
+                    66,
+                    68.2,
+                    70.4
+                ],
+                "scaling3": [
+                    180,
+                    247.5,
+                    315,
+                    382.5,
+                    450,
+                    504,
+                    558,
+                    612,
+                    666,
+                    720,
+                    774,
+                    828
+                ]
             }
         },
         "technique": {
             "type": "Technique",
             "name": "Meteoric Sunder",
-            "tag": "",
+            "tag": "Attack",
             "description": "Summons the memosprite Garmentmaker and launches a forward joint attack. After entering battle, regenerates 30 Energy and deals Lightning DMG equal to 100% of Aglaea's ATK to all enemy targets. Then, randomly inflicts the \"Seam Stitch\" state on a random enemy target."
         },
         "ultimate": {
             "type": "Ultimate",
             "name": "Dance, Destined Weaveress",
             "tag": "Enhance",
-            "energy_gain": "5",
-            "break": "",
-            "energy_cost": "350",
+            "energy_gain": 5,
+            "energy_cost": 350,
             "min_level": 1,
             "max_level": 12,
             "default_level": 10,
             "description_template": "Summons the memosprite Garmentmaker. If Garmentmaker is already on the field, then restores its HP to max. Aglaea enters the \"Supreme Stance\" state and immediately takes action. While in \"Supreme Stance,\" Aglaea gains the SPD Boost stacks from Garmentmaker's Memosprite Talent, with each stack increasing this unit's SPD by {{scaling}}%. Enhances Basic ATK to \"Slash by a Thousandfold Kiss,\" and cannot use Skill. Garmentmaker is immune to Crowd Control debuffs|Crowd Control debuff. A countdown appears on the Action Order, with its own SPD set at 100. While the countdown exists, using Ultimate again will reset the countdown. When the countdown's turn starts, Garmentmaker self-destructs. When Garmentmaker disappears, Aglaea dispels the \"Supreme Stance\" state.",
             "scaling": {
-                "scaling1": "10,10.5,11,11.5,12,12.5,13.125,13.75,14.375,15,15.5,16"
+                "scaling1": [
+                    10,
+                    10.5,
+                    11,
+                    11.5,
+                    12,
+                    12.5,
+                    13.125,
+                    13.75,
+                    14.375,
+                    15,
+                    15.5,
+                    16
+                ]
             }
         }
     },
@@ -191,16 +276,16 @@
     },
     "stat_bonuses": [
         {
-            "stat": "",
-            "value": ""
+            "stat": "DEF",
+            "value": "+12.5%"
         },
         {
-            "stat": "",
-            "value": ""
+            "stat": "CRIT Rate",
+            "value": "+12%"
         },
         {
-            "stat": "",
-            "value": ""
+            "stat": "Lightning DMG Boost",
+            "value": "+22.4%"
         }
     ],
     "eidolons": [
