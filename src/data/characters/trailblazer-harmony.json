@@ -1,0 +1,149 @@
+{
+  "id": "trailblazer-harmony",
+  "name": "Trailblazer: Harmony",
+  "rarity": "5",
+  "element": "imaginary",
+  "path": "harmony",
+  "version_released": "2.2",
+  "max_energy": 140,
+  "level_80_stats": {
+    "hp": 1086,
+    "atk": 446,
+    "def": 679,
+    "spd": 105
+  },
+
+  "abilities": {
+    "basic": {
+      "type": "Basic ATK",
+      "name": "Swing Dance Etiquette",
+      "tag": "Single Target",
+      "energy_gain": 20,
+      "break": 10,
+      "min_level": 1,
+      "max_level": 7,
+      "default_level": 6,
+      "description_template": "Deals Imaginary DMG equal to {{scaling1}}% of Trailblazer's ATK to a single target enemy. ",
+      "scaling": {
+        "scaling1": [
+          50,
+          60,
+          70,
+          80,
+          90,
+          100,
+          110
+        ]
+      }
+    },
+    "skill": {
+      "type": "Skill",
+      "name": "Halftime to Make It Rain",
+      "tag": "Bounce",
+      "energy_gain": 30,
+      "break": 10,
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "Deals Imaginary DMG equal to {{damage}}% of the Trailblazer's ATK to a single target enemy and additionally deals DMG for 4 times, with each time dealing Imaginary DMG equal to {{damage}}% of the Trailblazer's ATK to a random enemy.",
+      "scaling": {
+        "damage": [25, 27.5, 30, 32.5, 35, 37.5, 40.625, 43.75, 46.875, 50, 52.5, 55]
+      }
+    },
+    "talent": {
+      "type": "Talent",
+      "name": "Full-on Aerial Dance",
+      "tag": "Support",
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "The Trailblazer immediately regenerates {{energy}} Energy when an enemy target's Weakness is Broken.",
+      "scaling": {
+        "scaling1": [5, 5.5, 6, 6.5, 7, 7.5, 8.125, 8.75, 9.375, 10, 10.5, 11]
+      }
+    },
+    "technique": {
+      "type": "Now! I'm the Band!",
+      "name": "Memories Back as Echoes",
+      "tag": "Support",
+      "description": "After the Technique is used, at the start of the next battle, all allies' Break Effect increases by 30%, lasting for 2 turn(s)."
+    },
+    "ultimate": {
+      "type": "Ultimate",
+      "name": "All-Out Footlight Parade",
+      "tag": "Support",
+      "energy_gain": 5,
+      "energy_cost": 140,
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "Grants all allies the Backup Dancer effect, lasting for 3 turn(s). This duration decreases by 1 at the start of Trailblazer's every turn. Allies with the Backup Dancer effect have their Break Effect increased by {{break_effect}}%. And when they attack enemy targets that are in the Weakness Broken state, the Toughness Reduction of the attack will be converted into 1 instance of Super Break DMG.",
+      "scaling": {
+        "break_effect": [15, 16.5, 18, 19.5, 21, 22.5, 24.375, 26.25, 28.125, 30, 31.5, 33]
+      }
+    }
+  },
+
+  "major_traces": {
+    "2": {
+      "name": "Dance With the One",
+      "description": "When the number of enemy targets on the field is 5 (or more)/4/3/2/1, the Super Break DMG triggered by the Backup Dancer effect increases by 20%/30%/40%/50%/60%."
+    },
+    "4": {
+      "name": "Shuffle Along",
+      "description": "When using Skill, additionally increases the Toughness Reduction of the first instance of DMG by 100%."
+    },
+    "6": {
+      "name": "Hat of the Theater",
+      "description": "After ally targets break weakness, additionally delays the action of the enemy target by 30%."
+    }
+  },
+
+  "stat_bonuses": [
+    {
+      "stat": "Break Effect",
+      "value": "+37.3%"
+    },
+    {
+      "stat": "Effect Res",
+      "value": "+10%"
+    },
+    {
+      "stat": "Imagionary DMG",
+      "value": "+14.4%"
+    }
+  ],
+
+  "eidolons": [
+    {
+      "level": 1,
+      "name": "Best Seat in the House",
+      "description": "After using Skill for the first time, immediately recovers 1 Skill Point(s)."
+    },
+    {
+      "level": 2,
+      "name": "Jailbreaking Rainbowwalk",
+      "description": "When the battle starts, the Trailblazer's Energy Regeneration Rate increases by 25%, lasting for 3 turn(s)."
+    },
+    {
+      "level": 3,
+      "name": "Sanatorium for Rest Notes",
+      "description": "Skill Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+    },
+    {
+      "level": 4,
+      "name": "Dove in Tophat",
+      "description": "While the Trailblazer is on the field, increases the Break Effect of all teammates (excluding the Trailblazer), by an amount equal to 15% of the Trailblazer's Break Effect."
+    },
+    {
+      "level": 5,
+      "name": "Poem Favors Rhythms of Old",
+      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+    },
+    {
+      "level": 6,
+      "name": "Tomorrow, Rest in Spotlight",
+      "description": "The number of additional DMG applications by the Skill increases by 2."
+    }
+  ]
+}
