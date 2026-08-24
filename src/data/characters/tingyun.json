@@ -1,0 +1,228 @@
+{
+  "id": "tingyun",
+  "name": "Tingyun",
+  "rarity": "4",
+  "element": "lightning",
+  "path": "harmony",
+  "version_released": "1.0",
+  "max_energy": 130,
+  "level_80_stats": {
+    "hp": 846,
+    "atk": 529,
+    "def": 396,
+    "spd": 112
+  },
+  "abilities": {
+    "basic": {
+      "type": "Basic ATK",
+      "name": "Dislodged",
+      "tag": "Single Target",
+      "energy_gain": 20,
+      "break": 10,
+      "min_level": 1,
+      "max_level": 7,
+      "default_level": 6,
+      "description_template": "Tingyun deals Lightning DMG equal to {{scaling1}}% of her ATK to a single enemy.",
+      "scaling": {
+        "scaling1": [
+          50,
+          60,
+          70,
+          80,
+          90,
+          100,
+          110,
+          120,
+          130
+        ]
+      }
+    },
+    "skill": {
+      "type": "Skill",
+      "name": "Soothing Melody",
+      "tag": "Support",
+      "energy_gain": 30,
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "Grants a single ally with Benediction to increase their ATK by {{scaling1}}%, up to {{scaling2}}% of Tingyun's current ATK. When the ally with Benediction attacks, they will deal Lightning Additional DMG equal to {{scaling3}}% of that ally's ATK for 1 time. Benediction lasts for 3 turn(s) and is only effective on the most recent receiver of Tingyun's Skill.",
+      "scaling": {
+        "scaling1": [
+          25,
+          27.5,
+          30,
+          32.5,
+          35,
+          37.5,
+          40.63,
+          43.75,
+          46.88,
+          50,
+          52.5,
+          55,
+          57.5,
+          60,
+          62.5
+        ],
+        "scaling2": [
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21.25,
+          22.5,
+          23.75,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "scaling3": [
+          20,
+          22,
+          24,
+          26,
+          28,
+          30,
+          32.5,
+          35,
+          37.5,
+          40,
+          42,
+          44,
+          46,
+          48,
+          50
+        ]
+      }
+    },
+    "ultimate": {
+      "type": "Ultimate",
+      "name": "Amidst the Rejoicing Clouds",
+      "tag": "Support",
+      "energy_gain": 5,
+      "energy_cost": 130,
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "Regenerates 50 Energy for a single ally and increases the target's DMG by {{scaling1}}% for 2 turn(s).",
+      "scaling": {
+        "scaling1": [
+          20,
+          23,
+          26,
+          29,
+          32,
+          35,
+          38.75,
+          42.5,
+          46.25,
+          50,
+          53,
+          56,
+          59,
+          62,
+          65
+        ]
+      }
+    },
+    "talent": {
+      "type": "Talent",
+      "name": "Violet Sparknado",
+      "tag": "Enhance",
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "When an enemy is attacked by Tingyun, the ally with Benediction immediately deals Lightning Additional DMG equal to {{scaling1}}% of that ally's ATK to the same enemy.",
+      "scaling": {
+        "scaling1": [
+          30,
+          33,
+          36,
+          39,
+          42,
+          45,
+          48.75,
+          52.5,
+          56.25,
+          60,
+          63,
+          66,
+          69,
+          72,
+          75
+        ]
+      }
+    },
+    "technique": {
+      "type": "Technique",
+      "name": "Gentle Breeze",
+      "tag": "Support",
+      "description": "Tingyun immediately regenerates 50 Energy upon using her Technique."
+    }
+  },
+  "major_traces": {
+    "2": {
+      "name": "Nourished Joviality",
+      "description": "Tingyun's SPD increases by 20% for 1 turn after using [[Soothing Melody|Skill]]."
+    },
+    "4": {
+      "name": "Knell Subdual",
+      "description": "DMG dealt by Basic ATK increases by 40%."
+    },
+    "6": {
+      "name": "Jubilant Passage",
+      "description": "Tingyun immediately regenerates 5 Energy at the start of her turn."
+    }
+  },
+  "stat_bonuses": [
+    {
+      "stat": "ATK",
+      "value": "+28%"
+    },
+    {
+      "stat": "DEF",
+      "value": "+22.5%"
+    },
+    {
+      "stat": "Lightning DMG",
+      "value": "+8%"
+    }
+  ],
+  "eidolons": [
+    {
+      "level": 1,
+      "name": "Windfall of Lucky Springs",
+      "description": "After using their Ultimate, the ally with Benediction gains a 20% increase in SPD for 1 turn."
+    },
+    {
+      "level": 2,
+      "name": "Gainfully Gives, Givingly Gains",
+      "description": "The ally with Benediction regenerates 5 Energy after defeating an enemy. This effect can only be triggered once per turn."
+    },
+    {
+      "level": 3,
+      "name": "Halcyon Bequest",
+      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+    },
+    {
+      "level": 4,
+      "name": "Jovial Versatility",
+      "description": "The DMG multiplier provided by Benediction increases by 20%."
+    },
+    {
+      "level": 5,
+      "name": "Sauntering Coquette",
+      "description": "Skill Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+    },
+    {
+      "level": 6,
+      "name": "Peace Brings Wealth to All",
+      "description": "Ultimate regenerates 10 more Energy for the target ally."
+    }
+  ]
+}

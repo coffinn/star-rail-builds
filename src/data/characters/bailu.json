@@ -1,0 +1,279 @@
+{
+  "id": "bailu",
+  "name": "Bailu",
+  "rarity": "5",
+  "element": "lightning",
+  "path": "abundance",
+  "version_released": "1.0",
+  "max_energy": 100,
+  "level_80_stats": {
+    "hp": 1319,
+    "atk": 562,
+    "def": 485,
+    "spd": 98
+  },
+  "abilities": {
+    "basic": {
+      "type": "Basic ATK",
+      "name": "Diagnostic Kick",
+      "tag": "Single Target",
+      "energy_gain": 20,
+      "break": 10,
+      "min_level": 1,
+      "max_level": 7,
+      "default_level": 6,
+      "description_template": "Deals Lightning DMG equal to {{scaling1}}% of Bailu's ATK to a single enemy.",
+      "scaling": {
+        "scaling1": [
+          50,
+          60,
+          70,
+          80,
+          90,
+          100,
+          110,
+          120,
+          130
+        ]
+      }
+    },
+    "skill": {
+      "type": "Skill",
+      "name": "Singing Among Clouds",
+      "tag": "Restore",
+      "energy_gain": 30,
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "Heals a single ally for {{scaling1}}% of Bailu's Max HP plus {{scaling2}}. Bailu then heals random allies 2 time(s). After each healing, HP restored from the next healing is reduced by 15%.",
+      "scaling": {
+        "scaling1": [
+          7.8,
+          8.3,
+          8.8,
+          9.3,
+          9.8,
+          10.1,
+          10.5,
+          10.9,
+          11.3,
+          11.7,
+          12.1,
+          12.5,
+          12.9,
+          13.3,
+          13.7
+        ],
+        "scaling2": [
+          78,
+          124.8,
+          159.9,
+          195,
+          218.4,
+          241.8,
+          259.35,
+          276.9,
+          294.45,
+          312,
+          329.55,
+          347.1,
+          364.65,
+          382.2,
+          399.75
+        ]
+      }
+    },
+    "ultimate": {
+      "type": "Ultimate",
+      "name": "Felicitous Thunderleap",
+      "tag": "Restore",
+      "energy_gain": 5,
+      "energy_cost": 100,
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "Heals all allies for {{scaling1}}% of Bailu's Max HP plus {{scaling2}}. Bailu applies Invigoration to allies that are not already Invigorated. For those already Invigorated, Bailu extends the duration of their Invigoration by 1 turn. The effect of Invigoration can last for 2 turn(s). This effect cannot stack.",
+      "scaling": {
+        "scaling1": [
+          9,
+          9.5625,
+          10.125,
+          10.6875,
+          11.25,
+          11.7,
+          12.15,
+          12.6,
+          13.05,
+          13.5,
+          13.95,
+          14.4,
+          14.85,
+          15.3,
+          15.75
+        ],
+        "scaling2": [
+          90,
+          144,
+          184.5,
+          225,
+          252,
+          279,
+          299.25,
+          319.5,
+          339.75,
+          360,
+          380.25,
+          400.5,
+          420.75,
+          441,
+          461.25
+        ]
+      }
+    },
+    "talent": {
+      "type": "Talent",
+      "name": "Gourdful of Elixir",
+      "tag": "Restore",
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "After an ally target with Invigoration is hit, restores the ally's HP for {{scaling1}}% of Bailu's Max HP plus {{scaling2}}. This effect can trigger 2 time(s). When Bailu's teammate receives a killing blow, they will not be knocked down. Bailu immediately heals the ally for {{scaling3}}% of Bailu's Max HP plus {{scaling4}} HP. This effect can be triggered 1 time per battle.",
+      "scaling": {
+        "scaling1": [
+          3.6,
+          3.825,
+          4.05,
+          4.275,
+          4.5,
+          4.68,
+          4.86,
+          5.04,
+          5.22,
+          5.4,
+          5.58,
+          5.76,
+          5.94,
+          6.12,
+          6.3
+        ],
+        "scaling2": [
+          36,
+          57.6,
+          73.8,
+          90,
+          100.8,
+          111.6,
+          119.7,
+          127.8,
+          135.9,
+          144,
+          152.1,
+          160.2,
+          168.3,
+          176.4,
+          184.5
+        ],
+        "scaling3": [
+          12,
+          12.75,
+          13.5,
+          14.25,
+          15,
+          15.6,
+          16.2,
+          16.8,
+          17.4,
+          18,
+          18.6,
+          19.2,
+          19.8,
+          20.4,
+          21
+        ],
+        "scaling4": [
+          120,
+          192,
+          246,
+          300,
+          336,
+          372,
+          399,
+          426,
+          453,
+          480,
+          507,
+          534,
+          561,
+          588,
+          615
+        ]
+      }
+    },
+    "technique": {
+      "type": "Technique",
+      "name": "Saunter in the Rain",
+      "tag": "Restore",
+      "description": "After Technique is used, at the start of the next battle, all allies are granted Invigoration for 2 turn(s)."
+    }
+  },
+  "major_traces": {
+    "2": {
+      "name": "Qihuang Analects",
+      "description": "When Bailu heals a target ally above their normal Max HP, the target's Max HP increases by 10% for 2 turns."
+    },
+    "4": {
+      "name": "Vidyadhara Ichor Lines",
+      "description": "Invigoration can trigger 1 more time(s)."
+    },
+    "6": {
+      "name": "Aquatic Benediction",
+      "description": "Characters with Invigoration receive 10% less DMG."
+    }
+  },
+  "stat_bonuses": [
+    {
+      "stat": "HP",
+      "value": "+28%"
+    },
+    {
+      "stat": "DEF",
+      "value": "+22.5%"
+    },
+    {
+      "stat": "Effect RES",
+      "value": "+10%"
+    }
+  ],
+  "eidolons": [
+    {
+      "level": 1,
+      "name": "Ambrosial Aqua",
+      "description": "If the target ally's current HP is equal to their Max HP when Invigoration ends, regenerates 8 extra Energy for this target."
+    },
+    {
+      "level": 2,
+      "name": "Sylphic Slumber",
+      "description": "After using her Ultimate, Bailu's Outgoing Healing increases by an additional 15% for 2 turn(s)."
+    },
+    {
+      "level": 3,
+      "name": "Omniscient Opulence",
+      "description": "Skill Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+    },
+    {
+      "level": 4,
+      "name": "Evil Excision",
+      "description": "Every healing provided by the Skill makes the recipient deal 10% more DMG for 2 turn(s). This effect can stack up to 3 time(s)."
+    },
+    {
+      "level": 5,
+      "name": "Waning Worries",
+      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+    },
+    {
+      "level": 6,
+      "name": "Drooling Drop of Draconic Divinity",
+      "description": "Bailu can heal allies who received a killing blow 1 more time(s) in a single battle."
+    }
+  ]
+}
