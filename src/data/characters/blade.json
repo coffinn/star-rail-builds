@@ -1,0 +1,248 @@
+{
+    "id": "blade",
+    "name": "Blade",
+    "rarity": "5",
+    "element": "wind",
+    "path": "destruction",
+    "version_released": "1.2",
+    "max_energy": 130,
+    "level_80_stats": {
+        "hp": 1358,
+        "atk": 543,
+        "def": 485,
+        "spd": 97
+    },
+    "abilities": {
+        "basic": {
+            "type": "Basic ATK",
+            "name": "Shard Sword",
+            "tag": "Single Target",
+            "energy_gain": 20,
+            "break": 10,
+            "min_level": 1,
+            "max_level": 7,
+            "default_level": 6,
+            "description_template": "Deals Wind DMG equal to {{scaling1}}% of Blade's Max HP to one designated enemy.",
+            "scaling": {
+                "scaling1": [
+                    25,
+                    30,
+                    35,
+                    40,
+                    45,
+                    50,
+                    55
+                ]
+            },
+            "variants": [
+                {
+                    "type": "Basic ATK (Enhanced)",
+                    "name": "Forest of Swords",
+                    "tag": "Blast",
+                    "energy_gain": 30,
+                    "break_main": 20,
+                    "break_adjacent": 10,
+                    "min_level": 1,
+                    "max_level": 7,
+                    "default_level": 6,
+                    "description_template": "Consumes HP equal to 10% of Blade's Max HP and deals Wind DMG equal to {{scaling1}}% of his Max HP to one designated enemy. In addition, deals Wind DMG equal to {{scaling2}}% of Blade's Max HP to adjacent targets. If Blade's current HP is insufficient, his HP will be reduced to 1 when using \"Forest of Swords.\" \"Forest of Swords\" cannot regenerate Skill Points.",
+                    "scaling": {
+                        "scaling1": [
+                            65,
+                            78,
+                            91,
+                            104,
+                            117,
+                            130,
+                            143
+                        ],
+                        "scaling2": [
+                            26,
+                            31.2,
+                            36.4,
+                            41.6,
+                            46.8,
+                            52,
+                            57.2
+                        ]
+                    }
+                }
+            ]
+        },
+        "skill": {
+            "type": "Skill",
+            "name": "Hellscape",
+            "tag": "Enhance",
+            "energy_gain": 0,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Consumes HP equal to 30% of Blade's Max HP to enter the \"Hellscape\" state. While under the \"Hellscape\" state, his Skill cannot be used, his DMG dealt increases by {{scaling1}}%, the chance of receiving attacks from enemy targets greatly increases, and his Basic ATK \"Shard Sword\" is enhanced to \"Forest of Swords\" for 3 turn(s). If Blade's current HP is insufficient, his HP will be reduced to 1 when he uses his Skill. This Skill does not regenerate Energy. Using this Skill does not end the current turn.",
+            "scaling": {
+                "scaling1": [
+                    12,
+                    14.8,
+                    17.6,
+                    20.4,
+                    23.2,
+                    26,
+                    29.5,
+                    33,
+                    36.5,
+                    40,
+                    42.8,
+                    45.6
+                ]
+            }
+        },
+        "ultimate": {
+            "type": "Ultimate",
+            "name": "Death Sentence",
+            "tag": "Blast",
+            "energy_gain": 5,
+            "break": 20,
+            "energy_cost": 130,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Sets Blade's current HP to 50% of his Max HP and deals Wind DMG to one designated enemy equal to the sum of {{scaling1}}% of his Max HP and {{scaling2}}% of the tally of Blade's HP loss in the current battle. At the same time, deals Wind DMG to adjacent targets equal to the sum of {{scaling3}}% of his Max HP and {{scaling3}}% of the tally of his HP loss in the current battle. The tally of Blade's HP loss in the current battle is capped at 90% of his Max HP. This value will be reset and re-accumulated after his Ultimate has been used.",
+            "scaling": {
+                "scaling1": [
+                    90,
+                    96,
+                    102,
+                    108,
+                    114,
+                    120,
+                    127.5,
+                    135,
+                    142.5,
+                    150,
+                    156,
+                    162
+                ],
+                "scaling2": [
+                    72,
+                    76.8,
+                    81.6,
+                    86.4,
+                    91.2,
+                    96,
+                    102,
+                    108,
+                    114,
+                    120,
+                    124.8,
+                    129.6
+                ],
+                "scaling3": [
+                    36,
+                    38.4,
+                    40.8,
+                    43.2,
+                    45.6,
+                    48,
+                    51,
+                    54,
+                    57,
+                    60,
+                    62.4,
+                    64.8
+                ]
+            }
+        },
+        "talent": {
+            "type": "Talent",
+            "name": "Shuhu's Gift",
+            "tag": "AoE",
+            "energy_gain": 10,
+            "break": 10,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "When Blade sustains DMG or consumes his HP, he gains 1 stack of Charge, stacking up to 5 times. A max of 1 Charge stack can be gained every time he is attacked. When Charge stack reaches maximum, immediately launches 1 Follow-Up ATK  on all enemies, dealing Wind DMG equal to {{scaling1}}% of Blade's Max HP. At the same time, restores Blade's HP by 25% of his Max HP. After the Follow-Up ATK, all Charges are consumed.",
+            "scaling": {
+                "scaling1": [
+                    65,
+                    71.5,
+                    78,
+                    84.5,
+                    91,
+                    97.5,
+                    105.625,
+                    113.75,
+                    121.875,
+                    130,
+                    136.5,
+                    143
+                ]
+            }
+        },
+        "technique": {
+            "type": "Technique",
+            "name": "Karma Wind",
+            "tag": "",
+            "description": "Immediately attacks the enemy. After entering combat, consumes 20% of Blade's Max HP while dealing Wind DMG equal to 40% of his Max HP to all enemies. If Blade's current HP is insufficient, his HP will be reduced to 1 when this Technique is used."
+        }
+    },
+    "major_traces": {
+        "6": {
+            "name": "Cyclone of Destruction",
+            "description": "Increases DMG dealt by the Talent's Follow-Up ATK  by 20%. Additionally regenerates 15 Energy."
+        },
+        "4": {
+            "name": "Neverending Deaths",
+            "description": "HP restored from healing increases by 20%. After receiving healing, 25% of the healed amount will be converted to Ultimate's tally of HP lost."
+        },
+        "2": {
+            "name": "Vita Infinita",
+            "description": "When Blade uses Ultimate, the total accumulated HP loss will be set to 50%"
+        }
+    },
+    "stat_bonuses": [
+        {
+            "stat": "CRIT Rate",
+            "value": "+12%"
+        },
+        {
+            "stat": "HP",
+            "value": "+28%"
+        },
+        {
+            "stat": "Effect RES",
+            "value": "+10%"
+        }
+    ],
+    "eidolons": [
+        {
+            "level": 1,
+            "name": "Blade Cuts the Deepest in Hell",
+            "description": "Blade's Enhanced Basic ATK and Ultimate deals additionally increased DMG to one designated enemy, with the increased amount equal to 150% of the tally of Blade's HP loss from his Ultimate."
+        },
+        {
+            "level": 2,
+            "name": "Ten Thousand Sorrows From One Broken Dream",
+            "description": "When Blade is in the Hellscape state, his CRIT Rate increases by 15%."
+        },
+        {
+            "level": 3,
+            "name": "Hardened Blade Bleeds Coldest Shade",
+            "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+        },
+        {
+            "level": 4,
+            "name": "Rejected by Death, Infected With Life",
+            "description": "When Blade's current HP percentage drops from above 50% to 50% or lower of his Max HP, increases his Max HP by 20%. Stacks up to 2 time(s)."
+        },
+        {
+            "level": 5,
+            "name": "Death By Ten Lords' Gaze",
+            "description": "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+        },
+        {
+            "level": 6,
+            "name": "Reborn Into an Empty Husk",
+            "description": "The maximum number of Charge stacks is reduced to 4. The Follow-up ATK triggered by Talent deals additionally increased DMG equal to 50% of Blade's Max HP."
+        }
+    ]
+}
