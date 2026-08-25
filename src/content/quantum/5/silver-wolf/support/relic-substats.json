@@ -1,6 +1,11 @@
 {
     "substats_priority": [
         "spd",
-        "ehr"
+        {
+            "name": "ehr",
+            "note": {
+                "en": "Prioritize Effect Hit Rate until the recommended target is reached."
+            }
+        }
     ]
 }

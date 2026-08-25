@@ -728,6 +728,31 @@ function translateMainStats(
 }
 
 /**
+ * Translates stat IDs used by recommended stat targets.
+ */
+function translateRecommendedStats(
+    locale: any,
+    recommendedStats: any,
+    sourceFile: string,
+    translator: TranslationHelper,
+) {
+    return {
+        ...recommendedStats,
+
+        stats: (
+            recommendedStats.stats ?? []
+        ).map((item: any) =>
+            translateStatItem(
+                locale,
+                item,
+                sourceFile,
+                translator,
+            ),
+        ),
+    };
+}
+
+/**
  * Collects notes from sands, goblet, and circlet into one main-stat note list.
  */
 function collectMainStatNotes(
@@ -736,22 +761,23 @@ function collectMainStatNotes(
     lang: string,
     translator: TranslationHelper,
 ) {
-    return [
+    const allMainStats = [
         'body',
         'feet',
         'planar_sphere',
         'link_rope',
-    ].flatMap((slot) =>
-        collectStatNotes(
-            mainStats[slot] ?? [],
-            (stat: { name: any }) => stat.name,
-            sourceFile,
-            lang,
-            translator,
-        ),
+    ].flatMap(
+        (slot) => mainStats[slot] ?? [],
+    );
+
+    return collectStatNotes(
+        allMainStats,
+        (stat: { name: any }) => stat.name,
+        sourceFile,
+        lang,
+        translator,
     );
 }
-
 /**
  * Localizes and renders build-level editorial notes.
  *
@@ -905,6 +931,10 @@ function loadBuildData({
         buildPath,
         'relic-substats.json',
     );
+    const recommendedStatsFile = fileInBuild(
+        buildPath,
+        'recommended-stats.json',
+    );
 
     const tracesFile = fileInBuild(
         buildPath,
@@ -998,6 +1028,22 @@ function loadBuildData({
                     ),
             );
     }
+    /*
+ * Recommended Stats
+ */
+    const rawRecommendedStats = loadJSON(
+        buildPath,
+        'recommended-stats.json',
+    );
+
+    const recommendedStats = rawRecommendedStats
+        ? translateRecommendedStats(
+            locale,
+            rawRecommendedStats,
+            recommendedStatsFile,
+            translator,
+        )
+        : null;
 
     /*
      * Traces
@@ -1141,6 +1187,24 @@ function loadBuildData({
                 translator,
             ),
         },
+        recommendedStats: {
+            global: collectSectionNotes(
+                recommendedStats,
+                recommendedStatsFile,
+                lang,
+                translator,
+            ),
+
+            items: recommendedStats
+                ? collectStatNotes(
+                    recommendedStats.stats ?? [],
+                    (stat: { name: any }) => stat.name,
+                    recommendedStatsFile,
+                    lang,
+                    translator,
+                )
+                : [],
+        },
     };
 
     /*
@@ -1169,6 +1233,7 @@ function loadBuildData({
 
         lightCones,
         relics,
+        recommendedStats,
         traces,
         notes,
 

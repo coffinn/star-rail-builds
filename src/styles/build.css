@@ -420,7 +420,8 @@
 
 .grid {
     display: grid;
-    grid-template-columns: minmax(0, 1.18fr) minmax(0, 1.06fr) minmax(0, 1fr);
+    grid-template-columns:
+        minmax(0, 1.18fr) minmax(0, 1.06fr) minmax(0, 1fr) minmax(0, 0.95fr);
     gap: 9px;
     align-items: stretch;
     margin-top: 0;
@@ -708,6 +709,67 @@
     font-weight: 850;
 }
 
+.recommended-stats-table {
+    display: grid;
+    gap: 4px;
+}
+
+.recommended-stats-header,
+.recommended-stat-row {
+    display: grid;
+    min-width: 0;
+    grid-template-columns:
+        minmax(0, 1.15fr) minmax(52px, 0.8fr) minmax(66px, 0.95fr);
+    gap: 6px;
+    align-items: center;
+}
+
+.recommended-stats-header {
+    padding: 0 6px 2px;
+    color: color-mix(in srgb,
+            var(--text) 64%,
+            transparent);
+    font-size: 0.62rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.recommended-stats-header span:not(:first-child) {
+    text-align: center;
+}
+
+.recommended-stat-row {
+    min-height: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    padding: 5px 6px;
+    background: rgba(255, 255, 255, 0.045);
+}
+
+.recommended-stat-row strong {
+    min-width: 0;
+    color: color-mix(in srgb,
+            #fff 82%,
+            var(--element) 18%);
+    font-size: 0.76rem;
+    overflow-wrap: anywhere;
+}
+
+.recommended-stat-row span {
+    min-width: 0;
+    font-size: 0.76rem;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+.recommended-stat-value {
+    color: color-mix(in srgb,
+            #fff 82%,
+            var(--element) 18%);
+    font-weight: 850;
+}
+
 .stat-grid {
     display: grid;
     gap: 4px;
@@ -801,8 +863,62 @@
     scroll-margin-top: 96px;
 }
 
-.note-target:target {
-    animation: note-highlight 1.4s ease-out;
+.note-target.note-highlight-active {
+    animation: note-click-highlight 1.8s ease-out;
+}
+
+@keyframes note-click-highlight {
+    0% {
+        border-color:
+            color-mix(in srgb,
+                var(--element) 85%,
+                white 15%);
+
+        background:
+            color-mix(in srgb,
+                var(--element) 32%,
+                rgba(255, 255, 255, 0.04));
+
+        box-shadow:
+            0 0 0 3px color-mix(in srgb,
+                var(--element) 32%,
+                transparent),
+            0 0 20px color-mix(in srgb,
+                var(--element) 28%,
+                transparent);
+    }
+
+    30% {
+        border-color:
+            color-mix(in srgb,
+                var(--element) 72%,
+                transparent);
+
+        background:
+            color-mix(in srgb,
+                var(--element) 24%,
+                rgba(255, 255, 255, 0.04));
+
+        box-shadow:
+            0 0 0 3px color-mix(in srgb,
+                var(--element) 22%,
+                transparent),
+            0 0 14px color-mix(in srgb,
+                var(--element) 20%,
+                transparent);
+    }
+
+    100% {
+        border-color:
+            rgba(124, 85, 85, 0.08);
+
+        background:
+            rgba(255, 255, 255, 0.04);
+
+        box-shadow:
+            0 0 0 0 transparent,
+            0 0 0 transparent;
+    }
 }
 
 .notes-card {
@@ -1115,16 +1231,48 @@
 }
 
 @keyframes note-highlight {
+    0% {
+        border-color: color-mix(in srgb,
+                var(--element) 75%,
+                white 10%);
 
-    0%,
-    55% {
-        background: color-mix(in srgb, var(--element) 18%, transparent);
-        box-shadow: 0 0 0 4px color-mix(in srgb, var(--element) 14%, transparent);
+        background: color-mix(in srgb,
+                var(--element) 32%,
+                rgba(255, 255, 255, 0.04));
+
+        box-shadow:
+            0 0 0 3px color-mix(in srgb,
+                var(--element) 28%,
+                transparent),
+            0 0 18px color-mix(in srgb,
+                var(--element) 24%,
+                transparent);
+    }
+
+    35% {
+        border-color: color-mix(in srgb,
+                var(--element) 65%,
+                transparent);
+
+        background: color-mix(in srgb,
+                var(--element) 24%,
+                rgba(255, 255, 255, 0.04));
+
+        box-shadow:
+            0 0 0 3px color-mix(in srgb,
+                var(--element) 20%,
+                transparent),
+            0 0 14px color-mix(in srgb,
+                var(--element) 18%,
+                transparent);
     }
 
     100% {
-        background: transparent;
-        box-shadow: 0 0 0 0 transparent;
+        border-color: rgba(124, 85, 85, 0.08);
+        background: rgba(255, 255, 255, 0.04);
+        box-shadow:
+            0 0 0 0 transparent,
+            0 0 0 transparent;
     }
 }
 

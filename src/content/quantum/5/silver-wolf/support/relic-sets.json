@@ -6,7 +6,10 @@
                     "items": [
                         {
                             "name": "eagle-of-twilight-line",
-                            "pieces": 4
+                            "pieces": 4,
+                            "note": {
+                                "en": "The Action Advance from the 4-Pc effect can be especially valuable for faster rotations."
+                            }
                         }
                     ]
                 }

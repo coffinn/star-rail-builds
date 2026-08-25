@@ -1,0 +1,69 @@
+---
+import { t } from '../utils/i18n';
+import InlineNoteLabel from './InlineNoteLabel.astro';
+type RecommendedStat = {
+    name: string;
+    baseline?: string | number;
+    recommended?: string | number;
+    note?: string | Record<string, string>;
+    noteId?: string;
+};
+
+type RecommendedStatsData = {
+    stats: RecommendedStat[];
+};
+
+const { stats, locale } = Astro.props as {
+    stats: RecommendedStatsData;
+    locale: any;
+};
+
+const displayValue = (value: string | number | undefined) => {
+    if (value === undefined || value === null || value === '') {
+        return '—';
+    }
+
+    return String(value);
+};
+---
+
+<div class="card recommendation-card recommended-stats-card">
+    <h2>
+        {t(locale, 'ui', 'Recommended Stats', undefined, false)}
+    </h2>
+
+    <div class="recommendation-card-body">
+        <div class="recommended-stats-table">
+            <div class="recommended-stats-header">
+                <span>{t(locale, 'ui', 'Stat')}</span>
+                <span>
+                    {t(locale, 'ui', 'Baseline', undefined, false)}
+                </span>
+                <span>
+                    {t(locale, 'ui', 'Recommended', undefined, false)}
+                </span>
+            </div>
+
+            {
+                stats.stats.map((stat) => (
+                    <div class="recommended-stat-row">
+                        <strong>
+                            <InlineNoteLabel
+                                label={stat.name}
+                                noteId={stat.noteId}
+                                hasNote={Boolean(stat.noteId || stat.note)}
+                                emphasized
+                            />
+                        </strong>
+
+                        <span>{displayValue(stat.baseline)}</span>
+
+                        <span class="recommended-stat-value">
+                            {displayValue(stat.recommended)}
+                        </span>
+                    </div>
+                ))
+            }
+        </div>
+    </div>
+</div>

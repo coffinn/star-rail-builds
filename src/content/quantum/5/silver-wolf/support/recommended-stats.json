@@ -1,0 +1,26 @@
+{
+    "stats": [
+        {
+            "name": "spd",
+            "baseline": "150",
+            "recommended": "160+",
+            "note": {
+                "en": "160+ SPD is the preferred target for first cycle breakpoint, but 150 is a reasonable baseline."
+            }
+        },
+        {
+            "name": "ehr",
+            "baseline": "67%",
+            "recommended": "67%"
+        },
+        {
+            "name": "total-hp",
+            "baseline": "3000+",
+            "recommended": "3500+"
+        },
+        {
+            "name": "total-def",
+            "recommended": "1000+"
+        }
+    ]
+}

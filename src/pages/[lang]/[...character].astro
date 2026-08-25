@@ -5,6 +5,7 @@ import RelicStats from '../../components/RelicStats.astro';
 import CharacterInfo from '../../components/CharacterInfo.astro';
 import Trace from '../../components/Trace.astro';
 import Notes from '../../components/Notes.astro';
+import RecommendedStats from '../../components/RecommendedStats.astro';
 
 import CharacterPageLayout from '../../layouts/CharacterLayout.astro';
 
@@ -61,6 +62,7 @@ const buildHasItemNotes = (notes: any) =>
         notes?.relics?.sets,
         notes?.relics?.mainstats,
         notes?.relics?.substats,
+        notes?.recommendedStats?.items,
 
         notes?.traces?.items,
     ].some((items) => Array.isArray(items) && items.length > 0);
@@ -148,6 +150,12 @@ const noteMarkerExplanation = t(
                                                 locale={locale}
                                             />
                                         )}
+                                    {build.recommendedStats && (
+                                        <RecommendedStats
+                                            stats={build.recommendedStats}
+                                            locale={locale}
+                                        />
+                                    )}
 
                                     {build.traces && (
                                         <Trace
@@ -184,8 +192,8 @@ const noteMarkerExplanation = t(
         />
     ) : null
 }
-
 <script>
     import '../../scripts/build-selector';
     import '../../scripts/info-popover';
+    import '../../scripts/note-highlight';
 </script>

@@ -74,6 +74,17 @@ const noteSections: NoteSection[] = [
             },
         ],
     },
+    {
+        headingId: 'Regarding Recommended Stats:',
+
+        global: notes.recommendedStats?.global ?? [],
+
+        groups: [
+            {
+                items: notes.recommendedStats?.items ?? [],
+            },
+        ],
+    },
 ].filter(hasNoteContent);
 
 const hasNotes = noteSections.length > 0;

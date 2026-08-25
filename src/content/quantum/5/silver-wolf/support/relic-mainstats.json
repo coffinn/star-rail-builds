@@ -1,7 +1,12 @@
 {
     "main_stats": {
         "body": [
-            "ehr"
+            {
+                "name": "ehr",
+                "note": {
+                    "en": "Use an Effect Hit Rate body if you cannot reach the desired EHR target through substats."
+                }
+            }
         ],
         "feet": [
             "spd"

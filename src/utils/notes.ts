@@ -13,13 +13,13 @@ import { getLocalizedNote } from './content';
  * @returns Rendered HTML string.
  */
 function renderNote(note: string, sourceFile: string, translator: any) {
-  const renderedNote = translator.translateNoteText(note, sourceFile, {
-    weaponPopovers: true,
-    artifactPopovers: true,
-    rotationPopovers: true,
-  });
+    const renderedNote = translator.translateNoteText(note, sourceFile, {
+        weaponPopovers: true,
+        artifactPopovers: true,
+        rotationPopovers: true,
+    });
 
-  return (marked.parse(renderedNote) as string).replace(/<\/?p>/g, '');
+    return (marked.parse(renderedNote) as string).replace(/<\/?p>/g, '');
 }
 
 /**
@@ -29,13 +29,22 @@ function renderNote(note: string, sourceFile: string, translator: any) {
  * @returns Prefix used in note anchors.
  */
 function getNotePrefix(sourceFile: string) {
-  if (sourceFile.endsWith('weapons.json')) return 'w';
-  if (sourceFile.endsWith('artifacts-sets.json')) return 'as';
-  if (sourceFile.endsWith('artifacts-mainstats.json')) return 'am';
-  if (sourceFile.endsWith('artifacts-substats.json')) return 'at';
-  if (sourceFile.endsWith('talents.json')) return 't';
+    /* HSR build files */
+    if (sourceFile.endsWith('light-cones.json')) return 'lc';
+    if (sourceFile.endsWith('relic-sets.json')) return 'rs';
+    if (sourceFile.endsWith('relic-mainstats.json')) return 'rm';
+    if (sourceFile.endsWith('relic-substats.json')) return 'rsub';
+    if (sourceFile.endsWith('recommended-stats.json')) return 'rec';
+    if (sourceFile.endsWith('traces.json')) return 'tr';
 
-  return 'n';
+    /* Legacy Genshin names, kept for compatibility */
+    if (sourceFile.endsWith('weapons.json')) return 'w';
+    if (sourceFile.endsWith('artifacts-sets.json')) return 'as';
+    if (sourceFile.endsWith('artifacts-mainstats.json')) return 'am';
+    if (sourceFile.endsWith('artifacts-substats.json')) return 'at';
+    if (sourceFile.endsWith('talents.json')) return 't';
+
+    return 'n';
 }
 
 /**
@@ -48,15 +57,15 @@ function getNotePrefix(sourceFile: string) {
  * @returns Sanitized build slug, or `shared` when none can be inferred.
  */
 function getNoteScope(sourceFile: string) {
-  const parts = sourceFile.replace(/\\/g, '/').split('/');
-  const fileName = parts[parts.length - 1];
-  const scope = parts[parts.length - 2];
+    const parts = sourceFile.replace(/\\/g, '/').split('/');
+    const fileName = parts[parts.length - 1];
+    const scope = parts[parts.length - 2];
 
-  if (!fileName || !scope || scope === 'content') {
-    return 'shared';
-  }
+    if (!fileName || !scope || scope === 'content') {
+        return 'shared';
+    }
 
-  return scope.replace(/[^a-z0-9_-]/gi, '-').toLowerCase();
+    return scope.replace(/[^a-z0-9_-]/gi, '-').toLowerCase();
 }
 
 /**
@@ -67,7 +76,7 @@ function getNoteScope(sourceFile: string) {
  * @returns Anchor ID.
  */
 function createNoteId(sourceFile: string, index: number) {
-  return `${getNotePrefix(sourceFile)}-${getNoteScope(sourceFile)}-${index + 1}`;
+    return `${getNotePrefix(sourceFile)}-${getNoteScope(sourceFile)}-${index + 1}`;
 }
 
 /**
@@ -80,18 +89,18 @@ function createNoteId(sourceFile: string, index: number) {
  * @returns Rendered note HTML strings.
  */
 export function collectSectionNotes(
-  data: any,
-  sourceFile: string,
-  lang: string,
-  translator: any,
+    data: any,
+    sourceFile: string,
+    lang: string,
+    translator: any,
 ) {
-  if (!Array.isArray(data?.notes)) return [];
+    if (!Array.isArray(data?.notes)) return [];
 
-  // Section notes do not attach to an individual item, so no noteId is needed.
-  return data.notes
-    .map((note: any) => getLocalizedNote({ note }, lang))
-    .filter(Boolean)
-    .map((note: string) => renderNote(note, sourceFile, translator));
+    // Section notes do not attach to an individual item, so no noteId is needed.
+    return data.notes
+        .map((note: any) => getLocalizedNote({ note }, lang))
+        .filter(Boolean)
+        .map((note: string) => renderNote(note, sourceFile, translator));
 }
 
 /**
@@ -105,40 +114,40 @@ export function collectSectionNotes(
  * @returns Notes ready for rendering in the Notes component.
  */
 export function collectNotes(
-  groups: any[],
-  formatter: (item: any) => string,
-  sourceFile: string,
-  lang: string,
-  translator: any,
+    groups: any[],
+    formatter: (item: any) => string,
+    sourceFile: string,
+    lang: string,
+    translator: any,
 ) {
-  const notes: { id: string; name: string; note: string }[] = [];
+    const notes: { id: string; name: string; note: string }[] = [];
 
-  // Mutating noteId here lets recommendation cards link to their note entries.
-  groups.forEach((group) => {
-    const groupItems = [
-      ...(group.items ?? []),
-      ...(group.choices ?? []).flatMap((choice: any) => choice.items ?? []),
-    ];
+    // Mutating noteId here lets recommendation cards link to their note entries.
+    groups.forEach((group) => {
+        const groupItems = [
+            ...(group.items ?? []),
+            ...(group.choices ?? []).flatMap((choice: any) => choice.items ?? []),
+        ];
 
-    groupItems.forEach((item: any) => {
-      const localizedNote = getLocalizedNote(item, lang);
+        groupItems.forEach((item: any) => {
+            const localizedNote = getLocalizedNote(item, lang);
 
-      if (localizedNote) {
-        const name = formatter(item);
-        const noteId = createNoteId(sourceFile, notes.length);
+            if (localizedNote) {
+                const name = formatter(item);
+                const noteId = createNoteId(sourceFile, notes.length);
 
-        item.noteId = noteId;
+                item.noteId = noteId;
 
-        notes.push({
-          id: noteId,
-          name,
-          note: renderNote(localizedNote, sourceFile, translator),
+                notes.push({
+                    id: noteId,
+                    name,
+                    note: renderNote(localizedNote, sourceFile, translator),
+                });
+            }
         });
-      }
     });
-  });
 
-  return notes;
+    return notes;
 }
 
 /**
@@ -152,32 +161,32 @@ export function collectNotes(
  * @returns Notes ready for rendering in the Notes component.
  */
 export function collectStatNotes(
-  items: any[],
-  formatter: (item: any) => string,
-  sourceFile: string,
-  lang: string,
-  translator: any,
+    items: any[],
+    formatter: (item: any) => string,
+    sourceFile: string,
+    lang: string,
+    translator: any,
 ) {
-  const notes: { id: string; name: string; note: string }[] = [];
+    const notes: { id: string; name: string; note: string }[] = [];
 
-  items
-    .flatMap((item) => item.items ?? [item])
-    .forEach((item) => {
-      const localizedNote = getLocalizedNote(item, lang);
+    items
+        .flatMap((item) => item.items ?? [item])
+        .forEach((item) => {
+            const localizedNote = getLocalizedNote(item, lang);
 
-      if (localizedNote) {
-        const name = formatter(item);
-        const noteId = createNoteId(sourceFile, notes.length);
+            if (localizedNote) {
+                const name = formatter(item);
+                const noteId = createNoteId(sourceFile, notes.length);
 
-        item.noteId = noteId;
+                item.noteId = noteId;
 
-        notes.push({
-          id: noteId,
-          name,
-          note: renderNote(localizedNote, sourceFile, translator),
+                notes.push({
+                    id: noteId,
+                    name,
+                    note: renderNote(localizedNote, sourceFile, translator),
+                });
+            }
         });
-      }
-    });
 
-  return notes;
+    return notes;
 }
