@@ -63,8 +63,8 @@
       }
     },
     "technique": {
-      "type": "Now! I'm the Band!",
-      "name": "Memories Back as Echoes",
+      "type": "Technique",
+      "name": "Now! I'm the Band!",
       "tag": "Support",
       "description": "After the Technique is used, at the start of the next battle, all allies' Break Effect increases by 30%, lasting for 2 turn(s)."
     },
