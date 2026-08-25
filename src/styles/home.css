@@ -430,7 +430,7 @@ body[data-element="base"].browser-background {
 }
 
 .roster-character.lightning {
-    --roster-element: #c87fff;
+    --roster-element: #D559FF;
 }
 
 .roster-character.wind {
@@ -438,7 +438,7 @@ body[data-element="base"].browser-background {
 }
 
 .roster-character.quantum {
-    --roster-element: #a679ff;
+    --roster-element: #7552FF;
 }
 
 .roster-character.imaginary {
@@ -985,6 +985,22 @@ body[data-element="base"].browser-background {
 }
 
 @media (max-width: 640px) {
+    .roster-character {
+        grid-template-rows: minmax(0, 1fr) 42px;
+    }
+
+    .roster-character-copy {
+        height: 42px;
+        gap: 1px;
+        padding: 4px 6px;
+        border-top-width: 2px;
+    }
+
+    .roster-character-name {
+        font-size: 0.74rem;
+        line-height: 1.05;
+    }
+
     .home-filters {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
