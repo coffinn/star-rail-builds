@@ -179,7 +179,7 @@
   "major_traces": {
     "2": {
       "name": "Watch All Revels",
-      "description": "Increases Evanescia's CRIT Rate by 30%. When there are (?3)/2/1 enemy target(s) on the field, the Ultimate's bounce count increases by 1/2/4. When a teammate with an Elation Skill Participant ID lower than Evanescia's gains \"Certified Banger,\" Evanescia converts 50% of it into her own \"Certified Banger.\""
+      "description": "Increases Evanescia's CRIT Rate by 30%. When there are (≥3)/2/1 enemy target(s) on the field, the Ultimate's bounce count increases by 1/2/4. When a teammate with an Elation Skill Participant ID lower than Evanescia's gains \"Certified Banger,\" Evanescia converts 50% of it into her own \"Certified Banger.\""
     },
     "4": {
       "name": "Weigh All Truths",
