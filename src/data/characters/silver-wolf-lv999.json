@@ -32,7 +32,7 @@
                     "type": "Basic ATK (Enhanced)",
                     "name": "Bonus Stage: αWolf Instant",
                     "tag": "Bounce",
-                    "break_per_bounce": 0.1,
+                    "break_bounce": 0.1,
                     "break_final_hit": 10,
                     "break_total": 50,
                     "description_template": "Deals Imaginary DMG equal to a total of {{damage}}% of Silver Wolf LV.999's ATK, split evenly into 100 hits that bounce onto random enemies. After every set number of bounces, the bouncing pauses and the Top Loot Box triggers 1 time. Can trigger up to 3 time(s) in total. When dealing fatal damage to all enemies on the field, this ability ends. After attackable enemy targets appear, gains 1 extra turn and uses this ability again based on the remaining number of bounces and Top Loot Box triggers. The first time this effect triggers in each turn, extends the duration of all buffs on this unit by 1 turn. After all of the above DMG is dealt, launches a Final Hit that deals Imaginary DMG equal to {{final_hit}}% of Silver Wolf LV.999's ATK, split evenly among all enemies. Enhanced Basic ATK cannot recover Skill Points. For every 60 points of \"Hidden MMR\" held, increases DMG dealt during Enhanced Basic ATK by 15% of the original DMG, stacking up to 2 time(s).",

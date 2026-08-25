@@ -39,6 +39,14 @@ Use:
 
 Use `break_aoe` when the ability deals the same Toughness damage to all enemies.
 
+## Bounce Attacks
+
+Use:
+```json
+"break_bounce": 5
+
+Use `break_bounce`: Toughness damage dealt by each individual hit of a Bounce attack.
+
 ## Quick Reference
 
 ```text
