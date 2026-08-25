@@ -1,0 +1,286 @@
+{
+    "id": "gilgamesh",
+    "name": "Gilgamesh",
+    "rarity": 5,
+    "element": "lightning",
+    "path": "destruction",
+    "version_released": "4.4",
+    "max_energy": 360,
+    "level_80_stats": {
+        "hp": 1125,
+        "atk": 717,
+        "def": 509,
+        "spd": 97
+    },
+    "abilities": {
+        "basic": {
+            "type": "Basic ATK",
+            "name": "Halfhearted Blow",
+            "tag": "Single Target",
+            "energy_gain": 20,
+            "break": 10,
+            "min_level": 1,
+            "max_level": 7,
+            "default_level": 6,
+            "description_template": "Deals Lightning DMG equal to {{scaling1}}% of Gilgamesh's ATK to one designated enemy.",
+            "scaling": {
+                "scaling1": [
+                    50,
+                    60,
+                    70,
+                    80,
+                    90,
+                    100,
+                    110
+                ]
+            }
+        },
+        "skill": {
+            "type": "Skill",
+            "name": "Gate of Babylon",
+            "tag": "Blast",
+            "energy_gain": 30,
+            "break_main": 20,
+            "break_adjacent": 10,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Gains \"King's Acknowledgement,\" allowing this unit to ignore {{scaling1}}% of the target's DEF when dealing DMG, lasting for 3 turn(s). Deals Lightning DMG equal to {{scaling2}}% of Gilgamesh's ATK to one designated enemy, and deals Lightning DMG equal to {{scaling3}}% of Gilgamesh's ATK to adjacent targets.",
+            "scaling": {
+                "scaling1": [
+                    15,
+                    16.5,
+                    18,
+                    19.5,
+                    21,
+                    22.5,
+                    24.375,
+                    26.25,
+                    28.125,
+                    30,
+                    31.5,
+                    33
+                ],
+                "scaling2": [
+                    140,
+                    154,
+                    168,
+                    182,
+                    196,
+                    210,
+                    227.5,
+                    245,
+                    262.5,
+                    280,
+                    294,
+                    308
+                ],
+                "scaling3": [
+                    70,
+                    77,
+                    84,
+                    91,
+                    98,
+                    105,
+                    113.75,
+                    122.5,
+                    131.25,
+                    140,
+                    147,
+                    154
+                ]
+            }
+        },
+        "ultimate": {
+            "type": "Ultimate",
+            "name": "Enuma Elish",
+            "tag": "AoE",
+            "energy_gain": 5,
+            "break_aoe": 40,
+            "break_per_bounce": 2,
+            "energy_cost": 360,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Deals Lightning DMG equal to {{scaling1}}% of Gilgamesh's ATK to all enemies, and additionally deals 10 instance(s) of DMG, with each instance dealing Lightning DMG equal to {{scaling2}}% of Gilgamesh's ATK to one random enemy.",
+            "scaling": {
+                "scaling1": [
+                    200,
+                    220,
+                    240,
+                    260,
+                    280,
+                    300,
+                    325,
+                    350,
+                    375,
+                    400,
+                    420,
+                    440
+                ],
+                "scaling2": [
+                    50,
+                    55,
+                    60,
+                    65,
+                    70,
+                    75,
+                    81.25,
+                    87.5,
+                    93.75,
+                    100,
+                    105,
+                    110
+                ]
+            }
+        },
+        "talent": [
+            {
+                "type": "Talent",
+                "name": "\"Amuse Me to the Fullest\"",
+                "tag": "Enhance",
+                "min_level": 1,
+                "max_level": 12,
+                "default_level": 10,
+                "description_template": "When a teammate uses their Ultimate, Gilgamesh gains \"King's Burden,\" which increases Ultimate DMG dealt by this unit by {{scaling1}}%, lasting for 3 turn(s). Initially, automatically uses Basic ATK at the start of this unit's turn. When another ally target takes action, Gilgamesh gains 1 point of \"Interest.\" For each point of \"Interest\" in possession, increases this unit's SPD by 10%. When \"Interest\" reaches 10 for the first time, enters the \"Interest Piqued!\" state. In that state, can only use Skill, lasting for the entire battle. After using Skill, clears this unit's \"Interest.\"",
+                "scaling": {
+                    "scaling1": [
+                        20,
+                        22,
+                        24,
+                        26,
+                        28,
+                        30,
+                        32.5,
+                        35,
+                        37.5,
+                        40,
+                        42,
+                        44
+                    ]
+                }
+            },
+            {
+                "type": "Talent",
+                "name": "\"I Grant You Permission To Strike\"",
+                "tag": "AoE",
+                "energy_gain": 10,
+                "break": 20,
+                "min_level": 1,
+                "max_level": 12,
+                "default_level": 10,
+                "description_template": "When Gilgamesh or Saber attacks, the attack tally increases by 1. After any unit attacks, if the attack tally reaches 8, Gilgamesh and Saber launch Joint  Follow-Up ATK, dealing Lightning DMG equal to {{scaling1}}% of Gilgamesh's ATK and Wind DMG equal to {{scaling2}}% of Saber's ATK to all enemies, respectively. Then, Gilgamesh gains 3 \"Interest.\" Saber regenerates a fixed 120 Energy, and the next time she uses Ultimate, the DMG dealt becomes {{scaling3}}% of the original DMG. After using Joint Follow-Up ATK, resets the attack tally.",
+                "scaling": {
+                    "scaling1": [
+                        200,
+                        220,
+                        240,
+                        260,
+                        280,
+                        300,
+                        325,
+                        350,
+                        375,
+                        400,
+                        420,
+                        440
+                    ],
+                    "scaling2": [
+                        300,
+                        330,
+                        360,
+                        390,
+                        420,
+                        450,
+                        487.5,
+                        525,
+                        562.5,
+                        600,
+                        630,
+                        660
+                    ],
+                    "scaling3": [
+                        120,
+                        128,
+                        136,
+                        144,
+                        152,
+                        160,
+                        170,
+                        180,
+                        190,
+                        200,
+                        208,
+                        216
+                    ]
+                }
+            }
+        ],
+        "technique": {
+            "type": "Technique",
+            "name": "Enkidu",
+            "tag": "Impair",
+            "description": "After using Technique, creates 1 Special Dimension lasting for 10 second(s). Enemies in the Special Dimension enter the \"King's Permission\" state. Enemies in the \"King's Permission\" state will cease all actions. When entering combat by actively attacking an enemy in the \"King's Permission\" state, causes all enemies in the \"King's Permission\" state to enter combat, and deals Lightning DMG equal to 200% of Gilgamesh's ATK to all enemies after entering combat. Gilgamesh also immediately gains 3 \"Interest.\" Only 1 Dimension Effect created by allies can exist at the same time."
+        }
+    },
+    "major_traces": {
+        "2": {
+            "name": "Epic's Opening",
+            "description": "When Gilgamesh uses Ultimate, gains 2 \"Interest.\" When other ally characters use Ultimate, Gilgamesh additionally gains 2 \"Interest\" and regenerates a fixed amount of Energy equal to 30% of the Energy consumed this time."
+        },
+        "4": {
+            "name": "Hero's Hauteur",
+            "description": "During the current battle, for every 1 point of \"Interest\" gained by Gilgamesh, increases his CRIT DMG by 25%. This effect can stack up to 6 time(s)."
+        },
+        "6": {
+            "name": "Hegemon's Strife",
+            "description": "While Gilgamesh is on the field, increases all ally targets' ATK by 20% and CRIT DMG by 20%. If the target's Max Energy exceeds 140, for every 1 excess point of Max Energy, additionally increases ATK and CRIT DMG by 1%, up to a maximum additional increase of 100%."
+        }
+    },
+    "stat_bonuses": [
+        {
+            "stat": "ATK",
+            "value": "+18%"
+        },
+        {
+            "stat": "CRIT Rate",
+            "value": "+18.7%"
+        },
+        {
+            "stat": "Lightning DMG Boost",
+            "value": "+8%"
+        }
+    ],
+    "eidolons": [
+        {
+            "level": 1,
+            "name": "He Who Saw the Deep",
+            "description": "When Gilgamesh holds \"King's Acknowledgement,\" its DEF-ignoring effect also applies to other teammates, and \"King's Acknowledgement\" additionally increases Gilgamesh's ATK by 60%. When using Skill, additionally regenerates a fixed 40 Energy."
+        },
+        {
+            "level": 2,
+            "name": "Wisdom That Encompassed All",
+            "description": "When entering combat, Gilgamesh gains 5 \"Interest.\" When using Ultimate, additionally gains 5 \"Interest.\" The DMG multiplier of the Skill \"Gate of Babylon\" against the primary target increases by 100%, and its DMG multiplier against adjacent targets increases by 50%."
+        },
+        {
+            "level": 3,
+            "name": "Journey That Spanned Far",
+            "description": "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+        },
+        {
+            "level": 4,
+            "name": "King Who Bowed to None",
+            "description": "Gilgamesh's Energy Regeneration Rate increases by 20%."
+        },
+        {
+            "level": 5,
+            "name": "Sword That Parted Gods from Man",
+            "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+        },
+        {
+            "level": 6,
+            "name": "Soul That Bore Friendship",
+            "description": "Increases the bounce DMG multiplier of the Ultimate \"Enuma Elish\" by 80%. While Gilgamesh is on the field, increases ally characters' All-Type RES PEN by 20%. When a teammate uses Ultimate, Gilgamesh gains 1 point of \"Golden Rule,\" up to a total of 3 points. When this unit uses Ultimate, consumes all \"Golden Rule\" points, and each point of \"Golden Rule\" consumed increases the CRIT DMG for the Ultimate DMG dealt by 100%."
+        }
+    ]
+}
