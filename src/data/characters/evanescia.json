@@ -158,7 +158,7 @@
         "default_level": 10,
         "description_template": "Deals {{scaling1}}% Physical Elation DMG to all enemies and additionally gains 5 point(s) of \"Certified Banger\".",
         "scaling": {
-          "scaling": [
+          "scaling1": [
             55,
             60.5,
             66,

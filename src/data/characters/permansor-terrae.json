@@ -88,7 +88,7 @@
         },
         "4": {
             "name": "Sylvanity",
-            "description": "When combat starts, Dan Heng • Permansor Terrae advances action|Action Advanced by 40%. When the \"Bondmate\" uses an attack, Dan Heng • Permansor Terrae regenerates 6 Energy and \"Souldragon\" advances action|Action Advanced by 15%."
+            "description": "When combat starts, Dan Heng • Permansor Terrae advances action by 40%. When the \"Bondmate\" uses an attack, Dan Heng • Permansor Terrae regenerates 6 Energy and \"Souldragon\" advances action by 15%."
         },
         "6": {
             "name": "Sublimity",
@@ -118,7 +118,7 @@
         {
             "level": 2,
             "name": "Watch Trails to Blaze",
-            "description": "Additionally increases the number of actions for the enhanced Souldragon from Ultimate by 2. After Dan Heng • Permansor Terrae uses Ultimate, Souldragon advances action|Action Advanced by 100%. When the enhanced \"Souldragon\" takes action, the Additional DMG dealt by the \"Bondmate\" becomes 200% of its original DMG, and the Shield Effect provided in this instance becomes 200% of its original Shield Effect."
+            "description": "Additionally increases the number of actions for the enhanced Souldragon from Ultimate by 2. After Dan Heng • Permansor Terrae uses Ultimate, Souldragon advances action by 100%. When the enhanced \"Souldragon\" takes action, the Additional DMG dealt by the \"Bondmate\" becomes 200% of its original DMG, and the Shield Effect provided in this instance becomes 200% of its original Shield Effect."
         },
         {
             "level": 3,
