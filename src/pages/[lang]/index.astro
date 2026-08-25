@@ -37,7 +37,11 @@ const latestChangelogLabel = latestChangelogEntry
         <meta name="generator" content={Astro.generator} />
         <title>HSR Builds</title>
     </head>
-    <body data-element="base">
+    <body
+        data-element="base"
+        class="browser-background"
+        style={`--browser-background-image: url("${sitePath('public/browser-bg.png')}")`}
+    >
         <Header locale={locale} lang={lang} />
         <main class="home-page">
             <h1>HSR Builds</h1>

@@ -16,57 +16,42 @@ import { getLightConeBrowserData } from '../../utils/light-cone-browser';
 export const getStaticPaths = getLanguageStaticPaths;
 
 const lang = Array.isArray(Astro.params.lang)
-  ? Astro.params.lang[0]
-  : Astro.params.lang;
+    ? Astro.params.lang[0]
+    : Astro.params.lang;
 
 const data = getLightConeBrowserData(lang ?? 'en');
 
 const { locale } = data;
 
-const title =
-  t(locale, 'ui', 'Light Cones', undefined, false) ||
-  'Light Cones';
+const title = t(locale, 'ui', 'Light Cones', undefined, false) || 'Light Cones';
 ---
 
 <html lang={data.lang}>
-  <head>
-    <meta charset="utf-8" />
+    <head>
+        <meta charset="utf-8" />
 
-    <link
-      rel="icon"
-      type="image/webp"
-      href={sitePath('favicon.webp')}
-    />
+        <link rel="icon" type="image/webp" href={sitePath('favicon.webp')} />
 
-    <meta
-      name="viewport"
-      content="width=device-width"
-    />
+        <meta name="viewport" content="width=device-width" />
 
-    <meta
-      name="generator"
-      content={Astro.generator}
-    />
+        <meta name="generator" content={Astro.generator} />
 
-    <title>{title} - Star Rail Builds</title>
-  </head>
+        <title>{title} - Star Rail Builds</title>
+    </head>
 
-  <body data-element="base">
-    <Header
-      locale={locale}
-      lang={data.lang}
-      page="light-cones"
-    />
+    <body
+        data-element="base"
+        class="browser-background"
+        style={`--browser-background-image: url("${sitePath('public/browser-bg.png')}")`}
+    >
+        <Header locale={locale} lang={data.lang} page="light-cones" />
 
-    <main class="weapon-page">
-      <h1>{title}</h1>
+        <main class="weapon-page">
+            <h1>{title}</h1>
 
-      <LightConeBrowser
-        data={data}
-        locale={locale}
-      />
-    </main>
+            <LightConeBrowser data={data} locale={locale} />
+        </main>
 
-    <Footer lang={data.lang} />
-  </body>
+        <Footer lang={data.lang} />
+    </body>
 </html>
