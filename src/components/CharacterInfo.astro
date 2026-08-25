@@ -337,6 +337,14 @@ const renderVariantDescription = (
                                                 </strong>
                                             </span>
                                         )}
+                                        {ability.break_bounce !== undefined && (
+                                            <span>
+                                                Break (Per Bounce):{' '}
+                                                <strong>
+                                                    {ability.break_bounce}
+                                                </strong>
+                                            </span>
+                                        )}
 
                                         {ability.break_aoe !== undefined && (
                                             <span>
@@ -554,6 +562,18 @@ const renderVariantDescription = (
                                                                     <strong>
                                                                         {
                                                                             variant.break_adjacent
+                                                                        }
+                                                                    </strong>
+                                                                </span>
+                                                            )}
+                                                            {variant.break_bounce !==
+                                                                undefined && (
+                                                                <span>
+                                                                    Break (Per
+                                                                    Bounce):{' '}
+                                                                    <strong>
+                                                                        {
+                                                                            variant.break_bounce
                                                                         }
                                                                     </strong>
                                                                 </span>

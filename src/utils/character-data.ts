@@ -17,6 +17,7 @@ export type CharacterAbilityVariant = {
     break?: number | string;
     break_main?: number | string;
     break_adjacent?: number | string;
+    break_bounce?: number | string;
     break_aoe?: number | string;
 
     description?: string;
@@ -43,6 +44,7 @@ export type CharacterAbility = {
     break?: number | string;
     break_main?: number | string;
     break_adjacent?: number | string;
+    break_bounce?: number | string;
     break_aoe?: number | string;
 
     description?: string;
