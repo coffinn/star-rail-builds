@@ -9,134 +9,75 @@ type RenderedNote = {
     note: string;
 };
 
-type NoteGroup = {
-    headingId?: string;
-    items: RenderedNote[];
-};
+const itemNotes: RenderedNote[] = [
+    ...(notes.lightCones?.items ?? []),
 
-type NoteSection = {
-    headingId: string;
-    global: string[];
-    groups: NoteGroup[];
-};
+    ...(notes.relics?.sets ?? []),
+    ...(notes.relics?.mainstats ?? []),
+    ...(notes.relics?.substats ?? []),
 
-const hasNoteContent = (section: NoteSection) =>
-    section.global.length +
-        section.groups.reduce((total, group) => total + group.items.length, 0) >
-    0;
+    ...(notes.recommendedStats?.items ?? []),
 
-const noteSections: NoteSection[] = [
-    {
-        headingId: 'Regarding Light Cone Choices:',
+    ...(notes.traces?.items ?? []),
+];
 
-        global: notes.lightCones.global,
+const globalNotes: string[] = [
+    ...(notes.lightCones?.global ?? []),
+    ...(notes.relics?.global ?? []),
+    ...(notes.recommendedStats?.global ?? []),
+    ...(notes.traces?.global ?? []),
+];
 
-        groups: [
-            {
-                items: notes.lightCones.items,
-            },
-        ],
-    },
-
-    {
-        headingId: 'Regarding Relics Choices:',
-
-        global: notes.relics.global,
-
-        groups: [
-            {
-                headingId: 'Sets',
-                items: notes.relics.sets,
-            },
-
-            {
-                headingId: 'Main Stats',
-
-                items: notes.relics.mainstats,
-            },
-
-            {
-                headingId: 'Substats',
-
-                items: notes.relics.substats,
-            },
-        ],
-    },
-
-    {
-        headingId: 'Regarding Traces Choices:',
-
-        global: notes.traces.global,
-
-        groups: [
-            {
-                items: notes.traces.items,
-            },
-        ],
-    },
-    {
-        headingId: 'Regarding Recommended Stats:',
-
-        global: notes.recommendedStats?.global ?? [],
-
-        groups: [
-            {
-                items: notes.recommendedStats?.items ?? [],
-            },
-        ],
-    },
-].filter(hasNoteContent);
-
-const hasNotes = noteSections.length > 0;
+const hasNotes =
+    itemNotes.length > 0 ||
+    globalNotes.length > 0 ||
+    buildNote?.notes?.length > 0;
 ---
 
 {
-    (hasNotes || buildNote?.notes?.length > 0) && (
+    hasNotes && (
         <div class="card notes-card">
             <h2>{t(locale, 'ui', 'Notes')}</h2>
 
             <div class="notes-content">
-                {buildNote && (
-                    <div class="notes-block">
-                        {buildNote.notes?.length > 0 && (
+                {
+                    buildNote?.notes?.length > 0 && (
+                        <div class="notes-block">
                             <div class="build-note-list">
                                 {buildNote.notes.map((note: string) => (
                                     <div set:html={note} />
                                 ))}
                             </div>
-                        )}
-                    </div>
-                )}
+                        </div>
+                    )
+                }
 
-                {noteSections.map((section) => (
-                    <section class="notes-section">
-                        <h3>{t(locale, 'ui', section.headingId)}</h3>
-
-                        {section.global.map((note) => (
-                            <p set:html={note} />
-                        ))}
-
-                        {section.groups
-                            .filter((group) => group.items.length > 0)
-                            .map((group) => (
-                                <div class="note-group">
-                                    {group.headingId && (
-                                        <h4>
-                                            {t(locale, 'ui', group.headingId)}
-                                        </h4>
-                                    )}
-
-                                    {group.items.map((note) => (
-                                        <div
-                                            id={note.id}
-                                            class="note-target"
-                                            set:html={`<span class="element-bold">${note.name}:</span> ${note.note}`}
-                                        />
-                                    ))}
-                                </div>
+                {
+                    globalNotes.length > 0 && (
+                        <div class="notes-global-list">
+                            {globalNotes.map((note) => (
+                                <div
+                                    class="note-global"
+                                    set:html={note}
+                                />
                             ))}
-                    </section>
-                ))}
+                        </div>
+                    )
+                }
+
+                {
+                    itemNotes.length > 0 && (
+                        <div class="note-list">
+                            {itemNotes.map((note) => (
+                                <div
+                                    id={note.id}
+                                    class="note-target"
+                                    set:html={`<span class="element-bold">${note.name}:</span> ${note.note}`}
+                                />
+                            ))}
+                        </div>
+                    )
+                }
             </div>
         </div>
     )

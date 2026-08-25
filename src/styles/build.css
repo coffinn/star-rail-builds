@@ -930,33 +930,22 @@
 }
 
 .notes-block,
-.notes-section,
-.note-group,
-.build-note-list {
+.build-note-list,
+.notes-global-list,
+.note-list {
     display: grid;
     gap: 7px;
 }
 
-.notes-section {
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-    padding-top: 10px;
+.note-global {
+    border: 1px solid rgba(124, 85, 85, 0.08);
+    border-radius: 8px;
+    padding: 6px 8px;
+    background: rgba(255, 255, 255, 0.04);
 }
 
-.notes-content>.notes-section:first-child,
-.notes-block+.notes-section {
-    border-top: 0;
-    padding-top: 0;
-}
-
-.notes-section p {
-    margin: 10px 0;
-}
-
-.notes-section h4 {
-    margin: 2px 0 0;
-    color: var(--accent);
-    font-size: 0.82rem;
-    font-weight: 850;
+.note-list {
+    gap: 7px;
 }
 
 .build-note-list,
