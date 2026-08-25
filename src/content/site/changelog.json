@@ -4,6 +4,16 @@
             "version": "Site Conversion",
             "entries": [
                 {
+                    "date": "August 25, 2026",
+                    "changes": "Changed background, character icon background, nameplate bar, and notes display",
+                    "appliedBy": "Navigator Team"
+                },
+                {
+                    "date": "August 24, 2026",
+                    "changes": "Data population complete, begin with build guide population",
+                    "appliedBy": "Navigator Team"
+                },
+                {
                     "date": "August 22, 2026",
                     "changes": "Continued data population, modified filter bar to be more user friendly",
                     "appliedBy": "Navigator Team"
