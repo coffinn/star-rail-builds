@@ -12,7 +12,7 @@
             "en": "Increases ATK by 12%."
         },
         "4p": {
-            "en": "When the wearer enters combat or uses Skill, the DMG dealt by their Skill and Ultimate increases by 18%, stacking up to 3 times. At the start of the wearer's turn or after using Ultimate, removes 1 stack of this effec"
+            "en": "When the wearer enters combat or uses Skill, the DMG dealt by their Skill and Ultimate increases by 18%, stacking up to 3 times. At the start of the wearer's turn or after using Ultimate, removes 1 stack of this effect."
         }
     },
     "band-of-sizzling-thunder": {
@@ -366,10 +366,10 @@
             "atk"
         ],
         "2p": {
-            "en": "Increases the DMG dealt by follow-up attacks by 20%."
+            "en": "Increases the DMG dealt by Follow-Up ATK by 20%."
         },
         "4p": {
-            "en": "When the wearer uses follow-up attacks, increases the wearer's ATK by 6% for every time the follow-up attack deals DMG. This effect can stack up to 8 time(s) and lasts for 3 turn(s). This effect is removed the next time the wearer uses a follow-up attack."
+            "en": "When the wearer uses Follow-Up ATK, increases the wearer's ATK by 6% for every time the Follow-Up ATK deals DMG. This effect can stack up to 8 time(s) and lasts for 3 turn(s). This effect is removed the next time the wearer uses a Follow-Up ATK."
         }
     },
     "the-wind-soaring-valorous": {
@@ -386,7 +386,7 @@
             "en": "Increases ATK by 12%."
         },
         "4p": {
-            "en": "Increases the wearer's CRIT Rate by 6%. When the wearer uses a follow-up attack, increases the DMG dealt by Ultimate by 36%, lasting for 1 turn(s)."
+            "en": "Increases the wearer's CRIT Rate by 6%. When the wearer uses a Follow-Up ATK, increases the DMG dealt by Ultimate by 36%, lasting for 1 turn(s)."
         }
     },
     "thief-of-shooting-meteor": {
@@ -613,7 +613,7 @@
             "crit-dmg"
         ],
         "2p": {
-            "en": "When an ally uses follow-up attacks, the wearer gains 1 stack of Merit, stacking up to 5 time(s). Each stack of Merit increases the DMG dealt by the wearer's follow-up attacks by 5%. When there are 5 stacks, additionally increases the wearer's CRIT DMG by 25%."
+            "en": "When an ally uses Follow-Up ATKs, the wearer gains 1 stack of Merit, stacking up to 5 time(s). Each stack of Merit increases the DMG dealt by the wearer's Follow-Up ATKs by 5%. When there are 5 stacks, additionally increases the wearer's CRIT DMG by 25%."
         }
     },
     "fallen-star-anchorage": {
@@ -686,7 +686,7 @@
             "crit-rate"
         ],
         "2p": {
-            "en": "Increases the wearer's CRIT Rate by 8%. When the wearer's current CRIT Rate reaches 50% or higher, the wearer's Ultimate and follow-up attack DMG increases by 15%."
+            "en": "Increases the wearer's CRIT Rate by 8%. When the wearer's current CRIT Rate reaches 50% or higher, the wearer's Ultimate and Follow-Up ATK DMG increases by 15%."
         }
     },
     "izumo-gensei-and-takama-divine-realm": {
