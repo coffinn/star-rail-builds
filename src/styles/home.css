@@ -629,7 +629,7 @@
 
     gap: 3px;
 
-    border-top: 1px solid var(--roster-rarity);
+    border-top: 3px solid var(--roster-rarity);
 
     padding: 8px;
 
@@ -1248,4 +1248,39 @@
         }
     }
 
+    /* =========================================
+   Nameplate bar colors by element
+   ========================================= */
+
+    .roster-character {
+        --roster-nameplate: #ffffff;
+    }
+
+    .roster-character[data-element='physical'] {
+        --roster-nameplate: #d8d8d8;
+    }
+
+    .roster-character[data-element='fire'] {
+        --roster-nameplate: #ff6b5c;
+    }
+
+    .roster-character[data-element='ice'] {
+        --roster-nameplate: #7ddcff;
+    }
+
+    .roster-character[data-element='lightning'] {
+        --roster-nameplate: #c58cff;
+    }
+
+    .roster-character[data-element='wind'] {
+        --roster-nameplate: #68d9aa;
+    }
+
+    .roster-character[data-element='quantum'] {
+        --roster-nameplate: #7d7cff;
+    }
+
+    .roster-character[data-element='imaginary'] {
+        --roster-nameplate: #f2d36b;
+    }
 }
