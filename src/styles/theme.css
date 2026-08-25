@@ -1,5 +1,5 @@
 :root {
-    --bg: #153434;
+    --bg: #1a1a36;
     --text: hsla(0, 0%, 100%, 0.85);
     --accent: rgb(255, 215, 128);
     --element: #30d8a0;
@@ -48,6 +48,37 @@ body[data-element="imaginary"] {
 }
 
 body[data-element="base"] {
-    --bg: #153434;
-    --element: #30d8a0;
+    --bg: #1a1a36;
+
+    background:
+        radial-gradient(circle at 20% 0%,
+            rgba(120, 115, 210, 0.18),
+            transparent 38%),
+        linear-gradient(180deg,
+            #2a2a54 0%,
+            #222247 42%,
+            #1a1a36 72%,
+            #17172f 100%);
+}
+
+/* 5★ */
+.roster-character[data-rarity="5"] .roster-character-image {
+    background:
+        radial-gradient(circle at 50% 15%,
+            rgba(255, 220, 145, 0.22),
+            transparent 45%),
+        linear-gradient(180deg,
+            #665037 0%,
+            #403529 100%);
+}
+
+/* 4★ */
+.roster-character[data-rarity="4"] .roster-character-image {
+    background:
+        radial-gradient(circle at 50% 15%,
+            rgba(190, 160, 255, 0.2),
+            transparent 45%),
+        linear-gradient(180deg,
+            #59457d 0%,
+            #382e55 100%);
 }
