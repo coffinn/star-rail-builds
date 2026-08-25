@@ -1,0 +1,328 @@
+{
+    "id": "feixiao",
+    "name": "Feixiao",
+    "rarity": "5",
+    "element": "wind",
+    "path": "hunt",
+    "version_released": "2.5",
+    "max_energy": 6,
+    "level_80_stats": {
+        "hp": 1047,
+        "atk": 601,
+        "def": 388,
+        "spd": 112
+    },
+    "abilities": {
+        "basic": {
+            "type": "Basic ATK",
+            "name": "Boltsunder",
+            "tag": "Single Target",
+            "energy_gain": 0,
+            "break": 0,
+            "min_level": 1,
+            "max_level": 7,
+            "default_level": 6,
+            "description_template": "Deals Wind DMG equal to {{scaling1}}% of Feixiao's ATK to a single target enemy.",
+            "scaling": {
+                "scaling1": [
+                    50,
+                    60,
+                    70,
+                    80,
+                    90,
+                    100,
+                    110
+                ]
+            }
+        },
+        "skill": {
+            "type": "Skill",
+            "name": "Waraxe",
+            "tag": "Single Target",
+            "energy_gain": 0,
+            "break": 20,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Deals Wind DMG equal to {{scaling1}}% of Feixiao's ATK to a single target enemy. Then, immediately launches 1 extra instance of Talent's Follow-Up ATK against the target.",
+            "scaling": {
+                "scaling1": [
+                    100,
+                    110,
+                    120,
+                    130,
+                    140,
+                    150,
+                    162.5,
+                    175,
+                    187.5,
+                    200,
+                    210,
+                    220,
+                    230,
+                    240,
+                    250
+                ]
+            }
+        },
+        "ultimate": {
+            "type": "Ultimate",
+            "name": "Terrasplit",
+            "tag": "Single Target",
+            "energy_gain": 0,
+            "break": 30,
+            "energy_cost": 6,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Deals Wind DMG to a single target enemy, up to {{scaling1}}% of Feixiao's ATK. During this time, can ignore Weakness Type to reduce the target's Toughness. When the target is not Weakness Broken, Feixiao's Weakness Break Efficiency increases by 100%. During the attack, Feixiao first launches \"Boltsunder Blitz\" or \"Waraxe Skyward\" on the target, for a total of 6 time(s). At the end, deals Wind DMG equal to {{scaling2}}% of Feixiao's ATK to the target.",
+            "scaling": {
+                "scaling1": [
+                    96,
+                    102.4,
+                    108.8,
+                    115.2,
+                    121.6,
+                    128,
+                    136,
+                    144,
+                    152,
+                    160,
+                    166.4,
+                    172.8,
+                    179.2,
+                    185.6,
+                    192
+                ],
+                "scaling2": [
+                    402,
+                    431.8,
+                    461.6,
+                    491.4,
+                    521.2,
+                    551,
+                    588.25,
+                    625.5,
+                    662.75,
+                    700,
+                    729.8,
+                    759.6,
+                    789.4,
+                    819.2,
+                    849
+                ]
+            },
+            "variants": [
+                {
+                    "type": "Ultimate",
+                    "name": "Waraxe Skyward",
+                    "tag": "Single Target",
+                    "energy_gain": 0,
+                    "break": 5,
+                    "energy_cost": "",
+                    "min_level": 1,
+                    "max_level": 12,
+                    "default_level": 10,
+                    "description_template": "Deals Wind DMG equal to {{scaling1}}% of Feixiao's ATK to the chosen target. If the target is not Weakness Broken, the DMG multiplier increases by {{scaling2}}%.",
+                    "scaling": {
+                        "scaling1": [
+                            36,
+                            38.4,
+                            40.8,
+                            43.2,
+                            45.6,
+                            48,
+                            51,
+                            54,
+                            57,
+                            60,
+                            62.4,
+                            64.8,
+                            67.2,
+                            69.6,
+                            72
+                        ],
+                        "scaling2": [
+                            15,
+                            16.5,
+                            18,
+                            19.5,
+                            21,
+                            22.5,
+                            24.375,
+                            26.25,
+                            28.125,
+                            30,
+                            31.5,
+                            33,
+                            34.5,
+                            36,
+                            37.5
+                        ]
+                    }
+                },
+                {
+                    "type": "Ultimate",
+                    "name": "Boltsunder Blitz",
+                    "tag": "Single Target",
+                    "energy_gain": 0,
+                    "break": 5,
+                    "energy_cost": "",
+                    "min_level": 1,
+                    "max_level": 12,
+                    "default_level": 10,
+                    "description_template": "Deals Wind DMG equal to {{scaling1}}% of Feixiao's ATK to the chosen target. If the target is Weakness Broken, the DMG multiplier increases by {{scaling2}}%.",
+                    "scaling": {
+                        "scaling1": [
+                            36,
+                            38.4,
+                            40.8,
+                            43.2,
+                            45.6,
+                            48,
+                            51,
+                            54,
+                            57,
+                            60,
+                            62.4,
+                            64.8,
+                            67.2,
+                            69.6,
+                            72
+                        ],
+                        "scaling2": [
+                            15,
+                            16.5,
+                            18,
+                            19.5,
+                            21,
+                            22.5,
+                            24.375,
+                            26.25,
+                            28.125,
+                            30,
+                            31.5,
+                            33,
+                            34.5,
+                            36,
+                            37.5
+                        ]
+                    }
+                }
+            ]
+        },
+        "talent": {
+            "type": "Talent",
+            "name": "Thunderhunt",
+            "tag": "Single Target",
+            "energy_gain": 0,
+            "break": 5,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Can activate Ultimate when \"Flying Aureus\" reaches 6 points, accumulating up to 12 points. Feixiao gains 1 point of \"Flying Aureus\" for every 2 attacks by ally targets. Feixiao's Ultimate attacks do not count towards this number. After Feixiao's teammates attack an Enemy target, Feixiao immediately launches Follow-Up ATK against the primary target, dealing Wind DMG equal to {{scaling}}% of Feixiao's ATK. If there is no primary target available to attack, Feixiao attacks a single random enemy instead. This effect can only trigger once per turn and the trigger count resets at the start of Feixiao's turn. When using this attack, increases DMG dealt by this unit by {{scaling}}%, lasting for 2 turn(s).",
+            "scaling": {
+                "scaling1": [
+                    55,
+                    60.5,
+                    66,
+                    71.5,
+                    77,
+                    82.5,
+                    89.375,
+                    96.25,
+                    103.125,
+                    110,
+                    115.5,
+                    121,
+                    126.5,
+                    132,
+                    137.5
+                ],
+                "scaling2": [
+                    30,
+                    33,
+                    36,
+                    39,
+                    42,
+                    45,
+                    48.75,
+                    52.5,
+                    56.25,
+                    60,
+                    63,
+                    66,
+                    69,
+                    72,
+                    75
+                ]
+            }
+        },
+        "technique": {
+            "type": "Technique",
+            "name": "Stormborn",
+            "tag": "Enhance",
+            "description": "After using Technique, enters the \"Onrush\" state, lasting for 20 seconds. While in \"Onrush,\" pulls in enemies within a certain range, and increases this unit's movement speed by 50%. After entering battle, gains 1 point(s) of \"Flying Aureus.\" While in \"Onrush,\" actively attacking will start battle with all pulled enemies. After entering battle, deals Wind DMG equal to 200% of Feixiao's ATK to all enemies at the start of each wave. This DMG is guaranteed to CRIT. If more than 1 enemy is pulled in, increases the multiplier of this DMG by 100% for each additional enemy pulled in, up to a maximum of 1000%."
+        }
+    },
+    "major_traces": {
+        "2": {
+            "name": "Heavenpath",
+            "description": "When the battle starts, gains 3 point(s) of \"Flying Aureus.\" At the start of a turn, if no Follow-Up ATK was launched via Talent in the previous turn, then this counts as 1 toward the number of attacks required to gain \"Flying Aureus.\""
+        },
+        "4": {
+            "name": "Formshift",
+            "description": "When using Ultimate to deal DMG to an enemy target, it is considered as a Follow-Up ATK. Follow-Up ATKs' CRIT DMG increases by 36%."
+        },
+        "6": {
+            "name": "Boltcatch",
+            "description": "When using Skill, increases ATK by 48%, lasting for 3 turn(s)."
+        }
+    },
+    "stat_bonuses": [
+        {
+            "stat": "ATK",
+            "value": "+28%"
+        },
+        {
+            "stat": "CRIT Rate",
+            "value": "+12%"
+        },
+        {
+            "stat": "DEF",
+            "value": "+12.5%"
+        }
+    ],
+    "eidolons": [
+        {
+            "level": 1,
+            "name": "Skyward I Quell",
+            "description": "After launching \"Boltsunder Blitz\" or \"Waraxe Skyward,\" additionally increases the Ultimate DMG dealt by Feixiao by an amount equal to 10% of the original DMG, stacking up to 5 time(s) and lasting until the end of the Ultimate action."
+        },
+        {
+            "level": 2,
+            "name": "Moonward I Wish",
+            "description": "In the Talent's effect, for every 1 instance of Follow-up ATK launched by ally targets, Feixiao gains 1 point of \"Flying Aureus.\" This effect can trigger up to 6 time(s) per turn."
+        },
+        {
+            "level": 3,
+            "name": "Starward I Bode",
+            "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+        },
+        {
+            "level": 4,
+            "name": "Stormward I Hear",
+            "description": "The Toughness Reduction from the Talent's Follow-up ATK increases by 100% and, when launched, increases this unit's SPD by 8%, lasting for 2 turn(s)."
+        },
+        {
+            "level": 5,
+            "name": "Heavenward I Leap",
+            "description": "Skill Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+        },
+        {
+            "level": 6,
+            "name": "Homeward I Near",
+            "description": "Increases the All-Type RES PEN of Ultimate DMG dealt by Feixiao by 20%. Talent's Follow-up ATK DMG is considered as Ultimate DMG at the same time, and its DMG multiplier increases by 140%."
+        }
+    ]
+}
