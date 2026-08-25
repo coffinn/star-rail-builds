@@ -1,0 +1,144 @@
+{
+    "id": "permansor-terrae",
+    "name": "Dan Heng • Permansor Terrae",
+    "rarity": "5",
+    "element": "physical",
+    "path": "preservation",
+    "version_released": "3.6",
+    "max_energy": 135,
+    "level_80_stats": {
+        "hp": 1047,
+        "atk": 582,
+        "def": 776,
+        "spd": 97
+    },
+    "abilities": {
+        "basic": {
+            "type": "Basic ATK",
+            "name": "Aegis Vitae",
+            "tag": "Single Target",
+            "energy_gain": 20,
+            "break": 10,
+            "min_level": 1,
+            "max_level": 7,
+            "default_level": 6,
+            "description_template": "Deals Physical DMG equal to {{scaling1}}% of Dan Heng • Permansor Terrae's ATK to one designated enemy.",
+            "scaling": {
+                "scaling1": [50, 60, 70, 80, 90, 100, 110, 120, 130, 140]
+            }
+        },
+        "skill": {
+            "type": "Skill",
+            "name": "Terra Omnibus",
+            "tag": "Defense",
+            "energy_gain": 30,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Designates one ally character as the \"Bondmate\" and provides all allies with a Shield that can offset DMG equal to {{scaling1}}% of Dan Heng • Permansor Terrae's ATK plus {{scaling2}} for 3 turn(s). When repeatedly receiving Dan Heng • Permansor Terrae's Shield, can stack the Shield Effect, but it will not exceed 300% of the current Shield provided by Skill. \"Bondmate\" only applies to the most recent target of Dan Heng • Permansor Terrae's Skill.",
+            "scaling": {
+                "scaling1": [14, 14.75, 15.5, 16.25, 17, 17.6, 18.2, 18.8, 19.4, 20, 20.6, 21.2, 21.8, 22.4, 23],
+                "scaling2": [100, 160, 205, 250, 280, 310, 332, 355, 377.5, 400, 422.5, 445, 467.5, 490, 512.5]
+            }
+        },
+        "talent": {
+            "type": "Talent",
+            "name": "Of Virtue, Forms Unfold",
+            "tag": "Defense",
+            "break_aoe": 20,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "When an ally character becomes the \"Bondmate,\" Dan Heng • Permansor Terrae summons \"Souldragon\" for them, which has an initial SPD of 165. When \"Souldragon\" takes action, dispels 1 debuff(s) from all allies and provides a Shield that can offset DMG equal to {{scaling1}}% of Dan Heng • Permansor Terrae's ATK plus {{scaling2}} for 3 turn(s). The Shield Effect provided by Dan Heng • Permansor Terrae and \"Souldragon\" can be stacked, but it will not exceed 300% of the Shield provided by Dan Heng • Permansor Terrae's Skill. When Dan Heng • Permansor Terrae or the \"Bondmate\" is knocked down, \"Souldragon\" disappears.",
+            "scaling": {
+                "scaling1": [7, 7.38, 7.75, 8.13, 8.5, 8.8, 9.1, 9.4, 9.7, 10, 10.3, 10.6, 10.9, 11.2, 11.5],
+                "scaling2": [50, 80, 102.5, 125, 140, 155, 166.25, 177.5, 188.75, 200, 211.25, 222.5, 233.75, 245, 256.25]
+            }
+        },
+        "technique": {
+            "type": "Technique",
+            "name": "Earthrend",
+            "tag": "Impair",
+            "description": "After using Technique, gains \"Bondmate\" and inflict Daze on enemies within a certain area for 10 second(s). Dazed enemies will not actively attack ally targets. When switching the active character, \"Bondmate\" transfers to the current active character. At the start of the next battle, automatically uses Skill 1 time on the character with \"Bondmate\" without consuming any Skill Points."
+        },
+        "ultimate": {
+            "type": "Ultimate",
+            "name": "A Dragon's Zenith Knows No Rue",
+            "tag": "AoE",
+            "energy_gain": 5,
+            "break_aoe": 20,
+            "energy_cost": 135,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Deals Physical DMG equal to {{scaling1}}% of Dan Heng • Permansor Terrae's ATK to all enemies, and provides a Shield to all allies that can offset DMG equal to {{scaling3}}% of Dan Heng • Permansor Terrae's ATK plus {{scaling4}}, lasting for 3 turn(s). When repeatedly receiving Dan Heng • Permansor Terrae's Shield, can stack the Shield Effect, but it will not exceed 300% of the current Shield provided by Skill. \"Souldragon\" becomes enhanced. When \"Souldragon\" takes action, launches Follow-Up ATK, dealing Physical DMG to all enemies equal to {{scaling2}}% of Dan Heng • Permansor Terrae's ATK and Additional DMG of the Bondmate's Type to all enemies equal to {{scaling5}}% of the Bondmate's ATK. The enhancement lasts for 2 \"Souldragon\" action(s).",
+            "scaling": {
+                "scaling1": [150, 165, 180, 195, 210, 225, 243.75, 262.5, 281.25, 300, 315, 330, 345, 360, 375],
+                "scaling2": [40, 44, 48, 52, 56, 60, 65, 70, 75, 80, 84, 88, 92, 96, 100],
+                "scaling3": [14, 14.75, 15.5, 16.25, 17, 17.6, 18.2, 18.8, 19.4, 20, 20.6, 21.2, 21.8, 22.4, 23],
+                "scaling4": [100, 160, 205, 250, 280, 310, 332.5, 355, 377.5, 400, 422.5, 445, 467.5, 490, 512.5],
+                "scaling5": [40, 44, 48, 52, 56, 60, 65, 70, 75, 80, 84, 88, 92, 96, 100]
+            }
+        }
+    },
+    "major_traces": {
+        "2": {
+            "name": "Empyreanity",
+            "description": "When using Skill, increases ATK for the target who has become \"Bondmate\" by an amount equal to 15% of Dan Heng • Permansor Terrae's ATK."
+        },
+        "4": {
+            "name": "Sylvanity",
+            "description": "When combat starts, Dan Heng • Permansor Terrae advances action|Action Advanced by 40%. When the \"Bondmate\" uses an attack, Dan Heng • Permansor Terrae regenerates 6 Energy and \"Souldragon\" advances action|Action Advanced by 15%."
+        },
+        "6": {
+            "name": "Sublimity",
+            "description": "When \"Souldragon\" takes action, additionally provides a Shield that can offset DMG equal to 5% of Dan Heng • Permansor Terrae's ATK plus 100 to the ally target whose current Shield Effect is the lowest. When repeatedly receiving Dan Heng • Permansor Terrae's Shield, can stack the Shield Effect, but it will not exceed 300% of the current Shield provided by Skill. When the enhanced \"Souldragon\" takes action, additionally deals 1 instance of Additional DMG of the Bondmate's Type to the one enemy target whose current HP is the highest, equal to 40% of the Bondmate's ATK."
+        }
+    },
+    "stat_bonuses": [
+        {
+            "stat": "ATK",
+            "value": "+28%"
+        },
+        {
+            "stat": "DEF",
+            "value": "+22.5%"
+        },
+        {
+            "stat": "SPD",
+            "value": "+5"
+        }
+    ],
+    "eidolons": [
+        {
+            "level": 1,
+            "name": "Shed Scales of Old",
+            "description": "When Dan Heng • Permansor Terrae uses Ultimate, recovers 1 Skill Point(s) and increases the \"Bondmate's\" All-Type RES PEN by 18%, lasting for 3 turn(s)."
+        },
+        {
+            "level": 2,
+            "name": "Watch Trails to Blaze",
+            "description": "Additionally increases the number of actions for the enhanced Souldragon from Ultimate by 2. After Dan Heng • Permansor Terrae uses Ultimate, Souldragon advances action|Action Advanced by 100%. When the enhanced \"Souldragon\" takes action, the Additional DMG dealt by the \"Bondmate\" becomes 200% of its original DMG, and the Shield Effect provided in this instance becomes 200% of its original Shield Effect."
+        },
+        {
+            "level": 3,
+            "name": "Bear Weight of Worlds",
+            "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+        },
+        {
+            "level": 4,
+            "name": "By Oath, This Vessel Is I",
+            "description": "Reduces the DMG taken by the \"Bondmate\" by 20%."
+        },
+        {
+            "level": 5,
+            "name": "The Path of Permanence Sweeps Far",
+            "description": "Skill Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+        },
+        {
+            "level": 6,
+            "name": "One Dream to Enfold All Wilds",
+            "description": "When the \"Bondmate\" is on the field, increases the DMG taken by all enemies by 20%. When the \"Bondmate\" deals DMG, ignores 12% of the enemy targets' DEF. When Dan Heng • Permansor Terrae uses Ultimate, the \"Bondmate\" will deal Additional DMG of the Bondmate's Type to all enemies, equal to 330% of the Bondmate's ATK."
+        }
+    ]
+}

@@ -1,0 +1,140 @@
+{
+    "id": "natasha",
+    "name": "Natasha",
+    "rarity": "4",
+    "element": "physical",
+    "path": "abundance",
+    "version_released": "1.0",
+    "max_energy": 90,
+    "level_80_stats": {
+        "hp": 1164,
+        "atk": 476,
+        "def": 507,
+        "spd": 98
+    },
+    "abilities": {
+        "basic": {
+            "type": "Basic ATK",
+            "name": "Behind the Kindness",
+            "tag": "Single Target",
+            "energy_gain": 20,
+            "break": 10,
+            "min_level": 1,
+            "max_level": 7,
+            "default_level": 6,
+            "description_template": "Deals Physical DMG equal to {{scaling1}}% of Natasha's ATK to a single enemy.",
+            "scaling": {
+                "scaling1": [50,60,70,80,90,100,110,120,130]
+            }
+        },
+        "skill": {
+            "type": "Skill",
+            "name": "Love, Heal, and Choose",
+            "tag": "Restore",
+            "energy_gain": 30,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Restores a single ally for {{scaling1}}% of Natasha's Max HP plus {{scaling2}}. Restores the ally for another {{scaling3}}% of Natasha's Max HP plus {{scaling4}} at the beginning of each turn for 2 turn(s).",
+            "scaling": {
+                "scaling1": [7,7.4375,7.875,8.3125,8.75,9.1,9.45,9.8,10.15,10.5,10.85,11.2,11.55,11.9,12.25],
+                "scaling2": [70,112,143.5,175,196,217,232.75,248.5,264.25,280,295.75,311.5,327.25,343,358.75],
+                "scaling3": [4.8,5.1,5.4,5.7,6,6.24,6.48,6.72,6.96,7.2,7.44,7.68,7.92,8.16,8.4],
+                "scaling4": [48,76.8,98.4,120,134.4,148.8,159.6,170.4,181.2,192,202.8,213.6,224.4,235.2,246]
+            }
+        },
+        "ultimate": {
+            "type": "Ultimate",
+            "name": "Gift of Rebirth",
+            "tag": "Restore",
+            "energy_gain": 5,
+            "energy_cost": 90,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Heals all allies for {{scaling1}}% of Natasha's Max HP plus {{scaling2}}.",
+            "scaling": {
+                "scaling1": [9.2,9.775,10.35,10.925,11.5,11.96,12.42,12.88,13.34,13.8,14.26,14.72,15.18,15.64,16.1],
+                "scaling2": [92,147.2,188.6,230,257.6,285.2,305.9,326.6,347.3,368,388.7,409.4,430.1,450.8,471.5]
+            }
+        },
+        "talent": {
+            "type": "Talent",
+            "name": "Innervation",
+            "tag": "Enhance",
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "When healing allies with HP percentage at 30% or lower, increases Natasha's Outgoing Healing by {{scaling1}}%. This effect also works on continuous healing.",
+            "scaling": {
+                "scaling1": [25,27.5,30,32.5,35,37.5,40.625,43.75,46.875,50,52.5,55,57.5,60,62.5]
+            }
+        },
+        "technique": {
+            "type": "Technique",
+            "name": "Hypnosis Research",
+            "tag": "",
+            "description": "Immediately attacks the enemy. After entering battle, deals Physical DMG equal to 80% of Natasha's ATK to a random enemy, with a 100% base chance to Weaken all enemies. While Weakened, enemies deal 30% less DMG to allies for 1 turn(s)."
+        }
+    },
+    "major_traces": {
+        "2": {
+            "name": "Soothe",
+            "description": "When using Skill, dispels 1 debuff(s) from one designated ally."
+        },
+        "4": {
+            "name": "Healer",
+            "description": "Natasha's Outgoing Healing increases by 10%."
+        },
+        "6": {
+            "name": "Recuperation",
+            "description": "Increases the duration of Skill's continuous healing effect for 1 turn(s)."
+        }
+    },
+    "stat_bonuses": [
+        {
+            "stat": "HP",
+            "value": "+28%"
+        },
+        {
+            "stat": "DEF",
+            "value": "+12.5%"
+        },
+        {
+            "stat": "Effect RES",
+            "value": "+18%"
+        }
+    ],
+    "eidolons": [
+        {
+            "level": 1,
+            "name": "Pharmacology Expertise",
+            "description": "After being attacked, if the current HP percentage is 30% or lower, heals self for 1 time to restore HP by an amount equal to 15% of Max HP plus 400. This effect can only be triggered 1 time per battle."
+        },
+        {
+            "level": 2,
+            "name": "Clinical Research",
+            "description": "When Natasha uses her Ultimate, grant continuous healing for 1 turn(s) to allies whose HP percentage is at 30% or lower. And at the beginning of their turn, their HP is restored by an amount equal to 6% of Natasha's Max HP plus 160."
+        },
+        {
+            "level": 3,
+            "name": "The Right Cure",
+            "description": "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+        },
+        {
+            "level": 4,
+            "name": "Miracle Cure",
+            "description": "After being attacked, regenerates 5 extra Energy."
+        },
+        {
+            "level": 5,
+            "name": "Preventive Treatment",
+            "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+        },
+        {
+            "level": 6,
+            "name": "Doctor's Grace",
+            "description": "Natasha's Basic ATK additionally deals Physical DMG equal to 40% of her Max HP."
+        }
+    ]
+}

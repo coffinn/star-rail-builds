@@ -312,13 +312,13 @@
                 "type": "Memosprite Talent",
                 "name": "Soar, Unto the Sunlight",
                 "tag": "Enhance",
-                "description_template": "When summoned, additionally regenerates 15 Energy for Hyacine. When first summoned, additionally regenerates 30 Energy."
+                "description": "When summoned, additionally regenerates 15 Energy for Hyacine. When first summoned, additionally regenerates 30 Energy."
             },
             "wing": {
                 "type": "Memosprite Talent",
                 "name": "Fall, Then Take Wing",
                 "tag": "Enhance",
-                "description_template": "Upon disappearing, advances the action of Hyacine by 30%."
+                "description": "Upon disappearing, advances the action of Hyacine by 30%."
             }
             
         }
