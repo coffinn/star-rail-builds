@@ -13,61 +13,60 @@
         "spd": 102
     },
     "abilities": {
-        "basic": [
-            {
-                "type": "Basic ATK",
-                "name": "Thorned Nectar",
-                "tag": "Single Target",
-                "energy_gain": 20,
-                "break": 10,
-                "min_level": 1,
-                "max_level": 7,
-                "default_level": 6,
-                "description_template": "Deals Lightning DMG equal to {{scaling1}}% of Aglaea's ATK to one designated enemy.",
-                "scaling": {
-                    "scaling1": [
-                        50,
-                        60,
-                        70,
-                        80,
-                        90,
-                        100,
-                        110
-                    ]
-                }
+        "basic": {
+            "type": "Basic ATK",
+            "name": "Thorned Nectar",
+            "tag": "Single Target",
+            "energy_gain": 20,
+            "break": 10,
+            "min_level": 1,
+            "max_level": 7,
+            "default_level": 6,
+            "description_template": "Deals Lightning DMG equal to {{scaling1}}% of Aglaea's ATK to one designated enemy.",
+            "scaling": {
+                "scaling1": [
+                    50,
+                    60,
+                    70,
+                    80,
+                    90,
+                    100,
+                    110
+                ]
             },
-            {
-                "type": "Basic ATK",
-                "name": "Slash by a Thousandfold Kiss",
-                "tag": "Blast",
-                "energy_gain": 20,
-                "break_main": 20,
-                "break_adjacent": 10,
-                "min_level": 1,
-                "max_level": 7,
-                "default_level": 6,
-                "description_template": "Aglaea and Garmentmaker launch a Joint ATK on the target, respectively dealing Lightning DMG equal to {{scaling1}}% of Aglaea's ATK and {{scaling1}}% of Garmentmaker's ATK to the target. Also, respectively deals Lightning DMG equal to {{scaling2}}% of Aglaea's ATK and {{scaling2}}% of Garmentmaker's ATK to adjacent targets. \"Slash by a Thousandfold Kiss\" cannot recover Skill Points.",
-                "scaling": {
-                    "scaling1": [
-                        100,
-                        120,
-                        140,
-                        160,
-                        180,
-                        200,
-                        220
-                    ],
-                    "scaling2": [
-                        45,
-                        54,
-                        63,
-                        72,
-                        81,
-                        90,
-                        99
-                    ]
+            "variants": [
+                {
+                    "type": "Basic ATK (Enhanced)",
+                    "name": "Slash by a Thousandfold Kiss",
+                    "tag": "Blast",
+                    "energy_gain": 20,
+                    "break_main": 20,
+                    "break_adjacent": 10,
+                    "min_level": 1,
+                    "max_level": 7,
+                    "default_level": 6,
+                    "description_template": "Aglaea and Garmentmaker launch a Joint ATK on the target, respectively dealing Lightning DMG equal to {{scaling1}}% of Aglaea's ATK and {{scaling1}}% of Garmentmaker's ATK to the target. Also, respectively deals Lightning DMG equal to {{scaling2}}% of Aglaea's ATK and {{scaling2}}% of Garmentmaker's ATK to adjacent targets. \"Slash by a Thousandfold Kiss\" cannot recover Skill Points.",
+                    "scaling": {
+                        "scaling1": [
+                            100,
+                            120,
+                            140,
+                            160,
+                            180,
+                            200,
+                            220
+                        ],
+                        "scaling2": [
+                            45,
+                            54,
+                            63,
+                            72,
+                            81,
+                            90,
+                            99
+                        ]
+                    }
                 }
-            }
         ],
         "memosprite_skill": {
             "type": "Memosprite Skill",
