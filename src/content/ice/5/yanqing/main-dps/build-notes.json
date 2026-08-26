@@ -1,0 +1,17 @@
+{
+    "name": {
+        "en": "main-dps",
+        "fr": "foo",
+        "it": "foo",
+        "ru": "foo"
+    },
+    "last_updated": "",
+    "notes": [
+        {
+            "en": "foo",
+            "fr": "foo",
+            "it": "foo",
+            "ru": "foo"
+        }
+    ]
+}

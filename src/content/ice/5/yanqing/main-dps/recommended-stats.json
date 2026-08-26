@@ -1,0 +1,22 @@
+{
+    "stats": [
+        {
+            "name": "cr",
+            "baseline": "80%",
+            "recommended": "80%",
+            "note": {
+                "en": "While Yanqing does gain 60% CRIT Rate for his Ultimate, his Skill deals too much DMG to ignore building CRIT Rate on him."
+            }
+        },
+        {
+            "name": "cd",
+            "baseline": "120%",
+            "recommended": "160%+"
+        },
+        {
+            "name": "atk%",
+            "baseline": "",
+            "recommended": ""
+        }
+    ]
+}

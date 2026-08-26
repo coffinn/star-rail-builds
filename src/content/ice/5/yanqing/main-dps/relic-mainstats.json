@@ -1,0 +1,30 @@
+{
+    "main_stats": {
+        "body": [
+            "cd",
+            {
+                "name": "atk",
+                "note": {
+                    "en": "Alternative to CRIT DMG%"
+                }
+            }
+        ],
+        "feet": [
+            "spd",
+            "atk%"
+        ],
+        "planar_sphere": [
+            "ice-dmg",
+            "atk%"
+        ],
+        "link_rope": [
+            "atk%",
+            {
+                "name": "err",
+                "notes": {
+                    "en": "Situational"
+                }
+            }
+        ]
+    }
+}

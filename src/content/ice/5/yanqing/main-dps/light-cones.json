@@ -1,0 +1,80 @@
+{
+    "light_cones": [
+        {
+            "items": [
+                {
+                    "name": "baptism-of-pure-thought",
+                    "superimposition": 1
+                }
+            ],
+            "items": [
+                {
+                    "name": "the-finale-of-lie",
+                    "superimposition": 1
+                }
+            ],
+            "items": [
+                {
+                    "name": "in-the-night",
+                    "superimposition": 1,
+                    "note": {
+                        "en": "Requires investment into speed stat"
+                    }
+                },
+                {
+                    "name": "the-hell-where-ideas-burn",
+                    "superimposition": 1,
+                    "note": {
+                        "en": "Requires Sparkle"
+                    }
+                }
+            ],
+            "items": [
+                {
+                    "name": "worrisome-blissful",
+                    "superimposition": 1,
+                    "note": {
+                        "en": "test note."
+                    }
+                }
+            ],
+            "items": [
+                {
+                    "name": "swordplay",
+                    "superimposition": 5,
+                    "note": {
+                        "en": "Assuming minimal target swap."
+                    }
+                }
+            ],
+            "items": [
+                {
+                    "name": "sleep-like-the-dead",
+                    "superimposition": 1
+                },
+                {
+                    "name": "cruising-in-the-stellar-sea",
+                    "superimposition": 5
+                }
+            ],
+            "items": [
+                {
+                    "name": "see-you-at-the-end",
+                    "superimposition": 5
+                },
+                {
+                    "name": "only-silence-remains",
+                    "superimposition": 5
+                },
+                {
+                    "name": "final-victor",
+                    "superimposition": 5
+                },
+                {
+                    "name": "river-flows-in-spring",
+                    "superimposition": 5
+                }
+            ]
+        }
+    ]
+}
