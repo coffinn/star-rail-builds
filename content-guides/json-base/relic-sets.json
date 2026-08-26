@@ -1,24 +1,29 @@
 {
-    "artifact_sets": [
+    "relic_sets": [
         {
             "groups": [
                 {
                     "items": [
                         {
                             "name": "",
-                            "pieces": 4
+                            "pieces": 4,
+                            "note": {
+                                "en": ""
+                            }
                         }
                     ]
                 }
             ]
-        },
+        }
+    ],
+    "planar_ornaments": [
         {
             "groups": [
                 {
                     "items": [
                         {
                             "name": "",
-                            "pieces": 4
+                            "pieces": 2
                         }
                     ]
                 }
