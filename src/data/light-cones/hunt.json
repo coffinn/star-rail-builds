@@ -348,35 +348,40 @@
     },
     "race-to-the-horizon": {
         "rarity": 4,
-        "version_released": "N/A",
+        "version_released": "4.5",
         "passive": {
-            "en": "Not available yet",
+            "en": "Increases the wearer's ATK by {{value}}%. After the wearer uses Followw-Up ATK, increases their CRIT DMG by {{value}}% for 2 turn(s). This effect can stack up to 10 times.",
             "ru": "Еще не доступно"
         },
         "s1": [
-            0
+            12,
+            3.0
         ],
         "s2": [
-            0
+            15,
+            3.5
         ],
         "s3": [
-            0
+            18,
+            4.0
         ],
         "s4": [
-            0
+            21,
+            4.5
         ],
         "s5": [
-            0
+            24,
+            5.0
         ],
         "level_1": {
-            "hp": 0,
-            "atk": 0,
-            "def": 0
+            "hp": 38,
+            "atk": 21,
+            "def": 18
         },
         "level_max": {
-            "hp": 0,
-            "atk": 0,
-            "def": 0
+            "hp": 846,
+            "atk": 476,
+            "def": 396
         }
     },
     "return-to-darkness": {
