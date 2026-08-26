@@ -3,7 +3,7 @@
         "body": [
             "cd",
             {
-                "name": "atk",
+                "name": "atk%",
                 "note": {
                     "en": "Alternative to CRIT DMG%"
                 }
