@@ -1,11 +1,12 @@
 {
     "substats_priority": [
-        "spd",
+        "CRIT DMG%",
         {
-            "name": "ehr",
+            "name": "CRIT RATE%",
             "note": {
-                "en": "Prioritize Effect Hit Rate until the recommended target is reached."
+                "en": "Prioritize CRIT Rate until the recommended target is reached."
             }
-        }
+        },
+        "ATK%"
     ]
 }

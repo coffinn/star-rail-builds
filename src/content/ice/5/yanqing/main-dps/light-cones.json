@@ -5,11 +5,7 @@
                 {
                     "name": "baptism-of-pure-thought",
                     "superimposition": 1
-                }
-            ]
-        },
-        {
-            "items": [
+                },
                 {
                     "name": "the-finale-of-a-lie",
                     "superimposition": 1
@@ -38,10 +34,7 @@
             "items": [
                 {
                     "name": "worrisome-blissful",
-                    "superimposition": 1,
-                    "note": {
-                        "en": "test note."
-                    }
+                    "superimposition": 1
                 }
             ]
         },

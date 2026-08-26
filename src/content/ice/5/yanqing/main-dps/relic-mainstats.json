@@ -21,8 +21,8 @@
             "atk%",
             {
                 "name": "err",
-                "notes": {
-                    "en": "Situational"
+                "note": {
+                    "en": "Situationaly useful."
                 }
             }
         ]
