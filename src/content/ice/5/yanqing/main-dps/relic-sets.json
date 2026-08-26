@@ -5,19 +5,25 @@
                 {
                     "items": [{ "name": "scholar-lost-in-erudition", "pieces": 4 }]
                 }
-            ],
+            ]
+        },
+        {
             "groups": [
                 {
                     "items": [{ "name": "the-wind-soaring-valorous", "pieces": 4}]
                 }
-            ],
+            ]
+        },
+        {
             "groups": [
                 {
                     "items": [
                         { "name": "genius-of-brilliant-stars", "pieces": 4, "note": { "en": "Assuming Quantum weak."}}
                     ]
                 }
-            ],
+            ]
+        },
+        {
             "groups": [
                 {
                     "choose": true,
@@ -26,7 +32,9 @@
                         { "name": "spd-set", "pieces": 2}
                     ]
                 }
-            ],
+            ]
+        },
+        {
             "groups": [
                 {
                     "items": [
@@ -43,12 +51,16 @@
                 {
                     "items": [{ "name": "firmament-frontline-glamoth", "pieces": 2}]
                 }
-            ],
+            ]
+        },
+        {
             "groups": [
                 {
                     "items": [{ "name": "space-seealing-station", "pieces": 2}]
                 }
-            ],
+            ]
+        },
+        {
             "groups": [
                 {
                     "items": [{ "name": "rutilant-arena", "pieces": 2}]
