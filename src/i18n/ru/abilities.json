@@ -1,7 +1,9 @@
 {
-    "skill": "Навык",
     "basic": "Базовая атака",
+    "skill": "Навык",
     "ultimate": "Сверхспособность",
     "talent": "Талант",
-    "technique": "Техника"
+    "technique": "Техника",
+    "elation-skill": "Навык Радости",
+    "assist-skill": "Навык поддержки"
 }
