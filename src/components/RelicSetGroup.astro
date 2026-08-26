@@ -90,8 +90,7 @@ const rows: RelicSetRow[] = group.choose
               },
           ];
 
-const hasNoteMarker = (item: RelicSetItem) =>
-    item.noteId || item.note;
+const hasNoteMarker = (item: RelicSetItem) => item.noteId || item.note;
 ---
 
 {
@@ -104,16 +103,10 @@ const hasNoteMarker = (item: RelicSetItem) =>
 {
     rows.map((row) => {
         const content = row.label ? (
-            <span class="accent-text bold">
-                {row.label}
-            </span>
+            <span class="accent-text bold">{row.label}</span>
         ) : (
             <>
-                {row.prefix && (
-                    <span class="accent-text">
-                        {row.prefix}
-                    </span>
-                )}
+                {row.prefix && <span class="accent-text">{row.prefix}</span>}
 
                 {row.items?.map((item, itemIndex) => (
                     <>
@@ -122,6 +115,7 @@ const hasNoteMarker = (item: RelicSetItem) =>
                         <span class="inline-info-label artifact-info-label">
                             <RelicSetInfoPopover
                                 relic={item}
+                                locale={locale}
                                 lang={lang}
                             />
 
@@ -129,9 +123,7 @@ const hasNoteMarker = (item: RelicSetItem) =>
                                 <InlineNoteLabel
                                     label=""
                                     noteId={item.noteId}
-                                    hasNote={Boolean(
-                                        hasNoteMarker(item),
-                                    )}
+                                    hasNote={Boolean(hasNoteMarker(item))}
                                 />
                             )}
 
@@ -145,90 +137,60 @@ const hasNoteMarker = (item: RelicSetItem) =>
                 {row.choicePools?.map((choice) => (
                     <>
                         {' '}
-
                         <span class="accent-text">
-                            {t(
-                                locale,
-                                'ui',
-                                'and',
-                                undefined,
-                                false,
-                            )}
-                        </span>
+                            {t(locale, 'ui', 'and', undefined, false)}
+                        </span>{' '}
+                        {choice.items.map((item, itemIndex) => (
+                            <>
+                                {itemIndex > 0 && ' / '}
 
-                        {' '}
+                                <span class="inline-info-label artifact-info-label">
+                                    <RelicSetInfoPopover
+                                        relic={item}
+                                        locale={locale}
+                                        lang={lang}
+                                    />
 
-                        {choice.items.map(
-                            (item, itemIndex) => (
-                                <>
-                                    {itemIndex > 0 && ' / '}
-
-                                    <span class="inline-info-label artifact-info-label">
-                                        <RelicSetInfoPopover
-                                            relic={item}
-                                            lang={lang}
+                                    {hasNoteMarker(item) && (
+                                        <InlineNoteLabel
+                                            label=""
+                                            noteId={item.noteId}
+                                            hasNote={Boolean(
+                                                hasNoteMarker(item),
+                                            )}
                                         />
+                                    )}
 
-                                        {hasNoteMarker(item) && (
-                                            <InlineNoteLabel
-                                                label=""
-                                                noteId={
-                                                    item.noteId
-                                                }
-                                                hasNote={Boolean(
-                                                    hasNoteMarker(
-                                                        item,
-                                                    ),
-                                                )}
-                                            />
-                                        )}
-
-                                        <span class="artifact-piece-suffix">
-                                            {'\u00a0'}(
-                                            {item.pieces})
-                                        </span>
+                                    <span class="artifact-piece-suffix">
+                                        {'\u00a0'}({item.pieces})
                                     </span>
-                                </>
-                            ),
-                        )}
-
+                                </span>
+                            </>
+                        ))}
                         {choice.items.length > 0 && (
                             <>
                                 {' '}
-
                                 <span class="accent-text bold">
-                                    {t(
-                                        locale,
-                                        'ui',
-                                        'Choose One',
-                                    )}
+                                    {t(locale, 'ui', 'Choose One')}
                                 </span>
                             </>
                         )}
                     </>
                 ))}
 
-                {row.chooseOne &&
-                    (row.items?.length ?? 0) > 0 && (
-                        <>
-                            {' '}
-
-                            <span class="accent-text bold">
-                                {t(
-                                    locale,
-                                    'ui',
-                                    'Choose One',
-                                )}
-                            </span>
-                        </>
-                    )}
+                {row.chooseOne && (row.items?.length ?? 0) > 0 && (
+                    <>
+                        {' '}
+                        <span class="accent-text bold">
+                            {t(locale, 'ui', 'Choose One')}
+                        </span>
+                    </>
+                )}
             </>
         );
 
         return row.alt ? (
-            <div class={row.bold ? 'alt bold' : 'alt'}>
-                {content}
-            </div>
+            <div class={row.bold ? 'alt bold' : 'alt'}>{content}</div>
         ) : (
             <>{content}</>
         );

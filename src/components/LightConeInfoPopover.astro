@@ -1,6 +1,6 @@
 ---
 import InlineNoteLabel from './InlineNoteLabel.astro';
-
+import { t } from '../utils/i18n';
 import {
     formatLightConePassive,
     type LightConePassiveText,
@@ -43,7 +43,12 @@ type Props = {
     };
 };
 
-const { lightCone, lang = 'en' } = Astro.props as Props;
+const { lightCone, locale, lang = 'en' } = Astro.props as Props;
+const hpLabel = t(locale, 'ui', 'HP', undefined, false);
+
+const atkLabel = t(locale, 'ui', 'ATK', undefined, false);
+
+const defLabel = t(locale, 'ui', 'DEF', undefined, false);
 
 const info = lightCone.info;
 
@@ -117,21 +122,27 @@ const popoverCardHtml = info
           '</span>',
 
           '<span class="info-popover-stat">',
-          '<span>HP</span>',
+          '<span>',
+          escapeHtml(hpLabel),
+          '</span>',
           '<strong>',
           escapeHtml(hpValue),
           '</strong>',
           '</span>',
 
           '<span class="info-popover-stat">',
-          '<span>ATK</span>',
+          '<span>',
+          escapeHtml(atkLabel),
+          '</span>',
           '<strong>',
           escapeHtml(atkValue),
           '</strong>',
           '</span>',
 
           '<span class="info-popover-stat">',
-          '<span>DEF</span>',
+          '<span>',
+          escapeHtml(defLabel),
+          '</span>',
           '<strong>',
           escapeHtml(defValue),
           '</strong>',

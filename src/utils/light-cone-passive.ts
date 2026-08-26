@@ -18,11 +18,15 @@ type LightConeSuperimpositionData = {
 
 const SUPERIMPOSITION_KEYS = ['s1', 's2', 's3', 's4', 's5'] as const;
 
-function formatPassiveValue(value: LightConePassiveValue | undefined) {
-    const text = Array.isArray(value) ? value.join('/') : String(value ?? '');
+function formatPassiveValue(
+    value: LightConePassiveValue | undefined,
+    suffix = '',
+) {
+    const text = Array.isArray(value)
+        ? value.join('/')
+        : String(value ?? '');
 
-    // Keep the old CSS class for now so we don't have to redo styling yet.
-    return `<span class="weapon-popover-passive-value">${text}</span>`;
+    return `<span class="weapon-popover-passive-value">${text}${suffix}</span>`;
 }
 
 function getPassiveText(
@@ -44,6 +48,7 @@ function parseSuperimposition(superimposition?: number | string) {
 function getCombinedValue(
     info: LightConeSuperimpositionData,
     valueIndex: number,
+    suffix = '',
 ) {
     const values = SUPERIMPOSITION_KEYS.map(
         (key) => info[key]?.[valueIndex],
@@ -54,8 +59,8 @@ function getCombinedValue(
     return values
         .map((value) =>
             Array.isArray(value)
-                ? `(${formatPassiveValue(value)})`
-                : formatPassiveValue(value),
+                ? `(${formatPassiveValue(value, suffix)})`
+                : formatPassiveValue(value, suffix),
         )
         .join(separator);
 }
@@ -71,17 +76,27 @@ export function formatLightConePassive(
 
     let valueIndex = 0;
 
-    return passive.replace(/\{\{value\}\}/g, () => {
-        const index = valueIndex;
-        valueIndex += 1;
+    return passive.replace(
+        /\{\{value\}\}(\s*(?:%|％|x|×))?/g,
+        (_match, suffix = '') => {
+            const index = valueIndex;
+            valueIndex += 1;
 
-        if (selectedSuperimposition) {
-            const key =
-                `s${selectedSuperimposition}` as (typeof SUPERIMPOSITION_KEYS)[number];
+            if (selectedSuperimposition) {
+                const key =
+                    `s${selectedSuperimposition}` as (typeof SUPERIMPOSITION_KEYS)[number];
 
-            return formatPassiveValue(info[key]?.[index]);
-        }
+                return formatPassiveValue(
+                    info[key]?.[index],
+                    suffix,
+                );
+            }
 
-        return getCombinedValue(info, index);
-    });
+            return getCombinedValue(
+                info,
+                index,
+                suffix,
+            );
+        },
+    );
 }

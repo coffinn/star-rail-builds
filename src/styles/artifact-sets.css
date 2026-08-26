@@ -183,7 +183,7 @@
     border: 1px solid rgba(255, 255, 255, 0.075);
     border-radius: 8px;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.16);
+    background: rgba(0, 0, 0, 0.56);
     scrollbar-color: color-mix(in srgb, var(--artifact-rarity) 44%, transparent) transparent;
 }
 

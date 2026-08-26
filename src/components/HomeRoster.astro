@@ -15,11 +15,26 @@ const latestUpdateLabel = t(locale, 'ui', 'Last Updated');
 const characterPortraitAltTemplate = t(locale, 'ui', 'Character portrait alt');
 const sortByLabel = t(locale, 'ui', 'Sort by');
 const sortOptions = [
-    { value: 'release', label: `${releaseDateLabel} - ${newestLabel}` },
-    { value: 'updated', label: `${latestUpdateLabel} - ${newestLabel}` },
-    { value: 'name', label: `${characterCountLabel} - A-Z` },
-    { value: 'element', label: `${t(locale, 'ui', 'Element')} - A-Z` },
-    { value: 'rarity', label: `${t(locale, 'ui', 'Rarity')} - A-Z` },
+    {
+        value: 'release',
+        label: t(locale, 'ui', 'Release date - Newest', undefined, false),
+    },
+    {
+        value: 'updated',
+        label: t(locale, 'ui', 'Last Updated - Newest', undefined, false),
+    },
+    {
+        value: 'name',
+        label: t(locale, 'ui', 'Characters - A-Z', undefined, false),
+    },
+    {
+        value: 'element',
+        label: t(locale, 'ui', 'Element - A-Z', undefined, false),
+    },
+    {
+        value: 'rarity',
+        label: t(locale, 'ui', 'Rarity - A-Z', undefined, false),
+    },
 ];
 
 function formatUiTemplate(template: string, name: string) {

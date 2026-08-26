@@ -1,7 +1,7 @@
 ---
 import InlineNoteLabel from './InlineNoteLabel.astro';
 import { resolveRelicAssetUrl } from '../utils/item-assets';
-
+import { t } from '../utils/i18n';
 type LocalizedRelicEffect = {
     en?: string;
     [lang: string]: string | undefined;
@@ -20,13 +20,11 @@ type Props = {
         id?: string;
         info?: RelicSetInfo;
     };
+    locale: any;
     lang?: string;
 };
 
-const {
-    relic,
-    lang = 'en',
-} = Astro.props as Props;
+const { relic, locale, lang = 'en' } = Astro.props as Props;
 
 const info = relic.info;
 
@@ -42,30 +40,27 @@ function escapeHtml(value: unknown) {
 /**
  * Selects the localized set effect with English fallback.
  */
-const localizedEffect = (
-    effect?: LocalizedRelicEffect,
-) => effect?.[lang] ?? effect?.en ?? '';
+const localizedEffect = (effect?: LocalizedRelicEffect) =>
+    effect?.[lang] ?? effect?.en ?? '';
 
 const effects = info
     ? [
           {
-              label: '1-Pc',
+              label: t(locale, 'ui', '1-Pc', undefined, false),
               value: localizedEffect(info['1p']),
           },
           {
-              label: '2-Pc',
+              label: t(locale, 'ui', '2-Pc', undefined, false),
               value: localizedEffect(info['2p']),
           },
           {
-              label: '4-Pc',
+              label: t(locale, 'ui', '4-Pc', undefined, false),
               value: localizedEffect(info['4p']),
           },
       ].filter((effect) => effect.value)
     : [];
 
-const imageUrl = relic.id
-    ? resolveRelicAssetUrl(relic.id)
-    : '';
+const imageUrl = relic.id ? resolveRelicAssetUrl(relic.id) : '';
 
 const popoverCardHtml = info
     ? [
@@ -119,16 +114,10 @@ const popoverCardHtml = info
                 tabindex="0"
                 aria-expanded="false"
             >
-                <InlineNoteLabel
-                    label={relic.name}
-                    emphasized
-                />
+                <InlineNoteLabel label={relic.name} emphasized />
             </span>
         </span>
     ) : (
-        <InlineNoteLabel
-            label={relic.name}
-            emphasized
-        />
+        <InlineNoteLabel label={relic.name} emphasized />
     )
 }

@@ -91,14 +91,19 @@ const releaseDateLabel = t(locale, 'ui', 'Release date', undefined, false);
 
 const newestLabel = t(locale, 'ui', 'Newest', undefined, false);
 
+const hpLabel = t(locale, 'ui', 'HP', undefined, false);
+
+const atkLabel = t(locale, 'ui', 'ATK', undefined, false);
+
+const defLabel = t(locale, 'ui', 'DEF', undefined, false);
 const sortOptions = [
     {
         value: 'name',
-        label: `${lightConeLabel} - A-Z`,
+        label: t(locale, 'ui', 'Light Cone - A-Z', undefined, false),
     },
     {
         value: 'release',
-        label: `${releaseDateLabel} - ${newestLabel}`,
+        label: t(locale, 'ui', 'Release date - Newest', undefined, false),
     },
 ];
 
@@ -329,19 +334,19 @@ const orderedPaths = [...data.paths].sort((a, b) => {
 
                         <tbody>
                             <tr>
-                                <th scope="row">HP</th>
+                                <th scope="row">{hpLabel}</th>
                                 <td>{lightCone.level1Hp || '-'}</td>
                                 <td>{lightCone.levelMaxHp || '-'}</td>
                             </tr>
 
                             <tr>
-                                <th scope="row">ATK</th>
+                                <th scope="row">{atkLabel}</th>
                                 <td>{lightCone.level1Atk || '-'}</td>
                                 <td>{lightCone.levelMaxAtk || '-'}</td>
                             </tr>
 
                             <tr>
-                                <th scope="row">DEF</th>
+                                <th scope="row">{defLabel}</th>
                                 <td>{lightCone.level1Def || '-'}</td>
                                 <td>{lightCone.levelMaxDef || '-'}</td>
                             </tr>

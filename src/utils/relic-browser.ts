@@ -174,7 +174,13 @@ function getRelicSetEntries(
             const bonuses = bonusKeys
                 .map((key) => ({
                     id: key,
-                    label: `${key[0]}-Pc`,
+                    label: t(
+                        locale,
+                        'ui',
+                        `${key[0]}-Pc`,
+                        undefined,
+                        false,
+                    ),
                     html:
                         info[key]?.[lang] ??
                         info[key]?.en ??
