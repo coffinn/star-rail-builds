@@ -7,7 +7,15 @@
                         {
                             "name": "genius-of-brilliant-stars",
                             "pieces": 4
-                        },
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
                         {
                             "name": "eagle-of-twilight-line",
                             "pieces": 4,

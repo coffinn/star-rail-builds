@@ -8,7 +8,11 @@
                     "note": {
                         "en": "test note."
                     }
-                },
+                }
+            ]
+        },
+        {
+            "items": [
                 {
                     "name": "incessant-rain",
                     "superimposition": 1,

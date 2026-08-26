@@ -1326,17 +1326,26 @@ export function getCharacterPageData({
         element: foundPath.element,
         lang: currentLang,
         locale,
-        builds: buildNames.map((buildName) =>
-            loadBuildData({
-                buildPath: path.join(foundPath.path, buildName),
-                buildName,
-                pathName: metadata.path,
-                lang: currentLang,
-                locale,
-                translator,
-                relicSetData,
-            }),
-        ),
+        builds: buildNames
+            .map((buildName) =>
+                loadBuildData({
+                    buildPath: path.join(
+                        foundPath.path,
+                        buildName,
+                    ),
+                    buildName,
+                    pathName: metadata.path,
+                    lang: currentLang,
+                    locale,
+                    translator,
+                    relicSetData,
+                }),
+            )
+            .sort(
+                (a, b) =>
+                    Number(b.isBest) -
+                    Number(a.isBest),
+            ),
         warnings: translator.getWarnings(),
     };
 }
