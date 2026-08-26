@@ -10,11 +10,14 @@
         {
             "groups": [
                 {
-                    "items":
-                    [{
+                    "items": [
+                        {
                             "name": "genius-of-brilliant-stars", "pieces": 4,
-                            "note": { "en": "Potent with higher DEF shred."}
-                    }]
+                            "note": {
+                                "en": "Potent with high DEF reduction."
+                            }
+                        }
+                    ]
                 }
             ]
         },
@@ -22,22 +25,6 @@
             "groups": [
                 {
                     "items": [{ "name": "wastelander-of-banditry-desert", "pieces": 4 }]
-                }
-            ]
-        }
-    ],
-
-    "planar_ornaments": [
-        {
-            "groups": [
-                {
-                    "items": [{ "name": "firmament-frontline-glamoth", "pieces": 2}]
-                },
-                {
-                    "items": [{ "name": "duran-dynasty-of-running-wolves", "pieces": 2}]
-                },
-                {
-                    "items": [{ "name": "izumo-gensei-and-takama-divine-realm", "pieces": 2}]
                 }
             ]
         },
@@ -50,6 +37,36 @@
                         { "name": "prisoner-in-deep-confinement", "pieces": 2},
                         { "name": "pioneer-diver-of-dead-waters", "pieces": 2}
                     ]
+                }
+            ]
+        }
+    ],
+
+    "planar_ornaments": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "firmament-frontline-glamoth", "pieces": 2,
+                            "note": {
+                                "en": "Performs better than Inert Salsotto if you can reach 135 SPD while also being more efficient to farm for other dps."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "duran-dynasty-of-running-wolves", "pieces": 2,
+                            "notes": {
+                                "en": "Can be used if there are other follow-up attackers in the team, otherwise it takes a while to reach max stacks."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "items": [{ "name": "izumo-gensei-and-takama-divine-realm", "pieces": 2}]
                 }
             ]
         }
