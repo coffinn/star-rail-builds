@@ -6,13 +6,17 @@
                     "name": "baptism-of-pure-thought",
                     "superimposition": 1
                 }
-            ],
+            ]
+        },
+        {
             "items": [
                 {
                     "name": "the-finale-of-lie",
                     "superimposition": 1
                 }
-            ],
+            ]
+        },
+        {
             "items": [
                 {
                     "name": "in-the-night",
@@ -28,7 +32,9 @@
                         "en": "Requires Sparkle"
                     }
                 }
-            ],
+            ]
+        },
+        {
             "items": [
                 {
                     "name": "worrisome-blissful",
@@ -37,7 +43,9 @@
                         "en": "test note."
                     }
                 }
-            ],
+            ]
+        },
+        {
             "items": [
                 {
                     "name": "swordplay",
@@ -46,7 +54,9 @@
                         "en": "Assuming minimal target swap."
                     }
                 }
-            ],
+            ]
+        },
+        {
             "items": [
                 {
                     "name": "sleep-like-the-dead",
@@ -56,25 +66,10 @@
                     "name": "cruising-in-the-stellar-sea",
                     "superimposition": 5
                 }
-            ],
-            "items": [
-                {
-                    "name": "see-you-at-the-end",
-                    "superimposition": 5
-                },
-                {
-                    "name": "only-silence-remains",
-                    "superimposition": 5
-                },
-                {
-                    "name": "final-victor",
-                    "superimposition": 5
-                },
-                {
-                    "name": "river-flows-in-spring",
-                    "superimposition": 5
-                }
             ]
+        },
+        {
+            "items": ["see-you-at-the-end", "only-silence-remains", "final-victor", "river-flows-in-spring"]
         }
     ]
 }
