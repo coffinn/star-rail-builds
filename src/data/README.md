@@ -113,9 +113,14 @@ A character entry can include:
 - `path`: character's path.
 - `level_80_stats`: character's hp, atk, def, and spd stats at level 80.
 - `abilities`: character's abilities (Basic ATK, Skill, Ultimate, Talent, etc.).
+- `variants`: alternate variants of character's traces, such as Himeko Nova's Assist Skill "Trailblaze, By Your Side" or Phainon's Enhanced Skill "Foundation: Stardeath Verdict".
 - `major_traces`: character's major trace names and descriptions.
 - `stat_bonuses`: what stats character's gain from their minor traces.
 - `eidolons`: character's eidolon names and descriptions.
+- `global_passives`: character's global passive.
+- `memosprite`: character's Memosprite-specific abilities that are independently leveled.
+- `elation`: character's Elation specific abilities that are independently leveled.
+
 
 ## Relic Set Data
 
@@ -173,7 +178,7 @@ Edit this folder when you need to add or fix reusable gameplay data, such as:
 - an incorrect light cone stat;
 - a missing relic set effect;
 - an incorrect relic set rarity;
-- a new light cone or relic set used by build content.
+- a new character, light cone, or relic set used by build content.
 
 Use the item image commands above when that ID also needs a local image.
 

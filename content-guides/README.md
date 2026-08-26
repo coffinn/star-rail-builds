@@ -59,7 +59,7 @@ build folder does not contain the file, the character-level file is used as the
 default.
 
 This is useful when multiple builds share the same values. For example, if two
-Amber builds use the same artifact main stats, place the shared file here:
+Silver Wolf builds use the same artifact main stats, place the shared file here:
 
 ```txt
 src/content/quantum/5/silver-wolf/relic-mainstats.json
