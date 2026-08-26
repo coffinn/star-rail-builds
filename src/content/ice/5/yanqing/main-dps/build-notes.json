@@ -1,6 +1,7 @@
 {
+    "best": true,
     "name": {
-        "en": "main-dps",
+        "en": "Main Dps",
         "fr": "foo",
         "it": "foo",
         "ru": "foo"
