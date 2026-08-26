@@ -430,7 +430,6 @@
             "atk",
             "crit-rate",
             "ultimate-dmg"
-
         ],
         "2p": {
             "en": "Increases ATK by 12%.",
@@ -586,6 +585,32 @@
 
 
 
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    "amphoreus-the-eternal-land": {
+        "type": "planar",
+        "rarity": 5,
+        "version_released":"3.7",
+        "tags":[
+            "crit-rate",
+            "speed"
+        ],
+        "2pc": {
+            "en": "Increases the wearer's CRIT Rate by 8%. While the wearer's memosprite is on the field, increases all allies' SPD by 8%. This effect cannot be stacked.",
+            "ru": "Повышает крит. шанс владельца на 8%. Пока дух памяти владельца находится на поле боя, скорость всех союзников повышается на 8%. Этот эффект не может складываться."
+        }
+    },
+    
     "arcadia-of-woven-dreams": {
         "type": "planar",
         "rarity": 5,
@@ -807,7 +832,7 @@
         }
     },
     
-    "penacony,-land-of-the-dreams": {
+    "penacony-land-of-the-dreams": {
         "type": "planar",
         "rarity": 5,
         "version_released": "1.5",
@@ -897,6 +922,17 @@
         "2p": {
             "en": "Increases the wearer's Energy Regeneration Rate by 5%. When the wearer's SPD reaches 120 or higher, the wearer's action is Advanced Forward by 40% immediately upon entering battle.",
             "ru": "Повышает скорость восстановления энергии владельца на 5%. Если скорость владельца выше или равна 120 ед., то в начале боя его действие продвигается вперёд на 40%."
+        }
+    },
+    "talia-kingdom-of-banditry": {
+        "type": "planar",
+        "rarity": 5,
+        "version_released": "1.0",
+        "tags":[
+            "break-effect"
+        ],
+        "2pc": {
+            "en": "Increases the wearer's Break Effect by 16%. When the wearer's SPD reaches 145 or higher, the wearer's Break Effect increases by an extra 20%."
         }
     },
     "tengoku-livestream": {
