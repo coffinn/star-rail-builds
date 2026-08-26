@@ -350,7 +350,7 @@
         "rarity": 4,
         "version_released": "4.5",
         "passive": {
-            "en": "Increases the wearer's ATK by {{value}}%. After the wearer uses Followw-Up ATK, increases their CRIT DMG by {{value}}% for 2 turn(s). This effect can stack up to 10 times.",
+            "en": "Increases the wearer's ATK by {{value}}%. After the wearer uses Follow-Up ATK, increases their CRIT DMG by {{value}}% for 2 turn(s). This effect can stack up to 10 times.",
             "ru": "Еще не доступно"
         },
         "s1": [
