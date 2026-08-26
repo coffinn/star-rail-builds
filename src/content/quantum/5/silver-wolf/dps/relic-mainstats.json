@@ -1,0 +1,19 @@
+{
+    "main_stats": {
+        "body": [
+            {
+                "name": "cr"
+            }
+        ],
+        "feet": [
+            "spd"
+        ],
+        "planar_sphere": [
+            "quantum-dmg"
+        ],
+        "link_rope": [
+            "err",
+            "atk%"
+        ]
+    }
+}

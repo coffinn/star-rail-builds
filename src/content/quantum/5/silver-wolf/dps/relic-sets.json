@@ -1,0 +1,37 @@
+{
+    "relic_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "genius-of-brilliant-stars",
+                            "pieces": 4
+                        },
+                        {
+                            "name": "eagle-of-twilight-line",
+                            "pieces": 4,
+                            "note": {
+                                "en": "The Action Advance from the 4-Pc effect can be especially valuable for faster rotations."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "planar_ornaments": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "rutilant-arena",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

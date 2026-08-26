@@ -1,0 +1,11 @@
+{
+    "substats_priority": [
+        "spd",
+        {
+            "name": "cr",
+            "note": {
+                "en": "Prioritize Crit Rate until the recommended target is reached."
+            }
+        }
+    ]
+}
