@@ -1,0 +1,17 @@
+{
+    "stats": [
+        {
+            "name": "cr",
+            "baseline": "68%/100%",
+            "recommended": "68%/100%",
+            "note": {
+                "en": "68% CRIT Rate with Poet of Mourning Collapse (4), assuming under 95 SPD."
+            }
+        },
+        {
+            "name": "cd",
+            "baseline":"120%",
+            "recommended":""
+        }
+    ]
+}

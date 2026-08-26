@@ -1,0 +1,55 @@
+{
+    "relic_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "poet",
+                            "pieces": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items":[
+                        {
+                            "name": "gobs",
+                            "pieces": 4
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "planar_ornaments": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "tengoku",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups":[
+                {
+                    "items": [
+                        {
+                            "name": "rutilant",
+                            "pieces": 2,
+                            "note": "Can be used to reach CRIT Rate requirement."
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
