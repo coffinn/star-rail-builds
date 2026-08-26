@@ -1,0 +1,22 @@
+{
+    "stats": [
+        {
+            "name": "spd",
+            "baseline": "160+",
+            "recommended": "180+"
+        },
+        {
+            "name": "cr",
+            "baseline": "92%",
+            "recommended": "92%",
+            "note": {
+                "en": "Silver Wolf's CRIT Rate% and CRIT DMG% requirements are flexible thanks to Hidden MMR. 92% CRIT Rate% allows Silver Wolf to hit 100% CRIT Rate% with 20 Hidden MMR."
+            }
+        },
+        {
+            "name": "cd",
+            "baseline": "90%",
+            "recommended": "100%+"
+        }
+    ]
+}

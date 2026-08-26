@@ -1,0 +1,34 @@
+{
+    "main_stats": {
+        "body": [
+            "cr",
+            {
+                "name": "cd",
+                "note": {
+                    "en": "CRIT DMG body can be used if relics have a high amount of CRIT Rate."
+                }
+            }
+        ],
+        "feet": [
+            "spd"
+        ],
+        "planar_sphere": [
+            "hp%",
+            {
+                "name": "def%",
+                "note": {
+                    "en": "Any planar sphere main stat is ok, but HP% and DEF% help survivability."
+                }
+            }
+        ],
+        "link_rope": [
+            "hp%",
+            {
+                "name": "def%",
+                "note": {
+                    "en": "Any link rope main stat is ok, but HP% and DEF% help survivability."
+                }
+            }
+        ]
+    }
+}

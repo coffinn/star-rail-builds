@@ -1,0 +1,20 @@
+{
+    "light_cones": [
+        {
+            "items": [
+                {
+                    "name": "welcome-to-the-cosmic-city",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "shroomy",
+                    "superimposition": 5
+                }
+            ]
+        }
+    ]
+}

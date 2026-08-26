@@ -1,0 +1,31 @@
+{
+    "traces": [
+        {
+            "items": [
+                {
+                    "name": "basic"
+                },
+                {
+                    "name": "talent"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "ultimate"
+                },
+                {
+                    "name": "elation-skill"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "skill"
+                }
+            ]
+        }
+    ]
+}
