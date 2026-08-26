@@ -3,7 +3,8 @@
         "rarity": 4,
         "version_released": "3.4",
         "passive": {
-            "en": "Increases the wearer's CRIT Rate by {{value}}%. The Skill DMG and Ultimate DMG dealt by the wearer increase by {{value}}%."
+            "en": "Increases the wearer's CRIT Rate by {{value}}%. The Skill DMG and Ultimate DMG dealt by the wearer increase by {{value}}%.",
+            "ru": "Крит. шанс владельца повышается на {{value}}%. Наносимый владельцем урон навыка и сверхспособности повышается на {{value}}%."
         },
         "s1": [
             12,
@@ -40,7 +41,8 @@
         "rarity": 4,
         "version_released": "1.0",
         "passive": {
-            "en": "Increases DMG dealt by the wearer by {{value}}%. The wearer also deals an extra {{value}}% of DMG to enemies whose current HP percentage is equal to or higher than the wearer's current HP percentage."
+            "en": "Increases DMG dealt by the wearer by {{value}}%. The wearer also deals an extra {{value}}% of DMG to enemies whose current HP percentage is equal to or higher than the wearer's current HP percentage.",
+            "ru": "Наносимый владельцем урон повышается на {{value}}%. Также наносимый владельцем урон противникам, текущий процент НР которых выше или равен текущему проценту НР владельца, повышается на доп. {{value}}%."
         },
         "s1": [
             20,
@@ -77,7 +79,8 @@
         "rarity": 5,
         "version_released": "3.4",
         "passive": {
-            "en": "Increases the wearer's CRIT DMG by {{value}}%. When using Ultimate, increases the wearer's ATK by {{value}}%, and if the wearer's Max Energy is greater than or equal to 300, regenerates a fixed amount of Energy equal to 10% of the wearer's Max Energy and once again increases the wearer's ATK by {{value}}%, lasting for 2 turns."
+            "en": "Increases the wearer's CRIT DMG by {{value}}%. When using Ultimate, increases the wearer's ATK by {{value}}%, and if the wearer's Max Energy is greater than or equal to 300, regenerates a fixed amount of Energy equal to 10% of the wearer's Max Energy and once again increases the wearer's ATK by {{value}}%, lasting for 2 turns.",
+            "ru": "Крит. урон владельца повышается на {{value}}%. Использование сверхспособности владельца повышает его силу атаки на {{value}}%. Если макс. энергия владельца выше или равна 300 ед., то он восстанавливает фиксированное количество энергии, равное 10% от своей макс. энергии, и его сила атаки повторно повышается на {{value}}% на 2 хода."
         },
         "s1": [
             36,
@@ -119,7 +122,8 @@
         "rarity": 5,
         "version_released": "1.3",
         "passive": {
-            "en": "Increases the wearer's CRIT Rate by {{value}}%. When the wearer uses their Basic ATK, they will gain 1 stack of Dragon's Call, lasting for 2 turns. Each Stack of Dragon's Call increases the wearer's ATK by {{value}}% and Energy Regeneration Rate by {{value}}%. Dragon's Call can be stacked up to 2 times."
+            "en": "Increases the wearer's CRIT Rate by {{value}}%. When the wearer uses their Basic ATK, they will gain 1 stack of Dragon's Call, lasting for 2 turns. Each Stack of Dragon's Call increases the wearer's ATK by {{value}}% and Energy Regeneration Rate by {{value}}%. Dragon's Call can be stacked up to 2 times.",
+            "ru": "Крит. шанс владельца повышается на {{value}}%. Когда владелец использует базовую атаку, он получает 1 ур. статуса Зов дракона на 2 хода. Каждый уровень статуса Зов дракона повышает силу атаки владельца на {{value}}% и скорость восстановления энергии на {{value}}%. Статус Зов дракона может складываться до 2 раз."
         },
         "s1": [
             18,
@@ -161,7 +165,8 @@
         "rarity": 3,
         "version_released": "1.0",
         "passive": {
-            "en": "The wearer's Basic ATK and Skill deal {{value}}% more DMG."
+            "en": "The wearer's Basic ATK and Skill deal {{value}}% more DMG.",
+            "ru": "Наносимый базовой атакой и навыком владельца урон повышается на {{value}}%."
         },
         "s1": [
             20
@@ -193,7 +198,8 @@
         "rarity": 5,
         "version_released": "2.4",
         "passive": {
-            "en": "Greatly increases the wearer's chance of getting attacked and increases CRIT DMG by {{value}}%. After the wearer uses Ultimate, receives 1 stack of Firedance, lasting for 2 turns and stacking up to 2 time(s). Each stack of Firedance increases the DMG dealt by the wearer's follow-up attack by {{value}}%."
+            "en": "Greatly increases the wearer's chance of getting attacked and increases CRIT DMG by {{value}}%. After the wearer uses Ultimate, receives 1 stack of Firedance, lasting for 2 turns and stacking up to 2 time(s). Each stack of Firedance increases the DMG dealt by the wearer's follow-up attack by {{value}}%.",
+            "ru": "Шанс владельца быть атакованным противниками значительно повышается. Его крит. урон также повышается на {{value}}%.  После использования сверхспособности владелец получает 1 ур. статуса Огненный танец на 2 хода. Этот эффект может складываться до 2 раз. Каждый уровень статуса Огненный танец повышает наносимый бонус-атакой владельца урон на {{value}}%."
         },
         "s1": [
             36,
