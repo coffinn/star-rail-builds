@@ -1,51 +1,63 @@
 {
     "intro": {
-        "en": "Hello and welcome to Star Rail Builds!<br><br>This website aims to help players build their Honkai: Star Rail characters as effectively as possible by providing recommended Light Cones, Relic and Planar Ornament sets, main stats, substats, and Trace priorities. This FAQ explains how the guide works and how to interpret its recommendations."
+        "en": "Hello and welcome to Star Rail Builds!<br><br>This website aims to help players build their Honkai: Star Rail characters as effectively as possible by providing recommended Light Cones, Relic and Planar Ornament sets, main stats, substats, and Trace priorities. This FAQ explains how the guide works and how to interpret its recommendations.",
+        "ru": "Добро пожаловать в руководство по билдам персонажей Honkai: Star Rail!<br><br> Цель этого сайта - помочь игрокам как можно лучше собрать своих персонажей: выбрать оптимальные Световые конусы, наборы реликвий и планарные украшения, основаные характеристики, дополнительные характеристики, и приоритетные следы. Раздел FAQ предназначен для того, чтобы помочь разобраться как работает руководство и как интерпретировать его рекомендации."
     },
     "items": [
         {
             "question": {
-                "en": "Why use a website instead of a Google Sheet?"
+                "en": "Why use a website instead of a Google Sheet?",
+                "ru": "Почему вы используете веб-сайт, вместо таблицы Google Sheet?"
             },
             "answer": {
-                "en": "The guide originally existed as a Google Sheet, but as the amount of Honkai: Star Rail build information grew, a website became a better way to organize and present it. The website makes it easier to browse characters, search and filter Light Cones and Relics, view detailed set and Light Cone information, manage multiple builds for a character, and expand the guide with new features without overcrowding a spreadsheet."
+                "en": "The guide originally existed as a Google Sheet, but as the amount of Honkai: Star Rail build information grew, a website became a better way to organize and present it. The website makes it easier to browse characters, search and filter Light Cones and Relics, view detailed set and Light Cone information, manage multiple builds for a character, and expand the guide with new features without overcrowding a spreadsheet.",
+                "ru": "Первоначально руководство существовало в виде таблицы Google Sheets, но по мере роста объема информации о сборках персонажей в Honkai: Star Rail, веб-сайт стал более удобным способом организации и представления данных. Веб-сайт упрощает поиск персонажей, поиск и фильтрацию Световых конусов и реликвий, просмотр подробной информации о наборах и Световых конусах, управление несколькими сборками для одного персонажа, а также позволяет расширять руководство новыми функциями, не перегружая электронную таблицу."
             }
         },
         {
             "question": {
-                "en": "What happened to the original Google Sheet?"
+                "en": "What happened to the original Google Sheet?",
+                "ru": "Что случилось с оригинальной таблицей Google Sheets?"
             },
             "answer": {
-                "en": "The website is the continuation of the original Honkai: Star Rail build guide that was maintained in Google Sheets. The move to a website allows the guide to present the same kind of build information in a more organized and interactive format while making future updates and new features easier to manage."
+                "en": "The website is the continuation of the original Honkai: Star Rail build guide that was maintained in Google Sheets. The move to a website allows the guide to present the same kind of build information in a more organized and interactive format while making future updates and new features easier to manage.",
+                "ru": "Этот веб-сайт является продолжением оригинального руководства по сборке Honkai: Star Rail, которое ранее велось в Google Sheets. Переход на веб-сайт позволяет представить ту же информацию о сборке в более организованном и интерактивном формате, а также упрощает управление будущими обновлениями и новыми функциями."
             }
         },
         {
             "question": {
-                "en": "What is featured on this build guide?"
+                "en": "What is featured on this build guide?",
+                "ru": "Что представлено в этом руководстве по сборке?"
             },
             "answer": {
-                "en": "Each character guide can include recommended **Light Cones**, **Cavern Relics**, **Planar Ornaments**, **Relic main stats**, **substat priorities**, and **Trace priorities**. Some characters may also have multiple builds when they have meaningfully different playstyles or roles."
+                "en": "Each character guide can include recommended **Light Cones**, **Cavern Relics**, **Planar Ornaments**, **Relic main stats**, **substat priorities**, and **Trace priorities**. Some characters may also have multiple builds when they have meaningfully different playstyles or roles.",
+                "ru": "В каждом руководстве по персонажу могут быть указаны рекомендуемые **Световые конусы**, **пещерные реликвии**, **планарные украшения**, **основные характеристики реликвий**, **приоритеты дополнительных характеристик** и **приоритеты следов**. У некоторых персонажей также может быть несколько вариантов прокачки, если у них существенно различаются стили игры или роли."
             }
         },
         {
             "question": {
-                "en": "Who is this guide intended for?"
+                "en": "Who is this guide intended for?",
+                "ru": "Для кого предназначено это руководство?"
             },
             "answer": {
-                "en": "The guide is primarily intended for players who are actively building characters and have access to normal endgame gearing options, including 5★ Relics. Newer players can still use the recommendations, but they may not yet have access to every Light Cone, Relic set, or stat combination shown."
+                "en": "The guide is primarily intended for players who are actively building characters and have access to normal endgame gearing options, including 5★ Relics. Newer players can still use the recommendations, but they may not yet have access to every Light Cone, Relic set, or stat combination shown.",
+                "ru": "Данное руководство в первую очередь предназначено для игроков, активно прокачивающих своих персонажей и имеющих доступ к стандартным вариантам экипировки для эндгейма, включая 5★ реликвии. Новые игроки также могут использовать эти рекомендации, но у них может еще не быть доступа ко всем показанным комбинациям Световых конусов, наборов реликвий или характеристик."
             }
         },
         {
             "question": {
-                "en": "How are Light Cones ranked?"
+                "en": "How are Light Cones ranked?",
+                "ru": "Как оцениваются Световые конусы?"
             },
             "answer": {
-                "en": "Light Cones are ranked based on how well they perform for the specific character and build being shown. Rankings may account for damage, support value, utility, consistency, and other effects relevant to that character. A Light Cone being strong in general does not necessarily mean it will rank highly for every character."
+                "en": "Light Cones are ranked based on how well they perform for the specific character and build being shown. Rankings may account for damage, support value, utility, consistency, and other effects relevant to that character. A Light Cone being strong in general does not necessarily mean it will rank highly for every character.",
+                "ru": ""
             }
         },
         {
             "question": {
-                "en": "What does S1, S2, S3, S4, or S5 mean?"
+                "en": "What does S1, S2, S3, S4, or S5 mean?",
+                "ru": "Что означают S1, S2, S3, S4 или S5?"
             },
             "answer": {
                 "en": "**S** refers to a Light Cone's **Superimposition level**. For example, S1 means Superimposition 1 and S5 means Superimposition 5. Unless otherwise stated, limited 5★ Light Cones are generally compared at S1, while some accessible Light Cones may be shown at higher Superimposition levels when appropriate."
