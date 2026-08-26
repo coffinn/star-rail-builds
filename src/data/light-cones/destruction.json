@@ -289,7 +289,8 @@
         "rarity": 4,
         "version_released": "2.0",
         "passive": {
-            "en": "When the wearer's cumulative HP loss during one attack exceeds 25% of their Max HP, or if the amount of their own HP consumed at one time is greater than 25% of their Max HP, immediately heals the wearer for 15% of their Max HP, and at the same time, increases the DMG they deal by {{value}}% for 2 turn(s). This effect can only be triggered once every 3 turn(s)."
+            "en": "When the wearer's cumulative HP loss during one attack exceeds 25% of their Max HP, or if the amount of their own HP consumed at one time is greater than 25% of their Max HP, immediately heals the wearer for 15% of their Max HP, and at the same time, increases the DMG they deal by {{value}}% for 2 turn(s). This effect can only be triggered once every 3 turn(s).",
+            "ru": "Когда потерянное за одну атаку НР владельца провышает 25% от его макс. НР или когда поглощённое им НР превышает 25% от его макс. Нр, владелец немедленно восстанавливает 15% своего НР, в то время как наносимый им урон повышается на {{value}}% на 2 хода. Этот эффект может сработать только 1 раз за 3 хода."
         },
         "s1": [
             25
@@ -321,7 +322,8 @@
         "rarity": 5,
         "version_released": "4.4",
         "passive": {
-            "en": "Increases the wearer's ATK by {{value}}% and Energy Regeneration Rate by {{value}}%. When the wearer uses Ultimate, for every 1 Energy consumed, increases the Ultimate DMG dealt this time by {{value}}%, up to a max increase of {{value}}%. When the wearer enters combat or uses Ultimate, the wearer gains \"King's Entertainment,\" lasting for 3 turn(s). While the wearer holds \"King's Entertainment,\" increases all allies' CRIT DMG by {{value}}%. Effects of the same type cannot stack."
+            "en": "Increases the wearer's ATK by {{value}}% and Energy Regeneration Rate by {{value}}%. When the wearer uses Ultimate, for every 1 Energy consumed, increases the Ultimate DMG dealt this time by {{value}}%, up to a max increase of {{value}}%. When the wearer enters combat or uses Ultimate, the wearer gains \"King's Entertainment,\" lasting for 3 turn(s). While the wearer holds \"King's Entertainment,\" increases all allies' CRIT DMG by {{value}}%. Effects of the same type cannot stack.",
+            "ru": "Повышает силу атаки владельца на {{value}}%, а скорость восстановления энергии - на {{value}}%. Когда владелец использует сверхспособность, урон сверхспособности в этот раз повышается на {{value}}% за каждую единицу потраченной энергии, до макс. {{value}}%. Когда владелец вступает в бой или использует сверхспособность, он получает статус Развлечение короля на 3 хода. Пока владелец обладает статусом Развлечение короля, крит. урон всех союзников повышается на {{value}}%. Эффекты подобного типа не могут складываться."
         },
         "s1": [
             18,
@@ -373,7 +375,8 @@
         "rarity": 5,
         "version_released": "1.4",
         "passive": {
-            "en": "Increases the wearer's CRIT DMG by {{value}}%. When an ally (excluding the wearer) gets attacked or loses HP, the wearer gains 1 stack of Eclipse, up to a max of 3 stack(s). Each stack of Eclipse increases the DMG of the wearer's next attack by {{value}}%. When 3 stack(s) are reached, additionally enables that attack to ignore {{value}}% of the enemy's DEF. This effect will be removed after the wearer uses an attack."
+            "en": "Increases the wearer's CRIT DMG by {{value}}%. When an ally (excluding the wearer) gets attacked or loses HP, the wearer gains 1 stack of Eclipse, up to a max of 3 stack(s). Each stack of Eclipse increases the DMG of the wearer's next attack by {{value}}%. When 3 stack(s) are reached, additionally enables that attack to ignore {{value}}% of the enemy's DEF. This effect will be removed after the wearer uses an attack.",
+            "ru": "Крит. урон владельца повышается на {{value}}%. Когда союзник получает атаку или теряет НР, владелец получает 1 ур. статуса Лунное затмение, до макс. 3 ур. Каждый уровень этого статуса повышает урон следующей атаки владельца на {{value}}%. Достижение 3 ур. статуса Лунное затмение позволяет этой атаке проигнорировать {{value}}% защиты противника. Этот эффект снимается после выполнения владельцем атаки."
         },
         "s1": [
             20,
@@ -415,7 +418,8 @@
         "rarity": 4,
         "version_released": "2.0",
         "passive": {
-            "en": "Increases the wearer’s Break Effect by {{value}}%. When the wearer uses their Ultimate, increases CRIT Rate by {{value}}%, lasting for 2 turn(s)."
+            "en": "Increases the wearer’s Break Effect by {{value}}%. When the wearer uses their Ultimate, increases CRIT Rate by {{value}}%, lasting for 2 turn(s).",
+            "ru": "Эффект пробития владельца повышается на {{value}}%. Когда владелец использует сверхспособность, его крит. шанс повышается на {{value}}% на 2 хода."
         },
         "s1": [
             28,
@@ -452,7 +456,8 @@
         "rarity": 3,
         "version_released": "1.0",
         "passive": {
-            "en": "If the wearer's current HP is lower than 80%, CRIT Rate increases by {{value}}%."
+            "en": "If the wearer's current HP is lower than 80%, CRIT Rate increases by {{value}}%.",
+            "ru": "Если текущее НР владельца ниже 80%, то его крит. шанс повышается на {{value}}%."
         },
         "s1": [
             12
@@ -484,7 +489,8 @@
         "rarity": 4,
         "version_released": "2.6",
         "passive": {
-            "en": "Increases the wearer's Max HP by {{value}}%. When losing or restoring this unit's HP, increases CRIT DMG by {{value}}%, lasting for 2 turn(s). This effect can only trigger once per turn."
+            "en": "Increases the wearer's Max HP by {{value}}%. When losing or restoring this unit's HP, increases CRIT DMG by {{value}}%, lasting for 2 turn(s). This effect can only trigger once per turn.",
+            "ru": "Макс. НР владельца повышается на {{value}}%. Когда владелец теряет или восстанавливает НР, его крит. урон повышается на {{value}}% на 2 хода. Этот эффект может сработать только 1 раз за ход."
         },
         "s1": [
             12,
@@ -521,7 +527,8 @@
         "rarity": 4,
         "version_released": "1.0",
         "passive": {
-            "en": "Increases the wearer's ATK by {{value}}%. Whenever the wearer defeats an enemy, they restore HP equal to {{value}}% of their ATK."
+            "en": "Increases the wearer's ATK by {{value}}%. Whenever the wearer defeats an enemy, they restore HP equal to {{value}}% of their ATK.",
+            "ru": "Сила атаки владельца повышается на {{value}}%. Когда владелец побеждает противника, он восстанавливает HP, равное {{value}}% от своей силы атаки."
         },
         "s1": [
             24,
@@ -558,7 +565,8 @@
         "rarity": 5,
         "version_released": "1.0",
         "passive": {
-            "en": "When the wearer attacks, increases their ATK by {{value}}% in this battle. This effect can stack up to 4 time(s). After the wearer breaks an enemy's Weakness, increases DMG dealt by {{value}}%, lasting for 2 turn(s)."
+            "en": "When the wearer attacks, increases their ATK by {{value}}% in this battle. This effect can stack up to 4 time(s). After the wearer breaks an enemy's Weakness, increases DMG dealt by {{value}}%, lasting for 2 turn(s).",
+            "ru": "Когда владелец использует атаку, его сила атаки в этом бою повышается на {{value}}%. Этот эффект может складываться до 4 раз. Когда владелец пробивает уязвимость противника, наносимый им урон повышается на {{value}}% на 2 хода."
         },
         "s1": [
             8,
@@ -595,7 +603,8 @@
         "rarity": 3,
         "version_released": "1.0",
         "passive": {
-            "en": "The wearer deals {{value}}% more DMG to enemy targets whose HP percentage is greater than 50%."
+            "en": "The wearer deals {{value}}% more DMG to enemy targets whose HP percentage is greater than 50%.",
+            "ru": "Урон владельца, наносимый противникам, чьё НР выше 50%, повышается на {{value}}%."
         },
         "s1": [
             20
@@ -627,7 +636,8 @@
         "rarity": 5,
         "version_released": "1.0",
         "passive": {
-            "en": "Increases the wearer's ATK by {{value}}%. When the wearer defeats an enemy or is hit, immediately restores HP equal to {{value}}% of the wearer's ATK. At the same time, the wearer's DMG is increased by {{value}}% until the end of their next turn. This effect cannot stack and can only trigger 1 time per turn."
+            "en": "Increases the wearer's ATK by {{value}}%. When the wearer defeats an enemy or is hit, immediately restores HP equal to {{value}}% of the wearer's ATK. At the same time, the wearer's DMG is increased by {{value}}% until the end of their next turn. This effect cannot stack and can only trigger 1 time per turn.",
+            "ru": "Сила атаки владельца повышается на {{value}}%. Когда владелец побеждает противника или когда противник атакует владельца, владелец немедленно восстанавливает НР, равное {{value}}% от своей силы атаки. Урон владельца также повышается на {{value}}% до конца следующего хода. Этот эффект не может складываться, и он может сработать только 1 раз за ход."
         },
         "s1": [
             24,
@@ -669,7 +679,8 @@
         "rarity": 4,
         "version_released": "1.0",
         "passive": {
-            "en": "When the wearer uses Basic ATK, Skill, or Ultimate to attack enemies, the wearer gains one stack of Mischievous. Each stack increases the wearer's ATK by {{value}}%."
+            "en": "When the wearer uses Basic ATK, Skill, or Ultimate to attack enemies, the wearer gains one stack of Mischievous. Each stack increases the wearer's ATK by {{value}}%.",
+            "ru": "Когда владелец использует базовую атаку, навык или сверхспособность для атаки противника, он получает 1 ур. статуса Озорство. Каждый уровень этого статуса повышает силу атаки владельца на {{value}}%."
         },
         "s1": [
             12
@@ -701,7 +712,8 @@
         "rarity": 5,
         "version_released": "1.2",
         "passive": {
-            "en": "Increases the wearer's CRIT rate by {{value}}% and increases their Max HP by {{value}}%. When the wearer is attacked or consumes their own HP, their DMG increases by {{value}}%. This effect is removed after the wearer uses an attack."
+            "en": "Increases the wearer's CRIT rate by {{value}}% and increases their Max HP by {{value}}%. When the wearer is attacked or consumes their own HP, their DMG increases by {{value}}%. This effect is removed after the wearer uses an attack.",
+            "ru": "Крит. шанс владельца повышается на {{value}}% и его макс. НР - на {{value}}%. Когда владелец получает атаку или расходует своё HP, наносимый им урон повышается на {{value}}%. Этот эффект снимается после того, как владелец использует атаку."
         },
         "s1": [
             18,
@@ -743,7 +755,8 @@
         "rarity": 5,
         "version_released": "3.4",
         "passive": {
-            "en": "The wearer's base SPD increases by {{value}}. When dealing DMG, ignores {{value}}% of the target's DEF. After the wearer uses Ultimate, gains \"Blazing Sun,\" which is removed at the start of the turn. While holding \"Blazing Sun,\" increases the wearer's DMG dealt by {{value}}%."
+            "en": "The wearer's base SPD increases by {{value}}. When dealing DMG, ignores {{value}}% of the target's DEF. After the wearer uses Ultimate, gains \"Blazing Sun,\" which is removed at the start of the turn. While holding \"Blazing Sun,\" increases the wearer's DMG dealt by {{value}}%.",
+            "ru": "Базовая скорость владельца повышается на {{value}}, а нанесение урона игнорирует {{value}}% защиты цели. После использования сверхспособности владелец получает статус Палящее солнце, который снимается в начале хода. Пока владелец имеет этот статус, наносимый владельцем урон повышается на {{value}}%."
         },
         "s1": [
             12,
@@ -785,7 +798,8 @@
         "rarity": 4,
         "version_released": "1.0",
         "passive": {
-            "en": "Increases the wearer's ATK by {{value}}%. When the wearer defeats an enemy, the wearer's CRIT Rate increases by {{value}}% for 3 turn(s)."
+            "en": "Increases the wearer's ATK by {{value}}%. When the wearer defeats an enemy, the wearer's CRIT Rate increases by {{value}}% for 3 turn(s).",
+            "ru": "Сила атаки владельца повышается на {{value}}%. Когда владелец побеждает противника, его крит. шанс повышается на {{value}}% на 3 хода."
         },
         "s1": [
             16,
@@ -822,7 +836,8 @@
         "rarity": 5,
         "version_released": "2.3",
         "passive": {
-            "en": "Increases the wearer's Break Effect by {{value}}%. When the wearer deals Break DMG to an enemy target, inflicts Routed on the enemy, lasting for 2 turn(s). Targets afflicted with Routed receive {{value}}% increased Break DMG from the wearer, and their SPD is lowered by 20%. Effects of the same type cannot be stacked."
+            "en": "Increases the wearer's Break Effect by {{value}}%. When the wearer deals Break DMG to an enemy target, inflicts Routed on the enemy, lasting for 2 turn(s). Targets afflicted with Routed receive {{value}}% increased Break DMG from the wearer, and their SPD is lowered by 20%. Effects of the same type cannot be stacked.",
+            "ru": "Эффект пробития владельца повышается на {{value}}%. Когда владелец наносит урон пробития противнику, цель получает статус Разгром на 2 хода. Урон пробития владельца, наносимый целям со статусом Разгром, повышается на {{value}}%, а их скорость понижается на 20%. Эффекты подобного типа не могут складываться."
         },
         "s1": [
             60,
@@ -859,7 +874,8 @@
         "rarity": 4,
         "version_released": "1.0",
         "passive": {
-            "en": "Increases the wearer's ATK by {{value}}%, and increases their DMG to enemies afflicted with Burn or Bleed by {{value}}%. This also applies to DoT."
+            "en": "Increases the wearer's ATK by {{value}}%, and increases their DMG to enemies afflicted with Burn or Bleed by {{value}}%. This also applies to DoT.",
+            "ru": "Сила атаки владельца повышается на {{value}}%. Урон, наносимый противникам со статусом Горение и Кровотечение, повышается на {{value}}%. Этот эффект также распространяется на периодический урон."
         },
         "s1": [
             10,
