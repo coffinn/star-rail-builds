@@ -236,7 +236,8 @@
         "rarity": 5,
         "version_released": "3.1",
         "passive": {
-            "en": "Increases the wearer's Max HP by {{value}}% and Incoming Healing by {{value}}%. When using Skill or Ultimate, consumes HP equal to 6.0% of the wearer's Max HP and increases the DMG dealt by this attack by {{value}}%. If this effect's consumed HP is greater than 500, the DMG additionally increases by {{value}}%. If the current HP is not sufficient, this effect reduces the wearer's current HP down to 1."
+            "en": "Increases the wearer's Max HP by {{value}}% and Incoming Healing by {{value}}%. When using Skill or Ultimate, consumes HP equal to {{value}}% of the wearer's Max HP and increases the DMG dealt by this attack by {{value}}%. If this effect's consumed HP is greater than 500, the DMG additionally increases by {{value}}%. If the current HP is not sufficient, this effect reduces the wearer's current HP down to 1.",
+            "ru": "Макс. НР владельца повышается на {{value}}%, а получаемое исцеление - на {{value}}%. Использование навыка или сверхспособности расходует {{value}}% от макс. НР владельца и повышает наносимый этой атакой урон на {{value}}%. Если расходуемое этим эффектом НР превышает 500 ед., то наносимый урон дополнительно повышается на {{value}}%. Если текущего НР недостаточно, то этот эффект понижает текущее НР владельца макс. до 1 ед."
         },
         "s1": [
             18,
