@@ -26,6 +26,7 @@
             ]
         }
     ],
+
     "planar_ornaments": [
         {
             "groups": [
@@ -41,6 +42,8 @@
             ]
         },
         {
+            "groups": [
+                {
                     "choose": true,
                     "items": [
                         { "name": "musketeer-of-wild-wheat", "pieces": 2 },
@@ -48,5 +51,7 @@
                         { "name": "pioneer-diver-of-dead-waters", "pieces": 2}
                     ]
                 }
+            ]
+        }
     ]
 }
