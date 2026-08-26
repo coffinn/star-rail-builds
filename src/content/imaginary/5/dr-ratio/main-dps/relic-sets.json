@@ -1,0 +1,52 @@
+{
+    "relic_sets": [
+        {
+            "groups": [
+                {
+                    "items": [{ "name": "pioneer-diver-of-dead-waters", "pieces": 4}]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items":
+                    [{
+                            "name": "genius-of-brilliant-stars", "pieces": 4,
+                            "note": { "en": "Potent with higher DEF shred."}
+                    }]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [{ "name": "wastelander-of-banditry-desert", "pieces": 4 }]
+                }
+            ]
+        }
+    ],
+    "planar_ornaments": [
+        {
+            "groups": [
+                {
+                    "items": [{ "name": "firmament-frontline-glamoth", "pieces": 2}]
+                },
+                {
+                    "items": [{ "name": "duran-dynasty-of-running-wolves", "pieces": 2}]
+                },
+                {
+                    "items": [{ "name": "izumo-gensei-and-takama-divine-realm", "pieces": 2}]
+                }
+            ]
+        },
+        {
+                    "choose": true,
+                    "items": [
+                        { "name": "musketeer-of-wild-wheat", "pieces": 2 },
+                        { "name": "prisoner-in-deep-confinement", "pieces": 2},
+                        { "name": "pioneer-diver-of-dead-waters", "pieces": 2}
+                    ]
+                }
+    ]
+}

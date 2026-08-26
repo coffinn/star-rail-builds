@@ -1,0 +1,22 @@
+{
+    "stats": [
+        {
+            "name": "cr",
+            "baseline": "85%",
+            "recommended": "85%",
+            "note": {
+                "en": "Ratio self-buffs CRIT Rate by 15% at the min."
+            }
+        },
+        {
+            "name": "cd",
+            "baseline": "120%",
+            "recommended": "120+%"
+        },
+        {
+            "name": "atk%",
+            "baseline": "",
+            "recommended": ""
+        }
+    ]
+}

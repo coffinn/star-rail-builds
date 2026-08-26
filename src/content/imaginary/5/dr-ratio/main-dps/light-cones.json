@@ -1,0 +1,22 @@
+{
+    "light_cones": [
+        {
+            "items": [{ "name": "baptism-of-pure-thought", "superimposition": 1}]
+        },
+        {
+            "items": [{ "name": "the-finale-of-a-lie", "superimposition": 1}]
+        },
+        {
+            "items": [{ "name": "worrisome-blissful", "superimposition": 1}]
+        },
+        {
+            "items": [
+                { "name": "cruising-in-the-stellar-sea", "superimpositon": 1},
+                { "name": "see-you-at-the-end", "superimposition": 1}
+            ]
+        },
+        {
+            "items": [{ "name": "only-silent-remains", "superimposition": 5}]
+        }
+    ]
+}
