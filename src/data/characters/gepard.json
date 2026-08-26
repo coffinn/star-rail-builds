@@ -138,7 +138,7 @@
       "min_level": 1,
       "max_level": 12,
       "default_level": 10,
-      "description_template": "When struck with a killing blow, instead of becoming knocked down, Gepard's HP immediately restores to {{scaling}}% of his Max HP. This effect can only trigger once per battle.",
+      "description_template": "When struck with a killing blow, instead of becoming knocked down, Gepard's HP immediately restores to {{scaling1}}% of his Max HP. This effect can only trigger once per battle.",
       "scaling": {
         "scaling1": [
           25,
