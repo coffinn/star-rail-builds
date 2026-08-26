@@ -605,7 +605,7 @@
             "crit-rate",
             "speed"
         ],
-        "2pc": {
+        "2p": {
             "en": "Increases the wearer's CRIT Rate by 8%. While the wearer's memosprite is on the field, increases all allies' SPD by 8%. This effect cannot be stacked.",
             "ru": "Повышает крит. шанс владельца на 8%. Пока дух памяти владельца находится на поле боя, скорость всех союзников повышается на 8%. Этот эффект не может складываться."
         }
@@ -931,7 +931,7 @@
         "tags":[
             "break-effect"
         ],
-        "2pc": {
+        "2p": {
             "en": "Increases the wearer's Break Effect by 16%. When the wearer's SPD reaches 145 or higher, the wearer's Break Effect increases by an extra 20%."
         }
     },
