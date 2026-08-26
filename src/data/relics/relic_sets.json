@@ -811,6 +811,18 @@
             "en": "Increases the wearer's Energy Regeneration Rate by 5%. When the wearer's SPD reaches 120 or higher, the wearer's action is Advanced Forward by 40% immediately upon entering battle."
         }
     },
+    "tengoku-livestream": {
+        "type": "planar",
+        "rarity": 5,
+        "version_released": "3.7",
+        "tags": [
+            "skill-points",
+            "crit-dmg"
+        ],
+        "2p": {
+            "en": "Increases the wearer's CRIT DMG by 16%, If 3 or more Skill Points are consumed in the same turn, additionally increases the wearer's CRIT DMG by 32% for 3 turns."
+        }
+    },
     "the-wondrous-bananamusement-park": {
         "type": "planar",
         "rarity": 5,
