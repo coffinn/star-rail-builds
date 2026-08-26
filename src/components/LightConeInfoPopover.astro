@@ -1,5 +1,6 @@
 ---
 import InlineNoteLabel from './InlineNoteLabel.astro';
+import { resolveLightConeAssetUrlById } from '../utils/item-assets';
 import { t } from '../utils/i18n';
 import {
     formatLightConePassive,
@@ -51,7 +52,7 @@ const atkLabel = t(locale, 'ui', 'ATK', undefined, false);
 const defLabel = t(locale, 'ui', 'DEF', undefined, false);
 
 const info = lightCone.info;
-
+const imageUrl = lightCone.id ? resolveLightConeAssetUrlById(lightCone.id) : '';
 const superimpositions = [1, 2, 3, 4, 5] as const;
 
 function escapeHtml(value: unknown) {
@@ -110,7 +111,20 @@ const defValue = formatLightConeStatValue(
 
 const popoverCardHtml = info
     ? [
-          '<span class="info-popover-header">',
+          '<span class="info-popover-header',
+          imageUrl ? ' has-image' : '',
+          '">',
+
+          imageUrl
+              ? [
+                    '<span class="info-popover-image weapon-popover-image">',
+                    '<img src="',
+                    escapeHtml(imageUrl),
+                    '" alt="" loading="lazy" decoding="async">',
+                    '</span>',
+                ].join('')
+              : '',
+
           '<span class="info-popover-name">',
           escapeHtml(lightCone.name),
           '</span>',
@@ -119,6 +133,7 @@ const popoverCardHtml = info
           escapeHtml(info.rarity),
           ' ★',
           '</span>',
+
           '</span>',
 
           '<span class="info-popover-stat">',

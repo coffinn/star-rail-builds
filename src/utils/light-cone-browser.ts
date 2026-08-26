@@ -6,37 +6,37 @@ import { getLocale, t } from './i18n';
 import { resolveLightConeAssetImage } from './item-assets';
 
 import {
-  formatLightConePassive,
-  type LightConePassiveText,
-  type LightConePassiveValue,
+    formatLightConePassive,
+    type LightConePassiveText,
+    type LightConePassiveValue,
 } from './light-cone-passive';
 
 const superimpositions = [1, 2, 3, 4, 5] as const;
 
 type SharedLightConeData = {
-  rarity: number;
-  source?: string;
-  version_released?: string;
+    rarity: number;
+    source?: string;
+    version_released?: string;
 
-  passive?: LightConePassiveText;
+    passive?: LightConePassiveText;
 
-  s1?: LightConePassiveValue[];
-  s2?: LightConePassiveValue[];
-  s3?: LightConePassiveValue[];
-  s4?: LightConePassiveValue[];
-  s5?: LightConePassiveValue[];
+    s1?: LightConePassiveValue[];
+    s2?: LightConePassiveValue[];
+    s3?: LightConePassiveValue[];
+    s4?: LightConePassiveValue[];
+    s5?: LightConePassiveValue[];
 
-  level_1?: {
-    hp?: number;
-    atk?: number;
-    def?: number;
-  };
+    level_1?: {
+        hp?: number;
+        atk?: number;
+        def?: number;
+    };
 
-  level_max?: {
-    hp?: number;
-    atk?: number;
-    def?: number;
-  };
+    level_max?: {
+        hp?: number;
+        atk?: number;
+        def?: number;
+    };
 };
 
 /**
@@ -47,156 +47,163 @@ type SharedLightConeData = {
  * harmony.json -> "harmony"
  */
 function getLightConePaths() {
-  const lightConeDataPath = path.resolve('src/data/light-cones');
+    const lightConeDataPath = path.resolve('src/data/light-cones');
 
-  if (!fs.existsSync(lightConeDataPath)) {
-    return [];
-  }
+    if (!fs.existsSync(lightConeDataPath)) {
+        return [];
+    }
 
-  return fs
-    .readdirSync(lightConeDataPath)
-    .filter((fileName) => fileName.endsWith('.json'))
-    .map((fileName) => path.basename(fileName, '.json'));
+    return fs
+        .readdirSync(lightConeDataPath)
+        .filter((fileName) => fileName.endsWith('.json'))
+        .map((fileName) => path.basename(fileName, '.json'));
 }
 
 /**
  * Loads every Light Cone from every Path.
  */
 function getLightConeEntries(locale: any, lang: string) {
-  const lightConeDataPath = path.resolve('src/data/light-cones');
-  const lightConePaths = getLightConePaths();
+    const lightConeDataPath = path.resolve('src/data/light-cones');
+    const lightConePaths = getLightConePaths();
 
-  return lightConePaths.flatMap((pathName) => {
-    const filePath = path.join(
-      lightConeDataPath,
-      `${pathName}.json`,
-    );
+    return lightConePaths.flatMap((pathName) => {
+        const filePath = path.join(
+            lightConeDataPath,
+            `${pathName}.json`,
+        );
 
-    const pathData = readJSONFile(filePath) as Record<
-      string,
-      SharedLightConeData
-    >;
+        const pathData = readJSONFile(filePath) as Record<
+            string,
+            SharedLightConeData
+        >;
 
-    const pathLabel = t(
-      locale,
-      'path',
-      pathName,
-      undefined,
-      false,
-    );
+        const pathLabel = t(
+            locale,
+            'path',
+            pathName,
+            undefined,
+            false,
+        );
 
-    return Object.entries(pathData).map(([id, info]) => {
-      return {
-        id,
+        return Object.entries(pathData).map(([id, info]) => {
+            return {
+                id,
 
-        image: resolveLightConeAssetImage(
-          pathName,
-          id,
-        ),
-
-        name: t(
-          locale,
-          'lightcone',
-          id,
-          undefined,
-          false,
-        ),
-
-        rarity: info.rarity,
-
-        path: pathName,
-        pathLabel,
-
-        versionReleased:
-          info.version_released ?? '',
-
-        sourceName:
-          info.source ?? '',
-
-        level1Hp: String(
-          info.level_1?.hp ?? '',
-        ),
-
-        levelMaxHp: String(
-          info.level_max?.hp ?? '',
-        ),
-
-        level1Atk: String(
-          info.level_1?.atk ?? '',
-        ),
-
-        levelMaxAtk: String(
-          info.level_max?.atk ?? '',
-        ),
-
-        level1Def: String(
-          info.level_1?.def ?? '',
-        ),
-
-        levelMaxDef: String(
-          info.level_max?.def ?? '',
-        ),
-
-        passivePanels: info.passive
-          ? superimpositions.map(
-              (superimposition) => ({
-                superimposition,
-
-                html: formatLightConePassive(
-                  info,
-                  superimposition,
-                  lang,
+                image: resolveLightConeAssetImage(
+                    pathName,
+                    id,
                 ),
-              }),
-            )
-          : [],
-      };
+
+                name: t(
+                    locale,
+                    'lightcone',
+                    id,
+                    undefined,
+                    false,
+                ),
+
+                rarity: info.rarity,
+
+                path: pathName,
+                pathLabel,
+
+                versionReleased:
+                    info.version_released ?? '',
+
+                sourceName: info.source
+                    ? t(
+                        locale,
+                        'lightconesource',
+                        info.source,
+                        undefined,
+                        false,
+                    )
+                    : '',
+
+                level1Hp: String(
+                    info.level_1?.hp ?? '',
+                ),
+
+                levelMaxHp: String(
+                    info.level_max?.hp ?? '',
+                ),
+
+                level1Atk: String(
+                    info.level_1?.atk ?? '',
+                ),
+
+                levelMaxAtk: String(
+                    info.level_max?.atk ?? '',
+                ),
+
+                level1Def: String(
+                    info.level_1?.def ?? '',
+                ),
+
+                levelMaxDef: String(
+                    info.level_max?.def ?? '',
+                ),
+
+                passivePanels: info.passive
+                    ? superimpositions.map(
+                        (superimposition) => ({
+                            superimposition,
+
+                            html: formatLightConePassive(
+                                info,
+                                superimposition,
+                                lang,
+                            ),
+                        }),
+                    )
+                    : [],
+            };
+        });
     });
-  });
 }
 
 /**
  * Builds all data needed by the Light Cone browser.
  */
 export function getLightConeBrowserData(
-  lang = 'en',
+    lang = 'en',
 ) {
-  const locale = getLocale(lang);
+    const locale = getLocale(lang);
 
-  const lightCones = getLightConeEntries(
-    locale,
-    lang,
-  ).sort((a, b) =>
-    a.name.localeCompare(b.name),
-  );
+    const lightCones = getLightConeEntries(
+        locale,
+        lang,
+    ).sort((a, b) =>
+        a.name.localeCompare(b.name),
+    );
 
-  const paths = [
-    ...new Map(
-      lightCones.map((lightCone) => [
-        lightCone.path,
-        {
-          id: lightCone.path,
-          label: lightCone.pathLabel,
-        },
-      ]),
-    ).values(),
-  ].sort((a, b) =>
-    a.label.localeCompare(b.label),
-  );
+    const paths = [
+        ...new Map(
+            lightCones.map((lightCone) => [
+                lightCone.path,
+                {
+                    id: lightCone.path,
+                    label: lightCone.pathLabel,
+                },
+            ]),
+        ).values(),
+    ].sort((a, b) =>
+        a.label.localeCompare(b.label),
+    );
 
-  const rarities = [
-    ...new Set(
-      lightCones.map(
-        (lightCone) => lightCone.rarity,
-      ),
-    ),
-  ].sort((a, b) => a - b);
+    const rarities = [
+        ...new Set(
+            lightCones.map(
+                (lightCone) => lightCone.rarity,
+            ),
+        ),
+    ].sort((a, b) => a - b);
 
-  return {
-    lang,
-    locale,
-    rarities,
-    paths,
-    lightCones,
-  };
+    return {
+        lang,
+        locale,
+        rarities,
+        paths,
+        lightCones,
+    };
 }

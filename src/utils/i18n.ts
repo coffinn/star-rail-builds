@@ -3,7 +3,7 @@ import { languageCodes, type LanguageCode } from './languages';
 type LocaleCategory = Record<string, string>;
 
 type LocaleBundle = {
-    
+
     relic: LocaleCategory;
     character: LocaleCategory;
     stat: LocaleCategory;
@@ -13,12 +13,13 @@ type LocaleBundle = {
     ui: LocaleCategory;
     note: LocaleCategory;
     lightcone: LocaleCategory;
+    lightconesource: LocaleCategory;
 };
 
 const localeFiles = {
-    
     relic: 'relic-sets',
     lightcone: 'light-cones',
+    lightconesource: 'light-cone-sources',
     character: 'characters',
     stat: 'stats',
     element: 'elements',
@@ -44,7 +45,7 @@ const locales = Object.fromEntries(
                 ([category, fileName]) => [
                     category,
                     dictionaries[
-                        `../i18n/${lang}/${fileName}.json`
+                    `../i18n/${lang}/${fileName}.json`
                     ] ?? {},
                 ],
             ),
@@ -85,7 +86,7 @@ export function getLocale(
 ) {
     const localeKey =
         typeof lang === 'string' &&
-        lang in locales
+            lang in locales
             ? (lang as LanguageCode)
             : 'en';
 
@@ -108,7 +109,7 @@ export function t(
 
     return (
         locales.en[
-            category as keyof LocaleBundle
+        category as keyof LocaleBundle
         ]?.[id] ?? id
     );
 }
