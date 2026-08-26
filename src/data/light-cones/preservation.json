@@ -3,7 +3,8 @@
         "rarity": 3,
         "version_released": "1.0",
         "passive": {
-            "en": "Increases the wearer's DEF by {{value}}%. If the wearer's current HP is lower than 50%, increases their DEF by a further {{value}}%."
+            "en": "Increases the wearer's DEF by {{value}}%. If the wearer's current HP is lower than 50%, increases their DEF by a further {{value}}%.",
+            "ru": "Защита владельца повышается на {{value}}%. Если текущее значение HP владельца ниже 50%, то его защита повышается на доп. {{value}}%."
         },
         "s1": [
             16,
@@ -40,7 +41,8 @@
         "rarity": 4,
         "version_released": "2.1",
         "passive": {
-            "en": "Increases the wearer's DEF by {{value}}%. For every on-field character that has a Shield, the DMG dealt by the wearer increases by {{value}}%."
+            "en": "Increases the wearer's DEF by {{value}}%. For every on-field character that has a Shield, the DMG dealt by the wearer increases by {{value}}%.",
+            "ru": "Защита владельца повышается на {{value}}%. За каждого имеющегося на поле боя персонажа с щитом наносимый владельцем урон повышается на {{value}}%."
         },
         "s1": [
             16,
@@ -77,7 +79,8 @@
         "rarity": 4,
         "version_released": "1.0",
         "passive": {
-            "en": "Increases the wearer's DEF by {{value}}%. After entering battle, increases All-Type RES of all allies by {{value}}%. Abilities of the same type cannot stack."
+            "en": "Increases the wearer's DEF by {{value}}%. After entering battle, increases All-Type RES of all allies by {{value}}%. Abilities of the same type cannot stack.",
+            "ru": "Защита владельца повышается на {{value}}%. В начале боя все типы сопротивления всех союзников повышаются на {{value}}%. Этот эффект не может складываться с эффектами подобного типа."
         },
         "s1": [
             16,
@@ -114,7 +117,8 @@
         "rarity": 3,
         "version_released": "1.0",
         "passive": {
-            "en": "When the wearer unleashes their Ultimate, they restore HP by {{value}}% of their Max HP."
+            "en": "When the wearer unleashes their Ultimate, they restore HP by {{value}}% of their Max HP.",
+            "ru": "Когда владелец использует сверхспособность, он восстанавливает {{value}}% HP."
         },
         "s1": [
             18
@@ -146,7 +150,8 @@
         "rarity": 4,
         "version_released": "2.0",
         "passive": {
-            "en": "Increases the wearer's Effect RES by {{value}}%. For every 100 of DEF the wearer has, increases the wearer's DMG dealt by {{value}}%, up to a maximum DMG increase of {{value}}%."
+            "en": "Increases the wearer's Effect RES by {{value}}%. For every 100 of DEF the wearer has, increases the wearer's DMG dealt by {{value}}%, up to a maximum DMG increase of {{value}}%.",
+            "ru": "Сопротивление эффектам владельца повышается на {{value}}%. Каждые 100 ед. защиты владельца повышают наносимый им урон на {{value}}% до макс. {{value}}%."
         },
         "s1": [
             12,
@@ -188,7 +193,8 @@
         "rarity": 5,
         "version_released": "2.1",
         "passive": {
-            "en": "Increases the wearer's DEF by {{value}}%. When the wearer provides a Shield to an ally, the wearer's CRIT DMG increases by {{value}}%, lasting for 2 turn(s). When the wearer's follow-up attack hits an enemy target, there is a {{value}}% base chance to increase the DMG taken by the attacked enemy target by {{value}}%, lasting for 2 turn(s)."
+            "en": "Increases the wearer's DEF by {{value}}%. When the wearer provides a Shield to an ally, the wearer's CRIT DMG increases by {{value}}%, lasting for 2 turn(s). When the wearer's follow-up attack hits an enemy target, there is a {{value}}% base chance to increase the DMG taken by the attacked enemy target by {{value}}%, lasting for 2 turn(s).",
+            "ru": "Защита владельца повышается на {{value}}%. Когда владелец накладывает щит на союзника, крит. урон владельца повышается на {{value}}% на 2 хода. Когда владелец поражает противника бонус-атакой, он имеет базовый шанс {{value}}% повысить получаемый атакованным противником урон на {{value}}% на 2 хода."
         },
         "s1": [
             40,
@@ -234,7 +240,8 @@
         "rarity": 4,
         "version_released": "3.4",
         "passive": {
-            "en": "Increases the wearer's provided Shield Effect by {{value}}%. While an ally target has a Shield, their DMG dealt increases by {{value}}%."
+            "en": "Increases the wearer's provided Shield Effect by {{value}}%. While an ally target has a Shield, their DMG dealt increases by {{value}}%.",
+            "ru": "Значение наложенного владельцем щита повышается на {{value}}%. Пока союзник имеет щит, наносимый этим союзником урон повышается на {{value}}%."
         },
         "s1": [
             12,
@@ -271,7 +278,8 @@
         "rarity": 4,
         "version_released": "1.0",
         "passive": {
-            "en": "The wearer is more likely to be attacked, and DMG taken is reduced by {{value}}%."
+            "en": "The wearer is more likely to be attacked, and DMG taken is reduced by {{value}}%.",
+            "ru": "Шанс владельца быть атакованным противником повышается. Получаемый владельцем урон понижается на {{value}}%."
         },
         "s1": [
             16
@@ -303,7 +311,8 @@
         "rarity": 5,
         "version_released": "1.0",
         "passive": {
-            "en": "Increases the wearer's DEF by {{value}}% and Effect Hit Rate by {{value}}%. Increases the chance for the wearer to be attacked by enemies. When the wearer is attacked, increase their DEF by an extra {{value}}% until the end of the wearer's turn."
+            "en": "Increases the wearer's DEF by {{value}}% and Effect Hit Rate by {{value}}%. Increases the chance for the wearer to be attacked by enemies. When the wearer is attacked, increase their DEF by an extra {{value}}% until the end of the wearer's turn.",
+            "ru": "Защита владельца повышается на {{value}%, а его шанс попадания эффектов - на {{value}%. Шанс быть атакованным противником также повышается. Когда противник атакует владельца, защита владельца повышается на доп. {{value}% до конца его хода."
         },
         "s1": [
             24,
@@ -345,7 +354,8 @@
         "rarity": 3,
         "version_released": "1.0",
         "passive": {
-            "en": "When the wearer Breaks an enemy's Weakness, the wearer restores HP by {{value}}% of their Max HP."
+            "en": "When the wearer Breaks an enemy's Weakness, the wearer restores HP by {{value}}% of their Max HP.",
+            "ru": "Когда владелец пробивает уязвимость противника, он восстанавливает {{value}}% HP."
         },
         "s1": [
             12
@@ -377,7 +387,8 @@
         "rarity": 5,
         "version_released": "1.3",
         "passive": {
-            "en": "Increases the wearer's Max HP by {{value}}% and Energy Regeneration Rate by {{value}}%. When the wearer's HP is reduced, all allies' DMG dealt increases by {{value}}%, lasting for 2 turn(s). At the start of every wave, restores HP to all allies by an amount equal to {{value}}% of their respective lost HP."
+            "en": "Increases the wearer's Max HP by {{value}}% and Energy Regeneration Rate by {{value}}%. When the wearer's HP is reduced, all allies' DMG dealt increases by {{value}}%, lasting for 2 turn(s). At the start of every wave, restores HP to all allies by an amount equal to {{value}}% of their respective lost HP.",
+            "ru": "Макс. HP владельца повышается на {{value}}%, а его скорость восстановления энергии - на {{value}}%. Когда HP владельца понижается, наносимый всеми союзниками урон повышается на {{value}}% на 2 хода. В начале каждой волны восстанавливает всем союзникам HP, равное {{value}}% от потерянного HP соответствующего персонажа."
         },
         "s1": [
             24,
@@ -424,7 +435,8 @@
         "rarity": 5,
         "version_released": "1.0",
         "passive": {
-            "en": "Increases the wearer's Effect RES by {{value}}%. If the wearer is attacked and has no Shield, they gain a Shield equal to {{value}}% of their Max HP for 2 turn(s). This effect can only be triggered once every 3 turn(s). If the wearer has a Shield when attacked, the DMG they receive decreases by {{value}}%."
+            "en": "Increases the wearer's Effect RES by {{value}}%. If the wearer is attacked and has no Shield, they gain a Shield equal to {{value}}% of their Max HP for 2 turn(s). This effect can only be triggered once every 3 turn(s). If the wearer has a Shield when attacked, the DMG they receive decreases by {{value}}%.",
+            "ru": "Сопротивление эффектам владельца повышается на {{value}}%. Если владелец атакован и у него нет Щита, то он получает Щит, равный {{value}}% от его макс. HP, на 2 хода. Этот эффект может сработать только один раз каждые 3 хода. Если при атаке у владельца есть Щит, то получаемый им урон понижается на {{value}}%."
         },
         "s1": [
             8,
@@ -466,7 +478,8 @@
         "rarity": 4,
         "version_released": "1.0",
         "passive": {
-            "en": "Increases the wearer's DEF by {{value}}%. Increases the DMG of the wearer when they use their Ultimate by {{value}}% of the wearer's DEF. This effect only applies 1 time per enemy target during each use of the wearer's Ultimate."
+            "en": "Increases the wearer's DEF by {{value}}%. Increases the DMG of the wearer when they use their Ultimate by {{value}}% of the wearer's DEF. This effect only applies 1 time per enemy target during each use of the wearer's Ultimate.",
+            "ru": "Защита владельца повышается на {{value}}%. Наносимый сверхспособностью владельца урон повышается на {{value}}% от его защиты. Этот эффект применяется только 1 раз к каждому противнику."
         },
         "s1": [
             16,
@@ -503,7 +516,8 @@
         "rarity": 5,
         "version_released": "3.6",
         "passive": {
-            "en": "Increases the wearer's ATK by {{value}}%. When the wearer uses Ultimate, restores HP equal to {{value}}% of the wearer's ATK for all allies, and additionally restores HP equal to {{value}}% of the wearer's ATK for the character with the lowest current HP, and grants \"Redoubt\" to all allies for 3 turn(s). Targets with \"Redoubt\" deal {{value}}% increased DMG, which further increases by {{value}}% if the targets have summons."
+            "en": "Increases the wearer's ATK by {{value}}%. When the wearer uses Ultimate, restores HP equal to {{value}}% of the wearer's ATK for all allies, and additionally restores HP equal to {{value}}% of the wearer's ATK for the character with the lowest current HP, and grants \"Redoubt\" to all allies for 3 turn(s). Targets with \"Redoubt\" deal {{value}}% increased DMG, which further increases by {{value}}% if the targets have summons.",
+            "ru": "Сила атаки владельца повышается на {{value}}%. Когда владелец использует сверхспособность, он восстанавливает всем союзникам НР, равное {{value}}% от своей силы атаки, а также восстанавливает НР, равное {{value}}% от своей силы атаки, персонажу с наименьшим текущим НР и накладывает на всех союзников статус Дозор на 3 хода. Наносимый целью со статусом Дозор урон повышается на {{value}}%. Если эта цель имеет призванное существо, то наносимый ею урон дополнительно повышается на {{value}}%."
         },
         "s1": [
             64,
@@ -555,7 +569,8 @@
         "rarity": 4,
         "version_released": "1.0",
         "passive": {
-            "en": "Increases the wearer's DEF by {{value}}%. When the wearer is attacked, there is a {{value}}% base chance to Burn the enemy. For each turn, the wearer deals DoT that is equal to {{value}}% of the wearer's DEF for 2 turn(s)."
+            "en": "Increases the wearer's DEF by {{value}}%. When the wearer is attacked, there is a {{value}}% base chance to Burn the enemy. For each turn, the wearer deals DoT that is equal to {{value}}% of the wearer's DEF for 2 turn(s).",
+            "ru": "Защита владельца повышается на {{value}}%. Когда противник атакует владельца, владелец имеет базовый шанс {{value}}% наложить на этого противника статус Горение. Противник со статусом Горение получает периодический урон, равный {{value}}% от защиты владельца, каждый ход в течение 2 ходов."
         },
         "s1": [
             16,
@@ -597,7 +612,8 @@
         "rarity": 4,
         "version_released": "1.0",
         "passive": {
-            "en": "At the start of the battle, the DMG dealt to all allies decreases by {{value}}% for 5 turn(s). At the same time, immediately restores HP to all allies equal to {{value}}% of the respective HP difference between the characters' Max HP and current HP."
+            "en": "At the start of the battle, the DMG dealt to all allies decreases by {{value}}% for 5 turn(s). At the same time, immediately restores HP to all allies equal to {{value}}% of the respective HP difference between the characters' Max HP and current HP.",
+            "ru": "В начале боя урон, получаемый всеми союзниками, понижается на {{value}}% на 5 ходов. НР всех союзников восстанавливается на {{value}}% от разницы между их макс. НР и текущим НР."
         },
         "s1": [
             8,
