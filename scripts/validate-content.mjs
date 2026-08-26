@@ -87,7 +87,19 @@ const relicData =
             'src/data/relics/relic_sets.json',
         ),
     ) ?? {};
+const translationAliases =
+    existingJSON(
+        path.join(
+            ROOT,
+            'src/data/translation-aliases.json',
+        ),
+    ) ?? {};
 
+const lightConeAliases =
+    translationAliases.lightcone ?? {};
+
+const relicAliases =
+    translationAliases.set ?? {};
 /*
  * Light Cones
  */
@@ -201,12 +213,12 @@ function validateLightConeItem(
     characterPath,
     sourceFile,
 ) {
-    const id =
+    const rawId =
         typeof item === 'string'
             ? item
             : item?.name;
 
-    if (!id) {
+    if (!rawId) {
         error(
             `Light Cone item without a name in ${path.relative(
                 ROOT,
@@ -217,9 +229,11 @@ function validateLightConeItem(
         return;
     }
 
+    const id = lightConeAliases[rawId] ?? rawId;
+
     if (!lightCones[id]) {
         error(
-            `Unknown Light Cone "${id}" in ${path.relative(
+            `Unknown Light Cone "${rawId}" in ${path.relative(
                 ROOT,
                 sourceFile,
             )}`,
@@ -310,8 +324,11 @@ function validateRelicItem(
         return;
     }
 
+    const resolvedName =
+        relicAliases[item.name] ?? item.name;
+
     const relic =
-        relicData[item.name];
+        relicData[resolvedName];
 
     if (!relic) {
         error(

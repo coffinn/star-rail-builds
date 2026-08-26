@@ -2,8 +2,10 @@
     "substats_priority": [
         "spd",
         {
-            "name": "cr"
-        },
-        "cd"
+            "items": [
+                "cr",
+                "cd"
+            ]
+        }
     ]
 }
