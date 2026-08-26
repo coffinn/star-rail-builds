@@ -1,0 +1,65 @@
+{
+    "light_cones": [
+        {
+            "items": [
+                {
+                   "name": "yet-hope-is-priceless",
+                   "superimposition":  1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                   "name": "before-dawn",
+                   "superimposition":  1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                   "name": "today-is-another-peaceful-day",
+                   "superimposition":  5
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                   "name": "the-day-the-cosmos-fell",
+                   "superimposition":  5,
+                   "note": "Can be used when enemies have Quantum weakness."
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                   "name": "milky-way",
+                   "superimposition":  1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                   "name": "geniuses-repose",
+                   "superimposition":  5
+                }
+            ]
+        },
+        {
+            "items":  [
+                {
+                    "name": "calculus",
+                    "superimposition": 5
+                },
+                {
+                    "name": "breakfast",
+                    "superimposition": 5
+                }
+            ]
+        }
+    ]
+}
