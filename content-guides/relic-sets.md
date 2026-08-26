@@ -1,6 +1,6 @@
-# artifacts-sets.json
+# relic-sets.json
 
-`artifacts-sets.json` defines ranked artifact set recommendations for one build.
+`relic-sets.json` defines ranked artifact set recommendations for one build.
 
 ```txt
 src/content/<type>/<rarity>/<character>/<build>/relic-sets.json

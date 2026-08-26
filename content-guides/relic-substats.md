@@ -1,6 +1,6 @@
-# artifacts-substats.json
+# relic-substats.json
 
-`artifacts-substats.json` defines substat priority for one build.
+`relic-substats.json` defines substat priority for one build.
 
 ```txt
 src/content/<type>/<rarity>/<character>/<build>/relic-substats.json
