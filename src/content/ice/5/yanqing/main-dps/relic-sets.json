@@ -26,10 +26,8 @@
         {
             "groups": [
                 {
-                    "choose": true,
                     "items": [
-                        { "name": "spd-set", "pieces": 2 },
-                        { "name": "spd-set", "pieces": 2}
+                        { "name": "hunter-of-glacial-forest","pieces": 4, "note": { "en": "Underwhelming set"}}
                     ]
                 }
             ]
@@ -37,8 +35,13 @@
         {
             "groups": [
                 {
+                    "choose": true,
                     "items": [
-                        { "name": "hunter-of-glacial-forest","pieces": 4, "note": { "en": "Underwhelming set"}}
+                        { "name": "musketeer-of-wild-wheat", "pieces": 2 },
+                        { "name": "prisoner-in-deep-confinement", "pieces": 2},
+                        { "name": "wavestrider-captain", "pieces": 2},
+                        { "name": "pioneer-diver-of-dead-waters", "pieces": 2},
+                        { "name": "hunter-of-glacial-forest", "pieces": 2}
                     ]
                 }
             ]
@@ -56,7 +59,7 @@
         {
             "groups": [
                 {
-                    "items": [{ "name": "space-seealing-station", "pieces": 2}]
+                    "items": [{ "name": "space-sealing-station", "pieces": 2}]
                 }
             ]
         },
