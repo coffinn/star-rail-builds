@@ -1,6 +1,6 @@
 {
     "id": "silver-wolf",
-    "name": "Silver Wolf",
+    "name": "Серебряный Волк",
     "rarity": 5,
     "element": "quantum",
     "path": "nihility",
@@ -14,15 +14,15 @@
     },
     "abilities": {
         "basic": {
-            "type": "Basic ATK",
-            "name": "System Warning",
-            "tag": "Single Target",
+            "type": "Базовая атака",
+            "name": "Системное предупреждение",
+            "tag": "Одиночная атака",
             "energy_gain": 20,
             "break": 10,
             "min_level": 1,
             "max_level": 7,
             "default_level": 6,
-            "description_template": "Deals Quantum DMG equal to {{damage}}% of Silver Wolf's ATK to one enemy.",
+            "description_template": "Наносит выбранному противнику квантовый урон, равный {{damage}}% от силы атаки Серебряного Волка.",
             "scaling": {
                 "damage": [
                     50,
@@ -36,15 +36,15 @@
             }
         },
         "skill": {
-            "type": "Skill",
-            "name": "Allow Changes?",
-            "tag": "Single Target",
+            "type": "Навык",
+            "name": "Разрешить изменения?",
+            "tag": "Одиночная атака",
             "energy_gain": 30,
             "break": 20,
             "min_level": 1,
             "max_level": 12,
             "default_level": 10,
-            "description_template": "There is a {{weakness_chance}}% base chance to add 1 Weakness of an on-field ally's Type to one enemy, prioritizing the Type of the first ally in the lineup, and reducing the enemy's RES to that Weakness Type by 20% for 3 turns. There is also a 100% base chance to reduce the target's All-Type RES by {{all_res_down}}% for 2 turns. Deals Quantum DMG equal to {{damage}}% of Silver Wolf's ATK to the target.",
+            "description_template": "Имеет базовый шанс {{weakness_chance}}% добавить выбранному противнику 1 уязвимость того же типа, что и тип атаки союзника на поле боя (в первую очередь добавляет тип уязвимости, соответствующий типу персонажа, стоящего на первом месте в отряде), а также понижает сопротивление урону противника этому типу атаки на 20% на 3 хода. Если добавленная уязвимость совпадает с изначальной уязвимостью противника, то понижение сопротивления урону не срабатывает. Один противник может получить только одну добавленную Серебряным Волком уязвимость. Если она добавляет новый тип уязвимости этому же противнику, сохраняется только последняя добавленная уязвимость. Имеет базовый шанс 100% понизить все типы сопротивления этого противника на {{all_res_down}}% на 2 хода. Наносит этому противнику квантовый урон, равный {{damage}}% от силы атаки Серебряного Волка.",
             "scaling": {
                 "weakness_chance": [
                     80,
@@ -91,16 +91,16 @@
             }
         },
         "ultimate": {
-            "type": "Ultimate",
-            "name": "User Banned",
-            "tag": "AoE",
+            "type": "Сверхспособность",
+            "name": "Пользователь забанен",
+            "tag": "Групповая атака",
             "energy_cost": 110,
             "energy_gain": 5,
             "break": 20,
             "min_level": 1,
             "max_level": 12,
             "default_level": 10,
-            "description_template": "There is a {{base_chance}}% base chance to reduce all enemies' DEF by {{def_down}}% for 3 turns. At the same time, deals Quantum DMG equal to {{damage}}% of Silver Wolf's ATK to all enemies.",
+            "description_template": "Имеет базовый шанс {{base_chance}}% понизить защиту всех противников на {{def_down}}% на 3 хода. Также наносит всем противникам квантовый урон, равный {{damage}}% от силы атаки Серебряного Волка.",
             "scaling": {
                 "base_chance": [
                     80,
@@ -147,13 +147,13 @@
             }
         },
         "talent": {
-            "type": "Talent",
-            "name": "Awaiting System Response...",
-            "tag": "Impair",
+            "type": "Талант",
+            "name": "Ожидание ответа системы...",
+            "tag": "Ослабление",
             "min_level": 1,
             "max_level": 12,
             "default_level": 10,
-            "description_template": "Silver Wolf can create three types of Bugs: reduce ATK by {{atk_down}}%, reduce DEF by {{def_down}}%, and reduce SPD by {{spd_down}}%. After every attack launched by Silver Wolf, she has a {{bug_chance}}% base chance to implant 1 random Bug that lasts for 3 turns. When an enemy is defeated, the Weakness Silver Wolf implanted on it transfers to another surviving enemy that does not already have an implanted Weakness, prioritizing Elite targets and above.",
+            "description_template": "Серебряный Волк может вызвать три типа Багов: понижение силы атаки на {{atk_down}}%, понижение защиты на {{def_down}}% и понижение скорости на {{spd_down}}%. Каждая атака Серебряного Волка даёт ей базовый шанс {{bug_chance}}% вызвать у выбранного противника случайный Баг, который длится 3 хода. Когда противник погибает, Серебряный Волк передаёт добавленную ему уязвимость противнику на поле боя, который ещё не получал уязвимость от Серебряного Волка. В первую очередь эта уязвимость передаётся цели элитного ранга и выше.",
             "scaling": {
                 "atk_down": [
                     5,
@@ -214,71 +214,71 @@
             }
         },
         "technique": {
-            "type": "Technique",
-            "name": "Force Quit Program",
-            "tag": "Attack",
+            "type": "Техника",
+            "name": "Программа принудительного выхода",
+            "tag": "Атака",
             "break": 20,
-            "description": "Immediately attacks the enemy. After entering battle, deals Quantum DMG equal to 80% of Silver Wolf's ATK to all enemies and reduces Toughness regardless of Weakness Type. Enemies whose Weakness is Broken this way trigger the Quantum Weakness Break effect."
+            "description": "Немедленно атакует противника и после начала боя наносит всем противникам квантовый урон, равный 80% от силы атаки Серебряного Волка, а также игнорирует типы уязвимости и истощает стойкость всех противников. Противники с пробитой таким образом уязвимостью получают эффект пробития квантовой уязвимости."
         }
     },
     "major_traces": {
         "2": {
-            "name": "Generate",
-            "description": "Extends Bug duration by 1 turn. Whenever an enemy is inflicted with Weakness Break, Silver Wolf has a 100% base chance to implant a random Bug in that enemy."
+            "name": "Генерация",
+            "description": "Длительность Бага увеличивается на 1 ход. Каждое пробитие уязвимости противника даёт Серебряному Волку базовый шанс 100% вызвать у противника 1 случайный Баг."
         },
         "4": {
-            "name": "Inject",
-            "description": "Immediately regenerates 20 Energy at the start of battle. Silver Wolf also regenerates 5 Energy at the start of each of her turns."
+            "name": "Внедрение",
+            "description": "Немедленно восстанавливает 20 ед. энергии в начале боя. В начале своего хода Серебряный Волк восстанавливает 5 ед. своей энергии."
         },
         "6": {
-            "name": "Side Note",
-            "description": "For every 10% Effect Hit Rate Silver Wolf has, increases her ATK by 10%, up to a maximum increase of 50%."
+            "name": "Примечание",
+            "description": "Каждые имеющиеся у Серебряного Волка 10% шанса попадания эффектов повышают её силу атаки на 10% до макс. 50%."
         }
     },
     "stat_bonuses": [
         {
-            "stat": "Effect Hit Rate",
+            "stat": "Шанс попадания эффектов",
             "value": "+18%"
         },
         {
-            "stat": "ATK",
+            "stat": "Сила атаки",
             "value": "+28%"
         },
         {
-            "stat": "Quantum DMG",
+            "stat": "Квантовый урон",
             "value": "+8%"
         }
     ],
     "eidolons": [
         {
             "level": 1,
-            "name": "Social Engineering",
-            "description": "After using her Ultimate to attack enemies, Silver Wolf regenerates 7 Energy for every debuff on the target, up to 5 times per use of her Ultimate."
+            "name": "Социальная инженерия",
+            "description": "После использования сверхспособности для атаки противника за каждое имеющееся у этого противника ослабление Серебряный Волк восстанавливает 7 ед. энергии. Этот эффект может сработать до 5 раз за каждое использование сверхспособности для атаки противника."
         },
         {
             "level": 2,
-            "name": "Zombie Network",
-            "description": "When an enemy enters battle, increases its DMG received by 20%. When an ally attacks that enemy, Silver Wolf has a 100% base chance to implant 1 random Bug."
+            "name": "Бот-сеть",
+            "description": "Когда противник вступает в бой, получаемый им урон повышается на 20%. Когда противник получает атаку союзника, Серебряный Волк получает базовый шанс 100% добавить ему 1 случайный Баг."
         },
         {
             "level": 3,
-            "name": "Payload",
-            "description": "Skill Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+            "name": "Полезная нагрузка",
+            "description": "Уровень навыка повышается на 2, максимальный уровень - 15. Уровень таланта повышается на 2, максимальный уровень - 15."
         },
         {
             "level": 4,
-            "name": "Bounce Attack",
-            "description": "After using her Ultimate to attack an enemy, deals additional Quantum DMG equal to 20% of Silver Wolf's ATK for every debuff on that enemy. This can trigger up to 5 times against each target during each Ultimate."
+            "name": "Порт перенаправления",
+            "description": "После использования сверхспособности для атаки противника за каждое имеющееся у этого противника ослабление Серебряный Волк наносит дополнительный квантовый урон, равный 20% от её силы атаки. Этот эффект может сработать до 5 раз за каждое использование сверхспособности для атаки каждого противника."
         },
         {
             "level": 5,
-            "name": "Brute Force Attack",
-            "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+            "name": "Брутфорс",
+            "description": "Уровень сверхспособности повышается на 2, максимальный уровень - 15. Уровень базовой атаки повышается на 1, максимальный уровень - 10."
         },
         {
             "level": 6,
-            "name": "Overlay Network",
-            "description": "For every debuff an enemy has, Silver Wolf's DMG dealt to that enemy increases by 20%, up to a maximum increase of 100%."
+            "name": "Оверлейная сеть",
+            "description": "За каждое имеющееся у противника ослабление наносимый Серебряным Волком урон повышается на 20% до макс. 100%."
         }
     ]
 }
