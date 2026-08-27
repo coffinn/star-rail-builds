@@ -1,0 +1,34 @@
+{
+    "best": true,
+    "name": {
+        "en": "Support"
+    },
+    "global": [
+        {
+            "tag": "character-calculations",
+            "author": "coffinn",
+            "link": "https://example.com/calcs",
+            "detail": "Character calculations"
+        },
+        {
+            "tag": "investment-chart",
+            "author": "houseplantofficial",
+            "link": "https://imgur.com/a/Cn0nbGf",
+            "detail": "Investment Chart"
+        },
+        {
+            "tag": "team-guide",
+            "author": "GuideAuthor",
+            "link": "https://example.com/teams",
+            "detail": "Team guide"
+        }
+    ],
+    "notes": [
+        {
+            "en": "This is the first test Honkai: Star Rail character build."
+        },
+        {
+            "en": "Silver Wolf is being used to test the new HSR content structure."
+        }
+    ]
+}
