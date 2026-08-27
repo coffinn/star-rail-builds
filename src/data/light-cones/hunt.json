@@ -778,7 +778,7 @@
         "version_released": "1.4",
         "passive": {
             "en": "Increase the wearer's CRIT Rate by {{value}}% and increases DMG dealt by follow-up attack by {{value}}%. After the wearer uses a follow-up attack, inflicts the target with the Tame state, stacking up to 2 time(s). When allies hit enemy targets under the Tame state, each Tame stack increases the CRIT DMG dealt by {{value}}%.",
-            "ru": "Крит. шанс владельца повышается на {{value}}%%, а наносимый бонус-атакой урон - на {{value}}%%. После выполнения бонус-атаки накладывает на цель статус Приручение, который может складываться до 2 раз. Когда союзник поражает противника со статусом Приручение, каждый уровень этого статуса повышает наносимый крит. урон на {{value}}%."
+            "ru": "Крит. шанс владельца повышается на {{value}}%, а наносимый бонус-атакой урон - на {{value}}%. После выполнения бонус-атаки накладывает на цель статус Приручение, который может складываться до 2 раз. Когда союзник поражает противника со статусом Приручение, каждый уровень этого статуса повышает наносимый крит. урон на {{value}}%."
         },
         "s1": [
             18,

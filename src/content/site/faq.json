@@ -1,7 +1,7 @@
 {
     "intro": {
         "en": "Hello and welcome to Star Rail Builds!<br><br>This website aims to help players build their Honkai: Star Rail characters as effectively as possible by providing recommended Light Cones, Relic and Planar Ornament sets, main stats, substats, and Trace priorities. This FAQ explains how the guide works and how to interpret its recommendations.",
-        "ru": "Добро пожаловать в руководство по билдам персонажей Honkai: Star Rail!<br><br> Цель этого сайта - помочь игрокам как можно лучше собрать своих персонажей: выбрать оптимальные Световые конусы, наборы реликвий и планарные украшения, основаные статы, сабстаты, и приоритетные следы. Раздел FAQ предназначен для того, чтобы помочь разобраться как работает руководство и как интерпретировать его рекомендации."
+        "ru": "Добро пожаловать в руководство по билдам персонажей Honkai: Star Rail!<br><br> Цель этого сайта - помочь игрокам как можно лучше собрать своих персонажей: выбрать оптимальные Световые конусы, наборы реликвий и планарные украшения, основаные статы, сабстаты, и приоритетные следы. Раздел FAQ предназначен для того, чтобы помочь разобраться, как работает руководство и как интерпретировать его рекомендации."
     },
     "items": [
         {
@@ -11,7 +11,7 @@
             },
             "answer": {
                 "en": "The guide originally existed as a Google Sheet, but as the amount of Honkai: Star Rail build information grew, a website became a better way to organize and present it. The website makes it easier to browse characters, search and filter Light Cones and Relics, view detailed set and Light Cone information, manage multiple builds for a character, and expand the guide with new features without overcrowding a spreadsheet.",
-                "ru": "Первоначально руководство существовало в виде таблицы Google Sheets, но по мере роста объема информации о сборках персонажей в Honkai: Star Rail, веб-сайт стал более удобным способом организации и представления данных. Веб-сайт упрощает поиск персонажей, поиск и фильтрацию Световых конусов и реликвий, просмотр подробной информации о наборах и Световых конусах, управление несколькими сборками для одного персонажа, а также позволяет расширять руководство новыми функциями, не перегружая электронную таблицу."
+                "ru": "Первоначально руководство существовало в виде таблицы Google Sheets, но по мере роста объема информации о сборках персонажей в Honkai: Star Rail, веб-сайт стал более удобным способом организации и представления данных. Веб-сайт упрощает поиск персонажей, фильтрацию Световых конусов и реликвий, просмотр подробной информации о наборах и Световых конусах, управление несколькими сборками для одного персонажа, а также позволяет расширять руководство новыми функциями, не перегружая электронную таблицу."
             }
         },
         {
@@ -61,7 +61,7 @@
             },
             "answer": {
                 "en": "**S** refers to a Light Cone's **Superimposition level**. For example, S1 means Superimposition 1 and S5 means Superimposition 5. Unless otherwise stated, limited 5★ Light Cones are generally compared at S1, while some accessible Light Cones may be shown at higher Superimposition levels when appropriate.",
-                "ru": "**S** обозначает **уровень наложения** (Superimposition level) Светового конуса. Например, S1 означает уровень наложения 1, а S5 — уровень наложения 5. Если не указано иное, лимитированные 5★ Световые конусы обычно сравнивается на уровне S1, в то время как некоторые бесплатные Световые конусы могут отображаться на более высоких уровнях наложения, если это необходимо."
+                "ru": "**S** обозначает **уровень наложения** (Superimposition level) Светового конуса. Например, S1 означает уровень наложения 1, а S5 — уровень наложения 5. Если не указано иное, лимитированные 5★ Световые конусы обычно сравниваются на уровне S1, в то время как некоторые бесплатные Световые конусы могут отображаться на более высоких уровнях наложения, если это необходимо."
             }
         },
         {
@@ -71,7 +71,7 @@
             },
             "answer": {
                 "en": "Highlighted Light Cones represent free or especially accessible options according to the site's Light Cone data. They are included to make sure players can identify useful alternatives even when they do not own the higher-ranked limited options. A highlighted option is not necessarily the character's strongest option.",
-                "ru": "Выделенные Световые конусы обозначают бесплатные или более доступные варианты согласно данным сайта. Они включены для того, чтобы игроки могли определить полезные альтернативы, даже если у них нет более высокоранговых эксклюзивных вариантов. Выделенный вариант не обязательно является самым сильным вариантом персонажа."
+                "ru": "Выделенные Световые конусы обозначают бесплатные или более доступные варианты согласно данным сайта. Они включены для того, чтобы игроки могли определить полезные альтернативы, даже если у них нет более высокоранговых эксклюзивных вариантов. Выделенный конус не обязательно является самым сильным вариантом для персонажа."
             }
         },
         {
@@ -87,7 +87,7 @@
         {
             "question": {
                 "en": "Why does the guide recommend a 2-Pc + 2-Pc Relic combination?",
-                "ru": "Почему в руководстве рекомендуется комбинация из 2 шт. + 2 шт. наборов с реликвиями?"
+                "ru": "Почему в руководстве рекомендуется комбинация из 2 шт. + 2 шт. наборов реликвий?"
             },
             "answer": {
                 "en": "Some characters do not gain enough from a specific 4-Pc set to justify forcing it. In those cases, combining two useful 2-Pc bonuses can perform similarly or better while also making Relic farming and substat optimization easier.",
@@ -101,7 +101,7 @@
             },
             "answer": {
                 "en": "The guide separately lists recommended main stats for **Body**, **Feet**, **Planar Sphere**, and **Link Rope**. When multiple stats are listed for one slot, the best choice may depend on your build, team, Light Cone, or existing stats. Check the character's notes when additional context is provided.",
-                "ru": "В руководстве отдельно указаны рекомендуемые основные статы для **тела**, **ног**, **планарной сферы** и **соединительная вязи**. Если для одного слота указано несколько характеристик, лучший выбор может зависеть от вашей сборки, команды, Светового конуса или имеющихся статов. Для получения дополнительной информации обратитесь к примечаниям к персонажу."
+                "ru": "В руководстве отдельно указаны рекомендуемые основные статы для **тела**, **ног**, **планарной сферы** и **соединительной вязи**. Если для одного слота указано несколько характеристик, лучший выбор может зависеть от вашей сборки, команды, Светового конуса или имеющихся статов. Для получения дополнительной информации обратитесь к примечаниям к персонажу."
             }
         },
         {
@@ -131,7 +131,7 @@
             },
             "answer": {
                 "en": "Trace priority shows the relative importance of leveling a character's **Basic ATK**, **Skill**, **Ultimate**, and **Talent** for the selected build. The recommended levels can be adjusted using the Trace sliders on the character page so you can see how the ability values change at different levels.",
-                "ru": "Приоритет прокачки следов показывает относительную важность прокачки **базовой атаки**, **навыка**, **сверспособности** и **таланта** персонажа для выбранной сборки. Рекомендуемые уровни можно настроить с помощью ползунков следов на странице персонажа, чтобы увидеть, как значения способностей меняются на разных уровнях."
+                "ru": "Приоритет прокачки следов показывает относительную важность прокачки **базовой атаки**, **навыка**, **сверхспособности** и **таланта** персонажа для выбранной сборки. Рекомендуемые уровни можно настроить с помощью ползунков следов на странице персонажа, чтобы увидеть, как значения способностей меняются на разных уровнях."
             }
         },
         {
@@ -151,7 +151,7 @@
             },
             "answer": {
                 "en": "Unless a guide specifically says otherwise, limited 5★ characters should generally be interpreted from an **E0 baseline**. Recommendations may change at higher Eidolons, and particularly important Eidolon-dependent differences can be mentioned in the build notes.",
-                "ru": "Если в руководстве не указано иное, эксклюзивных 5★ персонажей, как правило, рассматриваются исходяна **базе E0**. Рекомендации могут меняться на более высоких уровнях эйдолонов, и особенно важные различия, зависящие от эйдолона, могут быть упомянуты в примечаниях к сборке."
+                "ru": "Если в руководстве не указано иное, эксклюзивные 5★ персонажи, как правило, рассматриваются на **базе E0**. Рекомендации могут меняться на более высоких уровнях эйдолонов, и особенно важные различия, зависящие от эйдолона, могут быть упомянуты в примечаниях к сборке."
             }
         },
         {
@@ -171,7 +171,7 @@
             },
             "answer": {
                 "en": "Character builds can change when new Light Cones, Relic sets, teammates, enemies, or game modes are released. Maintaining every character at once takes time, so updates may be prioritized based on how significantly a character's recommendations have changed. Check the character's displayed update version to see when their guide was last reviewed.",
-                "ru": "Сборки персонажей могут меняться при появлении новых Световых конусов, наборов реликвий, новых персонажей, врагов или игровых режимов. Поддержание актуальности всех персонажей одновременно требует времени, поэтому приоритет обновлений может определяться тем, насколько существенно изменились рекомендации по персонажу. Проверьте указанную версию обновления руководства персонажа, чтобы узнать, когда руководство по нему было в последний раз обновлено."
+                "ru": "Сборки персонажей могут меняться при появлении новых Световых конусов, наборов реликвий, новых персонажей, врагов или игровых режимов. Поддержание актуальности всех персонажей одновременно требует времени, поэтому приоритет обновлений может определяться тем, насколько существенно изменились рекомендации по персонажу. Проверьте указанную версию руководства, чтобы узнать, когда оно обновлялось в последний раз."
             }
         },
         {
@@ -227,11 +227,11 @@
         {
             "question": {
                 "en": "Do you provide full team recommendations?",
-                "ru": "Вы предоставляете рекомендации комманд?"
+                "ru": "Вы предоставляете рекомендации команд?"
             },
             "answer": {
                 "en": "The site primarily focuses on **building individual characters**, rather than providing a complete team database. Important teammates, synergies, or team-dependent assumptions may still be mentioned when they materially affect a character's build.",
-                "ru": "Сайт в первую очередь ориентирован на **билдах персонажей**, а не на предоставление полной базы данных команд. Важные товарищи по команде, синергии или зависящие от команды предположения могут упоминаться, если они существенно влияют на билд персонажа."
+                "ru": "Сайт в первую очередь ориентирован на **билды персонажей**, а не на предоставление полной базы данных команд. Важные товарищи по команде, синергии или зависящие от команды предположения могут упоминаться, если они существенно влияют на билд персонажа."
             }
         },
         {
@@ -241,7 +241,7 @@
             },
             "answer": {
                 "en": "Some characters can be built for meaningfully different roles or playstyles. Separate builds allow the Light Cone, Relic, stat, and Trace recommendations to change without trying to force every possible setup into one ranking.",
-                "ru": "Некоторые персонажи могут быть собраны для совершенно разных ролей или стилей игры. Раздельные билды позволяют изменять рекомендации по Световому конусу, реликвиям, статами следам, не пытаясь подогнать все возможные варианты под один рейтинг."
+                "ru": "Некоторые персонажи могут быть собраны для совершенно разных ролей или стилей игры. Раздельные билды позволяют изменять рекомендации по Световому конусу, реликвиям, статам и следам, не пытаясь подогнать все возможные варианты под один рейтинг."
             }
         },
         {
@@ -251,7 +251,7 @@
             },
             "answer": {
                 "en": "The number indicates how many pieces of that set are being recommended. For example, **Eagle of Twilight Line (4)** means a 4-Pc Eagle of Twilight Line setup, while a Planar Ornament shown as **(2)** means its full 2-Pc set bonus is being used.",
-                "ru": "Число указывает, сколько предметов из этого набора рекомендуется. Например, **Орёл сумеречного рубежа (4)** означает набор из 4 предметов Орёл сумеречного рубежа, а планарные украшения, обозначенные как **(2)**, означает, что используется полный бонус от набора из 2 предметов."
+                "ru": "Число указывает, сколько предметов из этого набора рекомендуется. Например, **Орёл сумеречного рубежа (4)** означает набор из 4 предметов Орёл сумеречного рубежа, а планарные украшения, обозначенные как **(2)**, означают, что используется полный бонус от набора из 2 предметов."
             }
         },
         {
