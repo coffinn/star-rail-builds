@@ -27,14 +27,14 @@
             16
         ],
         "level_1": {
-            "hp": 0,
-            "atk": 0,
-            "def": 0
+            "hp": 43,
+            "atk": 19,
+            "def": 18
         },
         "level_max": {
-            "hp": 0,
-            "atk": 0,
-            "def": 0
+            "hp": 952,
+            "atk": 423,
+            "def": 396
         }
     },
     "dazzled-by-a-flowery-world": {
