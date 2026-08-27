@@ -1,0 +1,201 @@
+{
+  "id": "acheron",
+  "name": "Acheron",
+  "rarity": "5",
+  "element": "lightning",
+  "path": "nihility",
+  "version_released": "2.1",
+  "max_energy": 9,
+  "level_80_stats": {
+    "hp": 1125,
+    "atk": 698,
+    "def": 436,
+    "spd": 101
+  },
+  "abilities": {
+    "basic": {
+      "type": "Basic ATK",
+      "name": "Trilateral Wiltcross",
+      "tag": "Single Target",
+      "energy_gain": 0,
+      "break": 10,
+      "min_level": 1,
+      "max_level": 7,
+      "default_level": 6,
+      "description_template": "Deals Lightning DMG equal to {{scaling1}}% of Acheron's ATK to a single target enemy.",
+      "scaling": {
+        "scaling1": [
+          50,
+          60,
+          70,
+          80,
+          90,
+          100,
+          110
+        ]
+      }
+    },
+    "skill": {
+      "type": "Skill",
+      "name": "Octobolt Flash",
+      "tag": "Blast",
+      "energy_gain": 0,
+      "break_main": 20,
+      "break_adjacent": 10,
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "Gains 1 point(s) of Slashed Dream. Inflicts 1 stack(s) of Crimson Knot on a single target enemy, dealing Lightning DMG equal to {{scaling1}}% of Acheron's ATK to this target, as well as Lightning DMG equal to {{scaling2}}% of Acheron's ATK to adjacent targets.",
+      "scaling": {
+        "scaling1": [
+          80,
+          88,
+          96,
+          104,
+          112,
+          120,
+          130,
+          140,
+          150,
+          160,
+          168,
+          176,
+          184,
+          192,
+          200
+        ],
+        "scaling2": [
+          30,
+          33,
+          36,
+          39,
+          42,
+          45,
+          48.75,
+          52.5,
+          56.25,
+          60,
+          63,
+          66,
+          69,
+          72,
+          75
+        ]
+      }
+    },
+    "talent": {
+      "type": "Talent",
+      "name": "Atop Rainleaf Hangs Oneness",
+      "tag": "Enhance",
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "When Slashed Dream reaches 9 point(s), the Ultimate can be activated. During the Ultimate, reduces enemies' Toughness regardless of Weakness Types and reduces all enemies' All-Type RES by {{scaling1}}%, lasting until the end of the Ultimate. When any unit inflicts debuffs on an enemy target while using their ability, Acheron gains 1 point of Slashed Dream and inflicts 1 stack of Crimson Knot on a target. If debuffs are inflicted on multiple targets, then the 1 stack of Crimson Knot will be inflicted on the enemy target with the most Crimson Knot stacks. This effect can only trigger once for every ability use. After an enemy target exits the field or gets defeated by any unit while Acheron is on the field, their Crimson Knot stacks will be transferred to the enemy target with the most Crimson Knot stacks on the whole field.",
+      "scaling": {
+        "scaling1": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16.25,
+          17.5,
+          18.75,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ]
+      }
+    },
+    "ultimate": {
+      "type": "Ultimate",
+      "name": "Slashed Dream Cries in Red",
+      "tag": "AoE",
+      "energy_gain": 0,
+      "break": 5,
+      "energy_cost": 9,
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "Sequentially unleash Rainblade 3 times and Stygian Resurge 1 time, dealing Lightning DMG up to {{scaling5}}% of Acheron's ATK to a single target enemy, as well as Lightning DMG up to {{scaling6}}% of Acheron's ATK to other targets.  Rainblade: Deals Lightning DMG equal to {{scaling1}}% of Acheron's ATK to a single target enemy and removes up to 3 stacks of Crimson Knot from the target. When Crimson Knot is removed, immediately deals Lightning DMG equal to {{scaling2}}% of Acheron's ATK to all enemies. For every stack of Crimson Knot removed, this DMG Multiplier is additionally increased, up to a maximum of {{scaling4}}%.  Stygian Resurge: Deals Lightning DMG equal to {{scaling3}}% of Acheron's ATK to all enemies and remove all Crimson Knots.  Crimson Knot cannot be applied to enemies during the Ultimate.",
+      "scaling": {
+        "scaling1": "14.4,15.36,16.32,17.28,18.24,19.2,20.4,21.6,22.8,24,24.96,25.92,26.88,27.84,28.8",
+        "scaling2": "9,9.6,10.2,10.8,11.4,12,12.75,13.5,14.25,15,15.6,16.2,16.8,17.4,18",
+        "scaling3": "72,76.8,81.6,86.4,91.2,96,102,108,114,120,124.8,129.6,134.4,139.2,144",
+        "scaling4": "36,38.4,40.8,43.2,45.6,48,51,54,57,60,62.4,64.8,67.2,69.6,72",
+        "scaling5": "223.2,238.08,252.96,267.84,282.72,297.6,316.2,334.8,353.4,372,386.88,401.76,416.64,431.52,446.4",
+        "scaling6": "180,192,204,216,228,240,255,270,285,300,312,324,336,348,360"
+      }
+    },
+    "technique": {
+      "type": "Technique",
+      "name": "Quadrivalent Ascendance",
+      "tag": "",
+      "description": "Immediately attacks the enemy. At the start of each wave, gains Quadrivalent Ascendance, dealing Lightning DMG equal to 200% of Acheron's ATK to all enemies and reducing Toughness of all enemies irrespective of Weakness Types. When breaking Weaknesses, triggers the Lightning Weakness Break effect. Quadrivalent Ascendance: After using the Ultimate, Acheron gains 1 point(s) of Slashed Dream and inflicts 1 stack(s) of Crimson Knot on a single random enemy. If attacking a normal enemy, immediately defeats them without entering combat. When not hitting enemies, no Technique Points are consumed."
+    }
+  },
+  "major_traces": {
+    "2": {
+      "name": "Red Oni",
+      "description": "When battle starts, immediately gains 5 point(s) of Slashed Dream and applies 5 stack(s) of Crimson Knot to a random enemy. When Slashed Dream reaches its upper limit, for every point of Slashed Dream that exceeds the limit, gains 1 stack of Quadrivalent Ascendance. Enables Quadrivalent Ascendance to stack up to 3 time(s)."
+    },
+    "4": {
+      "name": "The Abyss",
+      "description": "When there are 1 or 2 Nihility characters other than Acheron in the team, the DMG dealt by Acheron's Basic ATK, Skill, and Ultimate increases to 115% or 160% of the original DMG respectively."
+    },
+    "6": {
+      "name": "Thunder Core",
+      "description": "When the Ultimate's Rainblade hits enemy targets that have Crimson Knot, the DMG dealt by Acheron increases by 30%, stacking up to 3 time(s) and lasting for 3 turn(s). And when Stygian Resurge triggers, additionally deals DMG for 6 times. Each time deals Lightning DMG equal to 25% of Acheron's ATK to a single random enemy and is considered as Ultimate DMG."
+    }
+  },
+  "stat_bonuses": [
+    {
+      "stat": "ATK",
+      "value": "+28%"
+    },
+    {
+      "stat": "CRIT DMG",
+      "value": "+24%"
+    },
+    {
+      "stat": "Lightning DMG",
+      "value": "+8%"
+    }
+  ],
+  "eidolons": [
+    {
+      "level": 1,
+      "name": "Silenced Sky Spake Sooth",
+      "description": "When dealing DMG to debuffed enemies, increases CRIT Rate by 18%."
+    },
+    {
+      "level": 2,
+      "name": "Mute Thunder in Still Tempest",
+      "description": "The number of Nihility characters required for the Trace \"The Abyss\" to achieve its highest possible effect is reduced by 1. When this unit's turn starts, gains 1 point of Slashed Dream and inflicts 1 stack of Crimson Knot on the enemy with the most Crimson Knot stacks."
+    },
+    {
+      "level": 3,
+      "name": "Frost Bites in Death",
+      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+    },
+    {
+      "level": 4,
+      "name": "Shrined Fire for Mirrored Soul",
+      "description": "When enemy targets enter combat, inflicts them with the Ultimate DMG Vulnerability, increasing the amount of Ultimate DMG they take by 8%."
+    },
+    {
+      "level": 5,
+      "name": "Strewn Souls on Erased Earths",
+      "description": "Skill Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+    },
+    {
+      "level": 6,
+      "name": "Apocalypse, the Emancipator",
+      "description": "Increases the All-Type RES PEN for the Ultimate DMG dealt by Acheron by 20%. The DMG dealt by Basic ATK and Skill will also be considered as Ultimate DMG and can Reduce enemy Toughness regardless of Weakness Types. When breaking Weaknesses, triggers the Lightning Weakness Break effect."
+    }
+  ]
+}
