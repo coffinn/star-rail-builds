@@ -1,0 +1,23 @@
+{
+    "main_stats": {
+        "body": [
+            "cr",
+            {
+                "name": "cd",
+                "note": {
+                    "en": "Use CRIT Rate body if you cannot reach the desired cr target through substats."
+                }
+            }
+        ],
+        "feet": [
+            "atk"
+        ],
+        "planar_sphere": [
+            "quantum-dmg",
+            "atk%"
+        ],
+        "link_rope": [
+            "atk%"
+        ]
+    }
+}

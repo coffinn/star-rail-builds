@@ -1,0 +1,22 @@
+{
+    "stats": [
+        {
+            "name": "cr",
+            "baseline": "100%",
+            "recommended": "100%",
+            "note": {
+                "en": "Yes."
+            }
+        },
+        {
+            "name": "cd",
+            "baseline": "120%",
+            "recommended": "120+%"
+        },
+        {
+            "name": "atk%",
+            "baseline": "",
+            "recommended": ""
+        }
+    ]
+}

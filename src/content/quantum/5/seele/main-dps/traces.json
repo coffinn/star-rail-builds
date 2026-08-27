@@ -1,0 +1,28 @@
+{
+  "traces": [
+    {
+      "items": [
+        {
+          "name": "ultimate"
+        },
+        {
+          "name": "skill"
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "name": "talent"
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "name": "basic", "notes": {"en": "Yes, even the basic attack."}
+        }
+      ]
+    }
+  ]
+}

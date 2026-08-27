@@ -1,0 +1,70 @@
+{
+    "relic_sets": [
+        {
+            "groups": [
+                {
+                    "items": [{ "name": "genius-of-brilliant-stars", "pieces": 4 }]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "eagle", "pieces": 4 ,
+                            "notes": {
+                                "en": "situationally useful"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        { "name": "scholar-lost-in-erudition", "pieces": 4 },
+                        { "name": "poet-of-mourning-collapse", "pieces": 4 }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "choose": true,
+                    "items": [
+                        { "name": "musketeer-of-wild-wheat", "pieces": 2 },
+                        { "name": "prisoner-in-deep-confinement", "pieces": 2},
+                        { "name": "genius-of-brilliant-stars", "pieces": 2}
+                    ]
+                }
+            ]
+        }
+    ],
+
+    "planar_ornaments": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "firmament-frontline-glamoth", "pieces": 2,
+                            "note": {
+                                "en": "Marginally better."
+                            }
+                        },
+                        {
+                            "name": "rutilant-arena", "pieces": 2
+                        }
+                    ]
+                },
+                {
+                    "items": [{ "name": "inert-salsotto", "pieces": 2}]
+                }
+            ]
+        }
+    ]
+}

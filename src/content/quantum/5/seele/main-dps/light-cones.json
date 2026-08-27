@@ -1,0 +1,16 @@
+{
+    "light_cones": [
+        {
+            "items": [{ "name": "the-hell-where-ideals-burn", "superimposition": 1}]
+        },
+        {
+            "items": [{ "name": "in-the-night", "superimposition": 1}]
+        },
+        {
+            "items": [{ "name": "cruising-in-the-stellar-sea", "superimpositon": 1}]
+        },
+        {
+            "items": [{ "name": "only-silence-remains", "superimposition": 5}]
+        }
+    ]
+}
