@@ -1,10 +1,10 @@
 {
     "a-little-getaway": {
         "rarity": 4,
-        "version_released": "N/A",
+        "version_released": "4.5",
         "passive": {
             "en": "Increases the wearer's Elation by {{value}}%. During the use of Elation Skill by the wearer, ignores {{value}}% of the target's DEF.",
-            "ru": "Еще не доступно"
+            "ru": "Повышает уровень Радости владельца на {{value}}%. Когда владелец использует навык Радости, он игнорирует {{value}}% защиты цели."
         },
         "s1": [
             20,

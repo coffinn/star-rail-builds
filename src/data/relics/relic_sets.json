@@ -932,7 +932,8 @@
             "break-effect"
         ],
         "2p": {
-            "en": "Increases the wearer's Break Effect by 16%. When the wearer's SPD reaches 145 or higher, the wearer's Break Effect increases by an extra 20%."
+            "en": "Increases the wearer's Break Effect by 16%. When the wearer's SPD reaches 145 or higher, the wearer's Break Effect increases by an extra 20%.",
+            "ru": "Повышает эффект пробития владельца на 16%. Если скорость владельца выше или равна 145 ед., то его эффект пробития повышается на доп. 20%."
         }
     },
     "tengoku-livestream": {
