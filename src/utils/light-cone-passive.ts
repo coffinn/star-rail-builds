@@ -1,4 +1,4 @@
-export type LightConePassiveValue = number | number[] | (number | string)[];
+export type LightConePassiveValue = number | string | (number | string)[];
 
 type LocalizedPassiveText = {
     en: string;
