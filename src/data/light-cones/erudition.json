@@ -358,7 +358,7 @@
         "version_released": "3.0",
         "passive": {
             "en": "Increases the wearer's CRIT Rate by {{value}}%. When the wearer uses Ultimate, increases the Skill and Ultimate DMG dealt by the wearer by {{value}}%, lasting for 3 turn(s). After the wearer uses Ultimate, if this instance of Ultimate consumed 140 or more energy, recovers 1 Skill Point.",
-            "ru": "Крит. шанс владельца повышается на {{value}}%. Когда владелец использует сверхспособность, наносимый им урон навыка и сверхспособности повышаются на {{value}}% на 3 хода. Если израсходованная этой сверхспособностью энергия выше или равна 140 ед., то она восстанавливает 1 очко навыков отряда"
+            "ru": "Крит. шанс владельца повышается на {{value}}%. Когда владелец использует сверхспособность, наносимый им урон навыка и сверхспособности повышаются на {{value}}% на 3 хода. Если израсходованная этой сверхспособностью энергия выше или равна 140 ед., то она восстанавливает 1 очко навыков отряда."
         },
         "s1": [
             12,

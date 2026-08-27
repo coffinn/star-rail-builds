@@ -746,7 +746,7 @@
         "version_released": "1.3",
         "passive": {
             "en": "Increases the wearer's Break Effect by {{value}}%. When the wearer uses their Ultimate, increases DoT dealt by the wearer by {{value}}%, lasting for 2 turn(s). When a target enemy suffering from DoT imposed by the wearer is defeated, regenerates {{value}} Energy for the wearer.",
-            "ru": "Эффект пробития владельца повышается на {{value}}%. ИКогда владелец использует сверхспособность, наносимый им периодический урон повышается на {{value}}% на 2 хода. Победа над противником с наложенным эффектом периодического урона от владельца восстанавливает {{value}} ед. его энергии."
+            "ru": "Эффект пробития владельца повышается на {{value}}%. Когда владелец использует сверхспособность, наносимый им периодический урон повышается на {{value}}% на 2 хода. Победа над противником с наложенным эффектом периодического урона от владельца восстанавливает {{value}} ед. его энергии."
         },
         "s1": [
             20,

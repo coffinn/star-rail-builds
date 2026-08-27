@@ -312,7 +312,7 @@
         "version_released": "1.0",
         "passive": {
             "en": "Increases the wearer's DEF by {{value}}% and Effect Hit Rate by {{value}}%. Increases the chance for the wearer to be attacked by enemies. When the wearer is attacked, increase their DEF by an extra {{value}}% until the end of the wearer's turn.",
-            "ru": "Защита владельца повышается на {{value}%, а его шанс попадания эффектов - на {{value}%. Шанс быть атакованным противником также повышается. Когда противник атакует владельца, защита владельца повышается на доп. {{value}% до конца его хода."
+            "ru": "Защита владельца повышается на {{value}}%, а его шанс попадания эффектов - на {{value}}%. Шанс быть атакованным противником также повышается. Когда противник атакует владельца, защита владельца повышается на доп. {{value}}% до конца его хода."
         },
         "s1": [
             24,

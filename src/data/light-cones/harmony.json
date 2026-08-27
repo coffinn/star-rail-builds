@@ -189,7 +189,7 @@
         "version_released": "2.0",
         "passive": {
             "en": "After the wearer uses a certain type of ability such as Basic ATK, Skill, or Ultimate, all allies gain Childishness, which increases allies' DMG for the same type of ability as used by the wearer by {{value}}%. Childishness only takes effect for the most recent type of ability the wearer used and cannot be stacked.",
-            "ru": "После того как владелец использует базовую атаку, навык или сверхспособность, он накладывает на всех союзников статус Ребячество. Этот статус повышает наносимый соответствующим умением союзника урон на {{value}}%. Статус Ребячество работает только с последним использованным владельцем умением, и он не может складываться"
+            "ru": "После того как владелец использует базовую атаку, навык или сверхспособность, он накладывает на всех союзников статус Ребячество. Этот статус повышает наносимый соответствующим умением союзника урон на {{value}}%. Статус Ребячество работает только с последним использованным владельцем умением, и он не может складываться."
         },
         "s1": [
             12
@@ -222,7 +222,7 @@
         "version_released": "2.0",
         "passive": {
             "en": "Increases the wearer's CRIT DMG by {{value}}%. At the start of the battle, the wearer gains Mask, lasting for 3 turn(s). While the wearer has Mask, the wearer's allies have their CRIT Rate increased by {{value}}% and their CRIT DMG increased by {{value}}%. For every 1 Skill Point the wearer recovers (including Skill Points that exceed the limit), they gain 1 stack of Radiant Flame. And when the wearer has 4 stacks of Radiant Flame, all the stacks are removed, and they gain Mask, lasting for 4 turn(s).",
-            "ru": "Крит. урон владельца повышается на {{value}}%. В начале боя владелец получает статус Маска на 3 хода. Пока владелец имеет этот статус, крит. шанс его союзников повышается на {{value}}%, а их крит. урон - на 28%/35%/42%/49%/56%. Каждый раз, когда владелец восстанавливает 1 очко навыков (включая превышение макс. количества очков навыков), он получает 1 ур. статуса Красочное пламя. Когда количество уровней этого статуса поднимается до 4, владелец теряет все уровни статуса Красочное пламя и получает статус Маска на 4 хода."
+            "ru": "Крит. урон владельца повышается на {{value}}%. В начале боя владелец получает статус Маска на 3 хода. Пока владелец имеет этот статус, крит. шанс его союзников повышается на {{value}}%, а их крит. урон - на {{value}}%. Каждый раз, когда владелец восстанавливает 1 очко навыков (включая превышение макс. количества очков навыков), он получает 1 ур. статуса Красочное пламя. Когда количество уровней этого статуса поднимается до 4, владелец теряет все уровни статуса Красочное пламя и получает статус Маска на 4 хода."
         },
         "s1": [
             32,

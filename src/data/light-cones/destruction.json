@@ -290,7 +290,7 @@
         "version_released": "2.0",
         "passive": {
             "en": "When the wearer's cumulative HP loss during one attack exceeds 25% of their Max HP, or if the amount of their own HP consumed at one time is greater than 25% of their Max HP, immediately heals the wearer for 15% of their Max HP, and at the same time, increases the DMG they deal by {{value}}% for 2 turn(s). This effect can only be triggered once every 3 turn(s).",
-            "ru": "Когда потерянное за одну атаку НР владельца провышает 25% от его макс. НР или когда поглощённое им НР превышает 25% от его макс. Нр, владелец немедленно восстанавливает 15% своего НР, в то время как наносимый им урон повышается на {{value}}% на 2 хода. Этот эффект может сработать только 1 раз за 3 хода."
+            "ru": "Когда потерянное за одну атаку НР владельца превышает 25% от его макс. НР или когда поглощённое им НР превышает 25% от его макс. НP, владелец немедленно восстанавливает 15% своего НР, в то время как наносимый им урон повышается на {{value}}% на 2 хода. Этот эффект может сработать только 1 раз за 3 хода."
         },
         "s1": [
             25

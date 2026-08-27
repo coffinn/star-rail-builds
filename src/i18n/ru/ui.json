@@ -35,8 +35,8 @@
     "Cavern Relics": "Пещерные реликвии",
     "No relic sets found": "Наборы реликвий не найдены",
     "Action Advance": "Продвижение действия",
-    "Regarding Light Cone Choices:": "Касательно выбора светового конуса:",
-    "Detailed Light Cone calculation": "Детальные расчёты светового конуса",
+    "Regarding Light Cone Choices:": "Касательно выбора Светового конуса:",
+    "Detailed Light Cone calculation": "Детальные расчёты Светового конуса",
     "Detailed relics calculation": "Детальные расчёты реликвий",
     "Regarding Relics Choices:": "Касательно выбора реликвий:",
     "Feet": "Ноги",
@@ -98,9 +98,9 @@
     "Baseline": "Базовые",
     "Recommended": "Рекомендуемые",
     "Regarding Recommended Stats:": "Касательно рекомендуемых статов:",
-    "1-Pc": "1-Pc",
-    "2-Pc": "2-Pc",
-    "4-Pc": "4-Pc",
+    "1-Pc": "1 шт.",
+    "2-Pc": "2 шт.",
+    "4-Pc": "4 шт.",
     "HP": "HP",
     "ATK": "Сила атаки",
     "DEF": "Защита",
@@ -110,5 +110,5 @@
     "Element - A-Z": "Тип - А-Я",
     "Rarity - A-Z": "Редкость - А-Я",
     "Release date - Newest": "По дате выхода -  (сначала новые)",
-    "Last Updated - Newest": "Last Updated - Newest"
+    "Last Updated - Newest": "По версии - (сначала новые)"
 }
