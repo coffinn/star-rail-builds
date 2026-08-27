@@ -1,19 +1,9 @@
 {
-    "na": "Attaque normale",
-    "ca": "Attaque chargée",
-    "plunge": "Attaque plongeante",
-    "skill": "Skill",
-    "burst": "Ulti",
-    "shield": "Bouclier",
-    "bol": "Engagement vital",
-    "nightsoul-blessing": "Bénédiction noctâme",
-    "nightsoul-burst": "Éruption noctâme",
-    "nightsoul-point": "Point de noctâme",
-    "nightsoul-transmission": "Transmission noctâme",
-    "arkhe": "Arkhe",
-    "pneuma": "Pneuma",
-    "ousia": "Ousia",
-    "hexerei": "Hexerei",
-    "verdant-dew": "Rosée verdoyante",
-    "polestar-field": "Étendue polaris"
+    "basic": "ATQ normale",
+    "skill": "Compétence",
+    "ultimate": "Ultime",
+    "talent": "Talent",
+    "technique": "Technique",
+    "elation-skill": "Comicompétence",
+    "assist-skill": "Compétence de soutien"
 }
