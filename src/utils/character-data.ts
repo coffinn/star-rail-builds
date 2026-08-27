@@ -209,13 +209,19 @@ type CharacterKitTranslation = {
         stat?: string;
     }>;
 
-    eidolons?: Record<
+    eidolons?:
+    | Record<
         string,
         {
             name?: string;
             description?: string;
         }
-    >;
+    >
+    | Array<{
+        level?: number;
+        name?: string;
+        description?: string;
+    }>;
 };
 
 const characterDataPath = path.resolve(
@@ -317,6 +323,59 @@ function localizeAbility(
                 },
             ),
     };
+}
+
+function getEidolonTranslation(
+    eidolons:
+        | CharacterKitTranslation['eidolons']
+        | undefined,
+    level: number,
+) {
+    if (!eidolons) {
+        return undefined;
+    }
+
+    /*
+     * Array format:
+     *
+     * "eidolons": [
+     *   { "level": 1, ... },
+     *   { "level": 2, ... }
+     * ]
+     */
+    if (Array.isArray(eidolons)) {
+        /*
+         * Prefer matching the explicit level.
+         */
+        const byLevel = eidolons.find(
+            (eidolon) =>
+                eidolon.level === level,
+        );
+
+        if (byLevel) {
+            return byLevel;
+        }
+
+        /*
+         * Also support text-only arrays without
+         * a "level" property.
+         *
+         * E1 = index 0
+         * E2 = index 1
+         * etc.
+         */
+        return eidolons[level - 1];
+    }
+
+    /*
+     * Object format:
+     *
+     * "eidolons": {
+     *   "1": {...},
+     *   "2": {...}
+     * }
+     */
+    return eidolons[String(level)];
 }
 
 function applyCharacterKitTranslation(
@@ -512,11 +571,10 @@ function applyCharacterKitTranslation(
             character.eidolons.map(
                 (eidolon) => {
                     const translated =
-                        translation.eidolons?.[
-                        String(
+                        getEidolonTranslation(
+                            translation.eidolons,
                             eidolon.level,
-                        )
-                        ];
+                        );
 
                     return {
                         ...eidolon,
@@ -528,8 +586,7 @@ function applyCharacterKitTranslation(
                         description:
                             translated
                                 ?.description ??
-                            eidolon
-                                .description,
+                            eidolon.description,
                     };
                 },
             ),
