@@ -775,25 +775,65 @@
     gap: 4px;
 }
 
+/*
+ * Let the card itself determine when the
+ * main-stat rows need to stack.
+ */
+.artifact-stats-card {
+    container-type: inline-size;
+}
+
 .stat-row {
     display: grid;
     min-width: 0;
-    grid-template-columns: 76px minmax(0, 1fr);
+
+    grid-template-columns:
+        minmax(0, 0.8fr) minmax(0, 1.35fr);
+
     gap: 6px;
+    align-items: start;
+
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 8px;
     padding: 5px 6px;
+
     background: rgba(255, 255, 255, 0.045);
 }
 
-.stat-row strong {
-    color: color-mix(in srgb, #fff 82%, var(--element) 18%);
+.stat-row>strong {
+    min-width: 0;
+
+    color: color-mix(in srgb,
+            #fff 82%,
+            var(--element) 18%);
+
     font-size: 0.78rem;
+    line-height: 1.25;
+
+    overflow-wrap: anywhere;
+    hyphens: auto;
 }
 
-.stat-row span {
+.stat-row>span {
     min-width: 0;
+
+    line-height: 1.3;
+
     overflow-wrap: anywhere;
+}
+
+/*
+ * Four-column desktop layouts can make
+ * Relic Stats surprisingly narrow.
+ *
+ * When this individual card gets too narrow,
+ * put the slot name above the recommendation.
+ */
+@container (max-width: 310px) {
+    .artifact-stats-card .stat-row {
+        grid-template-columns: 1fr;
+        gap: 3px;
+    }
 }
 
 .alt {

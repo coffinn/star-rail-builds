@@ -1282,7 +1282,10 @@ export function getCharacterPageData({
     const slugParts = parsePublicCharacterSlug(characterSlug);
     const contentSlug = slugParts.character;
     const characterData =
-        loadCharacterData(contentSlug);
+        loadCharacterData(
+            contentSlug,
+            currentLang,
+        );
     const foundPath = findCharacterPath(contentBase, characterSlug);
 
     if (!foundPath) {

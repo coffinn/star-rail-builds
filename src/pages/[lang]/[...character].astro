@@ -179,7 +179,11 @@ const noteMarkerExplanation = t(
         </div>
     </div>
 
-    {characterData && <CharacterInfo character={characterData} />}
+    {
+        characterData && (
+            <CharacterInfo character={characterData} locale={locale} />
+        )
+    }
 </CharacterPageLayout>
 
 {

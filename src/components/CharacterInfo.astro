@@ -6,9 +6,45 @@ import {
     type CharacterData,
 } from '../utils/character-data';
 import HighlightedText from './HighlightedText.astro';
+import { t } from '../utils/i18n';
 
-const { character } = Astro.props as {
+const { character, locale } = Astro.props as {
     character: CharacterData;
+    locale: any;
+};
+
+const ui = (id: string) =>
+    t(locale, 'ui', id, undefined, false);
+
+const levelAbbreviation = ui('Lv.');
+
+const getAbilityTypeLabel = (
+    id: string,
+    fallback: string,
+) => {
+    let translationId: string | null = null;
+
+    if (!id.includes(':')) {
+        translationId = id;
+    } else if (id === 'elation:skill') {
+        translationId = 'elation-skill';
+    }
+
+    if (!translationId) {
+        return fallback;
+    }
+
+    const translated = t(
+        locale,
+        'ability',
+        translationId,
+        undefined,
+        false,
+    );
+
+    return translated === translationId
+        ? fallback
+        : translated;
 };
 
 type SelectableAbilityVariant = CharacterAbilityVariant & {
@@ -71,7 +107,7 @@ const globalPassives = Object.entries(character.global_passives ?? {}).map(
 const abilitySections = [
     {
         id: 'normal',
-        title: 'Abilities',
+        title: ui('Abilities'),
         abilities: normalAbilities,
     },
 
@@ -79,7 +115,7 @@ const abilitySections = [
         ? [
               {
                   id: 'memosprite',
-                  title: `Memosprite — ${character.memosprite.name}`,
+                  title: `${ui('Memosprite')} — ${character.memosprite.name}`,
                   abilities: memospriteAbilities,
               },
           ]
@@ -89,7 +125,7 @@ const abilitySections = [
         ? [
               {
                   id: 'elation',
-                  title: 'Elation',
+                  title: ui('Elation'),
                   abilities: elationAbilities,
               },
           ]
@@ -158,7 +194,7 @@ const renderVariantDescription = (
 ---
 
 <section class="card character-info-card">
-    <h2>Character Info</h2>
+    <h2>{ui('Character Info')}</h2>
 
     <!-- ========================= -->
     <!-- Level 80 Stats            -->
@@ -167,40 +203,40 @@ const renderVariantDescription = (
     {
         character.level_80_stats && (
             <section class="character-info-section">
-                <h3>Level 80 Stats</h3>
+                <h3>{ui('Level 80 Stats')}</h3>
 
                 <div class="character-stat-grid">
                     {character.level_80_stats.hp !== undefined && (
                         <span>
-                            HP
+                            {ui('HP')}
                             <strong>{character.level_80_stats.hp}</strong>
                         </span>
                     )}
 
                     {character.level_80_stats.atk !== undefined && (
                         <span>
-                            ATK
+                            {ui('ATK')}
                             <strong>{character.level_80_stats.atk}</strong>
                         </span>
                     )}
 
                     {character.level_80_stats.def !== undefined && (
                         <span>
-                            DEF
+                            {ui('DEF')}
                             <strong>{character.level_80_stats.def}</strong>
                         </span>
                     )}
 
                     {character.level_80_stats.spd !== undefined && (
                         <span>
-                            SPD
+                            {ui('SPD')}
                             <strong>{character.level_80_stats.spd}</strong>
                         </span>
                     )}
 
                     {character.max_energy != null && (
                         <span>
-                            Energy
+                            {ui('Energy')}
                             <strong>{character.max_energy}</strong>
                         </span>
                     )}
@@ -222,7 +258,7 @@ const renderVariantDescription = (
                     <div class="character-detail-meta character-mechanic-meta">
                         {character.memosprite.initial_spd !== undefined && (
                             <span>
-                                Initial SPD:{' '}
+                                {ui('Initial SPD')}:{' '}
                                 <strong>
                                     {character.memosprite.initial_spd}
                                 </strong>
@@ -231,7 +267,7 @@ const renderVariantDescription = (
 
                         {character.memosprite.hp_source && (
                             <span>
-                                Max HP:{' '}
+                                {ui('Max HP')}:{' '}
                                 <strong>
                                     {character.memosprite.hp_source}
                                 </strong>
@@ -267,10 +303,11 @@ const renderVariantDescription = (
                             <details
                                 open
                                 data-character-ability={id}
+                                data-level-prefix={levelAbbreviation}
                                 data-static-detail
                             >
                                 <summary>
-                                    <strong>{ability.type}</strong>
+                                    <strong>{getAbilityTypeLabel(id, ability.type)}</strong>
 
                                     <span class="character-ability-name">
                                         {ability.name}
@@ -281,7 +318,7 @@ const renderVariantDescription = (
                                             class="character-ability-level"
                                             data-character-level-value
                                         >
-                                            Lv. {defaultLevel}
+                                            {levelAbbreviation} {defaultLevel}
                                         </span>
                                     )}
                                 </summary>
@@ -289,14 +326,15 @@ const renderVariantDescription = (
                                 <div class="character-detail-body">
                                     {ability.tag && (
                                         <p class="character-ability-tag">
-                                            <strong>Type:</strong> {ability.tag}
+                                            <strong>{ui('Type')}:</strong>{' '}
+                                            {ability.tag}
                                         </p>
                                     )}
 
                                     <div class="character-detail-meta">
                                         {ability.energy_gain !== undefined && (
                                             <span>
-                                                Energy Gain:{' '}
+                                                {ui('Energy Gain')}:{' '}
                                                 <strong>
                                                     {ability.energy_gain}
                                                 </strong>
@@ -305,7 +343,7 @@ const renderVariantDescription = (
 
                                         {ability.energy_cost !== undefined && (
                                             <span>
-                                                Energy Cost:{' '}
+                                                {ui('Energy Cost')}:{' '}
                                                 <strong>
                                                     {ability.energy_cost}
                                                 </strong>
@@ -314,14 +352,14 @@ const renderVariantDescription = (
 
                                         {ability.break !== undefined && (
                                             <span>
-                                                Break:{' '}
+                                                {ui('Break')}:{' '}
                                                 <strong>{ability.break}</strong>
                                             </span>
                                         )}
 
                                         {ability.break_main !== undefined && (
                                             <span>
-                                                Break (Main):{' '}
+                                                {ui('Break (Main)')}:{' '}
                                                 <strong>
                                                     {ability.break_main}
                                                 </strong>
@@ -331,7 +369,7 @@ const renderVariantDescription = (
                                         {ability.break_adjacent !==
                                             undefined && (
                                             <span>
-                                                Break (Adjacent):{' '}
+                                                {ui('Break (Adjacent)')}:{' '}
                                                 <strong>
                                                     {ability.break_adjacent}
                                                 </strong>
@@ -339,7 +377,7 @@ const renderVariantDescription = (
                                         )}
                                         {ability.break_bounce !== undefined && (
                                             <span>
-                                                Break (Per Bounce):{' '}
+                                                {ui('Break (Per Bounce)')}:{' '}
                                                 <strong>
                                                     {ability.break_bounce}
                                                 </strong>
@@ -348,7 +386,7 @@ const renderVariantDescription = (
 
                                         {ability.break_aoe !== undefined && (
                                             <span>
-                                                Break (AoE):{' '}
+                                                {ui('Break (AoE)')}:{' '}
                                                 <strong>
                                                     {ability.break_aoe}
                                                 </strong>
@@ -359,12 +397,12 @@ const renderVariantDescription = (
                                     {scalable && (
                                         <div class="character-trace-slider">
                                             <div class="character-slider-header">
-                                                <strong>Trace Level</strong>
+                                                <strong>{ui('Trace Level')}</strong>
 
                                                 <span
                                                     data-character-level-value
                                                 >
-                                                    Lv. {defaultLevel}
+                                                    {levelAbbreviation} {defaultLevel}
                                                 </span>
                                             </div>
 
@@ -375,13 +413,13 @@ const renderVariantDescription = (
                                                 step="1"
                                                 value={defaultLevel}
                                                 data-character-level-slider
-                                                aria-label={`${ability.name} Trace Level`}
+                                                aria-label={`${ability.name} ${ui('Trace Level')}`}
                                             />
 
                                             <div class="character-slider-bounds">
-                                                <span>Lv. {minLevel}</span>
+                                                <span>{levelAbbreviation} {minLevel}</span>
 
-                                                <span>Lv. {maxLevel}</span>
+                                                <span>{levelAbbreviation} {maxLevel}</span>
                                             </div>
                                         </div>
                                     )}
@@ -430,14 +468,14 @@ const renderVariantDescription = (
                                                 <label class="character-variant-selector">
                                                     <span>
                                                         {variantSelector.label ??
-                                                            'Select'}
+                                                            ui('Select')}
                                                     </span>
 
                                                     <select
                                                         data-variant-select
                                                         aria-label={
                                                             variantSelector.label ??
-                                                            'Select alternate ability'
+                                                            ui('Select alternate ability')
                                                         }
                                                     >
                                                         {variants.map(
@@ -498,7 +536,7 @@ const renderVariantDescription = (
                                                         {variant.tag && (
                                                             <p class="character-ability-tag">
                                                                 <strong>
-                                                                    Type:
+                                                                    {ui('Type')}:
                                                                 </strong>{' '}
                                                                 {variant.tag}
                                                             </p>
@@ -508,7 +546,7 @@ const renderVariantDescription = (
                                                             {variant.energy_gain !==
                                                                 undefined && (
                                                                 <span>
-                                                                    Energy Gain:{' '}
+                                                                    {ui('Energy Gain')}:{' '}
                                                                     <strong>
                                                                         {
                                                                             variant.energy_gain
@@ -520,7 +558,7 @@ const renderVariantDescription = (
                                                             {variant.energy_cost !==
                                                                 undefined && (
                                                                 <span>
-                                                                    Energy Cost:{' '}
+                                                                    {ui('Energy Cost')}:{' '}
                                                                     <strong>
                                                                         {
                                                                             variant.energy_cost
@@ -532,7 +570,7 @@ const renderVariantDescription = (
                                                             {variant.break !==
                                                                 undefined && (
                                                                 <span>
-                                                                    Break:{' '}
+                                                                    {ui('Break')}:{' '}
                                                                     <strong>
                                                                         {
                                                                             variant.break
@@ -544,8 +582,7 @@ const renderVariantDescription = (
                                                             {variant.break_main !==
                                                                 undefined && (
                                                                 <span>
-                                                                    Break
-                                                                    (Main):{' '}
+                                                                    {ui('Break (Main)')}:{' '}
                                                                     <strong>
                                                                         {
                                                                             variant.break_main
@@ -557,8 +594,7 @@ const renderVariantDescription = (
                                                             {variant.break_adjacent !==
                                                                 undefined && (
                                                                 <span>
-                                                                    Break
-                                                                    (Adjacent):{' '}
+                                                                    {ui('Break (Adjacent)')}:{' '}
                                                                     <strong>
                                                                         {
                                                                             variant.break_adjacent
@@ -569,8 +605,7 @@ const renderVariantDescription = (
                                                             {variant.break_bounce !==
                                                                 undefined && (
                                                                 <span>
-                                                                    Break (Per
-                                                                    Bounce):{' '}
+                                                                    {ui('Break (Per Bounce)')}:{' '}
                                                                     <strong>
                                                                         {
                                                                             variant.break_bounce
@@ -582,7 +617,7 @@ const renderVariantDescription = (
                                                             {variant.break_aoe !==
                                                                 undefined && (
                                                                 <span>
-                                                                    Break (AoE):{' '}
+                                                                    {ui('Break (AoE)')}:{' '}
                                                                     <strong>
                                                                         {
                                                                             variant.break_aoe
@@ -643,7 +678,7 @@ const renderVariantDescription = (
     {
         globalPassives.length > 0 && (
             <section class="character-info-section">
-                <h3>Global Passives</h3>
+                <h3>{ui('Global Passives')}</h3>
 
                 <div class="character-global-passive-grid">
                     {globalPassives.map(({ id, passive }) => (
@@ -653,8 +688,8 @@ const renderVariantDescription = (
                         >
                             <div class="character-global-passive-header">
                                 <strong class="character-global-passive-type">
-                                    Global
-                                    <small>Passive</small>
+                                    {ui('Global')}
+                                    <small>{ui('Passive')}</small>
                                 </strong>
 
                                 <div class="character-global-passive-title">
@@ -687,7 +722,7 @@ const renderVariantDescription = (
     <!-- ========================= -->
 
     <section class="character-info-section">
-        <h3>Major Traces</h3>
+        <h3>{ui('Major Traces')}</h3>
 
         <div class="character-info-details character-major-trace-grid">
             {
@@ -696,7 +731,7 @@ const renderVariantDescription = (
                         <summary>
                             <strong class="character-major-trace-label">
                                 <span>A{ascension}</span>
-                                <small>Major Trace</small>
+                                <small>{ui('Major Trace')}</small>
                             </strong>
 
                             <span>{trace.name}</span>
@@ -718,7 +753,7 @@ const renderVariantDescription = (
     <!-- ========================= -->
 
     <section class="character-info-section">
-        <h3>Stat Bonuses</h3>
+        <h3>{ui('Stat Bonuses')}</h3>
 
         <div class="character-stat-grid">
             {
@@ -738,7 +773,7 @@ const renderVariantDescription = (
     <!-- ========================= -->
 
     <section class="character-info-section">
-        <h3>Eidolons</h3>
+        <h3>{ui('Eidolons')}</h3>
 
         <div class="character-info-details character-eidolon-grid">
             {
@@ -787,6 +822,9 @@ const renderVariantDescription = (
                 return;
             }
 
+            const levelPrefix =
+                ability.dataset.levelPrefix ?? 'Lv.';
+
             const levelLabels = ability.querySelectorAll<HTMLElement>(
                 '[data-character-level-value]',
             );
@@ -799,7 +837,7 @@ const renderVariantDescription = (
                 const level = slider.value;
 
                 levelLabels.forEach((label) => {
-                    label.textContent = `Lv. ${level}`;
+                    label.textContent = `${levelPrefix} ${level}`;
                 });
 
                 panels.forEach((panel) => {

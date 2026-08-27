@@ -21,7 +21,6 @@ export type CharacterAbilityVariant = {
     break_aoe?: number | string;
 
     description?: string;
-
     description_template?: string;
 
     scaling?: Record<
@@ -48,7 +47,6 @@ export type CharacterAbility = {
     break_aoe?: number | string;
 
     description?: string;
-
     min_level?: number;
     max_level?: number;
     default_level?: number;
@@ -97,11 +95,13 @@ export type CharacterEidolon = {
     name: string;
     description: string;
 };
+
 export type CharacterGlobalPassive = {
     name: string;
     tag?: string;
     description: string;
 };
+
 export type CharacterData = {
     id: string;
     name: string;
@@ -125,28 +125,420 @@ export type CharacterData = {
     >;
 
     memosprite?: CharacterMemosprite;
-
     elation?: CharacterElation;
+
     global_passives?: Record<
         string,
         CharacterGlobalPassive
     >;
+
     major_traces: Record<
         string,
         CharacterMajorTrace
     >;
 
     stat_bonuses: CharacterStatBonus[];
-
     eidolons: CharacterEidolon[];
+};
+
+type AbilityTextTranslation = {
+    type?: string;
+    name?: string;
+    tag?: string;
+
+    description?: string;
+    description_template?: string;
+
+    variant_selector?: {
+        label?: string;
+    };
+
+    variants?: Array<{
+        type?: string;
+        name?: string;
+        tag?: string;
+
+        selector_label?: string;
+
+        description?: string;
+        description_template?: string;
+    }>;
+};
+
+type CharacterKitTranslation = {
+    abilities?: Record<
+        string,
+        AbilityTextTranslation
+    >;
+
+    memosprite?: {
+        name?: string;
+        hp_source?: string;
+
+        skills?: Record<
+            string,
+            AbilityTextTranslation
+        >;
+    };
+
+    elation?: {
+        skills?: Record<
+            string,
+            AbilityTextTranslation
+        >;
+    };
+
+    global_passives?: Record<
+        string,
+        {
+            name?: string;
+            tag?: string;
+            description?: string;
+        }
+    >;
+
+    major_traces?: Record<
+        string,
+        {
+            name?: string;
+            description?: string;
+        }
+    >;
+
+    stat_bonuses?: Array<{
+        stat?: string;
+    }>;
+
+    eidolons?: Record<
+        string,
+        {
+            name?: string;
+            description?: string;
+        }
+    >;
 };
 
 const characterDataPath = path.resolve(
     'src/data/characters',
 );
 
+const characterKitTranslationPath =
+    path.resolve('src/i18n');
+
+function localizeAbility(
+    ability: CharacterAbility,
+    translation?: AbilityTextTranslation,
+): CharacterAbility {
+    if (!translation) {
+        return ability;
+    }
+
+    return {
+        ...ability,
+
+        type:
+            translation.type ??
+            ability.type,
+
+        name:
+            translation.name ??
+            ability.name,
+
+        tag:
+            translation.tag ??
+            ability.tag,
+
+        description:
+            translation.description ??
+            ability.description,
+
+        description_template:
+            translation.description_template ??
+            ability.description_template,
+
+        variant_selector:
+            ability.variant_selector
+                ? {
+                    ...ability.variant_selector,
+                    label:
+                        translation
+                            .variant_selector
+                            ?.label ??
+                        ability
+                            .variant_selector
+                            .label,
+                }
+                : ability.variant_selector,
+
+        variants:
+            ability.variants?.map(
+                (variant, index) => {
+                    const translatedVariant =
+                        translation.variants?.[
+                        index
+                        ];
+
+                    if (!translatedVariant) {
+                        return variant;
+                    }
+
+                    return {
+                        ...variant,
+
+                        type:
+                            translatedVariant.type ??
+                            variant.type,
+
+                        name:
+                            translatedVariant.name ??
+                            variant.name,
+
+                        tag:
+                            translatedVariant.tag ??
+                            variant.tag,
+
+                        selector_label:
+                            translatedVariant
+                                .selector_label ??
+                            variant
+                                .selector_label,
+
+                        description:
+                            translatedVariant
+                                .description ??
+                            variant.description,
+
+                        description_template:
+                            translatedVariant
+                                .description_template ??
+                            variant
+                                .description_template,
+                    };
+                },
+            ),
+    };
+}
+
+function applyCharacterKitTranslation(
+    character: CharacterData,
+    translation: CharacterKitTranslation,
+): CharacterData {
+    return {
+        ...character,
+
+        abilities: Object.fromEntries(
+            Object.entries(
+                character.abilities ?? {},
+            ).map(([id, ability]) => [
+                id,
+                localizeAbility(
+                    ability,
+                    translation.abilities?.[
+                    id
+                    ],
+                ),
+            ]),
+        ),
+
+        memosprite:
+            character.memosprite
+                ? {
+                    ...character.memosprite,
+
+                    name:
+                        translation
+                            .memosprite
+                            ?.name ??
+                        character
+                            .memosprite
+                            .name,
+
+                    hp_source:
+                        translation
+                            .memosprite
+                            ?.hp_source ??
+                        character
+                            .memosprite
+                            .hp_source,
+
+                    skills:
+                        Object.fromEntries(
+                            Object.entries(
+                                character
+                                    .memosprite
+                                    .skills ??
+                                {},
+                            ).map(
+                                ([
+                                    id,
+                                    ability,
+                                ]) => [
+                                        id,
+                                        localizeAbility(
+                                            ability,
+                                            translation
+                                                .memosprite
+                                                ?.skills?.[
+                                            id
+                                            ],
+                                        ),
+                                    ],
+                            ),
+                        ),
+                }
+                : undefined,
+
+        elation:
+            character.elation
+                ? {
+                    ...character.elation,
+
+                    skills:
+                        Object.fromEntries(
+                            Object.entries(
+                                character
+                                    .elation
+                                    .skills ??
+                                {},
+                            ).map(
+                                ([
+                                    id,
+                                    ability,
+                                ]) => [
+                                        id,
+                                        localizeAbility(
+                                            ability,
+                                            translation
+                                                .elation
+                                                ?.skills?.[
+                                            id
+                                            ],
+                                        ),
+                                    ],
+                            ),
+                        ),
+                }
+                : undefined,
+
+        global_passives:
+            character.global_passives
+                ? Object.fromEntries(
+                    Object.entries(
+                        character
+                            .global_passives,
+                    ).map(
+                        ([
+                            id,
+                            passive,
+                        ]) => {
+                            const translated =
+                                translation
+                                    .global_passives?.[
+                                id
+                                ];
+
+                            return [
+                                id,
+                                {
+                                    ...passive,
+
+                                    name:
+                                        translated
+                                            ?.name ??
+                                        passive.name,
+
+                                    tag:
+                                        translated
+                                            ?.tag ??
+                                        passive.tag,
+
+                                    description:
+                                        translated
+                                            ?.description ??
+                                        passive
+                                            .description,
+                                },
+                            ];
+                        },
+                    ),
+                )
+                : undefined,
+
+        major_traces:
+            Object.fromEntries(
+                Object.entries(
+                    character.major_traces ??
+                    {},
+                ).map(([id, trace]) => {
+                    const translated =
+                        translation
+                            .major_traces?.[
+                        id
+                        ];
+
+                    return [
+                        id,
+                        {
+                            ...trace,
+
+                            name:
+                                translated?.name ??
+                                trace.name,
+
+                            description:
+                                translated
+                                    ?.description ??
+                                trace.description,
+                        },
+                    ];
+                }),
+            ),
+
+        stat_bonuses:
+            character.stat_bonuses.map(
+                (bonus, index) => ({
+                    ...bonus,
+
+                    stat:
+                        translation
+                            .stat_bonuses?.[
+                            index
+                        ]?.stat ??
+                        bonus.stat,
+                }),
+            ),
+
+        eidolons:
+            character.eidolons.map(
+                (eidolon) => {
+                    const translated =
+                        translation.eidolons?.[
+                        String(
+                            eidolon.level,
+                        )
+                        ];
+
+                    return {
+                        ...eidolon,
+
+                        name:
+                            translated?.name ??
+                            eidolon.name,
+
+                        description:
+                            translated
+                                ?.description ??
+                            eidolon
+                                .description,
+                    };
+                },
+            ),
+    };
+}
+
 export function loadCharacterData(
     characterId: string,
+    lang = 'en',
 ): CharacterData | null {
     const filePath = path.join(
         characterDataPath,
@@ -157,9 +549,36 @@ export function loadCharacterData(
         return null;
     }
 
-    return readJSONFile(
-        filePath,
-    ) as CharacterData;
+    const character =
+        readJSONFile(
+            filePath,
+        ) as CharacterData;
+
+    if (lang === 'en') {
+        return character;
+    }
+
+    const translationFile =
+        path.join(
+            characterKitTranslationPath,
+            lang,
+            'character-kits',
+            `${characterId}.json`,
+        );
+
+    if (!fs.existsSync(translationFile)) {
+        return character;
+    }
+
+    const translation =
+        readJSONFile(
+            translationFile,
+        ) as CharacterKitTranslation;
+
+    return applyCharacterKitTranslation(
+        character,
+        translation,
+    );
 }
 
 /**
@@ -200,7 +619,9 @@ export function renderCharacterAbilityDescription(
         /\{\{([a-zA-Z0-9_-]+)\}\}/g,
         (match, key: string) => {
             const value =
-                ability.scaling?.[key]?.[index];
+                ability.scaling?.[key]?.[
+                index
+                ];
 
             return value === undefined
                 ? match
