@@ -13,15 +13,11 @@ const { character, locale } = Astro.props as {
     locale: any;
 };
 
-const ui = (id: string) =>
-    t(locale, 'ui', id, undefined, false);
+const ui = (id: string) => t(locale, 'ui', id, undefined, false);
 
 const levelAbbreviation = ui('Lv.');
 
-const getAbilityTypeLabel = (
-    id: string,
-    fallback: string,
-) => {
+const getAbilityTypeLabel = (id: string, fallback: string) => {
     let translationId: string | null = null;
 
     if (!id.includes(':')) {
@@ -34,17 +30,9 @@ const getAbilityTypeLabel = (
         return fallback;
     }
 
-    const translated = t(
-        locale,
-        'ability',
-        translationId,
-        undefined,
-        false,
-    );
+    const translated = t(locale, 'ability', translationId, undefined, false);
 
-    return translated === translationId
-        ? fallback
-        : translated;
+    return translated === translationId ? fallback : translated;
 };
 
 type SelectableAbilityVariant = CharacterAbilityVariant & {
@@ -307,7 +295,9 @@ const renderVariantDescription = (
                                 data-static-detail
                             >
                                 <summary>
-                                    <strong>{getAbilityTypeLabel(id, ability.type)}</strong>
+                                    <strong>
+                                        {getAbilityTypeLabel(id, ability.type)}
+                                    </strong>
 
                                     <span class="character-ability-name">
                                         {ability.name}
@@ -397,12 +387,15 @@ const renderVariantDescription = (
                                     {scalable && (
                                         <div class="character-trace-slider">
                                             <div class="character-slider-header">
-                                                <strong>{ui('Trace Level')}</strong>
+                                                <strong>
+                                                    {ui('Trace Level')}
+                                                </strong>
 
                                                 <span
                                                     data-character-level-value
                                                 >
-                                                    {levelAbbreviation} {defaultLevel}
+                                                    {levelAbbreviation}{' '}
+                                                    {defaultLevel}
                                                 </span>
                                             </div>
 
@@ -417,9 +410,15 @@ const renderVariantDescription = (
                                             />
 
                                             <div class="character-slider-bounds">
-                                                <span>{levelAbbreviation} {minLevel}</span>
+                                                <span>
+                                                    {levelAbbreviation}{' '}
+                                                    {minLevel}
+                                                </span>
 
-                                                <span>{levelAbbreviation} {maxLevel}</span>
+                                                <span>
+                                                    {levelAbbreviation}{' '}
+                                                    {maxLevel}
+                                                </span>
                                             </div>
                                         </div>
                                     )}
@@ -475,7 +474,9 @@ const renderVariantDescription = (
                                                         data-variant-select
                                                         aria-label={
                                                             variantSelector.label ??
-                                                            ui('Select alternate ability')
+                                                            ui(
+                                                                'Select alternate ability',
+                                                            )
                                                         }
                                                     >
                                                         {variants.map(
@@ -536,7 +537,8 @@ const renderVariantDescription = (
                                                         {variant.tag && (
                                                             <p class="character-ability-tag">
                                                                 <strong>
-                                                                    {ui('Type')}:
+                                                                    {ui('Type')}
+                                                                    :
                                                                 </strong>{' '}
                                                                 {variant.tag}
                                                             </p>
@@ -546,7 +548,10 @@ const renderVariantDescription = (
                                                             {variant.energy_gain !==
                                                                 undefined && (
                                                                 <span>
-                                                                    {ui('Energy Gain')}:{' '}
+                                                                    {ui(
+                                                                        'Energy Gain',
+                                                                    )}
+                                                                    :{' '}
                                                                     <strong>
                                                                         {
                                                                             variant.energy_gain
@@ -558,7 +563,10 @@ const renderVariantDescription = (
                                                             {variant.energy_cost !==
                                                                 undefined && (
                                                                 <span>
-                                                                    {ui('Energy Cost')}:{' '}
+                                                                    {ui(
+                                                                        'Energy Cost',
+                                                                    )}
+                                                                    :{' '}
                                                                     <strong>
                                                                         {
                                                                             variant.energy_cost
@@ -570,7 +578,10 @@ const renderVariantDescription = (
                                                             {variant.break !==
                                                                 undefined && (
                                                                 <span>
-                                                                    {ui('Break')}:{' '}
+                                                                    {ui(
+                                                                        'Break',
+                                                                    )}
+                                                                    :{' '}
                                                                     <strong>
                                                                         {
                                                                             variant.break
@@ -582,7 +593,10 @@ const renderVariantDescription = (
                                                             {variant.break_main !==
                                                                 undefined && (
                                                                 <span>
-                                                                    {ui('Break (Main)')}:{' '}
+                                                                    {ui(
+                                                                        'Break (Main)',
+                                                                    )}
+                                                                    :{' '}
                                                                     <strong>
                                                                         {
                                                                             variant.break_main
@@ -594,7 +608,10 @@ const renderVariantDescription = (
                                                             {variant.break_adjacent !==
                                                                 undefined && (
                                                                 <span>
-                                                                    {ui('Break (Adjacent)')}:{' '}
+                                                                    {ui(
+                                                                        'Break (Adjacent)',
+                                                                    )}
+                                                                    :{' '}
                                                                     <strong>
                                                                         {
                                                                             variant.break_adjacent
@@ -605,7 +622,10 @@ const renderVariantDescription = (
                                                             {variant.break_bounce !==
                                                                 undefined && (
                                                                 <span>
-                                                                    {ui('Break (Per Bounce)')}:{' '}
+                                                                    {ui(
+                                                                        'Break (Per Bounce)',
+                                                                    )}
+                                                                    :{' '}
                                                                     <strong>
                                                                         {
                                                                             variant.break_bounce
@@ -617,7 +637,10 @@ const renderVariantDescription = (
                                                             {variant.break_aoe !==
                                                                 undefined && (
                                                                 <span>
-                                                                    {ui('Break (AoE)')}:{' '}
+                                                                    {ui(
+                                                                        'Break (AoE)',
+                                                                    )}
+                                                                    :{' '}
                                                                     <strong>
                                                                         {
                                                                             variant.break_aoe
@@ -822,8 +845,7 @@ const renderVariantDescription = (
                 return;
             }
 
-            const levelPrefix =
-                ability.dataset.levelPrefix ?? 'Lv.';
+            const levelPrefix = ability.dataset.levelPrefix ?? 'Lv.';
 
             const levelLabels = ability.querySelectorAll<HTMLElement>(
                 '[data-character-level-value]',
@@ -1232,6 +1254,7 @@ const renderVariantDescription = (
 
         line-height: 1.5;
 
+        white-space: pre-line;
         overflow-wrap: anywhere;
     }
 
@@ -1644,5 +1667,10 @@ const renderVariantDescription = (
     }
     .character-ability-variant > .character-ability-tag {
         margin: 8px 10px 0;
+    }
+    .character-ability-description p,
+    .character-detail-body > p,
+    .character-global-passive-body p {
+        white-space: pre-line;
     }
 </style>
