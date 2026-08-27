@@ -1,9 +1,11 @@
 {
-    "basic": "Basic ATK",
-    "skill": "Skill",
-    "ultimate": "Ultimate",
-    "talent": "Talent",
-    "technique": "Technique",
-    "elation-skill": "Elation Skill",
-    "assist-skill": "Assist Skill"
+    "basic": "普攻",
+    "skill": "戰技",
+    "ultimate": "終結技",
+    "talent": "天賦",
+    "technique": "秘技",
+    "elation-skill": "歡愉技",
+    "assist-skill": "助戰技",
+    "memo-skill": "憶靈技",
+    "memo-talent": "憶靈天賦"
 }
