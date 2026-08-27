@@ -10,7 +10,7 @@
             }
         ],
         "feet": [
-            "atk"
+            "atk%"
         ],
         "planar_sphere": [
             "quantum-dmg",

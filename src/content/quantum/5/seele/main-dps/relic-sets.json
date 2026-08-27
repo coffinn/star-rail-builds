@@ -26,7 +26,11 @@
                 {
                     "items": [
                         { "name": "scholar-lost-in-erudition", "pieces": 4 },
-                        { "name": "poet-of-mourning-collapse", "pieces": 4 }
+                        {
+                            "name": "poet-of-mourning-collapse", "pieces": 4 , "notes": {
+                                "en": "Sould only be used if Seele is not using 'In The Night' nor is she E2+"
+                            }
+                        }
                     ]
                 }
             ]
@@ -47,20 +51,24 @@
 
     "planar_ornaments": [
         {
-            "groups": [
-                {
-                    "items": [
-                        {
-                            "name": "firmament-frontline-glamoth", "pieces": 2,
-                            "note": {
-                                "en": "Marginally better."
-                            }
-                        },
-                        {
-                            "name": "rutilant-arena", "pieces": 2
+        "groups": [
+            {
+                "items": [
+                    {
+                        "name": "firmament-frontline-glamoth", "pieces": 2,
+                        "note": {
+                            "en": "Marginally better."
                         }
-                    ]
-                },
+                    },
+                    {
+                        "name": "rutilant-arena", "pieces": 2
+                    }
+                ]
+            }
+        ]
+        },
+        {
+            "groups": [
                 {
                     "items": [{ "name": "inert-salsotto", "pieces": 2}]
                 }
