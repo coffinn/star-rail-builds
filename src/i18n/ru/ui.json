@@ -11,7 +11,7 @@
     "Detailed calculations": "Подробные расчёты",
     "General": "Общее",
     "Thank you to": "Выражаем благодарность ",
-    "Last Updated": "Обновлено в версии",
+    "Last Updated": "Последнее обновление",
     "Version": "Версия",
     "Conditional (See Notes):": "Ситуативные варианты (см. заметки):",
     "Best Role": "Лучшая роль",
@@ -97,5 +97,18 @@
     "Recommended Stats": "Рекомендуемые статы",
     "Baseline": "Базовые",
     "Recommended": "Рекомендуемые",
-    "Regarding Recommended Stats:": "Касательно рекомендуемых статов:"
+    "Regarding Recommended Stats:": "Касательно рекомендуемых статов:",
+    "1-Pc": "1-Pc",
+    "2-Pc": "2-Pc",
+    "4-Pc": "4-Pc",
+    "HP": "HP",
+    "ATK": "Сила атаки",
+    "DEF": "Защита",
+    "Light Cone - A-Z": "Световой конус - А-Я",
+    "Relic Sets - A-Z": "Набор реликвий - А-Я",
+    "Characters - A-Z": "Персонажи - А-Я",
+    "Element - A-Z": "Тип - А-Я",
+    "Rarity - A-Z": "Редкость - А-Я",
+    "Release date - Newest": "По дате выхода -  (сначала новые)",
+    "Last Updated - Newest": "Last Updated - Newest"
 }
