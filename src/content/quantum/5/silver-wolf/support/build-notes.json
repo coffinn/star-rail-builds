@@ -3,6 +3,11 @@
   "name": {
     "en": "Support"
   },
+  "global": {
+    "author": "coffinn",
+    "link": "https://example.com/full-guide",
+    "detail": "Full character guide"
+  }, 
   "notes": [
     {
       "en": "This is the first test Honkai: Star Rail character build."
