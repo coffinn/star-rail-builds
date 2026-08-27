@@ -1,23 +1,13 @@
 {
-    "light_cones": [
+  "light_cones": [
+    {
+      "items": [
+        "thus-burns-the-dawn",
         {
-            "items": [
-                {
-                    "name": "thus-burns-the-dawn",
-                    "superimposition": 1,
-                    "note": {
-                        "en": "Getting any SPD stats while using both Thus Burns the Dawn and Poet of Mourning Collapse will nullify the 32% Crit Rate bonus"
-                    }
-                },
-                {
-                    "name": "something-irreplaceable",
-                    "superimposition": 1
-                },
-                {
-                    "name": "something-irreplaceable",
-                    "superimposition": 1
-                }
-            ]
+          "name": "dance-at-sunset",
+          "superimposition": 5
         }
-    ]
-}
+      ]
+    }
+  ]
+}  
