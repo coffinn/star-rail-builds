@@ -20,7 +20,7 @@
       "name": "Straight Bet",
       "tag": "Single Target",
       "energy_gain": 20,
-      "break": 30,
+      "break": 10,
 
       "min_level": 1,
       "max_level": 7,
@@ -92,7 +92,7 @@
       "tag": "Single Target",
       "energy_cost": 110,
       "energy_gain": 5,
-      "break": 90,
+      "break": 30,
 
       "min_level": 1,
       "max_level": 12,
