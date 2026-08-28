@@ -74,7 +74,7 @@
             "min_level": 1,
             "max_level": 12,
             "default_level": 10,
-            "description_template": "Each stack of Pocket Trickshot increases the Enhanced Basic Attack's Toughness Reduction by 50%, stacking up to 3 time(s). If the target is Weakness Broken while the Enhanced Basic ATK is being used, based on the number of Pocket Trickshot stacks, deals Break DMG to this target equal to {{pt1}}%/{{pt2}}%/{{pt3}}% of Boothill's Physical Break DMG. The max Toughness taken into account for this DMG cannot exceed 16 times the base Toughness Reduction of the Basic Attack \"Skullcrush Spurs.\" After winning the battle, Boothill can retain Pocket Trickshot for the next battle.",
+            "description_template": "Каждый уровень статуса Карманное преимущество повышает урон стойкости усиленной базовой атаки на 50% до макс. 3 раз.\nЕсли при использовании усиленной базовой атаки уязвимость цели пробита, то она получает урон пробития, равный {{pt1}}%/{{pt2}}%/{{pt3}}% от физического урона пробития Бутхилла, в зависимости от количества уровней статуса Карманное преимущество. Макс. стойкость, учитываемая этой атакой, не может превышать ×16 от базового урона стойкости базовой атаки Подкова черепокрушения.\nПосле победы в бою Бутхилл сохраняет статус Карманное преимущество до следующего боя.",
             "scaling": {
                 "pt1": [35.0, 38.5, 42.0, 45.5, 49.0, 52.5, 56.875, 61.25, 65.625, 70.0, 73.5, 77.0],
                 "pt2": [60.0, 66.0, 72.0, 78.0, 84.0, 90.0, 97.5, 105.0, 112.5, 120.0, 126.0, 132.0],
@@ -82,24 +82,24 @@
             }
         },
         "technique": {
-            "type": "Technique",
-            "name": "3-9X Smile",
-            "tag": "Enhance",
-            "description": "After the Technique is used, when casting the Skill for the first time in the next battle, applies the same Physical Weakness to the target as the one induced by the Ultimate, lasting for 2 turn(s)."
+            "type": "Техника",
+            "name": "Улыбка три на девять",
+            "tag": "Усиление",
+            "description": "После использования техники первое использование навыка в следующем бою добавляет выбранной цели физическую уязвимость, описанную в сверхспособности персонажа, на 2 хода."
         }
     },
     "major_traces": {
         "2": {
-            "name": "Ghost Load",
-            "description": "Increase this character's CRIT Rate/CRIT DMG, by an amount equal to 10%/50% of Break Effect, up to a max increase of 30%/150%."
+            "name": "Призрачная зарядка",
+            "description": "Крит. шанс персонажа повышается на 10% от эффекта пробития, а его крит. урон - на 50% от эффекта пробития. Таким образом крит. шанс может быть повышен до макс. 30%, а крит. урон - до макс. 150%."
         },
         "4": {
-            "name": "Above Snakes",
-            "description": "While Boothill is in the Standoff, reduces the DMG he receives from targets that are not in the Standoff by 30%"
+            "name": "Над змеями",
+            "description": "Пока Бутхилл находится в состоянии Дуэль, урон, получаемый от противников, не находящихся в состоянии Дуэль, понижается на 30%."
         },
         "6": {
-            "name": "Point Blank",
-            "description": "When in Standoff and gaining Pocket Trickshot, regenerates 10 Energy. Can also trigger this effect when gaining Pocket Trickshot stacks that exceed the max limit."
+            "name": "В упор",
+            "description": "Получение статуса Карманное преимущество в состоянии Дуэль восстанавливает 10 ед. энергии. Этот эффект также срабатывает при получении уровней статуса Карманное преимущество, превышающих макс. количество уровней."
         }
     },
     "stat_bonuses": [
@@ -108,44 +108,44 @@
             "value": "+10%"
         },
         {
-            "stat": "ATK",
+            "stat": "Сила атаки",
             "value": "+18%"
         },
         {
-            "stat": "Break Effect",
+            "stat": "Эффект пробития",
             "value": "+37.3%"
         }
     ],
     "eidolons": [
         {
             "level": 1,
-            "name": "Dusty Trail's Lone Star",
-            "description": "When the battle starts, obtains 1 stack of Pocket Trickshot. When Boothill deals DMG, ignores 16% of the enemy target's DEF."
+            "name": "Одинокая звезда пыльных дорог",
+            "description": "В начале боя получает 1 ур. статуса Карманное преимущество, который позволяет Бутхиллу при нанесении урона игнорировать 16% защиты противника."
         },
         {
             "level": 2,
-            "name": "Milestonemonger",
-            "description": "When in Standoff and gaining Pocket Trickshot, recovers 1 Skill Point(s) and increases Break Effect by 30%, lasting for 2 turn(s). Can also trigger this effect when gaining Pocket Trickshot stacks that exceed the max limit. But cannot trigger repeatedly within one turn."
+            "name": "Делец надгробий",
+            "description": "Получение статуса Карманное преимущество в состоянии Дуэль восстанавливает 1 очко навыков и повышает эффект пробития на 30% на 2 хода. Этот эффект не может сработать повторно в течение одного хода, но может сработать при получении уровней статуса Карманное преимущество, превышающих макс. количество уровней."
         },
         {
             "level": 3,
-            "name": "Marble Orchard's Guard",
-            "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+            "name": "Страж мраморного сада",
+            "description": "Уровень сверхспособности повышается на 2, максимальный уровень - 15. Уровень базовой атаки повышается на 1, максимальный уровень - 10."
         },
         {
             "level": 4,
-            "name": "Cold Cuts Chef",
-            "description": "When the enemy target in the Standoff is attacked by Boothill, the DMG they receive additionally increases by 12%. When Boothill is attacked by the enemy target in the Standoff, the effect of him receiving increased DMG is offset by 12%."
+            "name": "Специалист по холодному мясу",
+            "description": "Урон, получаемый противником, находящимся в состоянии Дуэль, от атак Бутхилла дополнительно повышается на 12%. Когда противник в состоянии Дуэль атакует Бутхилла, эффект повышения получаемого им урона понижается на 12%."
         },
         {
             "level": 5,
-            "name": "Stump Speech",
-            "description": "Skill Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+            "name": "Харизма пня",
+            "description": "Уровень навыка повышается на 2, максимальный уровень - 15. Уровень таланта повышается на 2, максимальный уровень - 15."
         },
         {
             "level": 6,
-            "name": "Crowbar Hotel's Raccoon",
-            "description": "When triggering the Talent's Break DMG, additionally deals Break DMG to the target equal to 40% of the original DMG multiplier and additionally deals Break DMG to adjacent targets equal to 70% of the original DMG multiplier."
+            "name": "Тюремный енот",
+            "description": "Когда талант персонажа наносит урон пробития, персонаж наносит цели доп. урон пробития, равный 40% от множителя первоначального урона, а также наносит соседним целям урон пробития, равный 70% от множителя изначального урона."
         }
     ]
 }
