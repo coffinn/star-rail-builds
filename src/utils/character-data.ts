@@ -60,11 +60,10 @@ export type CharacterAbility = {
 
     variants?: CharacterAbilityVariant[];
 };
-
 export type CharacterMemosprite = {
     name: string;
 
-    initial_spd?: number;
+    initial_spd?: number | string;
     hp_source?: string;
 
     skills: Record<
@@ -177,6 +176,8 @@ type CharacterKitTranslation = {
 
     memosprite?: {
         name?: string;
+
+        initial_spd?: number | string;
         hp_source?: string;
 
         skills?: Record<
@@ -419,7 +420,13 @@ function applyCharacterKitTranslation(
                         character
                             .memosprite
                             .name,
-
+                    initial_spd:
+                        translation
+                            .memosprite
+                            ?.initial_spd ??
+                        character
+                            .memosprite
+                            .initial_spd,
                     hp_source:
                         translation
                             .memosprite
