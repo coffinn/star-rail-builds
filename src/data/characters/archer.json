@@ -64,12 +64,6 @@
                 ]
             }
         },
-        "skill_end": {
-            "type": "Skill (End)",
-            "name": "End",
-            "tag": "Enhance",
-            "description": "Exits the \"Circuit Connection\" state and ends the current turn."
-        },
         "ultimate": {
             "type": "Ultimate",
             "name": "Unlimited Blade Works",
@@ -128,7 +122,6 @@
         "technique": {
             "type": "Technique",
             "name": "Clairvoyance",
-            "tag": "Attack",
             "break": 20,
             "description": "Immediately attacks enemies. After entering combat, deals Quantum DMG equal to 200% of Archer's ATK to all enemies and gains 1 point of Charge."
         }

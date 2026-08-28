@@ -64,12 +64,6 @@
                 ]
             }
         },
-        "skill_end": {
-            "type": "Skill (End)",
-            "name": "End",
-            "tag": "Enhance",
-            "description": "Exits the \"Circuit Connection\" state and ends the current turn."
-        },
         "ultimate": {
             "type": "Сверхспособность",
             "name": "Клинков бесконечный край",
@@ -128,7 +122,6 @@
         "technique": {
             "type": "Техника",
             "name": "Ясновидение",
-            "tag": "Атака",
             "break": 20,
             "description": "Немедленно атакует противника и после начала боя наносит всем противникам квантовый урон, равный 200% от силы атаки Арчера, а также получает 1 ед. заряда."
         }

@@ -21,13 +21,10 @@
       "tag": "Single Target",
       "energy_gain": 20,
       "break": 10,
-
       "min_level": 1,
       "max_level": 7,
       "default_level": 6,
-
       "description_template": "Deals Lightning DMG equal to {{damage}}% of Arlan's ATK to a single enemy.",
-
       "scaling": {
         "damage": [
           50,
@@ -48,13 +45,10 @@
       "energy_gain": 30,
       "break_main": 20,
       "break_aoe": 10,
-
       "min_level": 1,
       "max_level": 12,
       "default_level": 10,
-
       "description_template": "Consumes Arlan's HP equal to 15% of his Max HP to deal Lightning DMG equal to {{damage}}% of Arlan's ATK to a single enemy. If Arlan does not have sufficient HP, his HP will be reduced to 1 after using his Skill.",
-
       "scaling": {
         "damage": [120, 132, 144, 156, 168, 180, 195, 210, 225, 240, 252, 264]
 
@@ -71,9 +65,7 @@
       "min_level": 1,
       "max_level": 12,
       "default_level": 10,
-
       "description_template": "Deals Lightning DMG equal to {{main_damage}}% of Arlan's ATK to a single enemy and Lightning DMG equal to {{adjacent_damage}}% of Arlan's ATK to enemies adjacent to it.",
-
       "scaling": {
         "main_damage": [192, 204.8, 217.6, 230.4, 243.2, 256, 272, 288, 304, 320, 332.8, 345.6],
         "adjacent_damage": [96,102.4, 108.8, 115.2, 121.6, 128, 136, 144, 152, 160, 166.4 , 172.8]
@@ -84,13 +76,10 @@
       "type": "Talent",
       "name": "Pain and Anger",
       "tag": "Enhance",
-
       "min_level": 1,
       "max_level": 12,
       "default_level": 10,
-
       "description_template": "Based on Arlan's current missing HP percentage, gains DMG bonus, up to a maximum increase of {{dmg_boost}}% DMG dealt by Arlan.",
-
       "scaling": {
         "dmg_boost": [36, 39.6, 43.2, 46.8, 50.4, 54, 58.5, 63, 67.5, 72, 75.6, 79.2]
       }
@@ -99,7 +88,6 @@
     "technique": {
       "type": "Technique",
       "name": "Swift Harvest",
-      "tag": "Attack",
       "break": 20,
       "description": "Immediately attacks the enemy. After entering battle, deals Lightning DMG equal to 80% of Arlan's ATK to all enemies."
     }
