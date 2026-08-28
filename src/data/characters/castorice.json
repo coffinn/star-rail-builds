@@ -205,7 +205,7 @@
                 "min_level": 1,
                 "max_level": 7,
                 "default_level": 6,
-                "description_template": "Consumes {{hp_cost}}% of Netherwing's Max HP to deal Quantum DMG equal to {{damage_first}}% of Castorice's Max HP to all enemies. In one attack, this ability can be launched repeatedly with progressively increasing DMG multipliers of {{damage_second}}% then {{damage_third}}%. After reaching 17%, it will not increase further. The DMG Multiplier Boost effect will not decrease before Netherwing disappears. When Netherwing's current HP is equal to or less than 25% of its Max HP, launching this ability will actively reduce HP down to 1, and then trigger the ability effect equal to that of the Talent \"Wings Sweep the Ruins.\"",
+                "description_template": "Consumes {{hp_cost}}% of Netherwing's Max HP to deal Quantum DMG equal to {{damage_first}}% of Castorice's Max HP to all enemies. In one attack, this ability can be launched repeatedly with progressively increasing DMG multipliers of {{damage_second}}% then {{damage_third}}%. After reaching {{damage_third}}, it will not increase further. The DMG Multiplier Boost effect will not decrease before Netherwing disappears. When Netherwing's current HP is equal to or less than 25% of its Max HP, launching this ability will actively reduce HP down to 1, and then trigger the ability effect equal to that of the Talent \"Wings Sweep the Ruins.\"",
                 "scaling": {
                     "damage_first": [
                         12.0,
