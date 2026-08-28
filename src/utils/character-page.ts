@@ -446,10 +446,6 @@ function translateRelicSetName(
     );
 }
 
-/**
- * Normalizes one relic set item with translated text
- * and shared set info.
- */
 function translateRelicSetItem(
     translator: TranslationHelper,
     locale: any,
@@ -462,16 +458,105 @@ function translateRelicSetItem(
         item.name,
     );
 
-    return {
-        ...item,
-        id,
-        name: translateRelicSetName(
+    const translatedName =
+        translateRelicSetName(
             translator,
             locale,
             id,
             sourceFile,
-        ),
-        info: relicSetData[id],
+        );
+
+    const rawAggregateSets =
+        Array.isArray(item.sets)
+            ? item.sets
+            : [];
+
+    const aggregateSets =
+        rawAggregateSets.map(
+            (rawSet: any) => {
+                const rawSetName =
+                    typeof rawSet === 'string'
+                        ? rawSet
+                        : rawSet?.name;
+
+                if (!rawSetName) {
+                    throw new Error(
+                        `Aggregate Relic entry "${item.name}" contains a set without a name (source: ${sourceFile})`,
+                    );
+                }
+
+                const setId =
+                    translator.resolveAlias(
+                        'relic',
+                        rawSetName,
+                    );
+
+                const setInfo =
+                    relicSetData[setId];
+
+                if (!setInfo) {
+                    throw new Error(
+                        `Unknown Relic "${rawSetName}" inside aggregate "${item.name}" (source: ${sourceFile})`,
+                    );
+                }
+
+                return {
+                    id: setId,
+                    name:
+                        translateRelicSetName(
+                            translator,
+                            locale,
+                            setId,
+                            sourceFile,
+                        ),
+                    info: setInfo,
+                };
+            },
+        );
+
+    const isAggregate =
+        aggregateSets.length > 0;
+
+    /*
+     * Aggregate entries use a stat ID as their name.
+     *
+     * Example:
+     *   name: "spd"
+     *   pieces: 2
+     *
+     * becomes:
+     *   "2-Pc SPD"
+     *
+     * The pieces text already uses the existing
+     * translated 1-Pc / 2-Pc / 4-Pc UI keys.
+     */
+    const displayName = isAggregate
+        ? `${t(
+            locale,
+            'ui',
+            `${item.pieces}-Pc`,
+            sourceFile,
+            false,
+        )} ${translatedName}`
+        : translatedName;
+
+    return {
+        ...item,
+        id,
+        name: displayName,
+
+        /*
+         * A pseudo-set has no direct shared Relic entry.
+         * Its hover data comes from aggregateSets instead.
+         */
+        info: isAggregate
+            ? undefined
+            : relicSetData[id],
+
+        aggregateSets:
+            isAggregate
+                ? aggregateSets
+                : undefined,
     };
 }
 
@@ -1133,8 +1218,11 @@ function loadBuildData({
                 (relic: {
                     name: any;
                     pieces: any;
+                    aggregateSets?: any[];
                 }) =>
-                    `${relic.name} (${relic.pieces})`,
+                    relic.aggregateSets?.length
+                        ? relic.name
+                        : `${relic.name} (${relic.pieces})`,
 
                 relicSetsFile,
                 lang,

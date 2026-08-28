@@ -4,6 +4,16 @@
             "version": "Site Conversion",
             "entries": [
                 {
+                    "date": "August 27, 2026",
+                    "changes": "Support for 2p set recommendations",
+                    "appliedBy": "Navigator Team"
+                },
+                {
+                    "date": "August 26, 2026",
+                    "changes": "Translations for various languages starting to be added",
+                    "appliedBy": "Navigator Team"
+                },
+                {
                     "date": "August 25, 2026",
                     "changes": "Changed background, character icon background, nameplate bar, and notes display",
                     "appliedBy": "Navigator Team"

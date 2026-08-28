@@ -324,8 +324,130 @@ function validateRelicItem(
         return;
     }
 
+    /*
+     * Aggregate / pseudo-set recommendation.
+     *
+     * Example:
+     * {
+     *   "name": "spd",
+     *   "pieces": 2,
+     *   "sets": [
+     *     "messenger-traversing-hackerspace",
+     *     "sacerdos-relived-ordeal"
+     *   ]
+     * }
+     */
+    if (Array.isArray(item.sets)) {
+        validateStat(
+            item.name,
+            file,
+        );
+
+        if (item.sets.length === 0) {
+            error(
+                `Aggregate Relic "${item.name}" has an empty sets array in ${path.relative(
+                    ROOT,
+                    file,
+                )}`,
+            );
+
+            return;
+        }
+
+        if (![1, 2, 4].includes(item.pieces)) {
+            error(
+                `Aggregate Relic "${item.name}" must use 1, 2, or 4 pieces in ${path.relative(
+                    ROOT,
+                    file,
+                )}`,
+            );
+        }
+
+        for (const setEntry of item.sets) {
+            const rawSetName =
+                typeof setEntry === 'string'
+                    ? setEntry
+                    : setEntry?.name;
+
+            if (!rawSetName) {
+                error(
+                    `Aggregate Relic "${item.name}" contains a set without a name in ${path.relative(
+                        ROOT,
+                        file,
+                    )}`,
+                );
+
+                continue;
+            }
+
+            const resolvedSetName =
+                relicAliases[rawSetName] ??
+                rawSetName;
+
+            const relic =
+                relicData[
+                resolvedSetName
+                ];
+
+            if (!relic) {
+                error(
+                    `Unknown Relic "${rawSetName}" inside aggregate "${item.name}" in ${path.relative(
+                        ROOT,
+                        file,
+                    )}`,
+                );
+
+                continue;
+            }
+
+            const effectKey =
+                `${item.pieces}p`;
+
+            if (!relic[effectKey]) {
+                error(
+                    `Relic "${rawSetName}" does not have a ${item.pieces}-piece effect required by aggregate "${item.name}" in ${path.relative(
+                        ROOT,
+                        file,
+                    )}`,
+                );
+            }
+
+            if (
+                relic.type === 'planar' &&
+                item.pieces !== 2
+            ) {
+                error(
+                    `Planar Ornament "${rawSetName}" must use 2 pieces in aggregate "${item.name}" (${path.relative(
+                        ROOT,
+                        file,
+                    )})`,
+                );
+            }
+
+            if (
+                relic.type === 'cavern' &&
+                ![2, 4].includes(
+                    item.pieces,
+                )
+            ) {
+                error(
+                    `Cavern Relic "${rawSetName}" must use 2 or 4 pieces in aggregate "${item.name}" (${path.relative(
+                        ROOT,
+                        file,
+                    )})`,
+                );
+            }
+        }
+
+        return;
+    }
+
+    /*
+     * Normal real Relic recommendation.
+     */
     const resolvedName =
-        relicAliases[item.name] ?? item.name;
+        relicAliases[item.name] ??
+        item.name;
 
     const relic =
         relicData[resolvedName];
@@ -359,6 +481,7 @@ function validateRelicItem(
         );
     }
 }
+
 
 function validateRelicGroup(
     group,

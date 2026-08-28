@@ -30,49 +30,13 @@
         {
             "groups": [
                 {
-                    "choices": [
+                    "items": [
                         {
-                            "items": [
-                                {
-                                    "name": "musketeer",
-                                    "pieces": 2
-                                },
-                                {
-                                    "name": "valorous",
-                                    "pieces": 2
-                                },
-                                {
-                                    "name": "hero",
-                                    "pieces": 2
-                                },
-                                {
-                                    "name": "isee",
-                                    "pieces": 2
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "choices": [
-                        {
-                            "items": [
-                                {
-                                    "name": "messenger",
-                                    "pieces": 2
-                                },
-                                {
-                                    "name": "sacerdos",
-                                    "pieces": 2
-                                },
-                                {
-                                    "name": "warrior-goddess",
-                                    "pieces": 2
-                                },
-                                {
-                                    "name": "diviner",
-                                    "pieces": 2
-                                }
+                            "name": "spd",
+                            "pieces": 2,
+                            "sets": [
+                                "messenger-traversing-hackerspace",
+                                "sacerdos-relived-ordeal"
                             ]
                         }
                     ]
@@ -84,7 +48,7 @@
         {
             "groups": [
                 {
-                    "items":[
+                    "items": [
                         {
                             "name": "city",
                             "pieces": 2
@@ -94,9 +58,9 @@
             ]
         },
         {
-            "groups":[
+            "groups": [
                 {
-                    "items":[
+                    "items": [
                         {
                             "name": "lushaka",
                             "pieces": 2
@@ -106,9 +70,9 @@
             ]
         },
         {
-            "groups":[
+            "groups": [
                 {
-                    "items":[
+                    "items": [
                         {
                             "name": "penacony",
                             "pieces": 2,

@@ -2,6 +2,7 @@
 import InlineNoteLabel from './InlineNoteLabel.astro';
 import { resolveRelicAssetUrl } from '../utils/item-assets';
 import { t } from '../utils/i18n';
+
 type LocalizedRelicEffect = {
     en?: string;
     [lang: string]: string | undefined;
@@ -14,11 +15,19 @@ type RelicSetInfo = {
     '4p'?: LocalizedRelicEffect;
 };
 
+type AggregateRelicSet = {
+    id: string;
+    name: string;
+    info: RelicSetInfo;
+};
+
 type Props = {
     relic: {
         name: string;
+        pieces?: number;
         id?: string;
         info?: RelicSetInfo;
+        aggregateSets?: AggregateRelicSet[];
     };
     locale: any;
     lang?: string;
@@ -27,6 +36,7 @@ type Props = {
 const { relic, locale, lang = 'en' } = Astro.props as Props;
 
 const info = relic.info;
+const aggregateSets = relic.aggregateSets ?? [];
 
 function escapeHtml(value: unknown) {
     return String(value ?? '')
@@ -62,7 +72,7 @@ const effects = info
 
 const imageUrl = relic.id ? resolveRelicAssetUrl(relic.id) : '';
 
-const popoverCardHtml = info
+const regularPopoverCardHtml = info
     ? [
           '<span class="info-popover-header',
           imageUrl ? ' has-image' : '',
@@ -99,10 +109,86 @@ const popoverCardHtml = info
               .join(''),
       ].join('')
     : '';
+
+const aggregatePieces = relic.pieces ?? 2;
+const aggregatePieceKey = `${aggregatePieces}p` as '1p' | '2p' | '4p';
+
+const aggregatePieceLabel = t(
+    locale,
+    'ui',
+    `${aggregatePieces}-Pc`,
+    undefined,
+    false,
+);
+
+const aggregatePopoverCardHtml =
+    aggregateSets.length > 0
+        ? [
+              '<span class="info-popover-header">',
+              '<span class="info-popover-name">',
+              escapeHtml(relic.name),
+              '</span>',
+              '</span>',
+
+              '<span class="artifact-aggregate-list">',
+
+              aggregateSets
+                  .map((set) => {
+                      const setImageUrl = resolveRelicAssetUrl(set.id);
+
+                      const effect = localizedEffect(
+                          set.info?.[aggregatePieceKey],
+                      );
+
+                      return [
+                          '<span class="artifact-aggregate-set',
+                          setImageUrl ? ' has-image' : '',
+                          '">',
+
+                          setImageUrl
+                              ? [
+                                    '<span class="artifact-aggregate-set-image"><img src="',
+                                    escapeHtml(setImageUrl),
+                                    '" alt="" loading="lazy" decoding="async"></span>',
+                                ].join('')
+                              : '',
+
+                          '<span class="artifact-aggregate-set-copy">',
+
+                          '<strong class="artifact-aggregate-set-name">',
+                          escapeHtml(set.name),
+                          '</strong>',
+
+                          effect
+                              ? [
+                                    '<span class="artifact-aggregate-set-effect">',
+                                    '<span>',
+                                    escapeHtml(aggregatePieceLabel),
+                                    '</span>',
+                                    '<strong>',
+                                    escapeHtml(effect),
+                                    '</strong>',
+                                    '</span>',
+                                ].join('')
+                              : '',
+
+                          '</span>',
+                          '</span>',
+                      ].join('');
+                  })
+                  .join(''),
+
+              '</span>',
+          ].join('')
+        : '';
+
+const popoverCardHtml = aggregatePopoverCardHtml || regularPopoverCardHtml;
+
+const hasPopover = Boolean(popoverCardHtml);
 ---
 
 {
-    info ? (
+    hasPopover ? (
         <span
             class="info-popover artifact-popover"
             data-info-popover-card-class="artifact-popover-card"

@@ -1153,6 +1153,113 @@
     text-align: left;
 }
 
+.artifact-aggregate-list {
+    display: grid;
+    margin-top: 10px;
+}
+
+.artifact-aggregate-set {
+    display: grid;
+    min-width: 0;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+    align-items: center;
+    padding: 9px 0;
+}
+
+.artifact-aggregate-set.has-image {
+    grid-template-columns:
+        52px minmax(0, 1fr);
+}
+
+.artifact-aggregate-set+.artifact-aggregate-set {
+    border-top: 1px solid color-mix(in srgb,
+            var(--text) 20%,
+            transparent);
+}
+
+.artifact-aggregate-set-image {
+    display: grid;
+    width: 52px;
+    height: 52px;
+    place-items: center;
+    border: 1px solid color-mix(in srgb,
+            var(--element) 38%,
+            transparent);
+    border-radius: 8px;
+    background:
+        radial-gradient(circle at 50% 38%,
+            color-mix(in srgb,
+                var(--element) 18%,
+                transparent),
+            transparent 64%),
+        rgba(0, 0, 0, 0.14);
+}
+
+.artifact-aggregate-set-image img {
+    display: block;
+    width: 88%;
+    height: 88%;
+    object-fit: contain;
+}
+
+.artifact-aggregate-set-copy {
+    display: grid;
+    min-width: 0;
+    gap: 5px;
+}
+
+.artifact-aggregate-set-name {
+    color: var(--accent);
+    font-size: 0.88rem;
+    font-weight: 850;
+    line-height: 1.25;
+    overflow-wrap: anywhere;
+}
+
+.artifact-aggregate-set-effect {
+    display: grid;
+    min-width: 0;
+    grid-template-columns:
+        auto minmax(0, 1fr);
+    gap: 8px;
+    align-items: start;
+    font-size: 0.8rem;
+    line-height: 1.35;
+}
+
+.artifact-aggregate-set-effect>span {
+    color:
+        color-mix(in srgb,
+            var(--text) 68%,
+            transparent);
+    font-weight: 750;
+    white-space: nowrap;
+}
+
+.artifact-aggregate-set-effect>strong {
+    min-width: 0;
+    font-weight: 650;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 520px) {
+    .artifact-aggregate-set.has-image {
+        grid-template-columns:
+            44px minmax(0, 1fr);
+    }
+
+    .artifact-aggregate-set-image {
+        width: 44px;
+        height: 44px;
+    }
+
+    .artifact-aggregate-set-effect {
+        grid-template-columns: 1fr;
+        gap: 2px;
+    }
+}
+
 .inline-info-label {
     display: inline;
     min-width: 0;
