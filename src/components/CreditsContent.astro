@@ -22,29 +22,40 @@ const translators = [
 ---
 
 <section class="card credits-card credits-legal-card">
-    <h2>{t(locale, 'ui', 'Legal Notice', undefined, false)}</h2>
-    <p>{t(locale, 'ui', 'Legal notice unofficial', undefined, false)}</p>
+    <h2>
+        {t(locale, 'ui', 'Legal Notice', undefined, false)}
+    </h2>
+
     <p>
-        Original source code, build recommendations, rankings, notes, page
-        layouts, and other editorial content are copyright Honkai: Star Rail
-        Navigator contributors. No license is granted to copy, mirror, rehost,
-        or deploy this website or its original content without written
-        permission. See the{' '}
+        {t(locale, 'ui', 'Legal notice unofficial', undefined, false)}
+    </p>
+
+    <p>
+        {t(locale, 'ui', 'Legal notice original content', undefined, false)}{
+            ' '
+        }
+
         <a
             href="https://github.com/coffinn/star-rail-builds/blob/main/LICENSE.md"
             target="_blank"
+            rel="noopener noreferrer"
         >
-            repository license notice
+            {t(locale, 'ui', 'Repository license notice', undefined, false)}
         </a>
         .
     </p>
-    <p>{t(locale, 'ui', 'Legal notice ownership', undefined, false)}</p>
-    <p class="credits-legal-declaration">
-        &copy; All rights reserved by COGNOSPHERE. Other properties belong to
-        their respective owners.
+
+    <p>
+        {t(locale, 'ui', 'Legal notice ownership', undefined, false)}
     </p>
+
+    <p class="credits-legal-declaration">
+        {t(locale, 'ui', 'Legal notice rights reserved', undefined, false)}
+    </p>
+
     <p>
         {t(locale, 'ui', 'Legal notice unpublished', undefined, false)}{' '}
+
         <a
             href="https://www.hoyolab.com/article/143107"
             target="_blank"
