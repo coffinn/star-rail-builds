@@ -35,7 +35,7 @@
         "name": "Fractal, Exiles Fallacy",
         "tag": "Bounce",
         "energy_gain": 6,
-        "break": 10,
+        "break_bounce": 10,
         "min_level": 1,
         "max_level": 12,
         "default_level": 10,
