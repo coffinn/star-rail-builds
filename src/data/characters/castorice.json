@@ -119,6 +119,7 @@
             "type": "Ultimate",
             "name": "Doomshriek, Dawn's Chime",
             "tag": "Summon",
+            "energy_cost": "100% of Newbud",
             "min_level": 1,
             "max_level": 12,
             "default_level": 10,

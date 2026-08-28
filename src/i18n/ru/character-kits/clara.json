@@ -15,14 +15,14 @@
     "abilities": {
         "basic": {
             "type": "Базовая атака",
-            "name": "I Want to Help",
-            "tag": "Single Target",
+            "name": "Я хочу помочь",
+            "tag": "Одиночная атака",
             "energy_gain": 20,
             "break": 10,
             "min_level": 1,
             "max_level": 7,
             "default_level": 6,
-            "description_template": "Deals Physical DMG equal to {{damage}}% of Clara's ATK to one designated enemy.",
+            "description_template": "Наносит выбранному противнику физический урон, равный {{damage}}% от силы атаки Клары.",
             "scaling": {
                 "damage": [
                     50,
@@ -36,15 +36,15 @@
             }
         },
         "skill": {
-            "type": "Skill",
-            "name": "Svarog Watches Over You",
-            "tag": "AoE",
+            "type": "Навык",
+            "name": "Сварог оберегает тебя",
+            "tag": "Групповая атака",
             "energy_gain": 30,
             "break_aoe": 10,
             "min_level": 1,
             "max_level": 12,
             "default_level": 10,
-            "description_template": "Deals Physical DMG equal to {{skill_damage}}% of Clara's ATK to all enemies, and additionally deals Physical DMG equal to {{skill_damage}}% of Clara's ATK to enemies marked by Svarog with a Mark of Counter. All Marks of Counter will be removed after this Skill is used",
+            "description_template": "Наносит всем противникам физический урон, равный {{skill_damage}}% от силы атаки Клары, а также наносит противникам, помеченным Меткой контратаки Сварога, дополнительный физический урон, равный {{skill_damage}}% от силы атаки Клары.\nПосле использования навыка все Метки контратаки исчезают.",
             "scaling": {
                 "skill_damage": [
                     60.0,

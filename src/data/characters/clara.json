@@ -44,7 +44,7 @@
             "min_level": 1,
             "max_level": 12,
             "default_level": 10,
-            "description_template": "Deals Physical DMG equal to {{skill_damage}}% of Clara's ATK to all enemies, and additionally deals Physical DMG equal to {{skill_damage}}% of Clara's ATK to enemies marked by Svarog with a Mark of Counter. All Marks of Counter will be removed after this Skill is used",
+            "description_template": "Deals Physical DMG equal to {{skill_damage}}% of Clara's ATK to all enemies, and additionally deals Physical DMG equal to {{skill_damage}}% of Clara's ATK to enemies marked by Svarog with a Mark of Counter. All Marks of Counter will be removed after this Skill is used.",
             "scaling": {
                 "skill_damage": [
                     60.0,
