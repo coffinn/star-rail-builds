@@ -1,0 +1,17 @@
+{
+    "main_stats": {
+        "body": [
+            "atk%"
+        ],
+        "feet": [
+            "spd"
+        ],
+        "planar_sphere": [
+            "atk%"
+        ],
+        "link_rope": [
+            "err",
+            "atk%"
+        ]
+    }
+}

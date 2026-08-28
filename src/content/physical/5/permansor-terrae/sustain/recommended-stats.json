@@ -1,0 +1,14 @@
+{
+    "stats": [
+        {
+            "name": "spd",
+            "baseline": "140+",
+            "recommended": "160+"
+        },
+        {
+            "name": "atk",
+            "baseline": "3000+",
+            "recommended": "3200+"
+        }
+    ]
+}

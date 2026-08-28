@@ -1,0 +1,124 @@
+{
+    "relic_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "recluse",
+                            "pieces": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "warrior-goddess",
+                            "pieces": 4,
+                            "note": {
+                                "en": "Only works if using Though Worlds Apart light cone."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "choices": [
+                        {
+                            "items": [
+                                {
+                                    "name": "musketeer",
+                                    "pieces": 2
+                                },
+                                {
+                                    "name": "valorous",
+                                    "pieces": 2
+                                },
+                                {
+                                    "name": "hero",
+                                    "pieces": 2
+                                },
+                                {
+                                    "name": "isee",
+                                    "pieces": 2
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "choices": [
+                        {
+                            "items": [
+                                {
+                                    "name": "messenger",
+                                    "pieces": 2
+                                },
+                                {
+                                    "name": "sacerdos",
+                                    "pieces": 2
+                                },
+                                {
+                                    "name": "warrior-goddess",
+                                    "pieces": 2
+                                },
+                                {
+                                    "name": "diviner",
+                                    "pieces": 2
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "planar_ornaments": [
+        {
+            "groups": [
+                {
+                    "items":[
+                        {
+                            "name": "city",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups":[
+                {
+                    "items":[
+                        {
+                            "name": "lushaka",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups":[
+                {
+                    "items":[
+                        {
+                            "name": "penacony",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Only usable with a Physical element Main DPS."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
