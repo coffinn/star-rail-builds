@@ -1,6 +1,6 @@
 {
     "id": "clara",
-    "name": "Clara",
+    "name": "Клара",
     "rarity": 5,
     "element": "physical",
     "path": "destruction",
@@ -14,7 +14,7 @@
     },
     "abilities": {
         "basic": {
-            "type": "Basic ATK",
+            "type": "Базовая атака",
             "name": "I Want to Help",
             "tag": "Single Target",
             "energy_gain": 20,
