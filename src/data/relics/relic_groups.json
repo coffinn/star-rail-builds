@@ -1,0 +1,56 @@
+{
+  "2pc-speed": {
+    "label": "spd",
+    "pieces": 2,
+    "type": "cavern",
+    "sets": [
+      "diviner-of-distant-reach",
+      "messenger-traversing-hackerspace",
+      "sacerdos-relived-ordeal",
+      "warrior-goddess-of-sun-and-thunder"
+    ]
+  },
+
+  "2pc-atk": {
+    "label": "total-atk",
+    "pieces": 2,
+    "type": "cavern",
+    "sets": [
+      "as-navigator-isee-sees-it",
+      "hero-of-triumphant-song",
+      "musketeer-of-wild-wheat",
+      "prisoner-in-deep-confinement",
+      "the-wind-soaring-valorous"
+    ]
+  },
+
+  "2pc-hp": {
+    "label": "total-hp",
+    "pieces": 2,
+    "type": "cavern",
+    "sets": [
+      "divine-querying-master-smith",
+      "longevous-disciple"
+    ]
+  },
+
+  "2pc-def": {
+    "label": "total-def",
+    "pieces": 2,
+    "type": "cavern",
+    "sets": [
+      "knight-of-purity-palace"
+    ]
+  },
+
+  "2pc-break-effect": {
+    "label": "break-effect",
+    "pieces": 2,
+    "type": "cavern",
+    "sets": [
+      "iron-cavalry-against-the-scourge",
+      "thief-of-shooting-meteor",
+      "watchmaker-master-of-dream-machinations"
+    ]
+  }
+}

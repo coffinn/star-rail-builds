@@ -87,6 +87,13 @@ const relicData =
             'src/data/relics/relic_sets.json',
         ),
     ) ?? {};
+const relicGroupData =
+    existingJSON(
+        path.join(
+            ROOT,
+            'src/data/relics/relic_groups.json',
+        ),
+    ) ?? {};
 const translationAliases =
     existingJSON(
         path.join(
@@ -207,7 +214,103 @@ function validateStat(
         );
     }
 }
+function validateCentralRelicGroups() {
+    for (const [
+        groupId,
+        group,
+    ] of Object.entries(
+        relicGroupData,
+    )) {
+        if (!group?.label) {
+            error(
+                `Relic group "${groupId}" has no label`,
+            );
 
+            continue;
+        }
+
+        validateStat(
+            group.label,
+            path.join(
+                ROOT,
+                'src/data/relics/relic_groups.json',
+            ),
+        );
+
+        if (
+            ![1, 2, 4].includes(
+                group.pieces,
+            )
+        ) {
+            error(
+                `Relic group "${groupId}" must use 1, 2, or 4 pieces`,
+            );
+        }
+
+        if (
+            !Array.isArray(
+                group.sets,
+            ) ||
+            group.sets.length === 0
+        ) {
+            error(
+                `Relic group "${groupId}" must contain at least one set`,
+            );
+
+            continue;
+        }
+
+        for (
+            const rawSetId of
+            group.sets
+        ) {
+            const setId =
+                relicAliases[
+                rawSetId
+                ] ??
+                rawSetId;
+
+            const relic =
+                relicData[setId];
+
+            if (!relic) {
+                error(
+                    `Unknown Relic "${rawSetId}" inside central relic group "${groupId}"`,
+                );
+
+                continue;
+            }
+
+            if (
+                group.type &&
+                relic.type !==
+                group.type
+            ) {
+                error(
+                    `Relic "${rawSetId}" is type "${relic.type}" but central group "${groupId}" requires "${group.type}"`,
+                );
+            }
+
+            const effectKey =
+                `${group.pieces}p`;
+
+            if (
+                !relic[
+                effectKey
+                ]
+            ) {
+                error(
+                    `Relic "${rawSetId}" has no ${group.pieces}-piece effect required by central group "${groupId}"`,
+                );
+            }
+        }
+    }
+
+    ok(
+        `Loaded ${Object.keys(relicGroupData).length} central Relic groups`,
+    );
+}
+validateCentralRelicGroups();
 function validateLightConeItem(
     item,
     characterPath,
@@ -324,6 +427,14 @@ function validateRelicItem(
         return;
     }
 
+    /*
+     * Central pseudo-set IDs such as
+     * "2pc-speed" are validated from
+     * relic_groups.json, not relic_sets.json.
+     */
+    if (relicGroupData[item.name]) {
+        return;
+    }
     /*
      * Aggregate / pseudo-set recommendation.
      *

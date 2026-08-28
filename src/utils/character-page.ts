@@ -76,6 +76,36 @@ const relicSetDataPath = path.resolve(
     'src/data/relics/relic_sets.json',
 );
 
+const relicGroupDataPath = path.resolve(
+    'src/data/relics/relic_groups.json',
+);
+
+let relicGroupDataCache:
+    | Record<string, any>
+    | null = null;
+
+function loadRelicGroupData(): Record<
+    string,
+    any
+> {
+    if (relicGroupDataCache) {
+        return relicGroupDataCache;
+    }
+
+    if (!fs.existsSync(relicGroupDataPath)) {
+        throw new Error(
+            'No shared relic group data found at src/data/relics/relic_groups.json',
+        );
+    }
+
+    relicGroupDataCache =
+        readJSONFile(
+            relicGroupDataPath,
+        ) as Record<string, any>;
+
+    return relicGroupDataCache;
+}
+
 /**
  * Renders Markdown text to HTML.
  *
@@ -453,112 +483,134 @@ function translateRelicSetItem(
     sourceFile: string,
     relicSetData: Record<string, any>,
 ) {
+    const relicGroups =
+        loadRelicGroupData();
+
+    const groupDefinition =
+        relicGroups[item.name];
+
+    /*
+     * Central pseudo-set, e.g.
+     *
+     * { "name": "2pc-speed" }
+     *
+     * The actual set list lives in
+     * src/data/relics/relic_groups.json.
+     */
+    if (groupDefinition) {
+        const pieces =
+            groupDefinition.pieces ?? 2;
+
+        const labelId =
+            groupDefinition.label;
+
+        const label =
+            translateRelicSetName(
+                translator,
+                locale,
+                labelId,
+                sourceFile,
+            );
+
+        const pieceLabel = t(
+            locale,
+            'ui',
+            `${pieces}-Pc`,
+            sourceFile,
+            false,
+        );
+
+        const aggregateSets = (
+            groupDefinition.sets ?? []
+        ).map((rawSetId: string) => {
+            const setId =
+                translator.resolveAlias(
+                    'relic',
+                    rawSetId,
+                );
+
+            const setInfo =
+                relicSetData[setId];
+
+            if (!setInfo) {
+                throw new Error(
+                    `Unknown Relic "${rawSetId}" inside central relic group "${item.name}" (source: ${sourceFile})`,
+                );
+            }
+
+            return {
+                id: setId,
+
+                name:
+                    translateRelicSetName(
+                        translator,
+                        locale,
+                        setId,
+                        sourceFile,
+                    ),
+
+                info: setInfo,
+            };
+        });
+
+        return {
+            ...item,
+
+            /*
+             * Keep the central group ID available
+             * for debugging / future use.
+             */
+            id: item.name,
+            aggregateId: item.name,
+
+            pieces,
+
+            /*
+             * Examples:
+             *   2-Pc SPD
+             *   2-Pc ATK
+             *   2-Pc HP
+             */
+            name: `${pieceLabel} ${label}`,
+
+            /*
+             * A pseudo-set itself has no real
+             * relic_sets.json entry.
+             */
+            info: undefined,
+
+            /*
+             * RelicSetInfoPopover already knows
+             * how to render this array.
+             */
+            aggregateSets,
+        };
+    }
+
+    /*
+     * Normal real Relic.
+     */
     const id = translator.resolveAlias(
         'relic',
         item.name,
     );
 
-    const translatedName =
-        translateRelicSetName(
-            translator,
-            locale,
-            id,
-            sourceFile,
-        );
-
-    const rawAggregateSets =
-        Array.isArray(item.sets)
-            ? item.sets
-            : [];
-
-    const aggregateSets =
-        rawAggregateSets.map(
-            (rawSet: any) => {
-                const rawSetName =
-                    typeof rawSet === 'string'
-                        ? rawSet
-                        : rawSet?.name;
-
-                if (!rawSetName) {
-                    throw new Error(
-                        `Aggregate Relic entry "${item.name}" contains a set without a name (source: ${sourceFile})`,
-                    );
-                }
-
-                const setId =
-                    translator.resolveAlias(
-                        'relic',
-                        rawSetName,
-                    );
-
-                const setInfo =
-                    relicSetData[setId];
-
-                if (!setInfo) {
-                    throw new Error(
-                        `Unknown Relic "${rawSetName}" inside aggregate "${item.name}" (source: ${sourceFile})`,
-                    );
-                }
-
-                return {
-                    id: setId,
-                    name:
-                        translateRelicSetName(
-                            translator,
-                            locale,
-                            setId,
-                            sourceFile,
-                        ),
-                    info: setInfo,
-                };
-            },
-        );
-
-    const isAggregate =
-        aggregateSets.length > 0;
-
-    /*
-     * Aggregate entries use a stat ID as their name.
-     *
-     * Example:
-     *   name: "spd"
-     *   pieces: 2
-     *
-     * becomes:
-     *   "2-Pc SPD"
-     *
-     * The pieces text already uses the existing
-     * translated 1-Pc / 2-Pc / 4-Pc UI keys.
-     */
-    const displayName = isAggregate
-        ? `${t(
-            locale,
-            'ui',
-            `${item.pieces}-Pc`,
-            sourceFile,
-            false,
-        )} ${translatedName}`
-        : translatedName;
-
     return {
         ...item,
         id,
-        name: displayName,
 
-        /*
-         * A pseudo-set has no direct shared Relic entry.
-         * Its hover data comes from aggregateSets instead.
-         */
-        info: isAggregate
-            ? undefined
-            : relicSetData[id],
+        name:
+            translateRelicSetName(
+                translator,
+                locale,
+                id,
+                sourceFile,
+            ),
 
-        aggregateSets:
-            isAggregate
-                ? aggregateSets
-                : undefined,
+        info: relicSetData[id],
     };
 }
+
 
 /**
  * Translates every relic set item inside one
