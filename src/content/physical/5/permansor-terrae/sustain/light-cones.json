@@ -1,0 +1,42 @@
+{
+    "light_cones": [
+        {
+            "items": [
+                {
+                    "name": "though-worlds-apart",
+                    "superimposition" : 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "inherently-unjust-destiny",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items":[
+                {
+                    "name": "journey-forever-peaceful",
+                    "superimposition": 3,
+                    "note": {
+                        "en": "Only better than a 635+ base ATK light cone from any path at S3+. If wanting to buff the selected DPS with ATK, use a high base ATK light cone from any path instead of Journey, Forever Peaceful"
+                    }
+                }
+            ]
+        },
+        {
+            "items":[
+                {
+                    "name": "day-one",
+                    "superimposition": 5,
+                    "note": {
+                        "en": "Majority of Preservation light cones do not have a high base ATK, therefore using any high base ATK light cone from any path works better. Prioritize 635+ base ATK light cones, ex. Acheron S1 - Along the Passing Shore. If lacking 635+ base ATK light cones, use any 582+ base ATK light cone from any path, ex. Himeko signature light cone, Night on the Milky Way."
+                    }
+                }
+            ]
+        }        
+    ]
+}
