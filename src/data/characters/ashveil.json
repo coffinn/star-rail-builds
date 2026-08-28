@@ -69,6 +69,7 @@
         "name": "Rancor: Enmity Reprisal",
         "tag": "Single Target",
         "energy_gain": 5,
+        "break": 5,
         "min_level": 1,
         "max_level": 12,
         "default_level": 10,

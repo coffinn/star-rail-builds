@@ -154,7 +154,7 @@
     "technique": {
       "type": "Technique",
       "name": "Meteoric Sunder",
-      "tag": "Attack",
+      "break": 20,
       "description": "Summons the memosprite Garmentmaker and launches a forward joint attack. After entering battle, regenerates 30 Energy and deals Lightning DMG equal to 100% of Aglaea's ATK to all enemy targets. Then, randomly inflicts the \"Seam Stitch\" state on a random enemy target."
     },
     "ultimate": {

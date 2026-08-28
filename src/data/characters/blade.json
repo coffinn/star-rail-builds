@@ -182,6 +182,7 @@
             "type": "Technique",
             "name": "Karma Wind",
             "tag": "",
+            "break": 20,
             "description": "Immediately attacks the enemy. After entering combat, consumes 20% of Blade's Max HP while dealing Wind DMG equal to 40% of his Max HP to all enemies. If Blade's current HP is insufficient, his HP will be reduced to 1 when this Technique is used."
         }
     },
@@ -196,7 +197,7 @@
         },
         "2": {
             "name": "Vita Infinita",
-            "description": "When Blade uses Ultimate, the total accumulated HP loss will be set to 50%"
+            "description": "When Blade uses Ultimate, the total accumulated HP loss will be set to 50%."
         }
     },
     "stat_bonuses": [
