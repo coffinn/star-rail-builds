@@ -67,9 +67,7 @@
       "tag": "Blast",
       "energy_cost": 110,
       "energy_gain": 5,
-      "break_main": 20,
-      "break_aoe": 10,
-
+      "break": 20,
       "min_level": 1,
       "max_level": 12,
       "default_level": 10,
