@@ -87,9 +87,9 @@
     },
 
     "ultimate": {
-      "type": "Ultimate",
-      "name": "Roulette Shark",
-      "tag": "Single Target",
+      "type": "Сверхспособность",
+      "name": "Акула рулетки",
+      "tag": "Одиночная атака",
       "energy_cost": 110,
       "energy_gain": 5,
       "break": 30,
@@ -97,7 +97,7 @@
       "max_level": 12,
       "default_level": 10,
 
-      "description_template": "Randomly gains 1 to 7 points of Blind Bet. Then, inflicts Unnerved on one designated enemy target for 3 turn(s) and deals Imaginary DMG equal to {{damage}}% of Aventurine's DEF to that enemy. When an ally hits an Unnerved enemy target, the CRIT DMG dealt increases by {{crit_dmg_up}}%.",
+      "description_template": "Получает от 1 до 7 ед. заряда Ставка вслепую, затем накладывает на выбранного противника статус Паника на 3 хода и наносит ему мнимый урон, равный {{damage}}% от защиты Авантюрина. Когда союзник поражает противника со статусом Паника, наносимый ему крит. урон повышается на {{crit_dmg_up}}%.",
 
       "scaling": {
         "damage": [
