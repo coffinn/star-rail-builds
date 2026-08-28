@@ -10,7 +10,7 @@
             {"name": "hp%","note":{"en":"Any mainstat works, but HP% or DEF% are preferred for survivability"}}
         ],
         "link_rope": [
-            "err%"
+            "err"
         ]
     }
 }
