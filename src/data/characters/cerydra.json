@@ -80,7 +80,7 @@
             "name": "Scholar's Mate",
             "tag": "AoE",
             "energy_gain": 5,
-            "break": 20,
+            "break_aoe": 20,
             "energy_cost": 130,
             "min_level": 1,
             "max_level": 12,
