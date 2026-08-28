@@ -5,7 +5,6 @@
     "element": "physical",
     "path": "destruction",
     "version_released": "3.4",
-    "max_energy": 12,
     "level_80_stats": {
         "hp": 1436,
         "atk": 582,

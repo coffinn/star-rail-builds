@@ -5,7 +5,6 @@
   "element": "ice",
   "path": "remembrance",
   "version_released": "3.7",
-  "max_energy": 24,
   "level_80_stats": {
     "hp": 1397,
     "atk": 446,

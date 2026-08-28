@@ -5,7 +5,6 @@
     "element": "wind",
     "path": "hunt",
     "version_released": "2.5",
-    "max_energy": 6,
     "level_80_stats": {
         "hp": 1047,
         "atk": 601,
