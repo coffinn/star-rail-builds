@@ -1,28 +1,28 @@
 {
-  "traces": [
-    {
-      "items": [
+    "traces": [
         {
-          "name": "talent"
+            "items": [
+                {
+                    "name": "talent"
+                },
+                {
+                    "name": "ultimate"
+                }
+            ]
         },
         {
-          "name": "ultimate"
-        }
-      ]
-    },
-    {
-      "items": [
+            "items": [
+                {
+                    "name": "skill"
+                }
+            ]
+        },
         {
-          "name": "skill"
+            "items": [
+                {
+                    "name": "basic"
+                }
+            ]
         }
-      ]
-    },
-    {
-      "items": [
-        {
-          "name": "basic"
-        }
-      ]
-    }
-  ]
+    ]
 }

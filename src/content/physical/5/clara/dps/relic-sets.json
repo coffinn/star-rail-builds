@@ -45,7 +45,9 @@
                         {
                             "name": "the-wondrous-bananamusement-park",
                             "pieces": 2,
-                            "notes": {"en": "Requires Dan Heng Permansor Terrae to be in the team."}
+                            "notes": {
+                                "en": "Requires Dan Heng Permansor Terrae to be in the team."
+                            }
                         }
                     ]
                 }
@@ -56,8 +58,7 @@
                 {
                     "items": [
                         {
-                            "name": "inert-salsotto",
-                            "pieces": 2
+                            "name": "inert-salsotto","pieces": 2
                         }
                     ]
                 }

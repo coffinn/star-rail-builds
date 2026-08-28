@@ -1,7 +1,8 @@
 {
     "main_stats": {
         "body": [
-            "cr","cd"
+            "cr",
+            "cd"
         ],
         "feet": [
             "atk%"

@@ -15,8 +15,7 @@
         },
         {
             "name": "total-atk",
-            "baseline": "3000+",
-            "recommended": "3500+"
+            "baseline": "3000+","recommended": "3500+"
         }
     ]
 }
