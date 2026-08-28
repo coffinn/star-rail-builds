@@ -4,24 +4,17 @@
             "items": [
                 {
                     "name": "talent"
-                }
-            ]
-        },
-        {
-            "items": [
+                },
                 {
                     "name": "ultimate"
                 },
                 {
                     "name": "skill"
-                }
-            ]
-        },
-        {
-            "items": [
+                },
                 {
                     "name": "basic"
-                }
+                },
+                {"note":{"en":"Traces can be completely ignored when using this build. Only his Ascension 4 trace is reccommended"}}
             ]
         }
     ]

@@ -1,0 +1,16 @@
+{
+    "main_stats": {
+        "body": [
+            {"name": "hp%","note":{"en":"Any mainstat works, but HP% and DEF% are preffered for survivability"}}
+        ],
+        "feet": [
+            "spd"
+        ],
+        "planar_sphere": [
+            {"name": "hp%","note":{"en":"Any mainstat works, but HP% or DEF% are preferred for survivability"}}
+        ],
+        "link_rope": [
+            "err%"
+        ]
+    }
+}

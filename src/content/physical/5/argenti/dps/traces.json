@@ -4,14 +4,14 @@
             "items": [
                 {
                     "name": "talent"
+                },
+                {
+                    "name": "ultimate"
                 }
             ]
         },
         {
             "items": [
-                {
-                    "name": "ultimate"
-                },
                 {
                     "name": "skill"
                 }

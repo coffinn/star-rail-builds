@@ -1,0 +1,11 @@
+{
+    "substats_priority": [
+        "spd",
+        {
+            "name": "hp%"
+        },
+        {
+            "name": "def%"
+        }
+    ]
+}
