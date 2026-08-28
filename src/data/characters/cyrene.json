@@ -36,12 +36,12 @@
       "variants": [
         {
           "type": "Basic ATK (Enhanced)",
-          "name": "To Love and Tomorrow ?",
+          "name": "To Love and Tomorrow ♪",
           "tag": "AoE",
           "energy_gain": 0,
           "break_main": 10,
           "break_adjacent": 5,
-          "description_template": "Gains 3 \"Recollection\" points and deals Ice DMG equal to {{scaling1}}% of Cyrene's Max HP to one designated enemy. Then, deals Ice DMG equal to {{scaling2}}% of Cyrene's Max HP to all enemies. \"To Love and Tomorrow ?\" cannot recover Skill Points.",
+          "description_template": "Gains 3 \"Recollection\" points and deals Ice DMG equal to {{scaling1}}% of Cyrene's Max HP to one designated enemy. Then, deals Ice DMG equal to {{scaling2}}% of Cyrene's Max HP to all enemies. \"To Love and Tomorrow ♪\" cannot recover Skill Points.",
           "scaling": {
             "scaling1": [
               15,
@@ -129,7 +129,7 @@
       "min_level": 1,
       "max_level": 12,
       "default_level": 10,
-      "description_template": "Summons memosprite  Demiurge, causes it to immediately gain 1 extra turn , and activates all teammates' Ultimate. Then, enters the \"Ripples of Past Reverie\" state. Enhances Basic ATK to \"To Love and Tomorrow ?\" and can only use this Basic ATK. Increases Cyrene's and Demiurge's CRIT Rate by {{scaling1}}%, and deploys the Zone effect from Skill with no duration limit. Can only be used once per battle. Demiurge's initial Max HP equals to 100% of Cyrene's Max HP.",
+      "description_template": "Summons memosprite  Demiurge, causes it to immediately gain 1 extra turn , and activates all teammates' Ultimate. Then, enters the \"Ripples of Past Reverie\" state. Enhances Basic ATK to \"To Love and Tomorrow ♪\" and can only use this Basic ATK. Increases Cyrene's and Demiurge's CRIT Rate by {{scaling1}}%, and deploys the Zone effect from Skill with no duration limit. Can only be used once per battle. Demiurge's initial Max HP equals to 100% of Cyrene's Max HP.",
       "scaling": {
         "scaling1": [
           25,
@@ -152,7 +152,7 @@
           "name": "Reunion at First Sight",
           "tag": "Enhance",
           "energy_cost": "12 point(s) of \"Recollection\"",
-          "description": "Enables Demiurge to immediately gain 1 extra turn ."
+          "description": "Enables Demiurge to immediately gain 1 extra turn."
         }
       ]
     }
@@ -376,11 +376,10 @@
           },
           {
             "id": "ego",
-            "selector_label": "Cyrene / Demiurge",
+            "selector_label": "Cyrene",
             "type": "Memosprite Skill",
             "name": "Ode to Ego",
-            "tag": "Bounce",
-            "break": "1.666... (Per Hit)",
+            "tag": "Support",
             "description_template": "For every 1 different teammate (i.e., excluding Demiurge) from whom Cyrene has gained \"Recollection,\" additionally deals 1 instance of Ice DMG equal to {{scaling1}}% of Demiurge's Max HP to one random enemy when Demiurge uses \"Minuet of Blooms and Plumes.\" After Cyrene uses Ultimate or when Demiurge is summoned, Demiurge immediately gains 1 \"Story.\" When \"Story\" reaches 3, Demiurge consumes all \"Story\" points to immediately gain 1 extra turn  and automatically use \"Minuet of Blooms and Plumes.\"",
             "scaling": {
               "scaling1": [
@@ -688,7 +687,7 @@
     },
     {
       "level": 6,
-      "name": "Remembrance, Sung in Ripples ?",
+      "name": "Remembrance, Sung in Ripples ♪",
       "description": "When Cyrene uses Ultimate for the first time, all allies advance action by 100%. Each time Demiurge triggers the Memosprite Skill \"Ode to Ego\" during the use of \"Minuet of Blooms and Plumes,\" gains the following effects based on the number of times it has been triggered in the current battle: 1 time: When Demiurge is on the field, reduces all enemy targets' DEF by 20%. 2 times and more: All allies advance action by 24%."
     }
   ]
