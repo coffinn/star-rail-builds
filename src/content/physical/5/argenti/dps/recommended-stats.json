@@ -2,20 +2,20 @@
     "stats": [
         {
             "name": "cr",
-            "baseline": "68%",
-            "recommended": "68%",
+            "baseline": "75%",
+            "recommended": "75%",
             "note": {
-                "en": "Assumes Poet of Mourning Collapse is being used. Otherwise, 100% is reccommended"
+                "en": "If Poet of Mourning Collapse is being used, 43% is reccommended instead"
             }
         },
         {
             "name": "cd",
-            "baseline": "120%",
+            "baseline": "150%",
             "recommended": "180%+"
         },
         {
             "name": "total-atk",
-            "baseline": "3000+","recommended": "3500+"
+            "baseline": "2500+","recommended": "3000+"
         }
     ]
 }

@@ -5,21 +5,14 @@
                 {
                     "items": [
                         {
-                            "name": "poet-of-mourning-collapse",
+                            "name": "scholar",
                             "pieces": 4
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "groups": [
-                {
-                    "items": [
+                        },
                         {
-                            "name": "wavestrider-captain",
-                            "pieces": 4
-                        }
+                            "name": "poet-of-mourning-collapse",
+                            "pieces": 4,
+                            "note" {"en":"Poet of Mourning Collapse should only be used if his SPD can be kept under 95"}
+                        }                        
                     ]
                 }
             ]
@@ -31,32 +24,9 @@
                 {
                     "items": [
                         {
-                            "name": "duran",
+                            "name": "sigonia",
                             "pieces": 2
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "groups": [
-                {
-                    "items": [
-                        {
-                            "name": "the-wondrous-bananamusement-park",
-                            "pieces": 2,
-                            "note": {
-                                "en": "Requires Dan Heng Permansor Terrae to be in the team."
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "groups": [
-                {
-                    "items": [
+                        },
                         {
                             "name": "inert-salsotto","pieces": 2
                         }
