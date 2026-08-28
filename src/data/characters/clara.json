@@ -134,6 +134,7 @@
         "technique": {
             "type": "Technique",
             "name": "A Small Price for Victory",
+            "break": 20,
             "description": "Immediately attacks the enemy. Upon entering battle, the chance Clara will be attacked by enemies increases for 2 turn(s)."
         }
     },
@@ -144,11 +145,11 @@
         },
         "4": {
             "name": "Under Protection",
-            "description": "Increases the chance to resist Crowd Control debuffs by 35%"
+            "description": "Increases the chance to resist Crowd Control debuffs by 35%,"
         },
         "6": {
             "name": "Revenge",
-            "description": "Increases DMG dealt by Svarog's Counter by 30%"
+            "description": "Increases DMG dealt by Svarog's Counter by 30%,"
         }
     },
     "stat_bonuses": [
@@ -169,7 +170,7 @@
         {
             "level": 1,
             "name": "A Tall Figure",
-            "description": "Using Skill will not remove Marks of Counter on the enemy"
+            "description": "Using Skill will not remove Marks of Counter on the enemy."
         },
         {
             "level": 2,

@@ -63,15 +63,15 @@
             }
         },
         "ultimate": {
-            "type": "Ultimate",
-            "name": "Promise, Not Command",
-            "tag": "Enhance",
+            "type": "Сверхспособность",
+            "name": "Обещание, а не приказ",
+            "tag": "Усиление",
             "energy_cost": 110,
             "energy_gain": 5,
             "min_level": 1,
             "max_level": 12,
             "default_level": 10,
-            "description_template": "After Clara uses Ultimate, DMG dealt to her is reduced by an extra {{damage_reduction}}%, and she has greatly increased chances of being attacked by enemies for 2 turn(s). In addition, Svarog's Counter is enhanced. When an ally is attacked, Svarog immediately launches a Counter, and its DMG multiplier against the enemy increases by {{mv_increase}}%. Enemies adjacent to it take 50% of the DMG dealt to the primary target enemy. Enhanced Counter(s) can take effect 2 time(s).",
+            "description_template": "После использования сверхспособности наносимый Кларе урон понижается на дополнительные {{damage_reduction}}%, а вероятность быть атакованной противниками значительно повышается. Эти эффекты длятся 2 хода.\nТакже усиливается Контратака Сварога. Когда противник атакует союзника, Сварог немедленно проводит Контратаку, и её множитель урона повышается на {{mv_increase}}%. Соседние цели получают 50% от урона, нанесённого цели. Усиленная Контратака может сработать до 2 раз.",
             "scaling": {
                 "damage_reduction": [
                     15.0,
@@ -104,16 +104,16 @@
             }
         },
         "talent": {
-            "type": "Talent",
-            "name": "Because We're Family",
-            "tag": "Single Target",
+            "type": "Талант",
+            "name": "Потому что мы семья",
+            "tag": "Одиночная атака",
             "energy_gain": 5,
             "break_main": 10,
             "break_aoe": 10,
             "min_level": 1,
             "max_level": 12,
             "default_level": 10,
-            "description_template": "Under the protection of Svarog, DMG taken by Clara when hit by enemy attacks is reduced by 10%. Svarog will mark enemies who attack Clara with his Mark of Counter and retaliate with a Counter, dealing Physical DMG equal to {{follow_up_damage}}% of Clara's ATK.",
+            "description_template": "Под защитой Сварога получаемый Кларой урон понижается на 10%. Сварог помечает противников, атакующих Клару, Меткой контратаки и проводит Контратаку, которая наносит физический урон, равный {{follow_up_damage}}% от силы атаки Клары.",
             "scaling": {
                 "follow_up_damage": [
                     80.0,
@@ -132,23 +132,24 @@
             }
         },
         "technique": {
-            "type": "Technique",
-            "name": "A Small Price for Victory",
-            "description": "Immediately attacks the enemy. Upon entering battle, the chance Clara will be attacked by enemies increases for 2 turn(s)."
+            "type": "Техника",
+            "name": "Малая цена за победу",
+            "break": 20,
+            "description": "Немедленно атакует противника и после начала боя повышает вероятность Клары быть атакованной противниками на 2 хода."
         }
     },
     "major_traces": {
         "2": {
-            "name": "Kinship",
-            "description": "When attacked, this unit has a 35% fixed chance to dispel 1 debuff placed on them."
+            "name": "Семейные узы",
+            "description": "Будучи атакованной, имеет фиксированный шанс 35% снять с себя 1 ослабление."
         },
         "4": {
-            "name": "Under Protection",
-            "description": "Increases the chance to resist Crowd Control debuffs by 35%"
+            "name": "Под защитой",
+            "description": "Шанс избежать эффекта контроля повышается на 35%."
         },
         "6": {
-            "name": "Revenge",
-            "description": "Increases DMG dealt by Svarog's Counter by 30%"
+            "name": "Месть",
+            "description": "Урон контратаки Сварога повышается на 30%,"
         }
     },
     "stat_bonuses": [
@@ -157,44 +158,44 @@
             "value": "+10%"
         },
         {
-            "stat": "Physical DMG",
+            "stat": "Физический урон",
             "value": "+14.4%"
         },
         {
-            "stat": "ATK",
+            "stat": "Сила атаки",
             "value": "+28.0%"
         }
     ],
     "eidolons": [
         {
             "level": 1,
-            "name": "A Tall Figure",
-            "description": "Using Skill will not remove Marks of Counter on the enemy"
+            "name": "Высокий силуэт",
+            "description": "Использование навыка не удаляет Метку контратаки с противника"
         },
         {
             "level": 2,
-            "name": "A Tight Embrace",
-            "description": "After using the Ultimate, ATK increases by 30% for 2 turn(s)"
+            "name": "Крепкие объятия",
+            "description": "Использование сверхспособности повышает силу атаки на 30% на 2 хода."
         },
         {
             "level": 3,
-            "name": "Cold Steel Armor",
-            "description": "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+            "name": "Броня из ледяной стали",
+            "description": "Уровень навыка повышается на 2, максимальный уровень - 15. Уровень базовой атаки повышается на 1, максимальный уровень - 10."
         },
         {
             "level": 4,
-            "name": "Family's Warmth",
-            "description": "After Clara is hit, the DMG taken by Clara is reduced by 30%. This effect lasts until the start of her next turn."
+            "name": "Тепло семьи",
+            "description": "Когда противник атакует Клару, получаемый ею урон понижается на 30%. Этот эффект длится до начала её следующего хода."
         },
         {
             "level": 5,
-            "name": "A Small Promise",
-            "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+            "name": "Небольшое обещание",
+            "description": "Уровень сверхспособности повышается на 2, максимальный уровень - 15. Уровень таланта повышается на 2, максимальный уровень - 15."
         },
         {
             "level": 6,
-            "name": "Long Company",
-            "description": "After other allies are attacked, Svarog also has a 50% fixed chance to trigger a Counter on the attacker and mark them with a Mark of Counter. When using Ultimate, the number of Enhanced Counters increases by 1."
+            "name": "Надежный спутник",
+            "description": "Когда противник атакует другого союзника, Сварог имеет фиксированный шанс 50% провести контратаку по атакующему и наложить на него Метку контратаки. Использование сверхспособности Клары увеличивает количество усиленных контратак на 1."
         }
     ]
 }
