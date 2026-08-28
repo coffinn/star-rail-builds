@@ -212,7 +212,6 @@
             "type": "Memosprite Skill",
             "name": "Ode to Genesis",
             "tag": "Support",
-            "energy_gain": 0,
             "description_template": " Effective for the entire battle. When used on Trailblazer (Remembrance), increases Trailblazer (Remembrance)'s ATK by an amount equal to {{scaling1}}% of Demiurge's Max HP, and increases Trailblazer (Remembrance)'s CRIT Rate by an amount equal to {{scaling2}}% of Demiurge's CRIT Rate. This effect also applies to Mem. After Trailblazer (Remembrance) uses Enhanced Basic ATK in this battle, Demiurge immediately gains 1 extra turn  and automatically uses \"Minuet of Blooms and Plumes.\" If the target was defeated before this ability is used, it will be used on newly appeared enemy targets instead.",
             "scaling": {
               "scaling1": [
