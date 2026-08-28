@@ -16,7 +16,7 @@
                 {
                     "name": "dance-at-sunset",
                     "superimposition": 1
-                    }
+                }
             ]
         },
         {
@@ -24,7 +24,7 @@
                 {
                     "name": "brighter-than-the-sun",
                     "superimposition": 1
-                    }
+                }
             ]
         },
         {
@@ -32,17 +32,17 @@
                 {
                     "name": "the-unreachable-side",
                     "superimposition": 1
-                    }
+                }
             ]
-        },        
+        },
         {
             "items": [
                 {
                     "name": "something-irreplaceable",
                     "superimposition": 1
-                    }
+                }
             ]
-        },        
+        },
         {
             "items": [
                 {
@@ -50,6 +50,6 @@
                     "superimposition": 5
                 }
             ]
-        }        
+        }
     ]
 }
