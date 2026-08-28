@@ -24,14 +24,11 @@ const deployVersion = import.meta.env.PUBLIC_DEPLOY_VERSION;
     </nav>
 
     <p>
-        Original code modified by the Honkai: Star Rail Navigator team and
-        adapted from the Genshin Impact Helper Team project. This website is not
-        affiliated with HoYoverse.
+        {t(locale, 'ui', 'Footer attribution', undefined, false)}
     </p>
 
     <p>
-        Honkai: Star Rail, game content, and materials are trademarks and
-        copyrights of COGNOSPHERE, HoYoverse, and their respective owners.
+        {t(locale, 'ui', 'Footer copyright', undefined, false)}
     </p>
     {deployVersion && <p class="footer-version">Deploy #{deployVersion}</p>}
 </footer>
