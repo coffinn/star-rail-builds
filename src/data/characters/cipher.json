@@ -39,25 +39,15 @@
       "tag": "Blast",
       "energy_gain": 30,
       "break_main": 20,
-      "break_aoe": 10,
+      "break_adjacent": 10,
 
       "min_level": 1,
       "max_level": 12,
       "default_level": 10,
 
-      "description_template": "Has a {{weaken_chance}}% base chance to Weaken one designated enemy and its adjacent targets (decreasing their DMG dealt by 10%) and increases Cipher's ATK by {{atk_boost}}%, lasting for 2 turn(s). Moreover, deals Quantum DMG equal to {{main_damage}}% of Cipher's ATK to one designated enemy, and Quantum DMG equal to {{adjacent_damage}}% of Cipher's ATK to the adjacent targets.",
+      "description_template": "Has a 120% base chance to Weaken one designated enemy and its adjacent targets (decreasing their DMG dealt by 10%) and increases Cipher's ATK by 30%, lasting for 2 turn(s). Moreover, deals Quantum DMG equal to {{main_damage}}% of Cipher's ATK to one designated enemy, and Quantum DMG equal to {{adjacent_damage}}% of Cipher's ATK to the adjacent targets.",
 
       "scaling": {
-        "weaken_chance": [
-          60.0, 66.0, 72.0, 78.0, 84.0, 90.0,
-          97.5, 105.0, 112.5, 120.0,
-          126.0, 132.0
-        ],
-        "atk_boost": [
-          15.0, 16.5, 18.0, 19.5, 21.0, 22.5,
-          24.375, 26.25, 28.125, 30.0,
-          31.5, 33.0
-        ],
         "main_damage": [
           100.0, 110.0, 120.0, 130.0, 140.0, 150.0,
           162.5, 175.0, 187.5, 200.0,
@@ -78,13 +68,13 @@
       "energy_cost": 130,
       "energy_gain": 5,
       "break_main": 30,
-      "break_aoe": 20,
+      "break_adjacent": 20,
 
       "min_level": 1,
       "max_level": 12,
       "default_level": 10,
 
-      "description_template": "Deals Quantum DMG equal to {{primary_damage}}% of Cipher's ATK to one designated enemy. Then, deals True DMG equal to {{true_dmg_primary}}% of the current tally to that enemy. Moreover, deals Quantum DMG equal to {{adjacent_damage}}% of Cipher's ATK alongside True DMG equal to {{true_dmg_adjacent}}% of the current tally to the designated enemy and its adjacent targets. The True DMG is distributed evenly among all targets. After using Ultimate, clears the tally.",
+      "description_template": "Deals Quantum DMG equal to {{primary_damage}}% of Cipher's ATK to one designated enemy. Then, deals True DMG equal to 25% of the current tally to that enemy. Moreover, deals Quantum DMG equal to {{adjacent_damage}}% of Cipher's ATK alongside True DMG equal to 75% of the current tally to the designated enemy and its adjacent targets. The True DMG is distributed evenly among all targets. After using Ultimate, clears the tally.",
 
       "scaling": {
         "primary_damage": [
@@ -92,20 +82,10 @@
           97.5, 105.0, 112.5, 120.0,
           126.0, 132.0
         ],
-        "true_dmg_primary": [
-          12.5, 13.75, 15.0, 16.25, 17.5, 18.75,
-          20.3125, 21.875, 23.4375, 25.0,
-          26.25, 27.5
-        ],
         "adjacent_damage": [
           20.0, 22.0, 24.0, 26.0, 28.0, 30.0,
           32.5, 35.0, 37.5, 40.0,
           42.0, 44.0
-        ],
-        "true_dmg_adjacent": [
-          37.5, 41.25, 45.0, 48.75, 52.5, 56.25,
-          60.9375, 65.625, 70.3125, 75.0,
-          78.75, 82.5
         ]
       }
     },
@@ -115,24 +95,19 @@
       "name": "The Hospitable Dolosian",
       "tag": "Single Target",
       "energy_gain": 5,
-      "break_main": 20,
+      "break": 20,
 
       "min_level": 1,
       "max_level": 12,
       "default_level": 10,
 
-      "description_template": "When there are no enemies in the \"Patron\" state, Cipher causes the enemy with the highest Max HP to become the \"Patron.\" When using Skill or Ultimate, the primary target becomes the \"Patron.\" After the \"Patron\" is attacked by other ally targets, Cipher launches a Follow-Up ATK against the \"Patron,\" dealing Quantum DMG equal to {{follow_up_damage}}% of Cipher's ATK. This effect can trigger up to 1 time per turn, and resets at the start of Cipher's turn. Cipher tallies {{tally_rate}}% of the non-True DMG dealt by ally targets to the \"Patron.\" Overflow DMG is not tallied. The tally is cleared after using Ultimate.",
+      "description_template": "When there are no enemies in the \"Patron\" state, Cipher causes the enemy with the highest Max HP to become the \"Patron.\" When using Skill or Ultimate, the primary target becomes the \"Patron.\" After the \"Patron\" is attacked by other ally targets, Cipher launches a Follow-Up ATK against the \"Patron,\" dealing Quantum DMG equal to {{follow_up_damage}}% of Cipher's ATK. This effect can trigger up to 1 time per turn, and resets at the start of Cipher's turn. Cipher tallies 12% of the non-True DMG dealt by ally targets to the \"Patron.\" Overflow DMG is not tallied. The tally is cleared after using Ultimate.",
 
       "scaling": {
         "follow_up_damage": [
           75.0, 82.5, 90.0, 97.5, 105.0, 112.5,
           121.875, 131.25, 140.625, 150.0,
           157.5, 165.0
-        ],
-        "tally_rate": [
-          6.0, 6.6, 7.2, 7.8, 8.4, 9.0,
-          9.75, 10.5, 11.25, 12.0,
-          12.6, 13.2
         ]
       }
     },
