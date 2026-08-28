@@ -36,7 +36,7 @@
       },
       "variants": [
         {
-          "type": "Basic ATK",
+          "type": "Basic ATK (Enhanced)",
           "name": "Release, the Golden Scepter",
           "tag": "AoE",
           "energy_gain": 30,

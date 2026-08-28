@@ -12,7 +12,7 @@ export type CharacterAbilityVariant = {
     id?: string;
     selector_label?: string;
     energy_gain?: number;
-    energy_cost?: number;
+    energy_cost?: number | string;
 
     break?: number | string;
     break_main?: number | string;
@@ -38,7 +38,7 @@ export type CharacterAbility = {
         label?: string;
     };
     energy_gain?: number;
-    energy_cost?: number;
+    energy_cost?: number | string;
 
     break?: number | string;
     break_main?: number | string;
@@ -146,6 +146,8 @@ type AbilityTextTranslation = {
     name?: string;
     tag?: string;
 
+    energy_cost?: number | string;
+
     description?: string;
     description_template?: string;
 
@@ -159,6 +161,8 @@ type AbilityTextTranslation = {
         tag?: string;
 
         selector_label?: string;
+
+        energy_cost?: number | string;
 
         description?: string;
         description_template?: string;
@@ -253,7 +257,9 @@ function localizeAbility(
         tag:
             translation.tag ??
             ability.tag,
-
+        energy_cost:
+            translation.energy_cost ??
+            ability.energy_cost,
         description:
             translation.description ??
             ability.description,
@@ -302,7 +308,9 @@ function localizeAbility(
                         tag:
                             translatedVariant.tag ??
                             variant.tag,
-
+                        energy_cost:
+                            translation.energy_cost ??
+                            ability.energy_cost,
                         selector_label:
                             translatedVariant
                                 .selector_label ??
