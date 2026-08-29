@@ -4,7 +4,7 @@
             "items": [
                 {
                     "name": "though-worlds-apart",
-                    "superimposition" : 1
+                    "superimposition": 1
                 }
             ]
         },
@@ -17,7 +17,7 @@
             ]
         },
         {
-            "items":[
+            "items": [
                 {
                     "name": "journey-forever-peaceful",
                     "superimposition": 3,
@@ -28,7 +28,7 @@
             ]
         },
         {
-            "items":[
+            "items": [
                 {
                     "name": "day-one",
                     "superimposition": 5,
@@ -37,6 +37,15 @@
                     }
                 }
             ]
-        }        
+        }
+    ],
+    "conditional": [
+        {
+            "name": "mov",
+            "superimposition": 1,
+            "note": {
+                "en": "Can be used with DoT team. Build to 75% EHR to receive a 100% ATK buff from Kafka's A2 Trace: Torture."
+            }
+        }
     ]
 }
