@@ -6,14 +6,12 @@
   "path": "erudition",
   "version_released": "1.0",
   "max_energy": 140,
-
   "level_80_stats": {
     "hp": 904,
     "atk": 712,
     "def": 390,
     "spd": 98
   },
-
   "abilities": {
     "basic": {
       "type": "Basic ATK",
@@ -21,49 +19,64 @@
       "tag": "Single Target",
       "energy_gain": 20,
       "break": 10,
-
       "min_level": 1,
       "max_level": 7,
       "default_level": 6,
-
       "description_template": "Tosses 1 jade tile from the suit with the fewest tiles in hand to deal Quantum DMG equal to {{damage}}% of Qingque's ATK to one designated enemy.",
-
       "scaling": {
-        "damage": [50, 60, 70, 80, 90, 100, 110]
-      }
+        "damage": [
+          50,
+          60,
+          70,
+          80,
+          90,
+          100,
+          110
+        ]
+      },
+      "variants": [
+        {
+          "type": "Basic ATK (Enhanced)",
+          "name": "Cherry on Top!",
+          "tag": "Blast",
+          "energy_gain": 20,
+          "break_main": 20,
+          "break_adjacent": 10,
+          "min_level": 1,
+          "max_level": 7,
+          "default_level": 6,
+          "description_template": "Deals Quantum DMG equal to {{main_damage}}% of Qingque's ATK to one designated enemy, and deals Quantum DMG equal to {{adjacent_damage}}% of Qingque's ATK to enemies adjacent to it. \"Cherry on Top!\" cannot recover Skill Points.",
+          "scaling": {
+            "main_damage": [
+              120,
+              144,
+              168,
+              192,
+              216,
+              240,
+              264
+            ],
+            "adjacent_damage": [
+              50,
+              60,
+              70,
+              80,
+              90,
+              100,
+              110
+            ]
+          }
+        }
+      ]
     },
-
-    "basic_enhanced": {
-      "type": "Basic ATK (Enhanced)",
-      "name": "Cherry on Top!",
-      "tag": "Blast",
-      "energy_gain": 20,
-      "break_main": 20,
-      "break_adjacent": 10,
-
-      "min_level": 1,
-      "max_level": 7,
-      "default_level": 6,
-
-      "description_template": "Deals Quantum DMG equal to {{main_damage}}% of Qingque's ATK to one designated enemy, and deals Quantum DMG equal to {{adjacent_damage}}% of Qingque's ATK to enemies adjacent to it. \"Cherry on Top!\" cannot recover Skill Points.",
-
-      "scaling": {
-        "main_damage": [120, 144, 168, 192, 216, 240, 264],
-        "adjacent_damage": [50, 60, 70, 80, 90, 100, 110]
-      }
-    },
-
     "skill": {
       "type": "Skill",
       "name": "A Scoop of Moon",
       "tag": "Enhance",
-
       "min_level": 1,
       "max_level": 12,
       "default_level": 10,
-
       "description_template": "Immediately draws 2 jade tile(s) and increases DMG by {{dmg_boost}}% until the end of the current turn. This effect can stack up to 4 time(s). The turn will not end after this Skill is used.",
-
       "scaling": {
         "dmg_boost": [
           14.0,
@@ -81,7 +94,6 @@
         ]
       }
     },
-
     "ultimate": {
       "type": "Ultimate",
       "name": "A Quartet? Woo-hoo!",
@@ -89,13 +101,10 @@
       "energy_cost": 140,
       "energy_gain": 5,
       "break_aoe": 20,
-
       "min_level": 1,
       "max_level": 12,
       "default_level": 10,
-
       "description_template": "Deals Quantum DMG equal to {{damage}}% of Qingque's ATK to all enemies, and obtains 4 jade tiles of the same suit.",
-
       "scaling": {
         "damage": [
           100.0,
@@ -113,18 +122,14 @@
         ]
       }
     },
-
     "talent": {
       "type": "Talent",
       "name": "Celestial Jade",
       "tag": "Enhance",
-
       "min_level": 1,
       "max_level": 12,
       "default_level": 10,
-
       "description_template": "When an ally's turn starts, Qingque randomly draws 1 tile from 3 different suits and can hold up to 4 tiles at one time. If Qingque starts her turn with 4 tiles of the same suit, she consumes all tiles to enter the \"Hidden Hand\" state. While in this state, Qingque cannot use her Skill again. At the same time, Qingque's ATK increases by {{atk_boost}}%, and her Basic ATK \"Flower Pick\" is enhanced, becoming \"Cherry on Top!\" The \"Hidden Hand\" state ends after using \"Cherry on Top!\"",
-
       "scaling": {
         "atk_boost": [
           36.0,
@@ -142,7 +147,6 @@
         ]
       }
     },
-
     "technique": {
       "type": "Technique",
       "name": "Game Solitaire",
@@ -150,24 +154,20 @@
       "description": "After using Technique, Qingque draws 2 jade tile(s) when the battle starts."
     }
   },
-
   "major_traces": {
     "2": {
       "name": "Tile Battle",
       "description": "Restores 1 Skill Point when using the Skill. This effect can only be triggered 1 time per battle."
     },
-
     "4": {
       "name": "Bide Time",
       "description": "Using the Skill increases the DMG Boost effect of attacks by an extra 10%."
     },
-
     "6": {
       "name": "Winning Hand",
       "description": "Qingque's SPD increases by 10% for 1 turn after using the Enhanced Basic ATK."
     }
   },
-
   "stat_bonuses": [
     {
       "stat": "ATK",
@@ -182,38 +182,32 @@
       "value": "+12.5%"
     }
   ],
-
   "eidolons": [
     {
       "level": 1,
       "name": "Rise Through the Tiles",
       "description": "Ultimate deals 10% more DMG."
     },
-
     {
       "level": 2,
       "name": "Sleep on the Tiles",
       "description": "Every time Draw Tile is triggered, Qingque immediately regenerates 1 Energy."
     },
-
     {
       "level": 3,
       "name": "Read Between the Tiles",
       "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
     },
-
     {
       "level": 4,
       "name": "Right on the Tiles",
       "description": "After using Skill, there is a 24% fixed chance to gain \"Self-Sufficer,\" lasting until the end of the current turn. While \"Self-Sufficer\" is active, using Basic ATK or Enhanced Basic ATK immediately launches 1 Follow-Up ATK on the same target, dealing Quantum DMG equal to 100% of Basic ATK DMG or Enhanced Basic ATK DMG."
     },
-
     {
       "level": 5,
       "name": "Gambit for the Tiles",
       "description": "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
     },
-
     {
       "level": 6,
       "name": "Prevail Beyond the Tiles",
