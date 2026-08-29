@@ -128,7 +128,7 @@
     "initial_spd": "180% of Robin • Summeretto's SPD",
     "hp_source": "70% of Robin • Summeretto's Max HP",
     "skills": {
-      "chirrup": {
+      "memosprite_skill": {
         "type": "Memosprite Skill",
         "name": "Chirrup Quartet",
         "tag": "AoE",
@@ -150,7 +150,7 @@
           ]
         }
       },
-      "warble": {
+      "memosprite_talent": {
         "type": "Memosprite Talent",
         "name": "A Warble of Wings",
         "tag": "Support",
@@ -204,25 +204,27 @@
             16,
             17.6
           ]
-        }
-      },
-      "near": {
-        "type": "Memosprite Talent",
-        "name": "Near the Sea's Heartbeat",
-        "tag": "Support",
-        "min_level": 1,
-        "max_level": 7,
-        "default_level": 6,
-        "description": "When the \"Summer Songbirds\" gets summoned, regenerates 20 Energy for Robin • Summeretto."
-      },
-      "astride": {
-        "type": "Memosprite Talent",
-        "name": "Astride Summer's Nightwind",
-        "tag": "Support",
-        "min_level": 1,
-        "max_level": 7,
-        "default_level": 6,
-        "description": "When the \"Summer Songbirds\" disappears, Robin • Summeretto's action advances by 50%."
+        },
+        "variants": [
+          {
+            "type": "Memosprite Talent",
+            "name": "Near the Sea's Heartbeat",
+            "tag": "Support",
+            "min_level": 1,
+            "max_level": 7,
+            "default_level": 6,
+            "description": "When the \"Summer Songbirds\" gets summoned, regenerates 20 Energy for Robin • Summeretto."
+          },
+          {
+            "type": "Memosprite Talent",
+            "name": "Astride Summer's Nightwind",
+            "tag": "Support",
+            "min_level": 1,
+            "max_level": 7,
+            "default_level": 6,
+            "description": "When the \"Summer Songbirds\" disappears, Robin • Summeretto's action advances by 50%."
+          }
+        ]
       }
     }
   },

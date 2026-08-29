@@ -1,380 +1,381 @@
 {
-    "id": "hyacine",
-    "name": "Hyacine",
-    "rarity": "5",
-    "element": "wind",
-    "path": "remembrance",
-    "version_released": "3.3",
-    "max_energy": 140,
-    "level_80_stats": {
-        "hp": 1086,
-        "atk": 388,
-        "def": 630,
-        "spd": 110
+  "id": "hyacine",
+  "name": "Hyacine",
+  "rarity": "5",
+  "element": "wind",
+  "path": "remembrance",
+  "version_released": "3.3",
+  "max_energy": 140,
+  "level_80_stats": {
+    "hp": 1086,
+    "atk": 388,
+    "def": 630,
+    "spd": 110
+  },
+  "abilities": {
+    "basic": {
+      "type": "Basic ATK",
+      "name": "When Breeze Kisses Cirrus",
+      "tag": "Single Target",
+      "energy_gain": 20,
+      "break": 10,
+      "min_level": 1,
+      "max_level": 7,
+      "default_level": 6,
+      "description_template": "Deals Wind DMG equal to {{scaling1}}% of Hyacine's Max HP to a designated enemy target.",
+      "scaling": {
+        "scaling1": [
+          25,
+          30,
+          35,
+          40,
+          45,
+          50,
+          55
+        ]
+      }
     },
-    "abilities": {
-        "basic": {
-            "type": "Basic ATK",
-            "name": "When Breeze Kisses Cirrus",
-            "tag": "Single Target",
-            "energy_gain": 20,
-            "break": 10,
-            "min_level": 1,
-            "max_level": 7,
-            "default_level": 6,
-            "description_template": "Deals Wind DMG equal to {{scaling1}}% of Hyacine's Max HP to a designated enemy target.",
-            "scaling": {
-                "scaling1": [
-                    25,
-                    30,
-                    35,
-                    40,
-                    45,
-                    50,
-                    55
-                ]
-            }
+    "skill": {
+      "type": "Skill",
+      "name": "Love Over the Rainbow",
+      "tag": "Restore",
+      "energy_gain": 30,
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "Summons memosprite Little Ica, restores HP equal to {{scaling1}}% of Hyacine's Max HP plus {{scaling2}}% for all allies aside from Little Ica, and restores HP equal to {{scaling3}} of Hyacine's Max HP plus {{scaling4}} for Little Ica.",
+      "scaling": {
+        "scaling1": [
+          4,
+          4.5,
+          5,
+          5.5,
+          6,
+          6.4,
+          6.8,
+          7.2,
+          7.6,
+          8,
+          8.4,
+          8.8,
+          9.2,
+          9.6,
+          10
+        ],
+        "scaling2": [
+          40,
+          64,
+          82,
+          100,
+          112,
+          124,
+          133,
+          142,
+          151,
+          160,
+          169,
+          178,
+          187,
+          196,
+          205
+        ],
+        "scaling3": [
+          5,
+          5.6,
+          6.3,
+          6.9,
+          7.5,
+          8,
+          8.5,
+          9,
+          9.5,
+          10,
+          10.5,
+          11,
+          11.5,
+          12,
+          12.5
+        ],
+        "scaling4": [
+          50,
+          80,
+          102.5,
+          125,
+          140,
+          155,
+          166.25,
+          177.5,
+          188.75,
+          200,
+          211.25,
+          222.5,
+          233.75,
+          245,
+          256.25
+        ]
+      }
+    },
+    "ultimate": {
+      "type": "Ultimate",
+      "name": "We Who Fly Into Twilight",
+      "tag": "Support",
+      "energy_gain": 5,
+      "energy_cost": 140,
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "Summons memosprite Little Ica, restores HP equal to {{scaling1}}% of Hyacine's Max HP plus {{scaling2}} for all allies aside from Little Ica, and restores HP equal to {{scaling3}}% of Hyacine's Max HP plus {{scaling4}} for Little Ica. Hyacine enters the \"After Rain\" state for 3 turn(s) afterward. Reduces the state's duration by 1 turn each time Hyacine's turn begins. When in \"After Rain\" state, increases Max HP for all allies by {{scaling5}}% plus {{scaling6}}.",
+      "scaling": {
+        "scaling1": [
+          5,
+          5.625,
+          6.25,
+          6.875,
+          7.5,
+          8,
+          8.5,
+          9,
+          9.5,
+          10,
+          10.5,
+          11
+        ],
+        "scaling2": [
+          50,
+          80,
+          102.5,
+          125,
+          140,
+          155,
+          166.25,
+          177.5,
+          188.75,
+          200,
+          211.25,
+          222.5
+        ],
+        "scaling3": [
+          15,
+          16.5,
+          18,
+          19.5,
+          21,
+          22.5,
+          24.375,
+          26.25,
+          28.125,
+          30,
+          31.5,
+          33
+        ],
+        "scaling4": [
+          150,
+          240,
+          307.5,
+          375,
+          420,
+          465,
+          498.75,
+          532.5,
+          566.25,
+          600,
+          633.75,
+          667.5
+        ],
+        "scaling5": [
+          6,
+          6.75,
+          7.5,
+          8.25,
+          9,
+          9.6,
+          10.2,
+          10.8,
+          11.4,
+          12,
+          12.6,
+          13.2
+        ],
+        "scaling6": [
+          60,
+          96,
+          123,
+          150,
+          168,
+          186,
+          199.5,
+          213,
+          226.5,
+          240,
+          253.5,
+          267
+        ]
+      }
+    },
+    "talent": {
+      "type": "Talent",
+      "name": "First Light Heals the World",
+      "tag": "Enhance",
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "The memosprite Little Ica initially has Max HP equal to 50% of Hyacine's Max HP. When Hyacine or Little Ica provides healing, increases Little Ica's DMG dealt by {{scaling1}}% for 2 turn(s). Stacks up to 3 time(s).",
+      "scaling": {
+        "scaling1": [
+          40,
+          44,
+          48,
+          52,
+          56,
+          60,
+          65,
+          70,
+          75,
+          80,
+          84,
+          88
+        ]
+      }
+    },
+    "technique": {
+      "type": "Technique",
+      "name": "Day So Right, Life So Fine!",
+      "tag": "Restore",
+      "description": "At the start of the next battle, restores HP equal to 30% of Hyacine's Max HP plus 600 for all allies and increases their Max HP by 20% for 2 turn(s)."
+    }
+  },
+  "memosprite": {
+    "name": "Little Ica",
+    "initial_spd": 0,
+    "hp_source": "50% of Hyacine's Max HP",
+    "skills": {
+      "memosprite_skill": {
+        "type": "Memosprite Skill",
+        "name": "Rainclouds, Time to Go!",
+        "tag": "AoE",
+        "energy_gain": 5,
+        "break_aoe": 10,
+        "min_level": 1,
+        "max_level": 7,
+        "default_level": 6,
+        "description_template": "Deals Wind DMG to all enemies equal to {{scaling1}}% of the tally of healing done by Hyacine and Little Ica in the current battle, and clears 50% of the tally of healing.",
+        "scaling": {
+          "scaling1": [
+            10,
+            12,
+            14,
+            16,
+            18,
+            20,
+            22,
+            24,
+            26
+          ]
+        }
+      },
+      "memosprite_talent": {
+        "type": "Memosprite Talent",
+        "name": "Take Sky in Hand",
+        "tag": "Restore",
+        "min_level": 1,
+        "max_level": 7,
+        "default_level": 6,
+        "description_template": "Little Ica's SPD remains at 0, is immune to debuffs, and they will not appear on the Action Order. \nIf ally targets (except Little Ica) have their HP reduced, then Little Ica will consume HP equal to 4% of their own Max HP and restore HP equal to {{scaling1}}% of Hyacine's Max HP plus {{scaling2}} for the ally target with reduced HP at the start of any target's turn or after any target takes action. \nWhile Hyacine is in the \"After Rain\" state, Little Ica immediately obtains 1 extra turn and automatically uses \"Rainclouds, Time to Go!\" after Hyacine uses an ability. Moreover, when Little Ica triggers their Talent's healing effect, additionally restores HP for all ally targets by an amount equal to {{scaling1}}% of Hyacine's Max HP plus {{scaling2}}. After Little Ica uses an ability, all Continuous Effects' duration decreases by 1 turn.",
+        "scaling": {
+          "scaling1": [
+            1,
+            1.2,
+            1.4,
+            1.6,
+            1.8,
+            2,
+            2.2
+          ],
+          "scaling2": [
+            10,
+            12,
+            14,
+            16,
+            18,
+            20,
+            22
+          ]
         },
-        "skill": {
-            "type": "Skill",
-            "name": "Love Over the Rainbow",
-            "tag": "Restore",
-            "energy_gain": 30,
-            "min_level": 1,
-            "max_level": 12,
-            "default_level": 10,
-            "description_template": "Summons memosprite Little Ica, restores HP equal to {{scaling1}}% of Hyacine's Max HP plus {{scaling2}}% for all allies aside from Little Ica, and restores HP equal to {{scaling3}} of Hyacine's Max HP plus {{scaling4}} for Little Ica.",
-            "scaling": {
-                "scaling1": [
-                    4,
-                    4.5,
-                    5,
-                    5.5,
-                    6,
-                    6.4,
-                    6.8,
-                    7.2,
-                    7.6,
-                    8,
-                    8.4,
-                    8.8,
-                    9.2,
-                    9.6,
-                    10
-                ],
-                "scaling2": [
-                    40,
-                    64,
-                    82,
-                    100,
-                    112,
-                    124,
-                    133,
-                    142,
-                    151,
-                    160,
-                    169,
-                    178,
-                    187,
-                    196,
-                    205
-                ],
-                "scaling3": [
-                    5,
-                    5.6,
-                    6.3,
-                    6.9,
-                    7.5,
-                    8,
-                    8.5,
-                    9,
-                    9.5,
-                    10,
-                    10.5,
-                    11,
-                    11.5,
-                    12,
-                    12.5
-                ],
-                "scaling4": [
-                    50,
-                    80,
-                    102.5,
-                    125,
-                    140,
-                    155,
-                    166.25,
-                    177.5,
-                    188.75,
-                    200,
-                    211.25,
-                    222.5,
-                    233.75,
-                    245,
-                    256.25
-                ]
-            }
-        },
-        "ultimate": {
-            "type": "Ultimate",
-            "name": "We Who Fly Into Twilight",
-            "tag": "Support",
-            "energy_gain": 5,
-            "energy_cost": 140,
-            "min_level": 1,
-            "max_level": 12,
-            "default_level": 10,
-            "description_template": "Summons memosprite Little Ica, restores HP equal to {{scaling1}}% of Hyacine's Max HP plus {{scaling2}} for all allies aside from Little Ica, and restores HP equal to {{scaling3}}% of Hyacine's Max HP plus {{scaling4}} for Little Ica. Hyacine enters the \"After Rain\" state for 3 turn(s) afterward. Reduces the state's duration by 1 turn each time Hyacine's turn begins. When in \"After Rain\" state, increases Max HP for all allies by {{scaling5}}% plus {{scaling6}}.",
-            "scaling": {
-                "scaling1": [
-                    5,
-                    5.625,
-                    6.25,
-                    6.875,
-                    7.5,
-                    8,
-                    8.5,
-                    9,
-                    9.5,
-                    10,
-                    10.5,
-                    11
-                ],
-                "scaling2": [
-                    50,
-                    80,
-                    102.5,
-                    125,
-                    140,
-                    155,
-                    166.25,
-                    177.5,
-                    188.75,
-                    200,
-                    211.25,
-                    222.5
-                ],
-                "scaling3": [
-                    15,
-                    16.5,
-                    18,
-                    19.5,
-                    21,
-                    22.5,
-                    24.375,
-                    26.25,
-                    28.125,
-                    30,
-                    31.5,
-                    33
-                ],
-                "scaling4": [
-                    150,
-                    240,
-                    307.5,
-                    375,
-                    420,
-                    465,
-                    498.75,
-                    532.5,
-                    566.25,
-                    600,
-                    633.75,
-                    667.5
-                ],
-                "scaling5": [
-                    6,
-                    6.75,
-                    7.5,
-                    8.25,
-                    9,
-                    9.6,
-                    10.2,
-                    10.8,
-                    11.4,
-                    12,
-                    12.6,
-                    13.2
-                ],
-                "scaling6": [
-                    60,
-                    96,
-                    123,
-                    150,
-                    168,
-                    186,
-                    199.5,
-                    213,
-                    226.5,
-                    240,
-                    253.5,
-                    267
-                ]
-            }
-        },
-        "talent": {
-            "type": "Talent",
-            "name": "First Light Heals the World",
+        "variants": [
+          {
+            "type": "Memosprite Talent",
+            "name": "Soar, Unto the Sunlight",
             "tag": "Enhance",
-            "min_level": 1,
-            "max_level": 12,
-            "default_level": 10,
-            "description_template": "The memosprite Little Ica initially has Max HP equal to 50% of Hyacine's Max HP. When Hyacine or Little Ica provides healing, increases Little Ica's DMG dealt by {{scaling1}}% for 2 turn(s). Stacks up to 3 time(s).",
-            "scaling": {
-                "scaling1": [
-                    40,
-                    44,
-                    48,
-                    52,
-                    56,
-                    60,
-                    65,
-                    70,
-                    75,
-                    80,
-                    84,
-                    88
-                ]
-            }
-        },
-        "technique": {
-            "type": "Technique",
-            "name": "Day So Right, Life So Fine!",
-            "tag": "Restore",
-            "description": "At the start of the next battle, restores HP equal to 30% of Hyacine's Max HP plus 600 for all allies and increases their Max HP by 20% for 2 turn(s)."
-        }
+            "description": "When summoned, additionally regenerates 15 Energy for Hyacine. When first summoned, additionally regenerates 30 Energy."
+          },
+          {
+            "type": "Memosprite Talent",
+            "name": "Fall, Then Take Wing",
+            "tag": "Enhance",
+            "description": "Upon disappearing, advances the action of Hyacine by 30%."
+          }
+        ]
+      }
+    }
+  },
+  "major_traces": {
+    "2": {
+      "name": "Gloomy Grin",
+      "description": "Increases Hyacine and Little Ica's CRIT Rate by 100%. When providing healing to an ally target with less than or equal to 50% this unit's Max HP, increases Hyacine and Little Ica's Outgoing Healing by 25%."
     },
-    "memosprite": {
-        "name": "Little Ica",
-        "initial_spd": 0,
-        "hp_source": "50% of Hyacine's Max HP",
-        "skills": {
-            "rainclouds": {
-                "type": "Memosprite Skill",
-                "name": "Rainclouds, Time to Go!",
-                "tag": "AoE",
-                "energy_gain": 5,
-                "break_aoe": 10,
-                "min_level": 1,
-                "max_level": 7,
-                "default_level": 6,
-                "description_template": "Deals Wind DMG to all enemies equal to {{scaling1}}% of the tally of healing done by Hyacine and Little Ica in the current battle, and clears 50% of the tally of healing.",
-                "scaling": {
-                    "scaling1": [
-                        10,
-                        12,
-                        14,
-                        16,
-                        18,
-                        20,
-                        22,
-                        24,
-                        26
-                    ]
-                }
-            },
-            "sky": {
-                "type": "Memosprite Talent",
-                "name": "Take Sky in Hand",
-                "tag": "Restore",
-                "min_level": 1,
-                "max_level": 7,
-                "default_level": 6,
-                "description_template": "Little Ica's SPD remains at 0, is immune to debuffs, and they will not appear on the Action Order. \nIf ally targets (except Little Ica) have their HP reduced, then Little Ica will consume HP equal to 4% of their own Max HP and restore HP equal to {{scaling1}}% of Hyacine's Max HP plus {{scaling2}} for the ally target with reduced HP at the start of any target's turn or after any target takes action. \nWhile Hyacine is in the \"After Rain\" state, Little Ica immediately obtains 1 extra turn and automatically uses \"Rainclouds, Time to Go!\" after Hyacine uses an ability. Moreover, when Little Ica triggers their Talent's healing effect, additionally restores HP for all ally targets by an amount equal to {{scaling1}}% of Hyacine's Max HP plus {{scaling2}}. After Little Ica uses an ability, all Continuous Effects' duration decreases by 1 turn.",
-                "scaling": {
-                    "scaling1": [
-                        1,
-                        1.2,
-                        1.4,
-                        1.6,
-                        1.8,
-                        2,
-                        2.2
-                    ],
-                    "scaling2": [
-                        10,
-                        12,
-                        14,
-                        16,
-                        18,
-                        20,
-                        22
-                    ]
-                }
-            },
-            "soar": {
-                "type": "Memosprite Talent",
-                "name": "Soar, Unto the Sunlight",
-                "tag": "Enhance",
-                "description": "When summoned, additionally regenerates 15 Energy for Hyacine. When first summoned, additionally regenerates 30 Energy."
-            },
-            "wing": {
-                "type": "Memosprite Talent",
-                "name": "Fall, Then Take Wing",
-                "tag": "Enhance",
-                "description": "Upon disappearing, advances the action of Hyacine by 30%."
-            }
-            
-        }
+    "4": {
+      "name": "Stormy Caress",
+      "description": "Increases Hyacine's Effect RES by 50%. When using Skill and Ultimate, dispels 1 debuff(s) from all ally targets."
     },
-    "major_traces": {
-        "2": {
-            "name": "Gloomy Grin",
-            "description": "Increases Hyacine and Little Ica's CRIT Rate by 100%. When providing healing to an ally target with less than or equal to 50% this unit's Max HP, increases Hyacine and Little Ica's Outgoing Healing by 25%."
-        },
-        "4": {
-            "name": "Stormy Caress",
-            "description": "Increases Hyacine's Effect RES by 50%. When using Skill and Ultimate, dispels 1 debuff(s) from all ally targets."
-        },
-        "6": {
-            "name": "Tempestuous Halt",
-            "description": "When Hyacine's SPD exceeds 200, increases her and Little Ica's Max HP by 20%. Then, for every 1 excess SPD, increases Hyacine's and Little Ica's Outgoing Healing by 1%. Up to a max of 200 excess SPD can be taken into account for this effect."
-        }
+    "6": {
+      "name": "Tempestuous Halt",
+      "description": "When Hyacine's SPD exceeds 200, increases her and Little Ica's Max HP by 20%. Then, for every 1 excess SPD, increases Hyacine's and Little Ica's Outgoing Healing by 1%. Up to a max of 200 excess SPD can be taken into account for this effect."
+    }
+  },
+  "stat_bonuses": [
+    {
+      "stat": "HP",
+      "value": "+10%"
     },
-    "stat_bonuses": [
-        {
-            "stat": "HP",
-            "value": "+10%"
-        },
-        {
-            "stat": "SPD",
-            "value": "+14"
-        },
-        {
-            "stat": "Effect RES",
-            "value": "+18%"
-        }
-    ],
-    "eidolons": [
-        {
-            "level": 1,
-            "name": "Cradle the Candle of Night",
-            "description": "When Hyacine is in the \"After Rain\" state, additionally increases the Max HP of all ally targets by 50%, and immediately restores HP equal to 8% of Hyacine's Max HP after using an attack."
-        },
-        {
-            "level": 2,
-            "name": "Come Sit in My Courtyard",
-            "description": "When any ally target's HP decreases, this unit's SPD increases by 30% for 2 turn(s)."
-        },
-        {
-            "level": 3,
-            "name": "Depart, Unto the Sun!",
-            "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10. Memosprite Skill Lv. +1, up to a maximum of Lv. 10."
-        },
-        {
-            "level": 4,
-            "name": "Sunlit Amber, Yours to Keep",
-            "description": "The \"Tempestuous Halt\" Trace is enhanced. For every 1 of SPD exceeded, additionally increases Hyacine and Little Ica's CRIT DMG by 2%."
-        },
-        {
-            "level": 5,
-            "name": "Twilight Drapes the Tide",
-            "description": "Skill Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15. Memosprite Talent Lv. +1, up to a maximum of Lv. 10."
-        },
-        {
-            "level": 6,
-            "name": "O Sky, Heed My Plea",
-            "description": "Little Ica uses Memosprite Skill and changes the amount of Healing tally cleared to 12%. When Little Ica is on the field, increases all ally targets' All-Type RES PEN  by 20%."
-        }
-    ]
+    {
+      "stat": "SPD",
+      "value": "+14"
+    },
+    {
+      "stat": "Effect RES",
+      "value": "+18%"
+    }
+  ],
+  "eidolons": [
+    {
+      "level": 1,
+      "name": "Cradle the Candle of Night",
+      "description": "When Hyacine is in the \"After Rain\" state, additionally increases the Max HP of all ally targets by 50%, and immediately restores HP equal to 8% of Hyacine's Max HP after using an attack."
+    },
+    {
+      "level": 2,
+      "name": "Come Sit in My Courtyard",
+      "description": "When any ally target's HP decreases, this unit's SPD increases by 30% for 2 turn(s)."
+    },
+    {
+      "level": 3,
+      "name": "Depart, Unto the Sun!",
+      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10. Memosprite Skill Lv. +1, up to a maximum of Lv. 10."
+    },
+    {
+      "level": 4,
+      "name": "Sunlit Amber, Yours to Keep",
+      "description": "The \"Tempestuous Halt\" Trace is enhanced. For every 1 of SPD exceeded, additionally increases Hyacine and Little Ica's CRIT DMG by 2%."
+    },
+    {
+      "level": 5,
+      "name": "Twilight Drapes the Tide",
+      "description": "Skill Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15. Memosprite Talent Lv. +1, up to a maximum of Lv. 10."
+    },
+    {
+      "level": 6,
+      "name": "O Sky, Heed My Plea",
+      "description": "Little Ica uses Memosprite Skill and changes the amount of Healing tally cleared to 12%. When Little Ica is on the field, increases all ally targets' All-Type RES PEN  by 20%."
+    }
+  ]
 }

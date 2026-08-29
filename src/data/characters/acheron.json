@@ -113,6 +113,7 @@
             "name": "Slashed Dream Cries in Red",
             "tag": "AoE",
             "break": 5,
+            "break_aoe": 5,
             "energy_cost": "9 point(s) of Slashed Dream",
             "min_level": 1,
             "max_level": 12,

@@ -172,7 +172,7 @@
     "initial_spd": 160,
     "hp_source": "50% of Evernight's Max HP",
     "skills": {
-      "dream": {
+      "memosprite_skill": {
         "type": "Memosprite Skill",
         "name": "Dream, Dissolving, as Dew",
         "tag": "AoE",
@@ -207,55 +207,48 @@
             7.8,
             8.4
           ]
-        }
+        },
+        "variants": [
+          {
+            "type": "Memosprite Skill",
+            "name": "Remembrance, Whirling, Like Rain",
+            "tag": "Single Target",
+            "energy_gain": 20,
+            "break": 10,
+            "min_level": 1,
+            "max_level": 7,
+            "default_level": 6,
+            "description_template": "This ability automatically selects a target, prioritizing the enemy target that Evernight last attacked. Deals Ice DMG equal to {{scaling1}}% of Evey's Max HP to one enemy. For every 4 \"Memoria\" Evernight currently has, further deals Ice DMG equal to {{scaling2}}% of Evey's Max HP. After use, Evernight gains 1 \"Memoria.\"",
+            "scaling": {
+              "scaling1": [
+                25,
+                30,
+                35,
+                40,
+                45,
+                50,
+                55,
+                60,
+                65,
+                70
+              ],
+              "scaling2": [
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14
+              ]
+            }
+          }
+        ]
       },
-      "whirling": {
-        "type": "Memosprite Skill",
-        "name": "Remembrance, Whirling, Like Rain",
-        "tag": "Single Target",
-        "energy_gain": 20,
-        "break": 10,
-        "min_level": 1,
-        "max_level": 7,
-        "default_level": 6,
-        "description_template": "This ability automatically selects a target, prioritizing the enemy target that Evernight last attacked. Deals Ice DMG equal to {{scaling1}}% of Evey's Max HP to one enemy. For every 4 \"Memoria\" Evernight currently has, further deals Ice DMG equal to {{scaling2}}% of Evey's Max HP. After use, Evernight gains 1 \"Memoria.\"",
-        "scaling": {
-          "scaling1": [
-            25,
-            30,
-            35,
-            40,
-            45,
-            50,
-            55,
-            60,
-            65,
-            70
-          ],
-          "scaling2": [
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12,
-            13,
-            14
-          ]
-        }
-      },
-      "trailing": {
-        "type": "Memosprite Talent",
-        "name": "Night, Trailing, In Step",
-        "tag": "Enhance",
-        "min_level": 1,
-        "max_level": 7,
-        "default_level": 6,
-        "description": "When summoned, this unit immediately takes action."
-      },
-      "solitude": {
+      "memosprite_talent": {
         "type": "Memosprite Talent",
         "name": "Solitude, Drifting, In Murk",
         "tag": "Support",
@@ -278,16 +271,27 @@
             65,
             70
           ]
-        }
-      },
-      "parting": {
-        "type": "Memosprite Talent",
-        "name": "You, Parting, Beyond Reach",
-        "tag": "Enhance",
-        "min_level": 1,
-        "max_level": 7,
-        "default_level": 6,
-        "description": "Upon disappearing, increases Evernight's SPD by 10%. If the disappearance is due to using \"Dream, Dissolving, as Dew,\" then, for every 1 \"Memoria\" point consumed by the attack, additionally increases Evernight's SPD by 1%. Up to 40 \"Memoria\" points can be taken into account for this. The SPD Boost effect cannot stack and is removed at the start of Evernight's next turn."
+        },
+        "variants": [
+          {
+            "type": "Memosprite Talent",
+            "name": "Night, Trailing, In Step",
+            "tag": "Enhance",
+            "min_level": 1,
+            "max_level": 7,
+            "default_level": 6,
+            "description": "When summoned, this unit immediately takes action."
+          },
+          {
+            "type": "Memosprite Talent",
+            "name": "You, Parting, Beyond Reach",
+            "tag": "Enhance",
+            "min_level": 1,
+            "max_level": 7,
+            "default_level": 6,
+            "description": "Upon disappearing, increases Evernight's SPD by 10%. If the disappearance is due to using \"Dream, Dissolving, as Dew,\" then, for every 1 \"Memoria\" point consumed by the attack, additionally increases Evernight's SPD by 1%. Up to 40 \"Memoria\" points can be taken into account for this. The SPD Boost effect cannot stack and is removed at the start of Evernight's next turn."
+          }
+        ]
       }
     }
   },
@@ -352,3 +356,4 @@
     }
   ]
 }
+

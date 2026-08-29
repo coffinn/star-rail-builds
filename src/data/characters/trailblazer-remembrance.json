@@ -176,7 +176,7 @@
     "initial_spd": 130,
     "hp_source": "80% of Trailblazer's Max HP plus 640",
     "skills": {
-      "baddies": {
+      "memosprite_skill": {
         "type": "Memosprite Skill",
         "name": "Baddies! Trouble!",
         "tag": "AoE",
@@ -211,32 +211,34 @@
             108,
             117
           ]
-        }
+        },
+        "variants": [
+          {
+            "type": "Memosprite Skill",
+            "name": "Lemme! Help You!",
+            "tag": "Support",
+            "energy_gain": 10,
+            "min_level": 1,
+            "max_level": 7,
+            "default_level": 6,
+            "description_template": "Advances the action of one designated ally by 100% and grants them \"Mem's Support,\" lasting for 3 turn(s). For every 1 instance of DMG dealt by a target that has \"Mem's Support,\" additionally deals 1 instance of True DMG equal to {{scaling1}}% of the original DMG. When using this ability on this unit, cannot trigger the action advance effect.",
+            "scaling": {
+              "scaling1": [
+                18,
+                20,
+                22,
+                24,
+                26,
+                28,
+                30,
+                32,
+                34
+              ]
+            }
+          }
+        ]
       },
-      "help": {
-        "type": "Memosprite Skill",
-        "name": "Lemme! Help You!",
-        "tag": "Support",
-        "energy_gain": 10,
-        "min_level": 1,
-        "max_level": 7,
-        "default_level": 6,
-        "description_template": "Advances the action of one designated ally by 100% and grants them \"Mem's Support,\" lasting for 3 turn(s). For every 1 instance of DMG dealt by a target that has \"Mem's Support,\" additionally deals 1 instance of True DMG equal to {{scaling1}}% of the original DMG. When using this ability on this unit, cannot trigger the action advance effect.",
-        "scaling": {
-          "scaling1": [
-            18,
-            20,
-            22,
-            24,
-            26,
-            28,
-            30,
-            32,
-            34
-          ]
-        }
-      },
-      "friends": {
+      "memosprite_talent": {
         "type": "Memosprite Talent",
         "name": "Friends! Together!",
         "tag": "Support",
@@ -263,25 +265,27 @@
             24,
             26.4
           ]
-        }
-      },
-      "mem": {
-        "type": "Memosprite Talent",
-        "name": "Go, Mem, Go!",
-        "tag": "Enhance",
-        "min_level": 1,
-        "max_level": 7,
-        "default_level": 6,
-        "description": "When Mem is summoned, immediately gains 50% Charge."
-      },
-      "regrets": {
-        "type": "Memosprite Talent",
-        "name": "No... Regrets",
-        "tag": "Enhance",
-        "min_level": 1,
-        "max_level": 7,
-        "default_level": 6,
-        "description": "When Mem disappears, Trailblazer's action advances by 25%."
+        },
+        "variants": [
+          {
+            "type": "Memosprite Talent",
+            "name": "Go, Mem, Go!",
+            "tag": "Enhance",
+            "min_level": 1,
+            "max_level": 7,
+            "default_level": 6,
+            "description": "When Mem is summoned, immediately gains 50% Charge."
+          },
+          {
+            "type": "Memosprite Talent",
+            "name": "No... Regrets",
+            "tag": "Enhance",
+            "min_level": 1,
+            "max_level": 7,
+            "default_level": 6,
+            "description": "When Mem disappears, Trailblazer's action advances by 25%."
+          }
+        ]
       }
     }
   },

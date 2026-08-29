@@ -190,7 +190,7 @@
     "initial_spd": "35% of Aglaea's SPD",
     "hp_source": "66% of Aglaea's Max HP plus 720",
     "skills": {
-      "thorned": {
+      "memosprite_skill": {
         "type": "Memosprite Skill",
         "name": "Thorned Snare",
         "tag": "Blast",
@@ -226,7 +226,7 @@
           ]
         }
       },
-      "talent": {
+      "memosprite_talent": {
         "type": "Memosprite Talent",
         "name": "A Body Brewed by Tears",
         "tag": "Enhance",
