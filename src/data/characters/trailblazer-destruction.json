@@ -57,7 +57,7 @@
             "energy_cost": 120,
             "energy_gain": 5,
             "break": "30 (\"Blowout: Farewell Hit\")",
-            "breal_main": "20 (\"Blowout: RIP Home Run\")",
+            "break_main": "20 (\"Blowout: RIP Home Run\")",
             "break_adjacent": "10 (\"Blowout: RIP Home Run\")",
             "min_level": 1,
             "max_level": 12,

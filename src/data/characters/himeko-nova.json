@@ -68,7 +68,7 @@
             "energy_cost": 150,
             "energy_gain": 5,
             "break_bounce": 4,
-            "breal_final_hit": 4,
+            "break_final_hit": 4,
             "break_total": 48,
             "min_level": 1,
             "max_level": 12,
