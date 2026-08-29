@@ -36,7 +36,7 @@
       },
       "variants": [
         {
-          "type": "Basic ATK (Enhanced)",
+          "type": "Enhanced Basic ATK",
           "name": "Bloom! Winner Takes All",
           "tag": "Blast",
           "energy_gain": 40,
@@ -79,7 +79,7 @@
       "description": "Start a livestream to turn Basic ATK into \"Bloom! Winner Takes All\" and trigger \"Engagement Farming\" 1 time. During this ability, \"Engagement Farming\" can be triggered repeatedly, up to 20 time(s). Using this ability is not considered as using a Skill.",
       "variants": [
         {
-          "type": "Skill (Enhanced)",
+          "type": "Enhanced Skill",
           "name": "Engagement Farming",
           "tag": "Enhance",
           "min_level": 1,

@@ -36,7 +36,7 @@
       },
       "variants": [
         {
-          "type": "Basic ATK (Enhanced)",
+          "type": "Enhanced Basic ATK",
           "name": "Slash by a Thousandfold Kiss",
           "tag": "Blast",
           "energy_gain": 20,

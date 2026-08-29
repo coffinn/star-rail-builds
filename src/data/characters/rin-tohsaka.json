@@ -64,7 +64,7 @@
             },
             "variants": [
                 {
-                    "type": "Skill (Enhanced)",
+                    "type": "Enhanced Skill",
                     "name": "Second Magic Experiment",
                     "tag": "Bounce",
                     "energy_gain": 30,

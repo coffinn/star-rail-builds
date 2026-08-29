@@ -36,7 +36,7 @@
       },
       "variants": [
         {
-          "type": "Basic ATK (Enhanced)",
+          "type": "Enhanced Basic ATK",
           "name": "Nectar Blitz",
           "tag": "Single Target",
           "energy_gain": "20",

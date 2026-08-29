@@ -67,7 +67,7 @@
       },
       "variants": [
         {
-          "type": "Skill (Enhanced)",
+          "type": "Enhanced Skill",
           "name": "Hear Me Out",
           "tag": "AoE",
           "energy_gain": 30,

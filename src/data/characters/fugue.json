@@ -36,7 +36,7 @@
       },
       "variants": [
         {
-          "type": "Basic ATK (Enhanced)",
+          "type": "Enhanced Basic ATK",
           "name": "Fiery Caress",
           "tag": "Blast",
           "energy_gain": "20",

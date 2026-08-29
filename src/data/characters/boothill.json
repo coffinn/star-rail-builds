@@ -28,7 +28,7 @@
             },
             "variants": [
                 {
-                "type": "Basic ATK (Enhanced)",
+                "type": "Enhanced Basic ATK",
                 "name": "Fanning the Hammer",
                 "tag": "Single Target",
                 "energy_gain": 30,

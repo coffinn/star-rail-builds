@@ -29,7 +29,7 @@
             },
             "variants": [
                 {
-                    "type": "Basic ATK (Enhanced)",
+                    "type": "Enhanced Basic ATK",
                     "name": "Bonus Stage: αWolf Instant",
                     "tag": "Bounce",
                     "break_bounce": 0.1,
@@ -254,7 +254,7 @@
                 "description": "Gains 15 \"Hidden MMR\" point(s)."
             },
             "skill-2": {
-                "type": "Elation Skill",
+                "type": "Enhanced Elation Skill",
                 "name": "Honkai-DMG Demo",
                 "tag": "Bounce",
                 "break_bounce": 10,

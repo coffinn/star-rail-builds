@@ -63,7 +63,7 @@
       },
       "variants": [
         {
-          "type": "Skill (Enhanced)",
+          "type": "Enhanced Skill",
           "name": "Moon On Glacial River",
           "tag": "Blast",
           "energy_gain": 30,

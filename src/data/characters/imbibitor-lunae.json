@@ -36,7 +36,7 @@
             },
             "variants": [
                 {
-                    "type": "Basic ATK (Enhanced)",
+                    "type": "Enhanced Basic ATK",
                     "name": "Transcendence",
                     "tag": "Single Target",
                     "energy_gain": 30,
@@ -55,7 +55,7 @@
                     }
                 },
                 {
-                    "type": "Basic ATK (Enhanced)",
+                    "type": "Enhanced Basic ATK",
                     "name": "Divine Spear",
                     "tag": "Blast",
                     "energy_gain": 35,
@@ -87,7 +87,7 @@
                     }
                 },
                 {
-                    "type": "Basic ATK (Enhanced)",
+                    "type": "Enhanced Basic ATK",
                     "name": "Fulgurant Leap",
                     "tag": "Blast",
                     "energy_gain": 40,

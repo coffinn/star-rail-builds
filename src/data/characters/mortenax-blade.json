@@ -36,7 +36,7 @@
       },
       "variants": [
         {
-          "type": "Basic ATK (Enhanced)",
+          "type": "Enhanced Basic ATK",
           "name": "A Tempered Blade Severs Souls",
           "tag": "Single Target",
           "energy_gain": 20,
@@ -115,7 +115,7 @@
       },
       "variants": [
         {
-          "type": "Ultimate (Enhanced)",
+          "type": "Ultimate",
           "name": "Tenax Per Ignem",
           "tag": "AoE",
           "energy_gain": 5,

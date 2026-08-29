@@ -78,7 +78,7 @@
             },
             "variants": [
                 {
-                    "type": "Skill (Enhanced)",
+                    "type": "Enhanced Skill",
                     "name": "Kingslayer Be King",
                     "tag": "Blast",
                     "energy_gain": 30,
@@ -117,7 +117,7 @@
                     }
                 },
                 {
-                    "type": "Skill (Enhanced)",
+                    "type": "Enhanced Skill",
                     "name": "Godslayer be God",
                     "tag": "Blast",
                     "energy_gain": 10,

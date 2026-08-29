@@ -57,7 +57,7 @@
             },
             "variants": [
                 {
-                "type": "Ultimate (Enhanced)",
+                "type": "Ultimate",
                 "name": "Merit Bestowed in [My] Garden",
                 "tag": "AoE",
                 "energy_cost": 180,

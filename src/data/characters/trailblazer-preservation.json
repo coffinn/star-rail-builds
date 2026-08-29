@@ -38,7 +38,7 @@
       },
       "variants": [
         {
-          "type": "Basic ATK (Enhanced)",
+          "type": "Enhanced Basic ATK",
           "name": "Ice-Breaking Light",
           "tag": "Blast",
           "energy_gain": 30,

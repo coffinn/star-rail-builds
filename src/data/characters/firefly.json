@@ -42,7 +42,7 @@
       },
       "variants": [
         {
-          "type": "Basic ATK (Enhanced)",
+          "type": "Enhanced Basic ATK",
           "name": "Fyrefly Type-IV: Pyrogenic Decimation",
           "tag": "Single Target",
           "break": 15,
@@ -112,7 +112,7 @@
       },
       "variants": [
         {
-          "type": "Skill (Enhanced)",
+          "type": "Enhanced Skill",
           "name": "Fyrefly Type-IV: Deathstar Overload",
           "tag": "Blast",
           "break_main": 30,
