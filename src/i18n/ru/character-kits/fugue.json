@@ -195,44 +195,44 @@
       "value": "+10%"
     },
     {
-      "stat": "SPD",
+      "stat": "Скорость",
       "value": "+14"
     },
     {
-      "stat": "Break Effect",
+      "stat": "Эффект пробития",
       "value": "+24%"
     }
   ],
   "eidolons": [
     {
       "level": 1,
-      "name": "Earthbound I Was, Cloudward I Be",
-      "description": "Ally target with \"Foxian Prayer\" increases their Weakness Break Efficiency by 50%."
+      "name": "Смертность угасла, к вознесенью путь",
+      "description": "Эффективность пробития уязвимости союзника со статусом Молитва лисы повышается на 50%."
     },
     {
       "level": 2,
-      "name": "Beatitude Dawns for the Worthy",
-      "description": "When an enemy target's Weakness gets broken, Fugue regenerates 3 Energy. After using Ultimate, advances the action|Action Advanced of all allies by 24%."
+      "name": "Приближение удачи дарует целомудрие",
+      "description": "Пробитие уязвимости противника восстанавливает 3 ед. энергии Фуги. После использования сверхспособности действия всех союзников продвигаются вперёд на 24%."
     },
     {
       "level": 3,
-      "name": "Verity Weaves Thoughts to Blade",
-      "description": "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+      "name": "Сердце наполнено, разум покорён",
+      "description": "Уровень навыка повышается на 2, максимальный уровень - 15. Уровень базовой атаки повышается на 1, максимальный уровень - 10."
     },
     {
       "level": 4,
-      "name": "Bereft of Form, Which Name to Bear",
-      "description": "Ally target with \"Foxian Prayer\" increases their Break DMG dealt by 20%."
+      "name": "Сознание разобщено, имена сожжены",
+      "description": "Урон пробития союзника со статусом Молитва лисы повышается на 20%."
     },
     {
       "level": 5,
-      "name": "Colored Cloud Rains Fortune",
-      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+      "name": "Рост покровительства, наследница нирваны",
+      "description": "Уровень сверхспособности повышается на 2, максимальный уровень - 15. Уровень таланта повышается на 2, максимальный уровень - 15."
     },
     {
       "level": 6,
-      "name": "Clairvoyance of Boom and Doom",
-      "description": "Increases Fugue's Weakness Break Efficiency by 50%. While Fugue is in the \"Torrid Scorch\" state, \"Foxian Prayer\" takes effect on all allies."
+      "name": "Конец творения, зачатки вселенной",
+      "description": "Эффективность пробития уязвимости Фуги повышается на 50%. Пока Фуга находится в состоянии Неистовый ожог, эффект статуса Молитва лисы применяется ко всем союзникам."
     }
   ]
 }
