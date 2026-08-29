@@ -168,7 +168,7 @@
       "default_level": 10,
       "description_template": "Enters the Complete Combustion state, advances this unit's Action by 100%, and gains Enhanced Basic ATK and Enhanced Skill. While in Complete Combustion, increases SPD by {{scaling1}}, and when using the Enhanced Basic ATK or Enhanced Skill, increases this unit's Weakness Break Efficiency by 50% and the Break DMG dealt by SAM to the enemy targets by {{scaling2}}%, lasting until this current attack ends.\nA countdown timer for the Complete Combustion state appears on the Action Order. When the countdown timer's turn starts, SAM exits the Complete Combustion state. The countdown timer has a fixed SPD of 70.\nSAM cannot use Ultimate while in Complete Combustion.",
       "scaling": {
-        "scaling1": [
+        "scaling2": [
           10,
           11,
           12,
@@ -185,7 +185,7 @@
           24,
           25
         ],
-        "scaling2": [
+        "scaling1": [
           30,
           33,
           36,
