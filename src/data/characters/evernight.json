@@ -41,7 +41,7 @@
     "skill": {
       "type": "Skill",
       "name": "Day Gently Slips",
-      "tag": "Support",
+      "tag": "Summon",
       "energy_gain": 30,
       "min_level": 1,
       "max_level": 12,
@@ -252,8 +252,6 @@
         "type": "Memosprite Talent",
         "name": "Solitude, Drifting, In Murk",
         "tag": "Support",
-        "energy_gain": "",
-        "break": "",
         "min_level": 1,
         "max_level": 7,
         "default_level": 6,
