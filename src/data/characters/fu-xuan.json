@@ -43,23 +43,9 @@
       "max_level": 12,
       "default_level": 10,
 
-      "description_template": "Activates Matrix of Prescience, via which Fu Xuan's teammates will Distribute {{dmg_redirect}}% of the DMG they receive (before this DMG is mitigated by any Shields) to Fu Xuan for 3 turn(s). While affected by Matrix of Prescience, all ally targets gain the Knowledge effect, which increases their respective Max HP by {{hp_boost}}% of Fu Xuan's Max HP, and increases CRIT Rate by {{crit_rate}}%. When Fu Xuan is knocked down, the Matrix of Prescience will be dispelled.",
+      "description_template": "Activates Matrix of Prescience, via which Fu Xuan's teammates will Distribute 65% of the DMG they receive (before this DMG is mitigated by any Shields) to Fu Xuan for 3 turn(s). While affected by Matrix of Prescience, all ally targets gain the Knowledge effect, which increases their respective Max HP by {{hp_boost}}% of Fu Xuan's Max HP, and increases CRIT Rate by {{crit_rate}}%. When Fu Xuan is knocked down, the Matrix of Prescience will be dispelled.",
 
       "scaling": {
-        "dmg_redirect": [
-          32.5,
-          35.75,
-          39.0,
-          42.25,
-          45.5,
-          48.75,
-          52.8125,
-          56.875,
-          60.9375,
-          65.0,
-          68.25,
-          71.5
-        ],
         "hp_boost": [
           3.0,
           3.3,
