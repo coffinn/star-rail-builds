@@ -5,7 +5,7 @@
     "element": "wind",
     "path": "hunt",
     "version_released": "1.0",
-    "max_energy": "",
+    "max_energy": 100,
     "level_80_stats": {
         "hp": 882,
         "atk": 546,
@@ -17,8 +17,8 @@
             "type": "Basic ATK",
             "name": "Cloudlancer Art: North Wind",
             "tag": "Single Target",
-            "energy_gain": "",
-            "break": "",
+            "energy_gain": 20,
+            "break": 10,
             "min_level": 1,
             "max_level": 7,
             "default_level": 6,
@@ -31,9 +31,7 @@
                     80,
                     90,
                     100,
-                    110,
-                    120,
-                    130
+                    110
                 ]
             }
         },
@@ -41,8 +39,8 @@
             "type": "Skill",
             "name": "Cloudlancer Art: Torrent",
             "tag": "Single Target",
-            "energy_gain": "",
-            "break": "20",
+            "energy_gain": 20,
+            "break": 20,
             "min_level": 1,
             "max_level": 12,
             "default_level": 10,
@@ -60,10 +58,7 @@
                     243.75,
                     260,
                     273,
-                    286,
-                    299,
-                    312,
-                    325
+                    286
                 ]
             }
         },
@@ -71,8 +66,8 @@
             "type": "Ultimate",
             "name": "Ethereal Dream",
             "tag": "Single Target",
-            "energy_gain": "",
-            "break": "30",
+            "energy_gain": 5,
+            "break": 30,
             "energy_cost": "100",
             "min_level": 1,
             "max_level": 12,
@@ -91,10 +86,7 @@
                     380,
                     400,
                     416,
-                    432,
-                    448,
-                    464,
-                    480
+                    432
                 ],
                 "scaling2": [
                     72,
@@ -108,10 +100,7 @@
                     114,
                     120,
                     124.8,
-                    129.6,
-                    134.4,
-                    139.2,
-                    144
+                    129.6
                 ]
             }
         },
@@ -119,8 +108,6 @@
             "type": "Talent",
             "name": "Superiority of Reach",
             "tag": "Enhance",
-            "energy_gain": "",
-            "break": "",
             "min_level": 1,
             "max_level": 12,
             "default_level": 10,
@@ -138,10 +125,7 @@
                     33.75,
                     36,
                     37.8,
-                    39.6,
-                    41.4,
-                    43.2,
-                    45
+                    39.6
                 ]
             }
         },
