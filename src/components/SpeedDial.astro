@@ -1,8 +1,58 @@
 ---
-import { SpeedDial } from 'webcoreui/astro';
-import type { SpeedDialProps } from 'webcoreui/astro';
-import { alert, github, search } from 'webcoreui/icons';
-import { features } from '../config/features';
+import {
+    SpeedDial,
+} from 'webcoreui/astro';
+
+import type {
+    SpeedDialProps,
+} from 'webcoreui/astro';
+
+import {
+    alert,
+    github,
+    search,
+} from 'webcoreui/icons';
+
+import { t } from '../utils/i18n';
+
+const { locale } =
+    Astro.props as {
+        locale: any;
+    };
+
+const searchLabel = t(
+    locale,
+    'ui',
+    'Search',
+    undefined,
+    false,
+);
+
+const githubLabel = t(
+    locale,
+    'ui',
+    'View GitHub',
+    undefined,
+    false,
+);
+
+const feedbackLabel = t(
+    locale,
+    'ui',
+    'Feedback',
+    undefined,
+    false,
+);
+
+const escapeHtml = (
+    value: string,
+) =>
+    value
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
 
 const iconWithTitle = (
     svg: string,
@@ -15,42 +65,55 @@ const iconWithTitle = (
         )
         .replace(
             '>',
-            `><title>${title}</title>`,
+            `><title>${escapeHtml(
+                title,
+            )}</title>`,
         );
 
-const speedDialItems: SpeedDialProps['items'] = [
-    {
-        icon: iconWithTitle(
-            search,
-            'Search',
-        ),
-        href: '#site-search-modal',
-        tooltip: 'Search',
-    },
+const speedDialItems:
+    SpeedDialProps['items'] = [
+        {
+            icon: iconWithTitle(
+                search,
+                searchLabel,
+            ),
 
-    {
-        icon: iconWithTitle(
-            github,
-            'Open GitHub',
-        ),
-        href: 'https://github.com/coffinn/star-rail-builds',
-        tooltip: 'View GitHub',
-        target: '_blank',
-    },
+            href:
+                '#site-search-modal',
 
-    ...(features.feedback
-        ? [
-              {
-                  icon: iconWithTitle(
-                      alert,
-                      'Open feedback form',
-                  ),
-                  href: '#feedback-modal',
-                  tooltip: 'Send Feedback',
-              },
-          ]
-        : []),
-];
+            tooltip:
+                searchLabel,
+        },
+
+        {
+            icon: iconWithTitle(
+                github,
+                githubLabel,
+            ),
+
+            href:
+                'https://github.com/coffinn/star-rail-builds',
+
+            tooltip:
+                githubLabel,
+
+            target:
+                '_blank',
+        },
+
+        {
+            icon: iconWithTitle(
+                alert,
+                feedbackLabel,
+            ),
+
+            href:
+                '#feedback-modal',
+
+            tooltip:
+                feedbackLabel,
+        },
+    ];
 ---
 
 <SpeedDial

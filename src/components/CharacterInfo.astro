@@ -34,7 +34,90 @@ const getAbilityTypeLabel = (id: string, fallback: string) => {
 
     return translated === translationId ? fallback : translated;
 };
+type AbilityWithMeta = CharacterAbility | CharacterAbilityVariant;
 
+const getAbilityMetaItems = (ability: AbilityWithMeta) =>
+    [
+        {
+            label: ui('Energy Gain'),
+            value: ability.energy_gain,
+        },
+
+        {
+            label: ui('Energy Cost'),
+            value: ability.energy_cost,
+        },
+
+        {
+            label: ui('Participant ID'),
+            value: ability.participant_id,
+        },
+
+        /*
+         * Simple Break value.
+         */
+        {
+            label: ui('Break'),
+            value: ability.break,
+        },
+
+        /*
+         * Detailed Break values.
+         *
+         * ORDER:
+         * Main
+         * Adjacent
+         * AoE
+         * First Hit
+         * Bounce
+         * Final Hit
+         * Total
+         */
+        {
+            label: ui('Break (Main)'),
+            value: ability.break_main,
+        },
+
+        {
+            label: ui('Break (Adjacent)'),
+            value: ability.break_adjacent,
+        },
+
+        {
+            label: ui('Break (AoE)'),
+            value: ability.break_aoe,
+        },
+
+        {
+            label: ui('Break (First Hit)'),
+            value: ability.break_first_hit,
+        },
+
+        {
+            label: ui('Break (Per Bounce)'),
+            value: ability.break_bounce,
+        },
+
+        {
+            label: ui('Break (Final Hit)'),
+            value: ability.break_final_hit,
+        },
+
+        {
+            label: ui('Break (Total)'),
+            value: ability.break_total,
+        },
+    ].filter(
+        (
+            item,
+        ): item is {
+            label: string;
+            value: string | number;
+        } =>
+            item.value !== undefined &&
+            item.value !== null &&
+            item.value !== '',
+    );
 type SelectableAbilityVariant = CharacterAbilityVariant & {
     id?: string;
     selector_label?: string;
@@ -275,7 +358,7 @@ const renderVariantDescription = (
                 <div class="character-info-details character-ability-grid">
                     {section.abilities.map(({ id, ability }) => {
                         const minLevel = ability.min_level ?? 1;
-
+                        const metaItems = getAbilityMetaItems(ability);
                         const maxLevel = ability.max_level ?? minLevel;
 
                         const defaultLevel = getDefaultLevel(ability);
@@ -329,76 +412,16 @@ const renderVariantDescription = (
                                         </p>
                                     )}
 
-                                    {hasMeta && (
+                                    {metaItems.length > 0 && (
                                         <div class="character-detail-meta">
-                                            {ability.energy_gain !==
-                                                undefined && (
+                                            {metaItems.map((item) => (
                                                 <span>
-                                                    {ui('Energy Gain')}:{' '}
+                                                    {item.label}:{' '}
                                                     <strong>
-                                                        {ability.energy_gain}
+                                                        {item.value}
                                                     </strong>
                                                 </span>
-                                            )}
-
-                                            {ability.energy_cost !==
-                                                undefined && (
-                                                <span>
-                                                    {ui('Energy Cost')}:{' '}
-                                                    <strong>
-                                                        {ability.energy_cost}
-                                                    </strong>
-                                                </span>
-                                            )}
-
-                                            {ability.break !== undefined && (
-                                                <span>
-                                                    {ui('Break')}:{' '}
-                                                    <strong>
-                                                        {ability.break}
-                                                    </strong>
-                                                </span>
-                                            )}
-
-                                            {ability.break_main !==
-                                                undefined && (
-                                                <span>
-                                                    {ui('Break (Main)')}:{' '}
-                                                    <strong>
-                                                        {ability.break_main}
-                                                    </strong>
-                                                </span>
-                                            )}
-
-                                            {ability.break_adjacent !==
-                                                undefined && (
-                                                <span>
-                                                    {ui('Break (Adjacent)')}:{' '}
-                                                    <strong>
-                                                        {ability.break_adjacent}
-                                                    </strong>
-                                                </span>
-                                            )}
-
-                                            {ability.break_bounce !==
-                                                undefined && (
-                                                <span>
-                                                    {ui('Break (Per Bounce)')}:{' '}
-                                                    <strong>
-                                                        {ability.break_bounce}
-                                                    </strong>
-                                                </span>
-                                            )}
-
-                                            {ability.break_aoe !==
-                                                undefined && (
-                                                <span>
-                                                    {ui('Break (AoE)')}:{' '}
-                                                    <strong>
-                                                        {ability.break_aoe}
-                                                    </strong>
-                                                </span>
-                                            )}
+                                            ))}
                                         </div>
                                     )}
 
@@ -520,6 +543,10 @@ const renderVariantDescription = (
                                             )}
 
                                             {variants.map((variant, index) => {
+                                                const variantMetaItems =
+                                                    getAbilityMetaItems(
+                                                        variant,
+                                                    );
                                                 const variantScalable =
                                                     Boolean(
                                                         variant.description_template &&
@@ -562,110 +589,23 @@ const renderVariantDescription = (
                                                                 {variant.tag}
                                                             </p>
                                                         )}
-                                                        {variantHasMeta && (
+                                                        {variantMetaItems.length >
+                                                            0 && (
                                                             <div class="character-detail-meta">
-                                                                {variant.energy_gain !==
-                                                                    undefined && (
-                                                                    <span>
-                                                                        {ui(
-                                                                            'Energy Gain',
-                                                                        )}
-                                                                        :{' '}
-                                                                        <strong>
+                                                                {variantMetaItems.map(
+                                                                    (item) => (
+                                                                        <span>
                                                                             {
-                                                                                variant.energy_gain
+                                                                                item.label
                                                                             }
-                                                                        </strong>
-                                                                    </span>
-                                                                )}
-
-                                                                {variant.energy_cost !==
-                                                                    undefined && (
-                                                                    <span>
-                                                                        {ui(
-                                                                            'Energy Cost',
-                                                                        )}
-                                                                        :{' '}
-                                                                        <strong>
-                                                                            {
-                                                                                variant.energy_cost
-                                                                            }
-                                                                        </strong>
-                                                                    </span>
-                                                                )}
-
-                                                                {variant.break !==
-                                                                    undefined && (
-                                                                    <span>
-                                                                        {ui(
-                                                                            'Break',
-                                                                        )}
-                                                                        :{' '}
-                                                                        <strong>
-                                                                            {
-                                                                                variant.break
-                                                                            }
-                                                                        </strong>
-                                                                    </span>
-                                                                )}
-
-                                                                {variant.break_main !==
-                                                                    undefined && (
-                                                                    <span>
-                                                                        {ui(
-                                                                            'Break (Main)',
-                                                                        )}
-                                                                        :{' '}
-                                                                        <strong>
-                                                                            {
-                                                                                variant.break_main
-                                                                            }
-                                                                        </strong>
-                                                                    </span>
-                                                                )}
-
-                                                                {variant.break_adjacent !==
-                                                                    undefined && (
-                                                                    <span>
-                                                                        {ui(
-                                                                            'Break (Adjacent)',
-                                                                        )}
-                                                                        :{' '}
-                                                                        <strong>
-                                                                            {
-                                                                                variant.break_adjacent
-                                                                            }
-                                                                        </strong>
-                                                                    </span>
-                                                                )}
-                                                                {variant.break_bounce !==
-                                                                    undefined && (
-                                                                    <span>
-                                                                        {ui(
-                                                                            'Break (Per Bounce)',
-                                                                        )}
-                                                                        :{' '}
-                                                                        <strong>
-                                                                            {
-                                                                                variant.break_bounce
-                                                                            }
-                                                                        </strong>
-                                                                    </span>
-                                                                )}
-
-                                                                {variant.break_aoe !==
-                                                                    undefined && (
-                                                                    <span>
-                                                                        {ui(
-                                                                            'Break (AoE)',
-                                                                        )}
-                                                                        :{' '}
-                                                                        <strong>
-                                                                            {
-                                                                                variant.break_aoe
-                                                                            }
-                                                                        </strong>
-                                                                    </span>
+                                                                            :{' '}
+                                                                            <strong>
+                                                                                {
+                                                                                    item.value
+                                                                                }
+                                                                            </strong>
+                                                                        </span>
+                                                                    ),
                                                                 )}
                                                             </div>
                                                         )}

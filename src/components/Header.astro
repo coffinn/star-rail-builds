@@ -200,20 +200,11 @@ const isInfoCurrent = infoLinks.some((link) => link.isCurrent);
     data-feedback-widget
     data-feedback-lang={currentLang}
 >
-    <SpeedDial />
+    <SpeedDial locale={locale} />
 
-    <SearchModal
-        locale={locale}
-        lang={currentLang}
-    />
+    <SearchModal locale={locale} lang={currentLang} />
 
-    {
-        features.feedback && (
-            <FeedbackModal
-                lang={currentLang}
-            />
-        )
-    }
+    {features.feedback && <FeedbackModal lang={currentLang} />}
 </div>
 
 <script>

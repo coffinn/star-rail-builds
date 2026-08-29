@@ -22,7 +22,11 @@ export type CharacterAbilityVariant = {
 
     description?: string;
     description_template?: string;
+    participant_id?: number | string;
 
+    break_first_hit?: number | string;
+    break_final_hit?: number | string;
+    break_total?: number | string;
     scaling?: Record<
         string,
         Array<number | string>
@@ -45,7 +49,11 @@ export type CharacterAbility = {
     break_adjacent?: number | string;
     break_bounce?: number | string;
     break_aoe?: number | string;
+    participant_id?: number | string;
 
+    break_first_hit?: number | string;
+    break_final_hit?: number | string;
+    break_total?: number | string;
     description?: string;
     min_level?: number;
     max_level?: number;
