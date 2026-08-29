@@ -187,7 +187,7 @@
             },
             "variants": [
                 {
-                    "type": "Joint Talent",
+                    "type": "Talent",
                     "name": "Freeform Tohsaka Style",
                     "tag": "AoE",
                     "energy_gain": 10,
