@@ -130,7 +130,7 @@
     "talent": {
       "type": "Talent",
       "name": "Youth: Halcyon Evermore",
-      "tag": "Enhance",
+      "tag": "AoE",
       "energy_gain": 10,
       "break_aoe": 10,
       "min_level": 1,
