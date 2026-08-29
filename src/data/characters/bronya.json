@@ -49,7 +49,7 @@
             "min_level": 1,
             "max_level": 12,
             "default_level": 10,
-            "description_template": "Increases the ATK of all allies by {{scalin1}}%, and increases their CRIT DMG equal to {{scalin2g}}% of Bronya's CRIT DMG plus {{scaling3}}% for 2 turn(s).",
+            "description_template": "Increases the ATK of all allies by {{scaling1}}%, and increases their CRIT DMG equal to {{scaling2}}% of Bronya's CRIT DMG plus {{scaling3}}% for 2 turn(s).",
             "scaling": {
                 "scaling1": [33,35.2,37.4,39.6,41.8,44,46.75,49.5,52.25,55,57.2,59.4,61.6,63.8,66],
                 "scaling2": [12,12.4,12.8,13.2,13.6,14,14.5,15,15.5,16,16.4,16.8,17.2,17.6,18],
