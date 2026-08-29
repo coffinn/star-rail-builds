@@ -185,6 +185,8 @@
       "name": "Mistdance Manifest",
       "tag": "AoE",
       "break_aoe": 10,
+      "break_bounce": 10,
+      "break_total": 20,
       "min_level": 1,
       "max_level": 12,
       "default_level": 10,

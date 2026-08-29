@@ -71,7 +71,7 @@
       "tag": "AoE",
       "energy_cost": 120,
       "energy_gain": 5,
-      "break_adjacent": 20,
+      "break_aoe": 20,
 
       "min_level": 1,
       "max_level": 12,
@@ -130,7 +130,7 @@
       "name": "Busy as Tribbie",
       "tag": "AoE",
       "energy_gain": 5,
-      "break_adjacent": 5,
+      "break_aoe": 5,
 
       "min_level": 1,
       "max_level": 12,

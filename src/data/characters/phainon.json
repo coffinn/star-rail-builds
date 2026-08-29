@@ -31,7 +31,7 @@
                     "name": "Creation: Bloodthorn Ferry",
                     "tag": "Blast",
                     "break_main": 30,
-                    "break_aoe": 20,
+                    "break_adjacent": 20,
                     "description_template": "Gains 2 point(s) of \"Scourge\", dealing Physical DMG equal to {{main_damage}}% of Khaslana's ATK to one designated enemy and Physical DMG equal to {{adj_damage}}% of Khaslana's ATK to adjacent targets.",
                     "scaling": {
                         "main_damage": [125.0, 150.0, 175.0, 200.0, 225.0, 250.0, 275.0],
@@ -45,7 +45,7 @@
             "name": "Let There Be Light",
             "tag": "Blast",
             "break_main": 20,
-            "break_aoe": 10,
+            "break_adjacent": 10,
             "min_level": 1,
             "max_level": 12,
             "default_level": 10,
@@ -61,7 +61,8 @@
                     "name": "Calamity: Soulscorch Edict",
                     "tag": "Enhance",
                     "break_main": 10,
-                    "break_aoe": 5,
+                    "break_bounce": 5,
+                    "break_total": 30,
                     "description_template": "Gains \"Scourge\" by an amount equal to the number of enemies and 1 stack of \"Soulscorch,\" then causes all enemies to immediately take action. While in the \"Soulscorch\" state, Khaslana takes 75% reduced DMG. After an enemy target attacks or takes action, gains 1 more stack of \"Soulscorch.\" After said enemy targets finish their actions, immediately launches Counter, deals Physical DMG to all enemies equal to {{main_damage}}% of Khaslana's ATK, and additionally deals 4 instance(s) of DMG, with each instance being Physical DMG equal to {{bounce_damage}}% of Khaslana's ATK dealt to one random enemy. Afterward, \"Soulscorch\" is dispelled. Each \"Soulscorch\" stack increases the DMG multiplier of said Counter by 20% of its original multiplier value. DMG dealt through this ability is considered as Skill DMG. If \"Soulscorch\" is still active at the start of Khaslana's extra turn, immediately launches Counter.",
                     "scaling": {
                         "main_damage": [20.0, 22.0, 24.0, 26.0, 28.0, 30.0, 32.5, 35.0, 37.5, 40.0, 42.0, 44.0],
@@ -74,6 +75,7 @@
                 "tag": "Bounce",
                 "break_bounce": 3.33,
                 "break_aoe": 20,
+                "break_total": "73 (If cosumed 4 points of \"Scourge\")",
                 "description_template": "Dispels all debuffs on this unit, then deals Physical DMG equal to a max of {{total_damage}}% of Khaslana's ATK. For every 1 point of \"Scourge\" consumed, deals 4 instance(s) of DMG, with each instance being Physical DMG equal to {{bounce_damage}}% of Khaslana's ATK dealt to one random enemy. When consuming 4 point(s) of \"Scourge\", additionally deals Physical DMG equal to {{final_hit}}% of Khaslana's ATK, which is evenly distributed across all enemies.",
                 "scaling": {
                     "total_damage": [585.0, 643.5, 702.0, 760.5, 819.0, 877.5, 950.625, 1023.75, 1096.875, 1170.0, 1228.5, 1287.0],
@@ -125,8 +127,7 @@
         "technique": {
             "type": "Technique",
             "name": "Beginning of the End",
-            "tag": "Attack",
-            "break_main": 20,
+            "break": 20,
             "description": "While Phainon is in the team, increases Max Technique Points by 3. When actively using this Technique, consumes 2 Technique Points and immediately attacks all enemies within a certain range. After entering combat, regenerates 25 Energy for allies and gains 2 \"Scourge\" and 1 Skill Point(s). Deals Physical DMG equal to 200% of Phainon's ATK to all enemies at the start of each wave. If attacking a normal enemy, immediately defeats them without entering combat. No Technique Points are consumed if no enemies are hit."
         }
     },

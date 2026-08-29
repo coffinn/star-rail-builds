@@ -62,6 +62,7 @@
             "tag": "Single Target",
             "energy_cost": 130,
             "energy_gain": 5,
+            "break": 30,
             "min_level": 1,
             "max_level": 12,
             "default_level": 10,
@@ -86,7 +87,7 @@
         "technique": {
             "type": "Technique",
             "name": "Anticipator",
-            "tag": "Attack",
+            "break": 20,
             "description": "Immediately attacks the enemy. Upon entering battle, Luka deals Physical DMG equal to 50% of his ATK to a random single enemy with a 100% base chance to inflict his Skill's Bleed effect on the target. Then, Luka gains 1 additional stack of Fighting Will. Base Chance"
         }
     },

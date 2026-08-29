@@ -268,6 +268,7 @@
                 "name": "Wings Sweep the Ruins",
                 "tag": "Bounce",
                 "break_bounce": 5,
+                "break_total": 30,
                 "min_level": 1,
                 "max_level": 7,
                 "default_level": 6,

@@ -67,7 +67,9 @@
             "tag": "AoE",
             "energy_cost": 150,
             "energy_gain": 5,
-            "break": 4,
+            "break_bounce": 4,
+            "breal_final_hit": 4,
+            "break_total": 48,
             "min_level": 1,
             "max_level": 12,
             "default_level": 10,
@@ -146,7 +148,8 @@
                     "name": "Orbital Annihilation Pulse",
                     "tag": "AoE",
                     "energy_cost": 150,
-                    "break": 2,
+                    "break_aoe": 2,
+                    "break_bounce": 2,
                     "description_template": "Consumes 1 point of \"Source Energy\" to deal Fire DMG equal to {{damage}}% of Himeko • Nova's ATK to all enemies. When the current \"Source Energy\" is more than 1, for every 1 point(s) of \"Source Energy\" consumed, additionally deals 1 instance of Fire DMG equal to {{source_energy_damage}}% of Himeko • Nova's ATK to one random enemy.",
                     "scaling": {
                         "damage": [
@@ -226,7 +229,8 @@
                     "tag": "AoE",
                     "energy_gain": 18,
                     "break_aoe": 10,
-                    "break": 5,
+                    "break_bounce": 5,
+                    "break_total": "25 (Ally) / 30 (Self)",
                     "description_template": "Deals Fire DMG equal to {{damage}}% of Himeko • Nova's ATK to all enemies, and additionally deals 3 instances of DMG, with each instance dealing Fire DMG equal to {{additional_instance_damage}}% of Himeko • Nova's ATK to one random enemy. When used by Himeko • Nova, deals Fire DMG equal to {{himeko_damage}}% of Himeko • Nova's ATK to all enemies, and additionally deals 4 instances of DMG, with each instance dealing Fire DMG equal to {{himeko_instance_damage}}% of Himeko • Nova's ATK to one random enemy.\nIf the user is a Trailblaze Companions character other than Himeko • Nova, then depending on the user, Himeko • Nova additionally gains 1 of the Special Effects.\nThe extra Assist Skill via all Special Effects can be launched up to 2 time(s) per battle, and this count is reset after Himeko • Nova uses her Ultimate.",
                     "scaling": {
                         "damage": [

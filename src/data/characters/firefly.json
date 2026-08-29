@@ -69,6 +69,7 @@
       "name": "Order: Aerial Bombardment",
       "tag": "Single Target",
       "break": 20,
+      "energy_gain": "60% of Max Energy",
       "min_level": 1,
       "max_level": 12,
       "default_level": 10,

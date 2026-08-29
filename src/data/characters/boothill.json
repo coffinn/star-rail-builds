@@ -58,6 +58,7 @@
             "tag": "Single Target",
             "energy_cost": 115,
             "energy_gain": 5,
+            "break": 30,
             "min_level": 1,
             "max_level": 12,
             "default_level": 10,

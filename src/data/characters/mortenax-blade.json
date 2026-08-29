@@ -118,9 +118,9 @@
           "type": "Ultimate (Enhanced)",
           "name": "Tenax Per Ignem",
           "tag": "AoE",
-          "energy_gain": "5",
-          "break": "20",
-          "energy_cost": "160",
+          "energy_gain": 5,
+          "break_aoe": 20,
+          "energy_cost": 160,
           "min_level": 1,
           "max_level": 12,
           "default_level": 10,
@@ -172,7 +172,7 @@
     "technique": {
       "type": "Technique",
       "name": "Blade's Reach Spares None",
-      "tag": "",
+      "break": 20,
       "description": "Immediately attacks all enemies within a certain range. After entering combat, inflicts the Taunt state on all enemies for 1 turn and decreases DMG taken by this unit by 90% for 2 turn(s)."
     },
     "skill": {
@@ -181,6 +181,8 @@
       "tag": "AoE",
       "energy_gain": 30,
       "break_aoe": 10,
+      "break_bounce": 5,
+      "break_total": 30,
       "min_level": 1,
       "max_level": 12,
       "default_level": 10,

@@ -39,13 +39,11 @@
       "tag": "Blast",
       "energy_gain": 20,
       "break_main": 20,
-      "break_aoe": 10,
+      "break_adjacent": 10,
 
       "min_level": 1,
       "max_level": 7,
       "default_level": 6,
-
-      "note": "Cannot recover Skill Points. Active only while in the \"Hidden Hand\" state granted by Talent.",
 
       "description_template": "Deals Quantum DMG equal to {{main_damage}}% of Qingque's ATK to one designated enemy, and deals Quantum DMG equal to {{adjacent_damage}}% of Qingque's ATK to enemies adjacent to it. \"Cherry on Top!\" cannot recover Skill Points.",
 
@@ -59,7 +57,6 @@
       "type": "Skill",
       "name": "A Scoop of Moon",
       "tag": "Enhance",
-      "energy_gain": 0,
 
       "min_level": 1,
       "max_level": 12,
@@ -91,7 +88,7 @@
       "tag": "AoE",
       "energy_cost": 140,
       "energy_gain": 5,
-      "break_adjacent": 20,
+      "break_aoe": 20,
 
       "min_level": 1,
       "max_level": 12,
@@ -121,7 +118,6 @@
       "type": "Talent",
       "name": "Celestial Jade",
       "tag": "Enhance",
-      "energy_gain": 0,
 
       "min_level": 1,
       "max_level": 12,

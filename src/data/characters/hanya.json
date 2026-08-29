@@ -71,7 +71,7 @@
         "technique": {
             "type": "Technique",
             "name": "Netherworld Judgment",
-            "tag": "Attack",
+            "break": 20,
             "description": "Immediately attacks the enemy. After entering battle, applies Burden equivalent to that applied by the Skill to a random enemy."
         }
     },

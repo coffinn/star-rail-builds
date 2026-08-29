@@ -84,7 +84,7 @@
       "tag": "Single Target",
       "energy_cost": 120,
       "energy_gain": 5,
-
+      "break": 30,
       "min_level": 1,
       "max_level": 12,
       "default_level": 10,
@@ -115,7 +115,6 @@
     "technique": {
       "type": "Technique",
       "name": "Ack! Look at This Mess!",
-      "tag": "Attack",
       "break": 20,
 
       "description": "Immediately attacks the enemy. Upon entering battle, Hook deals Fire DMG equal to 50% of her ATK to a random enemy. In addition, there is a 100% base chance to inflict Burn on every enemy for 3 turn(s). \nWhen afflicted with Burn, enemies will take Fire DoT equal to 50% of Hook's ATK at the beginning of each turn."

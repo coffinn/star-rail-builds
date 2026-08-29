@@ -40,11 +40,12 @@
             "name": "Deaths are Legion, Regrets are None",
             "tag": "Blast",
             "energy_gain": 30,
-            "break": 30,
+            "break_main": 20,
+            "break_adjacent": 10,
             "min_level": 1,
             "max_level": 12,
             "default_level": 10,
-            "description_template": "Consumes HP by an amount equal to 50% of Mydei's current HP. Deals Imaginary DMG equal to {{healing_atk}}% of Mydei's Max HP to one designated enemy and Imaginary DMG equal to {{damage_side_targets}}% of Mydei's Max HP to adjacent targets. If the current HP is not sufficient, using Skill reduces Mydei's current HP to 1.",
+            "description_template": "Consumes HP by an amount equal to 50% of Mydei's current HP. Deals Imaginary DMG equal to {{damage_one_target}}% of Mydei's Max HP to one designated enemy and Imaginary DMG equal to {{damage_side_targets}}% of Mydei's Max HP to adjacent targets. If the current HP is not sufficient, using Skill reduces Mydei's current HP to 1.",
             "scaling": {
                 "damage_one_target": [
                     45,
@@ -81,7 +82,8 @@
                     "name": "Kingslayer Be King",
                     "tag": "Blast",
                     "energy_gain": 30,
-                    "break": 30,
+                    "break_main": 20,
+                    "break_adjacent": 10,
                     "description_template": "Consumes HP by an amount equal to 35% of Mydei's current HP. Deals Imaginary DMG equal to {{damage_one_target}}% of Mydei's Max HP to one enemy and Imaginary DMG equal to {{damage_adjacent}}% of Mydei's Max HP to adjacent targets. If the current HP is not sufficient, using Skill reduces Mydei's current HP to 1. This ability will be automatically used.",
                     "scaling": {
                         "damage_one_target": [
@@ -118,8 +120,9 @@
                     "type": "Skill (Enhanced)",
                     "name": "Godslayer be God",
                     "tag": "Blast",
-                    "energy_gain": 30,
-                    "break": 30,
+                    "energy_gain": 10,
+                    "break_main": 30,
+                    "break_adjacent": 20,
                     "description_template": "Consumes 150 point(s) of Charge. Deals Imaginary DMG equal to {{damage_one_target}}% of Mydei's Max HP to one enemy and Imaginary DMG equal to {{damage_adjacent}}% of Mydei's Max HP to adjacent targets. This ability will be automatically used. While this ability is in use, Charge cannot be accumulated.",
                     "scaling": {
                         "damage_one_target": [
@@ -157,10 +160,11 @@
         "ultimate": {
             "type": "Ultimate",
             "name": "Throne of Bones",
-            "tag33,": "Blast",
+            "tag,": "Blast",
             "energy_cost": 160,
             "energy_gain": 5,
-            "break": 20,
+            "break_main": 20,
+            "break_adjacent": 20,
             "min_level": 1,
             "max_level": 12,
             "default_level": 10,

@@ -97,7 +97,7 @@
       "tag": "AoE",
       "energy_cost": 135,
       "energy_gain": 5,
-      "break_adjacent": 20,
+      "break_aoe": 20,
 
       "min_level": 1,
       "max_level": 12,
@@ -127,7 +127,6 @@
       "type": "Talent",
       "name": "Bleak Breeds Bliss",
       "tag": "Heal",
-      "energy_gain": 0,
 
       "min_level": 1,
       "max_level": 12,

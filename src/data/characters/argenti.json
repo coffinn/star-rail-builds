@@ -62,8 +62,9 @@
                 "tag": "AoE",
                 "energy_cost": 180,
                 "energy_gain": 5,
-                "break": 10,
                 "break_aoe": 20,
+                "break_bounce": 5,
+                "break_total": 50,
                 "description_template": "Consumes 180 Energy and deals Physical DMG equal to {{first_hit}}% of Argenti's ATK to all enemies. And further deals DMG for 6 extra time(s), with each time dealing Physical DMG equal to {{bounce_hit}}% of Argenti's ATK to a random enemy.",
                 "scaling": {
                 "first_hit": [168.0, 179.2, 190.4, 201.6, 212.8, 224.0, 238.0, 252.0, 266.0, 280.0, 291.2, 302.4],

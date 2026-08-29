@@ -108,7 +108,7 @@
       "tag": "AoE",
       "energy_cost": 110,
       "energy_gain": 5,
-      "break": 20,
+      "break_aoe": 20,
 
       "min_level": 1,
       "max_level": 12,
@@ -241,7 +241,6 @@
     "technique": {
       "type": "Technique",
       "name": "Force Quit Program",
-      "tag": "Attack",
       "break": 20,
       "description": "Immediately attacks the enemy. After entering battle, deals Quantum DMG equal to 80% of Silver Wolf's ATK to all enemies and reduces Toughness regardless of Weakness Type. Enemies whose Weakness is Broken this way trigger the Quantum Weakness Break effect."
     }

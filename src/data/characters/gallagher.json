@@ -173,6 +173,7 @@
     "technique": {
       "type": "Technique",
       "name": "Artisan Elixir",
+      "break": 20,
       "description": "Immediately attacks the enemy. Upon entering battle, inflicts Besotted on all enemies, lasting for 2 turn(s). And deals Fire DMG equal to 50% of Gallagher's ATK to all enemies."
     }
   },

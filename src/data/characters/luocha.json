@@ -91,7 +91,7 @@
       "tag": "AoE",
       "energy_cost": 100,
       "energy_gain": 5,
-      "break": 20,
+      "break_aoe": 20,
 
       "min_level": 1,
       "max_level": 12,

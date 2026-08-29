@@ -68,7 +68,8 @@
                     "name": "Second Magic Experiment",
                     "tag": "Bounce",
                     "energy_gain": 30,
-                    "break": 20,
+                    "break_aoe": 20,
+                    "break_bounce": 2,
                     "description_template": "Deals Quantum DMG equal to {{aoe_damage}}% of Rin Tohsaka's ATK to all enemies. Then, consumes 3 point(s) of \"Gem Energy\" to deal additional Quantum DMG equal to {{bounce_damage}}% of Rin Tohsaka's ATK to one random enemy target. This repeats until \"Gem Energy\" is less than 3 or there are no enemy targets with current HP greater than 0, up to a maximum of 33 time(s). When used, if current Skill Points are greater than 2, consumes Skill Points until there are 2 point(s) left, immediately gaining 2 point(s) of \"Gem Energy\" for every 1 Skill Point consumed.",
                     "scaling": {
                         "aoe_damage": [
@@ -109,7 +110,8 @@
             "tag": "AoE",
             "energy_cost": 160,
             "energy_gain": 5,
-            "break": 20,
+            "break_main": 30,
+            "break_aoe": 20,
             "min_level": 1,
             "max_level": 12,
             "default_level": 10,
@@ -188,6 +190,8 @@
                     "type": "Joint Talent",
                     "name": "Freeform Tohsaka Style",
                     "tag": "AoE",
+                    "energy_gain": 10,
+                    "break_aoe": 20,
                     "description_template": "After Archer uses his Skill \"Caladbolg II: Fake Spiral Sword\" to attack, if there are 3 or fewer Skill Point(s) remaining or if \"Caladbolg II: Fake Spiral Sword\" has been actively used 5 times during the current \"Circuit Connection\" state, and the Joint Follow-Up ATK from \"Freeform Tohsaka Style\" has not been triggered, Rin Tohsaka and Archer will launch a Joint Follow-Up ATK on all enemies, dealing Quantum DMG equal to {{rin_damage}}% of Rin Tohsaka's ATK and {{archer_damage}}% of Archer's ATK respectively, and recovering 4 Skill Point(s) for allies. This Joint Follow-Up ATK can only trigger once. The trigger count resets when Rin Tohsaka's turn ends.",
                     "scaling": {
                         "rin_damage": [

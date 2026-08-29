@@ -52,7 +52,7 @@
                 "name": "Объятия потустороннего мира",
                 "tag": "Групповая атака",
                 "energy_gain": 5,
-                "break": 20,
+                "break_aoe": 20,
                 "energy_cost": 120,
                 "min_level": 1,
                 "max_level": 12,

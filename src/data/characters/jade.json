@@ -21,7 +21,7 @@
       "tag": "Blast",
       "energy_gain": 20,
       "break_main": 10,
-      "break_aoe": 5,
+      "break_adjacent": 5,
 
       "min_level": 1,
       "max_level": 7,
@@ -85,7 +85,7 @@
       "tag": "AoE",
       "energy_cost": 140,
       "energy_gain": 5,
-      "break_adjacent": 20,
+      "break_aoe": 20,
 
       "min_level": 1,
       "max_level": 12,
@@ -130,7 +130,7 @@
       "name": "Fang of Flare Flaying",
       "tag": "AoE",
       "energy_gain": 10,
-      "break_adjacent": 10,
+      "break_aoe": 10,
 
       "min_level": 1,
       "max_level": 12,

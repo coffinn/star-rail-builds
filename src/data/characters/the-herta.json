@@ -120,7 +120,6 @@
       "type": "Talent",
       "name": "Hand Them Over",
       "tag": "Enhance",
-      "energy_gain": 30,
       "min_level": 1,
       "max_level": 12,
       "default_level": 10,

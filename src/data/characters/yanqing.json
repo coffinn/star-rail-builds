@@ -78,7 +78,7 @@
       "tag": "Single Target",
       "energy_cost": 140,
       "energy_gain": 5,
-      "break": 20,
+      "break": 30,
 
       "min_level": 1,
       "max_level": 12,
@@ -214,7 +214,6 @@
       "type": "Technique",
       "name": "The One True Sword",
       "tag": "Enhance",
-      "break": 0,
       "description": "After using his Technique, at the start of the next battle, Yanqing deals 30% more DMG for 2 turn(s) to enemies whose current HP percentage is 50% or higher."
     }
   },

@@ -98,6 +98,7 @@
       "energy_gain": 5,
       "break_aoe": 40,
       "break_bounce": 2,
+      "break_total": 60,
       "energy_cost": 360,
       "min_level": 1,
       "max_level": 12,

@@ -39,7 +39,7 @@
       "type": "Skill",
       "name": "Discipline: Final Verdict",
       "tag": "Blast",
-      "energy_gain": "30",
+      "energy_gain": 30,
       "break_main": 20,
       "break_adjacent": 10,
       "min_level": 1,
@@ -84,6 +84,7 @@
       "energy_gain": 5,
       "break_aoe": 20,
       "break_bounce": 5,
+      "break_total": 45,
       "energy_cost": 240,
       "min_level": 1,
       "max_level": 12,
@@ -123,7 +124,7 @@
     "technique": {
       "type": "Technique",
       "name": "Petalfall: Floral Reminiscence",
-      "tag": "",
+      "break": 20,
       "description": "Immediately attacks all enemies within a certain range. After entering combat, deals Physical DMG equal to 100% of Evanescia's ATK to all enemies and gains 20 point(s) of \"Certified Banger.\""
     },
     "talent": {

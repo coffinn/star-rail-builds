@@ -46,6 +46,7 @@
             "type": "Ultimate",
             "name": "Shape of Taixu: Dawn Herald",
             "tag": "Single Target",
+            "break": 30,
             "energy_cost": 120,
             "energy_gain": 5,
             "min_level": 1,
@@ -72,7 +73,7 @@
         "technique": {
             "type": "Technique",
             "name": "Cloudfencer Art: Warcry",
-            "tag": "Attack",
+            "break": 20,
             "description": "Immediately attacks the enemy. Upon entering battle, Sushang deals Physical DMG equal to 80% of her ATK to all enemies."
         }
     },

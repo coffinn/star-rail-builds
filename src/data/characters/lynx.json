@@ -100,7 +100,6 @@
       "type": "Talent",
       "name": "Outdoor Survival Experience",
       "tag": "Heal",
-      "energy_gain": 0,
 
       "min_level": 1,
       "max_level": 12,

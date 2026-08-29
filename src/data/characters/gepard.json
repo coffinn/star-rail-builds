@@ -17,7 +17,7 @@
       "type": "Basic ATK",
       "name": "Fist of Conviction",
       "tag": "Single Target",
-      "energy_gain": 10,
+      "energy_gain": 20,
       "break": 10,
       "min_level": 1,
       "max_level": 7,

@@ -138,8 +138,8 @@
       "name": "Shot Loaded Right",
       "tag": "Bounce",
       "energy_gain": 7,
-      "break_bounce": 3,
-
+      "break_bounce": 3.3,
+      "break_total": 24.1,
       "min_level": 1,
       "max_level": 12,
       "default_level": 10,

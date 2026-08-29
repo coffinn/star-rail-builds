@@ -109,7 +109,7 @@
       "name": "War-Flaming Lance",
       "tag": "AoE",
       "energy_gain": 5,
-      "break_aoe": 220,
+      "break_aoe": 20,
       "energy_cost": 120,
       "min_level": 1,
       "max_level": 12,

@@ -16,7 +16,6 @@
             "type": "Basic ATK",
             "name": "Trilateral Wiltcross",
             "tag": "Single Target",
-            "energy_gain": 0,
             "break": 10,
             "min_level": 1,
             "max_level": 7,

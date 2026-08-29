@@ -16,7 +16,7 @@
     "technique": {
       "type": "Technique",
       "name": "Mercy Is Not Forgiveness",
-      "tag": "Attack",
+      "break": 20,
       "description": "Immediately attacks all enemies within a set range. After entering battle, deals Lightning DMG equal to 50% of Kafka's ATK to all enemies, with a 100% base chance to inflict Shock equivalent to that applied by her Ultimate on every enemy target for 2 turn(s)."
     },
     "basic": {
@@ -145,7 +145,7 @@
         "name": "Twilight Trill",
         "tag": "AoE",
         "energy_gain": 5,
-        "break": 20,
+        "break_aoe": 20,
         "energy_cost": 120,
         "min_level": 1,
         "max_level": 12,
