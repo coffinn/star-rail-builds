@@ -1,0 +1,331 @@
+{
+  "id": "aglaea",
+  "name": "Aglaea",
+  "rarity": 5,
+  "element": "lightning",
+  "path": "remembrance",
+  "version_released": "3.0",
+  "max_energy": 350,
+  "level_80_stats": {
+    "hp": 1241,
+    "atk": 698,
+    "def": 485,
+    "spd": 102
+  },
+  "abilities": {
+    "basic": {
+      "type": "Tấn Công Thường",
+      "name": "Mật Hoa Có Gai",
+      "tag": "Đánh Đơn",
+      "energy_gain": 20,
+      "break": 10,
+      "min_level": 1,
+      "max_level": 7,
+      "default_level": 6,
+      "description_template": "Gây Sát Thương Lôi cho 1 kẻ địch chỉ định tương đương {{scaling1}}% Tấn Công của Aglaea.",
+      "scaling": {
+        "scaling1": [
+          50,
+          60,
+          70,
+          80,
+          90,
+          100,
+          110
+        ]
+      },
+      "variants": [
+        {
+          "type": "Tấn Công Thường Cường Hóa",
+          "name": "Ngàn Nụ Hôn Trên Lưỡi Kiếm",
+          "tag": "Khuếch Tán",
+          "energy_gain": 20,
+          "break_main": 20,
+          "break_adjacent": 10,
+          "min_level": 1,
+          "max_level": 7,
+          "default_level": 6,
+          "description_template": "Aglaea và Thợ May thi triển Tấn Công Phối Hợp lên mục tiêu, lần lượt gây cho mục tiêu Sát Thương Lôi bằng {{scaling1}}% Tấn Công của Aglaea và {{scaling1}}% Tấn Công của Thợ May. Đồng thời gây cho mục tiêu lân cận Sát Thương Lôi bằng {{scaling2}}% Tấn Công của Aglaea và {{scaling2}}% Tấn Công của Thợ May.\nNgàn Nụ Hôn Trên Lưỡi Kiếm không thể hồi Điểm Chiến Kỹ.",
+          "scaling": {
+            "scaling1": [
+              100,
+              120,
+              140,
+              160,
+              180,
+              200,
+              220
+            ],
+            "scaling2": [
+              45,
+              54,
+              63,
+              72,
+              81,
+              90,
+              99
+            ]
+          }
+        }
+      ]
+    },
+    "skill": {
+      "type": "Chiến Kỹ",
+      "name": "Lên Nào, Danh Tiếng Thăng Hoa",
+      "tag": "Triệu Hồi",
+      "energy_gain": 20,
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "Giúp Thợ May Hồi HP bằng {{scaling1}}% Giới Hạn HP của mình. Nếu Thợ May không ở trong trận, thì sẽ triệu hồi Linh Hồn Ký Ức Thợ May, và khiến bản thân lập tức hành động.",
+      "scaling": {
+        "scaling1": [
+          25,
+          27.5,
+          30,
+          32.5,
+          35,
+          37.5,
+          40.63,
+          43.75,
+          46.88,
+          50,
+          52.5,
+          55,
+          57.5,
+          60,
+          62.5
+        ]
+      }
+    },
+    "talent": {
+      "type": "Thiên Phú",
+      "name": "Ngón Tay Hoa Hồng Vàng",
+      "tag": "Cường Hóa",
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "Thợ May Linh Hồn Ký Ức ban đầu có Tốc Độ bằng 35% Tốc Độ của Aglaea và Giới Hạn HP bằng {{scaling2}}% Giới Hạn HP của Aglaea +{{scaling3}}. Khi Thợ May trong trận, Aglaea tấn công sẽ khiến mục tiêu rơi vào trạng thái Đường Khâu, sau khi tấn công kẻ địch ở trạng thái Đường Khâu sẽ gây thêm Sát Thương Lôi Kèm Theo bằng {{scaling1}}% Tấn Công của Aglaea. Đường Khâu chỉ có hiệu lực với mục tiêu được thi triển mới nhất.",
+      "scaling": {
+        "scaling1": [
+          12,
+          13.8,
+          15.6,
+          17.4,
+          19.2,
+          21,
+          23.25,
+          25.5,
+          27.75,
+          30,
+          31.8,
+          33.6
+        ],
+        "scaling2": [
+          44,
+          46.75,
+          49.5,
+          52.25,
+          55,
+          57.2,
+          59.4,
+          61.6,
+          63.8,
+          66,
+          68.2,
+          70.4
+        ],
+        "scaling3": [
+          180,
+          247.5,
+          315,
+          382.5,
+          450,
+          504,
+          558,
+          612,
+          666,
+          720,
+          774,
+          828
+        ]
+      }
+    },
+    "technique": {
+      "type": "Bí Kỹ",
+      "name": "Ngôi Sao Vụn Vỡ",
+      "break": 20,
+      "description": "Triệu hồi Linh Hồn Ký Ức Thợ May và cùng tấn công về phía trước. Sau khi vào chiến đấu, hồi 30 điểm Năng Lượng, đồng thời gây Sát Thương Lôi bằng 100% Tấn Công của Aglaea cho toàn bộ mục tiêu phe địch, sau đó khiến mục tiêu phe địch ngẫu nhiên rơi vào trạng thái \"Đường Khâu\"."
+    },
+    "ultimate": {
+      "type": "Tuyệt Kỹ",
+      "name": "Cùng Nhảy Múa Nào, Thợ May Định Mệnh",
+      "tag": "Cường Hóa",
+      "energy_gain": 5,
+      "energy_cost": 350,
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "Triệu hồi Linh Hồn Ký Ức Thợ May, nếu Thợ May đã ở trong trận, thì sẽ hồi HP của đối tượng này đến mức tối đa. Aglaea vào trạng thái Tư Thế Tối Cao và khiến bản thân lập tức hành động.\nỞ trạng thái Tư Thế Tối Cao, Aglaea sẽ nhận được số tầng tăng Tốc Độ của Thiên Phú Linh Hồn Ký Ức Thợ May, mỗi tầng khiến Tốc Độ của bản thân tăng {{scaling1}}%, Cường Hóa Tấn Công Thường thành Ngàn Nụ Hôn Trên Lưỡi Kiếm và không thể thi triển Chiến Kỹ, Thợ May miễn dịch Hiệu Ứng Xấu loại khống chế.\nKhi trên thứ tự hành động xuất hiện đếm ngược, thì đếm ngược cố định có 100 Tốc Độ, trong thời gian vẫn còn đếm ngược thi triển Tuyệt Kỹ lần nữa sẽ tái lập đếm ngược, Thợ May sẽ tự hủy khi bắt đầu hiệp. Khi Thợ May biến mất, Aglaea sẽ giải trừ trạng thái Tư Thế Tối Cao.",
+      "scaling": {
+        "scaling1": [
+          10,
+          10.5,
+          11,
+          11.5,
+          12,
+          12.5,
+          13.125,
+          13.75,
+          14.375,
+          15,
+          15.5,
+          16
+        ]
+      }
+    }
+  },
+  "memosprite": {
+    "name": "Thợ May",
+    "initial_spd": "35% Tốc Độ của Aglaea",
+    "hp_source": "66% Giới Hạn HP của Aglaea cộng 720",
+    "skills": {
+      "memosprite_skill": {
+        "type": "Kỹ Năng Linh Hồn Ký Ức",
+        "name": "Bẫy Gai",
+        "tag": "Khuếch Tán",
+        "energy_gain": 10,
+        "break_main": 10,
+        "break_adjacent": 5,
+        "min_level": 1,
+        "max_level": 7,
+        "default_level": 6,
+        "description_template": "Gây cho 1 kẻ địch Sát Thương Lôi tương đương {{scaling1}}% Tấn Công, gây cho mục tiêu lân cận Sát Thương Lôi tương đương {{scaling1}}% Tấn Công.",
+        "scaling": {
+          "scaling1": [
+            55,
+            66,
+            77,
+            88,
+            99,
+            110,
+            121,
+            132,
+            143
+          ],
+          "scaling2": [
+            33,
+            39.6,
+            46.2,
+            52.8,
+            59.4,
+            66,
+            72.6,
+            79.2,
+            85.8
+          ]
+        }
+      },
+      "memosprite_talent": {
+        "type": "Thiên Phú Linh Hồn Ký Ức",
+        "name": "Thân Thể Rèn Từ Nước Mắt",
+        "tag": "Cường Hóa",
+        "min_level": 1,
+        "max_level": 7,
+        "default_level": 6,
+        "description_template": "Sau khi tấn công kẻ địch ở trạng thái Đường Khâu, sẽ khiến Tốc Độ của bản thân tăng {{scaling1}} điểm, hiệu ứng này tối đa cộng dồn 6 tầng. Khi Thợ May hành động sẽ tự động thi triển Bẫy Gai, ưu tiên tấn công kẻ địch ở trạng thái Đường Khâu.",
+        "scaling": {
+          "scaling1": [
+            44,
+            46.2,
+            48.4,
+            50.6,
+            52.8,
+            55,
+            57.2
+          ]
+        },
+        "variants": [
+          {
+            "type": "Thiên Phú Linh Hồn Ký Ức",
+            "name": "Mùa Hè Lao Vun Vút",
+            "tag": "Cường Hóa",
+            "min_level": 1,
+            "max_level": 7,
+            "default_level": 6,
+            "description": "Khi Thợ May được triệu hồi, khiến bản thân Ưu Tiên Hành Động 100%."
+          },
+          {
+            "type": "Thiên Phú Linh Hồn Ký Ức",
+            "name": "Cỏ Khô Nở Hoa",
+            "tag": "Cường Hóa",
+            "min_level": 1,
+            "max_level": 7,
+            "default_level": 6,
+            "description": "Khi Thợ May biến mất, khiến Aglaea hồi 20 điểm Năng Lượng."
+          }
+        ]
+      }
+    }
+  },
+  "major_traces": {
+    "2": {
+      "name": "Trừng Phạt Tầm Nhìn Hạn Hẹp",
+      "description": "Khi ở trạng thái Tư Thế Tối Cao, Tấn Công của Aglaea và Thợ May tăng. Mức tăng bằng 720% Tốc Độ của Aglaea + 360% Tốc Độ của Thợ May."
+    },
+    "4": {
+      "name": "Kết Thúc Dệt Vận Mệnh",
+      "description": "Khi Thợ May biến mất, số tầng tăng Tốc Độ của Thiên Phú Linh Hồn Ký Ức tối đa bảo lưu 1 tầng. Khi Thợ May bị triệu hồi lần nữa, sẽ nhận được hiệu ứng tăng Tốc Độ số tầng tương ứng."
+    },
+    "6": {
+      "name": "Mặt Trời Lao Vun Vút",
+      "description": "Khi bắt đầu chiến đấu, nếu Năng Lượng của bản thân không đủ 50%, sẽ hồi Năng Lượng của bản thân đến 50%."
+    }
+  },
+  "stat_bonuses": [
+    {
+      "stat": "Phòng Thủ",
+      "value": "+12.5%"
+    },
+    {
+      "stat": "Tỷ Lệ Bạo Kích",
+      "value": "+12%"
+    },
+    {
+      "stat": "Sát Thương - Lôi",
+      "value": "+22.4%"
+    }
+  ],
+  "eidolons": [
+    {
+      "level": 1,
+      "name": "Trôi Dạt Theo Sao Kim",
+      "description": "Sát thương mà kẻ địch ở trạng thái Đường Khâu phải chịu tăng 15%, Aglaea hoặc Thợ May sau khi tấn công mục tiêu này, sẽ hồi thêm 20 điểm Năng Lượng."
+    },
+    {
+      "level": 2,
+      "name": "Du Hành Trên Mi Mắt Vận Mệnh",
+      "description": "Khi Aglaea hoặc Thợ May hành động, Sát Thương gây ra của Aglaea và Thợ May sẽ bỏ qua 14% Phòng Thủ của mục tiêu, hiệu ứng này tối đa cộng dồn 3 tầng, duy trì đến khi đơn vị bất kỳ ngoại trừ bản thân và Thợ May chủ động thi triển kỹ năng."
+    },
+    {
+      "level": 3,
+      "name": "Món Quà Sương Đọng",
+      "description": "Cấp Chiến Kỹ +2, tối đa không quá cấp 15; Cấp Tấn Công Thường +1, tối đa không quá cấp 10; Cấp Thiên Phú Linh Hồn Ký Ức +1, tối đa không vượt quá cấp 10."
+    },
+    {
+      "level": 4,
+      "name": "Sự Lấp Lánh Trong Đá Cẩm Thạch",
+      "description": "Giới hạn số tầng hiệu ứng tăng Tốc Độ của Thiên Phú Linh Hồn Ký Ức tăng 1 tầng. Sau khi Aglaea thi triển tấn công cũng có thể khiến Thợ May nhận được hiệu ứng tăng Tốc Độ của Thiên Phú Linh Hồn Ký Ức."
+    },
+    {
+      "level": 5,
+      "name": "Thợ Dệt Khổ Nạn Tăm Tối",
+      "description": "Cấp Tuyệt Kỹ +2, tối đa không quá cấp 15; Cấp Thiên Phú +2, tối đa không quá cấp 15; Cấp kỹ năng của Linh Hồn Ký Ức +1, tối đa không vượt quá cấp 10."
+    },
+    {
+      "level": 6,
+      "name": "Tơ Vàng Đầy Khuyết Vô Thường",
+      "description": "Khi Aglaea ở trạng thái Tư Thế Tối Cao, Xuyên Kháng Lôi của bản thân và Thợ May tăng 20%. Khi Aglaea và Thợ May có tốc độ cao hơn 160/240/320 điểm, sát thương gây ra bởi Tấn Công Phối Hợp sẽ tăng 10%/30%/60%."
+    }
+  ]
+}

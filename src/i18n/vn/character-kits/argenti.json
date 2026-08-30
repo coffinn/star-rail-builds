@@ -1,0 +1,155 @@
+{
+    "id": "argenti",
+    "name": "Argenti",
+    "rarity": 5,
+    "element": "physical",
+    "path": "erudition",
+    "version_released": "1.5",
+    "max_energy": 180,
+    "level_80_stats": {
+        "hp": 1048,
+        "atk": 737,
+        "def": 364,
+        "spd": 103
+    },
+    "abilities": {
+        "basic": {
+            "type": "Tấn Công Thường",
+            "name": "Hương Thơm Bay Xa",
+            "tag": "Đánh Đơn",
+            "energy_gain": 20,
+            "break": 10,
+            "min_level": 1,
+            "max_level": 7,
+            "default_level": 6,
+            "description_template": "Gây Sát Thương Vật Lý cho 1 kẻ địch chỉ định tương đương {{damage}}% Tấn Công của Argenti.",
+            "scaling": {
+                "damage": [50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0]
+            }
+        },
+        "skill": {
+            "type": "Chiến Kỹ",
+            "name": "Công Lý, Nở Rộ Từ Đây",
+            "tag": "Đánh Lan",
+            "energy_gain": 30,
+            "break_aoe": 10,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Gây Sát Thương Vật Lý cho toàn bộ kẻ địch tương đương {{skill_damage}}% Tấn Công của Argenti.",
+            "scaling": {
+                "skill_damage": [60.0, 66.0, 72.0, 78.0, 84.0, 90.0, 97.5, 105.0, 112.5, 120.0, 126.0, 132.0]
+            }
+        },
+        "ultimate": {
+            "type": "Tuyệt Kỹ",
+            "name": "Khu Vườn Ban Tặng Cái Đẹp",
+            "tag": "Đánh Lan",
+            "energy_cost": 90,
+            "energy_gain": 5,
+            "break_aoe": 20,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Tiêu hao 90 điểm Năng Lượng, gây Sát Thương Vật Lý cho toàn bộ kẻ địch tương đương {{ult_damage}}% Tấn Công của Argenti.",
+            "scaling": {
+                "ult_damage": [96.0, 102.4, 108.8, 115.2, 121.6, 128.0, 136.0, 144.0, 152.0, 160.0, 166.4, 172.8]
+            },
+            "variants": [
+                {
+                "type": "Tuyệt Kỹ",
+                "name": "Ở Vườn Của Ta, Trao Tặng Công Đức",
+                "tag": "Đánh Lan",
+                "energy_cost": 180,
+                "energy_gain": 5,
+                "break_aoe": 20,
+                "break_bounce": 5,
+                "break_total": 50,
+                "description_template": "Tiêu hao 180 điểm Năng Lượng, gây Sát Thương Vật Lý lên toàn bộ địch tương đương {{first_hit}}% Tấn Công của Argenti, đồng thời gây thêm 6 lần sát thương, mỗi lần sát thương gây ra Sát Thương Vật Lý lên 1 kẻ địch ngẫu nhiên tương đương {{bounce_hit}}% Tấn Công của Argenti.",
+                "scaling": {
+                "first_hit": [168.0, 179.2, 190.4, 201.6, 212.8, 224.0, 238.0, 252.0, 266.0, 280.0, 291.2, 302.4],
+                "bounce_hit": [57.0, 60.8, 64.6, 68.4, 72.2, 76.0, 80.75, 85.5, 90.25, 95.0, 98.8, 102.6]
+                }
+                }
+            ]
+        },
+        "talent": {
+            "type": "Thiên Phú",
+            "name": "Khách Thể Cao Thượng",
+            "tag": "Cường Hóa",
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Khi thi triển Tấn Công Thường, Chiến Kỹ, Tuyệt Kỹ, mỗi lần đánh trúng 1 kẻ địch sẽ hồi 3 điểm Năng Lượng cho Argenti đồng thời nhận 1 tầng \"Nâng Cấp\", khiến Argenti tăng {{crit_buff}}% Tỷ Lệ Bạo Kích, hiệu ứng này tối đa cộng dồn 10 tầng.",
+            "scaling": {
+                "crit_buff": [1.0, 1.15, 1.3, 1.45, 1.6, 1.75, 1.9375, 2.125, 2.3125, 2.5, 2.65, 2.8]
+            }
+        },
+        "technique": {
+            "type": "Bí Kỹ",
+            "name": "Tuyên Ngôn Thuần Khiết",
+            "tag": "Quấy Nhiễu",
+            "description": "Sau khi dùng Bí Kỹ, khiến kẻ địch trong khu vực nhất định rơi vào trạng thái Choáng 10 giây, kẻ địch ở trạng thái Choáng sẽ không chủ động tấn công mục tiêu phe ta.\nNếu chủ động tấn công kẻ địch ở trạng thái Choáng, khi vào chiến đấu, sẽ gây Sát Thương Vật Lý lên toàn bộ địch tương đương 80% Tấn Công của Argenti, đồng thời khiến Argenti hồi 15 điểm Năng Lượng."
+        }
+    },
+    "major_traces": {
+        "2": {
+            "name": "Thành Kính",
+            "description": "Khi bắt đầu hiệp, nhận ngay 1 tầng \"Nâng Cấp\"."
+        },
+        "4": {
+            "name": "Khảng Khái",
+            "description": "Khi kẻ địch vào chiến đấu, bản thân hồi ngay 2 điểm Năng Lượng."
+        },
+        "6": {
+            "name": "Dũng Khí",
+            "description": "Tăng 15% sát thương gây ra cho kẻ địch có Phần Trăm HP hiện tại nhỏ hơn hoặc bằng 50%."
+        }
+    },
+    "stat_bonuses": [
+        {
+            "stat": "HP",
+            "value": "+10%"
+        },
+        {
+            "stat": "Tấn Công",
+            "value": "+28%"
+        },
+        {
+            "stat": "Sát Thương - Vật Lý",
+            "value": "+14.4%"
+        }
+    ],
+    "eidolons": [
+        {
+            "level": 1,
+            "name": "Vết Khuyết Của Vương Quốc Cái Đẹp",
+            "description": "Mỗi tầng \"Nâng Cấp\" sẽ tăng thêm 4% Sát Thương Bạo Kích."
+        },
+        {
+            "level": 2,
+            "name": "Sự Khiêm Nhường Của Đá Mã Não",
+            "description": "Khi thi triển Tuyệt Kỹ, nếu số lượng kẻ địch từ 3 trở lên, Tấn Công tăng 40%, duy trì 1 hiệp."
+        },
+        {
+            "level": 3,
+            "name": "Vinh Quang Con Đường Gai",
+            "description": "Cấp Chiến Kỹ +2, tối đa không quá cấp ; Cấp Thiên Phú +2, tối đa không quá cấp 15."
+        },
+        {
+            "level": 4,
+            "name": "Hiến Dâng Kèn Lệnh",
+            "description": "Khi bắt đầu chiến đấu, nhận 2 tầng \"Nâng Cấp\", đồng thời khiến giới hạn cộng dồn hiệu ứng của Thiên Phú tăng 2 tầng."
+        },
+        {
+            "level": 5,
+            "name": "Tuyết, Nơi Nào Đó Trên Vũ Trụ",
+            "description": "Cấp Tuyệt Kỹ +2, tối đa không quá cấp ; Cấp Tấn Công Thường +1, tối đa không quá cấp 10."
+        },
+        {
+            "level": 6,
+            "name": "Ánh Hào Quang Của \"Bạn\"",
+            "description": "Khi thi triển Tuyệt Kỹ, bỏ qua 30% Phòng Thủ của kẻ địch."
+        }
+    ]
+}

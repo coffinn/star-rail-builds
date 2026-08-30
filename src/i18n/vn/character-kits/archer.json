@@ -1,0 +1,189 @@
+{
+    "id": "archer",
+    "name": "Archer",
+    "rarity": 5,
+    "element": "quantum",
+    "path": "hunt",
+    "version_released": "3.4",
+    "collaboration": "Fate/stay night: Unlimited Blade Works",
+    "max_energy": 220,
+    "max_charge": 4,
+    "level_80_stats": {
+        "hp": 1011,
+        "atk": 739,
+        "def": 422,
+        "spd": 105
+    },
+    "abilities": {
+        "basic": {
+            "type": "Tấn Công Thường",
+            "name": "Kanshou Và Bakuya",
+            "tag": "Đánh Đơn",
+            "energy_gain": 20,
+            "break": 10,
+            "min_level": 1,
+            "max_level": 7,
+            "default_level": 6,
+            "description_template": "Gây Sát Thương Lượng Tử bằng {{damage}}% Tấn Công của Archer cho 1 kẻ địch chỉ định.",
+            "scaling": {
+                "damage": [
+                    50,
+                    60,
+                    70,
+                    80,
+                    90,
+                    100,
+                    110
+                ]
+            }
+        },
+        "skill": {
+            "type": "Chiến Kỹ",
+            "name": "Caladbolg II: Kiếm Xoắn Ốc Giả",
+            "tag": "Đánh Đơn",
+            "energy_gain": 30,
+            "break": 20,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Vào trạng thái Kết Nối Mạch. Gây Sát Thương Lượng Tử bằng {{damage}}% Tấn Công của Archer cho 1 kẻ địch chỉ định. Sau khi thi triển Chiến Kỹ ở trạng thái Kết Nối Mạch sẽ không kết thúc hiệp, và khiến sát thương Chiến Kỹ Archer gây ra tăng 60,0%—108,0%, hiệu ứng này có thể cộng dồn 2 tầng, duy trì đến khi thoát trạng thái Kết Nối Mạch. Sau khi chủ động thi triển 5 lần Chiến Kỹ hoặc Điểm Chiến Kỹ không đủ để thi triển Chiến Kỹ lần nữa, sẽ thoát khỏi trạng thái Kết Nối Mạch. Sau khi tất cả mục tiêu phe địch trong mỗi đợt bị tiêu diệt, sẽ thoát khỏi trạng thái Kết Nối Mạch.",
+            "scaling": {
+                "damage": [
+                    180.0,
+                    198.0,
+                    216.0,
+                    234.0,
+                    252.0,
+                    270.0,
+                    292.5,
+                    315.0,
+                    337.5,
+                    360.0,
+                    378.0,
+                    396.0
+                ]
+            }
+        },
+        "ultimate": {
+            "type": "Tuyệt Kỹ",
+            "name": "Vô Hạn Kiếm Chế",
+            "tag": "Đánh Đơn",
+            "energy_cost": 220,
+            "energy_gain": 5,
+            "break": 30,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Gây Sát Thương Lượng Tử bằng {{damage}}% Tấn Công của Archer cho 1 kẻ địch chỉ định, và nhận 2 điểm Nạp Năng Lượng, tối đa có thể có 4 điểm Nạp Năng Lượng.",
+            "scaling": {
+                "damage": [
+                    500.0,
+                    550.0,
+                    600.0,
+                    650.0,
+                    700.0,
+                    750.0,
+                    812.5,
+                    875.0,
+                    937.5,
+                    1000.0,
+                    1060.0,
+                    1120.0
+                ]
+            }
+        },
+        "talent": {
+            "type": "Thiên Phú",
+            "name": "Tâm Nhãn (Thật)",
+            "tag": "Đánh Đơn",
+            "energy_gain": 5,
+            "break": 10,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Sau khi đồng đội của Archer thi triển tấn công lên mục tiêu phe địch, Archer tiêu hao 1 điểm Nạp Năng Lượng, lập tức phát động Đòn Đánh Theo Sau lên mục tiêu chính, gây Sát Thương Lượng Tử bằng {{damage}}% Tấn Công của Archer, đồng thời hồi 1 điểm Chiến Kỹ. Nếu mục tiêu bị tiêu diệt trước khi thi triển Đòn Đánh Theo Sau lần này, sẽ phát động Đòn Đánh Theo Sau lên 1 kẻ địch ngẫu nhiên.",
+            "scaling": {
+                "damage": [
+                    100.0,
+                    110.0,
+                    120.0,
+                    130.0,
+                    140.0,
+                    150.0,
+                    162.5,
+                    175.0,
+                    187.5,
+                    200.0,
+                    210.0,
+                    220.0
+                ]
+            }
+        },
+        "technique": {
+            "type": "Bí Kỹ",
+            "name": "Thiên Lý Nhãn",
+            "break": 20,
+            "description": "Lập tức tấn công kẻ địch, sau khi vào chiến đấu sẽ gây cho toàn phe địch Sát Thương Lượng Tử bằng 200% Tấn Công của Archer, đồng thời nhận 1 điểm Nạp Năng Lượng."
+        }
+    },
+    "major_traces": {
+        "2": {
+            "name": "Ma Thuật Chiếu Ảnh",
+            "description": "Khi Archer trong trận, giới hạn Điểm Chiến Kỹ tăng thêm 2 điểm."
+        },
+        "4": {
+            "name": "Người Bạn Chính Nghĩa",
+            "description": "Khi Archer vào chiến đấu sẽ nhận 1 điểm Nạp Năng Lượng."
+        },
+        "6": {
+            "name": "Phù Hộ",
+            "description": "Sau khi phe ta nhận điểm Chiến Kỹ, nếu Điểm Chiến Kỹ lớn hơn hoặc bằng 4, thì Sát Thương Bạo Kích của Archer sẽ tăng 120%, duy trì 1 hiệp."
+        }
+    },
+    "stat_bonuses": [
+        {
+            "stat": "Sát Thương - Lượng Tử",
+            "value": "+22.4%"
+        },
+        {
+            "stat": "Tấn Công",
+            "value": "+18%"
+        },
+        {
+            "stat": "Tỷ Lệ Bạo Kích",
+            "value": "+6.7%"
+        }
+    ],
+    "eidolons": [
+        {
+            "level": 1,
+            "name": "Lý Tưởng Chưa Từng Chạm Đến",
+            "description": "Sau khi thi triển 3 lần Chiến Kỹ trong một hiệp, sẽ hồi 2 Điểm Chiến Kỹ cho phe ta."
+        },
+        {
+            "level": 2,
+            "name": "Hạnh Phúc Chưa Thành Hiện Thực",
+            "description": "Khi thi triển Tuyệt Kỹ, khiến Kháng Lượng Tử của mục tiêu phe địch giảm 20%, đồng thời thêm Điểm Yếu Lượng Tử cho kẻ đó, duy trì 2 hiệp."
+        },
+        {
+            "level": 3,
+            "name": "Đồng Minh Của Chính Nghĩa",
+            "description": "Cấp Chiến Kỹ +2, tối đa không quá cấp 15; Cấp Tấn Công Thường +1, tối đa không quá cấp 10."
+        },
+        {
+            "level": 4,
+            "name": "Một Đời Chưa Trọn Chữ Anh Hùng",
+            "description": "Sát Thương Tuyệt Kỹ gây ra tăng 150%."
+        },
+        {
+            "level": 5,
+            "name": "Người Bảo Vệ Vô Danh Lẻ Bóng",
+            "description": "Cấp Tuyệt Kỹ +2, tối đa không quá cấp 15; Cấp Thiên Phú +2, tối đa không quá cấp 15."
+        },
+        {
+            "level": 6,
+            "name": "Cuộc Hành Hương Vô Tận",
+            "description": "Khi bắt đầu hiệp, sẽ hồi cho phe ta 1 điểm Chiến Kỹ. Số tầng giới hạn của hiệu ứng Tăng Sát Thương có thể cộng dồn mà Chiến Kỹ của bản thân cung cấp sẽ tăng 1 tầng. Sát thương Chiến Kỹ gây ra sẽ bỏ qua 20% Phòng Thủ."
+        }
+    ]
+}

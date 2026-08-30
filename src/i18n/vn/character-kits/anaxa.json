@@ -1,0 +1,157 @@
+{
+  "id": "anaxa",
+  "name": "Anaxa",
+  "rarity": 5,
+  "element": "wind",
+  "path": "erudition",
+  "version_released": "3.2",
+  "max_energy": 140,
+
+  "level_80_stats": {
+    "hp": 970,
+    "atk": 756,
+    "def": 557,
+    "spd": 97
+  },
+
+  "abilities": {
+    "basic": {
+        "type": "Tấn Công Thường",
+        "name": "Đau Đớn, Ươm Mầm Sự Thật",
+        "tag": "Đánh Đơn",
+        "energy_gain": 20,
+        "break": 10,
+        "min_level": 1,
+        "max_level": 7,
+        "default_level": 6,
+        "description_template": "Gây Sát Thương Phong cho 1 kẻ địch chỉ định tương đương {{value}}% Tấn Công của Anaxa.",
+        "scaling": {
+            "value": [50, 60, 70, 80, 90, 100, 110]
+        }
+    },
+
+    "skill": {
+        "type": "Chiến Kỹ",
+        "name": "Phân Dạng, Ảo Tưởng Của Kẻ Bị Trục Xuất",
+        "tag": "Nảy Bật",
+        "energy_gain": 30,
+        "break_first_hit": 10,
+        "break_bounce": 5,
+        "break_total": 30,
+        "min_level": 1,
+        "max_level": 12,
+        "default_level": 10,
+        "description_template": "Gây sát thương Phong cho 1 kẻ địch chỉ định bằng {{initial_bounce}}% Tấn Công của Anaxa, đồng thời gây thêm 4 lần sát thương. Mỗi lần sát thương sẽ gây sát thương Phong cho 1 kẻ địch ngẫu nhiên bằng {{subsequent_bounces}}% Tấn Công của Anaxa, ưu tiên nảy bật vào mục tiêu phe địch chưa bị đánh trúng trong lần Chiến Kỹ này.\nKhi thi triển, cứ 1 mục tiêu phe địch trong trận có thể bị tấn công, sát thương lần Chiến Kỹ này gây ra sẽ tăng 20%.",
+        "scaling": {
+            "initial_bounce": [35, 38.5, 42, 45.5, 49, 52.5, 56.88, 61.25, 65.63, 70, 73.5, 77],
+            "subsequent_bounces": [35, 38.5, 42, 45.5, 49, 52.5, 56.88, 61.25, 65.63, 70, 73.5, 77]
+        }
+    },
+
+    "ultimate": {
+        "type": "Tuyệt Kỹ",
+        "name": "Mầm Sống Sinh Sôi, Đắp Tạo Thế Giới",
+        "tag": "Đánh Lan",
+        "energy_cost": 140,
+        "energy_gain": 5,
+        "break_aoe": 20,
+        "min_level": 1,
+        "max_level": 12,
+        "default_level": 10,
+        "description_template": "Khiến toàn bộ phe địch rơi vào trạng thái \"Thăng Hoa\", sau đó gây Sát Thương Phong bằng {{damage}}% Tấn Công của Anaxa lên toàn bộ phe địch.\nỞ trạng thái \"Thăng Hoa\", mục tiêu cùng lúc bị thêm Điểm Yếu Vật Lý, Hỏa, Băng, Lôi, Phong, Lượng Tử, Số Ảo, duy trì đến khi bắt đầu hiệp của mục tiêu. Nếu mục tiêu không có Kháng Khống Chế, thì ở trạng thái \"Thăng Hoa\" sẽ không thể hành động.",
+        "scaling": {
+            "damage": [80, 88, 96, 104, 112, 120, 130, 140, 150, 160, 168, 176]
+        }
+    },
+
+    "talent": {
+        "type": "Thiên Phú",
+        "name": "Bốn Phần Sáng Suốt, Ba Tầng Tối Cao",
+        "tag": "Quấy Nhiễu",
+        "min_level": 1,
+        "max_level": 12,
+        "default_level": 10,
+        "description_template": "Mỗi khi Anaxa đánh trúng mục tiêu phe địch 1 lần, sẽ thêm 1 Điểm Yếu thuộc tính ngẫu nhiên cho mục tiêu, duy trì 3 hiệp, ưu tiên thêm Điểm Yếu mà mục tiêu chưa có.\nKhi có Anaxa trong trận, khiến mục tiêu phe địch có tối thiểu 5 Điểm Yếu thuộc tính khác nhau rơi vào trạng thái Phơi Bày Tính Chất. Sát thương Anaxa gây ra cho mục tiêu ở trạng thái Phơi Bày Tính Chất tăng {{increased_damage}}%, ngoài ra sau khi thi triển Tấn Công Thường hoặc Chiến Kỹ lên mục tiêu này, sẽ thi triển thêm 1 lần Chiến Kỹ lên mục tiêu này. Chiến Kỹ thêm sẽ không tiêu hao Điểm Chiến Kỹ và sẽ không kích hoạt lại hiệu ứng này lần nữa. Nếu mục tiêu bị tiêu diệt trước khi thi triển Chiến Kỹ thêm, thì sẽ thi triển lên 1 kẻ địch ngẫu nhiên.",
+        "scaling": {
+            "increased_damage": [18, 19.2, 20.4, 21.6, 22.8, 24, 25.5, 27, 28.5, 30, 31.2, 32.4]
+        }
+    },
+
+    "technique": {
+        "type": "Bí Kỹ",
+        "name": "Lăng Kính Của Mắt",
+        "tag": "Quấy Nhiễu",
+        "description": "Sau khi dùng Bí Kỹ sẽ khiến kẻ địch trong khu vực nhất định rơi vào trạng thái Kinh Hãi. Kẻ địch ở trạng thái Kinh Hãi sẽ trốn chạy thật xa khỏi Anaxa, duy trì 10 giây. Phe ta chủ động tấn công kẻ địch ở trạng thái Kinh Hãi luôn được xem là tấn công điểm yếu để vào chiến đấu, sau khi vào chiến đấu, Anaxa sẽ thêm 1 Điểm Yếu mang thuộc tính của người tấn công cho mỗi kẻ địch, duy trì 3 hiệp."
+    }
+  },
+
+  "major_traces": {
+    "2": {
+        "name": "Ký Hiệu Biểu Đạt Tự Do",
+        "description":"Khi thi triển Tấn Công Thường sẽ hồi thêm 10 điểm Năng Lượng.\nKhi bắt đầu hiệp, nếu trong trận không có mục tiêu phe địch ở trạng thái \"Phơi Bày Tính Chất\", sẽ hồi ngay 30 điểm Năng Lượng."
+    },
+
+    "4": {
+        "name": "Khoảng Trống Cần Thiết",
+        "description": "Căn cứ vào số lượng nhân vật Vận Mệnh \"Tri Thức\" trong đội hình phe ta, trong trận này sẽ kích hoạt 1 hiệu ứng trong số các hiệu ứng sau:\n1 nhân vật: Tăng 140% Sát Thương Bạo Kích của Anaxa.\nTối thiểu 2 nhân vật: Tăng 50% sát thương do toàn phe ta gây ra."
+    },
+
+    "6": {
+        "name": " Sự Chuyển Biến Về Chất",
+        "description": "Mục tiêu phe địch cứ có 1 Điểm Yếu thuộc tính khác nhau, sát thương của Anaxa gây ra cho kẻ đó sẽ bỏ qua 4% Phòng Thủ, tối đa tính 7 Điểm Yếu."
+    }
+  },
+
+  "stat_bonuses": [
+    {
+        "stat": "Tỷ Lệ Bạo Kích",
+        "value": "+12%"
+    },
+    {
+        "stat": "HP",
+        "value": "+10%"
+    },
+    {
+        "stat": "Sát Thương - Phong",
+        "value": "+22.5%"
+    }
+  ],
+
+  "eidolons": [
+    {
+        "level": 1,
+        "name": "Ngôi Sao, Bị Che Giấu Bởi Nhà Ảo Thuật",
+        "description": "Sau khi thi triển Chiến Kỹ lần đầu tiên, hồi phục 1 Điểm Chiến Kỹ. Khi thi triển Chiến Kỹ đánh trúng mục tiêu phe địch, sẽ khiến Phòng Thủ của mục tiêu giảm 16%, duy trì 2 hiệp."
+    },
+
+    {
+        "level": 2,
+        "name": "Linh Hồn, Trung Thực Với Lịch Sử",
+        "description": "Khi mục tiêu phe địch vào trận, sẽ kích hoạt 1 lần hiệu ứng thêm điểm yếu của Thiên Phú, và giảm 20% Kháng Toàn Thuộc Tính của kẻ đó."
+    },
+
+    {
+        "level": 3,
+        "name": "Mắt, Khắc Ghi Vào Vũ Trụ",
+        "description": "Cấp Tuyệt Kỹ +2, tối đa không vượt quá cấp 15, cấp Tấn Công Thường +1, tối đa không vượt quá cấp 10."
+    },
+
+    {
+        "level": 4,
+        "name": "Ngọn Lửa, Lao Vào Vực Thẳm",
+        "description": "Khi thi triển Chiến Kỹ, Tấn Công tăng 36%, duy trì 2 hiệp. Hiệu ứng này tối đa cộng dồn 2 tầng."
+    },
+
+    {
+        "level": 5,
+        "name": "Hạt Giống, Bên Ngoài Vòng Xoáy Ly Tâm",
+        "description": "Cấp Chiến Kỹ +2, tối đa không vượt quá cấp 15 Cấp Thiên Phú +2, tối đa không vượt quá cấp 15."
+    },
+
+    {
+        "level": 6,
+        "name": "Vạn Vật Tồn Tại Trong Vạn Vật",
+        "description": "Sát thương Anaxa gây ra bằng 130% sát thương gốc. 2 loại hiệu ứng của Vết Tích \"Khoảng Trống Cần Thiết\" đều sẽ kích hoạt trực tiếp, không phụ thuộc vào số lượng nhân vật vận mệnh Tri Thức trong đội nữa."
+    }
+  ]
+}
