@@ -137,6 +137,7 @@
         "name": "Let Thy Fortune Burst in Flames",
         "tag": "AoE",
         "energy_gain": 5,
+        "participant_id": 116,
         "break_aoe": 20,
         "break_bounce": 5,
         "break_total": 45,

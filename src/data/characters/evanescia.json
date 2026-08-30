@@ -153,6 +153,7 @@
         "name": "Scarlet: Elation or Execution",
         "tag": "AoE",
         "energy_gain": 5,
+        "participant_id": 146,
         "break_aoe": 20,
         "min_level": 1,
         "max_level": 12,

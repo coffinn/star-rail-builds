@@ -123,6 +123,7 @@
     "Type": "Тип",
     "Energy Gain": "Восстановление энергии",
     "Energy Cost": "Необходимо энергии",
+    "Participant ID": "Номер участника",
     "Break": "Урон стойкости",
     "Break (Main)": "Урон стойкости (основная цель)",
     "Break (Adjacent)": "Урон стойкости (дополнительные цели)",
@@ -145,5 +146,6 @@
     "Repository license notice": "примечание о лицензии",
     "Legal notice rights reserved": "© Все права сохраняются за COGNOSPHERE. Права на прочие объекты собственности принадлежат их соответствующим правообладателям.",
     "Footer attribution": "Оригинальный код был изменен командой Honkai: Star Rail Navigator и создан на основе проекта Genshin Impact Helper Team. Данный сайт не связан с HoYoverse.",
-    "Footer copyright": "Honkai: Star Rail, игровой контент и материалы являются товарными знаками и авторской собственностью COGNOSPHERE, HoYoverse и их соответствующих владельцев."
+    "Footer copyright": "Honkai: Star Rail, игровой контент и материалы являются товарными знаками и авторской собственностью COGNOSPHERE, HoYoverse и их соответствующих владельцев.",
+    "View GitHub": "Посмотреть GitHub"
 }

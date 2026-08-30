@@ -251,12 +251,14 @@
                 "type": "Elation Skill",
                 "name": "Pro-Gamer Move",
                 "tag": "Enhance",
+                "participant_id": 999,
                 "description": "Gains 15 \"Hidden MMR\" point(s)."
             },
             "skill-2": {
                 "type": "Enhanced Elation Skill",
                 "name": "Honkai-DMG Demo",
                 "tag": "Bounce",
+                "participant_id": 999,
                 "break_bounce": 10,
                 "break_total": 60,
                 "min_level": 1,
