@@ -125,6 +125,7 @@
     "Type": "Thuộc Tính",
     "Energy Gain": "Tăng Năng Lượng",
     "Energy Cost": "Năng Lượng Tiêu Hao",
+    "Participant ID": "Mã Tham Gia",
     "Break": "Giảm Sức Bền",
     "Break (Main)": "Giảm Sức Bền (Chính)",
     "Break (Adjacent)": "Giảm Sức Bền (Liền Kề)",
@@ -147,5 +148,6 @@
     "Repository license notice": "thông báo về giấy phép của kho chứa (repository)",
     "Legal notice rights reserved": "© Mọi quyền lợi được bảo lưu bởi COGNOSPHERE. Các tài sản khác thuộc về chủ sở hữu tương ứng.",
     "Footer attribution": "Mã nguồn nguyên bản đã được đội ngũ cộng tác viên của dự án Honkai: Star Rail Navigator chỉnh sửa và chuyển thể từ dự án Genshin Impact Helper Team. Trang web này không trực thuộc HoYoverse.",
-    "Footer copyright": "Honkai: Star Rail, nội dung trò chơi và các tài liệu liên quan là thương hiệu và tài sản có bản quyền của COGNOSPHERE, HoYoverse và các chủ sở hữu tương ứng."
+    "Footer copyright": "Honkai: Star Rail, nội dung trò chơi và các tài liệu liên quan là thương hiệu và tài sản có bản quyền của COGNOSPHERE, HoYoverse và các chủ sở hữu tương ứng.",
+    "View GitHub": "Xem GitHub"
 }
