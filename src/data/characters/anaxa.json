@@ -41,7 +41,7 @@
         "min_level": 1,
         "max_level": 12,
         "default_level": 10,
-        "description_template": "Deals Wind DMG equal to {{initial_bounce}}% of Anaxa's ATK to one designated enemy and additionally deals 4 instance(s) of DMG. Each instance of DMG deals Wind DMG equal to {{subsequent_bounces}}% of Anaxa's ATK to one random enemy, prioritizing Bouncing to enemy targets that have not been hit by this instance of Skill. When used, for each attackable enemy on the field, this Skill has its DMG dealt increased by 20%.",
+        "description_template": "Deals Wind DMG equal to {{initial_bounce}}% of Anaxa's ATK to one designated enemy and additionally deals 4 instance(s) of DMG. Each instance of DMG deals Wind DMG equal to {{subsequent_bounces}}% of Anaxa's ATK to one random enemy, prioritizing Bouncing to enemy targets that have not been hit by this instance of Skill.\nWhen used, for each attackable enemy on the field, this Skill has its DMG dealt increased by 20%.",
         "scaling": {
             "initial_bounce": [35, 38.5, 42, 45.5, 49, 52.5, 56.88, 61.25, 65.63, 70, 73.5, 77],
             "subsequent_bounces": [35, 38.5, 42, 45.5, 49, 52.5, 56.88, 61.25, 65.63, 70, 73.5, 77]
@@ -58,7 +58,7 @@
         "min_level": 1,
         "max_level": 12,
         "default_level": 10,
-        "description_template": "Inflicts the \"Sublimation\" state on all enemies, then deals Wind DMG equal to {{damage}}% of Anaxa's ATK to all enemies. In the \"Sublimation\" state, the targets will be simultaneously inflicted with Physical, Fire, Ice, Lightning, Wind, Quantum, and Imaginary Weaknesses, lasting until the start of the targets' turn. If the targets do not have Control RES, they are unable to take action in the \"Sublimation\" state.",
+        "description_template": "Inflicts the \"Sublimation\" state on all enemies, then deals Wind DMG equal to {{damage}}% of Anaxa's ATK to all enemies.\nIn the \"Sublimation\" state, the targets will be simultaneously inflicted with Physical, Fire, Ice, Lightning, Wind, Quantum, and Imaginary Weaknesses, lasting until the start of the targets' turn. If the targets do not have Control RES, they are unable to take action in the \"Sublimation\" state.",
         "scaling": {
             "damage": [80, 88, 96, 104, 112, 120, 130, 140, 150, 160, 168, 176]
         }
@@ -88,7 +88,7 @@
   "major_traces": {
     "2": {
         "name": "Roaming Signifier",
-        "description": "When using Basic ATK, additionally regenerates 10 Energy. At the start of the turn, if there are no enemy targets in the \"Qualitative Disclosure\" state, immediately regenerates 30 Energy."
+        "description": "When using Basic ATK, additionally regenerates 10 Energy.\nAt the start of the turn, if there are no enemy targets in the \"Qualitative Disclosure\" state, immediately regenerates 30 Energy."
     },
 
     "4": {

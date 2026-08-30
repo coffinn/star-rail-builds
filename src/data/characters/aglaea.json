@@ -45,7 +45,7 @@
           "min_level": 1,
           "max_level": 7,
           "default_level": 6,
-          "description_template": "Aglaea and Garmentmaker launch a Joint ATK on the target, respectively dealing Lightning DMG equal to {{scaling1}}% of Aglaea's ATK and {{scaling1}}% of Garmentmaker's ATK to the target. Also, respectively deals Lightning DMG equal to {{scaling2}}% of Aglaea's ATK and {{scaling2}}% of Garmentmaker's ATK to adjacent targets. \"Slash by a Thousandfold Kiss\" cannot recover Skill Points.",
+          "description_template": "Aglaea and Garmentmaker launch a Joint ATK on the target, respectively dealing Lightning DMG equal to {{scaling1}}% of Aglaea's ATK and {{scaling1}}% of Garmentmaker's ATK to the target. Also, respectively deals Lightning DMG equal to {{scaling2}}% of Aglaea's ATK and {{scaling2}}% of Garmentmaker's ATK to adjacent targets.\n\"Slash by a Thousandfold Kiss\" cannot recover Skill Points.",
           "scaling": {
             "scaling1": [
               100,
@@ -166,7 +166,7 @@
       "min_level": 1,
       "max_level": 12,
       "default_level": 10,
-      "description_template": "Summons the memosprite Garmentmaker. If Garmentmaker is already on the field, then restores its HP to max. Aglaea enters the \"Supreme Stance\" state and immediately takes action. While in \"Supreme Stance,\" Aglaea gains the SPD Boost stacks from Garmentmaker's Memosprite Talent, with each stack increasing this unit's SPD by {{scaling1}}%. Enhances Basic ATK to \"Slash by a Thousandfold Kiss,\" and cannot use Skill. Garmentmaker is immune to Crowd Control debuffs|Crowd Control debuff. A countdown appears on the Action Order, with its own SPD set at 100. While the countdown exists, using Ultimate again will reset the countdown. When the countdown's turn starts, Garmentmaker self-destructs. When Garmentmaker disappears, Aglaea dispels the \"Supreme Stance\" state.",
+      "description_template": "Summons the memosprite Garmentmaker. If Garmentmaker is already on the field, then restores its HP to max. Aglaea enters the \"Supreme Stance\" state and immediately takes action.\nWhile in \"Supreme Stance,\" Aglaea gains the SPD Boost stacks from Garmentmaker's Memosprite Talent, with each stack increasing this unit's SPD by {{scaling1}}%. Enhances Basic ATK to \"Slash by a Thousandfold Kiss,\" and cannot use Skill. Garmentmaker is immune to Crowd Control debuffs.\nA countdown appears on the Action Order, with its own SPD set at 100. While the countdown exists, using Ultimate again will reset the countdown. When the countdown's turn starts, Garmentmaker self-destructs. When Garmentmaker disappears, Aglaea dispels the \"Supreme Stance\" state.",
       "scaling": {
         "scaling1": [
           10,
@@ -310,7 +310,7 @@
     {
       "level": 3,
       "name": "Bequeath in the Coalescence of Dew",
-      "description": "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10. Memosprite Talent Lv. +1, up to a maximum of Lv. 10."
+      "description": "Skill Lv. +2, up to a maximum of Lv. 15.\nBasic ATK Lv. +1, up to a maximum of Lv. 10.\nMemosprite Talent Lv. +1, up to a maximum of Lv. 10."
     },
     {
       "level": 4,
@@ -320,7 +320,7 @@
     {
       "level": 5,
       "name": "Weave Under the Shroud of Woe",
-      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15. Memosprite Skill Lv. +1, up to a maximum of Lv. 10."
+      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15.\nTalent Lv. +2, up to a maximum of Lv. 15.\nMemosprite Skill Lv. +1, up to a maximum of Lv. 10."
     },
     {
       "level": 6,
