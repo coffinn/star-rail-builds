@@ -40,7 +40,8 @@
                     "name": "Brows Be Smitten, Heart Be Bitten",
                     "tag": "Single Target",
                     "energy_gain": 30,
-                    "break": "30 (6 Hits)",
+                    "break": "5 (Per Hit)",
+                    "break_total": "30 (6 Hits) / 40 (8 Hits)",
                     "description_template": "Initially, deals 3 hits, each causing Imaginary DMG equal to {{img_dmg}}% of March 7th's ATK to a single target enemy. Whenever dealing the final hit, there is a 60% fixed chance to deal 1 additional hit of DMG, up to a max of 3 additional hit(s). Energy regenerated from using Enhanced Basic ATK does not increase with the number of hits. Enhanced Basic ATK cannot recover Skill Points.",
                     "scaling": {
                         "img_dmg": [
