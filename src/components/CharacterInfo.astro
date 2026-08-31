@@ -713,10 +713,10 @@ const renderVariantDescription = (
                     <details open data-static-detail>
                         <summary>
                             <strong class="character-major-trace-label">
-                                <span>A{ascension}</span>
+                                {ascension && <span>A{ascension}</span>}
+
                                 <small>{ui('Major Trace')}</small>
                             </strong>
-
                             <span>{trace.name}</span>
                         </summary>
 
@@ -1322,9 +1322,6 @@ const renderVariantDescription = (
 
     .character-ability-variant-header > strong {
         font-size: 0.85rem;
-
-        text-transform: uppercase;
-
         opacity: 0.7;
     }
 

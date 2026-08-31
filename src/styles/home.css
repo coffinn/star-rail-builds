@@ -634,21 +634,27 @@ body[data-element="base"].browser-background {
 
 .roster-character-copy {
     z-index: 2;
+
     display: grid;
     align-content: center;
+
     min-width: 0;
     height: 54px;
+
     gap: 3px;
 
-    border-top: 3px solid color-mix(in srgb, var(--roster-element) 55%, #777 45%);
+    border-top: 3px solid color-mix(in srgb,
+            var(--roster-element) 55%,
+            #777 45%);
 
-    padding: 7px 8px;
-    background: rgba(3, 5, 8, 0.72);
+    padding: 7px 6px;
+
+    background:
+        rgba(3, 5, 8, 0.72);
 }
 
 .roster-character-name {
     display: block;
-
     min-width: 0;
 
     color: #fff;
@@ -658,8 +664,14 @@ body[data-element="base"].browser-background {
     line-height: 1.15;
 
     white-space: normal;
-    overflow-wrap: anywhere;
+
+    /*
+     * Break between actual words,
+     * not arbitrary characters.
+     */
+    overflow-wrap: normal;
     word-break: normal;
+    hyphens: none;
 }
 
 .roster-character-updated {
