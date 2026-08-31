@@ -86,6 +86,7 @@
         "rarity": 5,
         "version_released": "4.1",
         "source": "herta-store",
+        "free": true,
         "passive": {
             "en": "Increases the wearer's ATK by {{value}}%. After the wearer uses their Skill or Ultimate on one ally character, increases the target's Elation stat by {{value}}% for 2 turn(s).",
             "ru": "Сила атаки владельца повышается на {{value}}%. После того как владелец использует навык или сверхспособность на одном союзнике, уровень Радости цели повышается на {{value}}% на 2 хода."

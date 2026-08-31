@@ -193,7 +193,7 @@
     },
     "stat_bonuses": [
         {
-            "stat": "ATk",
+            "stat": "ATK",
             "value": "+28%"
         },
         {

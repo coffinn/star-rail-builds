@@ -41,7 +41,7 @@
     "skill": {
       "type": "Skill",
       "name": "Summer Strums the Soul",
-      "tag": "Support",
+      "tag": "Summon",
       "energy_gain": 30,
       "min_level": 1,
       "max_level": 12,
@@ -92,7 +92,7 @@
     "technique": {
       "type": "Technique",
       "name": "We Are the Melody",
-      "tag": "Support",
+      "tag": "Enhance",
       "description": "After using Technique, advances action by 20% at the start of the next battle, immediately gains 6 Vibes, and increases all allies' DMG dealt by 30%, lasting for 2 turn(s)."
     },
     "ultimate": {
@@ -137,7 +137,7 @@
         "min_level": 1,
         "max_level": 7,
         "default_level": 6,
-        "description_template": "Deals Wind DMG equal to 150% of \"Summer Songbirds'\" Max HP to all enemies.",
+        "description_template": "Deals Wind DMG equal to {{scaling1}}% of \"Summer Songbirds'\" Max HP to all enemies.",
         "scaling": {
           "scaling1": [
             75,
@@ -284,7 +284,7 @@
     },
     {
       "level": 6,
-      "name": "\nA Song Yet Unnamed",
+      "name": "A Song Yet Unnamed",
       "description": "Increases the Memosprite Skill's DMG multiplier by 100% of its original value. While in the \"Fever\" state, Robin • Summeretto can store her Ultimate up to 2 times. After entering the \"Fever\" state for the first time in this battle or when the the \"Fever\" countdown's turn starts, regenerates a fixed 140 Energy."
     }
   ]
