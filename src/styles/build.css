@@ -1880,4 +1880,47 @@
         width: 52px;
         height: 52px;
     }
+
+    .stats-traces-column {
+        display: grid;
+        min-width: 0;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 9px;
+        align-content: start;
+    }
+
+    /*
+ * Don't stretch either card vertically.
+ */
+    .stats-traces-column>.recommendation-card {
+        height: auto;
+        margin-bottom: 0;
+    }
+
+    /*
+ * Trace used to span the entire outer grid.
+ * Inside this column it should just use
+ * the column's width.
+ */
+    .stats-traces-column .talent-card {
+        grid-column: auto;
+    }
+
+    /*
+ * Trace priorities should stack vertically
+ * now that this is a narrow column.
+ */
+    .stats-traces-column .talent-card .rank-list {
+        grid-template-columns: 1fr;
+    }
+
+    .artifact-stats-card .recommendation-card-body {
+        grid-template-rows: auto auto;
+        align-content: start;
+        justify-content: stretch;
+    }
+
+    .artifact-stats-card .recommendation-section {
+        align-content: start;
+    }
 }

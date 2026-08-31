@@ -150,19 +150,28 @@ const noteMarkerExplanation = t(
                                                 locale={locale}
                                             />
                                         )}
-                                    {build.recommendedStats && (
-                                        <RecommendedStats
-                                            stats={build.recommendedStats}
-                                            locale={locale}
-                                        />
-                                    )}
+                                    {(build.recommendedStats ||
+                                        build.traces) && (
+                                        <div class="stats-traces-column">
+                                            {build.recommendedStats && (
+                                                <RecommendedStats
+                                                    stats={
+                                                        build.recommendedStats
+                                                    }
+                                                    locale={locale}
+                                                />
+                                            )}
 
-                                    {build.traces && (
-                                        <Trace
-                                            traces={build.traces}
-                                            locale={locale}
-                                            characterData={characterData}
-                                        />
+                                            {build.traces && (
+                                                <Trace
+                                                    traces={build.traces}
+                                                    locale={locale}
+                                                    characterData={
+                                                        characterData
+                                                    }
+                                                />
+                                            )}
+                                        </div>
                                     )}
                                 </div>
 

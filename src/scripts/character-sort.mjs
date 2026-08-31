@@ -6,7 +6,24 @@ const versionNumber = (version) => {
 const compareVersionNewest = (left, right) =>
     versionNumber(right) - versionNumber(left);
 const value = (card, name) => card.dataset[name] ?? '';
+const elementOrder = [
+    'physical',
+    'fire',
+    'ice',
+    'lightning',
+    'wind',
+    'quantum',
+    'imaginary',
+];
 
+const elementRank = (element) => {
+    const index =
+        elementOrder.indexOf(element);
+
+    return index === -1
+        ? Number.MAX_SAFE_INTEGER
+        : index;
+};
 export function compareCharacterCards(left, right, sort) {
     const byName = compareText(value(left, 'name'), value(right, 'name'));
 
@@ -34,9 +51,12 @@ export function compareCharacterCards(left, right, sort) {
     }
 
     return (
-        compareText(
+        elementRank(
             value(left, 'element'),
+        ) -
+        elementRank(
             value(right, 'element'),
-        ) || byName
+        ) ||
+        byName
     );
 }

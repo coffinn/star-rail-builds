@@ -691,8 +691,8 @@ body[data-element="base"].browser-background {
     gap: 3px;
 
     border-top: 3px solid color-mix(in srgb,
-            var(--roster-element) 55%,
-            #777 45%);
+            var(--roster-rarity) 70%,
+            #777 30%);
 
     padding: 7px 6px;
 

@@ -1,7 +1,7 @@
 {
     "substats_priority": [
-        "cr",
         "spd",
+        "cr",
         "cd"
     ]
 }
