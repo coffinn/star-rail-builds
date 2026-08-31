@@ -21,7 +21,7 @@
       "tag": "Blast",
       "energy_gain": 20,
       "break_main": 10,
-      "break_aoe": 5,
+      "break_adjacent": 5,
 
       "min_level": 1,
       "max_level": 7,

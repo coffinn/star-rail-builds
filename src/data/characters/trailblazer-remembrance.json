@@ -40,7 +40,7 @@
           "name": "Together, We Script Tomorrow!",
           "tag": "AoE",
           "energy_gain": 30,
-          "break_aoe": "10",
+          "break_aoe": 10,
           "min_level": 1,
           "max_level": 7,
           "default_level": 6,
@@ -302,9 +302,9 @@
       "name": "Magnets and Long Chains",
       "description": "When the Max Energy of an ally target that has \"Mem's Support\" exceeds 100, for every 10 excess Energy, additionally increases the multiplier of the True DMG dealt via \"Mem's Support\" by 2%, up to a max increase of 20%."
     },
-    "Outlier": {
+    "": {
       "name": "Unfinished Epilogue",
-      "description": "After using Ultimate, gains 1 stack of \"Epic,\" up to 2 stacks. When this unit has \"Epic\" and Mem is on the field, Basic ATK gets enhanced to \"Together, We Script Tomorrow!\""
+      "description": "After using Ultimate, gains 1 stack of \"Epic,\" up to 2 stacks. When this unit has \"Epic\" and Mem is on the field, Basic ATK gets enhanced to \"Together, We Script Tomorrow!\"\n\nNote: This Trace can only be unlocked when complete the Trailblaze Mission: \"Fallen Petals, Leave Fading Traces of Fragrance\"."
     }
   },
   "stat_bonuses": [
