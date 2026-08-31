@@ -244,35 +244,45 @@
     },
     "rise-and-sing": {
         "rarity": 5,
-        "version_released": "N/A",
+        "version_released": "4.5",
         "passive": {
-            "en": "Not available yet",
-            "ru": ""
+            "en": "Increases the wearer's Max HP by {{value}}%. After the wearer uses Ultimate, recovers 1 Skill Point for allies. When entering combat, advances the wearer's action by {{value}}% and grants the wearer \"New Melody,\" lasting for 2 turn(s). While the wearer holds \"New Melody,\" all allies' SPD increases by {{value}}%.",
+            "ru": "Повышает макс. НР владельца на {{value}}%. После использования владельцем сверхспособности восстанавливает союзникам 1 очко навыков. В начале боя продвигает действие владельца вперёд на {{value}}% и накладывает на владельца статус Новая мелодия на 2 хода. Пока владелец обладает статусом Новая мелодия, скорость всех союзников повышается на {{value}}%."
         },
         "s1": [
-            0
+            30,
+            30,
+            20
         ],
         "s2": [
-            0
+            37,
+            32,
+            25
         ],
         "s3": [
-            0
+            45,
+            35,
+            30
         ],
         "s4": [
-            0
+            52,
+            37,
+            35
         ],
         "s5": [
-            0
+            60,
+            40,
+            40
         ],
         "level_1": {
-            "hp": 0,
-            "atk": 0,
-            "def": 0
+            "hp": 52,
+            "atk": 26,
+            "def": 18
         },
         "level_max": {
-            "hp": 0,
-            "atk": 0,
-            "def": 0
+            "hp": 1164,
+            "atk": 582,
+            "def": 396
         }
     },
     "shadowburn": {

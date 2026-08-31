@@ -234,33 +234,23 @@
         "version_released": "4.5",
         "source": "limited-warp",
         "passive": {
-            "en": "Increases the wearer's Max HP by {{value}}%. After the wearer uses Ultimate, recovers 1 Skill Point for allies. When entering combat, advances the wearer's action by {{value}}% and grants the wearer \"New Melody,\" lasting for 2 turn(s). While the wearer holds \"New Melody,\" all allies' SPD increases by {{value}}%.",
-            "ru": "Повышает макс. НР владельца на {{value}}%. После использования владельцем сверхспособности восстанавливает союзникам 1 очко навыков. В начале боя продвигает действие владельца вперёд на {{value}}% и накладывает на владельца статус Новая мелодия на 2 хода. Пока владелец обладает статусом Новая мелодия, скорость всех союзников повышается на {{value}}%."
+            "en": "Not available yet",
+            "ru": "Еще не доступно"
         },
         "s1": [
-            30,
-            30,
-            20
+
         ],
         "s2": [
-            37,
-            32,
-            25
+
         ],
         "s3": [
-            45,
-            35,
-            30
+
         ],
         "s4": [
-            52,
-            37,
-            35
+
         ],
         "s5": [
-            60,
-            40,
-            40
+
         ],
         "level_1": {
             "hp": 0,
