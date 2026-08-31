@@ -2,21 +2,21 @@
     "stats": [
         {
             "name": "spd",
-            "baseline": "160+",
-            "recommended": "180+"
+            "recommended": "180+",
+            "note": {
+                "en": "Aim for 200+ SPD when using Welcome to the Cosmic City."
+            }
         },
         {
             "name": "cr",
-            "baseline": "92%",
             "recommended": "92%",
             "note": {
-                "en": "Silver Wolf's CRIT Rate% and CRIT DMG% requirements are flexible thanks to Hidden MMR. 92% CRIT Rate% allows Silver Wolf to hit 100% CRIT Rate% with 20 Hidden MMR."
+                "en": "Silver Wolf's CR and CD requirements are flexible thanks to Hidden MMR. 92% CR allows Silver Wolf to hit 100% CR with 20 HMMR."
             }
         },
         {
             "name": "cd",
-            "baseline": "90%",
-            "recommended": "100%+"
+            "recommended": "95%"
         }
     ]
 }

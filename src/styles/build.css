@@ -812,13 +812,13 @@
     font-weight: 850;
 }
 
+.recommended-stats-card {
+    container-type: inline-size;
+}
+
 .recommended-stats-table {
     display: grid;
     gap: 4px;
-}
-
-.recommended-stats-card {
-    container-type: inline-size;
 }
 
 .recommended-stats-header,
@@ -826,10 +826,11 @@
     display: grid;
     min-width: 0;
 
+    /* Stat name + one displayed target value. */
     grid-template-columns:
-        minmax(0, 1.3fr) minmax(64px, 0.75fr) minmax(72px, 0.9fr);
+        minmax(0, 1.25fr) minmax(80px, 0.9fr);
 
-    gap: 6px;
+    gap: 8px;
     align-items: center;
 }
 
@@ -846,96 +847,7 @@
     text-transform: uppercase;
 }
 
-.recommended-stats-header span:not(:first-child) {
-    text-align: center;
-}
-
-.recommended-stat-row {
-    min-height: 32px;
-
-    border: 1px solid rgba(255, 255, 255, 0.08);
-
-    border-radius: 8px;
-
-    padding: 5px 6px;
-
-    background:
-        rgba(255, 255, 255, 0.045);
-}
-
-.recommended-stat-row strong {
-    min-width: 0;
-
-    color: color-mix(in srgb,
-            #fff 82%,
-            var(--element) 18%);
-
-    font-size: 0.76rem;
-
-    /*
-     * Don't split translated words
-     * in the middle unless absolutely
-     * necessary.
-     */
-    overflow-wrap: break-word;
-    word-break: normal;
-}
-
-.recommended-stat-row span,
-.recommended-stats-header span {
-    min-width: 0;
-
-    font-size: 0.76rem;
-    text-align: center;
-
-    overflow-wrap: break-word;
-    word-break: normal;
-}
-
-.recommended-stat-value {
-    color: color-mix(in srgb,
-            #fff 82%,
-            var(--element) 18%);
-
-    font-weight: 850;
-}
-
-/*
- * If the card gets narrow because the
- * page is using the four-column layout,
- * put the stat name on its own row.
- */
-@container (max-width: 330px) {
-
-    .recommended-stats-header,
-    .recommended-stat-row {
-        grid-template-columns:
-            minmax(0, 1fr) minmax(0, 1fr);
-    }
-
-    .recommended-stats-header>span:first-child {
-        display: none;
-    }
-
-    .recommended-stat-row>strong {
-        grid-column: 1 / -1;
-        padding-bottom: 2px;
-        text-align: left;
-    }
-}
-
-.recommended-stats-header {
-    padding: 0 6px 2px;
-    color: color-mix(in srgb,
-            var(--text) 64%,
-            transparent);
-    font-size: 0.62rem;
-    font-weight: 800;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-}
-
-.recommended-stats-header span:not(:first-child) {
+.recommended-stats-header span:last-child {
     text-align: center;
 }
 
@@ -949,25 +861,55 @@
 
 .recommended-stat-row strong {
     min-width: 0;
+
     color: color-mix(in srgb,
             #fff 82%,
             var(--element) 18%);
+
     font-size: 0.76rem;
-    overflow-wrap: anywhere;
+    line-height: 1.2;
+
+    /* Prefer normal word wrapping for translated stat labels. */
+    overflow-wrap: break-word;
+    word-break: normal;
 }
 
-.recommended-stat-row span {
+.recommended-stat-row span,
+.recommended-stats-header span {
     min-width: 0;
     font-size: 0.76rem;
-    text-align: center;
-    overflow-wrap: anywhere;
+    overflow-wrap: break-word;
+    word-break: normal;
 }
 
 .recommended-stat-value {
     color: color-mix(in srgb,
             #fff 82%,
             var(--element) 18%);
+
     font-weight: 850;
+    text-align: center;
+}
+
+/*
+ * Only stack the two fields when this individual card becomes
+ * extremely narrow. This keeps the normal four-column build layout
+ * compact while still avoiding crushed translations.
+ */
+@container (max-width: 220px) {
+    .recommended-stats-header {
+        display: none;
+    }
+
+    .recommended-stat-row {
+        grid-template-columns: 1fr;
+        gap: 2px;
+    }
+
+    .recommended-stat-row strong,
+    .recommended-stat-value {
+        text-align: left;
+    }
 }
 
 .stat-grid {

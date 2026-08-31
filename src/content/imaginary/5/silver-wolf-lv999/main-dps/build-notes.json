@@ -1,11 +1,20 @@
 {
     "best": true,
     "name": {
-        "en": "Main DPS"
+        "en": "Elation DPS"
     },
     "notes": [
         {
-            "en": ""
+            "en": "**Summary and General Analysis**\n\n✦ Silver Wolf Lv. 999 is an Elation DPS unit who deals damage primarily through her enhanced Basic Attacks while in the Godmode Player state.\n\n✦ She gains Hidden MMR after gaining Punchline, using her normal Elation Skill, and using an Elation Skill at 20/40 Punchline. Silver Wolf can consume 60 HMMR to trigger her Ultimate.\n\n✦ While in the Godmode Player state, whenever allies consume Skill Points, Silver Wolf has a chance to trigger a Lootbox that activates additional effects. Her enhanced Elation Skill while in Godmode Player refreshes the Lootbox trigger chance.\n\n✦ Silver Wolf Lv. 999's performance is currently heavily reliant on Yao Guang for Hidden MMR generation."
+        },
+        {
+            "en": "**Investment Priority**\n\n**E2 > S1 > E1**\n\n**Investment Explanation**\n\nVertical Investment Guide\n\n✦ Silver Wolf's E2 extends the duration of buffs on SW when entering Godmode Player by one turn. In addition, for every 120 HMMR points gained, SW gains an extra turn.\n\n✦ Silver Wolf's S1 gives herself SPD and DEF Shred, while also providing 20 Punchline after she uses her Ultimate.\n\n✦ Silver Wolf's E1 allows SW to retain 20% of her HMMR when exiting the Godmode Player state, while also providing 20% vulnerability."
+        },
+        {
+            "en": "**Skill Point Usage**\n\nNegative (Neutral in Godmode Player State)"
+        },
+        {
+            "en": "**Ability Rotation**\n\n**Out of GP:** Skill Spam\n\n**In GP:** Basic Spam"
         }
     ]
 }

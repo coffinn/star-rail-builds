@@ -259,12 +259,12 @@
         },
         {
             "question": {
-                "en": "Do you use leaks or beta information for character guides?",
+                "en": "Do you use unreleased information for character guides?",
                 "ru": "",
                 "vn": "Bạn có sử dụng thông tin rò rỉ hoặc dữ liệu từ bản thử nghiệm (beta) để làm hướng dẫn xây dựng Nhân Vật không?"
             },
             "answer": {
-                "en": "No. The public build guide is intended to be based on officially released Honkai: Star Rail content. Unreleased characters, Light Cones, Relics, and beta changes are not used as the basis for published build recommendations.",
+                "en": "No. The public build guide is intended to be based on officially released Honkai: Star Rail content. Unreleased content is not used as the basis for published build recommendations.",
                 "ru": "",
                 "vn": "Không. Các hướng dẫn build Nhân Vật được công bố chỉ dựa trên nội dung chính thức của Honkai: Star Rail. Các Nhân Vật, Nón Ánh Sáng, Di Vật chưa ra mắt và những thay đổi trong bản thử nghiệm (beta) sẽ không được sử dụng làm cơ sở cho các hướng dẫn build Nhân Vật."
             }

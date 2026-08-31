@@ -1,11 +1,7 @@
 {
     "substats_priority": [
+        "cr",
         "spd",
-        {
-            "items": [
-                "cr",
-                "cd"
-            ]
-        }
+        "cd"
     ]
 }

@@ -1,6 +1,7 @@
 ---
 import { t } from '../utils/i18n';
 import InlineNoteLabel from './InlineNoteLabel.astro';
+
 type RecommendedStat = {
     name: string;
     baseline?: string | number;
@@ -18,12 +19,25 @@ const { stats, locale } = Astro.props as {
     locale: any;
 };
 
-const displayValue = (value: string | number | undefined) => {
-    if (value === undefined || value === null || value === '') {
-        return '—';
+const hasValue = (value: string | number | undefined) =>
+    value !== undefined && value !== null && value !== '';
+
+/*
+ * Recommended is always preferred.
+ *
+ * Legacy/fallback behavior:
+ * if Recommended is empty, use Baseline.
+ */
+const getStatValue = (stat: RecommendedStat) => {
+    if (hasValue(stat.recommended)) {
+        return String(stat.recommended);
     }
 
-    return String(value);
+    if (hasValue(stat.baseline)) {
+        return String(stat.baseline);
+    }
+
+    return '—';
 };
 ---
 
@@ -36,9 +50,7 @@ const displayValue = (value: string | number | undefined) => {
         <div class="recommended-stats-table">
             <div class="recommended-stats-header">
                 <span>{t(locale, 'ui', 'Stat')}</span>
-                <span>
-                    {t(locale, 'ui', 'Baseline', undefined, false)}
-                </span>
+
                 <span>
                     {t(locale, 'ui', 'Recommended', undefined, false)}
                 </span>
@@ -56,10 +68,8 @@ const displayValue = (value: string | number | undefined) => {
                             />
                         </strong>
 
-                        <span>{displayValue(stat.baseline)}</span>
-
                         <span class="recommended-stat-value">
-                            {displayValue(stat.recommended)}
+                            {getStatValue(stat)}
                         </span>
                     </div>
                 ))

@@ -5,7 +5,7 @@
                 {
                     "items": [
                         {
-                            "name": "magical-girl",
+                            "name": "ever-glorious-magical-girl",
                             "pieces": 4
                         }
                     ]
@@ -17,11 +17,8 @@
                 {
                     "items": [
                         {
-                            "name": "diviner",
-                            "pieces": 4,
-                            "note": {
-                                "en": "Useful to lower speed substat requirements, but does not stack with other 4pc Diviner sets."
-                            }
+                            "name": "diviner-of-distant-reach",
+                            "pieces": 4
                         }
                     ]
                 }
@@ -34,7 +31,7 @@
                 {
                     "items": [
                         {
-                            "name": "punklorde",
+                            "name": "punklorde-stage-zero",
                             "pieces": 2
                         }
                     ]

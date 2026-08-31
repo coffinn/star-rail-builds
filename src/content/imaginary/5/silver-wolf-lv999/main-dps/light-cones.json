@@ -3,16 +3,23 @@
         {
             "items": [
                 {
-                    "name": "welcome-to-the-cosmic-city",
-                    "superimposition": 1
+                    "name": "welcome-to-the-cosmic-city"
                 }
             ]
         },
         {
             "items": [
                 {
-                    "name": "shroomy",
-                    "superimposition": 5
+                    "name": "todays-good-luck",
+                    "note": {
+                        "en": "If Today's Good Luck is S1, Mushy Shroomy's Adventures will perform better."
+                    }
+                },
+                {
+                    "name": "mushy-shroomys-adventures",
+                    "note": {
+                        "en": "If Today's Good Luck is S1, Mushy Shroomy's Adventures will perform better."
+                    }
                 }
             ]
         }
