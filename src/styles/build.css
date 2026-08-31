@@ -32,6 +32,109 @@
     text-wrap: balance;
 }
 
+/* =========================================================
+   Character name / element / rarity / path
+   ========================================================= */
+
+.character-title-row {
+    display: flex;
+
+    width: 100%;
+    min-width: 0;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+}
+
+.character-title-row .page-title {
+    width: auto;
+    min-width: 0;
+    max-width: calc(100% - 36px);
+}
+
+.character-title-element-icon {
+    display: block;
+
+    flex: 0 0 auto;
+
+    width: 28px;
+    height: 28px;
+
+    object-fit: contain;
+
+    filter:
+        drop-shadow(0 1px 2px rgba(0, 0, 0, 0.9)) drop-shadow(0 0 5px rgba(0, 0, 0, 0.45));
+}
+
+.character-identity-meta {
+    display: flex;
+
+    width: 100%;
+    min-width: 0;
+
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 5px;
+
+    margin-top: 7px;
+
+    font-size: 0.76rem;
+    font-weight: 750;
+    line-height: 1;
+}
+
+.character-rarity-stars {
+    color: #f6c84a;
+
+    font-size: 0.98rem;
+    font-weight: 900;
+    line-height: 1;
+
+    letter-spacing: 1px;
+
+    white-space: nowrap;
+
+    text-shadow:
+        0 1px 3px rgba(0, 0, 0, 0.85),
+        0 0 5px rgba(246, 200, 74, 0.18);
+}
+
+.character-identity-separator {
+    width: 1px;
+    height: 18px;
+
+    margin-inline: 2px;
+
+    background: rgba(255, 255, 255, 0.28);
+}
+
+.character-path-icon {
+    display: block;
+
+    width: 21px;
+    height: 21px;
+
+    object-fit: contain;
+
+    /* HSR Path icon style — white like your reference */
+    filter:
+        brightness(0) invert(1) drop-shadow(0 1px 3px rgba(0, 0, 0, 0.85));
+}
+
+.character-path-name {
+    min-width: 0;
+
+    color: color-mix(in srgb,
+            var(--text) 72%,
+            transparent);
+
+    white-space: nowrap;
+}
+
 .character-main {
     min-width: 0;
 }
@@ -724,9 +827,7 @@
     min-width: 0;
 
     grid-template-columns:
-        minmax(0, 1.3fr)
-        minmax(64px, 0.75fr)
-        minmax(72px, 0.9fr);
+        minmax(0, 1.3fr) minmax(64px, 0.75fr) minmax(72px, 0.9fr);
 
     gap: 6px;
     align-items: center;
@@ -735,11 +836,9 @@
 .recommended-stats-header {
     padding: 0 6px 2px;
 
-    color: color-mix(
-        in srgb,
-        var(--text) 64%,
-        transparent
-    );
+    color: color-mix(in srgb,
+            var(--text) 64%,
+            transparent);
 
     font-size: 0.62rem;
     font-weight: 800;
@@ -754,8 +853,7 @@
 .recommended-stat-row {
     min-height: 32px;
 
-    border: 1px solid
-        rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.08);
 
     border-radius: 8px;
 
@@ -768,11 +866,9 @@
 .recommended-stat-row strong {
     min-width: 0;
 
-    color: color-mix(
-        in srgb,
-        #fff 82%,
-        var(--element) 18%
-    );
+    color: color-mix(in srgb,
+            #fff 82%,
+            var(--element) 18%);
 
     font-size: 0.76rem;
 
@@ -797,11 +893,9 @@
 }
 
 .recommended-stat-value {
-    color: color-mix(
-        in srgb,
-        #fff 82%,
-        var(--element) 18%
-    );
+    color: color-mix(in srgb,
+            #fff 82%,
+            var(--element) 18%);
 
     font-weight: 850;
 }
@@ -812,19 +906,18 @@
  * put the stat name on its own row.
  */
 @container (max-width: 330px) {
+
     .recommended-stats-header,
     .recommended-stat-row {
         grid-template-columns:
-            minmax(0, 1fr)
-            minmax(0, 1fr);
+            minmax(0, 1fr) minmax(0, 1fr);
     }
 
-    .recommended-stats-header
-        > span:first-child {
+    .recommended-stats-header>span:first-child {
         display: none;
     }
 
-    .recommended-stat-row > strong {
+    .recommended-stat-row>strong {
         grid-column: 1 / -1;
         padding-bottom: 2px;
         text-align: left;
@@ -1571,6 +1664,39 @@
 }
 
 @media (max-width: 720px) {
+    .character-title-row {
+        gap: 5px;
+    }
+
+    .character-title-row .page-title {
+        max-width: calc(100% - 28px);
+    }
+
+    .character-title-element-icon {
+        width: 22px;
+        height: 22px;
+    }
+
+    .character-identity-meta {
+        gap: 4px;
+        margin-top: 4px;
+        font-size: 0.68rem;
+    }
+
+    .character-rarity-stars {
+        font-size: 0.8rem;
+        letter-spacing: 0.6px;
+    }
+
+    .character-identity-separator {
+        height: 14px;
+    }
+
+    .character-path-icon {
+        width: 17px;
+        height: 17px;
+    }
+
     .character-page {
         padding: 12px 10px 36px;
     }

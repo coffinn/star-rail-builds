@@ -2,7 +2,45 @@
 import { Image } from 'astro:assets';
 import { t } from '../utils/i18n';
 import { localizedPath } from '../utils/paths';
+import physicalIcon from '../assets/browser-icons/elements/physical.png';
+import fireIcon from '../assets/browser-icons/elements/fire.png';
+import iceIcon from '../assets/browser-icons/elements/ice.png';
+import lightningIcon from '../assets/browser-icons/elements/lightning.png';
+import windIcon from '../assets/browser-icons/elements/wind.png';
+import quantumIcon from '../assets/browser-icons/elements/quantum.png';
+import imaginaryIcon from '../assets/browser-icons/elements/imaginary.png';
 
+import destructionIcon from '../assets/browser-icons/paths/destruction.png';
+import huntIcon from '../assets/browser-icons/paths/hunt.png';
+import eruditionIcon from '../assets/browser-icons/paths/erudition.png';
+import harmonyIcon from '../assets/browser-icons/paths/harmony.png';
+import nihilityIcon from '../assets/browser-icons/paths/nihility.png';
+import preservationIcon from '../assets/browser-icons/paths/preservation.png';
+import abundanceIcon from '../assets/browser-icons/paths/abundance.png';
+import remembranceIcon from '../assets/browser-icons/paths/remembrance.png';
+import elationIcon from '../assets/browser-icons/paths/elation.png';
+
+const elementIcons = {
+    physical: physicalIcon,
+    fire: fireIcon,
+    ice: iceIcon,
+    lightning: lightningIcon,
+    wind: windIcon,
+    quantum: quantumIcon,
+    imaginary: imaginaryIcon,
+} as const;
+
+const pathIcons = {
+    destruction: destructionIcon,
+    hunt: huntIcon,
+    erudition: eruditionIcon,
+    harmony: harmonyIcon,
+    nihility: nihilityIcon,
+    preservation: preservationIcon,
+    abundance: abundanceIcon,
+    remembrance: remembranceIcon,
+    elation: elationIcon,
+} as const;
 const { characters, lang, locale } = Astro.props;
 
 const characterCountLabel = t(locale, 'ui', 'Characters');
@@ -43,14 +81,26 @@ function formatUiTemplate(template: string, name: string) {
 
 function getCharacterViewModel(character: any) {
     const href = localizedPath(lang, character.slug);
+
+    const elementLabel = t(locale, 'element', character.element);
+
     const pathLabel = t(locale, 'path', character.path);
+
     const rarityLabel = `${character.rarity}\u2605`;
+
+    const elementIcon =
+        elementIcons[character.element as keyof typeof elementIcons];
+
+    const pathIcon = pathIcons[character.path as keyof typeof pathIcons];
 
     return {
         ...character,
         href,
+        elementLabel,
         pathLabel,
         rarityLabel,
+        elementIcon,
+        pathIcon,
     };
 }
 
@@ -134,6 +184,32 @@ const rosterCharacters: ReturnType<typeof getCharacterViewModel>[] =
                                         width={160}
                                         height={160}
                                         densities={[1, 2]}
+                                    />
+                                )}
+                            </span>
+                            <span
+                                class="roster-character-emblems"
+                                aria-hidden="true"
+                            >
+                                {character.elementIcon && (
+                                    <img
+                                        class="roster-character-emblem roster-character-emblem-element"
+                                        src={character.elementIcon.src}
+                                        alt=""
+                                        title={character.elementLabel}
+                                        width="28"
+                                        height="28"
+                                    />
+                                )}
+
+                                {character.pathIcon && (
+                                    <img
+                                        class="roster-character-emblem roster-character-emblem-path"
+                                        src={character.pathIcon.src}
+                                        alt=""
+                                        title={character.pathLabel}
+                                        width="30"
+                                        height="30"
                                     />
                                 )}
                             </span>

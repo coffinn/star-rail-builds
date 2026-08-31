@@ -1,5 +1,22 @@
 ---
 import { Image } from 'astro:assets';
+import physicalIcon from '../assets/filter-icons/elements/physical.png';
+import fireIcon from '../assets/filter-icons/elements/fire.png';
+import iceIcon from '../assets/filter-icons/elements/ice.png';
+import lightningIcon from '../assets/filter-icons/elements/lightning.png';
+import windIcon from '../assets/filter-icons/elements/wind.png';
+import quantumIcon from '../assets/filter-icons/elements/quantum.png';
+import imaginaryIcon from '../assets/filter-icons/elements/imaginary.png';
+
+import destructionIcon from '../assets/filter-icons/paths/destruction.png';
+import huntIcon from '../assets/filter-icons/paths/hunt.png';
+import eruditionIcon from '../assets/filter-icons/paths/erudition.png';
+import harmonyIcon from '../assets/filter-icons/paths/harmony.png';
+import nihilityIcon from '../assets/filter-icons/paths/nihility.png';
+import preservationIcon from '../assets/filter-icons/paths/preservation.png';
+import abundanceIcon from '../assets/filter-icons/paths/abundance.png';
+import remembranceIcon from '../assets/filter-icons/paths/remembrance.png';
+import elationIcon from '../assets/filter-icons/paths/elation.png';
 import '../styles/base.css';
 import '../styles/build.css';
 import '../styles/theme.css';
@@ -13,6 +30,7 @@ const {
     character,
     characterSlug,
     metadata,
+    element,
     lang,
     locale,
     builds = [],
@@ -23,6 +41,41 @@ const characterArtAlt = t(locale, 'ui', 'Character art alt').replace(
     character,
 );
 const characterHeaderImage = metadata?.portrait ?? metadata?.image;
+const elementIcons = {
+    physical: physicalIcon,
+    fire: fireIcon,
+    ice: iceIcon,
+    lightning: lightningIcon,
+    wind: windIcon,
+    quantum: quantumIcon,
+    imaginary: imaginaryIcon,
+} as const;
+
+const pathIcons = {
+    destruction: destructionIcon,
+    hunt: huntIcon,
+    erudition: eruditionIcon,
+    harmony: harmonyIcon,
+    nihility: nihilityIcon,
+    preservation: preservationIcon,
+    abundance: abundanceIcon,
+    remembrance: remembranceIcon,
+    elation: elationIcon,
+} as const;
+
+const elementName = element as keyof typeof elementIcons | undefined;
+const pathName = metadata?.path as keyof typeof pathIcons | undefined;
+
+const elementIcon = elementName ? elementIcons[elementName] : undefined;
+
+const pathIcon = pathName ? pathIcons[pathName] : undefined;
+
+const elementLabel = elementName ? t(locale, 'element', elementName) : '';
+
+const pathLabel = pathName ? t(locale, 'path', pathName) : '';
+
+const rarity = Number(metadata?.rarity ?? 0);
+const rarityStars = rarity > 0 ? '★'.repeat(rarity) : '';
 const buildLabel = t(locale, 'ui', 'Builds', undefined, false);
 const bestRoleLabel = t(locale, 'ui', 'Best Role');
 ---
@@ -35,11 +88,13 @@ const bestRoleLabel = t(locale, 'ui', 'Best Role');
         <link rel="icon" type="image/webp" href={sitePath('favicon.webp')} />
     </head>
 
-    <body data-element={Astro.props.element}>
+    <body data-element={element}>
         <!-- The header needs the URL slug, not the localized display name. -->
         <Header locale={locale} lang={lang} character={characterSlug} />
+
         <div class="page character-page">
             <div class="character-page-layout">
+                <!-- LEFT SIDEBAR -->
                 <aside
                     class="character-header"
                     aria-labelledby="character-title"
@@ -63,13 +118,65 @@ const bestRoleLabel = t(locale, 'ui', 'Best Role');
                     }
 
                     <div class="character-header-copy">
-                        <h1
-                            id="character-title"
-                            class="page-title"
-                            data-pagefind-body
-                        >
-                            {character}
-                        </h1>
+                        <div class="character-title-row">
+                            <h1
+                                id="character-title"
+                                class="page-title"
+                                data-pagefind-body
+                            >
+                                {character}
+                            </h1>
+
+                            {
+                                elementIcon && (
+                                    <img
+                                        class="character-title-element-icon"
+                                        src={elementIcon.src}
+                                        alt=""
+                                        title={elementLabel}
+                                        width="30"
+                                        height="30"
+                                        aria-hidden="true"
+                                    />
+                                )
+                            }
+                        </div>
+
+                        {
+                            (rarityStars || pathLabel) && (
+                                <div class="character-identity-meta">
+                                    {rarityStars && (
+                                        <span class="character-rarity-stars">
+                                            {rarityStars}
+                                        </span>
+                                    )}
+
+                                    {rarityStars && pathLabel && (
+                                        <span
+                                            class="character-identity-separator"
+                                            aria-hidden="true"
+                                        />
+                                    )}
+
+                                    {pathIcon && (
+                                        <img
+                                            class="character-path-icon"
+                                            src={pathIcon.src}
+                                            alt=""
+                                            width="22"
+                                            height="22"
+                                            aria-hidden="true"
+                                        />
+                                    )}
+
+                                    {pathLabel && (
+                                        <span class="character-path-name">
+                                            {pathLabel}
+                                        </span>
+                                    )}
+                                </div>
+                            )
+                        }
 
                         <div class="character-header-meta">
                             {
@@ -78,6 +185,7 @@ const bestRoleLabel = t(locale, 'ui', 'Best Role');
                                         <span>
                                             {t(locale, 'ui', 'Last Updated')}
                                         </span>
+
                                         <strong>
                                             {t(locale, 'ui', 'Version')}{' '}
                                             {metadata.last_updated}
@@ -99,7 +207,11 @@ const bestRoleLabel = t(locale, 'ui', 'Best Role');
                                     return (
                                         <button
                                             id={`build-tab-${build.slug}`}
-                                            class={`build-switcher-button${isDefaultBuild ? ' is-active' : ''}`}
+                                            class={`build-switcher-button${
+                                                isDefaultBuild
+                                                    ? ' is-active'
+                                                    : ''
+                                            }`}
                                             type="button"
                                             data-build-tab
                                             data-id={build.slug}
@@ -113,6 +225,7 @@ const bestRoleLabel = t(locale, 'ui', 'Best Role');
                                             <span class="build-switcher-name">
                                                 {build.name}
                                             </span>
+
                                             {build.isBest && (
                                                 <span class="build-badge">
                                                     {bestRoleLabel}
@@ -138,7 +251,11 @@ const bestRoleLabel = t(locale, 'ui', 'Best Role');
 
                                         return (
                                             <div
-                                                class={`build-calculation-panel${isDefaultBuild ? ' is-active' : ''}`}
+                                                class={`build-calculation-panel${
+                                                    isDefaultBuild
+                                                        ? ' is-active'
+                                                        : ''
+                                                }`}
                                                 data-build-calculation-panel
                                                 data-id={build.slug}
                                                 hidden={!isDefaultBuild}
@@ -160,11 +277,13 @@ const bestRoleLabel = t(locale, 'ui', 'Best Role');
                     }
                 </aside>
 
+                <!-- MAIN CHARACTER BUILD CONTENT -->
                 <div class="character-main">
                     <slot />
                 </div>
             </div>
         </div>
+
         <Footer lang={lang} />
     </body>
 </html>

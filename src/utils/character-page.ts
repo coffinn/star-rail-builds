@@ -1454,6 +1454,11 @@ export function getCharacterPageData({
     };
     const metadataWithAssets = {
         ...metadata,
+
+        // The character's rarity comes from the content folder:
+        // src/content/<element>/<rarity>/<character>
+        rarity: foundPath.rarity,
+
         image: resolveCharacterAssetImage(assetContext, 'image'),
         portrait: resolveCharacterAssetImage(assetContext, 'portrait'),
     };

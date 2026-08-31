@@ -561,20 +561,67 @@ body[data-element="base"].browser-background {
     position: absolute;
     right: 50%;
     bottom: -7px;
+
     width: 100%;
     max-width: none;
     height: 114%;
+
     object-fit: cover;
     object-position: top center;
+
     opacity: 0.92;
+
     transform: translateX(50%);
     transform-origin: top center;
+
     transition: opacity 0.16s ease;
 }
 
 .roster-character:not(.is-wip):hover .roster-character-art img,
 .roster-character:not(.is-wip):focus-visible .roster-character-art img {
     opacity: 1;
+}
+
+/* =========================================================
+   Element + Path overlay on character portraits
+   ========================================================= */
+
+.roster-character-emblems {
+    position: absolute;
+    z-index: 4;
+
+    top: 7px;
+    left: 6px;
+
+    gap: 4px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+
+
+    pointer-events: none;
+}
+
+.roster-character-emblem {
+    display: block;
+
+    width: 22px;
+    height: 22px;
+
+    max-width: none;
+
+    object-fit: contain;
+
+    filter:
+        drop-shadow(0 1px 2px rgba(0, 0, 0, 0.95)) drop-shadow(0 0 4px rgba(0, 0, 0, 0.6));
+}
+
+.roster-character-emblem-path {
+    width: 24px;
+    height: 24px;
 }
 
 @supports (-moz-appearance: none) {
@@ -1320,5 +1367,23 @@ body[data-element="base"].browser-background {
 
     .roster-character[data-element='imaginary'] {
         --roster-nameplate: #f2d36b;
+    }
+
+    @media (max-width: 520px) {
+        .roster-character-emblems {
+            top: 6px;
+            left: 5px;
+            gap: 4px;
+        }
+
+        .roster-character-emblem {
+            width: 21px;
+            height: 21px;
+        }
+
+        .roster-character-emblem-path {
+            width: 23px;
+            height: 23px;
+        }
     }
 }

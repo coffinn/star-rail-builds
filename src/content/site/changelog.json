@@ -4,6 +4,11 @@
             "version": "Site Conversion",
             "entries": [
                 {
+                    "date": "August 30, 2026",
+                    "changes": "added path and element icons to character browser",
+                    "appliedBy": "Navigator Team"
+                },
+                {
                     "date": "August 27, 2026",
                     "changes": "Support for 2p set recommendations",
                     "appliedBy": "Navigator Team"
