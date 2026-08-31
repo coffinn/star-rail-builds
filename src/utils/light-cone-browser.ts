@@ -15,7 +15,7 @@ const superimpositions = [1, 2, 3, 4, 5] as const;
 
 type SharedLightConeData = {
     rarity: number;
-    source?: string;
+    source?: string | string[];
     version_released?: string;
 
     passive?: LightConePassiveText;
@@ -111,13 +111,21 @@ function getLightConeEntries(locale: any, lang: string) {
                     info.version_released ?? '',
 
                 sourceName: info.source
-                    ? t(
-                        locale,
-                        'lightconesource',
-                        info.source,
-                        undefined,
-                        false,
+                    ? (
+                        Array.isArray(info.source)
+                            ? info.source
+                            : [info.source]
                     )
+                        .map((source) =>
+                            t(
+                                locale,
+                                'lightconesource',
+                                source,
+                                undefined,
+                                false,
+                            ),
+                        )
+                        .join(' / ')
                     : '',
 
                 level1Hp: String(
