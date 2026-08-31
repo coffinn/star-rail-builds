@@ -159,7 +159,7 @@
     "mushy-shroomys-adventures": {
         "rarity": 4,
         "version_released": "4.0",
-        "source": "priceless-jewels",
+        "source": ["priceless-jewels","echo-of-war", "starlit-homecoming"],
         "free": true,
         "passive": {
             "en": "Increases the wearer's Elation by {{value}}%. When the wearer uses an Elation Skill, increases Elation DMG taken by all enemies by {{value}}% for 2 turn(s).",
