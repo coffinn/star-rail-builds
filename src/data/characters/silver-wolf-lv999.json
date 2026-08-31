@@ -5,7 +5,6 @@
     "element": "imaginary",
     "path": "elation",
     "version_released": "4.2",
-    "max_energy": null,
     "abilities": {
         "basic": {
             "type": "Basic ATK",
@@ -90,7 +89,7 @@
             "type": "Ultimate",
             "name": "God Mode: ON!",
             "tag": "Enhance",
-            "energy_cost": "60 of \"Hidden MMR\" point(s)",
+            "energy_cost": "60 points of \"Hidden MMR\"",
             "min_level": 1,
             "max_level": 12,
             "default_level": 10,

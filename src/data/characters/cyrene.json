@@ -124,7 +124,7 @@
       "type": "Ultimate",
       "name": "Verse ◦ Vow ∞",
       "tag": "Summon",
-      "energy_cost": "24 point(s) of \"Recollection\"",
+      "energy_cost": "24 points of \"Recollection\"",
       "min_level": 1,
       "max_level": 12,
       "default_level": 10,

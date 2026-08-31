@@ -45,7 +45,7 @@
             "min_level": 1,
             "max_level": 12,
             "default_level": 10,
-            "description_template": "Increases Seele's SPD by {{spd_boost}}% for 3 turn(s) and deals Quantum DMG equal to {{damage}}% of Seele's ATK to one designated enemy. After an ally target attacks, if the attack target's current HP percentage is 50% or below, Seele will automatically use her Skill on that target 1 time. This Skill does not consume Skill Points or regenerate Energy. This effect can only be triggered 1 time per turn and resets at the start of Seele's turn. If there are no valid targets, she attacks the enemy with the lowest HP percentage instead.",
+            "description_template": "Increases Seele's SPD by 25% for 3 turn(s) and deals Quantum DMG equal to {{damage}}% of Seele's ATK to one designated enemy. After an ally target attacks, if the attack target's current HP percentage is 50% or below, Seele will automatically use her Skill on that target 1 time. This Skill does not consume Skill Points or regenerate Energy. This effect can only be triggered 1 time per turn and resets at the start of Seele's turn. If there are no valid targets, she attacks the enemy with the lowest HP percentage instead.",
             "scaling": {
                 "damage": [
                     180.0,
@@ -60,20 +60,6 @@
                     360.0,
                     378.0,
                     396.0
-                ],
-                "spd_boost": [
-                    12.5,
-                    13.75,
-                    15.0,
-                    16.25,
-                    17.5,
-                    18.75,
-                    20.3125,
-                    21.875,
-                    23.4375,
-                    25.0,
-                    26.25,
-                    27.5
                 ]
             }
         },

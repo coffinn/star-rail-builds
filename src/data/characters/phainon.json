@@ -202,7 +202,7 @@
       "type": "Ultimate",
       "name": "He Who Bears the World Must Burn",
       "tag": "AoE",
-      "energy_cost": "12 point(s) of \"Coreflame\"",
+      "energy_cost": "12 points of \"Coreflame\"",
       "break_aoe": 20,
       "min_level": 1,
       "max_level": 12,
