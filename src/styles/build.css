@@ -1009,6 +1009,16 @@
     font-weight: 850;
 }
 
+.element-bold .info-popover-trigger {
+    color: inherit;
+    font-weight: inherit;
+}
+
+.element-bold .info-popover-trigger:hover,
+.element-bold .info-popover-trigger:focus-visible {
+    color: inherit;
+}
+
 .accent-text {
     color: var(--accent);
 }
