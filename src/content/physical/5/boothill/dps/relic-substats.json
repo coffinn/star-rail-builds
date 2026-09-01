@@ -1,0 +1,11 @@
+{
+    "substats_priority": [
+        "be",
+        {
+            "name": "spd"
+        },
+        {
+            "name": "cr"
+        }
+    ]
+}

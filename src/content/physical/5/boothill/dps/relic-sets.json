@@ -5,7 +5,7 @@
                 {
                     "items": [
                         {
-                            "name": "scholar",
+                            "name": "iron-cavalry",
                             "pieces": 4
                         
                         }                       
@@ -14,9 +14,8 @@
                 {
                     "items": [
                         {
-                            "name": "poet",
-                            "pieces": 4,
-                            "note":{"en":"Poet of Mourning Collapse should only be used if his SPD can be kept under 95"}
+                            "name": "eagle",
+                            "pieces": 4
                         
                         }                       
                     ]
@@ -30,20 +29,25 @@
                 {
                     "items": [
                         {
-                            "name": "sigonia",
-                            "pieces": 2
+                            "name": "forge",
+                            "pieces": 2,
+                            "note":{"en":"The Dahlia or a fire weak enemy must be present"}
                         }
                     ]
-                },
+                }               
+            ]
+        },
+        {
+            "groups": [
                 {
                     "items": [
                         {
-                            "name": "inert-salsotto",
+                            "name": "talia",
                             "pieces": 2
                         }
                     ]
-                }                
+                }               
             ]
-        }
+        }        
     ]
 }

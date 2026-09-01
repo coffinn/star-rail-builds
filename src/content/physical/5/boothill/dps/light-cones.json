@@ -1,0 +1,49 @@
+{
+    "light_cones": [
+        {
+            "items": [
+                {
+                    "name": "sailing-towards-a-second-life",
+                    "superimposition": 1
+
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "shadowed-by-night",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "cruising",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "return-to-darkness",
+                    "superimposition": 1
+                },
+                {
+                    "name": "swordplay",
+                    "superimposition": 5
+                },
+                {
+                    "name": "adversarial",
+                    "superimposition": 5
+                },
+                {
+                    "name": "river-flows-in-spring",
+                    "superimposition": 5
+                }
+            ]
+        }
+    ]
+}    
