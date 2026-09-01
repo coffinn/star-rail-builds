@@ -154,26 +154,30 @@ function formatLightConeStatValue(
 /**
  * Translates a weapon source enum while falling back to the stored value.
  */
-function translateLightConeSource(locale: any, source?: string) {
+function translateLightConeSource(
+    locale: any,
+    source?: string | string[],
+) {
     if (!source) {
         return '';
     }
 
-    const translationKey = `Light Cone source ${source}`;
-
-    const translatedSource = t(
-        locale,
-        'ui',
-        translationKey,
-        undefined,
-        false,
-    );
-
-    return translatedSource === translationKey
+    const sources = Array.isArray(source)
         ? source
-        : translatedSource;
-}
+        : [source];
 
+    return sources
+        .map((sourceId) =>
+            t(
+                locale,
+                'lightconesource',
+                sourceId,
+                undefined,
+                false,
+            ),
+        )
+        .join(' / ');
+}
 /**
  * Helper class for translating structured content IDs and inline note references.
  *
@@ -439,7 +443,7 @@ export class TranslationHelper {
 
         return category;
 
-        
+
     }
 
     /**
@@ -640,9 +644,36 @@ export class TranslationHelper {
         }
 
         const effectRows = [
-            { label: '1P', value: this.getLocalizedRelicEffect(info['1p']) },
-            { label: '2P', value: this.getLocalizedRelicEffect(info['2p']) },
-            { label: '4P', value: this.getLocalizedRelicEffect(info['4p']) },
+            {
+                label: t(
+                    this.locale,
+                    'ui',
+                    '1-Pc',
+                    undefined,
+                    false,
+                ),
+                value: this.getLocalizedRelicEffect(info['1p']),
+            },
+            {
+                label: t(
+                    this.locale,
+                    'ui',
+                    '2-Pc',
+                    undefined,
+                    false,
+                ),
+                value: this.getLocalizedRelicEffect(info['2p']),
+            },
+            {
+                label: t(
+                    this.locale,
+                    'ui',
+                    '4-Pc',
+                    undefined,
+                    false,
+                ),
+                value: this.getLocalizedRelicEffect(info['4p']),
+            },
         ].filter((row) => row.value);
         const imageUrl = resolveRelicAssetUrl(id);
         const imageMarkup = imageUrl
