@@ -1,9 +1,4 @@
 {
-    "notes": [
-        {
-            "en": "Prioritize Effect Hit Rate until 120%."
-        }
-    ],
     "substats_priority": [
         "ehr",
         "atk%",
