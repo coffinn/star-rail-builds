@@ -5,21 +5,8 @@
                 {
                     "items": [
                         {
-                            "name": "diviner-of-distant-reach",
+                            "name": "eagle-of-twilight-line",
                             "pieces": 4
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "groups": [
-                {
-                    "choose": true,
-                    "items": [
-                        {
-                            "name": "2pc-speed",
-                            "pieces": 2
                         }
                     ]
                 }
@@ -32,7 +19,7 @@
                 {
                     "items": [
                         {
-                            "name": "sprightly-vonwacq",
+                            "name": "lushaka-the-sunken-seas",
                             "pieces": 2
                         }
                     ]
@@ -40,11 +27,8 @@
                 {
                     "items": [
                         {
-                            "name": "lushaka-the-sunken-seas",
-                            "pieces": 2,
-                            "note": {
-                                "en": "While Elation DMG is not affected by ATK, [[set:lushaka-the-sunken-seas]] can be used if Sparxie is on the team. As she has a trace that converts ATK into Elation DMG."
-                            }
+                            "name": "vonwacq",
+                            "pieces": 2
                         }
                     ]
                 }
@@ -55,7 +39,15 @@
                 {
                     "items": [
                         {
-                            "name": "city-of-converging-stars",
+                            "name": "giant-tree-of-rapt-brooding",
+                            "pieces": 2
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "forge-of-the-kalpagni-lantern",
                             "pieces": 2
                         }
                     ]

@@ -165,6 +165,24 @@
     font-weight: 730;
 }
 
+.weapon-entry-path {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.weapon-entry-path img {
+    display: block;
+
+    width: 16px;
+    height: 16px;
+
+    flex: 0 0 16px;
+
+    object-fit: contain;
+    opacity: 0.82;
+}
+
 .weapon-entry-rarity {
     display: inline-flex;
     min-height: 28px;

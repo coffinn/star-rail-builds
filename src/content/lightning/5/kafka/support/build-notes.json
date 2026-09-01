@@ -1,0 +1,20 @@
+{
+    "best": true,
+    "name": {
+        "en": "Damage Over Time (DoT) Support"
+    },
+    "notes": [
+        {
+            "en": "**Summary and General Analysis**\n\n✦ Kafka is a DoT support capable of detonating DoTs outside of enemy turns.\n\n✦ When Kafka attacks enemies with her Ultimate, Skill, and Follow-Up attack, DoTs on the enemies trigger for a portion of their damage.\n\n✦ Kafka gains one Follow-Up ATK charge after using her Ultimate and after her turn ends. \n\n✦ Kafka's performance is heavily reliant on Hysilens for DoT damage. "
+        },
+        {
+            "en": "**Investment Priority**\n\nHysilens E1 > E1\n\n**Investment Explanation**\n\n✦ Hysilens' E1 is DoT's best early investment, providing a unique 16% damage boost while doubling the number of DoTs she applies (4 -> 8). This eidolon not only greatly increases Hysilens' personal damage (especially in double DoT teams), it also greatly increases Black Swan's personal damage.\n\n✦ E1 provides 30% DoT Vulnerability."
+        },
+        {
+            "en": "**Skill Point Usage**\n\nNegative"
+        },
+        {
+            "en": "**Ability Rotation**\n\nSkill Spam"
+        }
+    ]
+}

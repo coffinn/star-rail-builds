@@ -11,15 +11,14 @@
             "items": [
                 {
                     "name": "todays-good-luck",
+                    "note_group": "s1-comparison",
                     "note": {
-                        "en": "If Today's Good Luck is S1, Mushy Shroomy's Adventures will perform better."
+                        "en": "[[light-cone:todays-good-luck]] is S1, [[light-cone:mushy-shroomys-adventures]] will perform better."
                     }
                 },
                 {
                     "name": "mushy-shroomys-adventures",
-                    "note": {
-                        "en": "If Today's Good Luck is S1, Mushy Shroomy's Adventures will perform better."
-                    }
+                    "note_group": "s1-comparison"
                 }
             ]
         }

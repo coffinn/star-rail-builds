@@ -1,0 +1,259 @@
+{
+  "id": "aventurine",
+  "name": "Aventurine",
+  "rarity": 5,
+  "element": "imaginary",
+  "path": "preservation",
+  "version_released": "2.1",
+  "max_energy": 110,
+
+  "level_80_stats": {
+    "hp": 1047,
+    "atk": 529,
+    "def": 880,
+    "spd": 106
+  },
+
+  "abilities": {
+    "basic": {
+      "type": "Tấn Công Thường",
+      "name": "Cược Trực Tiếp",
+      "tag": "Đánh Đơn",
+      "energy_gain": 20,
+      "break": 10,
+
+      "min_level": 1,
+      "max_level": 7,
+      "default_level": 6,
+
+      "description_template": "Gây Sát Thương Số Ảo cho 1 kẻ địch chỉ định tương đương {{damage}}% Phòng Thủ của Aventurine.",
+
+      "scaling": {
+        "damage": [
+          50,
+          60,
+          70,
+          80,
+          90,
+          100,
+          110
+        ]
+      }
+    },
+
+    "skill": {
+      "type": "Chiến Kỹ",
+      "name": "Đá Tảng Phồn Thịnh",
+      "tag": "Phòng Thủ",
+      "energy_gain": 30,
+
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+
+      "description_template": "Cung cấp cho toàn bộ phe ta Khiên \"\"Xu Cược Kiên Cố\"\" có thể triệt tiêu sát thương bằng {{shield_def}}% Phòng Thủ của Aventurine +{{shield_flat}}, duy trì 3 hiệp. Khi nhận trùng \"\"Xu Cược Kiên Cố\"\", lượng Khiên có thể cộng dồn, tối đa không vượt quá 200% lượng Khiên mà Chiến Kỹ hiện tại cung cấp.",
+
+      "scaling": {
+        "shield_def": [
+          16.0,
+          16.8,
+          17.6,
+          18.4,
+          19.2,
+          20.0,
+          21.0,
+          22.0,
+          23.0,
+          24.0,
+          24.8,
+          25.6
+        ],
+
+        "shield_flat": [
+          80,
+          104,
+          128,
+          152,
+          176,
+          200,
+          230,
+          260,
+          290,
+          320,
+          344,
+          368
+        ]
+      }
+    },
+
+    "ultimate": {
+      "type": "Tuyệt Kỹ",
+      "name": "Chúa Tể Vòng Quay",
+      "tag": "Đánh Đơn",
+      "energy_cost": 110,
+      "energy_gain": 5,
+      "break": 30,
+
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+
+      "description_template": "Ngẫu nhiên nhận được 1 đến 7 điểm \"Cược Mù\", sau đó khiến 1 kẻ địch chỉ định rơi vào trạng thái \"Hoảng Hốt\", duy trì 3 hiệp, và gây cho 1 kẻ địch chỉ định Sát Thương Số Ảo bằng {{damage}}% Phòng Thủ của Aventurine. Khi mục tiêu phe ta đánh trúng mục tiêu phe địch đang trong trạng thái \"Hoảng Hốt\", Sát Thương Bạo Kích gây ra tăng {{crit_dmg_up}}%.",
+
+      "scaling": {
+        "damage": [
+          162.0,
+          172.8,
+          183.6,
+          194.4,
+          205.2,
+          216.0,
+          229.5,
+          243.0,
+          256.5,
+          270.0,
+          280.8,
+          291.6
+        ],
+
+        "crit_dmg_up": [
+          9.0,
+          9.6,
+          10.2,
+          10.8,
+          11.4,
+          12.0,
+          12.75,
+          13.5,
+          14.25,
+          15.0,
+          15.6,
+          16.2
+        ]
+      }
+    },
+
+    "talent": {
+      "type": "Thiên Phú",
+      "name": "Nòng Súng Bên Phải",
+      "tag": "Nảy Bật",
+      "energy_gain": 7,
+      "break_bounce": 3.3,
+      "break_total": 24.1,
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+
+      "description_template": "Tăng {{effect_res}}% Kháng Hiệu Ứng cho 1 đồng đội phe ta có \"\"Xu Cược Kiên Cố\"\" và khi đồng đội này bị tấn công, Aventurine sẽ nhận 1 điểm \"Cược Mù\", khi Aventurine có \"\"Xu Cược Kiên Cố\"\" có thể kháng hiệu ứng xấu loại khống chế, hiệu ứng này sau 2 hiệp có thể kích hoạt lần nữa, và sau khi bị tấn công sẽ nhận thêm 1 điểm \"Cược Mù\". Sau khi \"Cược Mù\" đạt 7 điểm, Aventurine sẽ tiêu hao 7 điểm phát động Đòn Đánh Theo Sau gồm 7 đòn đánh, mỗi đòn đánh sẽ gây cho 1 kẻ địch ngẫu nhiên Sát Thương Số Ảo bằng {{def_ratio}}% Phòng Thủ của Aventurine. \"Cược Mù\" tối đa giới hạn 10 điểm.",
+
+      "scaling": {
+        "def_ratio": [
+          12.5,
+          13.75,
+          15.0,
+          16.25,
+          17.5,
+          18.75,
+          20.3125,
+          21.875,
+          23.4375,
+          25.0,
+          26.25,
+          27.5
+        ],
+
+        "effect_res": [
+          25.0,
+          27.5,
+          30.0,
+          32.5,
+          35.0,
+          37.5,
+          40.625,
+          43.75,
+          46.875,
+          50.0,
+          52.5,
+          55.0
+        ]
+      }
+    },
+
+    "technique": {
+      "type": "Bí Kỹ",
+      "name": "Đỏ Hay Là Đen",
+      "tag": "Phòng Thủ",
+      "description": "Sau khi dùng Bí Kỹ sẽ nhận 1 loại trong số các hiệu ứng sau:\nCó xác suất nhất định tăng 24% Phòng Thủ;\nCó xác suất lớn tăng 36% Phòng Thủ;\nCó xác suất nhỏ tăng 60% Phòng Thủ.\nKhi sử dụng trùng sẽ giữ lại hiệu ứng có giá trị cao nhất.\nKhi bắt đầu trận đấu tiếp theo, toàn bộ phe ta tăng Phòng Thủ với giá trị tương ứng, duy trì 3 hiệp."
+    }
+  },
+
+  "major_traces": {
+    "2": {
+      "name": "Đòn Bẩy",
+      "description": "Nếu Phòng Thủ của Aventurine cao hơn 1600 điểm, mỗi 100 điểm Phòng Thủ vượt quá sẽ giúp tăng 2% Tỷ Lệ Bạo Kích của bản thân, tối đa tăng 48%."
+    },
+
+    "4": {
+      "name": "Bàn Tay Vàng",
+      "description": "Khi bắt đầu chiến đấu, sẽ cung cấp Khiên \"\"Xu Cược Kiên Cố\"\" cho toàn bộ phe ta, lượng Khiên bằng 100% lượng Khiên mà Chiến Kỹ cung cấp, duy trì 3 hiệp."
+    },
+
+    "6": {
+      "name": "Bingo!",
+      "description": "Sau khi đồng đội sở hữu \"\"Xu Cược Kiên Cố\"\" phát động Đòn Đánh Theo Sau, sẽ tích lũy 1 điểm \"Cược Mù\" cho Aventurine, hiệu ứng này tối đa kích hoạt 3 lần, khi hiệp của Aventurine bắt đầu, sẽ làm mới số lần kích hoạt hiệu ứng này. Sau khi Aventurine phát động Đòn Đánh Theo Sau của Thiên Phú, sẽ cung cấp cho toàn thể phe ta \"\"Xu Cược Kiên Cố\"\" có thể triệt tiêu sát thương bằng 7.2% Phòng Thủ của Aventurine +96, và cung cấp thêm cho mục tiêu có Khiên thấp nhất phe ta \"\"Xu Cược Kiên Cố\"\" có thể triệt tiêu sát thương bằng 7.2% Phòng Thủ của Aventurine +96, duy trì 3 hiệp."
+    }
+  },
+
+  "stat_bonuses": [
+    {
+      "stat": "Kháng Hiệu Ứng",
+      "value": "+10%"
+    },
+    {
+      "stat": "Sát Thương - Số Ảo",
+      "value": "+14.4%"
+    },
+    {
+      "stat": "Phòng Thủ",
+      "value": "+35%"
+    }
+  ],
+
+  "eidolons": [
+    {
+      "level": 1,
+      "name": "Nước Cờ Tù Nhân",
+      "description": "Mục tiêu phe ta có \"Xu Cược Kiên Cố\" sẽ tăng 20% Sát Thương Bạo Kích. Sau khi thi triển Tuyệt Kỹ, sẽ cung cấp Khiên \"\"Xu Cược Kiên Cố\"\" cho toàn bộ phe ta, lượng Khiên bằng 100% lượng Khiên mà Chiến Kỹ cung cấp, duy trì 3 hiệp."
+    },
+
+    {
+      "level": 2,
+      "name": "Lý Tính Hữu Hạn",
+      "description": "Khi thi triển Tấn Công Thường sẽ khiến Kháng Toàn Thuộc Tính của mục tiêu giảm 12%, duy trì 3 hiệp."
+    },
+
+    {
+      "level": 3,
+      "name": "Bội Số Cao Nhất",
+      "description": "Cấp Tuyệt Kỹ +2, tối đa không quá cấp 15; Cấp Tấn Công Thường +1, tối đa không quá cấp 10."
+    },
+
+    {
+      "level": 4,
+      "name": "Hành Hình Đột Ngột",
+      "description": "Khi kích hoạt Đòn Đánh Theo Sau của Thiên Phú, sẽ tăng 40% Phòng Thủ của Aventurine trước, duy trì 2 hiệp, đồng thời tăng thêm 3 số đòn đánh trong một lượt của Đòn Đánh Theo Sau của Thiên Phú."
+    },
+
+    {
+      "level": 5,
+      "name": "Chán Ghét Mơ Hồ",
+      "description": "Cấp Chiến Kỹ +2, tối đa không quá cấp 15; Cấp Thiên Phú +2, tối đa không quá cấp 15."
+    },
+
+    {
+      "level": 6,
+      "name": "Trò Chơi Săn Hươu",
+      "description": "Mỗi khi có 1 đồng đội sở hữu Khiên, sát thương gây ra bởi Aventurine tăng 50%, tối đa không quá 150%."
+    }
+  ]
+}

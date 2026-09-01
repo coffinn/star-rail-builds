@@ -1,0 +1,15 @@
+{
+    "stats": [
+        {
+            "name": "spd",
+            "recommended": "167+",
+            "note": {
+                "en": "167 SPD with [[set:eagle-of-twilight-line]] allows Kafka to reach 200 effective SPD."
+            }
+        },
+        {
+            "name": "ehr",
+            "recommended": "75%"
+        }
+    ]
+}

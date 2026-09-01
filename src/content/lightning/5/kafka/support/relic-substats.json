@@ -1,8 +1,6 @@
 {
     "substats_priority": [
         "spd",
-        {
-            "name": "cr"
-        }
+        "ehr"
     ]
 }

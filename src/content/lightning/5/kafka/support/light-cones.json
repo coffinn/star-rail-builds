@@ -1,0 +1,21 @@
+{
+    "light_cones": [
+        {
+            "items": [
+                {
+                    "name": "before-the-tutorial-mission-starts",
+                    "superimposition": 5
+                }
+            ]
+        }
+    ],
+    "conditional": [
+        {
+            "name": "patience-is-all-you-need",
+            "superimposition": 1,
+            "note": {
+                "en": "If Kafka is E4+, she can run her S1, [[light-cone:patience-is-all-you-need]]."
+            }
+        }
+    ]
+}

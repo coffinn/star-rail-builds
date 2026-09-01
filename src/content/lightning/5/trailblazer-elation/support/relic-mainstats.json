@@ -3,8 +3,9 @@
         "body": [
             {
                 "name": "ANY",
+                "note_group": "main-stat-flexibility",
                 "note": {
-                    "en": "Use any mainstat to maximize speed. HP/DEF mainstats can be used for more survivability."
+                    "en": "Use any Main Stat to maximize SPD. HP/DEF Main Stats can be used for more survivability."
                 }
             }
         ],
@@ -14,9 +15,7 @@
         "planar_sphere": [
             {
                 "name": "ANY",
-                "note": {
-                    "en": "Use any mainstat to maximize speed. HP/DEF mainstats can be used for more survivability."
-                }
+                "note_group": "main-stat-flexibility"
             }
         ],
         "link_rope": [

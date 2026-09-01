@@ -10,6 +10,7 @@ import {
 
 type LightConeInfo = {
     rarity: number;
+    source?: string | string[];
 
     passive?: LightConePassiveText;
 
@@ -108,7 +109,27 @@ const defValue = formatLightConeStatValue(
     info?.level_1?.def,
     info?.level_max?.def,
 );
+const sourceName = info?.source
+    ? (Array.isArray(info.source) ? info.source : [info.source])
+          .map((source) =>
+              t(locale, 'lightconesource', source, undefined, false),
+          )
+          .join(' / ')
+    : '';
 
+const sourceLabel = t(locale, 'ui', 'Source', undefined, false);
+const sourceFooter = sourceName
+    ? [
+          '<span class="weapon-popover-source">',
+          '<span>',
+          escapeHtml(sourceLabel),
+          '</span>',
+          '<strong>',
+          escapeHtml(sourceName),
+          '</strong>',
+          '</span>',
+      ].join('')
+    : '';
 const popoverCardHtml = info
     ? [
           '<span class="info-popover-header',
@@ -201,6 +222,8 @@ const popoverCardHtml = info
               )
               .join(''),
           '</span>',
+
+          sourceFooter,
       ].join('')
     : '';
 ---

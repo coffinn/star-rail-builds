@@ -6,16 +6,16 @@
     "notes": [
         
         {
-            "en": "**Summary and General Analysis**\n\n✦ Damage profile is almost entirely Elation DMG. She converts up to 3600 ATK to Elation. Damage mostly comes from her Elation Skill and Enhanced Basic ATK.\n\n✦ Buffs the team's CRIT DMG based on Punchline.\n\n✦ Her Skill allows her to consume up to 20 Skill Points per turn, with each one generating Punchline and increasing her Enhanced Basic ATK's damage output.\n\n✦ While she still requires a teammate who can generate Skill Points, her expenditure is managed by several factors: her Enhanced Basic ATK still generates a Skill Point; she has a chance to recover two Skill Points when spending one; and her Ultimate and Elation Skill give points of [Thrill], which offset 1 Skill Point usage.\n\n✦ Her personal damage is high for a Sub DPS, and she generates a lot of Punchline."
+            "en": "**Summary and General Analysis**\n\n✦ Damage profile is almost entirely Elation DMG. She converts up to 3600 ATK to Elation. Damage mostly comes from her Elation Skill and Enhanced Basic ATK.\n\n✦ Buffs the team's CRIT DMG based on Punchline.\n\n✦ Her Skill allows her to consume up to 20 Skill Points per turn, with each one generating Punchline and increasing her Enhanced Basic ATK's damage output.\n\n✦ While she still requires a teammate who can generate Skill Points, her expenditure is managed by several factors: her Enhanced Basic ATK still generates a Skill Point; she has a chance to recover two Skill Points when spending one; and her Ultimate and Elation Skill give points of \"Thrill\", which offset 1 Skill Point usage.\n\n✦ Her personal damage is high for a Sub DPS, and she generates a lot of Punchline."
         },
         {
-            "en": "**Investment Priority**\n\n**E2 > S1 > E1**\n\n**Investment Explanation**\n\n✦ E2 grants her an Extra Turn and 2 [Thrill] when an Aha Instant ends, and self-buffs CRIT DMG when spending [Thrill].\n\n✦ S1 increases the team's Skill Point cap, allowing her to generate large amounts of Punchline more consistently. Also provides a teamwide Elation buff, and grants herself DEF Ignore and CRIT DMG for a sizeable personal damage increase.\n\n✦ E1 grants teamwide All-Type RES PEN, and 5 more Punchline per Aha Instant. Good, but still weaker and more expensive than S1."
+            "en": "**Investment Priority**\n\n**E2 > S1 > E1**\n\n**Investment Explanation**\n\n✦ E2 grants her an Extra Turn and 2 \"Thrill\" when an Aha Instant ends, and self-buffs CRIT DMG when spending \"Thrill\".\n\n✦ S1 increases the team's Skill Point cap, allowing her to generate large amounts of Punchline more consistently. Also provides a teamwide Elation buff, and grants herself DEF Ignore and CRIT DMG for a sizeable personal damage increase.\n\n✦ E1 grants teamwide All-Type RES PEN, and 5 more Punchline per Aha Instant. Good, but still weaker and more expensive than S1."
         },
         {
             "en": "**Skill Point Usage**\n\nNegative"
         },
         {
-            "en": "**Ability Rotation**\n\nEnhanced Basic Attack Spam"
+            "en": "**Ability Rotation**\n\nEnhanced Basic ATK Spam"
         }
     ]
 }

@@ -14,14 +14,27 @@ import { getLocalizedNote } from './content';
  */
 function renderNote(note: string, sourceFile: string, translator: any) {
     const renderedNote = translator.translateNoteText(note, sourceFile, {
-        weaponPopovers: true,
-        artifactPopovers: true,
+        lightConePopovers: true,
+        relicPopovers: true,
         rotationPopovers: true,
     });
 
     return (marked.parse(renderedNote) as string).replace(/<\/?p>/g, '');
 }
-
+function renderNoteName(
+    name: string,
+    sourceFile: string,
+    translator: any,
+) {
+    return translator.translateNoteText(
+        name,
+        sourceFile,
+        {
+            lightConePopovers: true,
+            relicPopovers: true,
+        },
+    );
+}
 /**
  * Picks a short, stable note ID prefix from a content file name.
  *
@@ -120,30 +133,125 @@ export function collectNotes(
     lang: string,
     translator: any,
 ) {
-    const notes: { id: string; name: string; note: string }[] = [];
+    const notes: {
+        id: string;
+        name: string;
+        note: string;
+    }[] = [];
 
-    // Mutating noteId here lets recommendation cards link to their note entries.
-    groups.forEach((group) => {
-        const groupItems = [
-            ...(group.items ?? []),
-            ...(group.choices ?? []).flatMap((choice: any) => choice.items ?? []),
-        ];
+    const groupedNotes = new Map<
+        string,
+        {
+            items: any[];
+            names: string[];
+            note?: string;
+        }
+    >();
 
-        groupItems.forEach((item: any) => {
-            const localizedNote = getLocalizedNote(item, lang);
+    const allItems = groups.flatMap((group) => [
+        ...(group.items ?? []),
+        ...(group.choices ?? []).flatMap(
+            (choice: any) => choice.items ?? [],
+        ),
+    ]);
 
-            if (localizedNote) {
-                const name = formatter(item);
-                const noteId = createNoteId(sourceFile, notes.length);
+    /*
+     * First collect explicitly grouped notes.
+     */
+    allItems.forEach((item: any) => {
+        if (!item.note_group) return;
 
-                item.noteId = noteId;
+        const groupId = item.note_group;
 
-                notes.push({
-                    id: noteId,
-                    name,
-                    note: renderNote(localizedNote, sourceFile, translator),
-                });
-            }
+        if (!groupedNotes.has(groupId)) {
+            groupedNotes.set(groupId, {
+                items: [],
+                names: [],
+            });
+        }
+
+        const group = groupedNotes.get(groupId)!;
+
+        group.items.push(item);
+        group.names.push(formatter(item));
+
+        const localizedNote =
+            getLocalizedNote(item, lang);
+
+        /*
+         * Only one item in the group needs to
+         * actually contain the note text.
+         */
+        if (localizedNote && !group.note) {
+            group.note = localizedNote;
+        }
+    });
+
+    /*
+     * Turn each note_group into one note.
+     */
+    groupedNotes.forEach((group) => {
+        if (!group.note) return;
+
+        const noteId = createNoteId(
+            sourceFile,
+            notes.length,
+        );
+
+        /*
+         * Every item points to the same anchor.
+         */
+        group.items.forEach((item) => {
+            item.noteId = noteId;
+        });
+
+        notes.push({
+            id: noteId,
+            name: renderNoteName(
+                group.names.join(' / '),
+                sourceFile,
+                translator,
+            ),
+            note: renderNote(
+                group.note,
+                sourceFile,
+                translator,
+            ),
+        });
+    });
+
+    /*
+     * Existing behavior for ordinary,
+     * non-grouped notes.
+     */
+    allItems.forEach((item: any) => {
+        if (item.note_group) return;
+
+        const localizedNote =
+            getLocalizedNote(item, lang);
+
+        if (!localizedNote) return;
+
+        const name = formatter(item);
+        const noteId = createNoteId(
+            sourceFile,
+            notes.length,
+        );
+
+        item.noteId = noteId;
+
+        notes.push({
+            id: noteId,
+            name: renderNoteName(
+                name,
+                sourceFile,
+                translator,
+            ),
+            note: renderNote(
+                localizedNote,
+                sourceFile,
+                translator,
+            ),
         });
     });
 
@@ -167,26 +275,128 @@ export function collectStatNotes(
     lang: string,
     translator: any,
 ) {
-    const notes: { id: string; name: string; note: string }[] = [];
+    const notes: {
+        id: string;
+        name: string;
+        note: string;
+    }[] = [];
 
-    items
-        .flatMap((item) => item.items ?? [item])
-        .forEach((item) => {
-            const localizedNote = getLocalizedNote(item, lang);
+    const flatItems = items.flatMap(
+        (item) => item.items ?? [item],
+    );
 
-            if (localizedNote) {
-                const name = formatter(item);
-                const noteId = createNoteId(sourceFile, notes.length);
+    const groupedNotes = new Map<
+        string,
+        {
+            items: any[];
+            names: string[];
+            note?: string;
+        }
+    >();
 
-                item.noteId = noteId;
+    /*
+     * First collect all note_group entries.
+     */
+    flatItems.forEach((item: any) => {
+        if (!item.note_group) return;
 
-                notes.push({
-                    id: noteId,
-                    name,
-                    note: renderNote(localizedNote, sourceFile, translator),
-                });
-            }
+        const groupId = item.note_group;
+
+        if (!groupedNotes.has(groupId)) {
+            groupedNotes.set(groupId, {
+                items: [],
+                names: [],
+            });
+        }
+
+        const group = groupedNotes.get(groupId)!;
+
+        group.items.push(item);
+
+        const name = formatter(item);
+
+        if (!group.names.includes(name)) {
+            group.names.push(name);
+        }
+
+        const localizedNote =
+            getLocalizedNote(item, lang);
+
+        /*
+         * Only one item in the group needs
+         * to contain the actual note.
+         */
+        if (localizedNote && !group.note) {
+            group.note = localizedNote;
+        }
+    });
+
+    /*
+     * Create one bottom note for each group
+     * and give every grouped stat the same noteId.
+     */
+    groupedNotes.forEach((group) => {
+        if (!group.note) return;
+
+        const noteId = createNoteId(
+            sourceFile,
+            notes.length,
+        );
+
+        group.items.forEach((item) => {
+            item.noteId = noteId;
         });
+
+        notes.push({
+            id: noteId,
+            name: renderNoteName(
+                group.names.join(' / '),
+                sourceFile,
+                translator,
+            ),
+            note: renderNote(
+                group.note,
+                sourceFile,
+                translator,
+            ),
+        });
+    });
+
+    /*
+     * Preserve normal behavior for stats
+     * that are not using note_group.
+     */
+    flatItems.forEach((item: any) => {
+        if (item.note_group) return;
+
+        const localizedNote =
+            getLocalizedNote(item, lang);
+
+        if (!localizedNote) return;
+
+        const name = formatter(item);
+
+        const noteId = createNoteId(
+            sourceFile,
+            notes.length,
+        );
+
+        item.noteId = noteId;
+
+        notes.push({
+            id: noteId,
+            name: renderNoteName(
+                name,
+                sourceFile,
+                translator,
+            ),
+            note: renderNote(
+                localizedNote,
+                sourceFile,
+                translator,
+            ),
+        });
+    });
 
     return notes;
 }

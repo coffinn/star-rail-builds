@@ -14,6 +14,15 @@ import abundanceIcon from '../assets/filter-icons/paths/abundance.png';
 import remembranceIcon from '../assets/filter-icons/paths/remembrance.png';
 import elationIcon from '../assets/filter-icons/paths/elation.png';
 
+import destructionIcon1 from '../assets/browser-icons/paths/destruction.png';
+import huntIcon1 from '../assets/browser-icons/paths/hunt.png';
+import eruditionIcon1 from '../assets/browser-icons/paths/erudition.png';
+import harmonyIcon1 from '../assets/browser-icons/paths/harmony.png';
+import nihilityIcon1 from '../assets/browser-icons/paths/nihility.png';
+import preservationIcon1 from '../assets/browser-icons/paths/preservation.png';
+import abundanceIcon1 from '../assets/browser-icons/paths/abundance.png';
+import remembranceIcon1 from '../assets/browser-icons/paths/remembrance.png';
+import elationIcon1 from '../assets/browser-icons/paths/elation.png';
 type LightConeBrowserData = {
     rarities: number[];
 
@@ -117,6 +126,17 @@ const pathIcons = {
     abundance: abundanceIcon,
     remembrance: remembranceIcon,
     elation: elationIcon,
+};
+const pathIcons1 = {
+    destruction: destructionIcon1,
+    hunt: huntIcon1,
+    erudition: eruditionIcon1,
+    harmony: harmonyIcon1,
+    nihility: nihilityIcon1,
+    preservation: preservationIcon1,
+    abundance: abundanceIcon1,
+    remembrance: remembranceIcon1,
+    elation: elationIcon1,
 };
 
 const pathOrder = [
@@ -313,7 +333,24 @@ const orderedPaths = [...data.paths].sort((a, b) => {
 
                             <div>
                                 <h2>{lightCone.name}</h2>
-                                <p>{lightCone.pathLabel}</p>
+
+                                <p class="weapon-entry-path">
+                                    {pathIcons1[
+                                        lightCone.path as keyof typeof pathIcons1
+                                    ] && (
+                                        <img
+                                            src={
+                                                pathIcons1[
+                                                    lightCone.path as keyof typeof pathIcons1
+                                                ].src
+                                            }
+                                            alt=""
+                                            aria-hidden="true"
+                                        />
+                                    )}
+
+                                    <span>{lightCone.pathLabel}</span>
+                                </p>
                             </div>
                         </div>
 

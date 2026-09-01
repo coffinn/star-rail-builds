@@ -25,7 +25,8 @@ type InlineTranslationCategory =
     | TranslationCategory
     | 'set'
     | 'artifact'
-    | 'weapon';
+    | 'weapon'
+    | 'light-cone';
 
 const CATEGORIES: TranslationCategory[] = [
     'relic',
@@ -92,7 +93,7 @@ type TranslationAliasCategory = Partial<
 const aliases = translationAliases as TranslationAliasCategory;
 
 const INLINE_TRANSLATION_TOKEN_PATTERN =
-    /\[\[(?:(relic|set|artifact|weapon|lightcone|character|stat|element|path|ability|note):)?([a-z0-9%/-]+)(?:\|([^\]\n]+))?\]\]/g;
+    /\[\[(?:(relic|set|artifact|weapon|lightcone|light-cone|character|stat|element|path|ability|note):)?([a-z0-9%/-]+)(?:\|([^\]\n]+))?\]\]/g;
 const ROTATION_POPOVER_INTRO_ID = 'Rotation notation intro';
 const ROTATION_POPOVER_NUMBER_INTRO_ID = 'Rotation notation number intro';
 const ROTATION_POPOVER_EXAMPLE_ID = 'Rotation notation example';
@@ -153,26 +154,30 @@ function formatLightConeStatValue(
 /**
  * Translates a weapon source enum while falling back to the stored value.
  */
-function translateLightConeSource(locale: any, source?: string) {
+function translateLightConeSource(
+    locale: any,
+    source?: string | string[],
+) {
     if (!source) {
         return '';
     }
 
-    const translationKey = `Light Cone source ${source}`;
-
-    const translatedSource = t(
-        locale,
-        'ui',
-        translationKey,
-        undefined,
-        false,
-    );
-
-    return translatedSource === translationKey
+    const sources = Array.isArray(source)
         ? source
-        : translatedSource;
-}
+        : [source];
 
+    return sources
+        .map((sourceId) =>
+            t(
+                locale,
+                'lightconesource',
+                sourceId,
+                undefined,
+                false,
+            ),
+        )
+        .join(' / ');
+}
 /**
  * Helper class for translating structured content IDs and inline note references.
  *
@@ -429,11 +434,16 @@ export class TranslationHelper {
             return 'relic';
         }
 
-        if (category === 'weapon') {
+        if (
+            category === 'weapon' ||
+            category === 'light-cone'
+        ) {
             return 'lightcone';
         }
 
         return category;
+
+
     }
 
     /**
@@ -634,9 +644,36 @@ export class TranslationHelper {
         }
 
         const effectRows = [
-            { label: '1P', value: this.getLocalizedRelicEffect(info['1p']) },
-            { label: '2P', value: this.getLocalizedRelicEffect(info['2p']) },
-            { label: '4P', value: this.getLocalizedRelicEffect(info['4p']) },
+            {
+                label: t(
+                    this.locale,
+                    'ui',
+                    '1-Pc',
+                    undefined,
+                    false,
+                ),
+                value: this.getLocalizedRelicEffect(info['1p']),
+            },
+            {
+                label: t(
+                    this.locale,
+                    'ui',
+                    '2-Pc',
+                    undefined,
+                    false,
+                ),
+                value: this.getLocalizedRelicEffect(info['2p']),
+            },
+            {
+                label: t(
+                    this.locale,
+                    'ui',
+                    '4-Pc',
+                    undefined,
+                    false,
+                ),
+                value: this.getLocalizedRelicEffect(info['4p']),
+            },
         ].filter((row) => row.value);
         const imageUrl = resolveRelicAssetUrl(id);
         const imageMarkup = imageUrl
