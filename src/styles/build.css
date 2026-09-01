@@ -1915,9 +1915,8 @@
     }
 
     .artifact-stats-card .recommendation-card-body {
-        grid-template-rows: auto auto;
         align-content: start;
-        justify-content: stretch;
+        grid-auto-rows: max-content;
     }
 
     .artifact-stats-card .recommendation-section {
