@@ -126,20 +126,6 @@ const bestRoleLabel = t(locale, 'ui', 'Best Role');
                             >
                                 {character}
                             </h1>
-
-                            {
-                                elementIcon && (
-                                    <img
-                                        class="character-title-element-icon"
-                                        src={elementIcon.src}
-                                        alt=""
-                                        title={elementLabel}
-                                        width="30"
-                                        height="30"
-                                        aria-hidden="true"
-                                    />
-                                )
-                            }
                         </div>
 
                         {
@@ -157,7 +143,17 @@ const bestRoleLabel = t(locale, 'ui', 'Best Role');
                                             aria-hidden="true"
                                         />
                                     )}
-
+                                    {elementIcon && (
+                                        <img
+                                            class="character-title-element-icon"
+                                            src={elementIcon.src}
+                                            alt=""
+                                            title={elementLabel}
+                                            width="30"
+                                            height="30"
+                                            aria-hidden="true"
+                                        />
+                                    )}
                                     {pathIcon && (
                                         <img
                                             class="character-path-icon"
