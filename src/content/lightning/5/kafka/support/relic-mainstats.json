@@ -6,13 +6,13 @@
     ],
     "main_stats": {
         "body": [
-            "Any"
+            "ANY"
         ],
         "feet": [
             "spd"
         ],
         "planar_sphere": [
-            "Any"
+            "ANY"
         ],
         "link_rope": [
             "err"
