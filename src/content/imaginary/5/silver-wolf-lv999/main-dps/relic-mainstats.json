@@ -7,14 +7,10 @@
             "spd"
         ],
         "planar_sphere": [
-            "hp%",
-            "atk%",
-            "def%"
+            "ANY"
         ],
         "link_rope": [
-            "hp%",
-            "atk%",
-            "def%"
+            "ANY"
         ]
     },
     "notes": [
