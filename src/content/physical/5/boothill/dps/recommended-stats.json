@@ -1,0 +1,17 @@
+{
+    "stats": [
+        {
+            "name": "be",
+            "baseline": "200%",
+            "recommended": "250%",
+            "note": {
+                "en": "Recommended stat assumes a Light Cone with Break Effect is being used"
+            }
+        },
+        {
+            "name": "spd",
+            "baseline": "150+",
+            "recommended": "160+"
+        }
+    ]
+}
