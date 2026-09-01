@@ -1,0 +1,11 @@
+{
+    "substats_priority": [
+        "break-effect",
+        {
+            "name": "spd"
+        },
+        {
+            "name": "cr"
+        }
+    ]
+}
