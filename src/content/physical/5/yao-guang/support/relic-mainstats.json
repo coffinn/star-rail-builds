@@ -2,10 +2,7 @@
     "main_stats": {
         "body": [
             {
-                "name": "cr",
-                "note": {
-                    "en": "Optional for personal damage. Out of combat, assuming 4-Pc [[set:diviner-of-distant-reach]]."
-                }
+                "name": "cr"
             },
             "ANY"
         ],
