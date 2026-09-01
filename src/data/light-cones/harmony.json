@@ -193,6 +193,7 @@
         "rarity": 4,
         "version_released": "2.0",
         "source": ["priceless-jewels", "echo-of-war"],
+        "free": true,
         "passive": {
             "en": "After the wearer uses a certain type of ability such as Basic ATK, Skill, or Ultimate, all allies gain Childishness, which increases allies' DMG for the same type of ability as used by the wearer by {{value}}%. Childishness only takes effect for the most recent type of ability the wearer used and cannot be stacked.",
             "ru": "После того как владелец использует базовую атаку, навык или сверхспособность, он накладывает на всех союзников статус Ребячество. Этот статус повышает наносимый соответствующим умением союзника урон на {{value}}%. Статус Ребячество работает только с последним использованным владельцем умением, и он не может складываться."
@@ -354,6 +355,7 @@
         "rarity": 4,
         "version_released": "2.2",
         "source": "herta-store",
+        "free": true,
         "passive": {
             "en": "Increases the wearer's ATK by {{value}}%. After the wearer uses their Ultimate, increases their DMG dealt by {{value}}%, lasting for 1 turn(s).",
             "ru": "Сила атаки владельца повышается на {{value}}%. После того как владелец использует сверхспособность, наносимый урон повышается на {{value}}% на 1 ход."
@@ -573,6 +575,7 @@
         "rarity": 4,
         "version_released": "1.0",
         "source": ["priceless-jewels", "echo-of-war", "starlit-homecoming"],
+        "free": true,
         "passive": {
             "en": "When the wearer uses their Skill, the next ally taking action (except the wearer) deals {{value}}% increased DMG for 1 turn(s).",
             "ru": "После использования владельцем навыка урон союзника, совершающего действие за ним, повышается на {{value}}% на 1 ход."
@@ -724,6 +727,7 @@
         "rarity": 4,
         "version_released": "3.5",
         "source": "herta-store",
+        "free": true,
         "passive": {
             "en": "Increases the wearer's ATK by {{value}}%. After the wearer uses Skill, increases ATK by {{value}}%, stacking up to 3 times.",
             "ru": "Сила атаки владельца повышается на {{value}}%. После использования навыка сила атаки владельца повышается на {{value}}%. Этот эффект может складываться до 3 раз."

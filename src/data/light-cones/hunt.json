@@ -120,6 +120,7 @@
         "rarity": 5,
         "version_released": "1.0",
         "source": "herta-store",
+        "free": true,
         "passive": {
             "en": "Increases the wearer's CRIT rate by {{value}}%, and increases their CRIT rate against enemies with HP less than or equal to 50% by an extra {{value}}%. When the wearer defeats an enemy, their ATK is increased by {{value}}% for 2 turn(s).",
             "ru": "Крит. шанс владельца повышается на {{value}}%. Крит. шанс владельца против противников с НР, ниже или равным 50%, дополнительно повышается на {{value}}%. Когда владелец побеждает противника, его сила атаки повышается на {{value}}% на 2 хода."
@@ -198,6 +199,7 @@
         "rarity": 4,
         "version_released": "2.0",
         "source": ["priceless-jewels", "echo-of-war"],
+        "free": true,
         "passive": {
             "en": "Increases the wearer's ATK by {{value}}%. When the wearer lands a CRIT hit on enemies, gains 1 stack of Good Fortune. This can stack up to 4 time(s). Every stack of Good Fortune increases the wearer's CRIT DMG by {{value}}%. Good Fortune will be removed at the end of the wearer's turn.",
             "ru": "Сила атаки владельца повышается на {{value}}%. Когда владелец совершает крит. попадание по противнику, он получает 1 ур. статуса Везение, который может складываться до 4 раз. Каждый имеющийся у владельца уровень статуса Везение повышает его крит. урон на {{value}}%. Статус Везение снимается в конце хода владельца."
@@ -359,6 +361,7 @@
         "rarity": 4,
         "version_released": "4.5",
         "source": "limited-time-event",
+        "free": true,
         "passive": {
             "en": "Increases the wearer's ATK by {{value}}%. After the wearer uses Follow-Up ATK, increases their CRIT DMG by {{value}}% for 2 turn(s). This effect can stack up to 10 times.",
             "ru": "Повышает силу атаки владельца на {{value}}%. После того как владелец использует бонус-атаку, его крит. урон повышается на {{value}}% на 2 хода. Эффект может складываться до 10 раз. "
@@ -437,6 +440,7 @@
         "rarity": 4,
         "version_released": "1.0",
         "source": ["priceless-jewels", "echo-of-war", "starlit-homecoming"],
+        "free": true,
         "passive": {
             "en": "After entering battle, increases the wearer's SPD by {{value}}% and DMG by {{value}}%. When the wearer takes DMG, this effect will disappear. This effect will resume after the end of the wearer's next turn.",
             "ru": "В начале боя скорость владельца повышается на {{value}}%, а его урон - на {{value}}%. Этот эффект снимается, когда владелец получает урон, и снова появляется в конце следующего хода."

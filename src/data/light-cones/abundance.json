@@ -158,6 +158,7 @@
         "rarity": 4,
         "version_released": "1.5",
         "source": "herta-store",
+        "free": true,
         "passive": {
             "en": "Increases the wearer's Max HP by {{value}}%. When the wearer uses their Skill, increases Outgoing Healing by {{value}}%, lasting for 2 turn(s).",
             "ru": "Макс. HP владельца повышается на {{value}}%. Когда владелец использует навык, его исходящее исцеление повышается на {{value}}% на 2 хода.",
@@ -363,6 +364,7 @@
         "rarity": 4,
         "version_released": "1.0",
         "source": ["priceless-jewels","echo-of-war", "starlit-homecoming"],
+        "free": true,
         "passive": {
             "en": "At the start of the wearer's turn, regenerates {{value}} Energy for a randomly chosen ally (excluding the wearer) whose current Energy is lower than 50%.",
             "ru": "В начале своего хода владелец восстанавливает {{value}} ед. энергии случайному союзнику, кроме владельца, чья текущая энергия ниже 50%.",
@@ -608,6 +610,7 @@
         "rarity": 4,
         "version_released": "2.0",
         "source": ["priceless-jewels", "echo-of-war"],
+        "free": true,
         "passive": {
             "en": "Increases the wearer's Break Effect by {{value}}%. After using Basic ATK, restores HP for the wearer by an amount equal to {{value}}% of Max HP plus 800.",
             "ru": "Эффект пробития владельца повышается на {{value}}%. Базовые атаки владельца восстанавливают {{value}}% его НР плюс 800 ед.",

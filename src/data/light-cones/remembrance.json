@@ -3,6 +3,7 @@
         "rarity": 4,
         "version_released": "3.7",
         "source": "story",
+        "free": true,
         "passive": {
             "en": "Increases the wearer's CRIT DMG by {{value}}%. When equipped by Trailblazer (Remembrance), increases all ally targets' DMG dealt by {{value}}% and DMG dealt by Enhanced Basic ATK \"Together, We Script Tomorrow!\" by {{value}}%.",
             "ru": "Крит. урон владельца повышается на {{value}}%. Если владельцем является Первопроходец (Память), то наносимый всеми союзниками урон повышается на {{value}}%, а также повышает урон, наносимый усиленной базовой атакой «Вместе опишем облик завтрашнего дня!», на {{value}}%."
@@ -179,6 +180,7 @@
         "rarity": 5,
         "version_released": "3.1",
         "source": "herta-store",
+        "free": true,
         "passive": {
             "en": "Increases the wearer's SPD by {{value}}%. After the wearer uses Skill, increases the DMG dealt by all allies by {{value}}%, lasting for 3 turn(s).",
             "ru": "Скорость владельца повышается на {{value}}%. После того как владелец использует навык, наносимый всеми союзниками урон повышается на {{value}}% на 3 хода."
@@ -589,6 +591,7 @@
         "rarity": 4,
         "version_released": "3.0",
         "source": ["priceless-jewels", "echo-of-war", "starlit-homecoming", "story"],
+        "free": true,
         "passive": {
             "en": "Increases the wearer's CRIT DMG by {{value}}%. When the wearer's memosprite uses an ability on an ally target, increases the DMG dealt by all ally targets by {{value}}%, lasting for 3 turn(s).",
             "ru": "Крит. урон владельца повышается на {{value}}%. Когда дух памяти владельца использует умение на союзнике, наносимый всеми союзниками урон повышается на {{value}}% на 3 хода."

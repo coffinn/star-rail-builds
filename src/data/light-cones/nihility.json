@@ -47,6 +47,7 @@
         "rarity": 4,
         "version_released": "1.1",
         "source": "herta-store",
+        "free": true,
         "passive": {
             "en": "Increases the wearer's Effect Hit Rate by {{value}}%. When the wearer attacks DEF-reduced enemies, regenerates {{value}} Energy.",
             "ru": "Шанс попадания эффектов владельца повышается на {{value}}%. Когда владелец атакует противника с пониженной защитой, он восстанавливает {{value}} ед. энергии."
@@ -164,6 +165,7 @@
         "rarity": 4,
         "version_released": "1.0",
         "source": ["priceless-jewels", "echo-of-war", "starlit-homecoming"],
+        "free": true,
         "passive": {
             "en": "Increases the wearer's Break Effect by {{value}}%, and increases their DMG to enemies afflicted with Shock or Wind Shear by {{value}}%. This also applies to DoT.",
             "ru": "Эффект пробития владельца повышается на {{value}}%. Урон владельца, наносимый противникам со статусом Шок и Выветривание, повышается на {{value}}%. Этот эффект также распространяется на периодический урон."
@@ -398,6 +400,7 @@
         "rarity": 4,
         "version_released": "2.0",
         "source": ["priceless-jewels", "echo-of-war"],
+        "free": true,
         "passive": {
             "en": "When the wearer inflicts a debuff on an enemy, gains a stack of Trick. Every stack of Trick increases the wearer's DMG dealt by {{value}}%, stacking up to 3 time(s). This effect lasts for 1 turn(s). When the wearer's Effect Hit Rate is 80% or higher, increases ATK by {{value}}%.",
             "ru": "После того как владелец накладывает ослабление на противника, он получает 1 ур. статуса Трюк. Каждый уровень этого статуса повышает наносимый владельцем урон на {{value}}% до макс. 3 раз. Этот эффект длится 1 ход. Если шанс попадания эффектов владельца выше или равен 80%, его сила атаки повышается на {{value}}%."
@@ -764,6 +767,7 @@
         "rarity": 5,
         "version_released": "1.3",
         "source": "herta-store",
+        "free": true,
         "passive": {
             "en": "Increases the wearer's Break Effect by {{value}}%. When the wearer uses their Ultimate, increases DoT dealt by the wearer by {{value}}%, lasting for 2 turn(s). When a target enemy suffering from DoT imposed by the wearer is defeated, regenerates {{value}} Energy for the wearer.",
             "ru": "Эффект пробития владельца повышается на {{value}}%. Когда владелец использует сверхспособность, наносимый им периодический урон повышается на {{value}}% на 2 хода. Победа над противником с наложенным эффектом периодического урона от владельца восстанавливает {{value}} ед. его энергии."

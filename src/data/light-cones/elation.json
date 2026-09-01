@@ -307,6 +307,7 @@
         "rarity": 4,
         "version_released": "4.2",
         "source": "limited-time-event",
+        "free": true,
         "passive": {
             "en": "Increases the wearer's CRIT DMG by {{value}}%. After the wearer uses their Ultimate, increases the Elation of all allies by {{value}}%, lasting for 1 turn(s).",
             "ru": "Крит. урон владельца повышается на {{value}}%. После того как владелец использует сверхспособность, уровень Радости всех союзников повышается на {{value}}% на 1 ход."

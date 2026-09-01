@@ -154,6 +154,7 @@
         "rarity": 4,
         "version_released": "2.0",
         "source": ["priceless-jewels", "echo-of-war"],
+        "free": true,
         "passive": {
             "en": "Increases the wearer's Effect RES by {{value}}%. For every 100 of DEF the wearer has, increases the wearer's DMG dealt by {{value}}%, up to a maximum DMG increase of {{value}}%.",
             "ru": "Сопротивление эффектам владельца повышается на {{value}}%. Каждые 100 ед. защиты владельца повышают наносимый им урон на {{value}}% до макс. {{value}}%."
@@ -446,6 +447,7 @@
         "rarity": 5,
         "version_released": "1.0",
         "source": "herta-store",
+        "free": true,
         "passive": {
             "en": "Increases the wearer's Effect RES by {{value}}%. If the wearer is attacked and has no Shield, they gain a Shield equal to {{value}}% of their Max HP for 2 turn(s). This effect can only be triggered once every 3 turn(s). If the wearer has a Shield when attacked, the DMG they receive decreases by {{value}}%.",
             "ru": "Сопротивление эффектам владельца повышается на {{value}}%. Если владелец атакован и у него нет Щита, то он получает Щит, равный {{value}}% от его макс. HP, на 2 хода. Этот эффект может сработать только один раз каждые 3 хода. Если при атаке у владельца есть Щит, то получаемый им урон понижается на {{value}}%."
@@ -627,6 +629,7 @@
         "rarity": 4,
         "version_released": "1.0",
         "source": ["priceless-jewels", "echo-of-war", "starlit-homecoming"],
+        "free": true,
         "passive": {
             "en": "At the start of the battle, the DMG dealt to all allies decreases by {{value}}% for 5 turn(s). At the same time, immediately restores HP to all allies equal to {{value}}% of the respective HP difference between the characters' Max HP and current HP.",
             "ru": "В начале боя урон, получаемый всеми союзниками, понижается на {{value}}% на 5 ходов. НР всех союзников восстанавливается на {{value}}% от разницы между их макс. НР и текущим НР."

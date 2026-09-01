@@ -240,6 +240,7 @@
         "rarity": 5,
         "version_released": "2.3",
         "source": "herta-store",
+        "free": true,
         "passive": {
             "en": "Increases the wearer's ATK by {{value}}%. After using an attack, for each enemy target hit, additionally increases ATK by {{value}}%. This effect can stack up to 5 times and last until the next attack. If there are 3 or more enemy targets hit, this unit's SPD increases by {{value}}%, lasting for 1 turn(s).",
             "ru": "Сила атаки владельца повышается на {{value}}%. Каждый поражённый атакой противник повышает силу атаки владельца на доп. {{value}}%. Этот эффект может складываться до 5 раз и длится до следующей атаки. Если количество поражённых противников выше или равно 3, скорость владельца повышается на {{value}}% на 1 ход."
@@ -673,6 +674,7 @@
         "rarity": 4,
         "version_released": "2.0",
         "source": ["priceless-jewels", "echo-of-war"],
+        "free": true,
         "passive": {
             "en": "Increases the wearer's ATK by {{value}}%. When the wearer uses an attack and at least 2 attacked enemies have the corresponding Weakness, the wearer's CRIT DMG increases by {{value}}%, lasting for 2 turn(s).",
             "ru": "Сила атаки владельца повышается на {{value}}%. Если после атаки владельца не менее 2 целей имеют соответствующую уязвимость, крит. урон владельца повышается на {{value}}% на 2 хода."
@@ -712,6 +714,7 @@
         "rarity": 4,
         "version_released": "3.2",
         "source": "herta-store",
+        "free": true,
         "passive": {
             "en": "Increase the wearer's ATK by {{value}}%. For every 1 different Weakness Type an enemy target has, increase the DMG dealt to it by the wearer by {{value}}%. Up to a max of 7 Weakness Types can be taken into account for this effect.",
             "ru": "Сила атаки владельца повышается на {{value}}%. За каждый имеющийся у противника тип уязвимости наносимый владельцем урон повышается на {{value}}%. Этот эффект может складываться до 7 раз."
@@ -751,6 +754,7 @@
         "rarity": 4,
         "version_released": "1.0",
         "source": ["priceless-jewels", "echo-of-war", "starlit-homecoming"],
+        "free": true,
         "passive": {
             "en": "Increases the wearer's DMG by {{value}}%. For every enemy defeated by the wearer, the wearer's ATK increases by {{value}}%, stacking up to 3 time(s).",
             "ru": "Наносимый владельцем урон повышается на {{value}}%. За каждого побеждённого противника сила атаки владельца повышается на {{value}}%. Этот эффект может складываться до 3 раз."

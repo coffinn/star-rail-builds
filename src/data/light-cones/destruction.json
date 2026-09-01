@@ -296,6 +296,7 @@
         "rarity": 4,
         "version_released": "2.0",
         "source": ["priceless-jewels", "echo-of-war"],
+        "free": true,
         "passive": {
             "en": "When the wearer's cumulative HP loss during one attack exceeds 25% of their Max HP, or if the amount of their own HP consumed at one time is greater than 25% of their Max HP, immediately heals the wearer for 15% of their Max HP, and at the same time, increases the DMG they deal by {{value}}% for 2 turn(s). This effect can only be triggered once every 3 turn(s).",
             "ru": "Когда потерянное за одну атаку НР владельца превышает 25% от его макс. НР или когда поглощённое им НР превышает 25% от его макс. НP, владелец немедленно восстанавливает 15% своего НР, в то время как наносимый им урон повышается на {{value}}% на 2 хода. Этот эффект может сработать только 1 раз за 3 хода."
@@ -501,6 +502,7 @@
         "rarity": 4,
         "version_released": "2.6",
         "source": "herta-store",
+        "free": true,
         "passive": {
             "en": "Increases the wearer's Max HP by {{value}}%. When losing or restoring this unit's HP, increases CRIT DMG by {{value}}%, lasting for 2 turn(s). This effect can only trigger once per turn.",
             "ru": "Макс. НР владельца повышается на {{value}}%. Когда владелец теряет или восстанавливает НР, его крит. урон повышается на {{value}}% на 2 хода. Этот эффект может сработать только 1 раз за ход."
@@ -579,6 +581,7 @@
         "rarity": 5,
         "version_released": "1.0",
         "source": "herta-store",
+        "free": true,
         "passive": {
             "en": "When the wearer attacks, increases their ATK by {{value}}% in this battle. This effect can stack up to 4 time(s). After the wearer breaks an enemy's Weakness, increases DMG dealt by {{value}}%, lasting for 2 turn(s).",
             "ru": "Когда владелец использует атаку, его сила атаки в этом бою повышается на {{value}}%. Этот эффект может складываться до 4 раз. Когда владелец пробивает уязвимость противника, наносимый им урон повышается на {{value}}% на 2 хода."
