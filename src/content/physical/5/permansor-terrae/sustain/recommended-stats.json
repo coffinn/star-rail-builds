@@ -6,9 +6,12 @@
             "recommended": "160+"
         },
         {
-            "name": "atk",
+            "name": "total-atk",
             "baseline": "3000+",
-            "recommended": "3200+"
+            "recommended": "3200+",
+            "note": {
+                "en": "With S1 Through Worlds Apart, it is recommended to aim for 3700+ ATK."
+            }
         }
     ]
 }
