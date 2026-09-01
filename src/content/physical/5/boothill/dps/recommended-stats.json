@@ -1,7 +1,7 @@
 {
     "stats": [
         {
-            "name": "be",
+            "name": "break-effect",
             "baseline": "200%",
             "recommended": "250%",
             "note": {

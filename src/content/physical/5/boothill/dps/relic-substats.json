@@ -1,6 +1,6 @@
 {
     "substats_priority": [
-        "be",
+        "break-effect",
         {
             "name": "spd"
         },
