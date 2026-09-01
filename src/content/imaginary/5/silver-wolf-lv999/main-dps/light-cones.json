@@ -11,12 +11,14 @@
             "items": [
                 {
                     "name": "todays-good-luck",
+                    "note_group": "s1-comparison",
                     "note": {
                         "en": "[[light-cone:todays-good-luck]] is S1, [[light-cone:mushy-shroomys-adventures]] will perform better."
                     }
                 },
                 {
-                    "name": "mushy-shroomys-adventures"
+                    "name": "mushy-shroomys-adventures",
+                    "note_group": "s1-comparison"
                 }
             ]
         }

@@ -7,6 +7,7 @@
                         {
                             "name": "diviner-of-distant-reach",
                             "pieces": 4,
+                            "note_group": "diviner-eagle-comparison",
                             "note": {
                                 "en": "[[set:diviner-of-distant-reach]] is preferred if there is no other user in the party. If another unit has the aforementioned set, 4-Pc [[set:eagle-of-twilight-line]] is preferred."
                             }
@@ -17,7 +18,8 @@
                     "items": [
                         {
                             "name": "eagle-of-twilight-line",
-                            "pieces": 4
+                            "pieces": 4,
+                            "note_group": "diviner-eagle-comparison"
                         }
                     ]
                 }
