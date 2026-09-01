@@ -17,7 +17,7 @@
       "type": "Basic ATK",
       "name": "Whistlebolt Sings Joy",
       "tag": "Blast",
-      "energy_gain": "30",
+      "energy_gain": 30,
       "break_main": 10,
       "break_adjacent": 5,
       "min_level": 1,

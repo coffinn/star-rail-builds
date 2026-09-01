@@ -4,14 +4,14 @@
             "name": "spd",
             "recommended": "180+",
             "note": {
-                "en": "Aim for 200+ SPD when using Welcome to the Cosmic City."
+                "en": "Aim for 200+ SPD when using [[light-cone:welcome-to-the-cosmic-city]]."
             }
         },
         {
             "name": "cr",
             "recommended": "92%",
             "note": {
-                "en": "Silver Wolf's CR and CD requirements are flexible thanks to Hidden MMR. 92% CR allows Silver Wolf to hit 100% CR with 20 HMMR."
+                "en": "Silver Wolf LV.999's CRIT Rate and CRIT DMG requirements are flexible thanks to \"Hidden MMR\". 92% CRIT Rate allows Silver Wolf LV.999 to hit 100% CRIT Rate with 20 \"Hidden MMR\"."
             }
         },
         {

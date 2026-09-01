@@ -1,871 +1,909 @@
 {
-   "a-dream-scented-in-wheat": {
-        "rarity": 4,
-        "version_released": "3.4",
-        "source": "nameless-honor",
-        "passive": {
-            "en": "Increases the wearer's CRIT Rate by {{value}}%. The Ultimate DMG and Follow-up ATK DMG dealt by the wearer increase by {{value}}%.",
-            "ru": "Крит. шанс владельца повышается на {{value}}%. Наносимый владельцем урон сверхспособности и бонус-атаки повышается на {{value}}%."
-        },
-        "s1": [
-            12,
-            24
-        ],
-        "s2": [
-            14,
-            28
-        ],
-        "s3": [
-            16,
-            32
-        ],
-        "s4": [
-            18,
-            36
-        ],
-        "s5": [
-            20,
-            40
-        ],
-        "level_1": {
-            "hp": 43,
-            "atk": 24,
-            "def": 18
-        },
-        "level_max": {
-            "hp": 952,
-            "atk": 529,
-            "def": 396
-        }
+  "a-dream-scented-in-wheat": {
+    "rarity": 4,
+    "version_released": "3.4",
+    "source": "nameless-honor",
+    "passive": {
+      "en": "Increases the wearer's CRIT Rate by {{value}}%. The Ultimate DMG and Follow-up ATK DMG dealt by the wearer increase by {{value}}%.",
+      "ru": "Крит. шанс владельца повышается на {{value}}%. Наносимый владельцем урон сверхспособности и бонус-атаки повышается на {{value}}%.",
+      "vn": "Khiến Tỷ Lệ Bạo Kích của người trang bị tăng {{value}}%. Sát thương Tuyệt Kỹ và Đòn Đánh Theo Sau của người trang bị gây ra tăng {{value}}%."
     },
-    "a-star-that-lights-the-night": {
-        "rarity": 5,
-        "version_released": "4.4",
-        "source": "limited-warp",
-        "passive": {
-            "en": "The wearer ignores {{value}}% of the target's DEF when dealing DMG. When the wearer uses Assist Skill, they regenerate 6 Energy and gain \"Sail,\" lasting for 2 turns and stacking up to 3 time(s). Each stack of \"Sail\" increases Assist Skill DMG by {{value}}%. When \"Sail\" reaches 3 stacks, each stack of \"Sail\" increases Ultimate DMG by {{value}}%.",
-            "ru": "Владелец игнорирует {{value}}% защиты цели при нанесении урона. Когда владелец использует навык поддержки, он восстанавливает 6 ед. энергии и получает статус Отправление на 2 хода, который может складываться до 3 раз. Каждый уровень статуса Отправление повышает урон навыка поддержки на {{value}}%. При достижении 3 ур. статуса Отправление каждый уровень также повышает урон сверхспособности на {{value}}%."
-        },
-        "s1": [
-            32,
-            20,
-            20
-        ],
-        "s2": [
-            36,
-            25,
-            25
-        ],
-        "s3": [
-            40,
-            30,
-            30
-        ],
-        "s4": [
-            44,
-            35,
-            35
-        ],
-        "s5": [
-            48,
-            40,
-            40
-        ],
-        "level_1": {
-            "hp": 38,
-            "atk": 28,
-            "def": 24
-        },
-        "level_max": {
-            "hp": 846,
-            "atk": 635,
-            "def": 529
-        }
+    "s1": [
+      12,
+      24
+    ],
+    "s2": [
+      14,
+      28
+    ],
+    "s3": [
+      16,
+      32
+    ],
+    "s4": [
+      18,
+      36
+    ],
+    "s5": [
+      20,
+      40
+    ],
+    "level_1": {
+      "hp": 43,
+      "atk": 24,
+      "def": 18
     },
-    "after-the-charmony-fall": {
-        "rarity": 4,
-        "version_released": "2.3",
-        "source": "warp",
-        "passive": {
-            "en": "Increases the wearer's Break Effect by {{value}}%. After the wearer uses Ultimate, increases SPD by {{value}}%, lasting for 2 turn(s).",
-            "ru": "Эффект пробития владельца повышается на {{value}}%. После того как владелец использует сверхспособность, его скорость повышается на {{value}}% на 2 хода."
-        },
-        "s1": [
-            28,
-            8
-        ],
-        "s2": [
-            35,
-            10
-        ],
-        "s3": [
-            42,
-            12
-        ],
-        "s4": [
-            49,
-            14
-        ],
-        "s5": [
-            56,
-            16
-        ],
-        "level_1": {
-            "hp": 38,
-            "atk": 21,
-            "def": 18
-        },
-        "level_max": {
-            "hp": 846,
-            "atk": 476,
-            "def": 396
-        }
-    },
-    "an-instant-before-a-gaze": {
-        "rarity": 5,
-        "version_released": "1.5",
-        "source": ["limited-warp", "stellar-convergence"],
-        "passive": {
-            "en": "Increases the wearer's CRIT DMG by {{value}}%. When the wearer uses Ultimate, increases DMG dealt by the wearer's Ultimate based on their Max Energy. Each point of Energy increases DMG dealt by Ultimate by {{value}}%. A max of 180 points of Energy will be taken into account for this.",
-            "ru": "Крит. урон владельца повышается на {{value}}%. Когда владелец использует сверхспособность, наносимый ею урон повышается на {{value}}% за каждую единицу от макс. энергии владельца. Этот эффект может складываться до макс. 180 ед. энергии."
-        },
-        "s1": [
-            36,
-            0.36
-        ],
-        "s2": [
-            42,
-            0.42
-        ],
-        "s3": [
-            48,
-            0.48
-        ],
-        "s4": [
-            54,
-            0.54
-        ],
-        "s5": [
-            60,
-            0.60
-        ],
-        "level_1": {
-            "hp": 48,
-            "atk": 26,
-            "def": 21
-        },
-        "level_max": {
-            "hp": 1058,
-            "atk": 582,
-            "def": 463
-        }
-    },"before-dawn": {
-        "rarity": 5,
-        "version_released": "1.0",
-        "source": "limited-warp",
-        "passive": {
-            "en": "Increases the wearer's CRIT DMG by {{value}}%. Increases DMG dealt by the wearer's Skill and Ultimate by {{value}}%. After the wearer uses Skill or Ultimate, gains \"Somnus Corpus.\" Upon triggering a Follow-Up ATK, consumes \"Somnus Corpus,\" and increases DMG dealt by Follow-Up ATK by {{value}}%.",
-            "ru": "Крит. урон владельца повышается на {{value}}%, а наносимый навыком и сверхспособностью владельца урон - на {{value}}%. После использования навыка или сверхспособности владелец получает статус Спящее тело. Выполнение бонус-атаки расходует статус Спящее тело и повышает наносимый бонус-атакой урон на {{value}}%."
-        },
-        "s1": [
-            36,
-            18,
-            48
-        ],
-        "s2": [
-            42,
-            21,
-            56
-        ],
-        "s3": [
-            48,
-            24,
-            64
-        ],
-        "s4": [
-            54,
-            27,
-            72
-        ],
-        "s5": [
-            60,
-            30,
-            80
-        ],
-        "level_1": {
-            "hp": 48,
-            "atk": 26,
-            "def": 21
-        },
-        "level_max": {
-            "hp": 1058,
-            "atk": 582,
-            "def": 463
-        }
-    },
-    "data-bank": {
-        "rarity": 3,
-        "version_released": "1.0",
-        "source": "warp",
-        "passive": {
-            "en": "Increases DMG dealt by the wearer's Ultimate by {{value}}%.",
-            "ru": "Наносимый сверхспособностью владельца урон повышается на {{value}}%."
-        },
-        "s1": [
-            28
-        ],
-        "s2": [
-            35
-        ],
-        "s3": [
-            42
-        ],
-        "s4": [
-            49
-        ],
-        "s5": [
-            56
-        ],
-        "level_1": {
-            "hp": 33,
-            "atk": 16,
-            "def": 12
-        },
-        "level_max": {
-            "hp": 740,
-            "atk": 370,
-            "def": 264
-        }
-    },"eternal-calculus": {
-        "rarity": 5,
-        "version_released": "2.3",
-        "source": "herta-store",
-        "free": true,
-        "passive": {
-            "en": "Increases the wearer's ATK by {{value}}%. After using an attack, for each enemy target hit, additionally increases ATK by {{value}}%. This effect can stack up to 5 times and last until the next attack. If there are 3 or more enemy targets hit, this unit's SPD increases by {{value}}%, lasting for 1 turn(s).",
-            "ru": "Сила атаки владельца повышается на {{value}}%. Каждый поражённый атакой противник повышает силу атаки владельца на доп. {{value}}%. Этот эффект может складываться до 5 раз и длится до следующей атаки. Если количество поражённых противников выше или равно 3, скорость владельца повышается на {{value}}% на 1 ход."
-        },
-        "s1": [
-            8,
-            4,
-            8
-        ],
-        "s2": [
-            9,
-            5,
-            10
-        ],
-        "s3": [
-            10,
-            6,
-            12
-        ],
-        "s4": [
-            11,
-            7,
-            14
-        ],
-        "s5": [
-            12,
-            8,
-            16
-        ],
-        "level_1": {
-            "hp": 48,
-            "atk": 24,
-            "def": 18
-        },
-        "level_max": {
-            "hp": 1058,
-            "atk": 529,
-            "def": 396
-        }
-    },"flickering-stars": {
-        "rarity": 5,
-        "version_released": "4.4",
-        "source": "limited-warp",
-        "passive": {
-            "en": "Increases the wearer's CRIT Rate by {{value}}%. When any ally character consumes a total of 4 or more Skill Points in a single turn, the wearer gains \"Radiant Crown,\" lasting for 3 turn(s). While the wearer holds \"Radiant Crown,\" all allies' DMG dealt ignores {{value}}% of the target's DEF, and the Skill DMG dealt by the wearer increases by {{value}}%. Effects of the same type cannot stack.",
-            "ru": "Повышает крит. шанс владельца на {{value}}%. Когда любой союзник в течение своего хода суммарно расходует не менее 4 оч. навыков, владелец получает эффект Сияющая корона на 3 хода. Пока владелец обладает эффектом Сияющая корона, наносимый всеми союзниками урон игнорирует {{value}}% защиты цели, а урон навыка владельца повышается на {{value}}%. Эффекты подобного типа не могут складываться."
-        },
-        "s1": [
-            18,
-            20,
-            72
-        ],
-        "s2": [
-            21,
-            24,
-            84
-        ],
-        "s3": [
-            24,
-            28,
-            96
-        ],
-        "s4": [
-            27,
-            32,
-            106
-        ],
-        "s5": [
-            30,
-            36,
-            120
-        ],
-        "level_1": {
-            "hp": 38,
-            "atk": 28,
-            "def": 24
-        },
-        "level_max": {
-            "hp": 846,
-            "atk": 635,
-            "def": 529
-        }
-    },
-    "geniuses-repose": {
-        "rarity": 4,
-        "version_released": "1.0",
-        "source": "warp",
-        "passive": {
-            "en": "Increases the wearer's ATK by {{value}}%. When the wearer defeats an enemy, the wearer's CRIT DMG increases by {{value}}% for 3 turn(s).",
-            "ru": "Сила атаки владельца повышается на {{value}}%. Когда владелец побеждает противника, его крит. урон повышается на {{value}}% на 3 хода."
-        },
-        "s1": [
-            16,
-            24
-        ],
-        "s2": [
-            20,
-            30
-        ],
-        "s3": [
-            24,
-            36
-        ],
-        "s4": [
-            28,
-            42
-        ],
-        "s5": [
-            32,
-            48
-        ],
-        "level_1": {
-            "hp": 38,
-            "atk": 21,
-            "def": 18
-        },
-        "level_max": {
-            "hp": 846,
-            "atk": 476,
-            "def": 396
-        }
-    },
-    "into-the-unreachable-veil": {
-        "rarity": 5,
-        "version_released": "3.0",
-        "source": "limited-warp",
-        "passive": {
-            "en": "Increases the wearer's CRIT Rate by {{value}}%. When the wearer uses Ultimate, increases the Skill and Ultimate DMG dealt by the wearer by {{value}}%, lasting for 3 turn(s). After the wearer uses Ultimate, if this instance of Ultimate consumed 140 or more energy, recovers 1 Skill Point.",
-            "ru": "Крит. шанс владельца повышается на {{value}}%. Когда владелец использует сверхспособность, наносимый им урон навыка и сверхспособности повышаются на {{value}}% на 3 хода. Если израсходованная этой сверхспособностью энергия выше или равна 140 ед., то она восстанавливает 1 очко навыков отряда."
-        },
-        "s1": [
-            12,
-            60
-        ],
-        "s2": [
-            14,
-            70
-        ],
-        "s3": [
-            16,
-            80
-        ],
-        "s4": [
-            18,
-            90
-        ],
-        "s5": [
-            20,
-            100
-        ],
-        "level_1": {
-            "hp": 43,
-            "atk": 28,
-            "def": 21
-        },
-        "level_max": {
-            "hp": 952,
-            "atk": 635,
-            "def": 463
-        }
-    },
-    "life-should-be-cast-to-flames": {
-        "rarity": 5,
-        "version_released": "3.2",
-        "source": "limited-warp",
-        "passive": {
-            "en": "When the wearer's turn starts, regenerates 10 Energy. If the enemy target has a Weakness implanted by the wearer, increases the wearer's DMG dealt to it by {{value}}%. When an enemy target gets attacked by the wearer, the wearer decreases the target's DEF by {{value}}%, lasting for 2 turn(s). The same types of effects cannot stack.",
-            "ru": "В начале хода владельца восстанавливает 10 ед. энергии. Если противник имеет добавленный владельцем тип уязвимости, то наносимый ему владельцем урон повышается на {{value}}%. Атакуя противника, владелец понижает его защиту на {{value}}% на 2 хода. Эффекты подобного типа не могут складываться."
-        },
-        "s1": [
-            60,
-            12
-        ],
-        "s2": [
-            70,
-            15
-        ],
-        "s3": [
-            80,
-            18
-        ],
-        "s4": [
-            90,
-            21
-        ],
-        "s5": [
-            100,
-            24
-        ],
-        "level_1": {
-            "hp": 43,
-            "atk": 26,
-            "def": 24
-        },
-        "level_max": {
-            "hp": 952,
-            "atk": 582,
-            "def": 529
-        }
-    },
-    "make-the-world-clamor": {
-        "rarity": 4,
-        "version_released": "1.0",
-        "source": "warp",
-        "passive": {
-            "en": "The wearer regenerates {{value}} Energy immediately upon entering battle, and increases DMG dealt by the wearer's Ultimate by {{value}}%.",
-            "ru": "В начале боя восстанавливает владельцу {{value}} ед. энергии. Наносимый сверхспособностью владельца урон повышается на {{value}}%."
-        },
-        "s1": [
-            20,
-            32
-        ],
-        "s2": [
-            23,
-            40
-        ],
-        "s3": [
-            26,
-            48
-        ],
-        "s4": [
-            29,
-            56
-        ],
-        "s5": [
-            32,
-            64
-        ],
-        "level_1": {
-            "hp": 38,
-            "atk": 21,
-            "def": 18
-        },
-        "level_max": {
-            "hp": 846,
-            "atk": 476,
-            "def": 396
-        }
-    },
-    "night-on-the-milky-way": {
-        "rarity": 5,
-        "version_released": "1.0",
-        "source": ["warp", "stellar-convergence"],
-        "passive": {
-            "en": "For every enemy on the field, increases the wearer's ATK by {{value}}%, up to 5 stacks. When an enemy is inflicted with Weakness Break, the DMG dealt by the wearer increases by {{value}}% for 1 turn.",
-            "ru": "За каждого противника на поле боя сила атаки владельца повышается на {{value}}%. Этот эффект может складываться до 5 раз. Если на поле боя есть противник с пробитой уязвимостью, то урон владельца повышается на {{value}}% на 1 ход."
-        },
-        "s1": [
-            "9.0",
-            30
-        ],
-        "s2": [
-            "10.5",
-            35
-        ],
-        "s3": [
-            "12.0",
-            40
-        ],
-        "s4": [
-            "13.5",
-            45
-        ],
-        "s5": [
-            "15.0",
-            50
-        ],
-        "level_1": {
-            "hp": 52,
-            "atk": 26,
-            "def": 18
-        },
-        "level_max": {
-            "hp": 1164,
-            "atk": 582,
-            "def": 396
-        }
-    },
-    "ninjutsu-inscription-dazzling-evilbreaker": {
-        "rarity": 5,
-        "version_released": "2.6",
-        "source": "limited-warp",
-        "passive": {
-            "en": "Increases the wearer's Break Effect by {{value}}%. When entering battle, immediately regenerates {{value }} Energy. After the wearer uses Ultimate, obtains \"Raiton.\" After using 2 Basic ATKs, advances the wearer's action by {{value}}% and removes \"Raiton.\" After the wearer uses Ultimate, resets \"Raiton.\"",
-            "ru": "Эффект пробития владельца повышается на {{value}}%. В начале боя владелец немедленно восстанавливает {{value}} ед. энергии. После использования владельцем сверхспособности он получает статус Спасение от грома. После выполнения базовой атаки 2 раза действие владельца продвигается вперёд на {{value}}%, после чего статус Спасение от грома снимается. После повторного использования владельцем сверхспособности на него снова накладывается статус Спасение от грома."
-        },
-        "s1": [
-            60,
-            "30.0",
-            50
-        ],
-        "s2": [
-            70,
-            "32.5",
-            55
-        ],
-        "s3": [
-            80,
-            "35.0",
-            60
-        ],
-        "s4": [
-            90,
-            "37.5",
-            65
-        ],
-        "s5": [
-            100,
-            "40.0",
-            70
-        ],
-        "level_1": {
-            "hp": 43,
-            "atk": 26,
-            "def": 24
-        },
-        "level_max": {
-            "hp": 952,
-            "atk": 582,
-            "def": 529
-        }
-    },
-    "passkey": {
-        "rarity": 3,
-        "version_released": "1.0",
-        "source": "warp",
-        "passive": {
-            "en": "After the wearer uses their Skill, additionally regenerates {{value}} Energy. This effect cannot be repeatedly triggered in a single turn.",
-            "ru": "После использования владельцем навыка дополнительно восстанавливает {{value}} ед. энергии. Этот эффект может сработать только один раз за ход."
-        },
-        "s1": [
-            8
-        ],
-        "s2": [
-            9
-        ],
-        "s3": [
-            10
-        ],
-        "s4": [
-            11
-        ],
-        "s5": [
-            12
-        ],
-        "level_1": {
-            "hp": 33,
-            "atk": 16,
-            "def": 12
-        },
-        "level_max": {
-            "hp": 740,
-            "atk": 370,
-            "def": 264
-        }
-    },
-    "sagacity": {
-        "rarity": 3,
-        "version_released": "1.0",
-        "source": "warp",
-        "passive": {
-            "en": "When the wearer uses their Ultimate, increases ATK by {{value}}% for 2 turn(s).",
-            "ru": "Когда владелец использует сверхспособность, его сила атаки повышается на {{value}}% на 2 хода."
-        },
-        "s1": [
-            24
-        ],
-        "s2": [
-            30
-        ],
-        "s3": [
-            36
-        ],
-        "s4": [
-            42
-        ],
-        "s5": [
-            48
-        ],
-        "level_1": {
-            "hp": 33,
-            "atk": 16,
-            "def": 12
-        },
-        "level_max": {
-            "hp": 740,
-            "atk": 370,
-            "def": 264
-        }
-    },
-    "the-birth-of-the-self": {
-        "rarity": 4,
-        "version_released": "1.0",
-        "source": "warp",
-        "passive": {
-            "en": "Increases DMG dealt by the wearer's Follow-Up ATKs by {{value}}%. If the current HP percentage of the enemy target is below or equal to 50%, increases DMG dealt by Follow-Up ATKs by an extra {{value}}%.",
-            "ru": "Наносимый бонус-атакой владельца урон повышается на {{value}}%. Если текущее НР противника ниже или равно 50%, то наносимый бонус-атакой владельца урон этому противнику, повышается на {{value}}%."
-        },
-        "s1": [
-            24,
-            24
-        ],
-        "s2": [
-            30,
-            30
-        ],
-        "s3": [
-            36,
-            36
-        ],
-        "s4": [
-            42,
-            42
-        ],
-        "s5": [
-            48,
-            48
-        ],
-        "level_1": {
-            "hp": 43,
-            "atk": 21,
-            "def": 15
-        },
-        "level_max": {
-            "hp": 952,
-            "atk": 476,
-            "def": 330
-        }
-    },
-    "the-day-the-cosmos-fell": {
-        "rarity": 4,
-        "version_released": "2.0",
-        "source": ["priceless-jewels", "echo-of-war"],
-        "free": true,
-        "passive": {
-            "en": "Increases the wearer's ATK by {{value}}%. When the wearer uses an attack and at least 2 attacked enemies have the corresponding Weakness, the wearer's CRIT DMG increases by {{value}}%, lasting for 2 turn(s).",
-            "ru": "Сила атаки владельца повышается на {{value}}%. Если после атаки владельца не менее 2 целей имеют соответствующую уязвимость, крит. урон владельца повышается на {{value}}% на 2 хода."
-        },
-        "s1": [
-            16,
-            20
-        ],
-        "s2": [
-            18,
-            25
-        ],
-        "s3": [
-            20,
-            30
-        ],
-        "s4": [
-            22,
-            35
-        ],
-        "s5": [
-            24,
-            40
-        ],
-        "level_1": {
-            "hp": 43,
-            "atk": 21,
-            "def": 15
-        },
-        "level_max": {
-            "hp": 952,
-            "atk": 476,
-            "def": 330
-        }
-    },
-    "the-great-cosmic-enterprise": {
-        "rarity": 4,
-        "version_released": "3.2",
-        "source": "herta-store",
-        "free": true,
-        "passive": {
-            "en": "Increase the wearer's ATK by {{value}}%. For every 1 different Weakness Type an enemy target has, increase the DMG dealt to it by the wearer by {{value}}%. Up to a max of 7 Weakness Types can be taken into account for this effect.",
-            "ru": "Сила атаки владельца повышается на {{value}}%. За каждый имеющийся у противника тип уязвимости наносимый владельцем урон повышается на {{value}}%. Этот эффект может складываться до 7 раз."
-        },
-        "s1": [
-            8,
-            4
-        ],
-        "s2": [
-            10,
-            5
-        ],
-        "s3": [
-            12,
-            6
-        ],
-        "s4": [
-            14,
-            7
-        ],
-        "s5": [
-            16,
-            8
-        ],
-        "level_1": {
-            "hp": 43,
-            "atk": 21,
-            "def": 15
-        },
-        "level_max": {
-            "hp": 952,
-            "atk": 476,
-            "def": 330
-        }
-    },
-    "the-seriousness-of-breakfast": {
-        "rarity": 4,
-        "version_released": "1.0",
-        "source": ["priceless-jewels", "echo-of-war", "starlit-homecoming"],
-        "free": true,
-        "passive": {
-            "en": "Increases the wearer's DMG by {{value}}%. For every enemy defeated by the wearer, the wearer's ATK increases by {{value}}%, stacking up to 3 time(s).",
-            "ru": "Наносимый владельцем урон повышается на {{value}}%. За каждого побеждённого противника сила атаки владельца повышается на {{value}}%. Этот эффект может складываться до 3 раз."
-        },
-        "s1": [
-            12,
-            4
-        ],
-        "s2": [
-            15,
-            5
-        ],
-        "s3": [
-            18,
-            6
-        ],
-        "s4": [
-            21,
-            7
-        ],
-        "s5": [
-            24,
-            8
-        ],
-        "level_1": {
-            "hp": 38,
-            "atk": 21,
-            "def": 18
-        },
-        "level_max": {
-            "hp": 846,
-            "atk": 476,
-            "def": 396
-        }
-    },
-    "today-is-another-peaceful-day": {
-        "rarity": 4,
-        "version_released": "1.0",
-        "source": "nameless-honor",
-        "passive": {
-            "en": "After entering battle, increases the wearer's DMG based on their Max Energy. Each point of Energy increases DMG by {{value}}%. A max of 160 Energy will be taken into account for this.",
-            "ru": "В начале боя наносимый владельцем урон повышается на {{value}}% за каждую единицу его макс. энергии до макс. 160 ед."
-        },
-        "s1": [
-            "0.20"
-        ],
-        "s2": [
-            "0.25"
-        ],
-        "s3": [
-            "0.30"
-        ],
-        "s4": [
-            "0.35"
-        ],
-        "s5": [
-            "0.40"
-        ],
-        "level_1": {
-            "hp": 38,
-            "atk": 24,
-            "def": 15
-        },
-        "level_max": {
-            "hp": 846,
-            "atk": 529,
-            "def": 330
-        }
-    },
-    "yet-hope-is-priceless": {
-        "rarity": 5,
-        "version_released": "2.3",
-        "source": "limited-warp",
-        "passive": {
-            "en": "Increases the wearer's CRIT Rate by {{value}}%. While the wearer is in battle, for every 20% CRIT DMG that exceeds 120%, the DMG dealt by follow-up attack increases by {{value}}%. This effect can stack up to 4 time(s). When the battle starts or after the wearer uses their Basic ATK, enables the DMG dealt by Ultimate or follow-up attack to ignore {{value}}% of the target's DEF, lasting for 2 turn(s).",
-            "ru": "Крит. шанс владельца повышается на {{value}}%. Если крит. урон владельца во время боя становится выше 120%, то наносимый его бонус-атакой урон повышается на {{value}}% за каждые 20%, превышающие это значение. Этот эффект может складываться до 4 раз. В начале боя или после использования владельцем базовой атаки урон, наносимый сверхспособностью или бонус-атакой, игнорирует {{value}}% защиты цели в течение 2 ходов."
-        },
-        "s1": [
-            16,
-            12,
-            20
-        ],
-        "s2": [
-            19,
-            14,
-            24
-        ],
-        "s3": [
-            22,
-            16,
-            28
-        ],
-        "s4": [
-            25,
-            18,
-            32
-        ],
-        "s5": [
-            28,
-            20,
-            36
-        ],
-        "level_1": {
-            "hp": 43,
-            "atk": 26,
-            "def": 24
-        },
-        "level_max": {
-            "hp": 952,
-            "atk": 582,
-            "def": 529
-        }
+    "level_max": {
+      "hp": 952,
+      "atk": 529,
+      "def": 396
     }
+  },
+  "a-star-that-lights-the-night": {
+    "rarity": 5,
+    "version_released": "4.4",
+    "source": "limited-warp",
+    "passive": {
+      "en": "The wearer ignores {{value}}% of the target's DEF when dealing DMG. When the wearer uses Assist Skill, they regenerate 6 Energy and gain \"Sail,\" lasting for 2 turns and stacking up to 3 time(s). Each stack of \"Sail\" increases Assist Skill DMG by {{value}}%. When \"Sail\" reaches 3 stacks, each stack of \"Sail\" increases Ultimate DMG by {{value}}%.",
+      "ru": "Владелец игнорирует {{value}}% защиты цели при нанесении урона. Когда владелец использует навык поддержки, он восстанавливает 6 ед. энергии и получает статус Отправление на 2 хода, который может складываться до 3 раз. Каждый уровень статуса Отправление повышает урон навыка поддержки на {{value}}%. При достижении 3 ур. статуса Отправление каждый уровень также повышает урон сверхспособности на {{value}}%.",
+      "vn": "Khi người trang bị gây sát thương sẽ bỏ qua {{value}}% Phòng Thủ của mục tiêu. Khi người trang bị thi triển Kỹ Năng Trợ Chiến sẽ hồi 6 điểm Năng Lượng và nhận \"Khởi Hành\", duy trì 2 hiệp, tối đa cộng dồn 3 tầng. Mỗi tầng \"Khởi Hành\" tăng {{value}}% sát thương Kỹ Năng Trợ Chiến, khi \"Khởi Hành\" đạt 3 tầng, mỗi tầng \"Khởi Hành\" tăng {{value}}% Sát Thương Tuyệt Kỹ."
+    },
+    "s1": [
+      32,
+      20,
+      20
+    ],
+    "s2": [
+      36,
+      25,
+      25
+    ],
+    "s3": [
+      40,
+      30,
+      30
+    ],
+    "s4": [
+      44,
+      35,
+      35
+    ],
+    "s5": [
+      48,
+      40,
+      40
+    ],
+    "level_1": {
+      "hp": 38,
+      "atk": 28,
+      "def": 24
+    },
+    "level_max": {
+      "hp": 846,
+      "atk": 635,
+      "def": 529
+    }
+  },
+  "after-the-charmony-fall": {
+    "rarity": 4,
+    "version_released": "2.3",
+    "source": "warp",
+    "passive": {
+      "en": "Increases the wearer's Break Effect by {{value}}%. After the wearer uses Ultimate, increases SPD by {{value}}%, lasting for 2 turn(s).",
+      "ru": "Эффект пробития владельца повышается на {{value}}%. После того как владелец использует сверхспособность, его скорость повышается на {{value}}% на 2 хода.",
+      "vn": "Tăng {{value}}% Tấn Công Kích Phá của người trang bị. Sau khi người trang bị thi triển Tuyệt Kỹ, Tốc Độ tăng {{value}}%, duy trì 2 hiệp."
+    },
+    "s1": [
+      28,
+      8
+    ],
+    "s2": [
+      35,
+      10
+    ],
+    "s3": [
+      42,
+      12
+    ],
+    "s4": [
+      49,
+      14
+    ],
+    "s5": [
+      56,
+      16
+    ],
+    "level_1": {
+      "hp": 38,
+      "atk": 21,
+      "def": 18
+    },
+    "level_max": {
+      "hp": 846,
+      "atk": 476,
+      "def": 396
+    }
+  },
+  "an-instant-before-a-gaze": {
+    "rarity": 5,
+    "version_released": "1.5",
+    "source": [
+      "limited-warp",
+      "stellar-convergence"
+    ],
+    "passive": {
+      "en": "Increases the wearer's CRIT DMG by {{value}}%. When the wearer uses Ultimate, increases DMG dealt by the wearer's Ultimate based on their Max Energy. Each point of Energy increases DMG dealt by Ultimate by {{value}}%. A max of 180 points of Energy will be taken into account for this.",
+      "ru": "Крит. урон владельца повышается на {{value}}%. Когда владелец использует сверхспособность, наносимый ею урон повышается на {{value}}% за каждую единицу от макс. энергии владельца. Этот эффект может складываться до макс. 180 ед. энергии.",
+      "vn": "Khiến sát thương bạo kích của người trang bị tăng {{value}}%. Khi người trang bị thi triển Tuyệt Kỹ, sẽ tăng sát thương Tuyệt Kỹ mà người trang bị gây ra theo giới hạn năng lượng của người trang bị: mỗi điểm năng lượng tăng {{value}}%, tối đa 180 điểm năng lượng."
+    },
+    "s1": [
+      36,
+      0.36
+    ],
+    "s2": [
+      42,
+      0.42
+    ],
+    "s3": [
+      48,
+      0.48
+    ],
+    "s4": [
+      54,
+      0.54
+    ],
+    "s5": [
+      60,
+      0.60
+    ],
+    "level_1": {
+      "hp": 48,
+      "atk": 26,
+      "def": 21
+    },
+    "level_max": {
+      "hp": 1058,
+      "atk": 582,
+      "def": 463
+    }
+  },
+  "before-dawn": {
+    "rarity": 5,
+    "version_released": "1.0",
+    "source": "limited-warp",
+    "passive": {
+      "en": "Increases the wearer's CRIT DMG by {{value}}%. Increases DMG dealt by the wearer's Skill and Ultimate by {{value}}%. After the wearer uses Skill or Ultimate, gains \"Somnus Corpus.\" Upon triggering a Follow-Up ATK, consumes \"Somnus Corpus,\" and increases DMG dealt by Follow-Up ATK by {{value}}%.",
+      "ru": "Крит. урон владельца повышается на {{value}}%, а наносимый навыком и сверхспособностью владельца урон - на {{value}}%. После использования навыка или сверхспособности владелец получает статус Спящее тело. Выполнение бонус-атаки расходует статус Спящее тело и повышает наносимый бонус-атакой урон на {{value}}%.",
+      "vn": "Tăng {{value}}% Sát Thương Bạo Kích của người trang bị. Tăng {{value}}% sát thương do Chiến Kỹ và Tuyệt Kỹ của người trang bị gây ra. Sau khi người trang bị thi triển Chiến Kỹ hoặc Tuyệt Kỹ, sẽ nhận hiệu ứng \"Thân Mộng\". Khi thi triển Đòn Đánh Theo Sau, tiêu hao \"Thân Mộng\", tăng {{value}}% sát thương do Đòn Đánh Theo Sau gây ra."
+    },
+    "s1": [
+      36,
+      18,
+      48
+    ],
+    "s2": [
+      42,
+      21,
+      56
+    ],
+    "s3": [
+      48,
+      24,
+      64
+    ],
+    "s4": [
+      54,
+      27,
+      72
+    ],
+    "s5": [
+      60,
+      30,
+      80
+    ],
+    "level_1": {
+      "hp": 48,
+      "atk": 26,
+      "def": 21
+    },
+    "level_max": {
+      "hp": 1058,
+      "atk": 582,
+      "def": 463
+    }
+  },
+  "data-bank": {
+    "rarity": 3,
+    "version_released": "1.0",
+    "source": "warp",
+    "passive": {
+      "en": "Increases DMG dealt by the wearer's Ultimate by {{value}}%.",
+      "ru": "Наносимый сверхспособностью владельца урон повышается на {{value}}%.",
+      "vn": "Khiến sát thương do Tuyệt Kỹ gây ra của người trang bị tăng {{value}}%."
+    },
+    "s1": [
+      28
+    ],
+    "s2": [
+      35
+    ],
+    "s3": [
+      42
+    ],
+    "s4": [
+      49
+    ],
+    "s5": [
+      56
+    ],
+    "level_1": {
+      "hp": 33,
+      "atk": 16,
+      "def": 12
+    },
+    "level_max": {
+      "hp": 740,
+      "atk": 370,
+      "def": 264
+    }
+  },
+  "eternal-calculus": {
+    "rarity": 5,
+    "version_released": "2.3",
+    "source": "herta-store",
+    "free": true,
+    "passive": {
+      "en": "Increases the wearer's ATK by {{value}}%. After using an attack, for each enemy target hit, additionally increases ATK by {{value}}%. This effect can stack up to 5 times and last until the next attack. If there are 3 or more enemy targets hit, this unit's SPD increases by {{value}}%, lasting for 1 turn(s).",
+      "ru": "Сила атаки владельца повышается на {{value}}%. Каждый поражённый атакой противник повышает силу атаки владельца на доп. {{value}}%. Этот эффект может складываться до 5 раз и длится до следующей атаки. Если количество поражённых противников выше или равно 3, скорость владельца повышается на {{value}}% на 1 ход.",
+      "vn": "Khiến Tấn Công của người trang bị tăng {{value}}%. Sau khi thi triển tấn công, mỗi khi đánh trúng 1 kẻ địch sẽ tăng thêm {{value}}% Tấn Công, hiệu ứng này tối đa cộng dồn 5 lần, duy trì cho đến sau lần tấn công tiếp theo, nếu đánh trúng 3 kẻ địch trở lên, sẽ tăng {{value}}% Tốc Độ của bản thân, duy trì 1 hiệp."
+    },
+    "s1": [
+      8,
+      4,
+      8
+    ],
+    "s2": [
+      9,
+      5,
+      10
+    ],
+    "s3": [
+      10,
+      6,
+      12
+    ],
+    "s4": [
+      11,
+      7,
+      14
+    ],
+    "s5": [
+      12,
+      8,
+      16
+    ],
+    "level_1": {
+      "hp": 48,
+      "atk": 24,
+      "def": 18
+    },
+    "level_max": {
+      "hp": 1058,
+      "atk": 529,
+      "def": 396
+    }
+  },
+  "flickering-stars": {
+    "rarity": 5,
+    "version_released": "4.4",
+    "source": "limited-warp",
+    "passive": {
+      "en": "Increases the wearer's CRIT Rate by {{value}}%. When any ally character consumes a total of 4 or more Skill Points in a single turn, the wearer gains \"Radiant Crown,\" lasting for 3 turn(s). While the wearer holds \"Radiant Crown,\" all allies' DMG dealt ignores {{value}}% of the target's DEF, and the Skill DMG dealt by the wearer increases by {{value}}%. Effects of the same type cannot stack.",
+      "ru": "Повышает крит. шанс владельца на {{value}}%. Когда любой союзник в течение своего хода суммарно расходует не менее 4 оч. навыков, владелец получает эффект Сияющая корона на 3 хода. Пока владелец обладает эффектом Сияющая корона, наносимый всеми союзниками урон игнорирует {{value}}% защиты цели, а урон навыка владельца повышается на {{value}}%. Эффекты подобного типа не могут складываться.",
+      "vn": "Tăng {{value}}% Tỷ Lệ Bạo Kích của người trang bị. Khi nhân vật bất kỳ phe ta tích lũy tiêu hao lớn hơn hoặc bằng 4 Điểm Chiến Kỹ trong cùng một hiệp của bản thân, người trang bị nhận \"Vương Miện Lấp Lánh\", duy trì 3 hiệp. Khi người trang bị có \"Vương Miện Lấp Lánh\", sát thương do toàn thể phe ta gây ra bỏ qua {{value}}% Phòng Thủ của mục tiêu, sát thương Chiến Kỹ do người trang bị gây ra tăng {{value}}%, hiệu ứng cùng loại không thể cộng dồn."
+    },
+    "s1": [
+      18,
+      20,
+      72
+    ],
+    "s2": [
+      21,
+      24,
+      84
+    ],
+    "s3": [
+      24,
+      28,
+      96
+    ],
+    "s4": [
+      27,
+      32,
+      106
+    ],
+    "s5": [
+      30,
+      36,
+      120
+    ],
+    "level_1": {
+      "hp": 38,
+      "atk": 28,
+      "def": 24
+    },
+    "level_max": {
+      "hp": 846,
+      "atk": 635,
+      "def": 529
+    }
+  },
+  "geniuses-repose": {
+    "rarity": 4,
+    "version_released": "1.0",
+    "source": "warp",
+    "passive": {
+      "en": "Increases the wearer's ATK by {{value}}%. When the wearer defeats an enemy, the wearer's CRIT DMG increases by {{value}}% for 3 turn(s).",
+      "ru": "Сила атаки владельца повышается на {{value}}%. Когда владелец побеждает противника, его крит. урон повышается на {{value}}% на 3 хода.",
+      "vn": "Khiến Tấn Công của người trang bị tăng {{value}}%, sau khi người trang bị tiêu diệt kẻ địch, Sát Thương Bạo Kích tăng {{value}}%, duy trì 3 hiệp."
+    },
+    "s1": [
+      16,
+      24
+    ],
+    "s2": [
+      20,
+      30
+    ],
+    "s3": [
+      24,
+      36
+    ],
+    "s4": [
+      28,
+      42
+    ],
+    "s5": [
+      32,
+      48
+    ],
+    "level_1": {
+      "hp": 38,
+      "atk": 21,
+      "def": 18
+    },
+    "level_max": {
+      "hp": 846,
+      "atk": 476,
+      "def": 396
+    }
+  },
+  "into-the-unreachable-veil": {
+    "rarity": 5,
+    "version_released": "3.0",
+    "source": "limited-warp",
+    "passive": {
+      "en": "Increases the wearer's CRIT Rate by {{value}}%. When the wearer uses Ultimate, increases the Skill and Ultimate DMG dealt by the wearer by {{value}}%, lasting for 3 turn(s). After the wearer uses Ultimate, if this instance of Ultimate consumed 140 or more energy, recovers 1 Skill Point.",
+      "ru": "Крит. шанс владельца повышается на {{value}}%. Когда владелец использует сверхспособность, наносимый им урон навыка и сверхспособности повышаются на {{value}}% на 3 хода. Если израсходованная этой сверхспособностью энергия выше или равна 140 ед., то она восстанавливает 1 очко навыков отряда.",
+      "vn": "Khiến Tỷ Lệ Bạo Kích của người trang bị tăng {{value}}%. Khi người trang bị thi triển Tuyệt Kỹ, sẽ khiến sát thương Chiến Kỹ và Tuyệt Kỹ do người trang bị gây ra tăng {{value}}%, duy trì 3 hiệp. Sau khi người trang bị thi triển Tuyệt Kỹ, nếu Năng Lượng tiêu hao trong lần Tuyệt Kỹ này lớn hơn hoặc bằng 140 điểm, sẽ hồi 1 điểm Chiến Kỹ."
+    },
+    "s1": [
+      12,
+      60
+    ],
+    "s2": [
+      14,
+      70
+    ],
+    "s3": [
+      16,
+      80
+    ],
+    "s4": [
+      18,
+      90
+    ],
+    "s5": [
+      20,
+      100
+    ],
+    "level_1": {
+      "hp": 43,
+      "atk": 28,
+      "def": 21
+    },
+    "level_max": {
+      "hp": 952,
+      "atk": 635,
+      "def": 463
+    }
+  },
+  "life-should-be-cast-to-flames": {
+    "rarity": 5,
+    "version_released": "3.2",
+    "source": "limited-warp",
+    "passive": {
+      "en": "When the wearer's turn starts, regenerates 10 Energy. If the enemy target has a Weakness implanted by the wearer, increases the wearer's DMG dealt to it by {{value}}%. When an enemy target gets attacked by the wearer, the wearer decreases the target's DEF by {{value}}%, lasting for 2 turn(s). The same types of effects cannot stack.",
+      "ru": "В начале хода владельца восстанавливает 10 ед. энергии. Если противник имеет добавленный владельцем тип уязвимости, то наносимый ему владельцем урон повышается на {{value}}%. Атакуя противника, владелец понижает его защиту на {{value}}% на 2 хода. Эффекты подобного типа не могут складываться.",
+      "vn": "Khi bắt đầu hiệp của người trang bị sẽ hồi 10 Năng Lượng. Nếu mục tiêu phe địch có điểm yếu được thêm vào bởi người trang bị, thì sát thương người trang bị gây ra cho kẻ đó tăng {{value}}%.\nKhi mục tiêu phe địch bị người trang bị tấn công, người trang bị sẽ khiến kẻ đó giảm {{value}}%, phòng thủ, duy trì 2 hiệp. Hiệu ứng cùng loại không thể cộng dồn."
+    },
+    "s1": [
+      60,
+      12
+    ],
+    "s2": [
+      70,
+      15
+    ],
+    "s3": [
+      80,
+      18
+    ],
+    "s4": [
+      90,
+      21
+    ],
+    "s5": [
+      100,
+      24
+    ],
+    "level_1": {
+      "hp": 43,
+      "atk": 26,
+      "def": 24
+    },
+    "level_max": {
+      "hp": 952,
+      "atk": 582,
+      "def": 529
+    }
+  },
+  "make-the-world-clamor": {
+    "rarity": 4,
+    "version_released": "1.0",
+    "source": "warp",
+    "passive": {
+      "en": "The wearer regenerates {{value}} Energy immediately upon entering battle, and increases DMG dealt by the wearer's Ultimate by {{value}}%.",
+      "ru": "В начале боя восстанавливает владельцу {{value}} ед. энергии. Наносимый сверхспособностью владельца урон повышается на {{value}}%.",
+      "vn": "Khiến người trang bị khi vào chiến đấu sẽ hồi ngay {{value}} điểm Năng Lượng, đồng thời khiến sát thương Tuyệt Kỹ mà người đó gây ra tăng {{value}}%."
+    },
+    "s1": [
+      20,
+      32
+    ],
+    "s2": [
+      23,
+      40
+    ],
+    "s3": [
+      26,
+      48
+    ],
+    "s4": [
+      29,
+      56
+    ],
+    "s5": [
+      32,
+      64
+    ],
+    "level_1": {
+      "hp": 38,
+      "atk": 21,
+      "def": 18
+    },
+    "level_max": {
+      "hp": 846,
+      "atk": 476,
+      "def": 396
+    }
+  },
+  "night-on-the-milky-way": {
+    "rarity": 5,
+    "version_released": "1.0",
+    "source": [
+      "warp",
+      "stellar-convergence"
+    ],
+    "passive": {
+      "en": "For every enemy on the field, increases the wearer's ATK by {{value}}%, up to 5 stacks. When an enemy is inflicted with Weakness Break, the DMG dealt by the wearer increases by {{value}}% for 1 turn.",
+      "ru": "За каждого противника на поле боя сила атаки владельца повышается на {{value}}%. Этот эффект может складываться до 5 раз. Если на поле боя есть противник с пробитой уязвимостью, то урон владельца повышается на {{value}}% на 1 ход.",
+      "vn": "Mỗi một kẻ địch trong trận, sẽ khiến Tấn Công của người trang bị tăng {{value}}%, hiệu ứng này tối đa cộng dồn 5 tầng. Khi có kẻ địch bị phá vỡ Điểm Yếu, sát thương mà người trang bị gây ra sẽ tăng {{value}}%, duy trì 1 hiệp."
+    },
+    "s1": [
+      "9.0",
+      30
+    ],
+    "s2": [
+      "10.5",
+      35
+    ],
+    "s3": [
+      "12.0",
+      40
+    ],
+    "s4": [
+      "13.5",
+      45
+    ],
+    "s5": [
+      "15.0",
+      50
+    ],
+    "level_1": {
+      "hp": 52,
+      "atk": 26,
+      "def": 18
+    },
+    "level_max": {
+      "hp": 1164,
+      "atk": 582,
+      "def": 396
+    }
+  },
+  "ninjutsu-inscription-dazzling-evilbreaker": {
+    "rarity": 5,
+    "version_released": "2.6",
+    "source": "limited-warp",
+    "passive": {
+      "en": "Increases the wearer's Break Effect by {{value}}%. When entering battle, immediately regenerates {{value }} Energy. After the wearer uses Ultimate, obtains \"Raiton.\" After using 2 Basic ATKs, advances the wearer's action by {{value}}% and removes \"Raiton.\" After the wearer uses Ultimate, resets \"Raiton.\"",
+      "ru": "Эффект пробития владельца повышается на {{value}}%. В начале боя владелец немедленно восстанавливает {{value}} ед. энергии. После использования владельцем сверхспособности он получает статус Спасение от грома. После выполнения базовой атаки 2 раза действие владельца продвигается вперёд на {{value}}%, после чего статус Спасение от грома снимается. После повторного использования владельцем сверхспособности на него снова накладывается статус Спасение от грома.",
+      "vn": "Tăng {{value}}% Tấn Công Kích Phá của người trang bị. Khi vào chiến đấu, lập tức hồi {{value}}% điểm Năng Lượng. Và sau khi người trang bị thi triển Tuyệt Kỹ, nhận Lôi Độn. Sau khi thi triển 2 lần Tấn Công Thường, người trang bị Ưu Tiên Hành Động {{value}}%, và xóa Lôi Độn. Sau khi người trang bị thi triển Tuyệt Kỹ sẽ làm mới Lôi Độn."
+    },
+    "s1": [
+      60,
+      "30.0",
+      50
+    ],
+    "s2": [
+      70,
+      "32.5",
+      55
+    ],
+    "s3": [
+      80,
+      "35.0",
+      60
+    ],
+    "s4": [
+      90,
+      "37.5",
+      65
+    ],
+    "s5": [
+      100,
+      "40.0",
+      70
+    ],
+    "level_1": {
+      "hp": 43,
+      "atk": 26,
+      "def": 24
+    },
+    "level_max": {
+      "hp": 952,
+      "atk": 582,
+      "def": 529
+    }
+  },
+  "passkey": {
+    "rarity": 3,
+    "version_released": "1.0",
+    "source": "warp",
+    "passive": {
+      "en": "After the wearer uses their Skill, additionally regenerates {{value}} Energy. This effect cannot be repeatedly triggered in a single turn.",
+      "ru": "После использования владельцем навыка дополнительно восстанавливает {{value}} ед. энергии. Этот эффект может сработать только один раз за ход.",
+      "vn": "Sau khi người trang bị thi triển Chiến Kỹ sẽ hồi thêm {{value}} điểm Năng Lượng, hiệu ứng này không thể kích hoạt trùng lặp trong 1 hiệp."
+    },
+    "s1": [
+      8
+    ],
+    "s2": [
+      9
+    ],
+    "s3": [
+      10
+    ],
+    "s4": [
+      11
+    ],
+    "s5": [
+      12
+    ],
+    "level_1": {
+      "hp": 33,
+      "atk": 16,
+      "def": 12
+    },
+    "level_max": {
+      "hp": 740,
+      "atk": 370,
+      "def": 264
+    }
+  },
+  "sagacity": {
+    "rarity": 3,
+    "version_released": "1.0",
+    "source": "warp",
+    "passive": {
+      "en": "When the wearer uses their Ultimate, increases ATK by {{value}}% for 2 turn(s).",
+      "ru": "Когда владелец использует сверхспособность, его сила атаки повышается на {{value}}% на 2 хода.",
+      "vn": "Khi người trang bị thi triển Tuyệt Kỹ, Tấn Công sẽ tăng {{value}}%, duy trì 2 hiệp."
+    },
+    "s1": [
+      24
+    ],
+    "s2": [
+      30
+    ],
+    "s3": [
+      36
+    ],
+    "s4": [
+      42
+    ],
+    "s5": [
+      48
+    ],
+    "level_1": {
+      "hp": 33,
+      "atk": 16,
+      "def": 12
+    },
+    "level_max": {
+      "hp": 740,
+      "atk": 370,
+      "def": 264
+    }
+  },
+  "the-birth-of-the-self": {
+    "rarity": 4,
+    "version_released": "1.0",
+    "source": "warp",
+    "passive": {
+      "en": "Increases DMG dealt by the wearer's Follow-Up ATKs by {{value}}%. If the current HP percentage of the enemy target is below or equal to 50%, increases DMG dealt by Follow-Up ATKs by an extra {{value}}%.",
+      "ru": "Наносимый бонус-атакой владельца урон повышается на {{value}}%. Если текущее НР противника ниже или равно 50%, то наносимый бонус-атакой владельца урон этому противнику, повышается на {{value}}%.",
+      "vn": "Tăng {{value}}% sát thương gây ra bởi Đòn Đánh Theo Sau của người trang bị. Nếu Phần Trăm HP hiện tại của kẻ địch này nhỏ hơn hoặc bằng 50%, thì sát thương của Đòn Đánh Theo Sau tăng thêm {{value}}%."
+    },
+    "s1": [
+      24,
+      24
+    ],
+    "s2": [
+      30,
+      30
+    ],
+    "s3": [
+      36,
+      36
+    ],
+    "s4": [
+      42,
+      42
+    ],
+    "s5": [
+      48,
+      48
+    ],
+    "level_1": {
+      "hp": 43,
+      "atk": 21,
+      "def": 15
+    },
+    "level_max": {
+      "hp": 952,
+      "atk": 476,
+      "def": 330
+    }
+  },
+  "the-day-the-cosmos-fell": {
+    "rarity": 4,
+    "version_released": "2.0",
+    "source": [
+      "priceless-jewels",
+      "echo-of-war"
+    ],
+    "free": true,
+    "passive": {
+      "en": "Increases the wearer's ATK by {{value}}%. When the wearer uses an attack and at least 2 attacked enemies have the corresponding Weakness, the wearer's CRIT DMG increases by {{value}}%, lasting for 2 turn(s).",
+      "ru": "Сила атаки владельца повышается на {{value}}%. Если после атаки владельца не менее 2 целей имеют соответствующую уязвимость, крит. урон владельца повышается на {{value}}% на 2 хода.",
+      "vn": "Khiến Tấn Công của người trang bị tăng {{value}}%. Sau khi người trang bị tấn công, nếu có từ 2 kẻ địch bị tấn công trở lên mang Điểm Yếu thuộc tính tương ứng, thì Sát Thương Bạo Kích của người trang bị tăng {{value}}%, duy trì 2 hiệp."
+    },
+    "s1": [
+      16,
+      20
+    ],
+    "s2": [
+      18,
+      25
+    ],
+    "s3": [
+      20,
+      30
+    ],
+    "s4": [
+      22,
+      35
+    ],
+    "s5": [
+      24,
+      40
+    ],
+    "level_1": {
+      "hp": 43,
+      "atk": 21,
+      "def": 15
+    },
+    "level_max": {
+      "hp": 952,
+      "atk": 476,
+      "def": 330
+    }
+  },
+  "the-great-cosmic-enterprise": {
+    "rarity": 4,
+    "version_released": "3.2",
+    "source": "herta-store",
+    "free": true,
+    "passive": {
+      "en": "Increase the wearer's ATK by {{value}}%. For every 1 different Weakness Type an enemy target has, increase the DMG dealt to it by the wearer by {{value}}%. Up to a max of 7 Weakness Types can be taken into account for this effect.",
+      "ru": "Сила атаки владельца повышается на {{value}}%. За каждый имеющийся у противника тип уязвимости наносимый владельцем урон повышается на {{value}}%. Этот эффект может складываться до 7 раз.",
+      "vn": "Khiến tấn công của người trang bị tăng {{value}}%. Mỗi khi mục tiêu phe địch có 1 Điểm Yếu thuộc tính khác nhau, thì sát thương người trang bị gây ra cho kẻ đó tăng {{value}}%, tối đa tính 7 Điểm Yếu."
+    },
+    "s1": [
+      8,
+      4
+    ],
+    "s2": [
+      10,
+      5
+    ],
+    "s3": [
+      12,
+      6
+    ],
+    "s4": [
+      14,
+      7
+    ],
+    "s5": [
+      16,
+      8
+    ],
+    "level_1": {
+      "hp": 43,
+      "atk": 21,
+      "def": 15
+    },
+    "level_max": {
+      "hp": 952,
+      "atk": 476,
+      "def": 330
+    }
+  },
+  "the-seriousness-of-breakfast": {
+    "rarity": 4,
+    "version_released": "1.0",
+    "source": [
+      "priceless-jewels",
+      "echo-of-war",
+      "starlit-homecoming"
+    ],
+    "free": true,
+    "passive": {
+      "en": "Increases the wearer's DMG by {{value}}%. For every enemy defeated by the wearer, the wearer's ATK increases by {{value}}%, stacking up to 3 time(s).",
+      "ru": "Наносимый владельцем урон повышается на {{value}}%. За каждого побеждённого противника сила атаки владельца повышается на {{value}}%. Этот эффект может складываться до 3 раз.",
+      "vn": "\tSẵn Sàng\nKhiến sát thương gây ra bởi người trang bị tăng {{value}}%. Mỗi khi tiêu diệt 1 kẻ địch, Tấn Công của người trang bị tăng {{value}}%, hiệu ứng này tối đa cộng dồn 3 tầng."
+    },
+    "s1": [
+      12,
+      4
+    ],
+    "s2": [
+      15,
+      5
+    ],
+    "s3": [
+      18,
+      6
+    ],
+    "s4": [
+      21,
+      7
+    ],
+    "s5": [
+      24,
+      8
+    ],
+    "level_1": {
+      "hp": 38,
+      "atk": 21,
+      "def": 18
+    },
+    "level_max": {
+      "hp": 846,
+      "atk": 476,
+      "def": 396
+    }
+  },
+  "today-is-another-peaceful-day": {
+    "rarity": 4,
+    "version_released": "1.0",
+    "source": "nameless-honor",
+    "passive": {
+      "en": "After entering battle, increases the wearer's DMG based on their Max Energy. Each point of Energy increases DMG by {{value}}%. A max of 160 Energy will be taken into account for this.",
+      "ru": "В начале боя наносимый владельцем урон повышается на {{value}}% за каждую единицу его макс. энергии до макс. 160 ед.",
+      "vn": "Sau khi vào chiến đấu, dựa theo giới hạn Năng Lượng của người trang bị để tăng sát thương mà người trang bị gây ra: Mỗi điểm Năng Lượng tăng {{value}}%, tối đa tính 160 điểm."
+    },
+    "s1": [
+      "0.20"
+    ],
+    "s2": [
+      "0.25"
+    ],
+    "s3": [
+      "0.30"
+    ],
+    "s4": [
+      "0.35"
+    ],
+    "s5": [
+      "0.40"
+    ],
+    "level_1": {
+      "hp": 38,
+      "atk": 24,
+      "def": 15
+    },
+    "level_max": {
+      "hp": 846,
+      "atk": 529,
+      "def": 330
+    }
+  },
+  "yet-hope-is-priceless": {
+    "rarity": 5,
+    "version_released": "2.3",
+    "source": "limited-warp",
+    "passive": {
+      "en": "Increases the wearer's CRIT Rate by {{value}}%. While the wearer is in battle, for every 20% CRIT DMG that exceeds 120%, the DMG dealt by follow-up attack increases by {{value}}%. This effect can stack up to 4 time(s). When the battle starts or after the wearer uses their Basic ATK, enables the DMG dealt by Ultimate or follow-up attack to ignore {{value}}% of the target's DEF, lasting for 2 turn(s).",
+      "ru": "Крит. шанс владельца повышается на {{value}}%. Если крит. урон владельца во время боя становится выше 120%, то наносимый его бонус-атакой урон повышается на {{value}}% за каждые 20%, превышающие это значение. Этот эффект может складываться до 4 раз. В начале боя или после использования владельцем базовой атаки урон, наносимый сверхспособностью или бонус-атакой, игнорирует {{value}}% защиты цели в течение 2 ходов.",
+      "vn": "Khiến Tỷ Lệ Bạo Kích của người trang bị tăng {{value}}%. Khi Sát Thương Bạo Kích của người trang bị trong trận lớn hơn 120%, mỗi 20% vượt quá thì Sát Thương Đòn Đánh Theo Sau gây ra tăng {{value}}%, hiệu ứng này có thể cộng dồn 4 tầng. Khi bắt đầu chiến đấu hoặc sau khi người trang bị dùng Tấn Công Thường sẽ khiến Tuyệt Kỹ hoặc sát thương Đòn Đánh Theo Sau gây ra bỏ qua {{value}}% Phòng Thủ của mục tiêu, duy trì 2 hiệp."
+    },
+    "s1": [
+      16,
+      12,
+      20
+    ],
+    "s2": [
+      19,
+      14,
+      24
+    ],
+    "s3": [
+      22,
+      16,
+      28
+    ],
+    "s4": [
+      25,
+      18,
+      32
+    ],
+    "s5": [
+      28,
+      20,
+      36
+    ],
+    "level_1": {
+      "hp": 43,
+      "atk": 26,
+      "def": 24
+    },
+    "level_max": {
+      "hp": 952,
+      "atk": 582,
+      "def": 529
+    }
+  }
 }

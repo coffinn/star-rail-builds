@@ -1,0 +1,19 @@
+{
+    "stats": [
+        {
+            "name": "total-atk",
+            "recommended": "3600+ (WIND orb)",
+            "note": {
+                "en": "With Blackswan S1, Reforged Remembrance, 4000+ ATK is a reasonable goal."
+            }
+        },
+        {
+            "name": "spd",
+            "recommended": "BASE"
+        },
+        {
+            "name": "ehr",
+            "recommended": "120%"
+        }
+    ]
+}

@@ -5,21 +5,8 @@
                 {
                     "items": [
                         {
-                            "name": "diviner-of-distant-reach",
+                            "name": "prisoner-in-deep-confinement",
                             "pieces": 4
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "groups": [
-                {
-                    "choose": true,
-                    "items": [
-                        {
-                            "name": "2pc-speed",
-                            "pieces": 2
                         }
                     ]
                 }
@@ -32,19 +19,8 @@
                 {
                     "items": [
                         {
-                            "name": "sprightly-vonwacq",
+                            "name": "revelry-by-the-sea",
                             "pieces": 2
-                        }
-                    ]
-                },
-                {
-                    "items": [
-                        {
-                            "name": "lushaka-the-sunken-seas",
-                            "pieces": 2,
-                            "note": {
-                                "en": "While Elation DMG is not affected by ATK, [[set:lushaka-the-sunken-seas]] can be used if Sparxie is on the team. As she has a trace that converts ATK into Elation DMG."
-                            }
                         }
                     ]
                 }
@@ -55,7 +31,15 @@
                 {
                     "items": [
                         {
-                            "name": "city-of-converging-stars",
+                            "name": "pan-cosmic-commercial-enterprise",
+                            "pieces": 2
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "firmament-frontline-glamoth",
                             "pieces": 2
                         }
                     ]
