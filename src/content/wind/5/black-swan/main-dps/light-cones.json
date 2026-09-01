@@ -1,0 +1,44 @@
+{
+    "light_cones": [
+        {
+            "items": [
+                {
+                    "name": "reforged-remembrance",
+                    "superimposition": 1
+                },
+                {
+                    "name": "why-does-the-ocean-sing",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "those-many-springs",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "eyes-of-the-prey",
+                    "superimposition": 5
+                },
+                {
+                    "name": "good-night-and-sleep-well",
+                    "superimposition": 5
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "its-showtime",
+                    "superimposition": 5
+                }
+            ]
+        }
+    ]
+}

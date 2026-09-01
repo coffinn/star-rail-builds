@@ -1,0 +1,18 @@
+{
+    "main_stats": {
+        "body": [
+            "ehr",
+            "atk%"
+        ],
+        "feet": [
+            "atk%"
+        ],
+        "planar_sphere": [
+            "wind-dmg",
+            "atk%"
+        ],
+        "link_rope": [
+            "atk%"
+        ]
+    }
+}
