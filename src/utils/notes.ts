@@ -14,8 +14,8 @@ import { getLocalizedNote } from './content';
  */
 function renderNote(note: string, sourceFile: string, translator: any) {
     const renderedNote = translator.translateNoteText(note, sourceFile, {
-        weaponPopovers: true,
-        artifactPopovers: true,
+        lightConePopovers: true,
+        relicPopovers: true,
         rotationPopovers: true,
     });
 

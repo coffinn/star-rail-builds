@@ -25,7 +25,8 @@ type InlineTranslationCategory =
     | TranslationCategory
     | 'set'
     | 'artifact'
-    | 'weapon';
+    | 'weapon'
+    | 'light-cone';
 
 const CATEGORIES: TranslationCategory[] = [
     'relic',
@@ -92,7 +93,7 @@ type TranslationAliasCategory = Partial<
 const aliases = translationAliases as TranslationAliasCategory;
 
 const INLINE_TRANSLATION_TOKEN_PATTERN =
-    /\[\[(?:(relic|set|artifact|weapon|lightcone|character|stat|element|path|ability|note):)?([a-z0-9%/-]+)(?:\|([^\]\n]+))?\]\]/g;
+    /\[\[(?:(relic|set|artifact|weapon|lightcone|light-cone|character|stat|element|path|ability|note):)?([a-z0-9%/-]+)(?:\|([^\]\n]+))?\]\]/g;
 const ROTATION_POPOVER_INTRO_ID = 'Rotation notation intro';
 const ROTATION_POPOVER_NUMBER_INTRO_ID = 'Rotation notation number intro';
 const ROTATION_POPOVER_EXAMPLE_ID = 'Rotation notation example';
@@ -429,11 +430,16 @@ export class TranslationHelper {
             return 'relic';
         }
 
-        if (category === 'weapon') {
+        if (
+            category === 'weapon' ||
+            category === 'light-cone'
+        ) {
             return 'lightcone';
         }
 
         return category;
+
+        
     }
 
     /**
