@@ -20,7 +20,7 @@
                             "name": "warrior-goddess",
                             "pieces": 4,
                             "note": {
-                                "en": "Only works if using Though Worlds Apart light cone."
+                                "en": "Only works if using [[light-cone:though-worlds-apart]]."
                             }
                         }
                     ]
@@ -74,7 +74,7 @@
                             "name": "penacony",
                             "pieces": 2,
                             "note": {
-                                "en": "Only usable with a Physical element Main DPS."
+                                "en": "Only usable with a [[element:physical]] element Main DPS."
                             }
                         }
                     ]
