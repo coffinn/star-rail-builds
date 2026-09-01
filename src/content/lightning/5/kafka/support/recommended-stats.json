@@ -2,9 +2,9 @@
     "stats": [
         {
             "name": "spd",
-            "recommended": "167+¹",
+            "recommended": "167+",
             "note": {
-                "en": "167 SPD with Eagle of Twilight Line allows Kafka to reach 200 effective SPD."
+                "en": "167 SPD with [[set:eagle-of-twilight-line]] allows Kafka to reach 200 effective SPD."
             }
         },
         {
