@@ -1,0 +1,20 @@
+{
+    "stats": [
+        {
+            "name": "total-def",
+            "recommended": "4200+"
+        },
+        {
+            "name": "spd",
+            "recommended": "134+"
+        },
+        {
+            "name": "cr",
+            "recommended": "50% (Optional)"
+        },
+        {
+            "name": "cd",
+            "recommended": "100%+ (Optional)"
+        }
+    ]
+}

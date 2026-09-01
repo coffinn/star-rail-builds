@@ -5,23 +5,8 @@
                 {
                     "items": [
                         {
-                            "name": "recluse",
+                            "name": "self-enshrouded-recluse",
                             "pieces": 4
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "groups": [
-                {
-                    "items": [
-                        {
-                            "name": "warrior-goddess",
-                            "pieces": 4,
-                            "note": {
-                                "en": "Only works if using Though Worlds Apart light cone."
-                            }
                         }
                     ]
                 }
@@ -47,35 +32,24 @@
                 {
                     "items": [
                         {
-                            "name": "city",
+                            "name": "broken-keel",
                             "pieces": 2
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "groups": [
+                },
                 {
                     "items": [
                         {
-                            "name": "lushaka",
+                            "name": "lushaka-the-sunken-seas",
                             "pieces": 2
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "groups": [
+                },
                 {
                     "items": [
                         {
-                            "name": "penacony",
-                            "pieces": 2,
-                            "note": {
-                                "en": "Only usable with a Physical element Main DPS."
-                            }
+                            "name": "sprightly-vonwacq",
+                            "pieces": 2
                         }
                     ]
                 }

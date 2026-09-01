@@ -1,0 +1,19 @@
+{
+    "stats": [
+        {
+            "name": "total-def",
+            "recommended": "2300+"
+        },
+        {
+            "name": "spd",
+            "recommended": "160+"
+        },
+        {
+            "name": "ehr",
+            "recommended": "(92/156%)",
+            "note": {
+                "en": "EHR needed to guarantee Freeze against 20% / 40% RES enemies."
+            }
+        }
+    ]
+}

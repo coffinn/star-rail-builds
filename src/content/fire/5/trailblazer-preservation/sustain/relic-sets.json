@@ -5,7 +5,7 @@
                 {
                     "items": [
                         {
-                            "name": "recluse",
+                            "name": "self-enshrouded-recluse",
                             "pieces": 4
                         }
                     ]
@@ -17,11 +17,8 @@
                 {
                     "items": [
                         {
-                            "name": "warrior-goddess",
-                            "pieces": 4,
-                            "note": {
-                                "en": "Only works if using Though Worlds Apart light cone."
-                            }
+                            "name": "knight-of-purity-palace",
+                            "pieces": 4
                         }
                     ]
                 }
@@ -29,6 +26,13 @@
         },
         {
             "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "2pc-def"
+                        }
+                    ]
+                },
                 {
                     "choose": true,
                     "items": [
@@ -47,7 +51,7 @@
                 {
                     "items": [
                         {
-                            "name": "city",
+                            "name": "city-of-converging-stars",
                             "pieces": 2
                         }
                     ]
@@ -59,7 +63,7 @@
                 {
                     "items": [
                         {
-                            "name": "lushaka",
+                            "name": "lushaka-the-sunken-seas",
                             "pieces": 2
                         }
                     ]
@@ -71,11 +75,8 @@
                 {
                     "items": [
                         {
-                            "name": "penacony",
-                            "pieces": 2,
-                            "note": {
-                                "en": "Only usable with a Physical element Main DPS."
-                            }
+                            "name": "belobog-of-the-architects",
+                            "pieces": 2
                         }
                     ]
                 }

@@ -1,0 +1,28 @@
+{
+    "main_stats": {
+        "body": [
+            "def%",
+            "ehr"
+        ],
+        "feet": [
+            "spd"
+        ],
+        "planar_sphere": [
+            "def%"
+        ],
+        "link_rope": [
+            {
+                "name": "err",
+                "note": {
+                    "en": "Energy Regeneration Rate Rope is preferred if relying on Fire MC to contribute to Toughness bar breaking."
+                }
+            },
+            {
+                "name": "def%",
+                "note": {
+                    "en": "DEF% Rope is preferred for personal damage reduction, especially when relying on Fire MC's Taunt."
+                }
+            }
+        ]
+    }
+}

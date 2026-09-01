@@ -1,0 +1,23 @@
+{
+    "main_stats": {
+        "body": [
+            "hp%"
+        ],
+        "feet": [
+            "spd"
+        ],
+        "planar_sphere": [
+            "hp%",
+            "def%"
+        ],
+        "link_rope": [
+            "err",
+            {
+                "name": "hp%",
+                "note": {
+                    "en": "With She Already Shut Her Eyes, aim for 8500+ HP using an HP% Rope. Alternatively, she can be kept at ~8000 HP but instead invest in 2000+ DEF."
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "stats": [
+        {
+            "name": "total-def",
+            "recommended": "3000+"
+        },
+        {
+            "name": "spd",
+            "recommended": "134+"
+        },
+        {
+            "name": "ehr",
+            "recommended": "66.70%"
+        }
+    ]
+}

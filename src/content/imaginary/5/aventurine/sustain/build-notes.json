@@ -1,0 +1,20 @@
+{
+    "best": true,
+    "name": {
+        "en": "Sustain"
+    },
+    "notes": [
+        {
+            "en": "**Summary and General Analysis**\n\n✦ Strong Shielder with Follow-up ATKs. Whenever Aventurine uses his Skill or triggers his Follow-up ATK from his Talent, grants shield to all allies. Shielded allies will also gain Effect RES.\n\n✦ As of Patch 4.2, E0S0 Aventurine's shielding and sustaining may not be sufficient for difficult endgame content. To improve his shield frequency and uptime, E1S0 would be recommend, however it would be best to invest in a newer sustain."
+        },
+        {
+            "en": "**Investment Priority**\n\n**E1 > E2 > S1**\n\n**Investment Explanation**\n\n✦ E1 is the main Quality of life Eidolon, letting his Ultimate refresh his shields so that he can play purely Skill Point positive. It also provides 20% teamwide CRIT DMG buff.\n\n✦ E2 is a useful, but overall modest 12% All-Type RES Pen debuff on the target of his Basic Attacks.\n\n✦ S1 Inherently Unjust Destiny provides a useful Vulnerability debuff, which can be applied to several targets through his Bounce Follow-up ATK. The extra DEF% also helps to boost his shield power."
+        },
+        {
+            "en": "**Skill Point Usage**\n\nPositive"
+        },
+        {
+            "en": "**Ability Rotation**\n\nSkill > Basic > Basic (E0)\n\nBasic Spam (E1)"
+        }
+    ]
+}

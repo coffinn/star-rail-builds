@@ -5,23 +5,8 @@
                 {
                     "items": [
                         {
-                            "name": "recluse",
+                            "name": "warrior-goddess-of-sun-and-thunder",
                             "pieces": 4
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "groups": [
-                {
-                    "items": [
-                        {
-                            "name": "warrior-goddess",
-                            "pieces": 4,
-                            "note": {
-                                "en": "Only works if using Though Worlds Apart light cone."
-                            }
                         }
                     ]
                 }
@@ -39,6 +24,24 @@
                     ]
                 }
             ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "2pc-hp"
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "2pc-speed"
+                        }
+                    ]
+                }
+            ]
         }
     ],
     "planar_ornaments": [
@@ -47,7 +50,7 @@
                 {
                     "items": [
                         {
-                            "name": "city",
+                            "name": "fleet-of-the-ageless",
                             "pieces": 2
                         }
                     ]
@@ -59,7 +62,7 @@
                 {
                     "items": [
                         {
-                            "name": "lushaka",
+                            "name": "city-of-converging-stars",
                             "pieces": 2
                         }
                     ]
@@ -71,11 +74,8 @@
                 {
                     "items": [
                         {
-                            "name": "penacony",
-                            "pieces": 2,
-                            "note": {
-                                "en": "Only usable with a Physical element Main DPS."
-                            }
+                            "name": "lushaka-the-sunken-seas",
+                            "pieces": 2
                         }
                     ]
                 }

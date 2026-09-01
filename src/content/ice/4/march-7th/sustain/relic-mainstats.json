@@ -1,0 +1,18 @@
+{
+    "main_stats": {
+        "body": [
+            "ehr",
+            "def%"
+        ],
+        "feet": [
+            "spd"
+        ],
+        "planar_sphere": [
+            "def%"
+        ],
+        "link_rope": [
+            "err",
+            "def%"
+        ]
+    }
+}

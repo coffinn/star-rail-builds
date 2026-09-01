@@ -1,0 +1,19 @@
+{
+    "stats": [
+        {
+            "name": "total-hp",
+            "recommended": "8000+",
+            "note": {
+                "en": "With She Already Shut Her Eyes, aim for 8500+ HP using an HP% Rope. Alternatively, she can be kept at ~8000 HP but instead invest in 2000+ DEF."
+            }
+        },
+        {
+            "name": "total-def",
+            "recommended": "1500+"
+        },
+        {
+            "name": "spd",
+            "recommended": "160+"
+        }
+    ]
+}

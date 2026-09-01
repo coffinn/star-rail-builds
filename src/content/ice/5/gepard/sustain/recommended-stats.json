@@ -1,0 +1,12 @@
+{
+    "stats": [
+        {
+            "name": "total-def",
+            "recommended": "3200+"
+        },
+        {
+            "name": "spd",
+            "recommended": "143+"
+        }
+    ]
+}
