@@ -1,18 +1,23 @@
 {
-    "notes": [
-        {
-            "en": "Use any Main Stat to maximise Kafka's SPD. "
-        }
-    ],
     "main_stats": {
         "body": [
-            "ANY"
+        {
+            "name": "ANY",
+            "note":{
+                "en": "Use any Main Stat to maximise Kafka's SPD."
+            }
+        }
         ],
         "feet": [
             "spd"
         ],
         "planar_sphere": [
-            "ANY"
+        {
+            "name": "ANY",
+            "note":{
+                "en": "Use any Main Stat to maximise Kafka's SPD."
+            }
+        }
         ],
         "link_rope": [
             "err"
