@@ -1,0 +1,11 @@
+{
+    "notes": [
+        {
+            "en": "SPD > Effect Hit Rate% (until 75%)"
+        }
+    ],
+    "substats_priority": [
+        "spd",
+        "ehr"
+    ]
+}
