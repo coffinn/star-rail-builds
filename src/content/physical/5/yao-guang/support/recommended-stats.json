@@ -9,7 +9,10 @@
         },
         {
             "name": "cr",
-            "recommended": "82%  (Optional)"
+            "recommended": "82%",
+            "note": {
+                    "en": "Optional for personal damage. Out of combat, assuming 4-Pc [[set:diviner-of-distant-reach]]."
+                }
         }
     ]
 }

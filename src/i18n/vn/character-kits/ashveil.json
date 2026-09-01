@@ -1,0 +1,159 @@
+{
+    "id": "ashveil",
+    "name": "Ashveil",
+    "rarity": 5,
+    "element": "lightning",
+    "path": "hunt",
+    "version_released": "4.1",
+    "max_energy": 150,
+
+    "level_80_stats": {
+        "hp": 853,
+        "atk": 776,
+        "def": 388,
+        "spd": 106
+    },
+
+"abilities": {
+    "basic": {
+        "type": "Tấn Công Thường",
+        "name": "Vuốt Sắc: Truyền Thụ Lễ Nghi",
+        "tag": "Đánh Đơn",
+        "energy_gain": 20,
+        "break": 10,
+        "min_level": 1,
+        "max_level": 7,
+        "default_level": 6,
+        "description_template": "Gây Sát Thương Lôi bằng {{value}}% Tấn Công của Ashveil cho 1 kẻ địch chỉ định.",
+        "scaling": {
+            "value": [50, 60, 70, 80, 90, 100, 110]
+        }
+    },
+
+    "skill": {
+        "type": "Chiến Kỹ",
+        "name": "Tiếng Roi: Quét Sạch Ác Thú",
+        "tag": "Đánh Đơn",
+        "energy_gain": 30,
+        "break": 20,
+        "min_level": 1,
+        "max_level": 12,
+        "default_level": 10,
+        "description_template": "Khiến 1 kẻ địch chỉ định trở thành \"Mồi Ngon\", gây cho kẻ đó Sát Thương Lôi bằng {{damage}}% Tấn Công của Ashveil. Nếu mục tiêu này là \"Mồi Ngon\", sẽ gây thêm cho kẻ đó Sát Thương Lôi bằng {{additional_damage}}% Tấn Công của Ashveil, và hồi phục 1 Điểm Chiến Kỹ. Khi trên sân tồn tại \"Mồi Ngon\", Phòng Thủ của toàn phe địch giảm {{def_reduction}}%.\nKhi trên sân không tồn tại \"Mồi Ngon\", Ashveil lập tức khiến 1 mục tiêu phe địch có HP thấp nhất trên sân hiện tại trở thành \"Mồi Ngon\", trạng thái \"Mồi Ngon\" chỉ có hiệu lực với mục tiêu được thi triển mới nhất.",
+        "scaling": {
+            "damage": [100, 110, 120, 130, 140, 150, 162.5, 175, 187.5, 200, 210, 220],
+            "additional_damage": [50, 55, 60, 65, 70, 75, 81.3, 87.5, 93.8, 100, 105, 110],
+            "def_reduction": [20, 22, 24, 26, 28, 30, 32.5, 35, 37.5, 40, 42, 44]
+        }
+    },
+
+    "ultimate": {
+        "type": "Tuyệt Kỹ",
+        "name": "Yến Tiệc: Không Hồi Kết",
+        "tag": "Đánh Đơn",
+        "energy_cost": 150,
+        "energy_gain": 5,
+        "break": 30,
+        "min_level": 1,
+        "max_level": 12,
+        "default_level": 10,
+        "description_template": "Khiến 1 kẻ địch chỉ định trở thành \"Mồi Ngon\", gây cho kẻ đó Sát Thương Lôi bằng {{damage}}% Tấn Công của Ashveil, sau đó lập tức phát động 1 lần Đòn Đánh Theo Sau của Thiên Phú được cường hóa lên \"Mồi Ngon\", và Ashveil nhận 3 điểm Nạp Năng Lượng.\nĐòn Đánh Theo Sau của Thiên Phú được cường hóa không tiêu hao Nạp Năng Lượng. Khi \"Tham Lam\" lớn hơn hoặc bằng 4 tầng, có thể tiêu hao 4 tầng \"Tham Lam\" gây thêm 1 lần Sát Thương Lôi bằng {{instance_damage}}% Tấn Công của Ashveil, và trong quá trình Đòn Đánh Theo Sau lần này, khi gây tấn công chí tử cho mục tiêu, sẽ tiếp tục gây sát thương cho \"Mồi Ngon\" mới, cho đến khi \"Tham Lam\" dưới 4 tầng. Nếu sau khi tất cả mục tiêu phe địch hiện tại trên sân đều chịu tấn công chí tử, Đòn Đánh Theo Sau của Thiên Phú được cường hóa sẽ kết thúc ngay lập tức.",
+        "scaling": {
+            "damage": [200, 220, 240, 260, 280, 300, 325, 350, 375, 400, 420, 440],
+            "instance_damage": [100, 110, 120, 130, 140, 150, 162.5, 175, 187.5, 200, 210, 220]
+        }
+    },
+
+    "talent": {
+        "type": "Talent",
+        "name": "Rancor: Enmity Reprisal",
+        "tag": "Single Target",
+        "energy_gain": 5,
+        "break": 5,
+        "min_level": 1,
+        "max_level": 12,
+        "default_level": 10,
+        "description_template": "Ashveil ban đầu sở hữu 2 điểm Nạp Năng Lượng, tối đa sở hữu 3 điểm Nạp Năng Lượng. Sau khi \"Mồi Ngon\" bị mục tiêu khác của phe ta tấn công, Ashveil hồi phục cố định 8 điểm Năng Lượng, sau đó tiêu hao 1 điểm Nạp Năng Lượng để phát động Đòn Đánh Theo Sau lên \"Mồi Ngon\", gây sát thương Lôi bằng {{damage}}% Tấn Công của Ashveil, sau đó nhận 2 tầng \"Tham Lam\", tối đa cộng dồn 12 tầng.",
+        "scaling": {
+            "damage": [100, 110, 120, 130, 140, 150, 162.5, 175, 187.5, 200, 210, 220]
+        }
+    },
+
+    "technique": {
+        "type": "Bí Kỹ",
+        "name": "Ăn Đi: Bàn Tay Đáng Ghét",
+        "tag": "Impair",
+        "description": "Sau khi dùng Bí Kỹ, khiến kẻ địch trong khu vực nhất định rơi vào trạng thái Choáng 10 giây, kẻ địch ở trạng thái Choáng sẽ không chủ động tấn công mục tiêu phe ta.\nNếu chủ động tấn công kẻ địch ở trạng thái Choáng, khi vào chiến đấu, sẽ gây sát thương Lôi lên toàn bộ phe địch bằng 100% Tấn Công của Ashveil, và Ashveil nhận 1 điểm Nạp Năng Lượng."
+    }
+},
+
+"major_traces": {
+    "2": {
+        "name": "Con Đường Tội Lỗi",
+        "description": "Khi Ashveil thi triển Chiến Kỹ/Tuyệt Kỹ, sẽ nhận 1/2 tầng \"Tham Lam\". Trong quá trình Đòn Đánh Theo Sau của Ashveil, mỗi khi có 1 kẻ địch chịu tấn công chí tử, Ashveil sẽ nhận 1 tầng \"Tham Lam\""
+    },
+
+    "4": {
+        "name": "Chi Thể Bóng Tối",
+        "description": "Sát thương do Đòn Đánh Theo Sau của Ashveil gây ra tăng 80%, và cứ có 1 tầng \"Tham Lam\", sát thương Đòn Đánh Theo Sau gây ra sẽ tăng thêm 10%."
+    },
+
+    "6": {
+        "name": "Sói Đầu Đàn",
+        "description": "Khi Ashveil trong trận, Sát Thương Bạo Kích do mục tiêu phe ta gây ra tăng 40%, Sát Thương Bạo Kích do Đòn Đánh Theo Sau của mục tiêu phe ta gây ra tăng thêm 80%."
+    }
+},
+
+"stat_bonuses": [
+    {
+        "stat": "Tấn Công",
+        "value": "+10%"
+    },
+    {
+        "stat": "Sát Thương - Lôi",
+        "value": "+14%"
+    },
+    {
+        "stat": "Sát Thương Bạo Kích",
+        "value": "+37.30%"
+    }
+],
+
+"eidolons": [
+    {
+        "level": 1,
+        "name": "Cẩn Thận: Trăng Tròn Không Được Ra Ngoài",
+        "description": "Khi Ashveil ở trong trận, sát thương toàn bộ phe địch phải chịu tăng 24%. Khi phần trăm HP hiện tại của mục tiêu phe địch nhỏ hơn hoặc bằng 50%, sát thương phải chịu của kẻ đó sẽ tăng đến 36%."
+    },
+
+    {
+        "level": 2,
+        "name": "Gõ Cửa: Trong Phòng Chỉ Còn Tiếng Cười Thầm",
+        "description": "Giới hạn cộng dồn \"Tham Lam\" tăng đến 18 tầng, sau mỗi khi Ashveil phát động Đòn Đánh Theo Sau của Thiên Phú được cường hóa, sẽ hoàn trả 35% số tầng \"Tham Lam\" bị xóa bỏ."
+    },
+
+    {
+        "level": 3,
+        "name": "Yên Lặng: Mỗi Người Bạn Cũ Một Tâm Tư",
+        "description": "Cấp Tuyệt Kỹ +2, tối đa không quá cấp 15; Cấp Tấn Công Thường +1, tối đa không quá cấp 10."
+    },
+
+    {
+        "level": 4,
+        "name": "Ghi Nhớ: Sự Thật Không Cần Nghiền Ngẫm",
+        "description": "Khi Ashveil thi triển Tuyệt Kỹ, Tấn Công tăng 40%, duy trì 3 hiệp."
+    },
+
+    {
+        "level": 5,
+        "name": "Nhắc Nhở: Thám Tử Cũng Là Hung Thủ",
+        "description": "Cấp Chiến Kỹ +2, tối đa không quá cấp 15; Cấp Thiên Phú +2, tối đa không quá cấp 15."
+    },
+
+    {
+        "level": 6,
+        "name": "Kết Cục: Có Lẽ Không Ai Sống Sót",
+        "description": "Khi trong trận tồn tại \"Mồi Ngon\", Kháng Toàn Thuộc Tính của toàn bộ phe địch giảm 20%. Ashveil cứ nhận được 1 tầng \"Tham Lam\", thì sát thương gây ra sẽ tăng 4%, hiệu ứng này tối đa cộng dồn 30 tầng."
+    }
+]
+}
