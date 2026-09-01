@@ -173,7 +173,7 @@
             "type": "Technique",
             "name": "Gravitational Imprisonment",
             "tag": "Impair",
-            "description": "After using Welt's Technique, create a Special Dimension that lasts for 15 second(s). Enemies in this Special Dimension have their movement speed reduced by 50%. After entering battle with enemies in the Special Dimension, there is a 100% base chance to Imprison the enemies for 1 turn. Imprisoned enemies have their actions delayed|Action Delayed by 20% and SPD reduced by 10%. Only 1 Dimension Effect created by allies can exist at the same time."
+            "description": "After using Welt's Technique, create a Special Dimension that lasts for 15 second(s). Enemies in this Special Dimension have their movement speed reduced by 50%. After entering battle with enemies in the Special Dimension, there is a 100% base chance to Imprison the enemies for 1 turn. Imprisoned enemies have their actions delayed by 20% and SPD reduced by 10%. Only 1 Dimension Effect created by allies can exist at the same time."
         }
     },
     "major_traces": {
