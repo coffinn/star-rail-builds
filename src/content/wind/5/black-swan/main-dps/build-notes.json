@@ -5,16 +5,16 @@
     },
     "notes": [
         {
-            "en": "**Summary and General Analysis**\n\n✦ Black Swan is a DoT DPS, excelling in a variety of environments.\n\n✦ Black Swan has a chance to inflict Arcana (a stacking DoT effect) when enemies enter combat, take DoT damage, or are attacked by her. After Arcana deals damage, its stacks are reduced to 50.\n\n✦ Black Swan's Ultimate inflicts a debuff that increases the number of Arcana applied whenever Arcana is inflicted.\n\n✦ Black Swan's performance is heavily reliant on Kafka and Hysilens, who provide frequent DoT detonations and Arcana stacking."
+            "en": "**Summary and General Analysis**\n\n✦ Black Swan is a DoT DPS, excelling in a variety of environments.\n\n✦ She has a chance to inflict \"Arcana\" (a stacking DoT effect) when enemies enter combat, take DoT damage, or are attacked by her. After \"Arcana\" deals damage, its stacks are reduced to 50.\n\n✦ Her Ultimate inflicts a debuff that increases the number of \"Arcana\" applied whenever \"Arcana\" is inflicted.\n\n✦ Black Swan's performance is heavily reliant on Kafka and Hysilens, who provide frequent DoT detonations and \"Arcana\" stacking."
         },
         {
-            "en": "**Investment Priority**\n\n**Hysilens E1 > E1 > S1**\n\n**Investment Explanation**\n\n✦ Hysilens E1 is DoT's best early investment, providing a unique 16% damage boost while doubling the number of DoTs she applies (4 -> 8). The increased DoT count not only increases Hysilens's personal damage, but also significantly improves Black Swan's Arcana stacking.\n\n✦ E1 provides 25% RES reduction for Wind, Physical, Fire, and Lightning when enemies are afflicted with Wind Shear, Bleed, Burn, or Shock, respectively. \n\n✦ S1 increases Black Swan's personal DMG. If both Hysilens and Black Swan are E1, they can swap signature Light Cones."
+            "en": "**Investment Priority**\n\nHysilens E1 > E1 > S1\n\n**Investment Explanation**\n\n✦ Hysilens E1 is DoT's best early investment, providing a unique 16% damage boost while doubling the number of DoTs she applies (4 -> 8). The increased DoT count not only increases Hysilens's personal damage, but also significantly improves Black Swan's \"Arcana\" stacking.\n\n✦ E1 provides 25% RES reduction for Wind, Physical, Fire, and Lightning when enemies are afflicted with Wind Shear, Bleed, Burn, or Shock, respectively. \n\n✦ S1 increases Black Swan's personal DMG. If both Hysilens and Black Swan are E1, they can swap signature Light Cones."
         },
         {
             "en": "**Skill Point Usage**\n\nPositive"
         },
         {
-            "en": "**Ability Rotation**\n\nBasic Attack Spam\nUse Skill when Skill Points are available"
+            "en": "**Ability Rotation**\n\nBasic Attack Spam\n\nUse Skill when Skill Points are available"
         }
     ]
 }
