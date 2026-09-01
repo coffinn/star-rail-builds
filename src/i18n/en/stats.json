@@ -23,5 +23,6 @@
     "lightning-dmg": "Lightning DMG",
     "wind-dmg": "Wind DMG",
     "quantum-dmg": "Quantum DMG",
-    "imaginary-dmg": "Imaginary DMG"
+    "imaginary-dmg": "Imaginary DMG",
+    "ANY":"Any"
 }
