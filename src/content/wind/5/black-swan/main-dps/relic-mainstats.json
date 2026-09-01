@@ -8,7 +8,12 @@
             "atk%"
         ],
         "planar_sphere": [
-            "wind-dmg",
+          {
+            "name": "wind-dmg",
+             "note": {
+             "en": "Preferred over ATK%."
+            }
+        },
             "atk%"
         ],
         "link_rope": [
