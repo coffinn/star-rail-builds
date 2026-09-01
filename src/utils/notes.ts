@@ -254,26 +254,120 @@ export function collectStatNotes(
     lang: string,
     translator: any,
 ) {
-    const notes: { id: string; name: string; note: string }[] = [];
+    const notes: {
+        id: string;
+        name: string;
+        note: string;
+    }[] = [];
 
-    items
-        .flatMap((item) => item.items ?? [item])
-        .forEach((item) => {
-            const localizedNote = getLocalizedNote(item, lang);
+    const flatItems = items.flatMap(
+        (item) => item.items ?? [item],
+    );
 
-            if (localizedNote) {
-                const name = formatter(item);
-                const noteId = createNoteId(sourceFile, notes.length);
+    const groupedNotes = new Map<
+        string,
+        {
+            items: any[];
+            names: string[];
+            note?: string;
+        }
+    >();
 
-                item.noteId = noteId;
+    /*
+     * First collect all note_group entries.
+     */
+    flatItems.forEach((item: any) => {
+        if (!item.note_group) return;
 
-                notes.push({
-                    id: noteId,
-                    name,
-                    note: renderNote(localizedNote, sourceFile, translator),
-                });
-            }
+        const groupId = item.note_group;
+
+        if (!groupedNotes.has(groupId)) {
+            groupedNotes.set(groupId, {
+                items: [],
+                names: [],
+            });
+        }
+
+        const group = groupedNotes.get(groupId)!;
+
+        group.items.push(item);
+
+        const name = formatter(item);
+
+        if (!group.names.includes(name)) {
+            group.names.push(name);
+        }
+
+        const localizedNote =
+            getLocalizedNote(item, lang);
+
+        /*
+         * Only one item in the group needs
+         * to contain the actual note.
+         */
+        if (localizedNote && !group.note) {
+            group.note = localizedNote;
+        }
+    });
+
+    /*
+     * Create one bottom note for each group
+     * and give every grouped stat the same noteId.
+     */
+    groupedNotes.forEach((group) => {
+        if (!group.note) return;
+
+        const noteId = createNoteId(
+            sourceFile,
+            notes.length,
+        );
+
+        group.items.forEach((item) => {
+            item.noteId = noteId;
         });
+
+        notes.push({
+            id: noteId,
+            name: group.names.join(' / '),
+            note: renderNote(
+                group.note,
+                sourceFile,
+                translator,
+            ),
+        });
+    });
+
+    /*
+     * Preserve normal behavior for stats
+     * that are not using note_group.
+     */
+    flatItems.forEach((item: any) => {
+        if (item.note_group) return;
+
+        const localizedNote =
+            getLocalizedNote(item, lang);
+
+        if (!localizedNote) return;
+
+        const name = formatter(item);
+
+        const noteId = createNoteId(
+            sourceFile,
+            notes.length,
+        );
+
+        item.noteId = noteId;
+
+        notes.push({
+            id: noteId,
+            name,
+            note: renderNote(
+                localizedNote,
+                sourceFile,
+                translator,
+            ),
+        });
+    });
 
     return notes;
 }
