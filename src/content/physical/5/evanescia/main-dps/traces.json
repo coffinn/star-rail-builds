@@ -24,21 +24,21 @@
         {
             "items": [
                 {
-                    "name": "skill"
+                    "name": "skill",
+                    "note_group": "skill-basic",
+                    "note": {
+                        "en": "Skill and Basic ATK can be ignored"
+                    }
                 }
             ]
         },
         {
             "items": [
                 {
-                    "name": "basic"
+                    "name": "basic",
+                    "note_group": "skill-basic"
                 }
             ]
-        }
-    ],
-    "notes": [
-        {
-            "en": "Skill and Basic ATK can be ignored."
         }
     ]
 }
