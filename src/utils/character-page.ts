@@ -1227,8 +1227,8 @@ function loadBuildData({
                     : [],
 
                 (lightCone: {
-                    name: any;
-                }) => lightCone.name,
+                    id: string;
+                }) => `[[lightcone:${lightCone.id}]]`,
 
                 lightConesFile,
                 lang,
@@ -1266,15 +1266,15 @@ function loadBuildData({
                         relics.sets,
                     )
                     : [],
-
                 (relic: {
+                    id: string;
                     name: any;
                     pieces: any;
                     aggregateSets?: any[];
                 }) =>
                     relic.aggregateSets?.length
                         ? relic.name
-                        : `${relic.name} (${relic.pieces})`,
+                        : `[[relic:${relic.id}]] (${relic.pieces})`,
 
                 relicSetsFile,
                 lang,

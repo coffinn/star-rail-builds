@@ -21,7 +21,20 @@ function renderNote(note: string, sourceFile: string, translator: any) {
 
     return (marked.parse(renderedNote) as string).replace(/<\/?p>/g, '');
 }
-
+function renderNoteName(
+    name: string,
+    sourceFile: string,
+    translator: any,
+) {
+    return translator.translateNoteText(
+        name,
+        sourceFile,
+        {
+            lightConePopovers: true,
+            relicPopovers: true,
+        },
+    );
+}
 /**
  * Picks a short, stable note ID prefix from a content file name.
  *
@@ -194,7 +207,11 @@ export function collectNotes(
 
         notes.push({
             id: noteId,
-            name: group.names.join(' / '),
+            name: renderNoteName(
+                group.names.join(' / '),
+                sourceFile,
+                translator,
+            ),
             note: renderNote(
                 group.note,
                 sourceFile,
@@ -225,7 +242,11 @@ export function collectNotes(
 
         notes.push({
             id: noteId,
-            name,
+            name: renderNoteName(
+                name,
+                sourceFile,
+                translator,
+            ),
             note: renderNote(
                 localizedNote,
                 sourceFile,
@@ -328,7 +349,11 @@ export function collectStatNotes(
 
         notes.push({
             id: noteId,
-            name: group.names.join(' / '),
+            name: renderNoteName(
+                group.names.join(' / '),
+                sourceFile,
+                translator,
+            ),
             note: renderNote(
                 group.note,
                 sourceFile,
@@ -360,7 +385,11 @@ export function collectStatNotes(
 
         notes.push({
             id: noteId,
-            name,
+            name: renderNoteName(
+                name,
+                sourceFile,
+                translator,
+            ),
             note: renderNote(
                 localizedNote,
                 sourceFile,
