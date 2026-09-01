@@ -8,7 +8,7 @@
                             "name": "diviner-of-distant-reach",
                             "pieces": 4,
                             "note": {
-                                "en": "Diviner of Distant Reach is preferred if there is no other user in the party. If another unit has the aforementioned set, 4-Pc Eagle of Twilight Line is preferred."
+                                "en": "[[set:diviner-of-distant-reach]] is preferred if there is no other user in the party. If another unit has the aforementioned set, 4-Pc [[set:eagle-of-twilight-line]] is preferred."
                             }
                         }
                     ]
@@ -17,10 +17,7 @@
                     "items": [
                         {
                             "name": "eagle-of-twilight-line",
-                            "pieces": 4,
-                            "note": {
-                                "en": "Diviner of Distant Reach is preferred if there is no other user in the party. If another unit has the aforementioned set, 4-Pc Eagle of Twilight Line is preferred."
-                            }
+                            "pieces": 4
                         }
                     ]
                 }
@@ -57,7 +54,7 @@
                             "name": "lushaka-the-sunken-seas",
                             "pieces": 2,
                             "note": {
-                                "en": "While Elation DMG is not affected by a character's atk stat, Lushaka can contribute to Sparxie's ATK conversion trace."
+                                "en": "While Elation DMG is not affected by ATK, [[set:lushaka-the-sunken-seas]] can be used if Sparxie is on the team. As she has a trace that converts ATK into Elation DMG."
                             }
                         }
                     ]

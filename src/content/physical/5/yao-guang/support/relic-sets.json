@@ -43,7 +43,7 @@
                             "name": "lushaka-the-sunken-seas",
                             "pieces": 2,
                             "note": {
-                                "en": "While Elation DMG is not affected by a character's atk stat, Lushaka can contribute to Sparxie's ATK conversion trace."
+                                "en": "While Elation DMG is not affected by ATK, [[set:lushaka-the-sunken-seas]] can be used if Sparxie is on the team. As she has a trace that converts ATK into Elation DMG."
                             }
                         }
                     ]

@@ -4,7 +4,7 @@
             {
                 "name": "cr",
                 "note": {
-                    "en": "Optional for personal damage. Out of combat, assuming 4-Pc Diviner of Distant Reach."
+                    "en": "Optional for personal damage. Out of combat, assuming 4-Pc [[set:diviner-of-distant-reach]]."
                 }
             },
             "ANY"
