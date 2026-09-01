@@ -1,0 +1,26 @@
+{
+    "main_stats": {
+        "body": [
+            "cr/cd"
+        ],
+        "feet": [
+            {
+                "name": "spd",
+                "note": {
+                    "en": "If Sparxie is E2, ATK% becomes preferred."
+                }
+            },
+            {
+                "name": "atk%"
+            }
+        ],
+        "planar_sphere": [
+            "atk%"
+        ],
+        "link_rope": [
+            {
+                "name": "err"
+            }
+        ]
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "main_stats": {
+        "body": [
+            {
+                "name": "ANY",
+                "note": {
+                    "en": "Use any mainstat to maximize speed. HP/DEF mainstats can be used for more survivability."
+                }
+            }
+        ],
+        "feet": [
+            "spd"
+        ],
+        "planar_sphere": [
+            {
+                "name": "ANY",
+                "note": {
+                    "en": "Use any mainstat to maximize speed. HP/DEF mainstats can be used for more survivability."
+                }
+            }
+        ],
+        "link_rope": [
+            "err"
+        ]
+    }
+}

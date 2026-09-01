@@ -1,0 +1,11 @@
+{
+    "substats_priority": [
+        "spd",
+        {
+            "name": "cr",
+            "note": {
+                "en": "Prioritize until 82% CRIT Rate."
+            }
+        }
+    ]
+}

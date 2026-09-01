@@ -1,0 +1,76 @@
+{
+    "relic_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "diviner-of-distant-reach",
+                            "pieces": 4,
+                            "note": {
+                                "en": "Diviner of Distant Reach is preferred if there is no other user in the party. If another unit has the aforementioned set, 4-Pc Eagle of Twilight Line is preferred."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "eagle-of-twilight-line",
+                            "pieces": 4,
+                            "note": {
+                                "en": "Diviner of Distant Reach is preferred if there is no other user in the party. If another unit has the aforementioned set, 4-Pc Eagle of Twilight Line is preferred."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "choose": true,
+                    "items": [
+                        {
+                            "name": "2pc-speed",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "planar_ornaments": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "sprightly-vonwacq",
+                            "pieces": 2
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "lushaka-the-sunken-seas",
+                            "pieces": 2,
+                            "note": {
+                                "en": "While Elation DMG is not affected by a character's atk stat, Lushaka can contribute to Sparxie's ATK conversion trace."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "city-of-converging-stars",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

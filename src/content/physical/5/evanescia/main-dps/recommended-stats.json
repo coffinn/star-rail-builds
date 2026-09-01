@@ -1,0 +1,19 @@
+{
+    "stats": [
+        {
+            "name": "spd",
+            "recommended": "BASE"
+        },
+        {
+            "name": "cr",
+            "recommended": "100%",
+            "note": {
+                "en": "In combat. Evanescia's A2 buffs her Crit Rate by 30% in combat, so aim for 70% out of combat."
+            }
+        },
+        {
+            "name": "cd",
+            "recommended": "190%+"
+        }
+    ]
+}

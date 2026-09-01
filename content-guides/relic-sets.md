@@ -29,11 +29,7 @@ src/content/<type>/<rarity>/<character>/<build>/relic-sets.json
           "choose": true,
           "items": [
             {
-              "name": "spd-set",
-              "pieces": 2
-            },
-            {
-              "name": "spd-set",
+              "name": "2pc-speed",
               "pieces": 2
             }
           ]
@@ -89,7 +85,7 @@ src/content/<type>/<rarity>/<character>/<build>/relic-sets.json
       Required unless the group uses `choices`.
       - `relic_sets[].groups[].items[].name`: Relic set ID or alias from
         `src/i18n/<lang>/relic-sets.json`, or a stat pseudo-set ID from
-        `src/i18n/<lang>/stats.json`, such as `atk-set` or `spd-set`.
+        `src/i18n/<lang>/stats.json`, such as `atk-set` or `2pc-speed`.
       - `relic_sets[].groups[].items[].pieces`: Number of set pieces,
         usually `2` or `4`.
       - `relic_sets[].groups[].items[].note`: Optional localized editorial

@@ -1,0 +1,38 @@
+{
+    "light_cones": [
+        {
+            "items": [
+                {
+                    "name": "until-the-flowers-bloom-again"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "dazzled-by-a-flowery-world"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "todays-good-luck",
+                    "note": {
+                        "en": "If Today's Good Luck is S1, Mushy Shroomy's Adventure is better."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "mushy-shroomys-adventures",
+                    "note": {
+                        "en": "If Today's Good Luck is S1, Mushy Shroomy's Adventure is better."
+                    }
+                }
+            ]
+        }
+    ]
+}

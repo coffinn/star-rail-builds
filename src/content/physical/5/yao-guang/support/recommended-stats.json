@@ -1,0 +1,18 @@
+{
+    "stats": [
+        {
+            "name": "spd",
+            "recommended": "180+",
+            "note": {
+                "en": "Aim for 200+ SPD with When She Decided to See."
+            }
+        },
+        {
+            "name": "cr",
+            "recommended": "82%",
+            "note": {
+                "en": "Optional for personal damage. Out of combat, assuming 4-Pc Diviner of Distant Reach."
+            }
+        }
+    ]
+}
