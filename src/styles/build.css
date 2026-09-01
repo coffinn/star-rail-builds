@@ -537,8 +537,8 @@
 
 
 
-.recommendation-card,
-.notes-card {
+.character-page .recommendation-card,
+.character-page .notes-card {
     position: relative;
     min-width: 0;
     overflow: hidden;
@@ -552,8 +552,8 @@
     backdrop-filter: none;
 }
 
-.recommendation-card h2,
-.notes-card h2 {
+.character-page .recommendation-card h2,
+.character-page .notes-card h2 {
     margin: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     padding: 8px 10px 7px;
@@ -626,8 +626,8 @@
     padding-top: 7px;
 }
 
-.recommendation-section h3,
-.notes-section h3 {
+.character-page .recommendation-section h3,
+.character-page .notes-section h3 {
     margin: 0;
     color: var(--accent);
     font-size: 0.72rem;
@@ -923,6 +923,20 @@
  */
 .artifact-stats-card {
     container-type: inline-size;
+}
+
+.character-page .artifact-stats-card {
+    container-type: inline-size;
+}
+
+.character-page .artifact-stats-card .recommendation-card-body {
+    align-content: start;
+    grid-auto-rows: max-content;
+    padding-top: 4px;
+}
+
+.character-page .artifact-stats-card .recommendation-section {
+    align-content: start;
 }
 
 .stat-row {
