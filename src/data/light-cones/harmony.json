@@ -2,6 +2,7 @@
     "a-grounded-ascent": {
         "rarity": 5,
         "version_released": "2.7",
+        "source": "limited-warp",
         "passive": {
             "en": "After the wearer uses Skill or Ultimate on one ally character, the wearer regenerates {{value}} Energy and the ability's target receives 1 stack of \"Hymn\" for 3 turn(s), stacking up to 3 time(s). Each stack of \"Hymn\" increases its holder's DMG dealt by {{value}}%. After every 2 instance(s) of Skill or Ultimate the wearer uses on one ally character, recovers 1 Skill Point.",
             "ru": "После того как владелец использует навык или сверхспособность на союзнике, он восстанавливает {{value}} ед. энергии, а его цель получает статус Псалом на 3 хода. Этот эффект может складываться до 3 раз. Каждый уровень статуса Псалом повышает наносимый урон на {{value}}%. За каждые 2 использования навыка или сверхспособности на союзнике отряд восстанавливает 1 очко навыков."
@@ -40,6 +41,7 @@
     "but-the-battle-isnt-over": {
         "rarity": 5,
         "version_released": "1.0",
+        "source": ["warp", "stellar-convergence"],
         "passive": {
             "en": "Increases the wearer's Energy Regeneration Rate by {{value}}% and regenerates 1 Skill Point when the wearer uses their Ultimate on an ally. This effect can be triggered once after every 2 uses of the wearer's Ultimate. When the wearer uses their Skill, the next ally taking action (except the wearer) deals {{value}}% more DMG for 1 turn(s).",
             "ru": "Скорость восстановления энергии владельца повышается на {{value}}%. Когда владелец использует сверхспособность на союзнике, он восстанавливает 1 очко навыков. Этот эффект может сработать только один раз за два использования сверхспособности. После использования владельцем навыка урон союзника, совершающего действие за ним, повышается на {{value}}% на 1 ход."
@@ -78,6 +80,7 @@
     "carve-the-moon-weave-the-clouds": {
         "rarity": 4,
         "version_released": "1.0",
+        "source": "nameless-honor",
         "passive": {
             "en": "At the start of the battle and whenever the wearer's turn begins, one of the following effects is applied randomly: All allies' ATK increases by {{value}}%, all allies' CRIT DMG increases by {{value}}%, or all allies' Energy Regeneration Rate increases by {{value}}%. The applied effect cannot be identical to the last effect applied, and will replace the previous effect. The applied effect will be removed when the wearer has been knocked down. Effects of the same type cannot be stacked.",
             "ru": "В начале боя, а также в начале хода владельца, срабатывает 1 случайный эффект из следующих: сила атаки всех союзников повышается на {{value}}%; крит. урон всех союзников повышается на {{value}}%; скорость восстановления энергии всех союзников повышается на {{value}}%. Этот эффект заменяет предыдущий эффект, и он не может быть таким же, как предыдущий эффект. Эффекты подобного типа не могут складываться, и они снимаются, когда владелец становится неспособен сражаться."
@@ -121,6 +124,7 @@
     "chorus": {
         "rarity": 3,
         "version_released": "1.0",
+        "source": "warp",
         "passive": {
             "en": "After entering battle, increases the ATK of all allies by {{value}}%. Abilities of the same type cannot stack.",
             "ru": "В начале боя сила атаки всех союзников повышается на {{value}}. Этот эффект не может складываться с эффектами подобного типа."
@@ -154,6 +158,7 @@
     "dance-dance-dance": {
         "rarity": 4,
         "version_released": "1.0",
+        "source": "warp",
         "passive": {
             "en": "When the wearer uses their Ultimate, all allies' actions are Advanced Forward by {{value}}%.",
             "ru": "После использования сверхспособности действия всех союзников продвигаются вперёд на {{value}}%."
@@ -187,6 +192,8 @@
     "dreamville-adventure": {
         "rarity": 4,
         "version_released": "2.0",
+        "source": ["priceless-jewels", "echo-of-war"],
+        "free": true,
         "passive": {
             "en": "After the wearer uses a certain type of ability such as Basic ATK, Skill, or Ultimate, all allies gain Childishness, which increases allies' DMG for the same type of ability as used by the wearer by {{value}}%. Childishness only takes effect for the most recent type of ability the wearer used and cannot be stacked.",
             "ru": "После того как владелец использует базовую атаку, навык или сверхспособность, он накладывает на всех союзников статус Ребячество. Этот статус повышает наносимый соответствующим умением союзника урон на {{value}}%. Статус Ребячество работает только с последним использованным владельцем умением, и он не может складываться."
@@ -220,6 +227,7 @@
     "earthly-escapade": {
         "rarity": 5,
         "version_released": "2.0",
+        "source": "limited-warp",
         "passive": {
             "en": "Increases the wearer's CRIT DMG by {{value}}%. At the start of the battle, the wearer gains Mask, lasting for 3 turn(s). While the wearer has Mask, the wearer's allies have their CRIT Rate increased by {{value}}% and their CRIT DMG increased by {{value}}%. For every 1 Skill Point the wearer recovers (including Skill Points that exceed the limit), they gain 1 stack of Radiant Flame. And when the wearer has 4 stacks of Radiant Flame, all the stacks are removed, and they gain Mask, lasting for 4 turn(s).",
             "ru": "Крит. урон владельца повышается на {{value}}%. В начале боя владелец получает статус Маска на 3 хода. Пока владелец имеет этот статус, крит. шанс его союзников повышается на {{value}}%, а их крит. урон - на {{value}}%. Каждый раз, когда владелец восстанавливает 1 очко навыков (включая превышение макс. количества очков навыков), он получает 1 ур. статуса Красочное пламя. Когда количество уровней этого статуса поднимается до 4, владелец теряет все уровни статуса Красочное пламя и получает статус Маска на 4 хода."
@@ -263,6 +271,7 @@
     "epoch-etched-in-golden-blood": {
         "rarity": 5,
         "version_released": "3.5",
+        "source": "limited-warp",
         "passive": {
             "en": "Increases the wearer's ATK by {{value}}%. After using Ultimate to attack, recovers 1 Skill Point(s). After the wearer uses their Skill on one ally character, increases the Skill DMG dealt by the target by {{value}}% for 3 turn(s).",
             "ru": "Сила атаки владельца повышается на {{value}}%. Использование сверхспособности для атаки противника восстанавливает 1 оч. навыков отряда. После того как владелец использует свой навык на союзнике, наносимый этим союзником урон навыка повышается на {{value}}% на 3 хода."
@@ -301,6 +310,7 @@
     "flowing-nightglow": {
         "rarity": 5,
         "version_released": "2.2",
+        "source": ["limited-warp", "stellar-convergence"],
         "passive": {
             "en": "Every time an ally attacks, the wearer gains 1 stack of Cantillation. Each stack of Cantillation increases the wearer's Energy Regeneration Rate by {{value}}%, stacking up to 5 time(s). When the wearer uses their Ultimate, removes Cantillation and gains Cadenza. Cadenza increases the wearer's ATK by {{value}}% and increases all allies' DMG dealt by {{value}}%, lasting for 1 turn(s).",
             "ru": "Каждая атака союзника накладывает на владельца 1 ур. статуса Кантилляция. Каждый уровень этого статуса повышает скорость восстановления энергии владельца на {{value}}% до макс. 5 ур. Использование сверхспособности владельцем снимает статус Кантилляция и накладывает статус Каденция. Этот статус повышает силу атаки владельца на {{value}}% и урон, наносимый союзниками, на {{value}}% на 1 ход."
@@ -344,6 +354,8 @@
     "for-tomorrows-journey": {
         "rarity": 4,
         "version_released": "2.2",
+        "source": "herta-store",
+        "free": true,
         "passive": {
             "en": "Increases the wearer's ATK by {{value}}%. After the wearer uses their Ultimate, increases their DMG dealt by {{value}}%, lasting for 1 turn(s).",
             "ru": "Сила атаки владельца повышается на {{value}}%. После того как владелец использует сверхспособность, наносимый урон повышается на {{value}}% на 1 ход."
@@ -382,6 +394,7 @@
     "if-time-were-a-flower": {
         "rarity": 5,
         "version_released": "3.1",
+        "source": "limited-warp",
         "passive": {
             "en": "Increases the wearer's CRIT DMG by {{value}}%. After the wearer launches Follow-up ATK, additionally regenerates 12 Energy and gains \"Presage\", lasting for 2 turn(s). While the wearer has \"Presage\", all ally targets' CRIT DMG increases by {{value}}%. When entering battle, the wearer regenerates 21 Energy and gains \"Presage\", lasting for 2 turn(s).",
             "ru": "Крит. урон владельца повышается на {{value}}%. Когда владелец выполняет бонус-атаку, он восстанавливает 12 ед. энергии и получает статус Предсказание на 2 хода. Пока владелец имеет статус Предсказание, крит. урон всех союзников повышается на {{value}}%. В начале боя владелец восстанавливает 21 ед. энергии и получает статус Предсказание на 2 хода."
@@ -420,6 +433,7 @@
     "in-pursuit-of-the-wind": {
         "rarity": 4,
         "version_released": "3.4",
+        "source": "nameless-honor",
         "passive": {
             "en": "After entering combat, increases all allies' Break DMG dealt by {{value}}%. Abilities of the same type cannot stack.",
             "ru": "В начале боя наносимый всеми союзниками урон пробития повышается на {{value}}%. Этот эффект не может складываться с эффектами подобного типа."
@@ -453,6 +467,7 @@
     "mediation": {
         "rarity": 3,
         "version_released": "1.0",
+        "source": "warp",
         "passive": {
             "en": "Upon entering battle, increases SPD of all allies by {{value}} points for 1 turn(s).",
             "ru": "В начале боя скорость всех союзников повышается на {{value}} ед. на 1 ход."
@@ -486,6 +501,7 @@
     "memories-of-the-past": {
         "rarity": 4,
         "version_released": "1.0",
+        "source": "warp",
         "passive": {
             "en": "Increases the wearer's Break Effect by {{value}}%. When the wearer attacks, additionally regenerates {{value}} Energy. This effect cannot be repeatedly triggered in a single turn.",
             "ru": "Эффект пробития владельца повышается на {{value}}%. Использование владельцем атаки дополнительно восстанавливает {{value}} ед. его энергии. Этот эффект может сработать только один раз за ход."
@@ -524,6 +540,7 @@
     "meshing-cogs": {
         "rarity": 3,
         "version_released": "1.0",
+        "source": "warp",
         "passive": {
             "en": "After the wearer uses attacks or gets hit, additionally regenerates {{value}} Energy. This effect cannot be repeatedly triggered in a single turn.",
             "ru": "После использования или получения владельцем атаки восстанавливает доп. {{value}} ед. энергии. Этот эффект может сработать только один раз за ход."
@@ -557,6 +574,8 @@
     "past-and-future": {
         "rarity": 4,
         "version_released": "1.0",
+        "source": ["priceless-jewels", "echo-of-war", "starlit-homecoming"],
+        "free": true,
         "passive": {
             "en": "When the wearer uses their Skill, the next ally taking action (except the wearer) deals {{value}}% increased DMG for 1 turn(s).",
             "ru": "После использования владельцем навыка урон союзника, совершающего действие за ним, повышается на {{value}}% на 1 ход."
@@ -590,6 +609,7 @@
     "past-self-in-mirror": {
         "rarity": 5,
         "version_released": "1.6",
+        "source": ["limited-warp", "stellar-convergence"],
         "passive": {
             "en": "Increases the wearer's Break Effect by {{value}}%. When the wearer uses their Ultimate, increases all allies' DMG by {{value}}%, lasting for 3 turn(s). If the wearer's Break Effect exceeds or equals 150%, 1 Skill Point will be recovered. At the start of each wave, all allies regenerate {{value}} Energy immediately. Abilities of the same type cannot stack.",
             "ru": "Эффект пробития владельца повышается на {{value}}%. После того как владелец использует сверхспособность, наносимый всеми союзниками урон повышается на {{value}}% на 3 хода. Если эффект пробития владельца становится выше или равным 150%, отряд восстанавливает 1 очко навыков. В начале каждой волны немедленно восстанавливается {{value}} ед. энергии всех союзников. Этот эффект не может складываться с эффектами подобного типа."
@@ -633,6 +653,7 @@
     "planetary-rendezvous": {
         "rarity": 4,
         "version_released": "1.0",
+        "source": "warp",
         "passive": {
             "en": "After entering battle, if an ally deals the same DMG Type as the wearer, DMG dealt increases by {{value}}%.",
             "ru": "В начале боя, когда союзник наносит урон того же типа, что и тип атаки владельца, наносимый им урон повышается на {{value}}%."
@@ -666,6 +687,7 @@
     "poised-to-bloom": {
         "rarity": 4,
         "version_released": "2.4",
+        "source": "warp",
         "passive": {
             "en": "Increases the wearer's ATK by {{value}}%. Upon entering battle, if two or more characters follow the same Path, then these characters' CRIT DMG increases by {{value}}%. Abilities of the same type cannot stack.",
             "ru": "Сила атаки владельца повышается на {{value}}%. Если в начале боя количество союзников одного и того же Пути равно или больше 2, то крит. урон этих персонажей повышается на {{value}}%. Этот эффект не может складываться с эффектами подобного типа."
@@ -704,6 +726,8 @@
     "the-forever-victual": {
         "rarity": 4,
         "version_released": "3.5",
+        "source": "herta-store",
+        "free": true,
         "passive": {
             "en": "Increases the wearer's ATK by {{value}}%. After the wearer uses Skill, increases ATK by {{value}}%, stacking up to 3 times.",
             "ru": "Сила атаки владельца повышается на {{value}}%. После использования навыка сила атаки владельца повышается на {{value}}%. Этот эффект может складываться до 3 раз."

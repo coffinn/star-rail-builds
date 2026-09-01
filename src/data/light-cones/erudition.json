@@ -2,6 +2,7 @@
    "a-dream-scented-in-wheat": {
         "rarity": 4,
         "version_released": "3.4",
+        "source": "nameless-honor",
         "passive": {
             "en": "Increases the wearer's CRIT Rate by {{value}}%. The Ultimate DMG and Follow-up ATK DMG dealt by the wearer increase by {{value}}%.",
             "ru": "Крит. шанс владельца повышается на {{value}}%. Наносимый владельцем урон сверхспособности и бонус-атаки повышается на {{value}}%."
@@ -40,6 +41,7 @@
     "a-star-that-lights-the-night": {
         "rarity": 5,
         "version_released": "4.4",
+        "source": "limited-warp",
         "passive": {
             "en": "The wearer ignores {{value}}% of the target's DEF when dealing DMG. When the wearer uses Assist Skill, they regenerate 6 Energy and gain \"Sail,\" lasting for 2 turns and stacking up to 3 time(s). Each stack of \"Sail\" increases Assist Skill DMG by {{value}}%. When \"Sail\" reaches 3 stacks, each stack of \"Sail\" increases Ultimate DMG by {{value}}%.",
             "ru": "Владелец игнорирует {{value}}% защиты цели при нанесении урона. Когда владелец использует навык поддержки, он восстанавливает 6 ед. энергии и получает статус Отправление на 2 хода, который может складываться до 3 раз. Каждый уровень статуса Отправление повышает урон навыка поддержки на {{value}}%. При достижении 3 ур. статуса Отправление каждый уровень также повышает урон сверхспособности на {{value}}%."
@@ -83,6 +85,7 @@
     "after-the-charmony-fall": {
         "rarity": 4,
         "version_released": "2.3",
+        "source": "warp",
         "passive": {
             "en": "Increases the wearer's Break Effect by {{value}}%. After the wearer uses Ultimate, increases SPD by {{value}}%, lasting for 2 turn(s).",
             "ru": "Эффект пробития владельца повышается на {{value}}%. После того как владелец использует сверхспособность, его скорость повышается на {{value}}% на 2 хода."
@@ -121,6 +124,7 @@
     "an-instant-before-a-gaze": {
         "rarity": 5,
         "version_released": "1.5",
+        "source": ["limited-warp", "stellar-convergence"],
         "passive": {
             "en": "Increases the wearer's CRIT DMG by {{value}}%. When the wearer uses Ultimate, increases DMG dealt by the wearer's Ultimate based on their Max Energy. Each point of Energy increases DMG dealt by Ultimate by {{value}}%. A max of 180 points of Energy will be taken into account for this.",
             "ru": "Крит. урон владельца повышается на {{value}}%. Когда владелец использует сверхспособность, наносимый ею урон повышается на {{value}}% за каждую единицу от макс. энергии владельца. Этот эффект может складываться до макс. 180 ед. энергии."
@@ -158,6 +162,7 @@
     },"before-dawn": {
         "rarity": 5,
         "version_released": "1.0",
+        "source": "limited-warp",
         "passive": {
             "en": "Increases the wearer's CRIT DMG by {{value}}%. Increases DMG dealt by the wearer's Skill and Ultimate by {{value}}%. After the wearer uses Skill or Ultimate, gains \"Somnus Corpus.\" Upon triggering a Follow-Up ATK, consumes \"Somnus Corpus,\" and increases DMG dealt by Follow-Up ATK by {{value}}%.",
             "ru": "Крит. урон владельца повышается на {{value}}%, а наносимый навыком и сверхспособностью владельца урон - на {{value}}%. После использования навыка или сверхспособности владелец получает статус Спящее тело. Выполнение бонус-атаки расходует статус Спящее тело и повышает наносимый бонус-атакой урон на {{value}}%."
@@ -201,6 +206,7 @@
     "data-bank": {
         "rarity": 3,
         "version_released": "1.0",
+        "source": "warp",
         "passive": {
             "en": "Increases DMG dealt by the wearer's Ultimate by {{value}}%.",
             "ru": "Наносимый сверхспособностью владельца урон повышается на {{value}}%."
@@ -233,6 +239,8 @@
     },"eternal-calculus": {
         "rarity": 5,
         "version_released": "2.3",
+        "source": "herta-store",
+        "free": true,
         "passive": {
             "en": "Increases the wearer's ATK by {{value}}%. After using an attack, for each enemy target hit, additionally increases ATK by {{value}}%. This effect can stack up to 5 times and last until the next attack. If there are 3 or more enemy targets hit, this unit's SPD increases by {{value}}%, lasting for 1 turn(s).",
             "ru": "Сила атаки владельца повышается на {{value}}%. Каждый поражённый атакой противник повышает силу атаки владельца на доп. {{value}}%. Этот эффект может складываться до 5 раз и длится до следующей атаки. Если количество поражённых противников выше или равно 3, скорость владельца повышается на {{value}}% на 1 ход."
@@ -275,6 +283,7 @@
     },"flickering-stars": {
         "rarity": 5,
         "version_released": "4.4",
+        "source": "limited-warp",
         "passive": {
             "en": "Increases the wearer's CRIT Rate by {{value}}%. When any ally character consumes a total of 4 or more Skill Points in a single turn, the wearer gains \"Radiant Crown,\" lasting for 3 turn(s). While the wearer holds \"Radiant Crown,\" all allies' DMG dealt ignores {{value}}% of the target's DEF, and the Skill DMG dealt by the wearer increases by {{value}}%. Effects of the same type cannot stack.",
             "ru": "Повышает крит. шанс владельца на {{value}}%. Когда любой союзник в течение своего хода суммарно расходует не менее 4 оч. навыков, владелец получает эффект Сияющая корона на 3 хода. Пока владелец обладает эффектом Сияющая корона, наносимый всеми союзниками урон игнорирует {{value}}% защиты цели, а урон навыка владельца повышается на {{value}}%. Эффекты подобного типа не могут складываться."
@@ -318,6 +327,7 @@
     "geniuses-repose": {
         "rarity": 4,
         "version_released": "1.0",
+        "source": "warp",
         "passive": {
             "en": "Increases the wearer's ATK by {{value}}%. When the wearer defeats an enemy, the wearer's CRIT DMG increases by {{value}}% for 3 turn(s).",
             "ru": "Сила атаки владельца повышается на {{value}}%. Когда владелец побеждает противника, его крит. урон повышается на {{value}}% на 3 хода."
@@ -356,6 +366,7 @@
     "into-the-unreachable-veil": {
         "rarity": 5,
         "version_released": "3.0",
+        "source": "limited-warp",
         "passive": {
             "en": "Increases the wearer's CRIT Rate by {{value}}%. When the wearer uses Ultimate, increases the Skill and Ultimate DMG dealt by the wearer by {{value}}%, lasting for 3 turn(s). After the wearer uses Ultimate, if this instance of Ultimate consumed 140 or more energy, recovers 1 Skill Point.",
             "ru": "Крит. шанс владельца повышается на {{value}}%. Когда владелец использует сверхспособность, наносимый им урон навыка и сверхспособности повышаются на {{value}}% на 3 хода. Если израсходованная этой сверхспособностью энергия выше или равна 140 ед., то она восстанавливает 1 очко навыков отряда."
@@ -394,6 +405,7 @@
     "life-should-be-cast-to-flames": {
         "rarity": 5,
         "version_released": "3.2",
+        "source": "limited-warp",
         "passive": {
             "en": "When the wearer's turn starts, regenerates 10 Energy. If the enemy target has a Weakness implanted by the wearer, increases the wearer's DMG dealt to it by {{value}}%. When an enemy target gets attacked by the wearer, the wearer decreases the target's DEF by {{value}}%, lasting for 2 turn(s). The same types of effects cannot stack.",
             "ru": "В начале хода владельца восстанавливает 10 ед. энергии. Если противник имеет добавленный владельцем тип уязвимости, то наносимый ему владельцем урон повышается на {{value}}%. Атакуя противника, владелец понижает его защиту на {{value}}% на 2 хода. Эффекты подобного типа не могут складываться."
@@ -432,6 +444,7 @@
     "make-the-world-clamor": {
         "rarity": 4,
         "version_released": "1.0",
+        "source": "warp",
         "passive": {
             "en": "The wearer regenerates {{value}} Energy immediately upon entering battle, and increases DMG dealt by the wearer's Ultimate by {{value}}%.",
             "ru": "В начале боя восстанавливает владельцу {{value}} ед. энергии. Наносимый сверхспособностью владельца урон повышается на {{value}}%."
@@ -470,6 +483,7 @@
     "night-on-the-milky-way": {
         "rarity": 5,
         "version_released": "1.0",
+        "source": ["warp", "stellar-convergence"],
         "passive": {
             "en": "For every enemy on the field, increases the wearer's ATK by {{value}}%, up to 5 stacks. When an enemy is inflicted with Weakness Break, the DMG dealt by the wearer increases by {{value}}% for 1 turn.",
             "ru": "За каждого противника на поле боя сила атаки владельца повышается на {{value}}%. Этот эффект может складываться до 5 раз. Если на поле боя есть противник с пробитой уязвимостью, то урон владельца повышается на {{value}}% на 1 ход."
@@ -508,6 +522,7 @@
     "ninjutsu-inscription-dazzling-evilbreaker": {
         "rarity": 5,
         "version_released": "2.6",
+        "source": "limited-warp",
         "passive": {
             "en": "Increases the wearer's Break Effect by {{value}}%. When entering battle, immediately regenerates {{value }} Energy. After the wearer uses Ultimate, obtains \"Raiton.\" After using 2 Basic ATKs, advances the wearer's action by {{value}}% and removes \"Raiton.\" After the wearer uses Ultimate, resets \"Raiton.\"",
             "ru": "Эффект пробития владельца повышается на {{value}}%. В начале боя владелец немедленно восстанавливает {{value}} ед. энергии. После использования владельцем сверхспособности он получает статус Спасение от грома. После выполнения базовой атаки 2 раза действие владельца продвигается вперёд на {{value}}%, после чего статус Спасение от грома снимается. После повторного использования владельцем сверхспособности на него снова накладывается статус Спасение от грома."
@@ -551,6 +566,7 @@
     "passkey": {
         "rarity": 3,
         "version_released": "1.0",
+        "source": "warp",
         "passive": {
             "en": "After the wearer uses their Skill, additionally regenerates {{value}} Energy. This effect cannot be repeatedly triggered in a single turn.",
             "ru": "После использования владельцем навыка дополнительно восстанавливает {{value}} ед. энергии. Этот эффект может сработать только один раз за ход."
@@ -584,6 +600,7 @@
     "sagacity": {
         "rarity": 3,
         "version_released": "1.0",
+        "source": "warp",
         "passive": {
             "en": "When the wearer uses their Ultimate, increases ATK by {{value}}% for 2 turn(s).",
             "ru": "Когда владелец использует сверхспособность, его сила атаки повышается на {{value}}% на 2 хода."
@@ -617,6 +634,7 @@
     "the-birth-of-the-self": {
         "rarity": 4,
         "version_released": "1.0",
+        "source": "warp",
         "passive": {
             "en": "Increases DMG dealt by the wearer's Follow-Up ATKs by {{value}}%. If the current HP percentage of the enemy target is below or equal to 50%, increases DMG dealt by Follow-Up ATKs by an extra {{value}}%.",
             "ru": "Наносимый бонус-атакой владельца урон повышается на {{value}}%. Если текущее НР противника ниже или равно 50%, то наносимый бонус-атакой владельца урон этому противнику, повышается на {{value}}%."
@@ -655,6 +673,8 @@
     "the-day-the-cosmos-fell": {
         "rarity": 4,
         "version_released": "2.0",
+        "source": ["priceless-jewels", "echo-of-war"],
+        "free": true,
         "passive": {
             "en": "Increases the wearer's ATK by {{value}}%. When the wearer uses an attack and at least 2 attacked enemies have the corresponding Weakness, the wearer's CRIT DMG increases by {{value}}%, lasting for 2 turn(s).",
             "ru": "Сила атаки владельца повышается на {{value}}%. Если после атаки владельца не менее 2 целей имеют соответствующую уязвимость, крит. урон владельца повышается на {{value}}% на 2 хода."
@@ -693,6 +713,8 @@
     "the-great-cosmic-enterprise": {
         "rarity": 4,
         "version_released": "3.2",
+        "source": "herta-store",
+        "free": true,
         "passive": {
             "en": "Increase the wearer's ATK by {{value}}%. For every 1 different Weakness Type an enemy target has, increase the DMG dealt to it by the wearer by {{value}}%. Up to a max of 7 Weakness Types can be taken into account for this effect.",
             "ru": "Сила атаки владельца повышается на {{value}}%. За каждый имеющийся у противника тип уязвимости наносимый владельцем урон повышается на {{value}}%. Этот эффект может складываться до 7 раз."
@@ -731,6 +753,8 @@
     "the-seriousness-of-breakfast": {
         "rarity": 4,
         "version_released": "1.0",
+        "source": ["priceless-jewels", "echo-of-war", "starlit-homecoming"],
+        "free": true,
         "passive": {
             "en": "Increases the wearer's DMG by {{value}}%. For every enemy defeated by the wearer, the wearer's ATK increases by {{value}}%, stacking up to 3 time(s).",
             "ru": "Наносимый владельцем урон повышается на {{value}}%. За каждого побеждённого противника сила атаки владельца повышается на {{value}}%. Этот эффект может складываться до 3 раз."
@@ -769,6 +793,7 @@
     "today-is-another-peaceful-day": {
         "rarity": 4,
         "version_released": "1.0",
+        "source": "nameless-honor",
         "passive": {
             "en": "After entering battle, increases the wearer's DMG based on their Max Energy. Each point of Energy increases DMG by {{value}}%. A max of 160 Energy will be taken into account for this.",
             "ru": "В начале боя наносимый владельцем урон повышается на {{value}}% за каждую единицу его макс. энергии до макс. 160 ед."
@@ -802,6 +827,7 @@
     "yet-hope-is-priceless": {
         "rarity": 5,
         "version_released": "2.3",
+        "source": "limited-warp",
         "passive": {
             "en": "Increases the wearer's CRIT Rate by {{value}}%. While the wearer is in battle, for every 20% CRIT DMG that exceeds 120%, the DMG dealt by follow-up attack increases by {{value}}%. This effect can stack up to 4 time(s). When the battle starts or after the wearer uses their Basic ATK, enables the DMG dealt by Ultimate or follow-up attack to ignore {{value}}% of the target's DEF, lasting for 2 turn(s).",
             "ru": "Крит. шанс владельца повышается на {{value}}%. Если крит. урон владельца во время боя становится выше 120%, то наносимый его бонус-атакой урон повышается на {{value}}% за каждые 20%, превышающие это значение. Этот эффект может складываться до 4 раз. В начале боя или после использования владельцем базовой атаки урон, наносимый сверхспособностью или бонус-атакой, игнорирует {{value}}% защиты цели в течение 2 ходов."

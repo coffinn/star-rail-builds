@@ -2,6 +2,7 @@
     "adversarial": {
         "rarity": 3,
         "version_released": "1.0",
+        "source": "warp",
         "passive": {
             "en": "When the wearer defeats an enemy, increases SPD by {{value}}% for 2 turn(s).",
             "ru": "Когда владелец побеждает противника, его скорость повышается на {{value}}% на 2 хода."
@@ -35,6 +36,7 @@
     "arrows": {
         "rarity": 3,
         "version_released": "1.0",
+        "source": "warp",
         "passive": {
             "en": "At the start of the battle, the wearer's CRIT Rate increases by {{value}}% for 3 turn(s).",
             "ru": "В начале боя крит. шанс владельца повышается на {{value}}% на 3 хода."
@@ -68,6 +70,7 @@
     "baptism-of-pure-thought": {
         "rarity": 5,
         "version_released": "1.6",
+        "source": "limited-warp",
         "passive": {
             "en": "Increases the wearer's CRIT DMG by {{value}}%. For every debuff on the enemy target, the wearer's CRIT DMG dealt against this target additionally increases by {{value}}%, stacking up to 3 times. When using Ultimate to attack the enemy target, the wearer receives the Disputation effect, which increases DMG dealt by {{value}}% and enables their follow-up attacks to ignore {{value}}% of the target's DEF. This effect lasts for 2 turns.",
             "ru": "Крит. урон владельца повышается на {{value}}%. За каждое имеющееся ослабление у противника крит. урон владельца, наносимый этой цели, повышается на доп. {{value}}%. Этот эффект может складываться до 3 раз. Использование сверхспособности для атаки цели накладывает на владельца статус Дискуссия, который повышает наносимый урон на {{value}}% и позволяет бонус-атаке игнорировать {{value}}% защиты противника. Этот эффект длится 2 хода."
@@ -116,6 +119,8 @@
     "cruising-in-the-stellar-sea": {
         "rarity": 5,
         "version_released": "1.0",
+        "source": "herta-store",
+        "free": true,
         "passive": {
             "en": "Increases the wearer's CRIT rate by {{value}}%, and increases their CRIT rate against enemies with HP less than or equal to 50% by an extra {{value}}%. When the wearer defeats an enemy, their ATK is increased by {{value}}% for 2 turn(s).",
             "ru": "Крит. шанс владельца повышается на {{value}}%. Крит. шанс владельца против противников с НР, ниже или равным 50%, дополнительно повышается на {{value}}%. Когда владелец побеждает противника, его сила атаки повышается на {{value}}% на 2 хода."
@@ -159,6 +164,7 @@
     "darting-arrow": {
         "rarity": 3,
         "version_released": "1.0",
+        "source": "warp",
         "passive": {
             "en": "When the wearer defeats an enemy, increases ATK by {{value}}% for 3 turn(s).",
             "ru": "Когда владелец побеждает противника, его сила атаки повышается на {{value}}% на 3 хода."
@@ -192,6 +198,8 @@
     "final-victor": {
         "rarity": 4,
         "version_released": "2.0",
+        "source": ["priceless-jewels", "echo-of-war"],
+        "free": true,
         "passive": {
             "en": "Increases the wearer's ATK by {{value}}%. When the wearer lands a CRIT hit on enemies, gains 1 stack of Good Fortune. This can stack up to 4 time(s). Every stack of Good Fortune increases the wearer's CRIT DMG by {{value}}%. Good Fortune will be removed at the end of the wearer's turn.",
             "ru": "Сила атаки владельца повышается на {{value}}%. Когда владелец совершает крит. попадание по противнику, он получает 1 ур. статуса Везение, который может складываться до 4 раз. Каждый имеющийся у владельца уровень статуса Везение повышает его крит. урон на {{value}}%. Статус Везение снимается в конце хода владельца."
@@ -230,6 +238,7 @@
     "i-venture-forth-to-hunt": {
         "rarity": 5,
         "version_released": "2.5",
+        "source": "limited-warp",
         "passive": {
             "en": "Increases the wearer's CRIT Rate by {{value}}%. When the wearer launches a follow-up attack, gains 1 stack of \"Luminflux,\" stacking up to 2 time(s). Each stack of \"Luminflux\" enables the Ultimate DMG dealt by the wearer to ignore {{value}}% of the target's DEF. When the wearer's turn ends, removes 1 stack of \"Luminflux.\"",
             "ru": "Крит. шанс владельца повышается на {{value}}%. Когда владелец выполняет бонус-атаку, он получает 1 ур. статуса Течение света до макс. 2 ур. Каждый уровень этого статуса позволяет урону сверхспособности владельца игнорировать {{value}}% защиты цели. Когда ход владельца заканчивается, он теряет 1 ур. статуса Течение света."
@@ -268,6 +277,7 @@
     "in-the-night": {
         "rarity": 5,
         "version_released": "1.0",
+        "source": ["limited-warp", "stellar-convergence"],
         "passive": {
             "en": "Increases the wearer's CRIT Rate by {{value}}%. While the wearer is in battle, for every 10 SPD that exceeds 100, increases DMG dealt by Basic ATK and Skill by {{value}}%. At the same time, increases the CRIT DMG of Ultimate by {{value}}%. This effect can stack up to 6 time(s).",
             "ru": "Крит. шанс владельца повышается на {{value}}%. Если скорость владельца во время боя выше 100, за каждые доп. 10 ед. скорости наносимый базовой атакой и навыком владельца урон повышается на {{value}}%, а крит. урон сверхспособности - на {{value}}%. Этот эффект может складываться до 6 раз."
@@ -311,6 +321,7 @@
     "only-silence-remains": {
         "rarity": 4,
         "version_released": "1.0",
+        "source": "warp",
         "passive": {
             "en": "Increases the wearer's ATK by {{value}}%. If there are 2 or fewer enemies on the field, increases wearer's CRIT Rate by {{value}}%.",
             "ru": "Сила атаки владельца повышается на {{value}}%. Если на поле боя имеется 2 или меньше противников, крит. шанс владельца повышается на {{value}}%."
@@ -349,9 +360,11 @@
     "race-to-the-horizon": {
         "rarity": 4,
         "version_released": "4.5",
+        "source": "limited-time-event",
+        "free": true,
         "passive": {
             "en": "Increases the wearer's ATK by {{value}}%. After the wearer uses Follow-Up ATK, increases their CRIT DMG by {{value}}% for 2 turn(s). This effect can stack up to 10 times.",
-            "ru": "Еще не доступно"
+            "ru": "Повышает силу атаки владельца на {{value}}%. После того как владелец использует бонус-атаку, его крит. урон повышается на {{value}}% на 2 хода. Эффект может складываться до 10 раз. "
         },
         "s1": [
             12,
@@ -387,6 +400,7 @@
     "return-to-darkness": {
         "rarity": 4,
         "version_released": "1.0",
+        "source": "nameless-honor",
         "passive": {
             "en": "Increases the wearer's CRIT Rate by {{value}}%. After a CRIT Hit, there is a {{value}}% fixed chance to dispel 1 buff on the target enemy. This effect can only trigger 1 time per attack.",
             "ru": "Крит. шанс владельца повышается на {{value}}%. Крит. попадание владельца имеет фиксированный шанс {{value}}% снять 1 усиление с противника. Этот эффект может сработать только один раз за атаку."
@@ -425,6 +439,8 @@
     "river-flows-in-spring": {
         "rarity": 4,
         "version_released": "1.0",
+        "source": ["priceless-jewels", "echo-of-war", "starlit-homecoming"],
+        "free": true,
         "passive": {
             "en": "After entering battle, increases the wearer's SPD by {{value}}% and DMG by {{value}}%. When the wearer takes DMG, this effect will disappear. This effect will resume after the end of the wearer's next turn.",
             "ru": "В начале боя скорость владельца повышается на {{value}}%, а его урон - на {{value}}%. Этот эффект снимается, когда владелец получает урон, и снова появляется в конце следующего хода."
@@ -462,6 +478,7 @@
     },"sailing-towards-a-second-life": {
         "rarity": 5,
         "version_released": "2.2",
+        "source": "limited-warp",
         "passive": {
             "en": "Increases the wearer's Break Effect by {{value}}%. The Break DMG dealt by the wearer ignores {{value}}% of the target's DEF. When the wearer's Break Effect in battle is at 150% or greater, increases their SPD by {{value}}%.",
             "ru": "Эффект пробития владельца повышается на {{value}}%. Наносимый владельцем урон пробития игнорирует {{value}}% защиты цели. Если эффект пробития владельца в бою выше или равен 150%, то его скорость повышается на {{value}}%."
@@ -505,6 +522,7 @@
     "see-you-at-the-end": {
         "rarity": 4,
         "version_released": "3.4",
+        "source": "nameless-honor",
         "passive": {
             "en": "Increases the wearer's CRIT DMG by {{value}}%. The Skill DMG and Follow-up ATK DMG dealt by the wearer increase by {{value}}%.",
             "ru": "Крит. урон владельца повышается на {{value}}%. Наносимый владельцем урон навыка и бонус-атаки повышается на {{value}}%."
@@ -543,6 +561,7 @@
     "shadowed-by-night": {
         "rarity": 4,
         "version_released": "2.5",
+        "source": "warp",
         "passive": {
             "en": "Increases the wearer's Break Effect by {{value}}%. When entering battle or after dealing Break DMG, increases SPD by {{value}}%, lasting for 2 turn(s). This effect can only trigger once per turn.",
             "ru": "Эффект пробития владельца повышается на {{value}}%. В начале боя или после нанесения урона пробития его скорость повышается на {{value}}% на 2 хода. Этот эффект может сработать только 1 раз за ход."
@@ -581,6 +600,7 @@
     "sleep-like-the-dead": {
         "rarity": 5,
         "version_released": "1.0",
+        "source": ["warp", "stellar-convergence"],
         "passive": {
             "en": "Increases the wearer's CRIT DMG by {{value}}%. When the wearer's Basic ATK or Skill DMG does not result in a CRIT Hit, increases their CRIT Rate by {{value}}%, lasting for 1 turn(s). This effect can only trigger once every 3 turn(s).",
             "ru": "Крит. урон владельца повышается на {{value}}%. Когда базовая атака или навык владельца не наносят крит. урон, его крит. шанс повышается на {{value}}% на 1 ход. Этот эффект может сработать 1 раз в течение 3 ходов."
@@ -619,6 +639,7 @@
     "subscribe-for-more": {
         "rarity": 4,
         "version_released": "1.0",
+        "source": "warp",
         "passive": {
             "en": "The wearer's Basic ATK and Skill deals {{value}}% more DMG. This effect increases by an extra {{value}}% when the wearer's current Energy reaches its max level.",
             "ru": "Наносимый базовой атакой и навыком владельца урон повышается на {{value}}%. Если текущая энергия владельца равна его макс. энергии, этот эффект повышается на доп. {{value}}%."
@@ -657,6 +678,7 @@
     "swordplay": {
         "rarity": 4,
         "version_released": "1.0",
+        "source": "warp",
         "passive": {
             "en": "For each time the wearer hits the same target, DMG dealt increases by {{value}}%, stacking up to 5 time(s). This effect will be dispelled when the wearer changes targets.",
             "ru": "Когда владелец атакует одного и того же противника несколько раз, наносимый им каждый раз урон повышается на {{value}}%. Этот эффект может складываться до 5 раз. Этот эффект снимается, если владелец меняет свою цель."
@@ -690,6 +712,7 @@
     "the-finale-of-a-lie": {
         "rarity": 5,
         "version_released": "4.1",
+        "source": "limited-warp",
         "passive": {
             "en": "Increases the wearer's CRIT Rate by {{value}}%. At the start of battle or for every 4 instance(s) of Follow-Up ATK the wearer uses, the wearer gains \"Umbra Devourer,\" lasting for 3 turn(s). While the wearer holds \"Umbra Devourer,\" increases ATK by {{value}}% and increases the DMG taken by all enemies by {{value}}%. Effects of the same type cannot stack.",
             "ru": "Крит. шанс владельца повышается на {{value}}%. В начале боя или каждый раз, когда владелец выполняет 4 бонус-атаки, владелец получает статус Укус тени, который длится 3 хода. Пока владелец обладает статусом Укус тени, его сила атаки повышается на {{value}}%, а получаемый всеми противниками урон повышается на {{value}}%. Эффекты подобного типа не могут складываться."
@@ -733,6 +756,7 @@
     "the-hell-where-ideals-burn": {
         "rarity": 5,
         "version_released": "3.4",
+        "source": "limited-warp",
         "passive": {
             "en": "Increases the wearer's CRIT Rate by {{value}}%. When entering combat, if the allies' Skill Points limit is 6 or higher, increases the wearer's ATK by {{value}}%. After each use of the wearer's Skill, increases the wearer's ATK by {{value}}%, stacking up to 4 time(s).",
             "ru": "Крит. шанс владельца повышается на {{value}}%. Если в начале боя макс. количество очков навыков отряда выше или равно 6, то сила атаки владельца повышается на {{value}}%. Каждое использование навыка владельцем повышает его силу атаки на {{value}}%. Этот эффект может складываться до 4 раз."
@@ -776,6 +800,7 @@
     "worrisome-blissful": {
         "rarity": 5,
         "version_released": "1.4",
+        "source": ["limited-warp", "stellar-convergence"],
         "passive": {
             "en": "Increase the wearer's CRIT Rate by {{value}}% and increases DMG dealt by follow-up attack by {{value}}%. After the wearer uses a follow-up attack, inflicts the target with the Tame state, stacking up to 2 time(s). When allies hit enemy targets under the Tame state, each Tame stack increases the CRIT DMG dealt by {{value}}%.",
             "ru": "Крит. шанс владельца повышается на {{value}}%, а наносимый бонус-атакой урон - на {{value}}%. После выполнения бонус-атаки накладывает на цель статус Приручение, который может складываться до 2 раз. Когда союзник поражает противника со статусом Приручение, каждый уровень этого статуса повышает наносимый крит. урон на {{value}}%."
