@@ -120,30 +120,117 @@ export function collectNotes(
     lang: string,
     translator: any,
 ) {
-    const notes: { id: string; name: string; note: string }[] = [];
+    const notes: {
+        id: string;
+        name: string;
+        note: string;
+    }[] = [];
 
-    // Mutating noteId here lets recommendation cards link to their note entries.
-    groups.forEach((group) => {
-        const groupItems = [
-            ...(group.items ?? []),
-            ...(group.choices ?? []).flatMap((choice: any) => choice.items ?? []),
-        ];
+    const groupedNotes = new Map<
+        string,
+        {
+            items: any[];
+            names: string[];
+            note?: string;
+        }
+    >();
 
-        groupItems.forEach((item: any) => {
-            const localizedNote = getLocalizedNote(item, lang);
+    const allItems = groups.flatMap((group) => [
+        ...(group.items ?? []),
+        ...(group.choices ?? []).flatMap(
+            (choice: any) => choice.items ?? [],
+        ),
+    ]);
 
-            if (localizedNote) {
-                const name = formatter(item);
-                const noteId = createNoteId(sourceFile, notes.length);
+    /*
+     * First collect explicitly grouped notes.
+     */
+    allItems.forEach((item: any) => {
+        if (!item.note_group) return;
 
-                item.noteId = noteId;
+        const groupId = item.note_group;
 
-                notes.push({
-                    id: noteId,
-                    name,
-                    note: renderNote(localizedNote, sourceFile, translator),
-                });
-            }
+        if (!groupedNotes.has(groupId)) {
+            groupedNotes.set(groupId, {
+                items: [],
+                names: [],
+            });
+        }
+
+        const group = groupedNotes.get(groupId)!;
+
+        group.items.push(item);
+        group.names.push(formatter(item));
+
+        const localizedNote =
+            getLocalizedNote(item, lang);
+
+        /*
+         * Only one item in the group needs to
+         * actually contain the note text.
+         */
+        if (localizedNote && !group.note) {
+            group.note = localizedNote;
+        }
+    });
+
+    /*
+     * Turn each note_group into one note.
+     */
+    groupedNotes.forEach((group) => {
+        if (!group.note) return;
+
+        const noteId = createNoteId(
+            sourceFile,
+            notes.length,
+        );
+
+        /*
+         * Every item points to the same anchor.
+         */
+        group.items.forEach((item) => {
+            item.noteId = noteId;
+        });
+
+        notes.push({
+            id: noteId,
+            name: group.names.join(' / '),
+            note: renderNote(
+                group.note,
+                sourceFile,
+                translator,
+            ),
+        });
+    });
+
+    /*
+     * Existing behavior for ordinary,
+     * non-grouped notes.
+     */
+    allItems.forEach((item: any) => {
+        if (item.note_group) return;
+
+        const localizedNote =
+            getLocalizedNote(item, lang);
+
+        if (!localizedNote) return;
+
+        const name = formatter(item);
+        const noteId = createNoteId(
+            sourceFile,
+            notes.length,
+        );
+
+        item.noteId = noteId;
+
+        notes.push({
+            id: noteId,
+            name,
+            note: renderNote(
+                localizedNote,
+                sourceFile,
+                translator,
+            ),
         });
     });
 
