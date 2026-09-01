@@ -2,6 +2,7 @@
     "cornucopia": {
         "rarity": 3,
         "version_released": "1.0",
+        "source": "warp",
         "passive": {
             "en": "When the wearer uses their Skill or Ultimate, their Outgoing Healing increases by {{value}}%.",
             "ru": "Когда владелец использует навык или сверхспособность, его исходящее лечение повышается на {{value}}%.",
@@ -36,6 +37,7 @@
     "dreams-montage": {
         "rarity": 4,
         "version_released": "2.6",
+        "source": "warp",
         "passive": {
             "en": "Increases the wearer's SPD by {{value}}%. After attacking enemy targets that are Weakness Broken, regenerates {{value}} Energy. This effect can trigger up to 2 time(s) per turn.",
             "ru": "Скорость владельца повышается на {{value}}%. После атаки противника с пробитой уязвимостью восстанавливает {{value}} ед. энергии владельца. Этот эффект может сработать до 2 раз за ход.",
@@ -75,6 +77,7 @@
     "echoes-of-the-coffin": {
         "rarity": 5,
         "version_released": "1.1",
+        "source": ["limited-warp", "stellar-convergence"],
         "passive": {
             "en": "Increases the wearer's ATK by {{value}}%. After the wearer uses an attack, for each different enemy target the wearer hits, regenerates {{value}} Energy. Each attack can regenerate Energy up to 3 time(s) this way. After the wearer uses their Ultimate, all allies gain {{value}} SPD for 1 turn.",
             "ru": "Сила атаки владельца повышается на {{value}}%. Каждый поражённый атакой владельца противник восстанавливает владельцу {{value}} ед. энергии. Каждая атака может восстановить энергию подобным образом до 3 раз. После использования владельцем сверхспособности скорость всех союзников повышается на {{value}} ед. на 1 ход.",
@@ -119,6 +122,7 @@
     "fine-fruit": {
         "rarity": 3,
         "version_released": "1.0",
+        "source": "warp",
         "passive": {
             "en": "At the start of the battle, immediately regenerates {{value}} Energy for all allies.",
             "ru": "В начале боя немедленно восстанавливает всем союзникам {{value}} ед. энергии.",
@@ -153,6 +157,7 @@
     "hey-over-here": {
         "rarity": 4,
         "version_released": "1.5",
+        "source": "herta-store",
         "passive": {
             "en": "Increases the wearer's Max HP by {{value}}%. When the wearer uses their Skill, increases Outgoing Healing by {{value}}%, lasting for 2 turn(s).",
             "ru": "Макс. HP владельца повышается на {{value}}%. Когда владелец использует навык, его исходящее исцеление повышается на {{value}}% на 2 хода.",
@@ -192,6 +197,7 @@
     "multiplication": {
         "rarity": 3,
         "version_released": "1.0",
+        "source": "warp",
         "passive": {
             "en": "After the wearer uses their Basic ATK, their next action will be Advanced Forward by {{value}}%.",
             "ru": "После использования владельцем базовой атаки его следующее действие продвигается вперёд на {{value}}%.",
@@ -226,6 +232,7 @@
     "night-of-fright": {
         "rarity": 5,
         "version_released": "1.5",
+        "source": ["limited-warp", "stellar-convergence"],
         "passive": {
             "en": "Increases the wearer's Energy Regeneration Rate by {{value}}%. When any ally uses their Ultimate, the wearer restores HP for the ally currently with the lowest HP percentage by an amount equal to {{value}}% of the healed ally's Max HP. When the wearer provides healing for an ally, increases the healed ally's ATK by {{value}}%. This effect can stack up to 5 times and lasts for 2 turn(s).",
             "ru": "Скорость восстановления энергии владельца повышается на {{value}}%. Когда союзник использует сверхспособность, владелец восстанавливает {{value}}% HP союзника с самым низким процентом HP. Когда владелец исцеляет союзника, сила атаки этого союзника повышается на {{value}}%. Этот эффект может складываться до 5 раз и длится 2 хода.",
@@ -270,6 +277,7 @@
     "perfect-timing": {
         "rarity": 4,
         "version_released": "1.0",
+        "source": "warp",
         "passive": {
             "en": "Increases the wearer's Effect RES by {{value}}% and increases Outgoing Healing by an amount that is equal to {{value}}% of Effect RES. Outgoing Healing can be increased this way by up to {{value}}%.",
             "ru": "Сопротивление эффектам владельца повышается на {{value}}%. Исходящее исцеление владельца повышается на {{value}}% от сопротивления эффектам владельца до макс. {{value}}%.",
@@ -314,6 +322,7 @@
     "post-op-conversation": {
         "rarity": 4,
         "version_released": "1.0",
+        "source": "warp",
         "passive": {
             "en": "Increases the wearer's Energy Regeneration Rate by {{value}}% and increases Outgoing Healing when they use their Ultimate by {{value}}%.",
             "ru": "Скорость восстановления энергии владельца повышается на {{value}}%. Использование сверхспособности владельца повышает его исходящее исцеление на {{value}}%.",
@@ -353,6 +362,7 @@
     "quid-pro-quo": {
         "rarity": 4,
         "version_released": "1.0",
+        "source": ["priceless-jewels","echo-of-war", "starlit-homecoming"],
         "passive": {
             "en": "At the start of the wearer's turn, regenerates {{value}} Energy for a randomly chosen ally (excluding the wearer) whose current Energy is lower than 50%.",
             "ru": "В начале своего хода владелец восстанавливает {{value}} ед. энергии случайному союзнику, кроме владельца, чья текущая энергия ниже 50%.",
@@ -387,6 +397,7 @@
     "scent-alone-stays-true": {
         "rarity": 5,
         "version_released": "2.5",
+        "source": "limited-warp",
         "passive": {
             "en": "Increases the wearer's Break Effect by {{value}}%. After the wearer uses Ultimate to attack enemy targets, inflicts the targets with the \"Woefree\" state, lasting for 2 turn(s). While in \"Woefree,\" enemy targets take {{value}}% increased DMG. The effect of increasing DMG taken is additionally boosted by {{value}}% if the wearer's current Break Effect is 150% or higher.",
             "ru": "Эффект пробития владельца повышается на {{value}}%. После того как владелец использует сверхспособность для атаки противника, он накладывает на него статус Беззаботность на 2 хода. Получаемый противником с этим статусом урон повышается на {{value}}%. Если текущий эффект пробития владельца выше или равен 150%, то получаемый противником урон повышается на доп. {{value}}%.",
@@ -431,6 +442,7 @@
     "shared-feeling": {
         "rarity": 4,
         "version_released": "1.0",
+        "source": "warp",
         "passive": {
             "en": "Increases the wearer's Outgoing Healing by {{value}}%. When using Skill, regenerates {{value}} Energy for all allies.",
             "ru": "Исходящее исцеление владельца повышается на {{value}}%. Использование навыка владельца восстанавливает всем союзникам {{value}} ед. энергии.",
@@ -470,6 +482,7 @@
     "time-waits-for-no-one": {
         "rarity": 5,
         "version_released": "1.0",
+        "source": ["warp", "stellar-convergence"],
         "passive": {
             "en": "Increases the wearer's Max HP by {{value}}% and Outgoing Healing by {{value}}%. When the wearer heals allies, record the amount of Outgoing Healing. When any ally launches an attack, a random attacked enemy takes Additional DMG equal to {{value}}% of the recorded Outgoing Healing value. The type of this Additional DMG is of the same Type as the wearer's. This Additional DMG is not affected by other buffs, and can only occur 1 time per turn.",
             "ru": "Макс. HP владельца повышается на {{value}}%, а его исходящее исцеление - на {{value}}%. Когда владелец исцеляет союзника, величина этого исцеления записывается. Когда какой-либо союзник использует атаку, один случайный поражённый противник получает дополнительный урон типа атаки владельца, равный {{value}}% от записанной величины исцеления. На этот дополнительный урон не влияют другие усиления, и он высчитывается только один раз за ход.",
@@ -514,6 +527,7 @@
     "unto-tomorrows-morrow": {
         "rarity": 4,
         "version_released": "3.4",
+        "source": "nameless-honor",
         "passive": {
             "en": "Increases the wearer's Outgoing Healing by {{value}}%. When an ally target's current HP percentage is greater than or equal to 50%, increases the DMG dealt by {{value}}%.",
             "ru": "Исходящее исцеление владельца повышается на {{value}}%. Когда текущее НР союзника становится выше или равно 50%, наносимый им урон повышается на {{value}}%.",
@@ -553,6 +567,7 @@
     "warmth-shortens-cold-nights": {
         "rarity": 4,
         "version_released": "1.0",
+        "source": "nameless-honor",
         "passive": {
             "en": "Increases the wearer's Max HP by {{value}}%. When using Basic ATK or Skill, restores all allies' HP by an amount equal to {{value}}% of their respective Max HP.",
             "ru": "Макс. НР владельца повышается на {{value}}%. Использование базовой атаки или навыка восстанавливает всем союзникам НР, равное {{value}}% от их макс. НР.",
@@ -592,6 +607,7 @@
     "what-is-real": {
         "rarity": 4,
         "version_released": "2.0",
+        "source": ["priceless-jewels", "echo-of-war"],
         "passive": {
             "en": "Increases the wearer's Break Effect by {{value}}%. After using Basic ATK, restores HP for the wearer by an amount equal to {{value}}% of Max HP plus 800.",
             "ru": "Эффект пробития владельца повышается на {{value}}%. Базовые атаки владельца восстанавливают {{value}}% его НР плюс 800 ед.",

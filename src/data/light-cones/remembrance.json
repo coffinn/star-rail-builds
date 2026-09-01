@@ -2,6 +2,7 @@
     "fly-into-a-pink-tomorrow": {
         "rarity": 4,
         "version_released": "3.7",
+        "source": "story",
         "passive": {
             "en": "Increases the wearer's CRIT DMG by {{value}}%. When equipped by Trailblazer (Remembrance), increases all ally targets' DMG dealt by {{value}}% and DMG dealt by Enhanced Basic ATK \"Together, We Script Tomorrow!\" by {{value}}%.",
             "ru": "Крит. урон владельца повышается на {{value}}%. Если владельцем является Первопроходец (Память), то наносимый всеми союзниками урон повышается на {{value}}%, а также повышает урон, наносимый усиленной базовой атакой «Вместе опишем облик завтрашнего дня!», на {{value}}%."
@@ -45,6 +46,7 @@
     "geniuses-greetings": {
         "rarity": 4,
         "version_released": "3.0",
+        "source": "warp",
         "passive": {
             "en": "Increases the wearer's ATK by {{value}}%. After the wearer uses Ultimate, increases the Basic ATK DMG dealt by the wearer and their memosprite by {{value}}%, lasting for 3 turn(s).",
             "ru": "Сила атаки владельца повышается на {{value}}%. После того как владелец использует сверхспособность, наносимый базовыми атаками владельца и духа памяти урон повышается на {{value}}% на 3 хода."
@@ -83,6 +85,7 @@
     "long-may-rainbows-adorn-the-sky": {
         "rarity": 5,
         "version_released": "3.3",
+        "source": "limited-warp",
         "passive": {
             "en": "Increases the wearer's SPD by {{value}}%. When the wearer uses Basic ATK, Skill, or Ultimate, consumes all allies' HP equal to {{value}}% of their current HP and additionally deals 1 instance of Additional DMG of the wearer's memosprite Type equal to {{value}}% of the total consumed HP to the attacked target after the next attack launched by the wearer's memosprite. The total HP consumed is then reset. When the wearer's memosprite uses Memosprite Skill, increases the DMG taken by all enemies by {{value}}% for 2 turn(s). The same types of effects cannot stack.",
             "ru": "Скорость владельца повышается на {{value}}%. Когда владелец использует базовую атаку, навык или сверхспособность, он расходует {{value}}% от текущего НР всех союзников и позволяет следующей атаке своего духа памяти нанести атакованной цели соответствующий типу духа памяти дополнительный урон, равный {{value}}% от общего количества израсходованного НР, после чего это количество сбрасывается. Когда дух памяти владельца использует свой навык, получаемый всеми противниками урон повышается на {{value}}% на 2 хода. Эффекты подобного типа не могут складываться."
@@ -131,6 +134,7 @@
     "make-farewells-more-beautiful": {
         "rarity": 5,
         "version_released": "3.2",
+        "source": "limited-warp",
         "passive": {
             "en": "Increases the wearer's Max HP by {{value}}%. When the wearer or their memosprite loses HP during their own turn, the wearer gains \"Death Flower.\" \"Death Flower\" allows the wearer and their memosprite to ignore {{value}}% of the target's DEF when dealing DMG, lasting for 2 turn(s). When the wearer's memosprite disappears, advances the wearer's action by {{value}}%. This effect can only trigger up to 1 time, and the trigger count resets every time the wearer uses Ultimate.",
             "ru": "Макс. НР владельца повышается на {{value}}%. Если НР владельца или его духа памяти опускается в течение их хода, владелец получает статус Цветок смерти, который позволяет владельцу и его духу памяти во время нанесения урона игнорировать {{value}}% защиты противника в течение 2 ходов. Исчезновение духа памяти продвигает действие владельца вперёд на {{value}}%. Этот эффект может сработать только 1 раз. Использование сверхспособности владельцем сбрасывает количество срабатываний этого эффекта."
@@ -174,6 +178,7 @@
     "memorys-curtain-never-falls": {
         "rarity": 5,
         "version_released": "3.1",
+        "source": "herta-store",
         "passive": {
             "en": "Increases the wearer's SPD by {{value}}%. After the wearer uses Skill, increases the DMG dealt by all allies by {{value}}%, lasting for 3 turn(s).",
             "ru": "Скорость владельца повышается на {{value}}%. После того как владелец использует навык, наносимый всеми союзниками урон повышается на {{value}}% на 3 хода."
@@ -212,6 +217,7 @@
     "reminiscence": {
         "rarity": 3,
         "version_released": "3.0",
+        "source": "warp",
         "passive": {
             "en": "When memosprite's turn starts, the wearer and memosprite each gain 1 stack of \"Commemoration.\" Each stack increases DMG dealt by {{value}}%, stacking up to 4 time(s). When memosprite disappears, removes \"Commemoration\" from the wearer and memosprite.",
             "ru": "В начале хода духа памяти владелец и дух памяти получают по 1 ур. статуса Почитание памяти. Каждый уровень этого статуса повышает наносимый урон на {{value}}%, складывается до 4 раз. Когда дух памяти исчезает, статус Почитание памяти снимается с владельца и духа памяти."
@@ -245,6 +251,7 @@
     "rise-and-sing": {
         "rarity": 5,
         "version_released": "4.5",
+        "source": "limited-warp",
         "passive": {
             "en": "Increases the wearer's Max HP by {{value}}%. After the wearer uses Ultimate, recovers 1 Skill Point for allies. When entering combat, advances the wearer's action by {{value}}% and grants the wearer \"New Melody,\" lasting for 2 turn(s). While the wearer holds \"New Melody,\" all allies' SPD increases by {{value}}%.",
             "ru": "Повышает макс. НР владельца на {{value}}%. После использования владельцем сверхспособности восстанавливает союзникам 1 очко навыков. В начале боя продвигает действие владельца вперёд на {{value}}% и накладывает на владельца статус Новая мелодия на 2 хода. Пока владелец обладает статусом Новая мелодия, скорость всех союзников повышается на {{value}}%."
@@ -288,6 +295,7 @@
     "shadowburn": {
         "rarity": 3,
         "version_released": "3.0",
+        "source": "warp",
         "passive": {
             "en": "When the wearer summons memosprite for the first time, recovers 1 Skill Point(s) and regenerates {{value}} Energy for this unit.",
             "ru": "Когда владелец призывает духа памяти в первый раз, он восстанавливает 1 очко навыков и {{value}} ед. своей энергии."
@@ -321,6 +329,7 @@
     "sweat-now-cry-less": {
         "rarity": 4,
         "version_released": "3.0",
+        "source": "nameless-honor",
         "passive": {
             "en": "Increases the wearer's CRIT Rate by {{value}}%. When the wearer's memosprite is on the field, increases the DMG dealt by the wearer and their memosprite by {{value}}%.",
             "ru": "Крит. шанс владельца повышается на {{value}}%. Если дух памяти владельца находится на поле боя, наносимый ими урон повышается на {{value}}%."
@@ -359,6 +368,7 @@
     "the-flower-remembers": {
         "rarity": 4,
         "version_released": "3.4",
+        "source": "nameless-honor",
         "passive": {
             "en": "Increases the wearer's CRIT DMG by {{value}}%. The CRIT DMG dealt by the wearer's Memosprite increases by {{value}}%.",
             "ru": "Повышает крит. урон владельца на {{value}}%. Наносимый духом памяти владельца крит. урон дополнительно повышается на {{value}}%."
@@ -397,6 +407,7 @@
     "the-storys-next-page": {
         "rarity": 4,
         "version_released": "3.4",
+        "source": "warp",
         "passive": {
             "en": "Increases the wearer's Max HP by {{value}}%. After the wearer's memosprite attacks, the Outgoing Healing of the wearer and their memosprite increases by {{value}}%, lasting for 1 turn(s).",
             "ru": "Макс. НР владельца повышается на {{value}}%. После того как дух памяти владельца атакует, исходящее исцеление владельца и его духа памяти повышается на {{value}}% на 1 ход."
@@ -435,6 +446,7 @@
     "this-love-forever": {
         "rarity": 5,
         "version_released": "3.7",
+        "source": "limited-warp",
         "passive": {
             "en": "Increases the wearer's SPD by {{value}}%. When the wearer's memosprite uses a Memosprite Skill on an ally, gains \"Blank,\" which increases DMG taken by all enemies by {{value}}%. When the wearer's memosprite uses a Memosprite Skill on an enemy, gains \"Verse,\" which increases CRIT DMG of all allies by {{value}}%. When the wearer's memosprite has both \"Blank\" and \"Verse,\" increases the effects of \"Blank\" and \"Verse\" by {{value}}%.",
             "ru": "Скорость владельца повышается на {{value}}%. Когда дух памяти владельца использует свой навык на союзнике, владелец получает статус Чистый лист, который повышает получаемый всеми противниками урон на {{value}}%. Когда дух памяти владельца использует свой навык на противнике, владелец получает статус Строфа, который повышает крит. урон всех союзников на {{value}}%. Когда дух памяти одновременно имеет статусы Чистый лист и Строфа, эффекты этих статусов повышаются на {{value}}%."
@@ -483,6 +495,7 @@
     "time-woven-into-gold": {
         "rarity": 5,
         "version_released": "3.0",
+        "source": "limited-warp",
         "passive": {
             "en": "Increases the wearer's base SPD by {{value}}. After the wearer and the wearer's memosprite attacks, the wearer gains 1 stack of \"Brocade.\" Each stack of \"Brocade\" increases the wearer's and their memosprite's CRIT DMG by {{value}}%, stacking up to 6 time(s). When reaching maximum stacks, each \"Brocade\" stack additionally increases Basic ATK DMG dealt by {{value}}%.",
             "ru": "Базовая скорость владельца повышается на {{value}}. После атаки владельца и его духа памяти владелец получает 1 ур. статуса Парча. Каждый уровень этого статуса повышает крит. урон владельца и его духа памяти на {{value}}%, может складываться до 6 раз. Когда статус Парча достигает макс. уровня, каждый его уровень дополнительно повышает наносимый базовой атакой урон на {{value}}%."
@@ -526,6 +539,7 @@
     "to-evernights-stars": {
         "rarity": 5,
         "version_released": "3.6",
+        "source": "limited-warp",
         "passive": {
             "en": "Increases the wearer's Max HP by {{value}}%. When the wearer's memosprite uses an ability, the wearer gains \"Noctis.\" While the wearer has \"Noctis,\" all allies' memosprites ignore {{value}}% of the target's DEF when dealing DMG. Increases the DMG dealt by the wearer and their memosprite by {{value}}%. When the wearer's memosprite disappears, the wearer recovers {{value}} Energy. Similar effects cannot stack.",
             "ru": "Макс. НР владельца повышается на {{value}}%. Когда дух памяти владельца использует умение, владелец получает статус Цвет ночи. Пока владелец имеет этот статус, наносимый духами памяти отряда урон игнорирует {{value}}% защиты цели, а также наносимый владельцем и его духом памяти урон повышается на {{value}}%. Исчезновение духа памяти владельца восстанавливает {{value}} ед. энергии владельца. Эффекты подобного типа не могут складываться."
@@ -574,6 +588,7 @@
     "victory-in-a-blink": {
         "rarity": 4,
         "version_released": "3.0",
+        "source": ["priceless-jewels", "echo-of-war", "starlit-homecoming", "story"],
         "passive": {
             "en": "Increases the wearer's CRIT DMG by {{value}}%. When the wearer's memosprite uses an ability on an ally target, increases the DMG dealt by all ally targets by {{value}}%, lasting for 3 turn(s).",
             "ru": "Крит. урон владельца повышается на {{value}}%. Когда дух памяти владельца использует умение на союзнике, наносимый всеми союзниками урон повышается на {{value}}% на 3 хода."
