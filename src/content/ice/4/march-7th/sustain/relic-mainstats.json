@@ -5,10 +5,7 @@
                 "name": "def%"
             },
             {
-                "name": "ehr",
-                "note": {
-                    "en": "[[stat:ehr]] can be used to increase [[ability:ultimate]]'s Freeze chance."
-                }
+                "name": "ehr"
             }
         ],
         "feet": [
