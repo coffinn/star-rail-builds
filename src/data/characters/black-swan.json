@@ -49,7 +49,7 @@
             "ultimate": 
             {
                 "type": "Ultimate",
-                "name": "Bliss of Otherworld's Embrace/Enhanced",
+                "name": "Bliss of Otherworld's Embrace",
                 "tag": "AoE",
                 "energy_gain": 5,
                 "break_aoe": 20,
@@ -57,7 +57,7 @@
                 "min_level": 1,
                 "max_level": 12,
                 "default_level": 10,
-                "description_template": "Inflicts \"Epiphany\" state on all enemies for 2 turn(s). Then deals Wind DMG to all enemies equal to {{scaling1}}% of Black Swan's ATK. While in the \"Epiphany\" state, enemy targets take {{scaling2}}% increased DMG. For every 1 stack of \"Arcana inflicted,\" there is a 50% fixed chance to additionally increase the number of \"Arcana\" stacked this time by 1. And \"Arcana\" stacks won't be halved after dealing DMG at the start of the turn.",
+                "description_template": "Inflicts \"Epiphany\" state on all enemies for 2 turn(s). Then deals Wind DMG to all enemies equal to {{scaling1}}% of Black Swan's ATK.\nWhile in the \"Epiphany\" state, enemy targets take {{scaling2}}% increased DMG. For every 1 stack of \"Arcana inflicted,\" there is a 50% fixed chance to additionally increase the number of \"Arcana\" stacked this time by 1. And \"Arcana\" stacks won't be halved after dealing DMG at the start of the turn.",
                 "scaling": {
                     "scaling1": [72,76.8,81.6,86.4,91.2,96,102,108,114,120,124.8,129.6,134.4,139.2,144],
                     "scaling2": [15,16,17,18,19,20,21.25,22.5,23.75,25,26,27,28,29,30]
@@ -72,7 +72,7 @@
                 "min_level": 1,
                 "max_level": 12,
                 "default_level": 10,
-                "description_template": "Every time an enemy target receives 1 instance of DoT, there is a {{scaling1}}% base chance for it to be inflicted with 1 stack of \"Arcana\". While an enemy target is in the \"Arcana\" state, they are also considered to be simultaneously afflicted with Wind Shear, Bleed, Burn, and Shock. The target receives Wind DoT equal to {{scaling2}}% of Black Swan's ATK at the start of each turn, after which the number of stacks is halved. Each stack of \"Arcana\" increases this DMG multiplier by {{scaling3}}%. \"Arcana\" can stack 50 times, and can continue to stack beyond this limit, with the excess stacks removed after dealing DMG. DMG from \"Arcana\" ignores 20% of the target's DEF. Only when \"Arcana\" deals DMG at the start of the enemy target's turn, adjacent targets take 1 additional instance of Wind DoT equal to {{scaling4}}% of Black Swan's ATK.",
+                "description_template": "Every time an enemy target receives 1 instance of DoT, there is a {{scaling1}}% base chance for it to be inflicted with 1 stack of \"Arcana\".\nWhile an enemy target is in the \"Arcana\" state, they are also considered to be simultaneously afflicted with Wind Shear, Bleed, Burn, and Shock. The target receives Wind DoT equal to {{scaling2}}% of Black Swan's ATK at the start of each turn, after which the number of stacks is halved. Each stack of \"Arcana\" increases this DMG multiplier by {{scaling3}}%. \"Arcana\" can stack 50 times, and can continue to stack beyond this limit, with the excess stacks removed after dealing DMG.\nDMG from \"Arcana\" ignores 20% of the target's DEF. Only when \"Arcana\" deals DMG at the start of the enemy target's turn, adjacent targets take 1 additional instance of Wind DoT equal to {{scaling4}}% of Black Swan's ATK.",
                 "scaling": {
                     "scaling1": [50,51.5,53,54.5,56,57.5,59.375,61.25,63.125,65,66.5,68,69.5,71,72.5],
                     "scaling2": [96,111.84,127.68,143.52,159.36,175.2,189.6,204,222,240,252,264],
@@ -96,7 +96,7 @@
         },
         "4": {
             "name": "Goblet's Dredges",
-            "description": "When an enemy targets enters combat, there is a 65% base chance for it to be inflicted with 1 stack of \"Arcana,\" and a 100% base chance to be inflicted with the DEF reduction effect from the Skill, which lasts for 3 turn(s). After using Basic ATK or Ultimate, there is also a 100% base chance to inflict the DEF reduction effect from the Skill on the hit enemy targets, which lasts for 3 turn(s)."
+            "description": "When an enemy targets enters combat, there is a 65% base chance for it to be inflicted with 1 stack of \"Arcana,\" and a 100% base chance to be inflicted with the DEF reduction effect from the Skill, which lasts for 3 turn(s).\nAfter using Basic ATK or Ultimate, there is also a 100% base chance to inflict the DEF reduction effect from the Skill on the hit enemy targets, which lasts for 3 turn(s)."
         },
         "6": {
             "name": "Candleflame's Portent",
@@ -131,7 +131,7 @@
         {
             "level": 3,
             "name": "As Above, So Below",
-            "description": "Skill Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+            "description": "Skill Lv. +2, up to a maximum of Lv. 15.\nTalent Lv. +2, up to a maximum of Lv. 15."
         },
         {
             "level": 4,
@@ -141,12 +141,12 @@
         {
             "level": 5,
             "name": "Linnutee Flyway",
-            "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+            "description": "Ultimate Lv. +2, up to a maximum of Lv. 15.\nBasic ATK Lv. +1, up to a maximum of Lv. 10."
         },
         {
             "level": 6,
             "name": "Pantheon Merciful, Masses Pitiful",
-            "description": "The upper limit of stackable \"Arcana\" increases by 30. When an enemy target gets attacked by Black Swan's teammates, Black Swan has a 65% base chance of inflicting 1 stack of \"Arcana\" on the target. For every 1 stack of \"Arcana\" Black Swan inflicts on an enemy target, additionally increases the number of \"Arcana\" stacked this time by 1."
+            "description": "The upper limit of stackable \"Arcana\" increases by 30.\nWhen an enemy target gets attacked by Black Swan's teammates, Black Swan has a 65% base chance of inflicting 1 stack of \"Arcana\" on the target.\nFor every 1 stack of \"Arcana\" Black Swan inflicts on an enemy target, additionally increases the number of \"Arcana\" stacked this time by 1."
         }
     ]
 }

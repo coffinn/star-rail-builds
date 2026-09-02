@@ -92,7 +92,7 @@
       "min_level": 1,
       "max_level": 12,
       "default_level": 10,
-      "description_template": "Heals all allies for {{scaling1}}% of Bailu's Max HP plus {{scaling2}}. Bailu applies Invigoration to allies that are not already Invigorated. For those already Invigorated, Bailu extends the duration of their Invigoration by 1 turn. The effect of Invigoration can last for 2 turn(s). This effect cannot stack.",
+      "description_template": "Heals all allies for {{scaling1}}% of Bailu's Max HP plus {{scaling2}}.\nBailu applies Invigoration to allies that are not already Invigorated. For those already Invigorated, Bailu extends the duration of their Invigoration by 1 turn. The effect of Invigoration can last for 2 turn(s). This effect cannot stack.",
       "scaling": {
         "scaling1": [
           9,
@@ -137,7 +137,7 @@
       "min_level": 1,
       "max_level": 12,
       "default_level": 10,
-      "description_template": "After an ally target with Invigoration is hit, restores the ally's HP for {{scaling1}}% of Bailu's Max HP plus {{scaling2}}. This effect can trigger 2 time(s). When Bailu's teammate receives a killing blow, they will not be knocked down. Bailu immediately heals the ally for {{scaling3}}% of Bailu's Max HP plus {{scaling4}} HP. This effect can be triggered 1 time per battle.",
+      "description_template": "After an ally target with Invigoration is hit, restores the ally's HP for {{scaling1}}% of Bailu's Max HP plus {{scaling2}}. This effect can trigger 2 time(s).\nWhen Bailu's teammate receives a killing blow, they will not be knocked down. Bailu immediately heals the ally for {{scaling3}}% of Bailu's Max HP plus {{scaling4}} HP. This effect can be triggered 1 time per battle.",
       "scaling": {
         "scaling1": [
           3.6,
@@ -258,7 +258,7 @@
     {
       "level": 3,
       "name": "Omniscient Opulence",
-      "description": "Skill Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+      "description": "Skill Lv. +2, up to a maximum of Lv. 15.\nTalent Lv. +2, up to a maximum of Lv. 15."
     },
     {
       "level": 4,
@@ -268,7 +268,7 @@
     {
       "level": 5,
       "name": "Waning Worries",
-      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15.\nBasic ATK Lv. +1, up to a maximum of Lv. 10."
     },
     {
       "level": 6,

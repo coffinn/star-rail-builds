@@ -1,0 +1,279 @@
+{
+  "id": "bailu",
+  "name": "Bailu",
+  "rarity": "5",
+  "element": "lightning",
+  "path": "abundance",
+  "version_released": "1.0",
+  "max_energy": 100,
+  "level_80_stats": {
+    "hp": 1319,
+    "atk": 562,
+    "def": 485,
+    "spd": 98
+  },
+  "abilities": {
+    "basic": {
+      "type": "Tấn Công Thường",
+      "name": "Nhìn, Nghe, Hỏi... Đá!",
+      "tag": "Đánh Đơn",
+      "energy_gain": 20,
+      "break": 10,
+      "min_level": 1,
+      "max_level": 7,
+      "default_level": 6,
+      "description_template": "Gây Sát Thương Lôi bằng {{scaling1}}% tấn công của Bailu cho kẻ địch chỉ định.",
+      "scaling": {
+        "scaling1": [
+          50,
+          60,
+          70,
+          80,
+          90,
+          100,
+          110,
+          120,
+          130
+        ]
+      }
+    },
+    "skill": {
+      "type": "Chiến Kỹ",
+      "name": "Châu Rơi Giữa Mây Ngàn",
+      "tag": "Hồi Phục",
+      "energy_gain": 30,
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "Hồi ngay cho 1 đồng đội chỉ định một lượng HP bằng {{scaling1}}% Giới Hạn HP của Bailu +{{scaling2}}. Sau đó Bailu sẽ trị liệu lần cho 1 đồng đội ngẫu nhiên, mỗi 1 lần trị liệu thì lượng HP hồi phục cho lần sau sẽ giảm 15%.",
+      "scaling": {
+        "scaling1": [
+          7.8,
+          8.3,
+          8.8,
+          9.3,
+          9.8,
+          10.1,
+          10.5,
+          10.9,
+          11.3,
+          11.7,
+          12.1,
+          12.5,
+          12.9,
+          13.3,
+          13.7
+        ],
+        "scaling2": [
+          78,
+          124.8,
+          159.9,
+          195,
+          218.4,
+          241.8,
+          259.35,
+          276.9,
+          294.45,
+          312,
+          329.55,
+          347.1,
+          364.65,
+          382.2,
+          399.75
+        ]
+      }
+    },
+    "ultimate": {
+      "type": "Tuyệt Kỹ",
+      "name": "Rồng Vượt Vực Sâu",
+      "tag": "Hồi Phục",
+      "energy_gain": 5,
+      "energy_cost": 100,
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "Lập tức hồi cho toàn phe ta lượng HP bằng {{scaling1}}% Giới Hạn HP của Bailu +{{scaling2}}.\nĐối với mục tiêu không có Sinh Mệnh của phe ta, Bailu sẽ cộng Sinh Mệnh vào cho mục tiêu đó, còn mục tiêu đã có Sinh Mệnh, sẽ được kéo dài thời gian Sinh Mệnh thêm 1 hiệp.\n\"Sinh Mệnh\" có thể duy trì hiệp, hiệu ứng này không thể cộng dồn.",
+      "scaling": {
+        "scaling1": [
+          9,
+          9.5625,
+          10.125,
+          10.6875,
+          11.25,
+          11.7,
+          12.15,
+          12.6,
+          13.05,
+          13.5,
+          13.95,
+          14.4,
+          14.85,
+          15.3,
+          15.75
+        ],
+        "scaling2": [
+          90,
+          144,
+          184.5,
+          225,
+          252,
+          279,
+          299.25,
+          319.5,
+          339.75,
+          360,
+          380.25,
+          400.5,
+          420.75,
+          441,
+          461.25
+        ]
+      }
+    },
+    "talent": {
+      "type": "Talent",
+      "name": "Gourdful of Elixir",
+      "tag": "Restore",
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "Mục tiêu phe ta có \"Sinh Mệnh\", sau khi bị tấn công sẽ hồi lượng HP bằng {{scaling1}}% Giới Hạn HP của Bailu +{{scaling2}}, hiệu ứng này có thể kích hoạt 2 lần.\nKhi đồng đội của Bailu chịu tấn công chí tử, sẽ không rơi vào trạng thái không thể chiến đấu, Bailu sẽ trị liệu ngay cho đồng đội đó, hồi HP bằng {{scaling3}}% Giới Hạn HP của Bailu +{{scaling4}}. Hiệu ứng này có thể kích hoạt 1 lần trong 1 trận.",
+      "scaling": {
+        "scaling1": [
+          3.6,
+          3.825,
+          4.05,
+          4.275,
+          4.5,
+          4.68,
+          4.86,
+          5.04,
+          5.22,
+          5.4,
+          5.58,
+          5.76,
+          5.94,
+          6.12,
+          6.3
+        ],
+        "scaling2": [
+          36,
+          57.6,
+          73.8,
+          90,
+          100.8,
+          111.6,
+          119.7,
+          127.8,
+          135.9,
+          144,
+          152.1,
+          160.2,
+          168.3,
+          176.4,
+          184.5
+        ],
+        "scaling3": [
+          12,
+          12.75,
+          13.5,
+          14.25,
+          15,
+          15.6,
+          16.2,
+          16.8,
+          17.4,
+          18,
+          18.6,
+          19.2,
+          19.8,
+          20.4,
+          21
+        ],
+        "scaling4": [
+          120,
+          192,
+          246,
+          300,
+          336,
+          372,
+          399,
+          426,
+          453,
+          480,
+          507,
+          534,
+          561,
+          588,
+          615
+        ]
+      }
+    },
+    "technique": {
+      "type": "Bí Kỹ",
+      "name": "Thong Thả Trong Mưa",
+      "tag": "Hồi Phục",
+      "description": "Sau khi dùng Bí Kỹ, khi bắt đầu lần chiến đấu tiếp theo sẽ kèm thêm Sinh Mệnh cho toàn phe ta, duy trì 2 hiệp."
+    }
+  },
+  "major_traces": {
+    "2": {
+      "name": "Lý Luận Kỳ Hoàng",
+      "description": "Khi Bailu trị liệu quá mức cho mục tiêu của phe ta sẽ tăng 10% Giới Hạn HP của mục tiêu, duy trì 2 hiệp."
+    },
+    "4": {
+      "name": "Long Mạch Vidyadhara",
+      "description": "Số lần kích hoạt hiệu ứng Sinh Mệnh tăng 1 lần."
+    },
+    "6": {
+      "name": "Phúc Trạch Lân Uyên",
+      "description": "Giảm 10% sát thương mà nhân vật sở hữu \"Sinh Mệnh\" phải chịu."
+    }
+  },
+  "stat_bonuses": [
+    {
+      "stat": "HP",
+      "value": "+28%"
+    },
+    {
+      "stat": "Phòng Thủ",
+      "value": "+22.5%"
+    },
+    {
+      "stat": "Kháng Hiệu Ứng",
+      "value": "+10%"
+    }
+  ],
+  "eidolons": [
+    {
+      "level": 1,
+      "name": "Xung Mạch Thánh Thần",
+      "description": "Khi \"Sinh Mệnh\" kết thúc, nếu HP hiện tại của mục tiêu phe ta bằng với Giới Hạn HP của chính mục tiêu đó, sẽ hồi thêm 8 Năng Lượng cho mục tiêu."
+    },
+    {
+      "level": 2,
+      "name": "Rồng Say Ngủ Động Tiên",
+      "description": "Sau khi thi triển Tuyệt Kỹ, lượng Trị Liệu của Bailu tăng 15%, duy trì 2 hiệp."
+    },
+    {
+      "level": 3,
+      "name": "Nắm Giữ Càn Khôn, Thấu Hiểu Đạo Lý",
+      "description": "Cấp Chiến Kỹ +2, tối đa không quá cấp ; Cấp Thiên Phú +2, tối đa không quá cấp 15."
+    },
+    {
+      "level": 4,
+      "name": "Loại Trừ Khẩn Cấp",
+      "description": "Mỗi 1 lần trị liệu mà Chiến Kỹ mang lại sẽ khiến sát thương gây ra bởi người được trị liệu tăng thêm 10%, tối đa cộng dồn 3 tầng, duy trì 2 hiệp."
+    },
+    {
+      "level": 5,
+      "name": "Gột Rửa Bụi Trần",
+      "description": "Cấp Tuyệt Kỹ +2, tối đa không quá cấp ; Cấp Tấn Công Thường +1, tối đa không quá cấp 10."
+    },
+    {
+      "level": 6,
+      "name": "Nước Bọt Của Rồng Thần",
+      "description": "Số lần kích hoạt trị liệu của Bailu lên đồng đội bị tấn công chí tử tăng 1 lần."
+    }
+  ]
+}
