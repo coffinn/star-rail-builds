@@ -3,6 +3,7 @@
         "rarity": 3,
         "version_released": "1.0",
         "source": "warp",
+        "free": true,
         "passive": {
             "en": "When the wearer defeats an enemy, increases SPD by {{value}}% for 2 turn(s).",
             "ru": "Когда владелец побеждает противника, его скорость повышается на {{value}}% на 2 хода.",
@@ -38,6 +39,7 @@
         "rarity": 3,
         "version_released": "1.0",
         "source": "warp",
+        "free": true,
         "passive": {
             "en": "At the start of the battle, the wearer's CRIT Rate increases by {{value}}% for 3 turn(s).",
             "ru": "В начале боя крит. шанс владельца повышается на {{value}}% на 3 хода.",
@@ -169,6 +171,7 @@
         "rarity": 3,
         "version_released": "1.0",
         "source": "warp",
+        "free": true,
         "passive": {
             "en": "When the wearer defeats an enemy, increases ATK by {{value}}% for 3 turn(s).",
             "ru": "Когда владелец побеждает противника, его сила атаки повышается на {{value}}% на 3 хода.",
@@ -330,6 +333,7 @@
         "rarity": 4,
         "version_released": "1.0",
         "source": "warp",
+        "free": true,
         "passive": {
             "en": "Increases the wearer's ATK by {{value}}%. If there are 2 or fewer enemies on the field, increases wearer's CRIT Rate by {{value}}%.",
             "ru": "Сила атаки владельца повышается на {{value}}%. Если на поле боя имеется 2 или меньше противников, крит. шанс владельца повышается на {{value}}%.",
@@ -576,6 +580,7 @@
         "rarity": 4,
         "version_released": "2.5",
         "source": "warp",
+        "free": true,
         "passive": {
             "en": "Increases the wearer's Break Effect by {{value}}%. When entering battle or after dealing Break DMG, increases SPD by {{value}}%, lasting for 2 turn(s). This effect can only trigger once per turn.",
             "ru": "Эффект пробития владельца повышается на {{value}}%. В начале боя или после нанесения урона пробития его скорость повышается на {{value}}% на 2 хода. Этот эффект может сработать только 1 раз за ход.",
@@ -616,6 +621,7 @@
         "rarity": 5,
         "version_released": "1.0",
         "source": ["warp", "stellar-convergence"],
+        "free": true,
         "passive": {
             "en": "Increases the wearer's CRIT DMG by {{value}}%. When the wearer's Basic ATK or Skill DMG does not result in a CRIT Hit, increases their CRIT Rate by {{value}}%, lasting for 1 turn(s). This effect can only trigger once every 3 turn(s).",
             "ru": "Крит. урон владельца повышается на {{value}}%. Когда базовая атака или навык владельца не наносят крит. урон, его крит. шанс повышается на {{value}}% на 1 ход. Этот эффект может сработать 1 раз в течение 3 ходов.",
@@ -656,6 +662,7 @@
         "rarity": 4,
         "version_released": "1.0",
         "source": "warp",
+        "free": true,
         "passive": {
             "en": "The wearer's Basic ATK and Skill deals {{value}}% more DMG. This effect increases by an extra {{value}}% when the wearer's current Energy reaches its max level.",
             "ru": "Наносимый базовой атакой и навыком владельца урон повышается на {{value}}%. Если текущая энергия владельца равна его макс. энергии, этот эффект повышается на доп. {{value}}%.",
@@ -696,6 +703,7 @@
         "rarity": 4,
         "version_released": "1.0",
         "source": "warp",
+        "free": true,
         "passive": {
             "en": "For each time the wearer hits the same target, DMG dealt increases by {{value}}%, stacking up to 5 time(s). This effect will be dispelled when the wearer changes targets.",
             "ru": "Когда владелец атакует одного и того же противника несколько раз, наносимый им каждый раз урон повышается на {{value}}%. Этот эффект может складываться до 5 раз. Этот эффект снимается, если владелец меняет свою цель.",

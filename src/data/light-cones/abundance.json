@@ -3,6 +3,7 @@
         "rarity": 3,
         "version_released": "1.0",
         "source": "warp",
+        "free": true,
         "passive": {
             "en": "When the wearer uses their Skill or Ultimate, their Outgoing Healing increases by {{value}}%.",
             "ru": "Когда владелец использует навык или сверхспособность, его исходящее лечение повышается на {{value}}%.",
@@ -38,6 +39,7 @@
         "rarity": 4,
         "version_released": "2.6",
         "source": "warp",
+        "free": true,
         "passive": {
             "en": "Increases the wearer's SPD by {{value}}%. After attacking enemy targets that are Weakness Broken, regenerates {{value}} Energy. This effect can trigger up to 2 time(s) per turn.",
             "ru": "Скорость владельца повышается на {{value}}%. После атаки противника с пробитой уязвимостью восстанавливает {{value}} ед. энергии владельца. Этот эффект может сработать до 2 раз за ход.",
@@ -123,6 +125,7 @@
         "rarity": 3,
         "version_released": "1.0",
         "source": "warp",
+        "free": true,
         "passive": {
             "en": "At the start of the battle, immediately regenerates {{value}} Energy for all allies.",
             "ru": "В начале боя немедленно восстанавливает всем союзникам {{value}} ед. энергии.",
@@ -199,6 +202,7 @@
         "rarity": 3,
         "version_released": "1.0",
         "source": "warp",
+        "free": true,
         "passive": {
             "en": "After the wearer uses their Basic ATK, their next action will be Advanced Forward by {{value}}%.",
             "ru": "После использования владельцем базовой атаки его следующее действие продвигается вперёд на {{value}}%.",
@@ -279,6 +283,7 @@
         "rarity": 4,
         "version_released": "1.0",
         "source": "warp",
+        "free": true,
         "passive": {
             "en": "Increases the wearer's Effect RES by {{value}}% and increases Outgoing Healing by an amount that is equal to {{value}}% of Effect RES. Outgoing Healing can be increased this way by up to {{value}}%.",
             "ru": "Сопротивление эффектам владельца повышается на {{value}}%. Исходящее исцеление владельца повышается на {{value}}% от сопротивления эффектам владельца до макс. {{value}}%.",
@@ -324,6 +329,7 @@
         "rarity": 4,
         "version_released": "1.0",
         "source": "warp",
+        "free": true,
         "passive": {
             "en": "Increases the wearer's Energy Regeneration Rate by {{value}}% and increases Outgoing Healing when they use their Ultimate by {{value}}%.",
             "ru": "Скорость восстановления энергии владельца повышается на {{value}}%. Использование сверхспособности владельца повышает его исходящее исцеление на {{value}}%.",
@@ -445,6 +451,7 @@
         "rarity": 4,
         "version_released": "1.0",
         "source": "warp",
+        "free": true,
         "passive": {
             "en": "Increases the wearer's Outgoing Healing by {{value}}%. When using Skill, regenerates {{value}} Energy for all allies.",
             "ru": "Исходящее исцеление владельца повышается на {{value}}%. Использование навыка владельца восстанавливает всем союзникам {{value}} ед. энергии.",
@@ -485,6 +492,7 @@
         "rarity": 5,
         "version_released": "1.0",
         "source": ["warp", "stellar-convergence"],
+        "free": true,
         "passive": {
             "en": "Increases the wearer's Max HP by {{value}}% and Outgoing Healing by {{value}}%. When the wearer heals allies, record the amount of Outgoing Healing. When any ally launches an attack, a random attacked enemy takes Additional DMG equal to {{value}}% of the recorded Outgoing Healing value. The type of this Additional DMG is of the same Type as the wearer's. This Additional DMG is not affected by other buffs, and can only occur 1 time per turn.",
             "ru": "Макс. HP владельца повышается на {{value}}%, а его исходящее исцеление - на {{value}}%. Когда владелец исцеляет союзника, величина этого исцеления записывается. Когда какой-либо союзник использует атаку, один случайный поражённый противник получает дополнительный урон типа атаки владельца, равный {{value}}% от записанной величины исцеления. На этот дополнительный урон не влияют другие усиления, и он высчитывается только один раз за ход.",

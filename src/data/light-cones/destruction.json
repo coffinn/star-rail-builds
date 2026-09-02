@@ -43,6 +43,7 @@
         "rarity": 4,
         "version_released": "1.0",
         "source": "warp",
+        "free": true,
         "passive": {
             "en": "Increases DMG dealt by the wearer by {{value}}%. The wearer also deals an extra {{value}}% of DMG to enemies whose current HP percentage is equal to or higher than the wearer's current HP percentage.",
             "ru": "Наносимый владельцем урон повышается на {{value}}%. Также наносимый владельцем урон противникам, текущий процент НР которых выше или равен текущему проценту НР владельца, повышается на доп. {{value}}%.",
@@ -173,6 +174,7 @@
         "rarity": 3,
         "version_released": "1.0",
         "source": "warp",
+        "free": true,
         "passive": {
             "en": "The wearer's Basic ATK and Skill deal {{value}}% more DMG.",
             "ru": "Наносимый базовой атакой и навыком владельца урон повышается на {{value}}%.",
@@ -439,6 +441,7 @@
         "rarity": 4,
         "version_released": "2.0",
         "source": "warp",
+        "free": true,
         "passive": {
             "en": "Increases the wearer’s Break Effect by {{value}}%. When the wearer uses their Ultimate, increases CRIT Rate by {{value}}%, lasting for 2 turn(s).",
             "ru": "Эффект пробития владельца повышается на {{value}}%. Когда владелец использует сверхспособность, его крит. шанс повышается на {{value}}% на 2 хода.",
@@ -479,6 +482,7 @@
         "rarity": 3,
         "version_released": "1.0",
         "source": "warp",
+        "free": true,
         "passive": {
             "en": "If the wearer's current HP is lower than 80%, CRIT Rate increases by {{value}}%.",
             "ru": "Если текущее НР владельца ниже 80%, то его крит. шанс повышается на {{value}}%.",
@@ -636,6 +640,7 @@
         "rarity": 3,
         "version_released": "1.0",
         "source": "warp",
+        "free": true,
         "passive": {
             "en": "The wearer deals {{value}}% more DMG to enemy targets whose HP percentage is greater than 50%.",
             "ru": "Урон владельца, наносимый противникам, чьё НР выше 50%, повышается на {{value}}%.",
@@ -671,6 +676,7 @@
         "rarity": 5,
         "version_released": "1.0",
         "source": ["warp", "stellar-convergence"],
+        "free": true,
         "passive": {
             "en": "Increases the wearer's ATK by {{value}}%. When the wearer defeats an enemy or is hit, immediately restores HP equal to {{value}}% of the wearer's ATK. At the same time, the wearer's DMG is increased by {{value}}% until the end of their next turn. This effect cannot stack and can only trigger 1 time per turn.",
             "ru": "Сила атаки владельца повышается на {{value}}%. Когда владелец побеждает противника или когда противник атакует владельца, владелец немедленно восстанавливает НР, равное {{value}}% от своей силы атаки. Урон владельца также повышается на {{value}}% до конца следующего хода. Этот эффект не может складываться, и он может сработать только 1 раз за ход.",
@@ -716,6 +722,7 @@
         "rarity": 4,
         "version_released": "1.0",
         "source": "warp",
+        "free": true,
         "passive": {
             "en": "When the wearer uses Basic ATK, Skill, or Ultimate to attack enemies, the wearer gains one stack of Mischievous. Each stack increases the wearer's ATK by {{value}}%.",
             "ru": "Когда владелец использует базовую атаку, навык или сверхспособность для атаки противника, он получает 1 ур. статуса Озорство. Каждый уровень этого статуса повышает силу атаки владельца на {{value}}%.",
@@ -841,6 +848,7 @@
         "rarity": 4,
         "version_released": "1.0",
         "source": "warp",
+        "free": true,
         "passive": {
             "en": "Increases the wearer's ATK by {{value}}%. When the wearer defeats an enemy, the wearer's CRIT Rate increases by {{value}}% for 3 turn(s).",
             "ru": "Сила атаки владельца повышается на {{value}}%. Когда владелец побеждает противника, его крит. шанс повышается на {{value}}% на 3 хода.",
@@ -921,6 +929,7 @@
         "rarity": 4,
         "version_released": "1.0",
         "source": "warp",
+        "free": true,
         "passive": {
             "en": "Increases the wearer's ATK by {{value}}%, and increases their DMG to enemies afflicted with Burn or Bleed by {{value}}%. This also applies to DoT.",
             "ru": "Сила атаки владельца повышается на {{value}}%. Урон, наносимый противникам со статусом Горение и Кровотечение, повышается на {{value}}%. Этот эффект также распространяется на периодический урон.",

@@ -49,6 +49,7 @@
         "rarity": 4,
         "version_released": "3.0",
         "source": "warp",
+        "free": true,
         "passive": {
             "en": "Increases the wearer's ATK by {{value}}%. After the wearer uses Ultimate, increases the Basic ATK DMG dealt by the wearer and their memosprite by {{value}}%, lasting for 3 turn(s).",
             "ru": "Сила атаки владельца повышается на {{value}}%. После того как владелец использует сверхспособность, наносимый базовыми атаками владельца и духа памяти урон повышается на {{value}}% на 3 хода.",
@@ -225,6 +226,7 @@
         "rarity": 3,
         "version_released": "3.0",
         "source": "warp",
+        "free": true,
         "passive": {
             "en": "When memosprite's turn starts, the wearer and memosprite each gain 1 stack of \"Commemoration.\" Each stack increases DMG dealt by {{value}}%, stacking up to 4 time(s). When memosprite disappears, removes \"Commemoration\" from the wearer and memosprite.",
             "ru": "В начале хода духа памяти владелец и дух памяти получают по 1 ур. статуса Почитание памяти. Каждый уровень этого статуса повышает наносимый урон на {{value}}%, складывается до 4 раз. Когда дух памяти исчезает, статус Почитание памяти снимается с владельца и духа памяти.",
@@ -305,6 +307,7 @@
         "rarity": 3,
         "version_released": "3.0",
         "source": "warp",
+        "free": true,
         "passive": {
             "en": "When the wearer summons memosprite for the first time, recovers 1 Skill Point(s) and regenerates {{value}} Energy for this unit.",
             "ru": "Когда владелец призывает духа памяти в первый раз, он восстанавливает 1 очко навыков и {{value}} ед. своей энергии.",
@@ -420,6 +423,7 @@
         "rarity": 4,
         "version_released": "3.4",
         "source": "warp",
+        "free": true,
         "passive": {
             "en": "Increases the wearer's Max HP by {{value}}%. After the wearer's memosprite attacks, the Outgoing Healing of the wearer and their memosprite increases by {{value}}%, lasting for 1 turn(s).",
             "ru": "Макс. НР владельца повышается на {{value}}%. После того как дух памяти владельца атакует, исходящее исцеление владельца и его духа памяти повышается на {{value}}% на 1 ход.",
