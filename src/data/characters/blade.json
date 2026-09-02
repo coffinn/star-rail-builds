@@ -45,7 +45,7 @@
                     "min_level": 1,
                     "max_level": 7,
                     "default_level": 6,
-                    "description_template": "Consumes HP equal to 10% of Blade's Max HP and deals Wind DMG equal to {{scaling1}}% of his Max HP to one designated enemy. In addition, deals Wind DMG equal to {{scaling2}}% of Blade's Max HP to adjacent targets. If Blade's current HP is insufficient, his HP will be reduced to 1 when using \"Forest of Swords.\" \"Forest of Swords\" cannot regenerate Skill Points.",
+                    "description_template": "Consumes HP equal to 10% of Blade's Max HP and deals Wind DMG equal to {{scaling1}}% of his Max HP to one designated enemy. In addition, deals Wind DMG equal to {{scaling2}}% of Blade's Max HP to adjacent targets.\nIf Blade's current HP is insufficient, his HP will be reduced to 1 when using \"Forest of Swords.\"\n\"Forest of Swords\" cannot regenerate Skill Points.",
                     "scaling": {
                         "scaling1": [
                             65,
@@ -76,7 +76,7 @@
             "min_level": 1,
             "max_level": 12,
             "default_level": 10,
-            "description_template": "Consumes HP equal to 30% of Blade's Max HP to enter the \"Hellscape\" state. While under the \"Hellscape\" state, his Skill cannot be used, his DMG dealt increases by {{scaling1}}%, the chance of receiving attacks from enemy targets greatly increases, and his Basic ATK \"Shard Sword\" is enhanced to \"Forest of Swords\" for 3 turn(s). If Blade's current HP is insufficient, his HP will be reduced to 1 when he uses his Skill. This Skill does not regenerate Energy. Using this Skill does not end the current turn.",
+            "description_template": "Consumes HP equal to 30% of Blade's Max HP to enter the \"Hellscape\" state. While under the \"Hellscape\" state, his Skill cannot be used, his DMG dealt increases by {{scaling1}}%, the chance of receiving attacks from enemy targets greatly increases, and his Basic ATK \"Shard Sword\" is enhanced to \"Forest of Swords\" for 3 turn(s).\nIf Blade's current HP is insufficient, his HP will be reduced to 1 when he uses his Skill. This Skill does not regenerate Energy. Using this Skill does not end the current turn.",
             "scaling": {
                 "scaling1": [
                     12,
@@ -105,7 +105,7 @@
             "min_level": 1,
             "max_level": 12,
             "default_level": 10,
-            "description_template": "Sets Blade's current HP to 50% of his Max HP and deals Wind DMG to one designated enemy equal to the sum of {{scaling1}}% of his Max HP and {{scaling2}}% of the tally of Blade's HP loss in the current battle. At the same time, deals Wind DMG to adjacent targets equal to the sum of {{scaling3}}% of his Max HP and {{scaling3}}% of the tally of his HP loss in the current battle. The tally of Blade's HP loss in the current battle is capped at 90% of his Max HP. This value will be reset and re-accumulated after his Ultimate has been used.",
+            "description_template": "Sets Blade's current HP to 50% of his Max HP and deals Wind DMG to one designated enemy equal to the sum of {{scaling1}}% of his Max HP and {{scaling2}}% of the tally of Blade's HP loss in the current battle. At the same time, deals Wind DMG to adjacent targets equal to the sum of {{scaling3}}% of his Max HP and {{scaling3}}% of the tally of his HP loss in the current battle.\nThe tally of Blade's HP loss in the current battle is capped at 90% of his Max HP. This value will be reset and re-accumulated after his Ultimate has been used.",
             "scaling": {
                 "scaling1": [
                     90,
@@ -160,7 +160,7 @@
             "min_level": 1,
             "max_level": 12,
             "default_level": 10,
-            "description_template": "When Blade sustains DMG or consumes his HP, he gains 1 stack of Charge, stacking up to 5 times. A max of 1 Charge stack can be gained every time he is attacked. When Charge stack reaches maximum, immediately launches 1 Follow-Up ATK  on all enemies, dealing Wind DMG equal to {{scaling1}}% of Blade's Max HP. At the same time, restores Blade's HP by 25% of his Max HP. After the Follow-Up ATK, all Charges are consumed.",
+            "description_template": "When Blade sustains DMG or consumes his HP, he gains 1 stack of Charge, stacking up to 5 times. A max of 1 Charge stack can be gained every time he is attacked.\nWhen Charge stack reaches maximum, immediately launches 1 Follow-Up ATK  on all enemies, dealing Wind DMG equal to {{scaling1}}% of Blade's Max HP. At the same time, restores Blade's HP by 25% of his Max HP. After the Follow-Up ATK, all Charges are consumed.",
             "scaling": {
                 "scaling1": [
                     65,
@@ -183,7 +183,7 @@
             "name": "Karma Wind",
             "tag": "",
             "break": 20,
-            "description": "Immediately attacks the enemy. After entering combat, consumes 20% of Blade's Max HP while dealing Wind DMG equal to 40% of his Max HP to all enemies. If Blade's current HP is insufficient, his HP will be reduced to 1 when this Technique is used."
+            "description": "Immediately attacks the enemy. After entering combat, consumes 20% of Blade's Max HP while dealing Wind DMG equal to 40% of his Max HP to all enemies.\nIf Blade's current HP is insufficient, his HP will be reduced to 1 when this Technique is used."
         }
     },
     "major_traces": {
@@ -228,7 +228,7 @@
         {
             "level": 3,
             "name": "Hardened Blade Bleeds Coldest Shade",
-            "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+            "description": "Ultimate Lv. +2, up to a maximum of Lv. 15.\nTalent Lv. +2, up to a maximum of Lv. 15."
         },
         {
             "level": 4,
@@ -238,7 +238,7 @@
         {
             "level": 5,
             "name": "Death By Ten Lords' Gaze",
-            "description": "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+            "description": "Skill Lv. +2, up to a maximum of Lv. 15.\nBasic ATK Lv. +1, up to a maximum of Lv. 10."
         },
         {
             "level": 6,

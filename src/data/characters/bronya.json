@@ -35,7 +35,7 @@
             "min_level": 1,
             "max_level": 12,
             "default_level": 10,
-            "description_template": "Dispels a debuff from a single ally, allows them to immediately take action, and increases their DMG by {{scaling1}}% for 1 turn(s). When this Skill is used on Bronya herself, she cannot immediately take action again.",
+            "description_template": "Dispels a debuff from a single ally, allows them to immediately take action, and increases their DMG by {{scaling1}}% for 1 turn(s).\nWhen this Skill is used on Bronya herself, she cannot immediately take action again.",
             "scaling": {
                 "scaling1": [33,36.3,39.6,42.9,46.2,49.5,53.63,57.75,61.88,66,69.3,72.6,75.9,79.2,82.5]
             }
@@ -118,7 +118,7 @@
         {
             "level": 3,
             "name": "Bombardment",
-            "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+            "description": "Ultimate Lv. +2, up to a maximum of Lv. 15.\nTalent Lv. +2, up to a maximum of Lv. 15."
         },
         {
             "level": 4,
@@ -128,7 +128,7 @@
         {
             "level": 5,
             "name": "Unstoppable",
-            "description": "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+            "description": "Skill Lv. +2, up to a maximum of Lv. 15.\nBasic ATK Lv. +1, up to a maximum of Lv. 10."
         },
         {
             "level": 6,

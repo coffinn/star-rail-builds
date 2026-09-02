@@ -1,0 +1,139 @@
+{
+    "id": "bronya",
+    "name": "Bronya",
+    "rarity": "5",
+    "element": "wind",
+    "path": "harmony",
+    "version_released": "1.0",
+    "max_energy": 120,
+    "level_80_stats": {
+        "hp": 1241,
+        "atk": 582,
+        "def": 533,
+        "spd": 99
+    },
+    "abilities": {
+        "basic": {
+            "type": "Tấn Công Thường",
+            "name": "Viên Đạn Cưỡi Gió",
+            "tag": "Đánh Đơn",
+            "energy_gain": 20,
+            "break": 10,
+            "min_level": 1,
+            "max_level": 7,
+            "default_level": 6,
+            "description_template": "Gây Sát Thương Phong cho 1 kẻ địch chỉ định tương đương {{scaling1}}% Tấn Công của Bronya.",
+            "scaling": {
+                "scaling1": [50,60,70,80,90,100,110,120,130]
+            }
+        },
+        "skill": {
+            "type": "Chiến Kỹ",
+            "name": "Tác Chiến Và Tái Bố Trí",
+            "tag": "Hỗ Trợ",
+            "energy_gain": 30,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Xóa 1 Hiệu Ứng Xấu cho 1 đồng đội, đồng thời khiến mục tiêu này hành động ngay, sát thương gây ra tăng {{scaling1}}%, duy trì 1 hiệp.\nKhi thi triển kỹ năng này cho bản thân, sẽ không thể kích hoạt ngay hiệu quả hành động.",
+            "scaling": {
+                "scaling1": [33,36.3,39.6,42.9,46.2,49.5,53.63,57.75,61.88,66,69.3,72.6,75.9,79.2,82.5]
+            }
+        },
+        "ultimate": {
+            "type": "Tuyệt Kỹ",
+            "name": "Khúc Quân Hành Belobog",
+            "tag": "Hỗ Trợ",
+            "energy_gain": 5,
+            "energy_cost": 120,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Khiến toàn bộ phe ta tăng {{scaling1}}% tấn công, đồng thời tăng sát thương bạo kích bằng {{scaling2}}% sát thương bạo kích của Bronya +{{scaling3}}%, duy trì 2 hiệp.",
+            "scaling": {
+                "scaling1": [33,35.2,37.4,39.6,41.8,44,46.75,49.5,52.25,55,57.2,59.4,61.6,63.8,66],
+                "scaling2": [12,12.4,12.8,13.2,13.6,14,14.5,15,15.5,16,16.4,16.8,17.2,17.6,18],
+                "scaling3": [12,12.8,13.6,14.4,15.2,16,17,18,19,20,20.8,21.6,22.4,23.2,24]
+            }
+        },
+        
+        "talent": {
+            "type": "Thiên Phú",
+            "name": "Đi Trước Một Bước",
+            "tag": "Cường Hóa",
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Sau khi tấn công thường sẽ khiến Bronya Ưu Tiên Hành Động {{scaling1}}% cho lần hành động tiếp theo.",
+            "scaling": {
+                "scaling1": [15,16.5,18,19.5,21,22.5,24.375,26.25,28.125,30,31.5,33,34.5,36,37.5]
+            }
+        },
+        "technique": {
+            "type": "Bí Kỹ",
+            "name": "Phía Dưới Ngọn Cờ",
+            "tag": "Hỗ Trợ",
+            "description": "Sau khi dùng Bí Kỹ, lần khai chiến tiếp theo, khiến toàn phe ta sẽ tăng 15% Tấn Công, duy trì 2 hiệp."
+        }
+    },
+    "major_traces": {
+        "2": {
+            "name": "Hiệu Lệnh",
+            "description": "Tỷ Lệ Bạo Kích tấn công thường tăng đến 100%."
+        },
+        "4": {
+            "name": "Trận Địa",
+            "description": "Khi bắt đầu chiến đấu, Phòng Thủ của toàn phe ta tăng 20%, duy trì 2 hiệp."
+        },
+        "6": {
+            "name": "Quân Sự Mạnh Mẽ",
+            "description": "Khi Bronya trong trận, sát thương toàn phe ta gây ra tăng 10%."
+        }
+    },
+    "stat_bonuses": [
+        {
+            "stat": "Sát Thương - Phong",
+            "value": "+22.4%"
+        },
+        {
+            "stat": "Sát Thương Bạo Kích",
+            "value": "+24%"
+        },
+        {
+            "stat": "Kháng Hiệu Ứng",
+            "value": "+10%"
+        }
+    ],
+    "eidolons": [
+        {
+            "level": 1,
+            "name": "Gom Góp Sức Mạnh",
+            "description": "Khi thi triển Chiến Kỹ, có 50% xác suất cố định hồi 1 điểm Chiến Kỹ, hiệu ứng này có thời gian chờ kích hoạt là 1 hiệp."
+        },
+        {
+            "level": 2,
+            "name": "Hành Quân Thần Tốc",
+            "description": "Khi thi triển Chiến Kỹ, mục tiêu được chỉ định của phe ta sẽ tăng 30% tốc độ sau khi hành động, duy trì 1 hiệp."
+        },
+        {
+            "level": 3,
+            "name": "Trống Rền Pháo Nổ",
+            "description": "Cấp Tuyệt Kỹ +2, tối đa không quá cấp ; Cấp Thiên Phú +2, tối đa không quá cấp 15."
+        },
+        {
+            "level": 4,
+            "name": "Tấn Công Bất Ngờ",
+            "description": "Sau khi nhân vật khác trong phe ta tấn công thường vào kẻ địch có Điểm Yếu Phong, Bronya sẽ thực hiện ngay 1 lần Đòn Đánh Theo Sau, gây cho mục tiêu này Sát Thương Phong bằng 80% sát thương Tấn Công Thường. Hiệu ứng này mỗi hiệp chỉ kích hoạt 1 lần."
+        },
+        {
+            "level": 5,
+            "name": "Đánh Đâu Thắng Đó",
+            "description": "Cấp Chiến Kỹ +2, tối đa không quá cấp ; Cấp Tấn Công Thường +1, tối đa không quá cấp 10."
+        },
+        {
+            "level": 6,
+            "name": "Khí Thế Hùng Mạnh",
+            "description": "Thời gian duy trì hiệu ứng Tăng Sát Thương mà Chiến Kỹ gây cho mục tiêu chỉ định của phe ta tăng 1 hiệp."
+        }
+    ]
+}

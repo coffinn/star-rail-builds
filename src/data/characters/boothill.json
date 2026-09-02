@@ -22,7 +22,7 @@
             "min_level": 1,
             "max_level": 7,
             "default_level": 6,
-            "description_template": "Deals Physical DMG equal to {{damage}}% of Boothill's ATK to one designated enemy.",
+            "description_template": "Deals Physical DMG equal to {{damage}}% of Boothill's ATK to one designated enemy target.",
             "scaling": {
                 "damage": [50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0]
             },
@@ -33,7 +33,7 @@
                 "tag": "Single Target",
                 "energy_gain": 30,
                 "break": 20,
-                "description_template": "Deals Physical DMG equal to {{damage_en}}% of Boothill's ATK to one designated enemy target. The Enhanced Basic Attack cannot recover Skill Points and can only target the enemy that is in the \"Standoff\" state.",
+                "description_template": "Deals Physical DMG equal to {{damage_en}}% of Boothill's ATK to one designated enemy target.\nThe Enhanced Basic Attack cannot recover Skill Points and can only target the enemy that is in the \"Standoff\" state.",
                 "scaling": {
                     "damage_en": [110.0, 132.0, 154.0, 176.0, 198.0, 220.0, 242.0]
                     }
@@ -47,7 +47,7 @@
             "min_level": 1,
             "max_level": 12,
             "default_level": 10,
-            "description_template": "Forces Boothill and one designated enemy target into the \"Standoff\" state. Boothill's Basic ATK gets Enhanced, and he cannot use his Skill, lasting for 2 turn(s). This duration decreases by 1 at the start of Boothill's every turn. The enemy target in the \"Standoff\" becomes Taunted. When this enemy target/Boothill gets attacked by the other party in the Standoff, the DMG they receive increases by {{vuln}}%/15%. After this target is defeated or becomes Weakness Broken, Boothill gains 1 stack of \"Pocket Trickshot,\" then dispels the \"Standoff.\" This Skill cannot regenerate Energy. After using this Skill, the current turn does not end.",
+            "description_template": "Forces Boothill and one designated enemy target into the \"Standoff\" state. Boothill's Basic ATK gets Enhanced, and he cannot use his Skill, lasting for 2 turn(s). This duration decreases by 1 at the start of Boothill's every turn.\nThe enemy target in the \"Standoff\" becomes Taunted. When this enemy target/Boothill gets attacked by the other party in the Standoff, the DMG they receive increases by {{vuln}}%/15%.\nAfter this target is defeated or becomes Weakness Broken, Boothill gains 1 stack of \"Pocket Trickshot,\" then dispels the \"Standoff.\" This Skill cannot regenerate Energy. After using this Skill, the current turn does not end.",
             "scaling": {
                 "vuln": [15.0, 16.5, 18.0, 19.5, 21.0, 22.5, 24.375, 26.25, 28.125, 30.0, 31.5, 33.0]
             }
@@ -62,7 +62,7 @@
             "min_level": 1,
             "max_level": 12,
             "default_level": 10,
-            "description_template": "Applies Physical Weakness to one designated enemy target, lasting for 2 turn(s). Deals Physical DMG equal to {{ult_dmg}}% of Boothill's ATK to the target and delays their action by {{delay}}%.",
+            "description_template": "Applies Physical Weakness to one designated enemy target, lasting for 2 turn(s).\nDeals Physical DMG equal to {{ult_dmg}}% of Boothill's ATK to the target and delays their action by {{delay}}%.",
             "scaling": {
                 "ult_dmg": [240.0, 256.0, 272.0, 288.0, 304.0, 320.0, 340.0, 360.0, 380.0, 400.0, 416.0, 432.0],
                 "delay": [30.0, 31.0, 32.0, 33.0, 34.0, 35.0, 36.25, 37.5, 38.75, 40.0, 41.0, 42.0]
@@ -75,7 +75,7 @@
             "min_level": 1,
             "max_level": 12,
             "default_level": 10,
-            "description_template": "Each stack of Pocket Trickshot increases the Enhanced Basic Attack's Toughness Reduction by 50%, stacking up to 3 time(s). If the target is Weakness Broken while the Enhanced Basic ATK is being used, based on the number of Pocket Trickshot stacks, deals Break DMG to this target equal to {{pt1}}%/{{pt2}}%/{{pt3}}% of Boothill's Physical Break DMG. The max Toughness taken into account for this DMG cannot exceed 16 times the base Toughness Reduction of the Basic Attack \"Skullcrush Spurs.\" After winning the battle, Boothill can retain Pocket Trickshot for the next battle.",
+            "description_template": "Each stack of Pocket Trickshot increases the Enhanced Basic Attack's Toughness Reduction by 50%, stacking up to 3 time(s).\nIf the target is Weakness Broken while the Enhanced Basic ATK is being used, based on the number of Pocket Trickshot stacks, deals Break DMG to this target equal to {{pt1}}%/{{pt2}}%/{{pt3}}% of Boothill's Physical Break DMG. The max Toughness taken into account for this DMG cannot exceed 16 times the base Toughness Reduction of the Basic Attack \"Skullcrush Spurs.\"\nAfter winning the battle, Boothill can retain Pocket Trickshot for the next battle.",
             "scaling": {
                 "pt1": [35.0, 38.5, 42.0, 45.5, 49.0, 52.5, 56.875, 61.25, 65.625, 70.0, 73.5, 77.0],
                 "pt2": [60.0, 66.0, 72.0, 78.0, 84.0, 90.0, 97.5, 105.0, 112.5, 120.0, 126.0, 132.0],
@@ -96,7 +96,7 @@
         },
         "4": {
             "name": "Above Snakes",
-            "description": "While Boothill is in the Standoff, reduces the DMG he receives from targets that are not in the Standoff by 30%"
+            "description": "While Boothill is in the Standoff, reduces the DMG he receives from targets that are not in the Standoff by 30%."
         },
         "6": {
             "name": "Point Blank",
@@ -131,7 +131,7 @@
         {
             "level": 3,
             "name": "Marble Orchard's Guard",
-            "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+            "description": "Ultimate Lv. +2, up to a maximum of Lv. 15.\nBasic ATK Lv. +1, up to a maximum of Lv. 10."
         },
         {
             "level": 4,
@@ -141,7 +141,7 @@
         {
             "level": 5,
             "name": "Stump Speech",
-            "description": "Skill Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+            "description": "Skill Lv. +2, up to a maximum of Lv. 15.\nTalent Lv. +2, up to a maximum of Lv. 15."
         },
         {
             "level": 6,

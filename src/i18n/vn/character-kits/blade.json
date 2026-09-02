@@ -1,0 +1,249 @@
+{
+    "id": "blade",
+    "name": "Blade",
+    "rarity": "5",
+    "element": "wind",
+    "path": "destruction",
+    "version_released": "1.2",
+    "max_energy": 130,
+    "level_80_stats": {
+        "hp": 1358,
+        "atk": 543,
+        "def": 485,
+        "spd": 97
+    },
+    "abilities": {
+        "basic": {
+            "type": "Tấn Công Thường",
+            "name": "Kiếm Vỡ Nát",
+            "tag": "Đánh Đơn",
+            "energy_gain": 20,
+            "break": 10,
+            "min_level": 1,
+            "max_level": 7,
+            "default_level": 6,
+            "description_template": "Gây Sát Thương Phong cho 1 kẻ địch chỉ định bằng {{scaling1}}% Giới Hạn HP của Blade.",
+            "scaling": {
+                "scaling1": [
+                    25,
+                    30,
+                    35,
+                    40,
+                    45,
+                    50,
+                    55
+                ]
+            },
+            "variants": [
+                {
+                    "type": "Tấn Công Thường  Cường Hóa",
+                    "name": "Rừng Kiếm",
+                    "tag": "Khuếch Tán",
+                    "energy_gain": 30,
+                    "break_main": 20,
+                    "break_adjacent": 10,
+                    "min_level": 1,
+                    "max_level": 7,
+                    "default_level": 6,
+                    "description_template": "Tiêu hao HP bằng 10% Giới Hạn HP của Blade, gây Sát Thương Phong cho 1 kẻ địch chỉ định bằng {{scaling1}}% Giới Hạn HP của Blade, đồng thời gây Sát Thương Phong cho mục tiêu lân cận kẻ đó bằng {{scaling2}}% Giới Hạn HP của Blade.\nNếu HP hiện tại không đủ, khi thi triển Rừng Kiếm, HP hiện tại của Blade sẽ giảm còn 1 điểm.\nRừng Kiếm không thể hồi điểm Chiến Kỹ.",
+                    "scaling": {
+                        "scaling1": [
+                            65,
+                            78,
+                            91,
+                            104,
+                            117,
+                            130,
+                            143
+                        ],
+                        "scaling2": [
+                            26,
+                            31.2,
+                            36.4,
+                            41.6,
+                            46.8,
+                            52,
+                            57.2
+                        ]
+                    }
+                }
+            ]
+        },
+        "skill": {
+            "type": "Chiến Kỹ",
+            "name": "Địa Ngục Biến",
+            "tag": "Cường Hóa",
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Tiêu hao HP bằng 30% Giới Hạn HP của Blade, vào trạng thái Địa Ngục Biến.\nKhi ở trạng thái Địa Ngục Biến không thể thi triển Chiến Kỹ, đồng thời khiến sát thương do bản thân gây ra tăng {{scaling1}}%, tăng cao xác suất bị mục tiêu phe địch tấn công, Tấn Công Thường \"Kiếm Vỡ Nát\" cường hóa thành \"Rừng Kiếm\", duy trì 3 hiệp.\nNếu HP hiện tại không đủ, khi thi triển Chiến Kỹ, HP hiện tại của Blade sẽ giảm còn 1 điểm.\nChiến Kỹ này không thể hồi năng lượng. Sau khi thi triển Chiến Kỹ này, hiệp này sẽ không kết thúc.",
+            "scaling": {
+                "scaling1": [
+                    12,
+                    14.8,
+                    17.6,
+                    20.4,
+                    23.2,
+                    26,
+                    29.5,
+                    33,
+                    36.5,
+                    40,
+                    42.8,
+                    45.6
+                ]
+            }
+        },
+        "ultimate": {
+            "type": "Tuyệt Kỹ",
+            "name": "Đáng Chết Vạn Lần",
+            "tag": "Khuếch Tán",
+            "energy_gain": 5,
+            "break_main": 20,
+            "break_adjacent": 20,
+            "energy_cost": 130,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Chuyển hóa HP hiện tại của Blade thành 50% Giới Hạn HP, đồng thời gây cho 1 kẻ địch Sát Thương Phong bằng {{scaling1}}% Giới Hạn HP của Blade +{{scaling2}}% tổng HP đã mất trong trận này, đồng thời gây cho mục tiêu lân cận Sát Thương Phong bằng {{scaling3}}% Giới Hạn HP của Blade +{{scaling3}}% tổng HP đã mất trong trận này.\nTổng HP đã mất trong trận này tối đa không vượt quá 90% Giới Hạn HP của Blade, sau khi thi triển Tuyệt Kỹ sẽ xóa và tích lũy lại.",
+            "scaling": {
+                "scaling1": [
+                    90,
+                    96,
+                    102,
+                    108,
+                    114,
+                    120,
+                    127.5,
+                    135,
+                    142.5,
+                    150,
+                    156,
+                    162
+                ],
+                "scaling2": [
+                    72,
+                    76.8,
+                    81.6,
+                    86.4,
+                    91.2,
+                    96,
+                    102,
+                    108,
+                    114,
+                    120,
+                    124.8,
+                    129.6
+                ],
+                "scaling3": [
+                    36,
+                    38.4,
+                    40.8,
+                    43.2,
+                    45.6,
+                    48,
+                    51,
+                    54,
+                    57,
+                    60,
+                    62.4,
+                    64.8
+                ]
+            }
+        },
+        "talent": {
+            "type": "Thiên Phú",
+            "name": "Quà Tặng Của Shuhu",
+            "tag": "Đánh Lan",
+            "energy_gain": 10,
+            "break_aoe": 10,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Khi Blade chịu sát thương hoặc tiêu hao HP sẽ nhận 1 tầng Nạp Năng Lượng, tối đa cộng dồn 5 tầng. Hiệu ứng này mỗi lần chịu tấn công tối đa cộng dồn 1 tầng.\nKhi Nạp Năng Lượng cộng dồn đến mức tối đa, lập tức thi triển 1 lần Đòn Đánh Theo Sau lên toàn bộ phe địch, gây Sát Thương Phong bằng {{scaling1}}% Giới Hạn HP của Blade và hồi HP bằng 25% Giới Hạn HP của Blade, sau khi thi triển Đòn Đánh Theo Sau sẽ tiêu hao tất cả Nạp Năng Lượng.",
+            "scaling": {
+                "scaling1": [
+                    65,
+                    71.5,
+                    78,
+                    84.5,
+                    91,
+                    97.5,
+                    105.625,
+                    113.75,
+                    121.875,
+                    130,
+                    136.5,
+                    143
+                ]
+            }
+        },
+        "technique": {
+            "type": "Bí Kỹ",
+            "name": "Cơn Gió Nghiệp Chướng",
+            "tag": "",
+            "break": 20,
+            "description": "Tấn công kẻ địch ngay lập tức, sau khi vào chiến đấu, tiêu hao HP bằng 20% Giới Hạn HP của Blade, đồng thời gây Sát Thương Phong cho toàn bộ kẻ địch bằng 40% Giới Hạn HP của Blade.\nNếu HP hiện tại không đủ, khi thi triển Bí Kỹ, HP hiện tại của Blade sẽ giảm còn 1 điểm."
+        }
+    },
+    "major_traces": {
+        "6": {
+            "name": "Thảm Họa Huỷ Diệt",
+            "description": "Tăng 20% sát thương Đòn Đánh Theo Sau do Thiên Phú thi triển, và hồi thêm 15 điểm Năng Lượng."
+        },
+        "4": {
+            "name": "Cái Chết Không Hồi Kết",
+            "description": "Lượng HP nhận được khi trị liệu sẽ tăng 20%. Sau khi nhận trị liệu, 25% lượng trị liệu sẽ chuyển hóa thành HP mất đi được tích lũy của Tuyệt Kỹ."
+        },
+        "2": {
+            "name": "Tuổi Thọ Vô Tận",
+            "description": "Khi Blade thi triển Tuyệt Kỹ, lượng HP mất đi được tích lũy thay vì xóa hết sẽ sửa thành 50%."
+        }
+    },
+    "stat_bonuses": [
+        {
+            "stat": "Tỷ Lệ Bạo Kích",
+            "value": "+12%"
+        },
+        {
+            "stat": "HP",
+            "value": "+28%"
+        },
+        {
+            "stat": "Kháng Hiệu Ứng",
+            "value": "+10%"
+        }
+    ],
+    "eidolons": [
+        {
+            "level": 1,
+            "name": "Lưỡi Kiếm Tối Thượng, Địa Ngục Biến Tướng",
+            "description": "Sát thương của Tấn Công Thường Cường Hóa và Tuyệt Kỹ gây ra cho 1 kẻ địch chỉ định sẽ tăng thêm, mức tăng bằng 150% HP mất đi mà Tuyệt Kỹ tích lũy"
+        },
+        {
+            "level": 2,
+            "name": "Mộng Xưa Tản Mác, Ân Hận Khôn Cùng",
+            "description": "Khi Blade ở trạng thái Địa Ngục Biến, Tỷ Lệ Bạo Kích tăng 15%."
+        },
+        {
+            "level": 3,
+            "name": "Luyện Thép Đen, Tôi Quang Hàn",
+            "description": "Cấp Tuyệt Kỹ +2, tối đa không quá cấp ; Cấp Thiên Phú +2, tối đa không quá cấp 15."
+        },
+        {
+            "level": 4,
+            "name": "Hoàng Tuyền Rẽ Lối, Hài Cốt Hồi Sinh",
+            "description": "Khi Phần Trăm HP hiện tại từ lớn hơn 50% giảm còn nhỏ hơn hoặc bằng 50%, thì Giới Hạn HP tăng 20%, hiệu ứng này tối đa cộng dồn 2 tầng."
+        },
+        {
+            "level": 5,
+            "name": "Thập Vương Xử Tử, Soi Chiếu Nghiệp Chướng",
+            "description": "Cấp Chiến Kỹ +2, tối đa không quá cấp ; Cấp Tấn Công Thường +1, tối đa không quá cấp 10."
+        },
+        {
+            "level": 6,
+            "name": "Mạng Còn Hồn Tan, Tái Sinh Xác Rỗng",
+            "description": "Giới hạn số tầng nạp năng lượng giảm còn 4 tầng. Tăng thêm sát thương gây ra bởi Đòn Đánh Theo Sau được Thiên Phú kích hoạt, mức tăng tương đương 50% Giới Hạn HP của Blade."
+        }
+    ]
+}
