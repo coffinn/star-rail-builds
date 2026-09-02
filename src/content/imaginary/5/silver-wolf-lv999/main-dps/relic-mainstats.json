@@ -7,15 +7,20 @@
             "spd"
         ],
         "planar_sphere": [
-            "ANY"
+            {
+            "name": "ANY",
+            "note_group": "main-stat-flexibility",
+            "note":
+                {
+                    "en": "Use any Main Stats as she does not scale off of ATK, HP, or DEF."
+                }
+            }
         ],
         "link_rope": [
-            "ANY"
+            {
+            "name": "ANY",
+            "note_group": "main-stat-flexibility"
+            }
         ]
-    },
-    "notes": [
-        {
-            "en": "Planar Sphere / Link Rope: Use any Main Stats as she does not scale off of ATK, HP, or DEF."
-        }
-    ]
+    }
 }
