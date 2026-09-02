@@ -16,7 +16,9 @@
                         {
                             "name": "poet",
                             "pieces": 4,
-                            "note":{"en":"Poet of Mourning Collapse should only be used if his SPD can be kept under 95"}
+                            "note":{
+                                "en":"[[set:poet-of-mourning-collapse]] should only be used if his SPD can be kept under 95."
+                            }
                         
                         }                       
                     ]

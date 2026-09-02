@@ -2,6 +2,11 @@
     "substats_priority": [
         "spd",
         "def%",
-        "ehr"
+        {
+            "name": "ehr",
+            "note": {
+                "en": "157% Effect Hit Rate can be built to guarantee freezing with E0 Gepard's Skill against 40% Effect RES enemies. However, given Gepard's high SPD/DEF requirements, building Effect Hit Rate% is very low priority."
+            }
+        }
     ]
 }

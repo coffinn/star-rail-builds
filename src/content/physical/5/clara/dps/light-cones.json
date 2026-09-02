@@ -6,7 +6,7 @@
                     "name": "thus-burns-the-dawn",
                     "superimposition": 1,
                     "note": {
-                        "en": "If using Thus Burns the Dawn and Poet of Mourning collapse, getting any spd subs will disqualify you from the highest CRIT Rate bonus"
+                        "en": "If using [[light-cone:thus-burns-the-dawn]] and [[set:poet-of-mourning-collapse]] collapse, getting any SPD subs will disqualify you from the highest CRIT Rate bonus."
                     }
                 }
             ]
@@ -25,7 +25,7 @@
                     "name": "brighter-than-the-sun",
                     "superimposition": 1,
                     "note": {
-                        "en": "Requires alternating between Basic ATK and Skill to maintain its buffs"
+                        "en": "Requires alternating between Basic ATK and Skill to maintain its buffs."
                     }
                 }
             ]

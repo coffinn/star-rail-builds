@@ -12,7 +12,7 @@
             "name": "ehr",
             "recommended": "(92/156%)",
             "note": {
-                "en": "EHR needed to guarantee Freeze against 20% / 40% RES enemies."
+                "en": "Effect Hit Rate% needed to guarantee Freeze against 20% / 40% Effect RES enemies."
             }
         }
     ]

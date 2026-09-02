@@ -1,23 +1,26 @@
 {
-    "notes": [
-    {
-      "en":"Traces can be completely ignored when using this build. Only his Ascension 4 trace is reccommended"
-    }
-    ],
     "traces": [
         {
             "items": [
                 {
-                    "name": "talent"
+                    "name": "talent",
+                    "note_group": "traces",
+                    "note": 
+                        {
+                            "en":"Traces can be completely ignored when using this build. Only his Ascension 4 Trace is reccommended."
+                        }  
                 },
                 {
-                    "name": "ultimate"
+                    "name": "ultimate",
+                    "note_group": "traces"
                 },
                 {
-                    "name": "skill"
+                    "name": "skill",
+                    "note_group": "traces"
                 },
                 {
-                    "name": "basic"
+                    "name": "basic",
+                    "note_group": "traces"
                 }
             ]
         }

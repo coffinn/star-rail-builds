@@ -10,21 +10,27 @@
         {
             "items": [
                 {
-                    "name": "talent"
+                    "name": "talent",
+                    "note_group": "traces",
+                    "note": {
+                        "en": "Talent, Skill, and Basic ATK can be left at Level 1 if desired."
+                    }
                 }
             ]
         },
         {
             "items": [
                 {
-                    "name": "skill"
+                    "name": "skill",
+                    "note_group": "traces"
                 }
             ]
         },
         {
             "items": [
                 {
-                    "name": "basic"
+                    "name": "basic",
+                    "note_group": "traces"
                 }
             ]
         }

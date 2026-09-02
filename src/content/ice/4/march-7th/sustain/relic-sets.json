@@ -33,7 +33,11 @@
                     "items": [
                         {
                             "name": "broken-keel",
-                            "pieces": 2
+                            "pieces": 2,
+                            "note_group": "planar-ornaments",
+                            "note": {
+                                "en": "Use any appropriate supportive Planar Ornaments."
+                            }
                         }
                     ]
                 },
@@ -41,7 +45,8 @@
                     "items": [
                         {
                             "name": "lushaka-the-sunken-seas",
-                            "pieces": 2
+                            "pieces": 2,
+                            "note_group": "planar-ornaments"
                         }
                     ]
                 },
@@ -49,7 +54,8 @@
                     "items": [
                         {
                             "name": "sprightly-vonwacq",
-                            "pieces": 2
+                            "pieces": 2,
+                            "note_group": "planar-ornaments"
                         }
                     ]
                 }

@@ -45,7 +45,11 @@
                     "items": [
                         {
                             "name": "city-of-converging-stars",
-                            "pieces": 2
+                            "pieces": 2,
+                            "note_group": "planar-ornaments",
+                            "note": {
+                                "en": "Use any supportive Planar Ornaments that fits your needs.."
+                            }
                         }
                     ]
                 }
@@ -57,7 +61,8 @@
                     "items": [
                         {
                             "name": "lushaka-the-sunken-seas",
-                            "pieces": 2
+                            "pieces": 2,
+                            "note_group": "planar-ornaments"
                         }
                     ]
                 }
@@ -69,7 +74,8 @@
                     "items": [
                         {
                             "name": "belobog-of-the-architects",
-                            "pieces": 2
+                            "pieces": 2,
+                            "note_group": "planar-ornaments"
                         }
                     ]
                 }
