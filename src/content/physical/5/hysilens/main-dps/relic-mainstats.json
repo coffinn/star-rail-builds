@@ -1,0 +1,23 @@
+{
+    "main_stats": {
+        "body": [
+            "ehr",
+            "atk%"
+        ],
+        "feet": [
+            "atk%"
+        ],
+        "planar_sphere": [
+          {
+            "name": "physical-dmg",
+             "note": {
+             "en": "The difference between Physical DMG and ATK% is minimal, so use whichever has better substats."
+            }
+        },
+            "atk%"
+        ],
+        "link_rope": [
+            "atk%"
+        ]
+    }
+}

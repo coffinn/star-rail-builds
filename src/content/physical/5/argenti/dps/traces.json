@@ -24,7 +24,10 @@
         {
             "items": [
                 {
-                    "name": "basic"
+                    "name": "basic",
+                    "note": {
+                        "en": "[[ability:basic]] can be ignored."
+                    }
                 }
             ]
         }

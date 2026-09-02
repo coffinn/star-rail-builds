@@ -1,0 +1,20 @@
+{
+    "best": true,
+    "name": {
+        "en": "DoT DPS"
+    },
+    "notes": [
+        {
+            "en": "**Summary and General Analysis**\n\n✦ Hysilens is a DoT DPS who applies a random DoT type on enemies when allies attack, giving extra bonuses for the Bleed state. Her skill can inflict vulnerability to enemies.\n\n✦ Her ultimate deploys a zone that reduces enemy targets' ATK and DEF then deals a large portion of the DoT damage taken by enemies back to them. With her Ascension 4 trace, her ultimate can also detonate DoT's\n\n✦ Hysilens' performance is heavily reliant on Kafka, who is currently our only reliable DoT detonator."
+        },
+        {
+            "en": "**Investment Priority**\n\nE1 >> S1\n\n**Investment Explanation**\n\n✦ Her E1 is DoT's best early investment, significantly boosting DoT ramp up and damage for the whole team.\n\n✦ S1 increases the teams DoT DMG and speed, particularly useful for helping Kafka reach speed breakpoints. If both Hysilens and Black Swan are E1, they can swap signature Light Cones."
+        },
+        {
+            "en": "**Skill Point Usage**\n\nNegative"
+        },
+        {
+            "en": "**Ability Rotation**\n\n[[ability:skill]] Spam\n\nUse [[ability:basic]] when Skill Points are low for Kafka"
+        }
+    ]
+}

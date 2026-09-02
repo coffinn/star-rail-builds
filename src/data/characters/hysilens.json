@@ -41,8 +41,8 @@
         "default_level": 10,
         "description_template": "Has a 100% base chance to increase the DMG taken by all enemies by {{damage_taken}}%, lasting for 3 turn(s). At the same time, deals Physical DMG equal to {{damage}}% of Hysilens's ATK to all enemies.",
         "scaling": {
-            "damage_taken": [70, 77, 84, 91, 98, 105, 113.75, 122.5, 131.25, 140, 147, 154],
-            "damage": [10, 11, 12, 13, 14, 15, 13.25, 17.5, 18.75, 20, 21, 22]
+            "damage": [70, 77, 84, 91, 98, 105, 113.75, 122.5, 131.25, 140, 147, 154],
+            "damage_taken": [10, 11, 12, 13, 14, 15, 13.25, 17.5, 18.75, 20, 21, 22]
         }
     },
 
@@ -58,8 +58,8 @@
         "default_level": 10,
         "description_template": "Hysilens deploys a Zone that reduces enemy targets' ATK by 15% and DEF by {{defense_reduction}}%, and deals Physical DMG equal to {{damage}}% of Hysilens's ATK to all enemies. For every 1 instance of DoT taken by an enemy target within the Zone, Hysilens deals Physical DoT equal to {{additional_damage}}% of her ATK to them. This damage triggers at the start of each turn or after one attack by an ally target, up to 8 time(s). And it cannot repeatedly trigger this effect. The Zone lasts for 3 turn(s) and this duration decreases by 1 at the start of this unit's every turn. When Hysilens gets knocked down, the Zone will also be dispelled.",
         "scaling": {
-            "defense_reduction": [120, 128, 136, 144, 152, 160, 170, 180, 190, 200, 208, 216],
-            "damage": [15, 16, 17, 18, 19, 20, 21.25, 22.5, 23.75, 25, 26, 27],
+            "damage": [120, 128, 136, 144, 152, 160, 170, 180, 190, 200, 208, 216],
+            "defense_reduction": [15, 16, 17, 18, 19, 20, 21.25, 22.5, 23.75, 25, 26, 27],
             "additional_damage": [32, 37.28, 42.56, 47.84, 53.12, 58.4, 63.2, 68, 74, 80, 84, 88]
         }
     },
