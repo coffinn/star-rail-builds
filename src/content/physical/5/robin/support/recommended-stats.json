@@ -1,0 +1,15 @@
+{
+    "stats": [
+        {
+            "name": "total-atk",
+            "recommended": "4000+"
+        },
+        {
+            "name": "spd",
+            "recommended": "121+",
+            "note": {
+                    "en": "Allows her to act ahead of 161 speed allies with her Ascension 2 trace."
+                }
+        }
+    ]
+}

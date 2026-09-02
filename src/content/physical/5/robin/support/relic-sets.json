@@ -1,0 +1,71 @@
+{
+    "relic_sets": [
+        {
+            "groups": [
+                {
+                "choose": true,
+                    "items": [
+                        {
+                            "name": "2pc-attack",
+                            "pieces": 2
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "wavestrider-captain",
+                            "pieces": 4,
+                            "note": {
+                                "en": "If Robin can be targeted twice by allies to proc the set effect, Wavestrider Captain becomes Best in Slot "
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "planar_ornaments": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "sprightly-vonwacq",
+                            "pieces": 2
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "lushaka-the-sunken-seas",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "penacony",
+                            "pieces": 2,
+                            "note_group": "phys-affinity"
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "city",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

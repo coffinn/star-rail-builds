@@ -1,0 +1,22 @@
+{
+    "main_stats": {
+        "body": [
+            "atk%"
+        ],
+        "feet": [
+            "atk%"
+        ],
+        "planar_sphere": [
+            "atk%",
+          {
+            "name": "physical-dmg",
+             "note": {
+             "en": "Can be used to boost \"Concerto\" damage if you can hit 4000+ ATK with it"
+            }
+        }
+        ],
+        "link_rope": [
+            "err"
+        ]
+    }
+}

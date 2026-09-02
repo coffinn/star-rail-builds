@@ -1,0 +1,55 @@
+{
+    "light_cones": [
+        {
+            "items": [
+                {
+                    "name": "flowing-nightglow"
+                },
+                {
+                    "name": "past-self-in-mirror"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "but-the-battle-isnt-over"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "poised-to-bloom",
+                    "note": {
+                        "en": "Requires two teammates of the same path to be in the team. Does not have to be the same path as Robin."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "for-tomorrows-journey"
+                },
+                {
+                    "name": "the-forever-victual"
+                },
+                {
+                    "name": "planetary-randezvous",
+                    "note_group": "phys-affinity",
+                    "note": {
+                        "en": "Requires a Physical DPS to be on the team"
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "meshing-cogs"
+                }
+            ]
+        }
+    ]
+}
