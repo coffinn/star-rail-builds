@@ -45,16 +45,12 @@
             ]
         }
     ],
-      "conditional": [
+  "conditional": [
     {
-      "items": [
-        {
-          "name": "planetary-rendezvous",
-          "note": {
-            "en": "Requires a Physical DPS to be in the team."
-          }
-        }
-      ]
+      "name": "planetary-rendezvous",
+      "note": {
+        "en": "Requires a Physical DPS to be in the team."
+      }
     }
   ]
 }
