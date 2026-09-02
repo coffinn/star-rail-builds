@@ -9,7 +9,7 @@
         },
         {
             "name": "spd",
-            "recommended": "BASE"
+            "recommended": "120"
         },
         {
             "name": "ehr",
