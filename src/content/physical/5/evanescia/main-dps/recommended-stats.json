@@ -2,13 +2,16 @@
     "stats": [
         {
             "name": "spd",
-            "recommended": "104"
+            "recommended": "104",
+            "note": {
+                "en": "This build does not require [[stat:spd]]."
+            }
         },
         {
             "name": "cr",
-            "recommended": "100%",
+            "recommended": "70%",
             "note": {
-                "en": "In combat. Evanescia's A2 buffs her CRIT Rate by 30% in combat, so aim for 70% out of combat."
+                "en": "Evanescia's A2 buffs her [[stat:cr]] by 30%, for 100% [[stat:cr]] in combat."
             }
         },
         {

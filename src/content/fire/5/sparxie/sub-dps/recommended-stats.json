@@ -2,9 +2,9 @@
     "stats": [
         {
             "name": "spd",
-            "recommended": "107 / 148+",
+            "recommended": "148+ / 107",
             "note": {
-                "en": "148 SPD allows her to outspeed Aha when Silver Wolf LV.999 and Yao Guang are at 200 SPD. This requirement increases the faster they are."
+                "en": "At E0-E1, 148 SPD allows her to outspeed Aha when Silver Wolf LV.999 and Yao Guang are at 200 SPD. This requirement increases the faster they are. At E2+, she does not require [[stat:spd]]."
             }
         },
         {
