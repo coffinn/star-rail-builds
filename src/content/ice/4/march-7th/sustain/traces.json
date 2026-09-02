@@ -3,7 +3,7 @@
         {
             "items": [
                 {
-                    "name": "ultimate"
+                    "name": "skill"
                 }
             ]
         },
@@ -11,13 +11,9 @@
             "items": [
                 {
                     "name": "talent"
-                }
-            ]
-        },
-        {
-            "items": [
+                },
                 {
-                    "name": "skill"
+                    "name": "ultimate"
                 }
             ]
         },

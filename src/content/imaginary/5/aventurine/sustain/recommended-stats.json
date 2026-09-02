@@ -10,11 +10,16 @@
         },
         {
             "name": "cr",
-            "recommended": "50% (Optional)"
+            "recommended": "50%",
+            "note_group": "crcd",
+            "note": {
+                "en": "Optional stat for personal damage."
+            }
         },
         {
             "name": "cd",
-            "recommended": "100%+ (Optional)"
+            "recommended": "100%+",
+            "note_group": "crcd"
         }
     ]
 }

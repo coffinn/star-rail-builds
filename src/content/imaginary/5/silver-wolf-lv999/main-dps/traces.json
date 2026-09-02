@@ -23,7 +23,10 @@
         {
             "items": [
                 {
-                    "name": "skill"
+                    "name": "skill",
+                    "note": {
+                        "en": "Skill can be ignored."
+                    }
                 }
             ]
         }

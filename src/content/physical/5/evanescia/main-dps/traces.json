@@ -10,13 +10,6 @@
         {
             "items": [
                 {
-                    "name": "elation-skill"
-                }
-            ]
-        },
-        {
-            "items": [
-                {
                     "name": "ultimate"
                 }
             ]
@@ -24,11 +17,15 @@
         {
             "items": [
                 {
-                    "name": "skill",
-                    "note_group": "skill-basic",
-                    "note": {
-                        "en": "Skill and Basic ATK can be ignored"
-                    }
+                    "name": "elation-skill"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "skill"
+
                 }
             ]
         },
@@ -36,7 +33,9 @@
             "items": [
                 {
                     "name": "basic",
-                    "note_group": "skill-basic"
+                    "note": {
+                        "en": "Basic ATK can be ignored."
+                    }
                 }
             ]
         }

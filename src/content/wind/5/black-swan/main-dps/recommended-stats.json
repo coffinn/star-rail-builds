@@ -9,7 +9,10 @@
         },
         {
             "name": "spd",
-            "recommended": "120"
+            "recommended": "102",
+            "note": {
+                "en": "This build does not require [[stat:spd]]."
+            }
         },
         {
             "name": "ehr",
