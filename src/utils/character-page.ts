@@ -1197,7 +1197,13 @@ function loadBuildData({
             tracesFile,
         )
         : null;
-
+    const sharedNoteGroups = new Map<
+        string,
+        {
+            id: string;
+            emitted: boolean;
+        }
+    >();
     /*
      * Notes
      */
@@ -1293,17 +1299,14 @@ function loadBuildData({
 
             substats: relics.substats
                 ? collectStatNotes(
-                    relics.substats
-                        .substats_priority,
-
-                    (stat: {
-                        name: any;
-                    }) => stat.name,
-
+                    relics.substats.substats_priority,
+                    (stat: { name: any }) => stat.name,
                     relicSubstatsFile,
                     lang,
                     translator,
+                    sharedNoteGroups,
                 )
+
                 : [],
         },
 
@@ -1342,6 +1345,7 @@ function loadBuildData({
                     recommendedStatsFile,
                     lang,
                     translator,
+                    sharedNoteGroups,
                 )
                 : [],
         },

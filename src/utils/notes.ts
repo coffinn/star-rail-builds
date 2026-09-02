@@ -21,6 +21,13 @@ function renderNote(note: string, sourceFile: string, translator: any) {
 
     return (marked.parse(renderedNote) as string).replace(/<\/?p>/g, '');
 }
+export type NoteGroupRegistry = Map<
+    string,
+    {
+        id: string;
+        emitted: boolean;
+    }
+>;
 function renderNoteName(
     name: string,
     sourceFile: string,
@@ -274,6 +281,7 @@ export function collectStatNotes(
     sourceFile: string,
     lang: string,
     translator: any,
+    sharedGroups?: NoteGroupRegistry,
 ) {
     const notes: {
         id: string;
@@ -298,6 +306,67 @@ export function collectStatNotes(
      * First collect all note_group entries.
      */
     flatItems.forEach((item: any) => {
+        if (item.note_group && sharedGroups) {
+            const groupKey = item.note_group;
+            const localizedNote = getLocalizedNote(item, lang);
+
+            /*
+             * Create the shared group immediately,
+             * even if this item does not contain
+             * the actual note text.
+             */
+            let sharedGroup = sharedGroups.get(groupKey);
+
+            if (!sharedGroup) {
+                sharedGroup = {
+                    id: createNoteId(
+                        sourceFile,
+                        notes.length,
+                    ),
+                    emitted: false,
+                };
+
+                sharedGroups.set(
+                    groupKey,
+                    sharedGroup,
+                );
+            }
+
+            /*
+             * Every occurrence points to the same note.
+             */
+            item.noteId = sharedGroup.id;
+
+            /*
+             * If this occurrence contains the note text
+             * and nobody has emitted it yet, create the
+             * single bottom note now.
+             */
+            if (
+                localizedNote &&
+                !sharedGroup.emitted
+            ) {
+                notes.push({
+                    id: sharedGroup.id,
+
+                    name: renderNoteName(
+                        formatter(item),
+                        sourceFile,
+                        translator,
+                    ),
+
+                    note: renderNote(
+                        localizedNote,
+                        sourceFile,
+                        translator,
+                    ),
+                });
+
+                sharedGroup.emitted = true;
+            }
+
+            return;
+        }
         if (!item.note_group) return;
 
         const groupId = item.note_group;
