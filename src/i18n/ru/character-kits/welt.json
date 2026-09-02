@@ -40,7 +40,7 @@
         "skill": {
             "type": "Навык",
             "name": "Край пустоты",
-            "tag": "Bounce",
+            "tag": "Отскок",
             "energy_gain": 30,
             "break_bounce": 10,
             "break_total": 30,
