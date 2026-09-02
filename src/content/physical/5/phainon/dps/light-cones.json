@@ -1,0 +1,47 @@
+{
+    "light_cones": [
+        {
+            "items": [
+                {
+                    "name": "thus-burns-the-dawn",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "brighter-than-the-sun",
+                    "superimposition": 1,
+                    "note": {
+                        "en": "Requires alternating between Basic ATK and Skill to maintain its buffs."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "on-the-fall-of-an-aeon",
+                    "superimposition": 5
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "something-irreplaceable",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "a-trail-of-bygone-blood",
+                    "superimposition": 5
+                }
+            ]
+        }
+    ]
+}

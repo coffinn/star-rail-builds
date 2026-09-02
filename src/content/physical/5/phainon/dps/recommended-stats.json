@@ -1,0 +1,21 @@
+{
+    "stats": [
+        {
+            "name": "cr",
+            "baseline": "100%",
+            "recommended": "100%",
+            "note": {
+                "en": "Modify your CRIT Rate based on in battle buffs from teammates."
+            }
+        },
+        {
+            "name": "cd",
+            "baseline": "150%",
+            "recommended": "180%+"
+        },
+        {
+            "name": "total-atk",
+            "baseline": "3000+","recommended": "2500+"
+        }
+    ]
+}
