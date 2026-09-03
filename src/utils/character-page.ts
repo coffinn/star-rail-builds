@@ -13,7 +13,12 @@ import {
     toTitleCase,
 } from './content';
 import { getLocale, t } from './i18n';
-import { collectNotes, collectSectionNotes, collectStatNotes } from './notes';
+import {
+    collectNotes,
+    collectSectionNotes,
+    collectStatNotes,
+    type NoteGroupRegistry,
+} from './notes';
 import { TranslationHelper } from './translator';
 
 type CharacterPathParam = string | string[] | undefined;
@@ -897,6 +902,7 @@ function collectMainStatNotes(
     sourceFile: string,
     lang: string,
     translator: TranslationHelper,
+    sharedGroups?: NoteGroupRegistry,
 ) {
     const allMainStats = [
         'body',
@@ -913,6 +919,7 @@ function collectMainStatNotes(
         sourceFile,
         lang,
         translator,
+        sharedGroups,
     );
 }
 /**
@@ -1197,13 +1204,9 @@ function loadBuildData({
             tracesFile,
         )
         : null;
-    const sharedNoteGroups = new Map<
-        string,
-        {
-            id: string;
-            emitted: boolean;
-        }
-    >();
+    const sharedNoteGroups: NoteGroupRegistry =
+        new Map();
+
     /*
      * Notes
      */
@@ -1239,6 +1242,7 @@ function loadBuildData({
                 lightConesFile,
                 lang,
                 translator,
+                sharedNoteGroups,
             ),
         },
 
@@ -1285,15 +1289,16 @@ function loadBuildData({
                 relicSetsFile,
                 lang,
                 translator,
+                sharedNoteGroups,
             ),
 
             mainstats: relics.mainstats
                 ? collectMainStatNotes(
-                    relics.mainstats
-                        .main_stats,
+                    relics.mainstats.main_stats,
                     relicMainstatsFile,
                     lang,
                     translator,
+                    sharedNoteGroups,
                 )
                 : [],
 
@@ -1328,6 +1333,7 @@ function loadBuildData({
                 tracesFile,
                 lang,
                 translator,
+                sharedNoteGroups,
             ),
         },
         recommendedStats: {

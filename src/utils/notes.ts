@@ -26,6 +26,13 @@ export type NoteGroupRegistry = Map<
     {
         id: string;
         emitted: boolean;
+        items: any[];
+        names: string[];
+        noteRef?: {
+            id: string;
+            name: string;
+            note: string;
+        };
     }
 >;
 function renderNoteName(
@@ -98,7 +105,129 @@ function getNoteScope(sourceFile: string) {
 function createNoteId(sourceFile: string, index: number) {
     return `${getNotePrefix(sourceFile)}-${getNoteScope(sourceFile)}-${index + 1}`;
 }
+function createGroupedNoteId(
+    sourceFile: string,
+    groupKey: string,
+) {
+    const safeGroup = groupKey
+        .replace(/[^a-z0-9_-]/gi, '-')
+        .toLowerCase();
 
+    return `ng-${getNoteScope(sourceFile)}-${safeGroup}`;
+}
+function handleSharedNoteGroup(
+    item: any,
+    formatter: (item: any) => string,
+    sourceFile: string,
+    lang: string,
+    translator: any,
+    notes: {
+        id: string;
+        name: string;
+        note: string;
+    }[],
+    sharedGroups?: NoteGroupRegistry,
+) {
+    if (!item.note_group || !sharedGroups) {
+        return false;
+    }
+
+    const groupKey = item.note_group;
+
+    let group = sharedGroups.get(groupKey);
+
+    if (!group) {
+        group = {
+            id: createGroupedNoteId(
+                sourceFile,
+                groupKey,
+            ),
+            emitted: false,
+            items: [],
+            names: [],
+        };
+
+        sharedGroups.set(groupKey, group);
+    }
+
+    /*
+     * Remember this item.
+     */
+    group.items.push(item);
+
+    /*
+     * Render and remember this item's display name.
+     */
+    const renderedName = renderNoteName(
+        formatter(item),
+        sourceFile,
+        translator,
+    );
+
+    if (!group.names.includes(renderedName)) {
+        group.names.push(renderedName);
+    }
+
+    /*
+     * If the note already exists, update its title
+     * whenever another member of the group appears.
+     */
+    if (group.noteRef) {
+        group.noteRef.name =
+            group.names.join(' / ');
+    }
+
+    const localizedNote =
+        getLocalizedNote(item, lang);
+
+    /*
+     * If this is the first occurrence that actually
+     * contains note text, create the single note.
+     */
+    if (
+        localizedNote &&
+        !group.emitted
+    ) {
+        /*
+         * Give every item encountered so far
+         * the same note ID.
+         */
+        group.items.forEach((groupItem) => {
+            groupItem.noteId = group!.id;
+        });
+
+        const noteEntry = {
+            id: group.id,
+
+            name: group.names.join(' / '),
+
+            note: renderNote(
+                localizedNote,
+                sourceFile,
+                translator,
+            ),
+        };
+
+        notes.push(noteEntry);
+
+        /*
+         * Keep a reference so later JSON files
+         * can update this note's title.
+         */
+        group.noteRef = noteEntry;
+        group.emitted = true;
+    }
+
+    /*
+     * Items encountered after the note has already
+     * been created also point to the same note.
+     */
+    if (group.emitted) {
+        item.noteId = group.id;
+    }
+
+    return true;
+}
 /**
  * Collects top-level section notes from a content JSON object.
  *
@@ -139,6 +268,7 @@ export function collectNotes(
     sourceFile: string,
     lang: string,
     translator: any,
+    sharedGroups?: NoteGroupRegistry,
 ) {
     const notes: {
         id: string;
@@ -166,6 +296,28 @@ export function collectNotes(
      * First collect explicitly grouped notes.
      */
     allItems.forEach((item: any) => {
+        /*
+     * If a shared registry was provided, let it handle
+     * note_group across different JSON files.
+     */
+        if (
+            handleSharedNoteGroup(
+                item,
+                formatter,
+                sourceFile,
+                lang,
+                translator,
+                notes,
+                sharedGroups,
+            )
+        ) {
+            return;
+        }
+
+        /*
+         * Otherwise fall back to the existing
+         * same-file note_group behavior.
+         */
         if (!item.note_group) return;
 
         const groupId = item.note_group;
@@ -303,71 +455,32 @@ export function collectStatNotes(
     >();
 
     /*
-     * First collect all note_group entries.
+     * First collect note_group entries.
      */
     flatItems.forEach((item: any) => {
-        if (item.note_group && sharedGroups) {
-            const groupKey = item.note_group;
-            const localizedNote = getLocalizedNote(item, lang);
-
-            /*
-             * Create the shared group immediately,
-             * even if this item does not contain
-             * the actual note text.
-             */
-            let sharedGroup = sharedGroups.get(groupKey);
-
-            if (!sharedGroup) {
-                sharedGroup = {
-                    id: createNoteId(
-                        sourceFile,
-                        notes.length,
-                    ),
-                    emitted: false,
-                };
-
-                sharedGroups.set(
-                    groupKey,
-                    sharedGroup,
-                );
-            }
-
-            /*
-             * Every occurrence points to the same note.
-             */
-            item.noteId = sharedGroup.id;
-
-            /*
-             * If this occurrence contains the note text
-             * and nobody has emitted it yet, create the
-             * single bottom note now.
-             */
-            if (
-                localizedNote &&
-                !sharedGroup.emitted
-            ) {
-                notes.push({
-                    id: sharedGroup.id,
-
-                    name: renderNoteName(
-                        formatter(item),
-                        sourceFile,
-                        translator,
-                    ),
-
-                    note: renderNote(
-                        localizedNote,
-                        sourceFile,
-                        translator,
-                    ),
-                });
-
-                sharedGroup.emitted = true;
-            }
-
+        /*
+         * Cross-JSON grouping.
+         */
+        if (
+            handleSharedNoteGroup(
+                item,
+                formatter,
+                sourceFile,
+                lang,
+                translator,
+                notes,
+                sharedGroups,
+            )
+        ) {
             return;
         }
-        if (!item.note_group) return;
+
+        /*
+         * Same-file grouping fallback.
+         */
+        if (!item.note_group) {
+            return;
+        }
 
         const groupId = item.note_group;
 
@@ -391,21 +504,19 @@ export function collectStatNotes(
         const localizedNote =
             getLocalizedNote(item, lang);
 
-        /*
-         * Only one item in the group needs
-         * to contain the actual note.
-         */
         if (localizedNote && !group.note) {
             group.note = localizedNote;
         }
     });
 
     /*
-     * Create one bottom note for each group
-     * and give every grouped stat the same noteId.
+     * Create one bottom note for each
+     * same-file note group.
      */
     groupedNotes.forEach((group) => {
-        if (!group.note) return;
+        if (!group.note) {
+            return;
+        }
 
         const noteId = createNoteId(
             sourceFile,
@@ -418,11 +529,13 @@ export function collectStatNotes(
 
         notes.push({
             id: noteId,
+
             name: renderNoteName(
                 group.names.join(' / '),
                 sourceFile,
                 translator,
             ),
+
             note: renderNote(
                 group.note,
                 sourceFile,
@@ -432,16 +545,19 @@ export function collectStatNotes(
     });
 
     /*
-     * Preserve normal behavior for stats
-     * that are not using note_group.
+     * Normal ungrouped notes.
      */
     flatItems.forEach((item: any) => {
-        if (item.note_group) return;
+        if (item.note_group) {
+            return;
+        }
 
         const localizedNote =
             getLocalizedNote(item, lang);
 
-        if (!localizedNote) return;
+        if (!localizedNote) {
+            return;
+        }
 
         const name = formatter(item);
 
@@ -454,11 +570,13 @@ export function collectStatNotes(
 
         notes.push({
             id: noteId,
+
             name: renderNoteName(
                 name,
                 sourceFile,
                 translator,
             ),
+
             note: renderNote(
                 localizedNote,
                 sourceFile,
