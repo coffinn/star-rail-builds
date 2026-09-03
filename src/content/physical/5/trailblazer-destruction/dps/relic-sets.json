@@ -1,0 +1,99 @@
+{
+    "relic_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "wavestrider-captain",
+                            "pieces": 4
+                        
+                        }                       
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "poet",
+                            "pieces": 4,
+                            "note_group": "tb_spd"
+                        
+                        }                       
+                    ]
+                }                
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "genius",
+                            "pieces": 4
+                        
+                        }                       
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "scholar",
+                            "pieces": 4
+                        
+                        }                       
+                    ]
+                }                
+            ]
+        }
+    ],
+    "planar_ornaments": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "fallen-star-anchorage",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Requires a Trailblaze Companion other than Trailblazer to be in the team."
+                            }
+                        }
+                    ]
+                }               
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "rutilant",
+                            "pieces": 2
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "salsotto",
+                            "pieces": 2
+                        }
+                    ]
+                }                  
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "glamoth",
+                            "pieces": 2
+                        }
+                    ]
+                }               
+            ]
+        }
+
+    ]
+}

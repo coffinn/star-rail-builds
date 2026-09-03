@@ -1,0 +1,53 @@
+{
+    "light_cones": [
+        {
+            "items": [
+                {
+                    "name": "thus-burns-the-dawn",
+                    "superimposition": 1,
+                    "note_group": "tb_spd",
+                    "note": {
+                        "en": "Using Thus Burns the Dawn will disqualify you from the highest CRIT Rate bonus from Poet of Mourning collapse, and therefore shouldn't be used together."
+                    }
+
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "on-the-fall-of-an-aeon",
+                    "superimposition": 5
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "something-irreplaceable",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "a-secret-vow",
+                    "superimposition": 5
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "the-moles-welcome-you",
+                    "superimposition": 5
+                },
+                {
+                    "name": "under-the-blue-sky",
+                    "superimposition": 5
+                }
+            ]
+        }
+    ]
+}
