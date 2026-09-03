@@ -3,9 +3,13 @@
         "body": [
             "cd",
             {
+                "name": "cr",
+                "note-group": "crite-rate-prio"
+            }
+            {
                 "name": "atk%",
                 "note": {
-                    "en": "Alternative to CRIT DMG%"
+                    "en": "Weaker alternative to CRIT DMG, fairly viable because Yanqing brings a lot of built-in CRIT DMG."
                 }
             }
         ],

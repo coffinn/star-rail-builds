@@ -3,6 +3,7 @@
         "cd",
         {
             "name": "cr",
+	    "note-group": "crit-rate-prio"
             "note": {
                 "en": "Prioritize CRIT Rate until the recommended target is reached."
             }
