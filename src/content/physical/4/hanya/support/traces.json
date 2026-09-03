@@ -1,0 +1,31 @@
+{
+    "traces": [
+        {
+            "items": [
+                {
+                    "name": "talent"
+                },
+                {
+                    "name": "ultimate"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "skill"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "basic",
+                                        "note": {
+                        "en": "[[ability:basic]] can be ignored."
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "main_stats": {
+        "body": [
+            "ehr",
+            "atk%"
+        ],
+        "feet": [
+            "spd"
+        ],
+        "planar_sphere": [
+          {
+            "name": "physical-dmg"
+        },
+            "atk%"
+        ],
+        "link_rope": [
+            "break-effect"
+        ]
+    }
+}

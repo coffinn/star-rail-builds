@@ -1,0 +1,91 @@
+{
+    "relic_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "warrior-goddess-of-sun-and-thunder",
+                            "pieces": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "choose": true,
+                    "items": [
+                        {
+                            "name": "2pc-speed",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "planar_ornaments": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "vonwacq",
+                            "pieces": 2
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "city-of-converging-stars",
+                            "pieces": 2
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "lushaka-the-sunken-seas",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "penacony",
+                            "pieces": 2,
+                            "note" :{"en":"Requires a Physical DPS to be in the team"}
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "giant-tree",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+  "conditional": [
+    {
+      "items": [
+        {
+          "name": "sacerdos",
+          "pieces": 4,
+          "note_group": "skill-spam"
+        }
+      ]
+    }
+  ]
+}

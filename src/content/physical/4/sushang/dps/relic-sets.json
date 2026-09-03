@@ -1,0 +1,55 @@
+{
+    "relic_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "iron-cavalry",
+                            "pieces": 4
+                        
+                        }                       
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "genius",
+                            "pieces": 4
+                        
+                        }                       
+                    ]
+                }                
+            ]
+        }
+    ],
+    "planar_ornaments": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "forge",
+                            "pieces": 2,
+                            "note":{
+                                "en":"The Dahlia or a enemy with Fire Weakness must be present."
+                            }
+                        }
+                    ]
+                }               
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "talia",
+                            "pieces": 2
+                        }
+                    ]
+                }               
+            ]
+        }        
+    ]
+}

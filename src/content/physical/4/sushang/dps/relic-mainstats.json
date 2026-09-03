@@ -1,0 +1,16 @@
+{
+    "main_stats": {
+        "body": [
+            "ANY"
+        ],
+        "feet": [
+            "ANY"
+        ],
+        "planar_sphere": [
+            "ANY"
+        ],
+        "link_rope": [
+            "break-effect"
+        ]
+    }
+}

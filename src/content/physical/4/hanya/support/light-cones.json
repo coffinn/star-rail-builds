@@ -1,0 +1,39 @@
+{
+    "light_cones": [
+        {
+            "items": [
+                {
+                    "name": "earthly-escapade"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "ddd"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "motp"
+                },
+                {
+                    "name": "meshing-cogs"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "planetary-rendezvous",
+                    "note_group": "phys-affinity",
+                    "note": {
+                        "en": "Requires a Physical DPS to be in the team."
+                    }
+                }
+            ]
+        }
+    ]
+}

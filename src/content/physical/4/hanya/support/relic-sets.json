@@ -5,7 +5,7 @@
                 {
                     "items": [
                         {
-                            "name": "valorous",
+                            "name": "sacerdos",
                             "pieces": 4
                         }
                     ]
@@ -15,30 +15,18 @@
         {
             "groups": [
                 {
+                "choose": true,
                     "items": [
                         {
-                            "name": "the-ashblazing-grand-duke",
-                            "pieces": 4
+                            "name": "2pc-speed",
+                            "pieces": 2
                         }
                     ]
                 },
                 {
                     "items": [
                         {
-                            "name": "poet",
-                            "pieces": 4,
-                            "note_group": "antisynergy"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "groups": [
-                {
-                    "items": [
-                        {
-                            "name": "genius",
+                            "name": "messenger",
                             "pieces": 4
                         }
                     ]
@@ -52,7 +40,15 @@
                 {
                     "items": [
                         {
-                            "name": "salsotto",
+                            "name": "lushaka",
+                            "pieces": 2
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "city",
                             "pieces": 2
                         }
                     ]
@@ -64,8 +60,9 @@
                 {
                     "items": [
                         {
-                            "name": "duran",
-                            "pieces": 2
+                            "name": "penacony",
+                            "pieces": 2,
+                            "note_group": "phys-affinity"
                         }
                     ]
                 }

@@ -1,0 +1,20 @@
+{
+    "stats": [
+        {
+            "name": "spd",
+            "recommended": "3200+"
+        },
+        {
+            "name": "total-atk",
+            "recommended": "134+"
+        },
+        {
+            "name": "break-effect",
+            "recommended": "120%+"
+        },
+        {
+            "name": "ehr",
+            "recommended": "66.7%"
+        }
+    ]
+}

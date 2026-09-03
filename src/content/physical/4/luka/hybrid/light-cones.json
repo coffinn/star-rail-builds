@@ -1,0 +1,49 @@
+{
+    "light_cones": [
+        {
+            "items": [
+                {
+                    "name": "long-road-leads-home",
+                    "superimposition": 1
+                },
+                {
+                    "name": "lies-dance-on-the-breeze",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "solitary-healing",
+                    "superimposition": 5
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "thermae",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {"items":[{"name": "pearls","superimposition":1}]},
+        {"items":[                {
+                    "name": "fermata",
+                    "superimposition": 5
+                }]},
+        {
+            "items": [
+                {
+                    "name": "gnsw",
+                    "superimposition": 5
+                },
+                {
+                    "name": "eotp",
+                    "superimposition": 5
+                }
+            ]
+        }
+    ]
+}

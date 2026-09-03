@@ -5,29 +5,9 @@
                 {
                     "items": [
                         {
-                            "name": "valorous",
+                            "name": "prisoner-in-deep-confinement",
+                   
                             "pieces": 4
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "groups": [
-                {
-                    "items": [
-                        {
-                            "name": "the-ashblazing-grand-duke",
-                            "pieces": 4
-                        }
-                    ]
-                },
-                {
-                    "items": [
-                        {
-                            "name": "poet",
-                            "pieces": 4,
-                            "note_group": "antisynergy"
                         }
                     ]
                 }
@@ -39,6 +19,7 @@
                     "items": [
                         {
                             "name": "genius",
+                   
                             "pieces": 4
                         }
                     ]
@@ -52,7 +33,7 @@
                 {
                     "items": [
                         {
-                            "name": "salsotto",
+                            "name": "revelry-by-the-sea",
                             "pieces": 2
                         }
                     ]
@@ -64,7 +45,7 @@
                 {
                     "items": [
                         {
-                            "name": "duran",
+                            "name": "glamoth",
                             "pieces": 2
                         }
                     ]

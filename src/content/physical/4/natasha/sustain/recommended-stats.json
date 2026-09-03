@@ -1,0 +1,12 @@
+{
+    "stats": [
+        {
+            "name": "spd",
+            "recommended": "160+"
+        },
+        {
+            "name": "total-hp",
+            "recommended": "5000+"
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "light_cones": [
+        {
+            "items": [
+                {
+                    "name": "sailing-towards-a-second-life",
+                    "superimposition": 1
+
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "shadowed-by-night",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "adversarial",
+                    "superimposition": 5
+                },
+                {
+                    "name": "river-flows-in-spring",
+                    "superimposition": 5
+                }
+            ]
+        }
+    ]
+}    
