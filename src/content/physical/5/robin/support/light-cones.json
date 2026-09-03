@@ -6,14 +6,19 @@
                     "name": "flowing-nightglow"
                 },
                 {
-                    "name": "past-self-in-mirror"
+                    "name": "past-self-in-mirror",
+                    "note_group": "robin-energy",
+                    "note": {
+                        "en": "Provides Energy to get Robin into her Ultimate faster."
+                    } 
                 }
             ]
         },
         {
             "items": [
                 {
-                    "name": "but-the-battle-isnt-over"
+                    "name": "but-the-battle-isnt-over",
+                    "note_group": "robin-energy"
                 }
             ]
         },
