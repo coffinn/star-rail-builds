@@ -1,0 +1,19 @@
+{
+    "stats": [
+        {
+            "name": "cr",
+            "recommended": "100%",
+            "note": {
+                "en": "If [[set:poet-of-mourning-collapse]] is being used, 68% is reccommended instead. Otheriwse, tune your CRIT Rate according to in battle buffs."
+            }
+        },
+        {
+            "name": "cd",
+            "recommended": "150%+"
+        },
+        {
+            "name": "total-atk",
+            "recommended": "3000+"
+        }
+    ]
+}

@@ -3,18 +3,24 @@
         {
             "items": [
                 {
-                    "name": "thus-burns-the-dawn",
-                    "superimposition": 1,
-                    "note": {
-                        "en": "If using [[light-cone:thus-burns-the-dawn]] and [[set:poet-of-mourning-collapse]], getting any SPD subs will disqualify you from the highest CRIT Rate bonus."
-                    }
+                    "name": "dance-at-sunset",
+                    "superimposition": 1
                 }
             ]
         },
         {
             "items": [
                 {
-                    "name": "dance-at-sunset",
+                    "name": "thus-burns-the-dawn",
+                    "superimposition": 1,
+                    "note_group": "tb_spd"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "the-unreachable-side",
                     "superimposition": 1
                 }
             ]
@@ -33,16 +39,12 @@
         {
             "items": [
                 {
-                    "name": "the-unreachable-side",
-                    "superimposition": 1
-                }
-            ]
-        },
-        {
-            "items": [
-                {
                     "name": "something-irreplaceable",
-                    "superimposition": 1
+                    "superimposition": 1,
+                    "note_group": "phys_weak",
+                    "note": {
+                        "en": "On The Fall of an Aeon perfoms equally to Something Irreplaceable when fighting enmeies with a physical weakness"
+                    }
                 }
             ]
         },
@@ -50,6 +52,19 @@
             "items": [
                 {
                     "name": "on-the-fall-of-an-aeon",
+                    "superimposition": 5,
+                    "note_group": "phys_weak"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "a-secret-vow",
+                    "superimposition": 5
+                },
+                {
+                    "name": "indelible-promise",
                     "superimposition": 5
                 }
             ]
