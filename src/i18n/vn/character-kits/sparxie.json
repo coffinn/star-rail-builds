@@ -1,0 +1,332 @@
+{
+  "id": "sparxie",
+  "name": "Sparxie",
+  "rarity": "5",
+  "element": "fire",
+  "path": "elation",
+  "version_released": "4.0",
+  "max_energy": 160,
+  "level_80_stats": {
+    "hp": 1047,
+    "atk": 640,
+    "def": 460,
+    "spd": 107
+  },
+  "abilities": {
+    "basic": {
+      "type": "Tấn Công Thường",
+      "name": "Tịt Ngòi Rồi Sao",
+      "tag": "Đánh Đơn",
+      "energy_gain": 20,
+      "break": 10,
+      "min_level": 1,
+      "max_level": 7,
+      "default_level": 6,
+      "description_template": "Gây Sát Thương Hỏa bằng {{scaling1}}% Tấn Công của Sparxie cho 1 kẻ địch chỉ định.",
+      "scaling": {
+        "scaling1": [
+          50,
+          60,
+          70,
+          80,
+          90,
+          100,
+          110
+        ]
+      },
+      "variants": [
+        {
+          "type": "Tấn Công Thường Cường Hóa",
+          "name": "Trăm Hoa Đua Nở, Kẻ Thắng Độc Tôn!",
+          "tag": "Khuếch Tán",
+          "energy_gain": 40,
+          "break_main": 10,
+          "break_adjacent": 5,
+          "min_level": 1,
+          "max_level": 7,
+          "default_level": 6,
+          "description_template": "Tổng kết kết quả kết nối livestream, gây cho 1 kẻ địch chỉ định Sát Thương Hỏa bằng {{scaling1}}% Tấn Công của Sparxie, đồng thời gây cho mục tiêu lân cận kẻ đó Sát Thương Hỏa bằng {{scaling2}}% Tấn Công của Sparxie.",
+          "scaling": {
+            "scaling1": [
+              50,
+              60,
+              70,
+              80,
+              90,
+              100,
+              110
+            ],
+            "scaling2": [
+              25,
+              30,
+              35,
+              40,
+              45,
+              50,
+              55
+            ]
+          }
+        }
+      ]
+    },
+    "skill": {
+      "type": "Chiến Kỹ",
+      "name": "Hò Hét! Sparxicle Đang Kết Nối",
+      "tag": "Cường Hóa",
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description": "Bắt đầu kết nối livestream, biến Tấn Công Thường thành \"Trăm Hoa Đua Nở, Kẻ Thắng Độc Tôn!\" và phát động 1 lần \"Bẫy Tương Tác\", trong lần sử dụng kỹ năng này có thể phát động \"Bẫy Tương Tác\" nhiều lần, tối đa phát động 20 lần. Thi triển kỹ năng này không được xem là sử dụng Chiến Kỹ.",
+      "variants": [
+        {
+          "type": "Enhanced Skill",
+          "name": "Engagement Farming",
+          "tag": "Enhance",
+          "min_level": 1,
+          "max_level": 12,
+          "default_level": 10,
+          "description_template": "Khiến Bội Số Sát Thương của \"Trăm Hoa Đua Nở, Kẻ Thắng Độc Tôn!\" lên 1 kẻ địch chỉ định tăng {{scaling1}}%, Bội Số Sát Thương lên mục tiêu lân cận kẻ đó tăng {{scaling2}}%. Đồng thời ngẫu nhiên nhận được một loại quà:\n\"Quá Cháy\": 2 Điểm Hài Hước và 2 Điểm Chiến Kỹ.\n\"Đỉnh Của Chóp\": 1 Điểm Hài Hước.\nThi triển kỹ năng này không được xem là sử dụng Chiến Kỹ.",
+          "scaling": {
+            "scaling1": [
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16.25,
+              17.5,
+              18.75,
+              20,
+              21,
+              22
+            ],
+            "scaling2": [
+              5,
+              5.5,
+              6,
+              6.5,
+              7,
+              7.5,
+              8.125,
+              8.75,
+              9.375,
+              10,
+              10.5,
+              11
+            ]
+          }
+        }
+      ]
+    },
+    "talent": {
+      "type": "Thiên Phú",
+      "name": "Bàn Tay Sparx Sau Hậu Trường",
+      "tag": "Cường Hóa",
+      "break": 5,
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "Khi Sparxie sở hữu \"Việc Tốt Đáng Thưởng\":\nThi triển Tấn Công Thường Cường Hóa có thể gây {{scaling1}}% Sát Thương Vui Vẻ thuộc tính Hỏa cho 1 kẻ địch chỉ định, và gây {{scaling2}}% Sát Thương Vui Vẻ thuộc tính Hỏa cho mục tiêu lân cận kẻ đó. Đồng thời mỗi khi phát động 1 lần \"Bẫy Tương Tác\", sẽ khiến Tấn Công Thường Cường Hóa trong lúc tấn công gây thêm 1 lần {{scaling3}}% Sát Thương Vui Vẻ thuộc tính Hỏa cho 1 mục tiêu phe địch bị tấn công ngẫu nhiên.\nThi triển Tuyệt Kỹ có thể gây {{scaling4}}% Sát Thương Vui Vẻ thuộc tính Hỏa cho toàn bộ phe địch.",
+      "scaling": {
+        "scaling1": [
+          20,
+          22,
+          24,
+          26,
+          28,
+          30,
+          32.5,
+          35,
+          37.5,
+          40,
+          42,
+          44
+        ],
+        "scaling2": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16.25,
+          17.5,
+          18.75,
+          20,
+          21,
+          22
+        ],
+        "scaling3": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16.25,
+          17.5,
+          18.75,
+          20,
+          21,
+          22
+        ],
+        "scaling4": [
+          24,
+          26.4,
+          28.8,
+          31.2,
+          33.6,
+          36,
+          39,
+          42,
+          45,
+          48,
+          50.4,
+          54.8
+        ]
+      }
+    },
+    "ultimate": {
+      "type": "Tuyệt Kỹ",
+      "name": "Vui Quẩy Hết Mức, Quay Hình Hết Mình",
+      "tag": "Đánh Lan",
+      "energy_gain": 5,
+      "break_aoe": 20,
+      "energy_cost": 160,
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "Nhận 2 Điểm Hài Hước. Gây cho toàn bộ phe địch Sát Thương Hỏa bằng (0.6 x Độ Vui Vẻ + {{scaling1}}%) Tấn Công của Sparxie.",
+      "scaling": {
+        "scaling1": [
+          30,
+          32,
+          34,
+          36,
+          38,
+          40,
+          42.5,
+          45,
+          47.5,
+          50,
+          52,
+          54
+        ]
+      }
+    },
+    "technique": {
+      "type": "Bí Kỹ",
+      "name": "Chuyển Lưu Lượng Thành Lợi Nhuận",
+      "tag": "Quấy Nhiễu",
+      "description": "Sau khi dùng Bí Kỹ, khiến kẻ địch trong khu vực nhất định rơi vào trạng thái \"Chặn\" 10 giây, kẻ địch rơi vào trạng thái \"Chặn\" không thể phát hiện mục tiêu phe ta.\nNếu chủ động tấn công kẻ địch rơi vào trạng thái \"Chặn\", sau khi vào chiến đấu, sẽ gây Sát Thương Hỏa lên toàn bộ phe địch tương đương 50% Tấn Công của Sparxie, đồng thời hồi 2 Điểm Chiến Kỹ cho phe ta."
+    }
+  },
+  "elation": {
+    "skills": {
+      "skill": {
+        "type": "Kỹ Năng Vui Vẻ",
+        "name": "Tín Hiệu Quá Tải: Màn Kịch Hay Tái Xuất!",
+        "tag": "Đánh Lan",
+        "participant_id": 144,
+        "break_bounce":20,
+        "break_aoe": 6,
+        "break_total":26,
+        "min_level": 1,
+        "max_level": 12,
+        "default_level": 10,
+        "description_template": "Gây {{scaling1}}% Sát Thương Vui Vẻ thuộc tính Hỏa cho toàn bộ phe địch, đồng thời gây thêm 20 lần sát thương. Mỗi lần sát thương gây {{scaling2}}% Sát Thương Vui Vẻ thuộc tính Hỏa cho 1 kẻ địch ngẫu nhiên. Khiến Sparxie nhận 2 \"Điểm Bạo\", có thể dùng để khấu trừ tiêu hao Điểm Chiến Kỹ của Sparxie. Tiêu hao \"Điểm Bạo\" được xem là tiêu hao Điểm Chiến Kỹ.",
+        "scaling": {
+          "scaling1": [
+            25,
+            27.5,
+            30,
+            32.5,
+            35,
+            37.5,
+            40.625,
+            43.75,
+            46.875,
+            50,
+            52.5,
+            55
+          ],
+          "scaling2": [
+            12.5,
+            13.75,
+            15,
+            16.25,
+            17.5,
+            18.75,
+            20.3125,
+            21.875,
+            23.4375,
+            25,
+            26.25,
+            27.5
+          ]
+        }
+      }
+    }
+  },
+  "major_traces": {
+    "2": {
+      "name": "Ngọt Ngào! Buổi Ký Tặng Điểm Hài Hước",
+      "description": "Nếu Tấn Công của Sparxie cao hơn 2000 điểm, cứ mỗi 100 điểm Tấn Công vượt quá sẽ khiến Độ Vui Vẻ của bản thân tăng 5,0%, tối đa tăng 80,0%."
+    },
+    "4": {
+      "name": "Chói Lóa! Kính Vạn Hoa Hình Tượng",
+      "description": "Khi số lượng nhân vật vận mệnh \"Vui Vẻ\" trong đội bằng 1/2/3 trở lên, Sparxie thi triển Tuyệt Kỹ sẽ nhận thêm 2/4/8 Điểm Hài Hước và 1/1/4 \"Điểm Bạo\"."
+    },
+    "6": {
+      "name": "Sôi Sục! Bảng Màu Sự Thật Và Giả Dối",
+      "description": "Hiện tại cứ sở hữu 1 Điểm Hài Hước, sẽ khiến toàn phe ta tăng 8% Sát Thương Bạo Kích, tối đa tăng 80%."
+    }
+  },
+  "stat_bonuses": [
+    {
+      "stat": "Tỷ Lệ Bạo Kích",
+      "value": "+12%"
+    },
+    {
+      "stat": "Sát Thương Bạo Kích",
+      "value": "+13.3%"
+    },
+    {
+      "stat": "Độ Vui Vẻ",
+      "value": "+28%"
+    }
+  ],
+  "eidolons": [
+    {
+      "level": 1,
+      "name": "#ViralMạngXãHội #CôẤyLàAi?",
+      "description": "Khi Thời Khắc Aha kết thúc sẽ nhận được 5 Điểm Hài Hước. Hiện tại cứ sở hữu 1 Điểm Hài Hước, sẽ khiến toàn phe ta tăng 1,5% Xuyên Kháng Toàn Thuộc Tính, tối đa tăng 15%."
+    },
+    {
+      "level": 2,
+      "name": "#CưDânMạngRấtSángSuốt",
+      "description": "Sau khi Thời Khắc Aha kết thúc, Sparxie nhận 1 hiệp thêm và 2 \"Điểm Bạo\". Mỗi khi tiêu hao 1 \"Điểm Bạo\", bản thân tăng 10% Sát Thương Bạo Kích, duy trì 2 hiệp, tối đa cộng dồn 4 tầng."
+    },
+    {
+      "level": 3,
+      "name": "#HãyNhấn #SiêuLiênKếtNhịpTim",
+      "description": "Cấp Chiến Kỹ +2, tối đa không quá cấp 15; Cấp Tấn Công Thường +1, tối đa không quá cấp 10; Cấp Kỹ Năng Vui Vẻ +1, tối đa không quá cấp 15."
+    },
+    {
+      "level": 4,
+      "name": "#CựcCuốn #QuảnLýBiểuCảmĐỉnhCao",
+      "description": "Khi thi triển Tuyệt Kỹ sẽ nhận thêm 5 Điểm Hài Hước, khiến Độ Vui Vẻ của bản thân tăng 36%, duy trì 3 hiệp."
+    },
+    {
+      "level": 5,
+      "name": "#ThếGiớiTanVỡ #NăngLượngTíchCực",
+      "description": "Cấp Tuyệt Kỹ +2, tối đa không quá cấp 15; Cấp Thiên Phú +2, tối đa không quá cấp 15; Cấp Kỹ Năng Vui Vẻ +1, tối đa không quá cấp 15."
+    },
+    {
+      "level": 6,
+      "name": "#Ta-đa #TôiSắpTrởThànhTuyệtBản",
+      "description": "Xuyên Kháng Toàn Thuộc Tính tăng 20%. Kỹ Năng Vui Vẻ mỗi khi tính vào 1 Điểm Hài Hước sẽ tăng 1 lần số lần gây sát thương thêm, tối đa tăng đến 40 lần."
+    }
+  ]
+}

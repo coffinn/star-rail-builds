@@ -78,7 +78,7 @@
       "min_level": 1,
       "max_level": 12,
       "default_level": 10,
-      "description_template": "While Yao Guang holds \"Certified Banger\": After an ally target uses an attack, triggers the \"Great Boon\" effect, dealing 1 additional instance of {{scaling1}}% Elation DMG of the corresponding Type to 1 random hit target. If this attack consumes Skill Points, then additionally triggers \"Great Boon\" 1 time. When triggering the \"Great Boon\" effect, if the attacker's Elation is lower than that of Yao Guang, then this instance of Elation DMG will take Yao Guang's Elation into calculation. Triggering the \"Great Boon\" effect is not considered as using 1 instance of attack.",
+      "description_template": "While Yao Guang holds \"Certified Banger\":\nAfter an ally target uses an attack, triggers the \"Great Boon\" effect, dealing 1 additional instance of {{scaling1}}% Elation DMG of the corresponding Type to 1 random hit target. If this attack consumes Skill Points, then additionally triggers \"Great Boon\" 1 time.\nWhen triggering the \"Great Boon\" effect, if the attacker's Elation is lower than that of Yao Guang, then this instance of Elation DMG will take Yao Guang's Elation into calculation. Triggering the \"Great Boon\" effect is not considered as using 1 instance of attack.",
       "scaling": {
         "scaling1": [
           10,
@@ -230,12 +230,12 @@
     {
       "level": 3,
       "name": "Auspices Mirrored In Decalight",
-      "description": "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10. Elation Skill Lv. +1, up to a maximum of Lv. 15."
+      "description": "Skill Lv. +2, up to a maximum of Lv. 15.\nBasic ATK Lv. +1, up to a maximum of Lv. 10.\nElation Skill Lv. +1, up to a maximum of Lv. 15."
     },
     {
       "level": 5,
       "name": "Bejeweled in Radiant Grace",
-      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15. Elation Skill Lv. +1, up to a maximum of Lv. 15."
+      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15.\nTalent Lv. +2, up to a maximum of Lv. 15.\nElation Skill Lv. +1, up to a maximum of Lv. 15."
     }
   ]
 }
