@@ -1,5 +1,9 @@
 {
     "substats_priority": [
-        "break-effect"
+        "break-effect",
+          {
+            "name": "spd",
+            "note": {"en": "Due to Sushang's plentiful self advance and speed buffs, speed is an optional stat on her."}
+        }
     ]
 }
