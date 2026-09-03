@@ -1,6 +1,6 @@
 {
     "substats_priority": [
-        "spd","break-effect",
+        "spd","be",
         "hp%"
     ]
 }
