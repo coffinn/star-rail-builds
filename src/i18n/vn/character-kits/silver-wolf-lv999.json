@@ -1,0 +1,286 @@
+{
+    "id": "silver-wolf-lv999",
+    "name": "Sói Bạc LV.999",
+    "rarity": 5,
+    "element": "imaginary",
+    "path": "elation",
+    "version_released": "4.2",
+    "abilities": {
+        "basic": {
+            "type": "Tấn Công Thường",
+            "name": "Một Đấm!",
+            "tag": "Đánh Đơn",
+            "break": "10",
+            "min_level": 1,
+            "max_level": 7,
+            "default_level": 6,
+            "description_template": "Gây Sát Thương Số Ảo cho 1 kẻ địch chỉ định bằng {{img_dmg}}% Tấn Công của \"Sói Bạc LV.999\".",
+            "scaling": {
+                "img_dmg": [
+                    50,
+                    60,
+                    70,
+                    80,
+                    90,
+                    100,
+                    110
+                ]
+            },
+            "variants": [
+                {
+                    "type": "Tấn Công Thường Cường Hóa",
+                    "name": "Ải Thưởng: \"Thời Khắc Sói Tôn\"",
+                    "tag": "Nảy Bật",
+                    "break_bounce": 0.1,
+                    "break_aoe": 30,
+                    "break_final_hit": 10,
+                    "break_total": 50,
+                    "description_template": "Gây Sát Thương Số Ảo tổng cộng bằng {{damage}}% Tấn Công của \"Sói Bạc LV.999\", chia đều thành 100 đòn sát thương nảy bật lên các kẻ địch đơn lẻ ngẫu nhiên. Mỗi khi nảy bật đạt số đòn nhất định, tạm dừng nảy bật và kích hoạt 1 lần \"Túi Mù Tiếp Tế Cực Phẩm\", tổng cộng có thể kích hoạt 3 lần.\nNếu gây sát thương chí tử cho toàn bộ phe địch trên sân thì kết thúc kỹ năng lần này, sau khi xuất hiện mục tiêu phe địch có thể tấn công sẽ nhận 1 hiệp tăng thêm và dựa trên số đòn nảy bật còn lại và số lần \"Túi Mù Tiếp Tế Cực Phẩm\" để thi triển lại. Khi kích hoạt hiệu ứng này lần đầu mỗi hiệp, khiến tất cả hiệu ứng buff của bản thân kéo dài thêm 1 hiệp.\nSau khi tổng kết toàn bộ sát thương nói trên, sẽ phát động Đòn Đánh Cuối Cùng, gây Sát Thương Số Ảo bằng {{final_hit}}% Công của \"Sói Bạc LV.999\", chia đều cho toàn bộ phe địch.\nTấn Công Thường Cường Hóa không thể hồi Điểm Chiến Kỹ. Mỗi khi có 60 \"Điểm Ẩn\", sát thương gây ra trong thời gian Tấn Công Thường Cường Hóa tăng bằng 15% sát thương gốc, tối đa cộng dồn 2 tầng.",
+                    "scaling": {
+                        "damage": [
+                            120,
+                            144,
+                            168,
+                            192,
+                            216,
+                            240,
+                            264
+                        ],
+                        "final_hit": [
+                            50,
+                            60,
+                            70,
+                            80,
+                            90,
+                            100,
+                            110
+                        ]
+                    }
+                }
+            ]
+        },
+        "skill": {
+            "type": "Chiến Kỹ",
+            "name": "Bùng Nổ Thuộc Tính Shoot",
+            "tag": "Đánh Lan",
+            "break_aoe": 10,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Nhận 5 Điểm Hài Hước, gây Sát Thương Số Ảo cho toàn bộ phe địch bằng {{damage}}% Tấn Công của \"Sói Bạc LV.999\".",
+            "scaling": {
+                "damage": [
+                    80,
+                    88,
+                    96,
+                    104,
+                    112,
+                    120,
+                    130,
+                    140,
+                    150,
+                    160,
+                    168,
+                    176
+                ]
+            }
+        },
+        "ultimate": {
+            "type": "Tuyệt Kỹ",
+            "name": "Người Chơi Vô Địch: Khởi Động!",
+            "tag": "Cường Hóa",
+            "energy_cost": "60 \"Điểm Ẩn\"",
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Vào trạng thái \"Người Chơi Vô Địch\" và Ưu Tiên Hành Động 100%.\nTrong trạng thái \"Người Chơi Vô Địch\" sẽ triển khai Kết Giới. Khi \"Sói Bạc LV.999\" sở hữu \"Việc Tốt Đáng Thưởng\", mỗi khi mục tiêu phe ta trong Kết Giới tiêu hao 1 Điểm Chiến Kỹ, có xác suất kích hoạt 1 lần \"Túi Mù Tiếp Tế Cực Phẩm\" của \"Sói Bạc LV.999\": Gây {{distributed_damage}}% Sát Thương Vui Vẻ thuộc tính Số Ảo, chia đều cho toàn bộ phe địch, và kích hoạt ngẫu nhiên 1 loại hiệu ứng:\n\"Kiếm Siêu Siêu To\": Gây thêm Sát Thương Chuẩn bằng 20% tổng sát thương lần này cho mục tiêu phe địch có HP cao nhất;\n\"Trứng Nổ Bùm Bùm\": Hồi 2 Điểm Chiến Kỹ;\n\"Đậu Vị Kỳ Quái\": Nhận 3 Điểm Hài Hước.\nXác suất cố định ban đầu kích hoạt hiệu ứng này là 100%, sau khi kích hoạt thành công, xác suất cố định cho lần kích hoạt tiếp theo sẽ giảm còn 20% của xác suất hiện tại. Nếu trước khi kích hoạt mà mục tiêu đã bị tiêu diệt, thì sẽ kích hoạt lên mục tiêu phe địch mới vào trận.",
+            "scaling": {
+                "distributed_damage": [
+                    45,
+                    50,
+                    54,
+                    58,
+                    63,
+                    68,
+                    73,
+                    79,
+                    84,
+                    90,
+                    94,
+                    99
+                ]
+            }
+        },
+        "talent": {
+            "type": "Thiên Phú",
+            "name": "Tôi Gánh Team, Bao Thắng Chắc",
+            "tag": "Cường Hóa",
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Sau khi \"Điểm Ẩn\" đạt 60 điểm có thể kích hoạt Tuyệt Kỹ, sau khi đạt giới hạn còn có thể dư ra 240 điểm.\nKhi nhận Điểm Hài Hước, \"Sói Bạc LV.999\" sẽ nhận lượng \"Điểm Ẩn\" tương đương. Mỗi \"Điểm Ẩn\" giúp tăng {{increased_crit_rate}}% Tỷ Lệ Bạo Kích. Sau khi Tỷ Lệ Bạo Kích đạt 100%, mỗi \"Điểm Ẩn\" còn lại sẽ chuyển thành tăng {{increased_crit_dmg}}% Sát Thương Bạo Kích.\nTrong trạng thái \"Người Chơi Vô Địch\", \"Sói Bạc LV.999\" miễn dịch Hiệu Ứng Xấu Loại Khống Chế, không thể thi triển Tuyệt Kỹ, sở hữu Tấn Công Thường Cường Hóa và Kỹ Năng Vui Vẻ Cường Hóa, sau khi thi triển hoàn tất #5[i] lần Tấn Công Thường Cường Hóa sẽ thoát trạng thái \"Người Chơi Vô Địch\". Khi thoát trạng thái \"Người Chơi Vô Địch\", \"Điểm Ẩn\" sẽ bị xóa sạch.\nKhi có \"Việc Tốt Đáng Thưởng\", thi triển Tấn Công Thường, Chiến Kỹ gây {{imaginary_dmg}}% Sát Thương Vui Vẻ thuộc tính Số Ảo cho mục tiêu phe địch bị tấn công, sát thương kỹ năng của Tấn Công Thường Cường Hóa chuyển thành Sát Thương Vui Vẻ có cùng bội số.",
+            "scaling": {
+                "increased_crit_rate": [
+                    0.2,
+                    0.22,
+                    0.24,
+                    0.26,
+                    0.28,
+                    0.3,
+                    0.325,
+                    0.35,
+                    0.375,
+                    0.4,
+                    0.42,
+                    0.44
+                ],
+                "increased_crit_dmg": [
+                    0.4,
+                    0.44,
+                    0.48,
+                    0.52,
+                    0.56,
+                    0.6,
+                    0.65,
+                    0.7,
+                    0.75,
+                    0.8,
+                    0.84,
+                    0.88
+                ],
+                "imaginary_dmg": [
+                    20,
+                    22,
+                    24,
+                    26,
+                    28,
+                    30,
+                    32,
+                    35,
+                    38,
+                    40,
+                    42,
+                    44
+                ]
+            }
+        },
+        "technique": {
+            "type": "Bí Kỹ",
+            "name": "Ôi Bạn Ơi, Đây Mới Là Bí Kỹ Tier 0",
+            "tag": "Summon",
+            "description": "Triệu hồi \"Đậu Vị Kỳ Quái\", sử dụng lần nữa sẽ hủy triệu hồi. Sử dụng Bí Kỹ không tiêu hao Điểm Bí Kỹ, khi Điểm Bí Kỹ bằng 0 sẽ hủy triệu hồi và không thể sử dụng Bí Kỹ.\n\"Đậu Vị Kỳ Quái\" sẽ khiến kẻ địch thường trong phạm vi nhất định rơi vào trạng thái Kinh Hãi, đồng thời tự động tìm kiếm và tấn công kẻ địch thường, tiêu hao 1 Điểm Bí Kỹ lập tức tiêu diệt kẻ địch đó mà không cần vào chiến đấu.\nKhi \"Đậu Vị Kỳ Quái\" ở trong trận, sau khi vào chiến đấu, khi bắt đầu mỗi đợt sẽ kích hoạt 1 lần \"Túi Mù Tiếp Tế Cực Phẩm\" tương ứng với \"Đậu Vị Kỳ Quái\", Sát Thương Vui Vẻ gây ra lần này tính cố định 99 điểm \"Việc Tốt Đáng Thưởng\"."
+        }
+    },
+    "major_traces": {
+        "2": {
+            "name": "Hướng Dẫn Vượt Nhanh Kết Cục Giả",
+            "description": "Khi Tốc Độ lớn hơn hoặc bằng 160, khiến Độ Vui Vẻ của bản thân tăng 50%, sau đó cứ vượt quá 1 điểm Tốc Độ sẽ khiến Độ Vui Vẻ của bản thân tăng 2%, tối đa tính 100 điểm Tốc Độ vượt quá."
+        },
+        "4": {
+            "name": "Điều Kiện Mở Khóa Kết Cục Thật",
+            "description": "Nếu Điểm Hài Hước được tính khi thi triển Kỹ Năng Vui Vẻ lớn hơn hoặc bằng 20, sẽ nhận thêm 20 \"Điểm Ẩn\" (nếu lớn hơn hoặc bằng 40, lại nhận thêm 20 điểm)."
+        },
+        "6": {
+            "name": "Hoàn Thành Tất Cả Thành Tựu Ải Ẩn",
+            "description": "Sau khi vào trạng thái \"Người Chơi Vô Địch\", nhận 20 \"Điểm Ẩn\"."
+        }
+    },
+    "stat_bonuses": [
+        {
+            "stat": "Độ Vui Vẻ",
+            "value": "+10%"
+        },
+        {
+            "stat": "Tốc Độ",
+            "value": "+9"
+        },
+        {
+            "stat": "Tỷ Lệ Bạo Kích",
+            "value": "+18.7%"
+        }
+    ],
+    "eidolons": [
+        {
+            "level": 1,
+            "name": "Trình Chỉnh Sửa Aether: Tinh Hồn +1",
+            "description": "Sát thương mục tiêu phe địch trong Kết Giới phải chịu tăng 20%.\nKhi thoát trạng thái \"Người Chơi Vô Địch\" sẽ không xóa hết \"Điểm Ẩn\", đổi thành giữ lại 20% \"Điểm Ẩn\"."
+        },
+        {
+            "level": 2,
+            "name": "Là Cơ Chế, Không Phải BUG",
+            "description": "Sau khi vào trạng thái \"Người Chơi Vô Địch\", khiến tất cả hiệu ứng buff bản thân đang có kéo dài 1 hiệp. Trong trạng thái \"Người Chơi Vô Địch\" lần này, mỗi khi khiến \"Điểm Ẩn\" tăng 120 điểm (bao gồm \"Điểm Ẩn\" ban đầu), \"Sói Bạc LV.999\" sẽ nhận 1 hiệp tăng thêm và hồi 1 lần số lần có thể thi triển Tấn Công Thường Cường Hóa."
+        },
+        {
+            "level": 3,
+            "name": "Chỉ Có Cấp 15 Thôi À? Ai Điền Vậy",
+            "description": "Cấp Chiến Kỹ +2, tối đa không quá cấp 15; Cấp Tấn Công Thường +1, tối đa không quá cấp 10; Cấp Kỹ Năng Vui Vẻ +1, tối đa không quá cấp 15."
+        },
+        {
+            "level": 4,
+            "name": "Tôi Đến, Tôi Thấy, Tôi... One-Shot",
+            "description": "Sát Thương Vui Vẻ do \"Trình Diễn Sát Thương Cấp Honkai\" gây ra được tính thêm 5 lần Điểm Hài Hước."
+        },
+        {
+            "level": 5,
+            "name": "Tấn Công Thường Chính Là Tuyệt Kỹ",
+            "description": "Cấp Tuyệt Kỹ +2, tối đa không quá cấp 15; Cấp Thiên Phú +2, tối đa không quá cấp 15; Cấp Kỹ Năng Vui Vẻ +1, tối đa không quá cấp 15."
+        },
+        {
+            "level": 6,
+            "name": "Tôi Tăng Max Cấp Một Mình!",
+            "description": "Sát Thương Vui Vẻ gây ra trong thời gian Tấn Công Thường Cường Hóa tăng Hài Hước 50%.\nKhi mục tiêu phe địch vào chiến đấu, sẽ bị gắn \"Điểm Yếu Tuyệt Đối\": Sở hữu Điểm Yếu Toàn Thuộc Tính và Kháng Cơ Bản Toàn Thuộc Tính giảm xuống 0 (Nếu Kháng Cơ Bản bằng 0 thì đổi thành Kháng Thuộc Tính tương ứng giảm 20%)."
+        }
+    ],
+    "level_80_stats": {
+        "hp": 1047,
+        "atk": 388,
+        "def": 654,
+        "spd": 110
+    },
+    "global_passives": {
+        "mcawolfee-999": {
+            "name": "McAwolfee 999",
+            "tag": "Hỗ Trợ",
+            "description": "Sau khi nhận \"Sói Bạc LV.999\" hoặc đội hình hiện tại có \"Sói Bạc LV.999\": Trong chiến đấu, nếu mục tiêu phe địch thi triển Hiệu Ứng Xấu Loại Khống Chế lên phe ta, sẽ khiến toàn bộ phe ta nhận \"Tường Lửa\": Mục tiêu phe ta miễn nhiễm Hiệu Ứng Xấu Loại Khống Chế do mục tiêu phe địch thi triển, duy trì 1 hiệp. Hiệu ứng này mỗi đợt tối đa kích hoạt 1 lần."
+        }
+    },
+    "elation": {
+        "skills": {
+            "skill": {
+                "type": "Kỹ Năng Vui Vẻ",
+                "name": "Phát Lại Thao Tác Cấp Đỉnh Cao",
+                "tag": "Cường Hóa",
+                "participant_id": 999,
+                "description": "Nhận 15 \"Điểm Ẩn\"."
+            },
+            "skill-2": {
+                "type": "Kỹ Năng Vui Vẻ Cường Hóa",
+                "name": "Trình Diễn Sát Thương Cấp Honkai",
+                "tag": "Nảy Bật",
+                "participant_id": 999,
+                "break_bounce": 10,
+                "break_total": 60,
+                "min_level": 1,
+                "max_level": 12,
+                "default_level": 10,
+                "description_template": "Gây 6 lần sát thương, mỗi lần gây {{imaginary_elation_dmg}}% Imaginary Sát Thương Vui Vẻ thuộc tính Số Ảo cho 1 kẻ địch ngẫu nhiên. Đặt lại xác suất cố định kích hoạt \"Túi Mù Tiếp Tế Cực Phẩm\" về giá trị ban đầu.",
+                "scaling": {
+                    "imaginary_elation_dmg": [
+                        45,
+                        49.5,
+                        54,
+                        58.5,
+                        63,
+                        67.5,
+                        73.1,
+                        78.8,
+                        84.4,
+                        90,
+                        94.5,
+                        99
+                    ]
+                }
+            }
+        }
+    }
+}
