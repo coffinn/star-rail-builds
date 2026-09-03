@@ -34,7 +34,14 @@
                 },
                 {
                     "name": "the-forever-victual"
-                }
+                },
+    {
+      "name": "planetary-rendezvous",
+      "note_group": "phys-affinity",
+      "note": {
+        "en": "Requires a Physical DPS to be in the team."
+      }
+    }
             ]
         },
         {
@@ -44,13 +51,5 @@
                 }
             ]
         }
-    ],
-  "conditional": [
-    {
-      "name": "planetary-rendezvous",
-      "note": {
-        "en": "Requires a Physical DPS to be in the team."
-      }
-    }
-  ]
+    ]
 }
