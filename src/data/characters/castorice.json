@@ -44,7 +44,7 @@
       "min_level": 1,
       "max_level": 12,
       "default_level": 10,
-      "description_template": "Consumes 30% of all allies' current HP. Deals Quantum DMG equal to 25%—55% of Castorice's Max HP to one designated enemy and Quantum DMG equal to {{damage_adjacent}}% of Castorice's Max HP to adjacent targets.\nIf the current HP is insufficient, reduces the current HP down to 1.\nIf Netherwing is on the battlefield, the Skill becomes \"Boneclaw, Doomdrake's Embrace\" instead.",
+      "description_template": "Consumes 30% of all allies' current HP. Deals Quantum DMG equal to {{damage_main}}% of Castorice's Max HP to one designated enemy and Quantum DMG equal to {{damage_adjacent}}% of Castorice's Max HP to adjacent targets.\nIf the current HP is insufficient, reduces the current HP down to 1.\nIf Netherwing is on the battlefield, the Skill becomes \"Boneclaw, Doomdrake's Embrace\" instead.",
       "scaling": {
         "damage_main": [
           25.0,
@@ -249,9 +249,6 @@
             "type": "Memosprite Talent",
             "name": "Roar Rumbles the Realm",
             "tag": "Support",
-            "min_level": 1,
-            "max_level": 7,
-            "default_level": 6,
             "description": "When Netherwing is summoned, increases DMG dealt by all allies by 10%, lasting for 3 turn(s)."
           },
           {
