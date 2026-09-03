@@ -43,7 +43,8 @@
                             "name": "lushaka-the-sunken-seas",
                             "pieces": 2,
                             "note": {
-                                "en": "While Elation DMG is not affected by ATK, [[set:lushaka-the-sunken-seas]] can be used if Sparxie is on the team. As she has a trace that converts ATK into Elation DMG."
+                                "en": "While Elation DMG is not affected by ATK, [[set:lushaka-the-sunken-seas]] can be used if Sparxie is on the team. As she has a trace that converts ATK into Elation.",
+                                "ru": "Хотя урон Радости не зависит от силы атаки, [[set:lushaka-the-sunken-seas|Русалку, затопленные берега]] можно использовать, если Искра находится в команде. У неё есть способность, которая преобразует силу атаки в Радость."
                             }
                         }
                     ]

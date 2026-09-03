@@ -4,14 +4,16 @@
             "name": "spd",
             "recommended": "180+",
             "note": {
-                "en": "Aim for 200+ SPD with S1: [[light-cone:when-she-decided-to-see]]."
+                "en": "Aim for 200+ SPD with S1: [[light-cone:when-she-decided-to-see]].",
+                "ru": "Стремитесь к 200+ скорости при исопльзовании S1: [[light-cone:when-she-decided-to-see]]."
             }
         },
         {
             "name": "cr",
             "recommended": "82%",
             "note": {
-                    "en": "Optional for personal damage. Out of combat, assuming 4-Pc [[set:diviner-of-distant-reach]]."
+                    "en": "Optional for personal damage. Out of combat, assuming 4-Pc [[set:diviner-of-distant-reach]].",
+                    "ru": "Опционально, для личного урона. Вне боя, при условии использования 4 шт. [[set:diviner-of-distant-reach|Недосягаемого прорицателя]]."
                 }
         }
     ]

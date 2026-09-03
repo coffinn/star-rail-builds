@@ -1,21 +1,26 @@
 {
     "best": true,
     "name": {
-        "en": "Elation Sub DPS"
+        "en": "Elation Sub DPS",
+        "ru": "Саб ДД Радости"
     },
     "notes": [
         
         {
-            "en": "**Summary and General Analysis**\n\n✦ Damage profile is almost entirely Elation DMG. She converts up to 3600 ATK to Elation. Damage mostly comes from her Elation Skill and Enhanced Basic ATK.\n\n✦ Buffs the team's CRIT DMG based on Punchline.\n\n✦ Her Skill allows her to consume up to 20 Skill Points per turn, with each one generating Punchline and increasing her Enhanced Basic ATK's damage output.\n\n✦ While she still requires a teammate who can generate Skill Points, her expenditure is managed by several factors: her Enhanced Basic ATK still generates a Skill Point; she has a chance to recover two Skill Points when spending one; and her Ultimate and Elation Skill give points of \"Thrill\", which offset 1 Skill Point usage.\n\n✦ Her personal damage is high for a Sub DPS, and she generates a lot of Punchline."
+            "en": "**Summary and General Analysis**\n\n✦ Damage profile is almost entirely Elation DMG. She converts up to 3600 ATK to Elation. Damage mostly comes from her Elation Skill and Enhanced Basic ATK.\n\n✦ Buffs the team's CRIT DMG based on Punchline.\n\n✦ Her Skill allows her to consume up to 20 Skill Points per turn, with each one generating Punchline and increasing her Enhanced Basic ATK's damage output.\n\n✦ While she still requires a teammate who can generate Skill Points, her expenditure is managed by several factors: her Enhanced Basic ATK still generates a Skill Point; she has a chance to recover two Skill Points when spending one; and her Ultimate and Elation Skill give points of \"Thrill\", which offset 1 Skill Point usage.\n\n✦ Her personal damage is high for a Sub DPS, and she generates a lot of Punchline.",
+            "ru": "**Краткое описание и общий анализ**\n\n✦ Урон в основном состоит из урона Радости. Она конвертирует до 3600 атаки в Радость. Урон в основном обеспечивается её навыком Радости и улучшенной базовой атакой.\n\n✦ Увеличивает крит. урон команды в зависимости от ед. Юмора.\n\n✦ Её навык позволяет ей расходовать до 20 очков навыков за ход, каждое из которых генерирует Юмор и увеличивает урон от её улучшенной базовой атаки.\n\n✦ Хотя ей по-прежнему нужен напарник, способный генерировать очки навыков, её расход регулируется несколькими факторами: её улучшенная базовая атака всё ещё генерирует одно очко навыков, у неё есть шанс восстановить два очка навыков при расходовании одного, а её сверхспособность и навык Радости дают ед. Взрыва, которые компенсируют 1 очко навыков.\n\n✦ Её личный урон высок как для Саб-ДД, и она генерирует много Юмора."
         },
         {
-            "en": "**Investment Priority**\n\n**E2 > S1 > E1**\n\n**Investment Explanation**\n\n✦ E2 grants her an extra turn and 2 \"Thrill\" when an Aha Instant ends, and self-buffs CRIT DMG when spending \"Thrill\".\n\n✦ S1: [[light-cone:dazzled-by-a-flowery-world]] increases the team's Skill Point cap, allowing her to generate large amounts of Punchline more consistently. Also provides a teamwide Elation buff, and grants herself DEF Ignore and CRIT DMG for a sizeable personal damage increase.\n\n✦ E1 grants teamwide All-Type RES PEN, and 5 more Punchline per Aha Instant. Good, but still weaker and more expensive than S1."
+            "en": "**Investment Priority**\n\n**E2 > S1 > E1**\n\n**Investment Explanation**\n\n✦ E2 grants her an extra turn and 2 \"Thrill\" when an Aha Instant ends, and self-buffs CRIT DMG when spending \"Thrill\".\n\n✦ S1: [[light-cone:dazzled-by-a-flowery-world]] increases the team's Skill Point cap, allowing her to generate large amounts of Punchline more consistently. Also provides a teamwide Elation buff, and grants herself DEF Ignore and CRIT DMG for a sizeable personal damage increase.\n\n✦ E1 grants teamwide All-Type RES PEN, and 5 more Punchline per Aha Instant. Good, but still weaker and more expensive than S1.",
+            "ru": "**Приоритет инвестиций**\n\n**E2 > S1 > E1**\n\n**Объяснение инвестиций**\n\n✦ E2 даёт ей дополнительный ход и 2 ед. Взрыва после завершения Мига Ахи, а также увеличивает крит. урон при расходовании ед. Взрыва.\n\n✦ S1: [[light-cone:dazzled-by-a-flowery-world]] увеличивает лимит очков навыков команды, позволяя ей более стабильно генерировать большое количество ед. Юмора. Также даёт командный бафф Радости и даёт ей игнорирование защиты и крит. урон для значительного увеличения личного урона.\n\n✦ E1 даёт пробитие всех типов сопротивления для команды и на 5 больше ед. Юмора за каждый Миг Ахи. Хорошо, но всё ещё слабее и дороже, чем S1."
         },
         {
-            "en": "**Skill Point Usage**\n\nNegative"
+            "en": "**Skill Point Usage**\n\nNegative",
+            "ru": "**Восстановление очков навыков**\n\nОтрицательное"
         },
         {
-            "en": "**Ability Rotation**\n\nEnhanced Basic ATK Spam"
+            "en": "**Ability Rotation**\n\nEnhanced Basic ATK Spam",
+            "ru": "**Ротация**\n\nСпам усиленной базовой атаки"
         }
     ]
 }
