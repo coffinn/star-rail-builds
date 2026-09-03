@@ -2,6 +2,9 @@
     "substats_priority": [
         "spd",
         "def%",
-        "ehr"
+        {
+            "name": "ehr",
+            "note_group": "ehrstat"
+        }
     ]
 }

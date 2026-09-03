@@ -5,16 +5,18 @@
             "recommended": "180+",
             "note": {
                 "en": "Aim for 200+ SPD with S1: [[light-cone:when-she-decided-to-see]].",
-                "ru": "Стремитесь к 200+ скорости при исопльзовании S1: [[light-cone:when-she-decided-to-see]]."
+                "ru": "Стремитесь к 200+ скорости при исопльзовании S1: [[light-cone:when-she-decided-to-see]].",
+                "vn": "Nhắm mốc Tốc Độ 200+ nếu dùng Nón Ánh Sáng S1 [[light-cone:when-she-decided-to-see]]."
             }
         },
         {
             "name": "cr",
             "recommended": "82%",
             "note": {
-                    "en": "Optional for personal damage. Out of combat, assuming 4-Pc [[set:diviner-of-distant-reach]].",
-                    "ru": "Опционально, для личного урона. Вне боя, при условии использования 4 шт. [[set:diviner-of-distant-reach|Недосягаемого прорицателя]]."
-                }
+                "en": "Optional for personal damage. Out of combat, assuming 4-Pc [[set:diviner-of-distant-reach]].",
+                "ru": "Опционально, для личного урона. Вне боя, при условии использования 4 шт. [[set:diviner-of-distant-reach|Недосягаемого прорицателя]].",
+                "vn": "Tùy ý, để tăng sát thương cá nhân của Yao Guang. Chỉ số giả định dùng bộ 4 món [[set:diviner]]"
+            }
         }
     ]
 }

@@ -11,6 +11,7 @@
         {
             "name": "ehr",
             "recommended": "92% / 156%",
+            "note_group": "ehrstat",
             "note": {
                 "en": "Optional stat. Effect Hit Rate% is needed to guarantee Freeze against 20% / 40% Effect RES enemies."
             }

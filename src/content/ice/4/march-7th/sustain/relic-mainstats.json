@@ -5,7 +5,8 @@
                 "name": "def%"
             },
             {
-                "name": "ehr"
+                "name": "ehr",
+                "note_group": "ehrstat"
             }
         ],
         "feet": [

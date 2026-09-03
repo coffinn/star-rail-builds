@@ -5,7 +5,8 @@
             "recommended": "104",
             "note": {
                 "en": "This build does not require [[stat:spd]].",
-                "ru": "Данный билд не требует скорость."
+                "ru": "Данный билд не требует скорость.",
+                "vn": "Build này không cần [[stat:spd]]."
             }
         },
         {
@@ -13,12 +14,18 @@
             "recommended": "70%",
             "note": {
                 "en": "Evanescia's A2 buffs her [[stat:cr]] by 30%, for 100% [[stat:cr]] in combat.",
-                "ru": "А2 Эванессы увеличивает её крит. шанс на 30%, что в итоге даёт ей 100% крит. шанса в бою."
+                "ru": "А2 Эванессы увеличивает её крит. шанс на 30%, что в итоге даёт ей 100% крит. шанса в бою.",
+                "vn": "Năng Lực Thêm A2 của Evanescia buff 30% [[stat:cr]], giúp cô ấy đạt được 100% [[stat:cr]] trong trận."
             }
         },
         {
             "name": "cd",
-            "recommended": "190%+"
+            "recommended": "190%+",
+            "note": {
+                "en": "Aim for 250%+ [[stat:cd]] with S1: [[light-cone:until-the-flowers-bloom-again]].",
+                "ru": "",
+                "vn": "Nhắm mốc [[stat:cd]] 250%+ nếu dùng Nón Ánh Sáng S1 [[light-cone:until-the-flowers-bloom-again]]."
+            }
         }
     ]
 }
