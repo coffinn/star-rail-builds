@@ -130,19 +130,19 @@
     "talent": {
       "type": "Talent",
       "name": "Youth: Halcyon Evermore",
-      "tag": "AoE",
+      "tag": "Enhance",
       "energy_gain": 10,
       "break_aoe": 10,
       "min_level": 1,
       "max_level": 12,
       "default_level": 10,
-      "description_template": "Evanescia gains Elation equal to 20% of CRIT DMG. When Evanescia gains Energy, she will simultaneously gain an equal amount of \"Certified Banger.\" When Evanescia gains \"Certified Banger,\" she will simultaneously gain an equal amount of Energy. The amount of \"Certified Banger\" taken into calculation via this method cannot exceed 100 points in a single instance. After accumulating 240 Energy, she consumes this accumulation of 240, and \"Master Fox\" launches Follow-Up ATK, dealing Physical DMG equal to {{scaling1}}% of Evanescia's ATK to all enemies, and regenerates 10 Energy for Evanescia. Each instance of Energy regeneration grants up to an accumulation of 240. While Evanescia holds \"Certified Banger\": Using Skill can deal {{scaling2}}% Physical Elation DMG to the attacked enemy targets. Using Ultimate can deal {{scaling3}}% Physical Elation DMG to all enemies and also deals {{scaling4}}% Physical Elation DMG to the enemy targets that have been randomly dealt DMG by Ultimate. When Ultimate deals Elation DMG, the amount of \"Certified Banger\" taken into account is at least equal to Max Energy. Master Fox's Follow-Up ATK deals {{scaling5}}% Physical Elation DMG to all enemies.",
+      "description_template": "Evanescia gains Elation equal to 20% of CRIT DMG. When Evanescia gains Energy, she will simultaneously gain an equal amount of \"Certified Banger.\" When Evanescia gains \"Certified Banger,\" she will simultaneously gain an equal amount of Energy. The amount of \"Certified Banger\" taken into calculation via this method cannot exceed 100 points in a single instance. After accumulating 240 Energy, she consumes this accumulation of 240, and \"Master Fox\" launches Follow-Up ATK, dealing Physical DMG equal to {{scaling1}}% of Evanescia's ATK to all enemies, and regenerates 10 Energy for Evanescia. Each instance of Energy regeneration grants up to an accumulation of 240. While Evanescia holds \"Certified Banger\":\nUsing Skill can deal {{scaling2}}% Physical Elation DMG to the attacked enemy targets.\nUsing Ultimate can deal {{scaling3}}% Physical Elation DMG to all enemies and also deals {{scaling4}}% Physical Elation DMG to the enemy targets that have been randomly dealt DMG by Ultimate. When Ultimate deals Elation DMG, the amount of \"Certified Banger\" taken into account is at least equal to Max Energy.\nMaster Fox's Follow-Up ATK deals {{scaling5}}% Physical Elation DMG to all enemies.",
       "scaling": {
-        "scaling1": "50,55,60,65,70,75,81.3,87.5,93.8,100,105,110",
-        "scaling2": "8,8.8,9.6,10.4,11.2,12,13,14,15,16,16.8,17.6",
-        "scaling3": "12,13.2,14.4,15.6,16.8,18,19.5,21,22.5,24,25.2,26.4",
-        "scaling4": "14,15.4,16.8,18.2,19.6,21,22.8,24.5,26.3,28,29.4,30.8",
-        "scaling5": "12.5,13.8,15,16.3,17.5,18.8,20.3,21.9,23.4,25,26.3,27.5"
+        "scaling1": [50,55,60,65,70,75,81.3,87.5,93.8,100,105,110],
+        "scaling2": [8,8.8,9.6,10.4,11.2,12,13,14,15,16,16.8,17.6],
+        "scaling3": [12,13.2,14.4,15.6,16.8,18,19.5,21,22.5,24,25.2,26.4],
+        "scaling4": [14,15.4,16.8,18.2,19.6,21,22.8,24.5,26.3,28,29.4,30.8],
+        "scaling5": [12.5,13.8,15,16.3,17.5,18.8,20.3,21.9,23.4,25,26.3,27.5]
       }
     }
   },
@@ -230,12 +230,12 @@
     {
       "level": 3,
       "name": "Blade: A Feast on Evils",
-      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10. Elation Skill Lv. +1, up to a maximum of Lv. 15."
+      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15.\nBasic ATK Lv. +1, up to a maximum of Lv. 10.\nElation Skill Lv. +1, up to a maximum of Lv. 15."
     },
     {
       "level": 5,
       "name": "Arcadia: A Glimpse of Fates",
-      "description": "Skill Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15. Elation Skill Lv. +1, up to a maximum of Lv. 15."
+      "description": "Skill Lv. +2, up to a maximum of Lv. 15.\nTalent Lv. +2, up to a maximum of Lv. 15.\nElation Skill Lv. +1, up to a maximum of Lv. 15."
     }
   ]
 }

@@ -1,0 +1,241 @@
+{
+  "id": "evanescia",
+  "name": "Evanescia",
+  "rarity": "5",
+  "element": "physical",
+  "path": "elation",
+  "version_released": "4.2",
+  "max_energy": 480,
+  "level_80_stats": {
+    "hp": 1047,
+    "atk": 737,
+    "def": 460,
+    "spd": 104
+  },
+  "abilities": {
+    "basic": {
+      "type": "Tấn Công Thường",
+      "name": "Bài Tập - Kiểm Tra Đột Xuất",
+      "tag": "Đánh Đơn",
+      "energy_gain": 20,
+      "break": 10,
+      "min_level": 1,
+      "max_level": 7,
+      "default_level": 6,
+      "description_template": "Gây Sát Thương Vật Lý cho 1 kẻ địch chỉ định bằng {{scaling1}}% Tấn Công của Evanescia.",
+      "scaling": {
+        "scaling1": [
+          50,
+          60,
+          70,
+          80,
+          90,
+          100,
+          110
+        ]
+      }
+    },
+    "skill": {
+      "type": "Chiến Kỹ",
+      "name": "Kỷ Luật - Thước Đo Phán Quyết",
+      "tag": "Khuếch Tán",
+      "energy_gain": 30,
+      "break_main": 20,
+      "break_adjacent": 10,
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "Gây Sát Thương Vật Lý cho 1 kẻ địch chỉ định bằng {{scaling1}}% Tấn Công của Evanescia, gây Sát Thương Vật Lý cho mục tiêu lân cận bằng {{scaling2}}% Tấn Công của Evanescia, và nhận thêm 10 điểm Điểm Hài Hước.",
+      "scaling": {
+        "scaling1": [
+          150,
+          165,
+          180,
+          195,
+          210,
+          225,
+          243.8,
+          262.5,
+          281.3,
+          300,
+          315,
+          330
+        ],
+        "scaling2": [
+          75,
+          82.5,
+          90,
+          97.5,
+          105,
+          112.5,
+          121.9,
+          131.3,
+          140.6,
+          150,
+          157.5,
+          165
+        ]
+      }
+    },
+    "ultimate": {
+      "type": "Tuyệt Kỹ",
+      "name": "Kiếm Ca - Thần Quỷ Không Tha",
+      "tag": "Đánh Lan",
+      "energy_gain": 5,
+      "break_aoe": 20,
+      "break_bounce": 5,
+      "break_total": 45,
+      "energy_cost": 240,
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "Gây Sát Thương Vật Lý lên toàn bộ phe địch bằng {{scaling1}}% Tấn Công của Evanescia, sau đó gây 5 lần sát thương, mỗi lần sát thương gây Sát Thương Vật Lý lên 1 kẻ địch ngẫu nhiên bằng {{scaling2}}% Tấn Công của Evanescia.",
+      "scaling": {
+        "scaling1": [
+          80,
+          88,
+          96,
+          104,
+          112,
+          120,
+          130,
+          140,
+          150,
+          160,
+          168,
+          176
+        ],
+        "scaling2": [
+          72,
+          76.8,
+          81.6,
+          86.4,
+          91.2,
+          96,
+          102,
+          108,
+          114,
+          120,
+          124.8,
+          129.6
+        ]
+      }
+    },
+    "technique": {
+      "type": "Bí Kỹ",
+      "name": "Hoa Rơi - Người Đi Còn Lại Ký Ức",
+      "break": 20,
+      "description": "Lập tức tấn công tất cả kẻ địch trong phạm vi nhất định. Sau khi vào chiến đấu, gây Sát Thương Vật Lý cho toàn bộ phe địch bằng 100% Tấn Công của Evanescia, đồng thời nhận 20 điểm \"Việc Tốt Đáng Thưởng\"."
+    },
+    "talent": {
+      "type": "Thiên Phú",
+      "name": "Thanh Xuân - Tuổi Trẻ Vô Hạn",
+      "tag": "Cường Hóa",
+      "energy_gain": 10,
+      "break_aoe": 10,
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "Evanescia nhận Độ Vui Vẻ bằng 20% Sát Thương Bạo Kích. Khi Evanescia nhận Năng Lượng, sẽ đồng thời nhận \"Việc Tốt Đáng Thưởng\" có giá trị tương đương. Khi Evanescia nhận \"Việc Tốt Đáng Thưởng\", sẽ đồng thời nhận Năng Lượng có giá trị tương đương, \"Việc Tốt Đáng Thưởng\" được tính toán thông qua cách này trong một lần không vượt quá 100 điểm.\nKhi tích lũy nhận 240 điểm Năng Lượng, tiêu hao 240 điểm tích lũy, \"Giáo Viên Hồ Ly\" phát động Đòn Đánh Theo Sau gây Sát Thương Vật Lý bằng {{scaling1}}% Tấn Công của Evanescia cho toàn bộ phe địch, hồi 10 điểm Năng Lượng cho Evanescia, khi nhận Năng Lượng trong một lần, tối đa nhận 240 điểm tích lũy. Khi Evanescia sở hữu \"Việc Tốt Đáng Thưởng\":\nThi triển Chiến Kỹ có thể gây {{scaling2}}% Sát Thương Vui Vẻ thuộc tính Vật Lý cho mục tiêu phe địch bị tấn công.\nThi triển Tuyệt Kỹ có thể gây {{scaling3}}% Sát Thương Vui Vẻ thuộc tính Vật Lý cho toàn bộ phe địch, đồng thời gây {{scaling4}}% Sát Thương Vui Vẻ thuộc tính Vật Lý cho mục tiêu phe địch ngẫu nhiên chịu sát thương từ Tuyệt Kỹ, khi Tuyệt Kỹ gây Sát Thương Vui Vẻ, ít nhất sẽ tính lượng \"Việc Tốt Đáng Thưởng\" bằng với Giới Hạn Năng Lượng.\nĐòn Đánh Theo Sau của \"Giáo Viên Hồ Ly\" có thể gây {{scaling5}}% Sát Thương Vui Vẻ thuộc tính Vật Lý cho toàn bộ phe địch.",
+      "scaling": {
+        "scaling1": [50,55,60,65,70,75,81.3,87.5,93.8,100,105,110],
+        "scaling2": [8,8.8,9.6,10.4,11.2,12,13,14,15,16,16.8,17.6],
+        "scaling3": [12,13.2,14.4,15.6,16.8,18,19.5,21,22.5,24,25.2,26.4],
+        "scaling4": [14,15.4,16.8,18.2,19.6,21,22.8,24.5,26.3,28,29.4,30.8],
+        "scaling5": [12.5,13.8,15,16.3,17.5,18.8,20.3,21.9,23.4,25,26.3,27.5]
+      }
+    }
+  },
+  "elation": {
+    "skills": {
+      "skill": {
+        "type": "Kỹ Năng Vui Vẻ",
+        "name": "Sắc Thắm - Không Vui Là Chém",
+        "tag": "Đánh Lan",
+        "energy_gain": 5,
+        "participant_id": 146,
+        "break_aoe": 20,
+        "min_level": 1,
+        "max_level": 12,
+        "default_level": 10,
+        "description_template": "Gây {{scaling1}}% Sát Thương Vui Vẻ thuộc tính Vật Lý cho toàn phe địch, đồng thời nhận thêm 5 điểm \"Việc Tốt Đáng Thưởng\".",
+        "scaling": {
+          "scaling1": [
+            55,
+            60.5,
+            66,
+            71.5,
+            77,
+            82.5,
+            89.4,
+            96.3,
+            103.1,
+            110,
+            115.5,
+            121
+          ]
+        }
+      }
+    }
+  },
+  "major_traces": {
+    "2": {
+      "name": "Cúi Nhìn Niềm Vui Chúng Sinh",
+      "description": "Tỷ Lệ Bạo Kích của Evanescia tăng 30%, khi số lượng mục tiêu phe địch trên sân từ 3 trở lên/2/1, số lần nảy bật của Tuyệt Kỹ tăng 1/2/4 lần. Khi đồng đội có Mã Tham Gia Kỹ Năng Vui Vẻ nhỏ hơn Evanescia nhận được \"Việc Tốt Đáng Thưởng\", Evanescia sẽ biến 50% trong số đó thành \"Việc Tốt Đáng Thưởng\" của bản thân."
+    },
+    "4": {
+      "name": "Thực Thi Phán Quyết",
+      "description": "\"Giáo Viên Hồ Ly\" khi thi triển tấn công sẽ gán thêm Trọng Thương cho mục tiêu, khiến sát thương phải chịu tăng 12%, duy trì 3 hiệp."
+    },
+    "6": {
+      "name": "Hoa Nở Mãi Không Tàn",
+      "description": "Khi \"Việc Tốt Đáng Thưởng\" của đồng đội kết thúc, Evanescia sẽ chuyển hóa 50% trong đó thành \"Việc Tốt Đáng Thưởng\" của bản thân."
+    }
+  },
+  "stat_bonuses": [
+    {
+      "stat": "Tốc Độ",
+      "value": "+5"
+    },
+    {
+      "stat": "Tỷ Lệ Bạo Kích",
+      "value": "+18.7%"
+    },
+    {
+      "stat": "Độ Vui Vẻ",
+      "value": "+18%"
+    }
+  ],
+  "eidolons": [
+    {
+      "level": 1,
+      "name": "Cố Hương, Nhảy Múa Cầu Phúc",
+      "description": "Xuyên Kháng Toàn Thuộc Tính tăng 20%, sau khi \"Giáo Viên Hồ Ly\" thi triển tấn công sẽ kích hoạt thêm 1 lần Kỹ Năng Vui Vẻ. Kỹ Năng Vui Vẻ sẽ khiến bản thân nhận thêm 10 điểm \"Việc Tốt Đáng Thưởng\"."
+    },
+    {
+      "level": 2,
+      "name": "Đường Xa, Cầu Nở Mãi Không Tàn",
+      "description": "Sát Thương Bạo Kích tăng 36%, khi kích hoạt hiệu ứng nhận Việc Tốt Đáng Thưởng của Vết Tích \"Cúi Nhìn Niềm Vui Chúng Sinh\"/Vết Tích \"Hoa Nở Mãi Không Tàn\", nhận thêm \"Việc Tốt Đáng Thưởng\" bằng 50%/100% \"Việc Tốt Đáng Thưởng\" nhận được lần này."
+    },
+    {
+      "level": 4,
+      "name": "Cánh Đồng Hoa, Bị Kẻ Ác Vùi Dập",
+      "description": "Sát thương Evanescia gây ra bỏ qua 15% Phòng Thủ của mục tiêu phe địch."
+    },
+    {
+      "level": 6,
+      "name": "Thiếu Nữ, Nhìn Nhân Gian Bước Vào Mộng",
+      "description": "Thời gian duy trì \"Việc Tốt Đáng Thưởng\" của Evanescia tăng 1 hiệp. Sát Thương Vui Vẻ do Evanescia gây ra tăng Hài Hước 15%, mỗi khi sở hữu 100 điểm \"Việc Tốt Đáng Thưởng\" sẽ tăng Hài Hước thêm 2%, tính tối đa 1000 điểm \"Việc Tốt Đáng Thưởng\". Sau khi thi triển Tuyệt Kỹ lần đầu khi vào chiến đấu, hồi cố định 120 điểm Năng Lượng cho Evanescia, hiệu ứng này mỗi khi thi triển thêm 4 lần Tuyệt Kỹ có thể kích hoạt 1 lần."
+    },
+    {
+      "level": 3,
+      "name": "Thước Kiếm, Nuốt Yêu Tà Trăng Máu",
+      "description": "Cấp Tuyệt Kỹ +2, tối đa không quá cấp 15; Cấp Tấn Công Thường +1, tối đa không quá cấp 10; Cấp Kỹ Năng Vui Vẻ +1, tối đa không quá cấp 15."
+    },
+    {
+      "level": 5,
+      "name": "Thiên Đường Vui Vẻ, Chứng Kiến Buồn Vui Sướng Khổ",
+      "description": "Cấp Chiến Kỹ +2, tối đa không quá cấp 15; Cấp Thiên Phú +2, tối đa không quá cấp 15; Cấp Kỹ Năng Vui Vẻ +1, tối đa không quá cấp 15."
+    }
+  ]
+}
