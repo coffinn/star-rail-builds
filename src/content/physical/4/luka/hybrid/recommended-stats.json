@@ -2,11 +2,11 @@
     "stats": [
         {
             "name": "spd",
-            "recommended": "3200+"
+            "recommended": "134+"
         },
         {
             "name": "total-atk",
-            "recommended": "134+"
+            "recommended": "3200+"
         },
         {
             "name": "break-effect",

@@ -14,7 +14,7 @@
             "en": "**Skill Point Usage**\n\nPositive / Neutral"
         },
         {
-            "en": "**Ability Rotation**\n\nSkill > Basic ATK > Basic ATK\n\nor\n\nSkill > Basic ATK > Skill > Basic ATK"
+            "en": "**Ability Rotation**\n\nSkill → Basic ATK → Basic ATK\n\nor\n\nSkill → Basic ATK → Skill → Basic ATK"
         }
     ]
 }

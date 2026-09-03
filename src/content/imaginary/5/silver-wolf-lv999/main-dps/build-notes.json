@@ -22,9 +22,9 @@
             "vn": "**Mức sử dụng Điểm Chiến Kĩ**\n\nÂm (Trung trong trạng thái \"Người Chơi Vô Địch\")"
         },
         {
-            "en": "**Ability Rotation**\n\n**Out of \"Godmode Player\" state:** Skill Spam\n\n**In \"Godmode Player\" state:** Enhanced Basic ATK Spam",
+            "en": "**Ability Rotation**\n\n**Out of \"Godmode Player\" state:** Skill spam\n\n**In \"Godmode Player\" state:** Enhanced Basic ATK spam",
             "ru": "**Ротация**\n\n**Вне состояния Непобедимый игрок:** спам навыка\n\n**В состоянии Непобедимый игрок:** спам усиленной базовой атакой",
-            "vn": "**Lối Chơi**\n\nNgoài trạng thái \"Người Chơi Vô Địch\": Spam [[ability:skill]]\n\nTrong trạng thái \"Người Chơi Vô Địch\": Spam [[ability:basic]] Cường Hóa"
+            "vn": "**Lối Chơi**\n\nNgoài trạng thái \"Người Chơi Vô Địch\": spam [[ability:skill]]\n\nTrong trạng thái \"Người Chơi Vô Địch\": spam [[ability:basic]] Cường Hóa"
         }
     ]
 }

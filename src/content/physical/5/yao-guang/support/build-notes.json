@@ -22,9 +22,9 @@
             "vn": "**Mức sử dụng Điểm Chiến Kĩ**\n\nDương"
         },
         {
-            "en": "**Ability Rotation**\n\nSkill > Basic ATK > Basic ATK",
-            "ru": "**Ротация**\n\nНавык > базовая атака > базовая атака",
-            "vn": "**Lối Chơi**\n\n[[ability:skill]] > [[ability:basic]] > [[ability:basic]]"
+            "en": "**Ability Rotation**\n\nSkill → Basic ATK → Basic ATK",
+            "ru": "**Ротация**\n\nНавык → базовая атака → базовая атака",
+            "vn": "**Lối Chơi**\n\n[[ability:skill]] → [[ability:basic]] → [[ability:basic]]"
         }
     ]
 }
