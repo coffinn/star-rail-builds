@@ -1,5 +1,9 @@
 {
-    "trailblazer": "Pionnier/Pionnière",
+    "trailblazer-destruction": "Pionnier/Pionnière: La Destruction",
+    "trailblazer-preservation": "Pionnier/Pionnière: La Préservation",
+    "trailblazer-harmony": "Pionnier/Pionnière: L'Harmonie",
+    "trailblazer-remembrance": "Pionnier/Pionnière: Le Souvenir",
+    "trailblazer-elation": "Pionnier/Pionnière: L'Allégresse",
     "arlan": "Arlan",
     "asta": "Asta",
     "bailu": "Bailu",
@@ -12,6 +16,7 @@
     "hook": "Hook",
     "jing-yuan": "Jing Yuan",
     "march-7th": "March 7th",
+    "march-7th-hunt": "March 7th: La Chasse",
     "natasha": "Natasha",
     "pela": "Pela",
     "qingque": "Qingque",
@@ -83,5 +88,6 @@
     "mortenax-blade": "Blade Mortenax",
     "gilgamesh": "Gilgamesh",
     "himeko-nova": "Himeko • Nova",
-    "rin-tohsaka": "Rin Tohsaka"
+    "rin-tohsaka": "Rin Tohsaka",
+    "robin-summeretto": "Robin • Estivaria"
 }
