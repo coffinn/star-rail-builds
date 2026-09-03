@@ -1,0 +1,293 @@
+{
+    "id": "acheron",
+    "name": "Achéron",
+    "rarity": "5",
+    "element": "lightning",
+    "path": "nihility",
+    "version_released": "2.1",
+    "level_80_stats": {
+        "hp": 1125,
+        "atk": 698,
+        "def": 436,
+        "spd": 101
+    },
+    "abilities": {
+        "basic": {
+            "type": "ATQ normale",
+            "name": "Flétrissement des trois sagesses",
+            "tag": "Cible unique",
+            "break": 10,
+            "min_level": 1,
+            "max_level": 7,
+            "default_level": 6,
+            "description_template": "Inflige des DGT de foudre équivalents à {{scaling1}}% de l'ATQ d'Achéron à une cible ennemie unique.",
+            "scaling": {
+                "scaling1": [
+                    50,
+                    60,
+                    70,
+                    80,
+                    90,
+                    100,
+                    110
+                ]
+            }
+        },
+        "skill": {
+            "type": "Compétence",
+            "name": "Éclair multiple",
+            "tag": "Propagation",
+            "break_main": 20,
+            "break_adjacent": 10,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Gagne 1 point de Rêve flétri. Applique 1 cumul d'Étreinte écarlate à une cible ennemie unique, lui inflige des DGT de foudre équivalents à {{scaling1}}% de l'ATQ d'Achéron et des DGT de foudre équivalents à {{scaling2}}% de l'ATQ d'Achéron aux cibles adjacentes.",
+            "scaling": {
+                "scaling1": [
+                    80,
+                    88,
+                    96,
+                    104,
+                    112,
+                    120,
+                    130,
+                    140,
+                    150,
+                    160,
+                    168,
+                    176,
+                    184,
+                    192,
+                    200
+                ],
+                "scaling2": [
+                    30,
+                    33,
+                    36,
+                    39,
+                    42,
+                    45,
+                    48.75,
+                    52.5,
+                    56.25,
+                    60,
+                    63,
+                    66,
+                    69,
+                    72,
+                    75
+                ]
+            }
+        },
+        "talent": {
+            "type": "Talent",
+            "name": "Pluie de feuillages rouges",
+            "tag": "Renforcement",
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "L'ultime peut être activé quand Rêve flétri atteint 9 points. Pendant l'ultime, la robustesse des ennemis est réduite quels que soient leurs types de faiblesse, ainsi que toutes leurs RÉS de type de {{scaling1}}% jusqu'à la fin de l'ultime.\nLorsqu'une unité applique un malus à une cible ennemie en utilisant une capacité, Achéron gagne 1 point de Rêve flétri et applique 1 cumul d'Étreinte écarlate à la cible ennemie, ce qui inflige un malus à plusieurs ennemis, 1 cumul d'Étreinte écarlate est infligé à l'ennemi ayant le plus de cumuls d'Étreinte écarlate. Cet effet ne peut être déclenché jusqu'à 1 fois par action.\nLorsqu'Achéron est sur le champ de bataille et après qu'une cible ennemie a quitté le champ de bataille ou a été vaincue, ses cumuls d'Étreinte écarlate sont transférés à la cible ennemie dont les cumuls d'Étreinte écarlate sont les plus récents.",
+            "scaling": {
+                "scaling1": [
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16.25,
+                    17.5,
+                    18.75,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25
+                ]
+            }
+        },
+        "ultimate": {
+            "type": "Ultime",
+            "name": "Rêve flétri écarlate",
+            "tag": "ZdE",
+            "break": "35 (Main target) / 30 (Other targets)",
+            "energy_cost": "9 points of Slashed Dream",
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Déclenche Lame de pluie 3 fois de suite et Vengeance du Styx 1 fois, infligeant des DGT de foudre équivalents à {{scaling5}}% de l'ATQ d'Achéron à une cible ennemie unique, et des DGT de foudre équivalents à {{scaling6}}% de l'ATQ d'Achéron aux autres ennemis.\nLame de pluie : Inflige des DGT de foudre équivalents à {{scaling1}}% de l'ATQ d'Achéron à une cible ennemie unique et supprime jusqu'à 3 cumuls d'Étreinte écarlate à la cible. Lorsque l'effet Étreinte écarlate est supprimé, inflige immédiatement des DGT de foudre équivalents à {{scaling2}}% de l'ATQ d'Achéron à tous les ennemis. Le multiplicateur de cette instance de DGT augmente pour chaque cumul d'Étreinte écarlate supprimé, jusqu'à un maximum de {{scaling4}}%.\nVengeance du Styx : Inflige des DGT de foudre équivalents à {{scaling3}}% de l'ATQ d'Achéron à tous les ennemis et supprime tous les effets d'Étreinte écarlate.\nL'effet Étreinte écarlate ne peut pas être appliqué aux ennemis pendant l'ultime.",
+            "scaling": {
+                "scaling1": [
+                    14.4,
+                    15.36,
+                    16.32,
+                    17.28,
+                    18.24,
+                    19.2,
+                    20.4,
+                    21.6,
+                    22.8,
+                    24,
+                    24.96,
+                    25.92,
+                    26.88,
+                    27.84,
+                    28.8
+                ],
+                "scaling2": [
+                    9,
+                    9.6,
+                    10.2,
+                    10.8,
+                    11.4,
+                    12,
+                    12.75,
+                    13.5,
+                    14.25,
+                    15,
+                    15.6,
+                    16.2,
+                    16.8,
+                    17.4,
+                    18
+                ],
+                "scaling3": [
+                    72,
+                    76.8,
+                    81.6,
+                    86.4,
+                    91.2,
+                    96,
+                    102,
+                    108,
+                    114,
+                    120,
+                    124.8,
+                    129.6,
+                    134.4,
+                    139.2,
+                    144
+                ],
+                "scaling4": [
+                    36,
+                    38.4,
+                    40.8,
+                    43.2,
+                    45.6,
+                    48,
+                    51,
+                    54,
+                    57,
+                    60,
+                    62.4,
+                    64.8,
+                    67.2,
+                    69.6,
+                    72
+                ],
+                "scaling5": [
+                    223.2,
+                    238.08,
+                    252.96,
+                    267.84,
+                    282.72,
+                    297.6,
+                    316.2,
+                    334.8,
+                    353.4,
+                    372,
+                    386.88,
+                    401.76,
+                    416.64,
+                    431.52,
+                    446.4
+                ],
+                "scaling6": [
+                    180,
+                    192,
+                    204,
+                    216,
+                    228,
+                    240,
+                    255,
+                    270,
+                    285,
+                    300,
+                    312,
+                    324,
+                    336,
+                    348,
+                    360
+                ]
+            }
+        },
+        "technique": {
+            "type": "Technique",
+            "name": "Chemin de la réalisation",
+            "break": 20,
+            "description": "Engage immédiatement le combat contre les ennemis et gagne Chemin de la réalisation au début de chaque vague. Inflige des DGT de foudre équivalents à 200% de l'ATQ d'Achéron à tous les ennemis, et réduit leur robustesse quels que soient leurs types de faiblesse. En cas de Rupture de faiblesse, déclenche l'effet de Rupture de faiblesse de foudre.\nChemin de la réalisation : après avoir utilisé son ultime, Achéron gagne 1 point de Rêve flétri et applique 1 cumul d'Étreinte écarlate à un ennemi unique aléatoire.\nEn cas d'attaque sur un ennemi normal, il est immédiatement éliminé sans entrer en combat. Le point de technique n'est pas dépensé si aucun ennemi n'est touché."
+        }
+    },
+    "major_traces": {
+        "2": {
+            "name": "Démon écarlate",
+            "description": "Obtient immédiatement 5 points de Rêve flétri en début de combat et applique 5 cumuls d'Étreinte écarlate à un ennemi aléatoire. Lorsque Rêve flétri atteint la limite, chaque point de Rêve flétri au-dessus de la limite accorde 1 cumul de Chemin de la réalisation. Permet à Chemin de la réalisation de se cumuler jusqu'à 3 fois de cette façon"
+        },
+        "4": {
+            "name": "Abîme",
+            "description": "Lorsqu'il y a 1 ou 2 personnages de la Nihilité autres qu'Achéron dans l'équipe, les DGT infligés par l'ATQ normale, la compétence et l'ultime d'Achéron augmentent respectivement à hauteur de 115% ou 160% des DGT initiaux"
+        },
+        "6": {
+            "name": "Âme de tonnerre",
+            "description": "Augmente de 30% les DGT d'Achéron lorsque la Lame de pluie de son ultime touche des cibles ennemies affectées par Étreinte écarlate. Cumulable 3 fois et dure 3 tours. D'autre part, lorsque Vengeance du Styx se déclenche, inflige 6 frappes de DGT supplémentaires. Chaque frappe inflige des DGT de foudre équivalents à 25% de l'ATQ d'Achéron à un ennemi unique aléatoire et est considérée comme des DGT d'ultime."
+        }
+    },
+    "stat_bonuses": [
+        {
+            "stat": "ATQ",
+            "value": "+28%"
+        },
+        {
+            "stat": "DGT critiques",
+            "value": "+24%"
+        },
+        {
+            "stat": "Augm. des DGT de foudre",
+            "value": "+8%"
+        }
+    ],
+    "eidolons": [
+        {
+            "level": 1,
+            "name": "Révélation des sommets silencieux",
+            "description": "Augmente les chances de coup critiques de 18% lors de l'application de DGT à des ennemies affectés par des malus"
+        },
+        {
+            "level": 2,
+            "name": "Calme après la tempête",
+            "description": "Réduit de 1 le nombre de personnages devant suivre la Voie de la Nihilité pour obtenir la valeur la plus élevée de la Trace Abîme. Achéron gagne 1 point de Rêve flétri au début de son tour et applique 1 cumul d'Étreinte écarlate à l'ennemi qui a le plus de cumuls d'Étreinte écarlate."
+        },
+        {
+            "level": 3,
+            "name": "Morsure du froid éternel",
+            "description": "Niv. de l'ultime +2, jusqu'au Niv. 15 maximum\nNiv. de l'ATQ normale +1, jusqu'au Niv. 10 maximum."
+        },
+        {
+            "level": 4,
+            "name": "Feu sacré de l'âme reflétée",
+            "description": "Lorsque des cibles ennemies entrent en combat, leur applique une vulnérabilité aux DGT d'ultime, ce qui augmente de 8% le montant des DGT d'ultime subis."
+        },
+        {
+            "level": 5,
+            "name": "Âmes dispersées sur des terres effacées",
+            "description": "Niv. de la compétence +2, jusqu'au Niv. 15 maximum\nNiv. du Talent +2, jusqu'au Niv. 15 maximum"
+        },
+        {
+            "level": 6,
+            "name": "Catalysatrice de l'apocalypse",
+            "description": "Augmente la PÉN de RÉS à tous les types des DGT d'ultime d'Achéron de 20%. Les DGT infligés par l'ATQ normale et la compétence sont également considérés comme des DGT d'ultime et peuvent réduire la robustesse de l'ennemi, quels que soient ses types de faiblesse. En cas de Rupture de faiblesse, c'est l'effet de Rupture de faiblesse de foudre qui est déclenché."
+        }
+    ]
+}
