@@ -1,45 +1,56 @@
 {
-    "light_cones": [
+  "light_cones": [
+    {
+      "items": [
         {
-            "items": [
-                {
-                    "name": "why-does-the-ocean-sing",
-                    "superimposition": 1
-                },
-                {
-                    "name": "reforged-remembrance",
-                    "superimposition": 1
-                }
-            ]
+          "name": "why-does-the-ocean-sing",
+          "superimposition": 1
         },
         {
-            "items": [
-                {
-                    "name": "those-many-springs",
-                    "superimposition": 1
-                }
-            ]
-        },
-        {
-            "items": [
-                {
-                    "name": "eyes-of-the-prey",
-                    "superimposition": 5
-                }
-            ]
-        },
-        {"items":[{"name": "patience-is-all-you-need","superimposition":1}]},
-        {"items":[                {
-                    "name": "good-night-and-sleep-well",
-                    "superimposition": 5
-                }]},
-        {
-            "items": [
-                {
-                    "name": "solitary-healing",
-                    "superimposition": 5
-                }
-            ]
+          "name": "reforged-remembrance",
+          "superimposition": 1
         }
-    ]
+      ]
+    },
+    {
+      "items": [
+        {
+          "name": "those-many-springs",
+          "superimposition": 1
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "name": "eyes-of-the-prey",
+          "superimposition": 5
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "name": "patience-is-all-you-need",
+          "superimposition": 1
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "name": "good-night-and-sleep-well",
+          "superimposition": 5
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "name": "solitary-healing",
+          "superimposition": 5
+        }
+      ]
+    }
+  ]
 }

@@ -6,7 +6,7 @@
             "recommended": "160+"
         },
         {
-            "name": "total-atk",
+            "name": "atk",
             "baseline": "3000+",
             "recommended": "3200+",
             "note": {

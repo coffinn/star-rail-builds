@@ -1,10 +1,11 @@
 {
     "main_stats": {
         "body": [
+            "ANY",
             {
-                "name": "cr"
-            },
-            "ANY"
+                "name": "cr",
+                "note_group": "cr"
+            }
         ],
         "feet": [
             "spd"

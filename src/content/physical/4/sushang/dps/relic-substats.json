@@ -1,9 +1,11 @@
 {
     "substats_priority": [
-        "break-effect",
+        "be",
           {
             "name": "spd",
-            "note": {"en": "Due to Sushang's plentiful self advance and SPD buffs, it is an optional stat on her."}
+            "note": {
+              "en": "Due to Sushang's plentiful self advance and SPD buffs, it is an optional stat on her."
+            }
         }
     ]
 }

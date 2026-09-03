@@ -2,7 +2,7 @@
     "substats_priority": [
         "spd",
         "atk%",
-        "break-effect",
+        "be",
         "ehr"
     ]
 }

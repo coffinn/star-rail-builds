@@ -18,7 +18,7 @@
                     "choose": true,
                     "items": [
                         {
-                            "name": "2pc-speed",
+                            "name": "2pc-spd",
                             "pieces": 2
                         }
                     ]
@@ -37,7 +37,7 @@
                 {
                     "items": [
                         {
-                            "name": "2pc-speed"
+                            "name": "2pc-spd"
                         }
                     ]
                 }

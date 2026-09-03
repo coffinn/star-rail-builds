@@ -1,7 +1,7 @@
 {
     "stats": [
         {
-            "name": "total-hp",
+            "name": "hp",
             "recommended": "8000+",
             "note": {
                 "en": "With S1: [[light-cone:she-already-shut-her-eyes]], aim for 8500+ HP using an HP% Link Rope. Alternatively, she can be kept at ~8000 HP but instead invest in 2000+ DEF."

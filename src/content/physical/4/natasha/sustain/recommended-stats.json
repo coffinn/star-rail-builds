@@ -5,7 +5,7 @@
             "recommended": "160+"
         },
         {
-            "name": "total-hp",
+            "name": "hp",
             "recommended": "5000+"
         }
     ]

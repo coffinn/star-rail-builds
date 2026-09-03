@@ -3,6 +3,7 @@
         "atk%",
         {
             "name": "spd"
-        }
+        },
+        "flat-atk"
     ]
 }

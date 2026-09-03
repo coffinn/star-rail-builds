@@ -1,7 +1,7 @@
 {
     "stats": [
         {
-            "name": "total-atk",
+            "name": "atk",
             "recommended": "3600+",
             "note": {
                 "en": "With Black Swan's S1: [[light-cone:reforged-remembrance]], 4000+ [[stat:total-atk]] is a reasonable goal."

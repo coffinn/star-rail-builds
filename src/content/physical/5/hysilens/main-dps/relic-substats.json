@@ -2,7 +2,6 @@
     "substats_priority": [
         "ehr",
         "atk%",
-        "spd",
-        "atk"
+        "spd"
     ]
 }

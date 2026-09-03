@@ -12,6 +12,7 @@
         {
             "name": "cr",
             "recommended": "82%",
+            "note_group": "cr",
             "note": {
                 "en": "Optional for personal damage. Out of combat, assuming 4-Pc [[set:diviner-of-distant-reach]].",
                 "ru": "Опционально, для личного урона. Вне боя, при условии использования 4 шт. [[set:diviner-of-distant-reach|Недосягаемого прорицателя]].",

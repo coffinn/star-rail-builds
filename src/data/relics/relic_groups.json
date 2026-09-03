@@ -1,6 +1,6 @@
 {
-  "2pc-speed": {
-    "label": "spd",
+  "2pc-spd": {
+    "label": "spd%",
     "pieces": 2,
     "type": "cavern",
     "sets": [
@@ -12,7 +12,7 @@
   },
 
   "2pc-atk": {
-    "label": "total-atk",
+    "label": "atk%",
     "pieces": 2,
     "type": "cavern",
     "sets": [
@@ -25,7 +25,7 @@
   },
 
   "2pc-hp": {
-    "label": "total-hp",
+    "label": "hp%",
     "pieces": 2,
     "type": "cavern",
     "sets": [
@@ -35,7 +35,7 @@
   },
 
   "2pc-def": {
-    "label": "total-def",
+    "label": "def%",
     "pieces": 2,
     "type": "cavern",
     "sets": [
@@ -43,8 +43,8 @@
     ]
   },
 
-  "2pc-break-effect": {
-    "label": "break-effect",
+  "2pc-be": {
+    "label": "be",
     "pieces": 2,
     "type": "cavern",
     "sets": [

@@ -2,7 +2,8 @@
     "substats_priority": [
         "spd",
         {
-            "name": "cr"
+            "name": "cr",
+            "note_group": "cr"
         }
     ]
 }
