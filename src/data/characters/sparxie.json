@@ -85,7 +85,7 @@
           "min_level": 1,
           "max_level": 12,
           "default_level": 10,
-          "description_template": "Causes \"Bloom! Winner Takes All\" to increase the DMG multiplier against one designated enemy by {{scaling1}}% and the DMG multiplier against adjacent targets by {{scaling2}}%. Randomly gains one of the following gifts: \"Straight Fire\": 2 Punchline point(s) and 2 Skill point(s). \"Unreal Banger\": 1 Punchline point(s). Using this ability is not considered as using a Skill.",
+          "description_template": "Causes \"Bloom! Winner Takes All\" to increase the DMG multiplier against one designated enemy by {{scaling1}}% and the DMG multiplier against adjacent targets by {{scaling2}}%. Randomly gains one of the following gifts:\n\"Straight Fire\": 2 Punchline point(s) and 2 Skill point(s).\n\"Unreal Banger\": 1 Punchline point(s).\nUsing this ability is not considered as using a Skill.",
           "scaling": {
             "scaling1": [
               10,
@@ -127,7 +127,7 @@
       "min_level": 1,
       "max_level": 12,
       "default_level": 10,
-      "description_template": "While Sparxie holds \"Certified Banger\": Using Enhanced Basic ATK deals {{scaling1}}% Fire Elation DMG to one designated enemy, and {{scaling2}}% Fire Elation DMG to their adjacent targets. Additionally, for every 1 instance of \"Engagement Farming\" triggered, the Enhanced Basic ATK deals 1 extra instance of {{scaling3}}% Fire Elation DMG to 1 random attacked enemy target. Using Ultimate deals {{scaling4}}% Fire Elation DMG to all enemies.",
+      "description_template": "While Sparxie holds \"Certified Banger\":\nUsing Enhanced Basic ATK deals {{scaling1}}% Fire Elation DMG to one designated enemy, and {{scaling2}}% Fire Elation DMG to their adjacent targets. Additionally, for every 1 instance of \"Engagement Farming\" triggered, the Enhanced Basic ATK deals 1 extra instance of {{scaling3}}% Fire Elation DMG to 1 random attacked enemy target.\nUsing Ultimate deals {{scaling4}}% Fire Elation DMG to all enemies.",
       "scaling": {
         "scaling1": [
           20,
@@ -311,7 +311,7 @@
     {
       "level": 3,
       "name": "#LinkUp #HeartSkip",
-      "description": "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10. Elation Skill Lv. +1, up to a maximum of Lv. 15."
+      "description": "Skill Lv. +2, up to a maximum of Lv. 15.\nBasic ATK Lv. +1, up to a maximum of Lv. 10.\nElation Skill Lv. +1, up to a maximum of Lv. 15."
     },
     {
       "level": 4,
@@ -321,7 +321,7 @@
     {
       "level": 5,
       "name": "#HealingTheWorld #GoodVibesOnly",
-      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15. Elation Skill Lv. +1, up to a maximum of Lv. 15."
+      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15.\nTalent Lv. +2, up to a maximum of Lv. 15.\nElation Skill Lv. +1, up to a maximum of Lv. 15."
     },
     {
       "level": 6,
