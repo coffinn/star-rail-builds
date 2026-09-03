@@ -4,7 +4,7 @@
             "name": "cr",
             "baseline": "80%",
             "recommended": "80%",
-            "note-group": "crit-rate-prio",
+            "note_group": "crit-rate-prio",
             "note": {
                 "en": "While Yanqing does gain 60% CRIT Rate for his Ultimate, his Skill deals too much DMG to ignore building CRIT Rate on him."
             }

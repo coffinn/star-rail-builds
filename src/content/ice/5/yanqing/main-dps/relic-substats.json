@@ -3,7 +3,7 @@
         "cd",
         {
             "name": "cr",
-	    "note-group": "crit-rate-prio"
+	    "note_group": "crit-rate-prio"
         },
         "atk%"
     ]
