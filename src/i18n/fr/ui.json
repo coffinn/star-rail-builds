@@ -85,10 +85,10 @@
     "Website Development": "Développement du site",
     "Legal Notice": "Notice Légale",
     "Legal notice unofficial": "Il s'agit d'un projet de fan non officiel et à but non lucratif ; il n'est ni affilié, ni soutenu, ni parrainé, ni approuvé par COGNOSPHERE, HoYoverse, ou miHoYo.",
-    "Legal notice ownership": "Les matériels Honkai: Star Rail utilisés sur ce site, incluant les noms des personnages, illustrations, images, icônes, Cônes de Lumière, Reliques, textes, sons, les matériels audiovisuels, marques déposées, ainsi que les propriétés intellectuelles, sont de la propriété de COGNOSPHERE et leurs titulaires de droits. Aucun droit de propriété n'est réclamé sur ces matériels.",
-    "Legal notice unpublished": "Ce site est voulu pour afficher que des informations et matériels que Honkai: Star Rail permet, et ne permet pas la publication de leaks ou matériels non publié. Voir la",
+    "Legal notice ownership": "Les éléments de Honkai: Star Rail utilisés sur ce site, incluant les noms des personnages, illustrations, images, icônes, Cônes de Lumière, Reliques, textes, sons, les matériels audiovisuels, marques déposées, ainsi que les propriétés intellectuelles, sont de la propriété de COGNOSPHERE et leurs titulaires de droits. Aucun droit de propriété n'est réclamé sur ces matériels.",
+    "Legal notice unpublished": "Ce site est voulu pour n'y afficher uniquement des informations et éléments que Honkai: Star Rail permet, et interdit la publication de leaks ou matériels non publié. Voir la",
     "Legal FAQ": "FAQ légale",
-    "Credits feedback": "Si vous avez des feedbacks, merci de nous contacter",
+    "Credits feedback": "Si vous avez des suggestions, merci de nous donner des",
     "FAQ": "FAQ",
     "Page Not Found": "Page introuvable",
     "Did you get lost?": "Vous êtes vous perdu.e?",
@@ -138,4 +138,10 @@
     "Major Trace": "Trace avancée",
     "Stat Bonuses": "Stat Bonuses",
     "Eidolons": "Eidolons"
+    "Legal notice original content": "Source code originel, les recommandations des builds, classements, notes, mise en forme des pages, et autres éditorials sont protégés par des droits d'auteurs. Il n'est pas permis de copier, d'héberger, ou déployer ce site ou son contenu originel sans autorisation écrite. Voir la",
+    "Repository license notice": "repository license notice",
+    "Legal notice rights reserved": "© Tous droits réservés par COGNOSPHERE. Les autres propriétés appartiennent à leurs propriétaires respectifs.",
+    "Footer attribution": "Code originel modifié par l'équipe de Navigateurs Honkai: Star Rail et adapté du projet de Genshin Impact Helper Team. Ce site n'est pas affilié à HoYoverse.",
+    "Footer copyright": "Le contenu et éléments de Honkai: Star Rail sont de la marque déposée et protégés par les droits d'auteurs de COGNOSPHERE, HoYoverse, et leurs propriétaires respectifs.",
+    "View GitHub": "Voir GitHub"
 }
