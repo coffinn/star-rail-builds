@@ -1,0 +1,368 @@
+{
+  "id": "castorice",
+  "name": "Castorice",
+  "rarity": 5,
+  "element": "quantum",
+  "path": "remembrance",
+  "version_released": "3.2",
+  "max_energy": null,
+  "uses_newbud": true,
+  "level_80_stats": {
+    "hp": 1421,
+    "atk": 625,
+    "def": 422,
+    "spd": 95
+  },
+  "abilities": {
+    "basic": {
+      "type": "Tấn Công Thường",
+      "name": "Bi Ai, Gợn Sóng Từ Biển Chết",
+      "tag": "Đánh Đơn",
+      "break": 10,
+      "min_level": 1,
+      "max_level": 7,
+      "default_level": 6,
+      "description_template": "Gây cho 1 kẻ địch chỉ định sát thương Lượng Tử bằng {{damage}}% Giới Hạn HP của Castorice.",
+      "scaling": {
+        "damage": [
+          25,
+          30,
+          35,
+          40,
+          45,
+          50,
+          55
+        ]
+      }
+    },
+    "skill": {
+      "type": "Chiến Kỹ",
+      "name": "Im Lặng, Cái Chạm Khẽ Khàng Của Bướm Ma",
+      "tag": "Khuếch Tán",
+      "break_main": 20,
+      "break_adjacent": 10,
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "Tiêu hao 30% HP hiện tại của toàn bộ phe ta, gây Sát Thương Lượng Tử bằng {{damage_main}}% Giới Hạn HP của Castorice lên 1 kẻ địch chỉ định, đồng thời gây Sát Thương Lượng Tử bằng {{damage_adjacent}}% Giới Hạn HP của Castorice cho mục tiêu lân cận kẻ đó.\nNếu HP hiện tại không đủ, tối đa khiến HP hiện tại giảm còn 1 điểm.\nNếu có Rồng Tử Vong trong trận, Chiến Kỹ sẽ đổi thành \"Móng Vuốt, Vòng Tay Của Rồng Tử Vong\".",
+      "scaling": {
+        "damage_main": [
+          25.0,
+          27.5,
+          30.0,
+          32.5,
+          35.0,
+          37.5,
+          40.625,
+          43.75,
+          46.875,
+          50.0,
+          52.5,
+          55.0
+        ],
+        "damage_adjacent": [
+          15.0,
+          16.5,
+          18.0,
+          19.5,
+          21.0,
+          22.5,
+          24.375,
+          26.25,
+          28.125,
+          30.0,
+          31.5,
+          33.0
+        ]
+      },
+      "variants": [
+        {
+          "type": "Chiến Kỹ Cường Hóa",
+          "name": "Móng Vuốt, Vòng Tay Của Rồng Tử Vong",
+          "tag": "Đánh Lan",
+          "break_aoe": 20,
+          "description_template": "Tiêu hao 40% HP hiện tại của toàn bộ phe ta ngoại trừ Rồng Tử Vong, Castorice và Rồng Tử Vong phát động đòn Tấn Công Phối Hợp lên mục tiêu, gây Sát Thương Lượng Tử bằng {{damage_castorice}}% và {{damage_netherwing}}% Giới Hạn HP của Castorice lên toàn phe địch.\nNếu HP hiện tại không đủ, thì HP hiện tại tối đa giảm xuống 1 điểm.",
+          "scaling": {
+            "damage_castorice": [
+              15.0,
+              16.5,
+              18.0,
+              19.5,
+              21.0,
+              22.5,
+              24.375,
+              26.25,
+              28.125,
+              30.0,
+              31.5,
+              33.0
+            ],
+            "damage_netherwing": [
+              25.0,
+              27.5,
+              30.0,
+              32.5,
+              35.0,
+              37.5,
+              40.625,
+              43.75,
+              46.875,
+              50.0,
+              52.5,
+              55.0
+            ]
+          }
+        }
+      ]
+    },
+    "ultimate": {
+      "type": "Tuyệt Kỹ",
+      "name": "Tiếng Thét Tử Vong, Hồi Chuông Tái Sinh",
+      "tag": "Triệu Hồi",
+      "energy_cost": "100% của Nhụy Hoa",
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "Triệu hồi Linh Hồn Ký Ức Rồng Tử Vong và khiến nó ưu tiên hành động 100%, đồng thời mở ra Vùng Lãnh Thổ Tử Địa Bị Lãng Quên, khiến Kháng Toàn Thuộc Tính của toàn bộ phe địch giảm {{res_reduction}}%. Nếu Castorice có hiệu ứng tăng sát thương từ Thiên Phú, thì hiệu ứng này sẽ khuếch tán lên Rồng Tử Vong. Rồng Tử Vong ban đầu có 165 điểm Tốc Độ và Giới Hạn HP cố định bằng 100% giới hạn của Nhụy Hoa.\nRồng Tử Vong sẽ tan biến sau 3 hiệp hoặc khi HP về 0, đồng thời giải trừ Vùng Lãnh Thổ Tử Địa Bị Lãng Quên.",
+      "scaling": {
+        "res_reduction": [
+          10.0,
+          11.0,
+          12.0,
+          13.0,
+          14.0,
+          15.0,
+          16.25,
+          17.5,
+          18.75,
+          20.0,
+          21.0,
+          22.0
+        ]
+      }
+    },
+    "talent": {
+      "type": "Thiên Phú",
+      "name": "Cõi Hoang Vu Trong Lòng Bàn Tay",
+      "tag": "Cường Hóa",
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "Giới hạn \"Nhụy Hoa\" có liên quan đến cấp của toàn bộ nhân vật trong trận. Toàn phe ta mỗi khi mất đi 1 điểm HP, Castorice sẽ nhận được 1 điểm Nhụy Hoa, khi Nhụy Hoa đạt giới hạn có thể kích hoạt Tuyệt Kỹ. Khi phe ta mất HP, sát thương của Castorice và Rồng Tử Vong gây ra sẽ tăng {{dmg_boost}}%, hiệu ứng này tối đa cộng dồn 3 tầng, duy trì 3 hiệp.\nKhi Rồng Tử Vong trong trận sẽ không thể nhận \"Nhụy Hoa\" thông qua Thiên Phú. Ngoại trừ Rồng Tử Vong, mỗi 1 điểm HP toàn phe ta mất đi sẽ chuyển hóa thành HP tương đương cho Rồng Tử Vong.",
+      "scaling": {
+        "dmg_boost": [
+          10.0,
+          11.0,
+          12.0,
+          13.0,
+          14.0,
+          15.0,
+          16.25,
+          17.5,
+          18.75,
+          20.0,
+          21.0,
+          22.0
+        ]
+      }
+    },
+    "technique": {
+      "type": "Bí Kỹ",
+      "name": "Tiếng Thét Đau Thương, Điềm Báo Chết Chóc",
+      "description": "Sau khi dùng Bí Kỹ, sẽ vào trạng thái \"U Ám\" trong 20 giây. Kẻ địch ở trạng thái \"U Ám\" không thể chủ động áp sát Castorice.\nỞ trạng thái \"U Ám\", chủ động tấn công sẽ khiến tất cả kẻ địch trong phạm vi vào chiến đấu, đồng thời triệu hồi Linh Hồn Ký Ức Rồng Tử Vong và khiến nó ưu tiên hành động 100%, cũng như triển khai Vùng Lãnh Thổ \"Tử Địa Bị Lãng Quên\", Rồng Tử Vong có HP hiện tại bằng 50% giới hạn Nhụy Hoa. Sau khi vào chiến đấu, sẽ tiêu hao 40% HP hiện tại của toàn thể phe ta ngoại trừ Rồng Tử Vong.\nSau khi vào chiến đấu và trước khi triệu hồi Rồng Tử Vong, thì Castorice sẽ nhận Nhụy Hoa bằng 30% điểm giới hạn Nhụy Hoa."
+    }
+  },
+  "memosprite": {
+    "name": "Rồng Tử Vong",
+    "initial_spd": 165,
+    "hp_source": "100% giới hạn của Nhụy Hoa",
+    "skills": {
+      "memosprite_skill": {
+        "type": "Kỹ Năng Linh Hồn Ký Ức",
+        "name": "Móng Vuốt Xé Toạc U Minh",
+        "tag": "Đánh Lan",
+        "break_aoe": 10,
+        "min_level": 1,
+        "max_level": 7,
+        "default_level": 6,
+        "description_template": "Gây sát thương Lượng Tử cho toàn bộ phe địch, tương đương {{damage}}% Giới Hạn HP của Castorice.",
+        "scaling": {
+          "damage": [
+            20.0,
+            24.0,
+            28.0,
+            32.0,
+            36.0,
+            40.0,
+            44.0
+          ]
+        },
+        "variants": [
+          {
+            "type": "Kỹ Năng Linh Hồn Ký Ức",
+            "name": "Ngọn Lửa Thiêu Rụi Bóng Tối",
+            "tag": "Đánh Lan",
+            "break_aoe": 10,
+            "min_level": 1,
+            "max_level": 7,
+            "default_level": 6,
+            "description_template": "Phát động \"Ngọn Lửa Thiêu Rụi Bóng Tối\" sẽ tiêu hao HP tương đương với 25% Giới Hạn HP của Rồng Tử Vong, gây cho toàn bộ kẻ địch Sát Thương Lượng Tử tương đương với {{damage_first}}% Giới Hạn HP của Castorice.\nMột lần đánh trúng có thể phát động lại \"Ngọn Lửa Thiêu Rụi Bóng Tối\", khi phát động lại, Bội Số Sát Thương lần lượt tăng đến {{damage_second}}% / {{damage_third}}%, sau khi đạt đến {{damage_third}}% sẽ không tăng nữa, hiệu ứng tăng Bội Số Sát Thương sẽ không bị giảm trước khi Rồng Tử Vong biến mất.\nKhi HP hiện tại của Rồng Tử Vong nhỏ hơn hoặc bằng 25% Giới Hạn HP của bản thân, sau khi phát động kỹ năng này sẽ chủ động giảm HP đến 1 điểm, kích hoạt hiệu ứng kỹ năng tương đương với Thiên Phú \"Đôi Cánh Càn Quét Phế Tích\".",
+            "scaling": {
+              "damage_first": [
+                12.0,
+                14.4,
+                16.8,
+                19.2,
+                21.6,
+                24.0,
+                26.4
+              ],
+              "damage_second": [
+                14.0,
+                16.8,
+                19.6,
+                22.4,
+                25.2,
+                28.0,
+                30.8
+              ],
+              "damage_third": [
+                17.0,
+                20.4,
+                23.8,
+                27.2,
+                30.6,
+                34.0,
+                37.4
+              ]
+            }
+          }
+        ]
+      },
+      "memosprite_talent": {
+        "type": "Thiên Phú Linh Hồn Ký Ức",
+        "name": "Hình Hài Được Kén Nguyệt Che Giấu",
+        "tag": "Hỗ Trợ",
+        "description": "Khi Rồng Tử Vong trong trận, nó đóng vai trò hỗ trợ cho phe ta, nếu phe ta chịu sát thương hoặc tiêu hao HP, thì HP hiện tại tối đa sẽ giảm đến 1 điểm, sau đó sẽ do Rồng Tử Vong gánh chịu, nhưng Rồng Tử Vong sẽ tiêu hao HP bằng 500% giá trị gốc, duy trì đến lúc Rồng Tử Vong biến mất.",
+        "variants": [
+          {
+            "type": "Memosprite Talent",
+            "name": "Roar Rumbles the Realm",
+            "tag": "Support",
+            "min_level": 1,
+            "max_level": 7,
+            "default_level": 6,
+            "description": "Khi triệu hồi Rồng Tử Vong, sát thương toàn bộ phe ta gây ra tăng 10%, duy trì 3 hiệp."
+          },
+          {
+            "type": "Thiên Phú Linh Hồn Ký Ức",
+            "name": "Đôi Cánh Càn Quét Phế Tích",
+            "tag": "Nảy Bật",
+            "break_bounce": 5,
+            "break_total": 30,
+            "min_level": 1,
+            "max_level": 7,
+            "default_level": 6,
+            "description_template": "Khi Rồng Tử Vong biến mất, sẽ gây 6 lần sát thương, mỗi lần sát thương sẽ gây ra sát thương Lượng Tử bằng {{damage}}% Giới Hạn HP của Castorice lên một kẻ địch ngẫu nhiên, đồng thời hồi cho toàn bộ phe ta HP bằng {{heal}}% Giới Hạn HP của Castorice +{{heal_flat}}.",
+            "scaling": {
+              "damage": [
+                20.0,
+                24.0,
+                28.0,
+                32.0,
+                36.0,
+                40.0,
+                44.0
+              ],
+              "heal": [
+                3.0,
+                3.6,
+                4.2,
+                4.8,
+                5.4,
+                6.0,
+                6.6
+              ],
+              "heal_flat": [
+                400,
+                480,
+                560,
+                640,
+                720,
+                800,
+                880
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "global_passives": {
+    "sanctuary-of-mooncocoon": {
+      "name": "Sự Che Chở Từ Kén Nguyệt",
+      "tag": "Hỗ Trợ",
+      "description": "Sau khi nhận Castorice hoặc khi trong đội hiện tại có Castorice sẽ nhận hiệu ứng: Trong chiến đấu, nếu nhân vật phe ta chịu tấn công chí tử, thì trong lần hành động này tất cả nhân vật phe ta chịu tấn công chí tử sẽ nhận trạng thái \"Kén Nguyệt\", nhân vật ở trạng thái \"Kén Nguyệt\" sẽ tạm thời trì hoãn rơi vào trạng thái không thể chiến đấu, và có thể hành động bình thường. Sau khi hành động, nếu HP hiện tại tăng hoặc nhận khiên trước khi bắt đầu hiệp kế tiếp, thì sẽ giải trừ trạng thái \"Kén Nguyệt\", nếu không, sẽ lập tức rơi vào trạng thái không thể chiến đấu. Hiệu ứng này tối đa kích hoạt 1 lần trong mỗi trận đấu."
+    }
+  },
+  "major_traces": {
+    "2": {
+      "name": "Thủy Triều Đen Kìm Giữ",
+      "description": "Sau khi mục tiêu phe ta ngoại trừ Rồng Tử Vong nhận trị liệu sẽ chuyển hóa 100% điểm trị liệu thành \"Nhụy Hoa\", khi Rồng Tử Vong trong trận sẽ chuyển hóa thành HP của Rồng Tử Vong. Mỗi mục tiêu phe ta tích lũy điểm chuyển hóa không vượt quá 12% giới hạn Nhụy Hoa. Sau khi đơn vị bất kỳ hành động, sẽ làm mới điểm chuyển hóa tích lũy của tất cả đơn vị."
+    },
+    "4": {
+      "name": "Ngọn Đuốc Đảo Ngược",
+      "description": "Khi HP hiện tại của Castorice lớn hơn hoặc bằng 50% Giới Hạn HP của bản thân, Castorice sẽ tăng 40% Tốc Độ. Khi Rồng Tử Vong thi triển \"Ngọn Lửa Thiêu Rụi Bóng Tối\" gây sát thương chí tử cho tất cả kẻ địch trong trận hoặc phe địch không thể giảm thêm HP nữa, Rồng Tử Vong sẽ tăng 100% Tốc Độ, duy trì 1 hiệp."
+    },
+    "6": {
+      "name": "Nơi Gió Tây Dừng Chân",
+      "description": "Mỗi khi Rồng Tử Vong thi triển \"Ngọn Lửa Thiêu Rụi Bóng Tối\", sát thương gây ra sẽ tăng 30%, hiệu ứng này tối đa cộng dồn 6 tầng, duy trì đến khi kết thúc hiệp này."
+    }
+  },
+  "stat_bonuses": [
+    {
+      "stat": "Tỷ Lệ Bạo Kích",
+      "value": "+18.7%"
+    },
+    {
+      "stat": "Sát Thương - Lượng Tử",
+      "value": "+14.4%"
+    },
+    {
+      "stat": "Sát Thương Bạo Kích",
+      "value": "+13.3%"
+    }
+  ],
+  "eidolons": [
+    {
+      "level": 1,
+      "name": "Thánh Nữ Trong Tuyết, Nhập Liệm Ký Ức",
+      "description": "Khi HP hiện tại của mục tiêu phe địch nhỏ hơn hoặc bằng 80%/50% Giới Hạn HP của bản thân, sát thương \"Móng Vuốt, Vòng Tay Của Rồng Tử Vong\", \"Móng Vuốt Xé Toạc U Minh\", \"Ngọn Lửa Thiêu Rụi Bóng Tối\", \"Đôi Cánh Càn Quét Phế Tích\" gây ra cho kẻ đó sẽ bằng 120%/140% sát thương gốc."
+    },
+    {
+      "level": 2,
+      "name": "Vương Miện Nở Rộ Nơi Cánh Bướm",
+      "description": "Sau khi triệu hồi Linh Hồn Ký Ức Rồng Tử Vong, Castorice nhận 2 tầng \"Ý Chí Rực Lửa\", \"Ý Chí Rực Lửa\" tối đa đạt 2 tầng, có thể dùng để khấu trừ HP tiêu hao của Kỹ Năng Linh Hồn Ký Ức Rồng Tử Vong \"Ngọn Lửa Thiêu Rụi Bóng Tối\", đồng thời khiến Castorice Ưu Tiên Hành Động 100%, lần sau thi triển Chiến Kỹ Cường Hóa, Castorice sẽ nhận Nhụy Hoa bằng 30% điểm giới hạn của Nhụy Hoa."
+    },
+    {
+      "level": 3,
+      "name": "Lữ Khách Cung Kính, Nhẹ Lướt Vào Cõi Chết",
+      "description": "Cấp Tuyệt Kỹ +2, tối đa không vượt quá cấp 15;\nCấp Tấn Công Thường +1, tối đa không vượt quá cấp 10;\nCấp Thiên Phú của Linh Hồn Ký Ức +1, tối đa không vượt quá cấp 10."
+    },
+    {
+      "level": 4,
+      "name": "An Giấc Trong Khúc Bi Ca Sâu Lắng",
+      "description": "Khi có Castorice trong trận, lượng hồi phục khi trị liệu cho toàn phe ta sẽ tăng 20%."
+    },
+    {
+      "level": 5,
+      "name": "Trang Giấy Nguyên Sơ, Điểm Xuyết Lời Tiên Tri",
+      "description": "Cấp Chiến Kỹ +2, tối đa không vượt quá cấp 15;\nCấp Thiên Phú +2, tối đa không vượt quá cấp 15;\nCấp Kỹ Năng Linh Hồn Ký Ức +1, tối đa không vượt quá cấp 10."
+    },
+    {
+      "level": 6,
+      "name": "Chờ Đợi Tháng Năm Thoát Kén Tuôn Trào",
+      "description": "Khi Castorice và Rồng Tử Vong gây sát thương, tăng 20% Xuyên Kháng Lượng Tử. Trong thời gian Rồng Tử Vong tấn công có thể bỏ qua thuộc tính Điểm Yếu và làm giảm Sức Bền phe địch, khi phá vỡ điểm yếu, sẽ kích hoạt hiệu ứng Phá Vỡ Điểm Yếu Lượng Tử, số lần nảy bật khi Rồng Tử Vong kích hoạt Thiên Phú Đôi Cánh Càn Quét Phế Tích tăng thêm 3 lần."
+    }
+  ]
+}
