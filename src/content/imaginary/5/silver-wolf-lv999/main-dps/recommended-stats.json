@@ -5,7 +5,8 @@
             "recommended": "180+",
             "note": {
                 "en": "Aim for 200+ SPD when using S1: [[light-cone:welcome-to-the-cosmic-city]].",
-                "ru": "Стремитесь к 200+ скорости при использовании S1: [[light-cone:welcome-to-the-cosmic-city]]."
+                "ru": "Стремитесь к 200+ скорости при использовании S1: [[light-cone:welcome-to-the-cosmic-city]].",
+                "vn": "Nhắm mốc Tốc Độ 200+ nếu dùng Nón Ánh Sáng S1 [[light-cone:welcome-to-the-cosmic-city]]."
             }
         },
         {
@@ -13,7 +14,8 @@
             "recommended": "92%",
             "note": {
                 "en": "Silver Wolf LV.999's CRIT Rate and CRIT DMG requirements are flexible thanks to \"Hidden MMR\". 92% CRIT Rate allows Silver Wolf LV.999 to hit 100% CRIT Rate with 20 \"Hidden MMR\".",
-                "ru": "Благодаря Скрытым очкам требования к крит. шансу и крит. урону у Серебряного Волка ур. 999 являются гибкими. 92% крит. шанса позволяет Серебряному Волку ур. 999 достичь 100% крит. шанса при наличии 20 Скрытых очков."
+                "ru": "Благодаря Скрытым очкам требования к крит. шансу и крит. урону у Серебряного Волка ур. 999 являются гибкими. 92% крит. шанса позволяет Серебряному Волку ур. 999 достичь 100% крит. шанса при наличии 20 Скрытых очков.",
+                "vn": "Yêu cầu về [[stat:cr]] và [[stat:cd]] của Sói Bạc LV.999 rất linh hoạt nhờ vào chỉ số \"Điểm Ẩn\". Với 92% [[stat:cr]], Sói Bạc LV.999 có thể đạt mức 100% [[stat:cr]] khi có 20 \"Điểm Ẩn\"."
             }
         },
         {

@@ -26,7 +26,8 @@
                     "name": "skill",
                     "note": {
                         "en": "Skill can be ignored.",
-                        "ru": "Навык можно не прокачивать."
+                        "ru": "Навык можно не прокачивать.",
+                        "vn": "Có thể bỏ qua [[ability:skill]]."
                     }
                 }
             ]
