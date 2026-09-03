@@ -11,7 +11,7 @@
           {
             "name": "physical-dmg",
              "note": {
-             "en": "The difference between Physical DMG and ATK% is minimal, so use whichever has better substats."
+             "en": "The difference between Physical DMG Boost% and ATK% is minimal, so use whichever has better substats."
             }
         },
             "atk%"
