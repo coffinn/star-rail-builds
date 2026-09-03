@@ -1,21 +1,26 @@
 {
     "best": true,
     "name": {
-        "en": "Elation Support"
+        "en": "Elation Support",
+        "ru": "Саппорт Радости"
     },
     "notes": [
         
         {
-            "en": "**Summary and General Analysis**\n\n✦ Yao Guang is an Elation support who buffs allies’ Elation DMG while providing additional Aha Instants.\n\n✦ After using her Ultimate, Yao Guang triggers an Aha Instant based on a fixed value of 20 Punchline (40 with E1). Through this extra Aha Instant, she can provide valuable resources for the team, such as \"Thrill\" for Sparxie or \"Hidden MMR\" for Silver Wolf LV. 999."
+            "en": "**Summary and General Analysis**\n\n✦ Yao Guang is an Elation support who buffs allies’ Elation DMG while providing additional Aha Instants.\n\n✦ After using her Ultimate, Yao Guang triggers an Aha Instant based on a fixed value of 20 Punchline (40 with E1). Through this extra Aha Instant, she can provide valuable resources for the team, such as \"Thrill\" for Sparxie or \"Hidden MMR\" for Silver Wolf LV.999.",
+            "ru": "**Краткое описание и общий анализ**\n\n✦ Яо Гуан — ппорт Радости, которая увеличивает урон Радости союзников, а также предоставляет дополнительные Миги Ахи.\n\n✦ После использования сверхспособности Яо Гуан активирует Миг Ахи с фиксированным значением в 20 ед. Юмора (40 с E1). Благодаря этому дополнительному Мигу Ахи она может предоставить ценные ресурсы для команды, такие как Взрыв для Искры или Скрытые очки для Серебряного Волка ур. 999."
         },
         {
-            "en": "**Investment Priority**\n\n**E1 >= S1**\n\n**Investment Explanation**\n\n✦ S1 provides much needed energy for Yao Guang along with a large teamwide CRIT Rate and CRIT DMG buff.\n\n✦ E1 increases the fixed Punchline for Yao Guang's additional Aha Instant while also providing teamwide Elation DEF Ignore."
+            "en": "**Investment Priority**\n\n**E1 >= S1**\n\n**Investment Explanation**\n\n✦ S1: [[light-cone:when-she-decided-to-see]] provides much needed Energy for her, along with a large teamwide CRIT Rate and CRIT DMG buff.\n\n✦ E1 increases the fixed Punchline for Yao Guang's additional Aha Instant while also providing teamwide Elation DEF Ignore.",
+            "ru": "**Приоритет инвестиций**\n\n**E1 >= S1**\n\n**Объяснение инвестиций**\n\n✦ S1: [[light-cone:when-she-decided-to-see]] обеспечивает ей столь необходимую энергию, а также значительно увеличивает крит. шанс и крит. урон для всей команды.\n\n✦ E1 увеличивает фиксированный Юмор для дополнительного Мига Ахи Яо Гуан, а также даёт возможность игнорировать защиту для урона Радости всех союзников."
         },
         {
-            "en": "**Skill Point Usage**\n\nPositive"
+            "en": "**Skill Point Usage**\n\nPositive",
+            "ru": "**Восстановление очков навыков**\n\nПоложительное"
         },
         {
-            "en": "**Ability Rotation**\n\nSkill > Basic ATK > Basic ATK"
+            "en": "**Ability Rotation**\n\nSkill > Basic ATK > Basic ATK",
+            "ru": "**Ротация**\n\nНавык > базовая атака > базовая атака"
         }
     ]
 }

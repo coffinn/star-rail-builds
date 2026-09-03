@@ -1,10 +1,10 @@
 {
     "hp": "HP",
-    "hp%": "Phần Trăm HP",
+    "hp%": "HP %",
     "atk": "Tấn Công",
-    "atk%": "Phần Trăm Tấn Công",
+    "atk%": "Tấn Công %",
     "def": "Phòng Thủ",
-    "def%": "Phần Trăm Phòng Thủ",
+    "def%": "Phòng Thủ %",
     "total-hp": "Tổng HP",
     "total-atk": "Tổng Tấn Công",
     "total-def": "Tổng Phòng Thủ",

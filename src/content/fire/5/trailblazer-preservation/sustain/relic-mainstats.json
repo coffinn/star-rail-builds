@@ -14,13 +14,13 @@
             {
                 "name": "err",
                 "note": {
-                    "en": "Energy Regeneration Rate% Link Rope is preferred if relying on Fire MC to contribute to Toughness bar breaking."
+                    "en": "Energy Regeneration Rate% Link Rope is preferred if relying on Trailblazer: Preservation to contribute to Toughness bar breaking."
                 }
             },
             {
                 "name": "def%",
                 "note": {
-                    "en": "DEF% Link Rope is preferred for personal damage reduction, especially when relying on Fire MC's Taunt."
+                    "en": "DEF% Link Rope is preferred for personal damage reduction, especially when relying on Taunt."
                 }
             }
         ]

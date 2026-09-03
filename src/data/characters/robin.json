@@ -70,7 +70,7 @@
       "max_level": 12,
       "default_level": 10,
 
-      "description_template": "Robin enters the Concerto state and makes all teammates (i.e., excluding this unit) immediately take action. \n While in the Concerto state, increases all allies' ATK by {{atk_boost}}% of Robin's ATK plus {{atk_boost_flat}}. Moreover, after every attack by ally targets, Robin deals Physical Additional DMG equal to {{additional_dmg}}% of her ATK for 1 time, with a fixed CRIT Rate for this damage set at 100% and fixed CRIT DMG set at 150%.\n While in the Concerto state, Robin is immune to Crowd Control debuffs and cannot enter her turn or take action until the Concerto state ends. \nA Concerto countdown appears on the Action Order bar. When the countdown's turn begins, Robin exits the Concerto state and immediately takes action. The countdown has its own fixed SPD of 90. ",
+      "description_template": "Robin enters the \"Concerto\" state and makes all teammates (i.e., excluding this unit) immediately take action. \n While in the Concerto state, increases all allies' ATK by {{atk_boost}}% of Robin's ATK plus {{atk_boost_flat}}. Moreover, after every attack by ally targets, Robin deals Physical Additional DMG equal to {{additional_dmg}}% of her ATK for 1 time, with a fixed CRIT Rate for this damage set at 100% and fixed CRIT DMG set at 150%.\n While in the \"Concerto\" state, Robin is immune to Crowd Control debuffs and cannot enter her turn or take action until the \"Concerto\" state ends. \nA \"Concerto\" countdown appears on the Action Order bar. When the countdown's turn begins, Robin exits the \"Concerto\" state and immediately takes action. The countdown has its own fixed SPD of 90. ",
 
       "scaling": {
         "atk_boost": [15.2, 15.96, 16.72, 17.48, 18.24, 19, 19.95, 20.9, 21.85, 22.8, 23.56, 24.32],
@@ -112,7 +112,7 @@
 
     "4": {
       "name": "Impromptu Flourish",
-      "description": "While the Concerto state is active, the CRIT DMG dealt when all allies launch Follow-up ATK increases by 25%."
+      "description": "While the \"Concerto\" state is active, the CRIT DMG dealt when all allies launch Follow-up ATK increases by 25%."
     },
 
     "6": {
@@ -140,13 +140,13 @@
     {
       "level": 1,
       "name": "Land of Smiles",
-      "description": "While the 'Concerto' state is active, all allies' All-Type RES PEN increases by 24%."
+      "description": "While the \"Concerto\" state is active, all allies' All-Type RES PEN increases by 24%."
     },
 
     {
       "level": 2,
       "name": "Afternoon Tea For Two",
-      "description": "While the Concerto state is active, all allies' SPD increases by 16%. The Talent's Energy Regeneration effect additionally increases by 1."
+      "description": "While the \"Concerto\" state is active, all allies' SPD increases by 16%. The Talent's Energy Regeneration effect additionally increases by 1."
     },
 
     {
@@ -158,7 +158,7 @@
     {
       "level": 4,
       "name": "Raindrop Key",
-      "description": "When using the Ultimate, dispels Crowd Control debuffs from all allies. While Robin is in the 'Concerto' state, increases the Effect RES of all allies by 50%."
+      "description": "When using the Ultimate, dispels Crowd Control debuffs from all allies. While Robin is in the \"Concerto\" state, increases the Effect RES of all allies by 50%."
     },
 
     {
@@ -170,7 +170,7 @@
     {
       "level": 6,
       "name": "Moonless Midnight",
-      "description": "While the 'Concerto' state is active, the CRIT DMG for the Physical Additional DMG caused by the Ultimate increases by 450%. The effect of 'Moonless Midnight' can trigger up to 8 time(s) and the trigger count is resets each time the Ultimate is used."
+      "description": "While the \"Concerto\" state is active, the CRIT DMG for the Physical Additional DMG caused by the Ultimate increases by 450%. The effect of \"Moonless Midnight\" can trigger up to 8 time(s) and the trigger count is resets each time the Ultimate is used."
     }
   ]
 }

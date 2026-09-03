@@ -4,14 +4,16 @@
             "name": "spd",
             "recommended": "104",
             "note": {
-                "en": "This build does not require [[stat:spd]]."
+                "en": "This build does not require [[stat:spd]].",
+                "ru": "Данный билд не требует скорость."
             }
         },
         {
             "name": "cr",
             "recommended": "70%",
             "note": {
-                "en": "Evanescia's A2 buffs her [[stat:cr]] by 30%, for 100% [[stat:cr]] in combat."
+                "en": "Evanescia's A2 buffs her [[stat:cr]] by 30%, for 100% [[stat:cr]] in combat.",
+                "ru": "А2 Эванессы увеличивает её крит. шанс на 30%, что в итоге даёт ей 100% крит. шанса в бою."
             }
         },
         {

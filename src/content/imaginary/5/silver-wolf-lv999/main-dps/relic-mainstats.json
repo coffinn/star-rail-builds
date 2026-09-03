@@ -12,7 +12,8 @@
             "note_group": "main-stat-flexibility",
             "note":
                 {
-                    "en": "Use any Main Stats as she does not scale off of ATK, HP, or DEF."
+                    "en": "Use any Main Stats as she does not scale off of ATK, HP, or DEF.",
+                    "ru": "Используйте любые основные статы, так как она не зависит от атаки, HP или защиты."
                 }
             }
         ],

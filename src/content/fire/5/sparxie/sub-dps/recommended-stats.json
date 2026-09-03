@@ -3,8 +3,10 @@
         {
             "name": "spd",
             "recommended": "148+ / 107",
+            "note_group": "sparxie-spd",
             "note": {
-                "en": "At E0-E1, 148 SPD allows her to outspeed Aha when Silver Wolf LV.999 and Yao Guang are at 200 SPD. This requirement increases the faster they are. At E2+, she does not require [[stat:spd]]."
+                "en": "At E0-E1, 148 SPD allows her to outspeed Aha Instant when Silver Wolf LV.999 and Yao Guang are at 200 SPD. This requirement increases the faster they are. At E2+, she does not require [[stat:spd]].",
+                "ru": "На E0-E1 148 скорости позволяет ей опережать Миг Ахи, когда скорость Серебряного Волка ур. 999 и Яо Гуан составляет 200. Это требование увеличивается по мере увеличения их скорости. На E2+ ей не требуется скорость."
             }
         },
         {

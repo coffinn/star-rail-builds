@@ -6,9 +6,7 @@
         "feet": [
             {
                 "name": "spd",
-                "note": {
-                    "en": "If Sparxie is E2, ATK% becomes preferred."
-                }
+                "note_group": "sparxie-spd"
             },
             {
                 "name": "atk%"
