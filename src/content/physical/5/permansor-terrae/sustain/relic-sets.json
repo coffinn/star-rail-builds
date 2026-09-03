@@ -30,11 +30,20 @@
         {
             "groups": [
                 {
-                    "choose": true,
-                    "items": [
+                    "choices": [
                         {
-                            "name": "2pc-speed",
-                            "pieces": 2
+                            "items": [
+                                {
+                                    "name": "2pc-speed", "pieces": 2
+                                }
+                            ]
+                        },
+                        {
+                            "items": [
+                                {
+                                    "name": "2pc-atk", "pieces": 2
+                                }
+                            ]
                         }
                     ]
                 }

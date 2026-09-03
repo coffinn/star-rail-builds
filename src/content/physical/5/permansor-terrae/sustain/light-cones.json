@@ -44,7 +44,7 @@
             "name": "mov",
             "superimposition": 1,
             "note": {
-                "en": "Can be used with DoT team. Build to 75% [[stat:ehr]] to receive a 100% ATK buff from Kafka's A2 Trace: Torture."
+                "en": "Can be used with DoT team. Build to 75% [[stat:ehr|Effect Hit Rate]] to receive a 100% ATK buff from Kafka's A2 Trace: Torture."
             }
         }
     ]
