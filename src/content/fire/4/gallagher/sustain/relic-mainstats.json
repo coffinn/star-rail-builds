@@ -7,7 +7,7 @@
             "spd"
         ],
         "planar_sphere": [
-            "hp%"
+            "ANY"
         ],
         "link_rope": [
             "err"

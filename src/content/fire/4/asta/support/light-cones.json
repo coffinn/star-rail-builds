@@ -1,0 +1,39 @@
+{
+    "light_cones": [
+        {
+            "items": [
+                {
+                    "name": "motp"
+                },
+                {
+                    "name": "meshing-cogs"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "ddd"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "psim"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "planetary-rendezvous",
+                    "note_group": "fire-affinity",
+                    "note": {
+                        "en": "Requires a Fire DPS to be in the team."
+                    }
+                }
+            ]
+        }
+    ]
+}

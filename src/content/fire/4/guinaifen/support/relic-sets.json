@@ -1,0 +1,39 @@
+{
+    "relic_sets": [
+        {
+            "groups": [
+                {
+                "choose": true,
+                    "items": [
+                        {
+                            "name": "2pc-spd",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "planar_ornaments": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "lushaka",
+                            "pieces": 2
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "vonwacq",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

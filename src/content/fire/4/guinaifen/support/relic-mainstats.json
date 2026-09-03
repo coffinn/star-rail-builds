@@ -1,13 +1,13 @@
 {
     "main_stats": {
         "body": [
-            "ogh"
+            "ehr","ANY"
         ],
         "feet": [
             "spd"
         ],
         "planar_sphere": [
-            "hp%"
+            "ANY"
         ],
         "link_rope": [
             "err"

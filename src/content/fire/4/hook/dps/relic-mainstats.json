@@ -1,16 +1,17 @@
 {
     "main_stats": {
         "body": [
-            "ogh"
+            "cr",
+            "cd"
         ],
         "feet": [
-            "spd"
+            "atk%","spd"
         ],
         "planar_sphere": [
-            "hp%"
+            "fire-dmg"
         ],
         "link_rope": [
-            "err"
+            "atk%"
         ]
     }
 }

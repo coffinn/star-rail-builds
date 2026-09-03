@@ -1,0 +1,33 @@
+{
+    "light_cones": [
+        {
+            "items": [
+                {
+                    "name": "lies-dance-on-the-breeze",
+                    "superimposition": 1
+                },
+                {
+                    "name": "those-many-springs",
+                    "superimposition": 5
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "thermae",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {"items":[{"name": "pearls","superimposition":1}]},
+        {
+            "items": [
+                {
+                    "name": "eotp",
+                    "superimposition": 5
+                }
+            ]
+        }
+    ]
+}

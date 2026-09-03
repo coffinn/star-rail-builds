@@ -1,16 +1,20 @@
 {
     "main_stats": {
         "body": [
-            "ogh"
+            "ehr",
+            "atk"
         ],
         "feet": [
             "spd"
         ],
         "planar_sphere": [
-            "hp%"
+          {
+            "name": "fire-dmg"
+        },
+            "atk"
         ],
         "link_rope": [
-            "err"
+            "atk"
         ]
     }
 }

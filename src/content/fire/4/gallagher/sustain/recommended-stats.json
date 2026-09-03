@@ -1,0 +1,16 @@
+{
+    "stats": [
+        {
+            "name": "spd",
+            "recommended": "160+"
+        },
+        {
+            "name": "break-effect",
+            "recommended": "75%+"
+        }
+        {
+            "name": "hp",
+            "recommended": "3000+"
+        }
+    ]
+}

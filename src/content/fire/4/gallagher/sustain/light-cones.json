@@ -1,0 +1,52 @@
+{
+    "light_cones": [
+        {
+            "items": [
+                {
+                    "name": "night-of-fright"
+                },
+                {
+                    "name": "unto-tomorrows-morrow"
+                },
+                {
+                    "name": "multiplication"
+                },
+                {
+                    "name": "quid-pro-quo"
+                },
+                {
+                    "name": "scent-alone-stays-true"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "postop"
+                },
+                {
+                    "name": "dreams-montage"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "perfect-timing"
+                },
+                {
+                    "name": "what-is-real"
+                }
+            ]
+        }
+    ],
+  "conditional": [
+    {
+      "name": "shared-feeling",
+      "note_group": "skill-spam",
+      "note": {
+        "en": "Can be used if Natasha is able to Skill spam"
+      }
+    }
+  ]
+}
