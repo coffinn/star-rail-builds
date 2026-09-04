@@ -42,11 +42,19 @@
                         {
                             "name": "vonwacq",
                             "pieces": 2
-                        },
+                        }
+                    ]
+                },
+                {
+                    "items": [
                         {
                             "name": "city",
                             "pieces": 2
-                        },                        
+                        }
+                    ]
+                },
+                {
+                    "items": [
                         {
                             "name": "lushaka",
                             "pieces": 2

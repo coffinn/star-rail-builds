@@ -31,7 +31,11 @@
                         {
                             "name": "vonwacq",
                             "pieces": 2
-                        },
+                        }
+                    ]
+                },
+                {
+                    "items": [
                         {
                             "name": "city",
                             "pieces": 2

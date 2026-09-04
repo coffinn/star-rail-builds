@@ -49,11 +49,19 @@
                         {
                             "name": "salsotto",
                             "pieces": 2
-                        },
+                        }
+                    ]
+                },
+                {
+                    "items": [
                         {
                             "name": "glamoth",
                             "pieces": 2
-                        },                        
+                        }
+                    ]
+                },
+                {
+                    "items": [
                         {
                             "name": "rutilant",
                             "pieces": 2
