@@ -1,0 +1,18 @@
+{
+    "substats_priority": [
+        "cr",
+        {
+            "name": "cd"
+        },
+        {
+            "name": "atk%"
+        },
+        {
+            "name": "spd"
+        },
+        {
+            "name": "ehr",
+            "note": {"en": "Effect Hit Rate can be used to boost the chance of Freeze from his ultimate or the DEF Shred from E2, but it is overall an optional stat."}
+        }
+    ]
+}

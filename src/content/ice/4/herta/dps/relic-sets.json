@@ -1,0 +1,52 @@
+{
+    "relic_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "eagle",
+                            "pieces": 4
+                        
+                        }                       
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "duke",
+                            "pieces": 4
+                        
+                        }                       
+                    ]
+                }                
+            ]
+        }
+    ],
+    "planar_ornaments": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "vonwacq",
+                            "pieces": 2
+                        },
+                        {
+                            "name": "city",
+                            "pieces": 2
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "sigonia",
+                            "pieces": 2
+                        }
+                    ]
+                }                
+            ]
+        }
+    ]
+}

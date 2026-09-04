@@ -1,0 +1,44 @@
+{
+    "light_cones": [
+        {
+            "items": [
+                {
+                    "name": "thus-burns-the-dawn",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "on-the-fall-of-an-aeon",
+                    "superimposition": 5
+                },
+                {
+                    "name": "a-trail-of-bygone-blood",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "something-irreplaceable",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "under-the-blue-sky",
+                    "superimposition": 5
+                },
+                {
+                    "name": "the-moles-welcome-you",
+                    "superimposition": 5
+                }
+            ]
+        }
+    ]
+}

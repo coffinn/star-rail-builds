@@ -47,7 +47,7 @@
             "min_level": 1,
             "max_level": 12,
             "default_level": 10,
-            "description_template": "Increases the Hits Per Action for Misha's next Ultimate by 1 hit(s). Deals Ice DMG equal to {{scaling}}% of Misha's ATK to a single target enemy, and Ice DMG equal to {{scaling}}% of Misha's ATK to adjacent targets.",
+            "description_template": "Increases the Hits Per Action for Misha's next Ultimate by 1 hit(s). Deals Ice DMG equal to {{scaling1}}% of Misha's ATK to a single target enemy, and Ice DMG equal to {{scaling2}}% of Misha's ATK to adjacent targets.",
             "scaling": {
                 "scaling1": [
                     100,

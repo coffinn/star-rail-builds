@@ -1,0 +1,45 @@
+{
+    "light_cones": [
+        {
+            "items": [
+                {
+                    "name": "before-dawn",
+                    "superimposition": 1
+
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "milky-way",
+                    "superimposition": 1
+                },
+                {
+                    "name": "a-dream-scented-in-wheat",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "repose",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "calculus",
+                    "superimposition": 5
+                },
+                {
+                    "name": "breakfast",
+                    "superimposition": 5
+                }
+            ]
+        }
+    ]
+}

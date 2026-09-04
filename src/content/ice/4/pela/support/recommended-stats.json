@@ -1,0 +1,12 @@
+{
+    "stats": [
+        {
+            "name": "spd",
+            "recommended": "160+"
+        },
+        {
+            "name": "ehr",
+            "recommended": "66.7%"
+        }
+    ]
+}

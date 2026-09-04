@@ -1,0 +1,48 @@
+{
+    "light_cones": [
+        {
+            "items": [
+                {
+                    "name": "lies-dance-on-the-breeze",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "pearls",
+                    "superimposition": 5
+                },
+                {
+                    "name": "thermae",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "incessant-rain",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "tutorial",
+                    "superimposition": 5
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "eotp",
+                    "superimposition": 5
+                }
+            ]
+        }
+    ]
+}
