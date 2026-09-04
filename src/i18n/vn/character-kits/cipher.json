@@ -1,0 +1,192 @@
+{
+  "id": "cipher",
+  "name": "Cipher",
+  "rarity": 5,
+  "element": "quantum",
+  "path": "nihility",
+  "version_released": "3.4",
+  "max_energy": 130,
+
+  "level_80_stats": {
+    "hp": 940,
+    "atk": 756,
+    "def": 442,
+    "spd": 106
+  },
+
+  "abilities": {
+    "basic": {
+      "type": "Tấn Công Thường",
+      "name": "Ôi Chao, Cá Lọt Lưới",
+      "tag": "Đánh Đơn",
+      "energy_gain": 20,
+      "break": 10,
+
+      "min_level": 1,
+      "max_level": 7,
+      "default_level": 6,
+
+      "description_template": "Gây Sát Thương Lượng Tử cho 1 kẻ địch chỉ định tương đương {{damage}}% Tấn Công của Cipher.",
+
+      "scaling": {
+        "damage": [50, 60, 70, 80, 90, 100, 110]
+      }
+    },
+
+    "skill": {
+      "type": "Chiến Kỹ",
+      "name": "Hey, Tay Không Bắt Bạc",
+      "tag": "Khuếch Tán",
+      "energy_gain": 30,
+      "break_main": 20,
+      "break_adjacent": 10,
+
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+
+      "description_template": "Có 120% xác suất cơ bản khiến 1 kẻ địch chỉ định và mục tiêu lân cận rơi vào trạng thái Suy Yếu (sát thương gây ra giảm 10%), khiến tấn công của Cipher tăng 30%, duy trì 2 hiệp, đồng thời gây sát thương Lượng Tử bằng {{main_damage}}% Tấn Công của Cipher cho 1 kẻ địch chỉ định, gây sát thương Lượng Tử bằng {{adjacent_damage}}% Tấn Công của Cipher cho mục tiêu lân cận.",
+
+      "scaling": {
+        "main_damage": [
+          100.0, 110.0, 120.0, 130.0, 140.0, 150.0,
+          162.5, 175.0, 187.5, 200.0,
+          210.0, 220.0
+        ],
+        "adjacent_damage": [
+          50.0, 55.0, 60.0, 65.0, 70.0, 75.0,
+          81.25, 87.5, 93.75, 100.0,
+          105.0, 110.0
+        ]
+      }
+    },
+
+    "ultimate": {
+      "type": "Tuyệt Kỹ",
+      "name": "Mèo Tặc, Kính Bút!",
+      "tag": "Khuếch Tán",
+      "energy_cost": 130,
+      "energy_gain": 5,
+      "break_main": 30,
+      "break_adjacent": 20,
+
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+
+      "description_template": "Gây Sát Thương Lượng Tử cho 1 kẻ địch chỉ định bằng {{primary_damage}}% Tấn Công của Cipher. Sau đó, gây Sát Thương Chuẩn bằng 25% giá trị ghi nhận hiện tại của Thiên Phú cho 1 kẻ địch chỉ định, đồng thời gây cho 1 kẻ địch chỉ định và mục tiêu lân cận Sát Thương Lượng Tử bằng {{adjacent_damage}}% Tấn Công của Cipher và Sát Thương Chuẩn tổng cộng bằng 75% giá trị ghi nhận hiện tại của Thiên Phú, Sát Thương Chuẩn này sẽ chia đều cho tất cả mục tiêu kỹ năng.",
+
+      "scaling": {
+        "primary_damage": [
+          60.0, 66.0, 72.0, 78.0, 84.0, 90.0,
+          97.5, 105.0, 112.5, 120.0,
+          126.0, 132.0
+        ],
+        "adjacent_damage": [
+          20.0, 22.0, 24.0, 26.0, 28.0, 30.0,
+          32.5, 35.0, 37.5, 40.0,
+          42.0, 44.0
+        ]
+      }
+    },
+
+    "talent": {
+      "type": "Thiên Phú",
+      "name": "Người Dolos Nhiệt Tình Hiếu Khách",
+      "tag": "Đánh Đơn",
+      "energy_gain": 5,
+      "break": 20,
+
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+
+      "description_template": "Khi trong trận không có mục tiêu phe địch rơi vào trạng thái \"Khách Quen\", Cipher sẽ lập tức khiến kẻ địch có Giới Hạn HP cao nhất hiện tại trong trận trở thành \"Khách Quen\". Khi thi triển Chiến Kỹ và Tuyệt Kỹ, sẽ khiến mục tiêu chính trở thành \"Khách Quen\". Trạng thái \"Khách Quen\" chỉ có hiệu lực với mục tiêu được thi triển mới nhất.\nSau khi \"Khách Quen\" bị mục tiêu khác của phe ta tấn công, Cipher sẽ lập tức phát động Đòn Đánh Theo Sau lên \"Khách Quen\", gây Sát Thương Lượng Tử bằng {{follow_up_damage}}% Tấn Công của Cipher. Hiệu ứng này mỗi hiệp tối đa kích hoạt 1 lần, khi bắt đầu hiệp của Cipher sẽ làm mới số lần có thể kích hoạt.\nCipher sẽ ghi nhận lại 12% không phải Sát Thương Chuẩn mà mục tiêu phe ta gây ra cho \"Khách Quen\", không ghi nhận sát thương dư ra, sau khi thi triển Tuyệt Kỹ sẽ xóa giá trị ghi nhận.",
+
+      "scaling": {
+        "follow_up_damage": [
+          75.0, 82.5, 90.0, 97.5, 105.0, 112.5,
+          121.875, 131.25, 140.625, 150.0,
+          157.5, 165.0
+        ]
+      }
+    },
+
+    "technique": {
+      "type": "Technique",
+      "name": "Puss in Boots",
+      "tag": "Enhance",
+      "description": "Nhận được \"Chúc Phúc Của Zagreus\", duy trì 15 giây, trong thời gian này, Cipher sẽ không bị kẻ địch phát hiện, tốc độ di chuyển tăng 50%, khi đến gần kẻ địch trong bản đồ lớn/Vũ Trụ Mô Phỏng/Vũ Trụ Sai Phân, có thể lập tức nhận Vật Tiêu Hao ngẫu nhiên, mỗi ngày thực tế tối đa nhận 50 lần.\nVào chiến đấu trong thời gian có \"Chúc Phúc Của Zagreus\" sẽ gây Sát Thương Lượng Tử cho toàn bộ kẻ địch bằng 100% Tấn Công của Cipher, điểm Cipher ghi nhận được từ lần sát thương này tăng 200%."
+    }
+  },
+
+  "major_traces": {
+    "2": {
+      "name": "Giày Quý Thần Tốc",
+      "description": "Khi tốc độ của Cipher lớn hơn hoặc bằng 140/170, Tỷ Lệ Bạo Kích tăng 25%/50%, điểm ghi nhận nhận được tăng 50%/100%."
+    },
+
+    "4": {
+      "name": "300 Hiệp Đạo",
+      "description": "Cipher sẽ ghi nhận 8% không phải Sát Thương Chuẩn mà mục tiêu phe ta gây ra cho mục tiêu phe địch ngoại trừ \"Khách Quen\", sát thương vượt mức sẽ không ghi nhận."
+    },
+
+    "6": {
+      "name": "Đổi Trắng Thay Đen",
+      "description": "Sát Thương Bạo Kích do Đòn Đánh Theo Sau của Thiên Phú gây ra tăng 100%. Khi Cipher trong trận, sát thương toàn bộ mục tiêu phe địch phải chịu sẽ tăng 40%."
+    }
+  },
+
+  "stat_bonuses": [
+    {
+      "stat": "Tốc Độ",
+      "value": "+14"
+    },
+    {
+      "stat": "Sát Thương - Lượng Tử",
+      "value": "+14.4%"
+    },
+    {
+      "stat": "Chính Xác Hiệu Ứng",
+      "value": "+10.0%"
+    }
+  ],
+
+  "eidolons": [
+    {
+      "level": 1,
+      "name": "Dòm Ngó Kỹ, Bắt Cơ May",
+      "description": "Điểm sát thương được ghi nhận của Cipher là 150% điểm ghi nhận ban đầu. Khi thi triển Đòn Đánh Theo Sau của Thiên Phú, Tấn Công của Cipher tăng 80%, duy trì 2 hiệp."
+    },
+
+    {
+      "level": 2,
+      "name": "Vụng Về Ra Tay, Lấm Lem Ngay",
+      "description": "Khi Cipher đánh trúng mục tiêu phe địch, có 120% xác suất cơ bản khiến sát thương kẻ địch phải chịu tăng 30%, duy trì 2 hiệp."
+    },
+
+    {
+      "level": 3,
+      "name": "Gian Ngôn Tráo Thật Giả Bày",
+      "description": "Cấp Tuyệt Kỹ +2, tối đa không quá cấp 15, cấp Tấn Công Thường +1, tối đa không quá cấp 10."
+    },
+
+    {
+      "level": 4,
+      "name": "Lòi Đuôi Vội Vụt Chân Bay",
+      "description": "Sau khi \"Khách Quen\" bị mục tiêu phe ta tấn công, Cipher sẽ gây Sát Thương Kèm Theo thuộc tính Lượng Tử bằng 50% Tấn Công của Cipher cho kẻ đó."
+    },
+
+    {
+      "level": 5,
+      "name": "Trốn Thoát Tinh Vi, Giăng Kế Dày",
+      "description": "Cấp Chiến Kỹ +2, tối đa không vượt quá cấp 15; Cấp Thiên Phú +2, tối đa không vượt quá cấp 15."
+    },
+
+    {
+      "level": 6,
+      "name": "Lừa Cả Thế Giới Chẳng Ai Hay",
+      "description": "Tăng 350% sát thương gây ra bởi Đòn Đánh Theo Sau của Thiên Phú Cipher, khi ghi nhận, sẽ ghi thêm 16% của sát thương gây ra không thuộc phạm trù vượt mức của đòn tấn công này. Sau khi thi triển Tuyệt Kỹ sẽ xóa điểm ghi nhận, hoàn trả 20% điểm ghi nhận bị xóa của lần này."
+    }
+  ]
+}

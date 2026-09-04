@@ -1,0 +1,202 @@
+{
+    "id": "clara",
+    "name": "Clara",
+    "rarity": 5,
+    "element": "physical",
+    "path": "destruction",
+    "version_released": "1.0",
+    "max_energy": 110,
+    "level_80_stats": {
+        "hp": 1242,
+        "atk": 737,
+        "def": 485,
+        "spd": 90
+    },
+    "abilities": {
+        "basic": {
+            "type": "Tấn Công Thường",
+            "name": "Clara Cũng Muốn Giúp",
+            "tag": "Đánh Đơn",
+            "energy_gain": 20,
+            "break": 10,
+            "min_level": 1,
+            "max_level": 7,
+            "default_level": 6,
+            "description_template": "Gây Sát Thương Vật Lý cho 1 kẻ địch chỉ định tương đương {{damage}}% Tấn Công của Clara.",
+            "scaling": {
+                "damage": [
+                    50,
+                    60,
+                    70,
+                    80,
+                    90,
+                    100,
+                    110
+                ]
+            }
+        },
+        "skill": {
+            "type": "Chiến Kỹ",
+            "name": "Svarog Đang Nhìn Ngươi",
+            "tag": "Đánh Lan",
+            "energy_gain": 30,
+            "break_aoe": 10,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Gây Sát Thương Vật Lý cho toàn phe địch tương đương {{skill_damage}}% Tấn Công của Clara, và gây thêm cho tất cả địch bị Svarog đánh dấu \"Ký Hiệu Phản Kích\" một lượng Sát Thương Vật Lý bằng {{skill_damage}}% Tấn Công của Clara.\nSau khi thi triển Chiến Kỹ, tất cả \"Ký Hiệu Phản Kích\" sẽ mất hiệu lực.",
+            "scaling": {
+                "skill_damage": [
+                    60.0,
+                    66.0,
+                    72.0,
+                    78.0,
+                    84.0,
+                    90.0,
+                    97.5,
+                    105.0,
+                    112.5,
+                    120.0,
+                    126.0,
+                    132.0
+                ]
+            }
+        },
+        "ultimate": {
+            "type": "Tuyệt Kỹ",
+            "name": "Là Hẹn Ước, Không Phải Mệnh Lệnh",
+            "tag": "Cường Hóa",
+            "energy_cost": 110,
+            "energy_gain": 5,
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Sau khi thi triển Tuyệt Kỹ, sát thương Clara phải chịu giảm thêm {{damage_reduction}}%, đồng thời tăng xác suất bị phe địch tấn công, duy trì 2 hiệp.\nĐồng thời Phản Kích của Svarog được cường hóa, sau khi mục tiêu bất kỳ của phe ta bị tấn công, Svarog sẽ thi triển ngay phản kích, Bội Số Sát Thương gây ra cho mục tiêu địch tăng {{mv_increase}}%, và gây sát thương cho mục tiêu lân cận kẻ đó bằng 50% của mục tiêu chính. Hiệu ứng cường hóa có thể hiệu lực 2 lần.",
+            "scaling": {
+                "damage_reduction": [
+                    15.0,
+                    16.0,
+                    17.0,
+                    18.0,
+                    19.0,
+                    20.0,
+                    21.25,
+                    22.5,
+                    23.75,
+                    25.0,
+                    26.0,
+                    27.0
+                ],
+                "mv_increase": [
+                    96.0,
+                    102.4,
+                    108.8,
+                    115.2,
+                    121.6,
+                    128.0,
+                    136.0,
+                    144.0,
+                    152.0,
+                    160,
+                    166.4,
+                    172.8
+                ]
+            }
+        },
+        "talent": {
+            "type": "Thiên Phú",
+            "name": "Vì Chúng Ta Là Người Một Nhà",
+            "tag": "Đánh Đơn",
+            "energy_gain": 5,
+            "break": 10,
+            "break_main": "20 (Phản Kích Cường Hóa)",
+            "break_adjacent": "10 (Phản Kích Cường Hóa)",
+            "min_level": 1,
+            "max_level": 12,
+            "default_level": 10,
+            "description_template": "Dưới sự bảo vệ của Svarog, sát thương Clara phải chịu giảm 10%. Kẻ đã tấn công Clara sẽ bị Svarog đánh dấu \"Ký Hiệu Phản Kích\" đồng thời chịu sự phản kích của Svarog, gây cho kẻ đó Sát Thương Vật Lý bằng {{follow_up_damage}}% tấn công của Clara.",
+            "scaling": {
+                "follow_up_damage": [
+                    80.0,
+                    88.0,
+                    96.0,
+                    104.0,
+                    112.0,
+                    120.0,
+                    130.0,
+                    140.0,
+                    150.0,
+                    160.0,
+                    168.0,
+                    176.0
+                ]
+            }
+        },
+        "technique": {
+            "type": "Bí Kỹ",
+            "name": "Cái Giá Của Chiến Thắng",
+            "break": 20,
+            "description": "Tấn công kẻ địch ngay lập tức, sau khi vào chiến đấu sẽ tăng xác suất Clara bị kẻ địch tấn công, duy trì 2 hiệp."
+        }
+    },
+    "major_traces": {
+        "2": {
+            "name": "Người Nhà",
+            "description": "Khi bị tấn công có 35% xác suất cố định giải trừ 1 Hiệu Ứng Xấu của bản thân."
+        },
+        "4": {
+            "name": "Bảo Vệ",
+            "description": "Tăng tỷ lệ Kháng Hiệu Ứng Xấu dạng Khống Chế."
+        },
+        "6": {
+            "name": "Trả Thù",
+            "description": "Sát thương gây ra từ đòn phản kích của Svarog tăng 30%."
+        }
+    },
+    "stat_bonuses": [
+        {
+            "stat": "HP",
+            "value": "+10%"
+        },
+        {
+            "stat": "Sát Thương - Vật Lý",
+            "value": "+14.4%"
+        },
+        {
+            "stat": "Tấn Công",
+            "value": "+28.0%"
+        }
+    ],
+    "eidolons": [
+        {
+            "level": 1,
+            "name": "Bóng Lưng Cao Lớn",
+            "description": "Sau khi thi triển Chiến Kỹ, sẽ không xóa \"Ký Hiệu Phản Kích\" của mục tiêu địch."
+        },
+        {
+            "level": 2,
+            "name": "Cái Ôm Thật Chặt",
+            "description": "Sau khi thi triển Tuyệt Kỹ, Tấn Công tăng 30%, duy trì 2 hiệp."
+        },
+        {
+            "level": 3,
+            "name": "Giáp Thép Băng Giá",
+            "description": "Cấp Chiến Kỹ +2, tối đa không quá cấp ; Cấp Tấn Công Thường +1, tối đa không quá cấp 10."
+        },
+        {
+            "level": 4,
+            "name": "Mái Ấm Gia Đình",
+            "description": "Sau khi bị tấn công, sát thương Clara phải chịu giảm 30%, hiệu ứng kéo dài đến khi bắt đầu hiệp sau của bản thân."
+        },
+        {
+            "level": 5,
+            "name": "Lời Hứa Nho Nhỏ",
+            "description": "Cấp Tuyệt Kỹ +2, tối đa không quá cấp ; Cấp Thiên Phú +2, tối đa không quá cấp 15."
+        },
+        {
+            "level": 6,
+            "name": "Đồng Hành Dài Lâu",
+            "description": "Sau khi mục tiêu khác của phe ta bị tấn công, Svarog cũng có 50% xác suất cố định phản kích lại người tấn công, đồng thời thêm \"Ký Hiệu Phản Kích\" lên mục tiêu tấn công. Khi thi triển Tuyệt Kỹ sẽ tăng thêm 1 lần cường hóa Phản Kích."
+        }
+    ]
+}

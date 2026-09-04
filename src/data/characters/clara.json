@@ -44,7 +44,7 @@
             "min_level": 1,
             "max_level": 12,
             "default_level": 10,
-            "description_template": "Deals Physical DMG equal to {{skill_damage}}% of Clara's ATK to all enemies, and additionally deals Physical DMG equal to {{skill_damage}}% of Clara's ATK to enemies marked by Svarog with a Mark of Counter. All Marks of Counter will be removed after this Skill is used.",
+            "description_template": "Deals Physical DMG equal to {{skill_damage}}% of Clara's ATK to all enemies, and additionally deals Physical DMG equal to {{skill_damage}}% of Clara's ATK to enemies marked by Svarog with a Mark of Counter.\nAll Marks of Counter will be removed after this Skill is used.",
             "scaling": {
                 "skill_damage": [
                     60.0,
@@ -71,7 +71,7 @@
             "min_level": 1,
             "max_level": 12,
             "default_level": 10,
-            "description_template": "After Clara uses Ultimate, DMG dealt to her is reduced by an extra {{damage_reduction}}%, and she has greatly increased chances of being attacked by enemies for 2 turn(s). In addition, Svarog's Counter is enhanced. When an ally is attacked, Svarog immediately launches a Counter, and its DMG multiplier against the enemy increases by {{mv_increase}}%. Enemies adjacent to it take 50% of the DMG dealt to the primary target enemy. Enhanced Counter(s) can take effect 2 time(s).",
+            "description_template": "After Clara uses Ultimate, DMG dealt to her is reduced by an extra {{damage_reduction}}%, and she has greatly increased chances of being attacked by enemies for 2 turn(s).\nIn addition, Svarog's Counter is enhanced. When an ally is attacked, Svarog immediately launches a Counter, and its DMG multiplier against the enemy increases by {{mv_increase}}%. Enemies adjacent to it take 50% of the DMG dealt to the primary target enemy. Enhanced Counter(s) can take effect 2 time(s).",
             "scaling": {
                 "damage_reduction": [
                     15.0,
@@ -146,11 +146,11 @@
         },
         "4": {
             "name": "Under Protection",
-            "description": "Increases the chance to resist Crowd Control debuffs by 35%,"
+            "description": "Increases the chance to resist Crowd Control debuffs by 35%."
         },
         "6": {
             "name": "Revenge",
-            "description": "Increases DMG dealt by Svarog's Counter by 30%,"
+            "description": "Increases DMG dealt by Svarog's Counter by 30%."
         }
     },
     "stat_bonuses": [
@@ -176,12 +176,12 @@
         {
             "level": 2,
             "name": "A Tight Embrace",
-            "description": "After using the Ultimate, ATK increases by 30% for 2 turn(s)"
+            "description": "After using the Ultimate, ATK increases by 30% for 2 turn(s)."
         },
         {
             "level": 3,
             "name": "Cold Steel Armor",
-            "description": "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+            "description": "Skill Lv. +2, up to a maximum of Lv. 15.\nBasic ATK Lv. +1, up to a maximum of Lv. 10."
         },
         {
             "level": 4,
@@ -191,7 +191,7 @@
         {
             "level": 5,
             "name": "A Small Promise",
-            "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+            "description": "Ultimate Lv. +2, up to a maximum of Lv. 15.\nTalent Lv. +2, up to a maximum of Lv. 15."
         },
         {
             "level": 6,
