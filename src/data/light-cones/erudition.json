@@ -88,7 +88,6 @@
     "rarity": 4,
     "version_released": "2.3",
     "source": "warp",
-    "free": true,
     "passive": {
       "en": "Increases the wearer's Break Effect by {{value}}%. After the wearer uses Ultimate, increases SPD by {{value}}%, lasting for 2 turn(s).",
       "ru": "Эффект пробития владельца повышается на {{value}}%. После того как владелец использует сверхспособность, его скорость повышается на {{value}}% на 2 хода.",
@@ -344,7 +343,6 @@
     "rarity": 4,
     "version_released": "1.0",
     "source": "warp",
-    "free": true,
     "passive": {
       "en": "Increases the wearer's ATK by {{value}}%. When the wearer defeats an enemy, the wearer's CRIT DMG increases by {{value}}% for 3 turn(s).",
       "ru": "Сила атаки владельца повышается на {{value}}%. Когда владелец побеждает противника, его крит. урон повышается на {{value}}% на 3 хода.",
@@ -465,7 +463,6 @@
     "rarity": 4,
     "version_released": "1.0",
     "source": "warp",
-    "free": true,
     "passive": {
       "en": "The wearer regenerates {{value}} Energy immediately upon entering battle, and increases DMG dealt by the wearer's Ultimate by {{value}}%.",
       "ru": "В начале боя восстанавливает владельцу {{value}} ед. энергии. Наносимый сверхспособностью владельца урон повышается на {{value}}%.",
@@ -509,7 +506,6 @@
       "warp",
       "stellar-convergence"
     ],
-    "free": true,
     "passive": {
       "en": "For every enemy on the field, increases the wearer's ATK by {{value}}%, up to 5 stacks. When an enemy is inflicted with Weakness Break, the DMG dealt by the wearer increases by {{value}}% for 1 turn.",
       "ru": "За каждого противника на поле боя сила атаки владельца повышается на {{value}}%. Этот эффект может складываться до 5 раз. Если на поле боя есть противник с пробитой уязвимостью, то урон владельца повышается на {{value}}% на 1 ход.",
@@ -667,7 +663,6 @@
     "rarity": 4,
     "version_released": "1.0",
     "source": "warp",
-    "free": true,
     "passive": {
       "en": "Increases DMG dealt by the wearer's Follow-Up ATKs by {{value}}%. If the current HP percentage of the enemy target is below or equal to 50%, increases DMG dealt by Follow-Up ATKs by an extra {{value}}%.",
       "ru": "Наносимый бонус-атакой владельца урон повышается на {{value}}%. Если текущее НР противника ниже или равно 50%, то наносимый бонус-атакой владельца урон этому противнику, повышается на {{value}}%.",

@@ -43,7 +43,6 @@
         "rarity": 5,
         "version_released": "1.0",
         "source": ["warp", "stellar-convergence"],
-        "free": true,
         "passive": {
             "en": "Increases the wearer's Energy Regeneration Rate by {{value}}% and regenerates 1 Skill Point when the wearer uses their Ultimate on an ally. This effect can be triggered once after every 2 uses of the wearer's Ultimate. When the wearer uses their Skill, the next ally taking action (except the wearer) deals {{value}}% more DMG for 1 turn(s).",
             "ru": "Скорость восстановления энергии владельца повышается на {{value}}%. Когда владелец использует сверхспособность на союзнике, он восстанавливает 1 очко навыков. Этот эффект может сработать только один раз за два использования сверхспособности. После использования владельцем навыка урон союзника, совершающего действие за ним, повышается на {{value}}% на 1 ход.",
@@ -165,7 +164,6 @@
         "rarity": 4,
         "version_released": "1.0",
         "source": "warp",
-        "free": true,
         "passive": {
             "en": "When the wearer uses their Ultimate, all allies' actions are Advanced Forward by {{value}}%.",
             "ru": "После использования сверхспособности действия всех союзников продвигаются вперёд на {{value}}%.",
@@ -519,7 +517,6 @@
         "rarity": 4,
         "version_released": "1.0",
         "source": "warp",
-        "free": true,
         "passive": {
             "en": "Increases the wearer's Break Effect by {{value}}%. When the wearer attacks, additionally regenerates {{value}} Energy. This effect cannot be repeatedly triggered in a single turn.",
             "ru": "Эффект пробития владельца повышается на {{value}}%. Использование владельцем атаки дополнительно восстанавливает {{value}} ед. его энергии. Этот эффект может сработать только один раз за ход.",
@@ -677,7 +674,6 @@
         "rarity": 4,
         "version_released": "1.0",
         "source": "warp",
-        "free": true,
         "passive": {
             "en": "After entering battle, if an ally deals the same DMG Type as the wearer, DMG dealt increases by {{value}}%.",
             "ru": "В начале боя, когда союзник наносит урон того же типа, что и тип атаки владельца, наносимый им урон повышается на {{value}}%.",
@@ -713,7 +709,6 @@
         "rarity": 4,
         "version_released": "2.4",
         "source": "warp",
-        "free": true,
         "passive": {
             "en": "Increases the wearer's ATK by {{value}}%. Upon entering battle, if two or more characters follow the same Path, then these characters' CRIT DMG increases by {{value}}%. Abilities of the same type cannot stack.",
             "ru": "Сила атаки владельца повышается на {{value}}%. Если в начале боя количество союзников одного и того же Пути равно или больше 2, то крит. урон этих персонажей повышается на {{value}}%. Этот эффект не может складываться с эффектами подобного типа.",

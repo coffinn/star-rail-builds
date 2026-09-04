@@ -44,7 +44,6 @@
         "rarity": 4,
         "version_released": "2.1",
         "source": "warp",
-        "free": true,
         "passive": {
             "en": "Increases the wearer's DEF by {{value}}%. For every on-field character that has a Shield, the DMG dealt by the wearer increases by {{value}}%.",
             "ru": "Защита владельца повышается на {{value}}%. За каждого имеющегося на поле боя персонажа с щитом наносимый владельцем урон повышается на {{value}}%.",
@@ -85,7 +84,6 @@
         "rarity": 4,
         "version_released": "1.0",
         "source": "warp",
-        "free": true,
         "passive": {
             "en": "Increases the wearer's DEF by {{value}}%. After entering battle, increases All-Type RES of all allies by {{value}}%. Abilities of the same type cannot stack.",
             "ru": "Защита владельца повышается на {{value}}%. В начале боя все типы сопротивления всех союзников повышаются на {{value}}%. Этот эффект не может складываться с эффектами подобного типа.",
@@ -297,7 +295,6 @@
         "rarity": 4,
         "version_released": "1.0",
         "source": "warp",
-        "free": true,
         "passive": {
             "en": "The wearer is more likely to be attacked, and DMG taken is reduced by {{value}}%.",
             "ru": "Шанс владельца быть атакованным противником повышается. Получаемый владельцем урон понижается на {{value}}%.",
@@ -333,7 +330,6 @@
         "rarity": 5,
         "version_released": "1.0",
         "source": ["warp", "stellar-convergence"],
-        "free": true,
         "passive": {
             "en": "Increases the wearer's DEF by {{value}}% and Effect Hit Rate by {{value}}%. Increases the chance for the wearer to be attacked by enemies. When the wearer is attacked, increase their DEF by an extra {{value}}% until the end of the wearer's turn.",
             "ru": "Защита владельца повышается на {{value}}%, а его шанс попадания эффектов - на {{value}}%. Шанс быть атакованным противником также повышается. Когда противник атакует владельца, защита владельца повышается на доп. {{value}}% до конца его хода.",
@@ -606,7 +602,6 @@
         "rarity": 4,
         "version_released": "1.0",
         "source": "warp",
-        "free": true,
         "passive": {
             "en": "Increases the wearer's DEF by {{value}}%. When the wearer is attacked, there is a {{value}}% base chance to Burn the enemy. For each turn, the wearer deals DoT that is equal to {{value}}% of the wearer's DEF for 2 turn(s).",
             "ru": "Защита владельца повышается на {{value}}%. Когда противник атакует владельца, владелец имеет базовый шанс {{value}}% наложить на этого противника статус Горение. Противник со статусом Горение получает периодический урон, равный {{value}}% от защиты владельца, каждый ход в течение 2 ходов.",

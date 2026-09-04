@@ -89,7 +89,6 @@
         "rarity": 4,
         "version_released": "2.2",
         "source": "warp",
-        "free": true,
         "passive": {
             "en": "Increase the wearer's CRIT Rate by {{value}}%. The wearer deals {{value}}% more CRIT DMG to enemies that are currently Slowed or have reduced DEF.",
             "ru": "Крит. шанс владельца повышается на {{value}}%. Крит. урон владельца, наносимый противникам с пониженной защитой или со статусом Замедление, повышается на {{value}}%.",
@@ -130,7 +129,6 @@
         "rarity": 4,
         "version_released": "1.0",
         "source": "warp",
-        "free": true,
         "passive": {
             "en": "Increases the wearer's Effect Hit Rate by {{value}}% and increases DoT by {{value}}%.",
             "ru": "Шанс попадания эффектов владельца повышается на {{value}}%, и его периодический урон - на {{value}}%.",
@@ -212,7 +210,6 @@
         "rarity": 4,
         "version_released": "1.0",
         "source": "warp",
-        "free": true,
         "passive": {
             "en": "For every debuff the target enemy has, the DMG dealt by the wearer increases by {{value}}%, stacking up to 3 time(s). This effect also applies to DoT.",
             "ru": "За каждое имеющееся у выбранного противника ослабление наносимый владельцем урон повышается на {{value}}%, складывается до 3 раз. Этот эффект распространяется и на периодический урон.",
@@ -324,7 +321,6 @@
         "rarity": 5,
         "version_released": "1.0",
         "source": ["warp", "stellar-convergence"],
-        "free": true,
         "passive": {
             "en": "Increases the wearer's DMG to debuffed enemies by {{value}}%. When the wearer uses their Skill, the Effect Hit Rate for this attack increases by {{value}}%, and ATK increases by {{value}}%.",
             "ru": "Урон владельца, наносимый противникам с ослаблениями, повышается на {{value}}%. Когда владелец использует навык, шанс попадания эффектов этой атаки повышается на {{value}}%, а сила атаки - на {{value}}%.",
@@ -752,7 +748,6 @@
         "rarity": 4,
         "version_released": "1.0",
         "source": "warp",
-        "free": true,
         "passive": {
             "en": "When the wearer hits an enemy and if the hit enemy is not already \"Ensnared,\" then there is a {{value}}% base chance to \"Ensnare\" the hit enemy. \"Ensnared\" enemies' DEF decreases by {{value}}% for 1 turn(s).",
             "ru": "Когда владелец поражает противника, который не имеет статуса Отлов, то он имеет базовый шанс {{value}}% наложить на этого противника статус Отлов. Защита противника со статусом Отлов понижается на {{value}}% на 1 ход.",

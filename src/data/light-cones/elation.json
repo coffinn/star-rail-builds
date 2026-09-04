@@ -3,7 +3,6 @@
         "rarity": 4,
         "version_released": "4.5",
         "source": "warp",
-        "free": true,
         "passive": {
             "en": "Increases the wearer's Elation by {{value}}%. During the use of Elation Skill by the wearer, ignores {{value}}% of the target's DEF.",
             "ru": "Повышает уровень Радости владельца на {{value}}%. Когда владелец использует навык Радости, он игнорирует {{value}}% защиты цели.",
