@@ -1,73 +1,75 @@
 {
-  "translators": {
-    "ru": [
-      "dem666.",
-      "graceclu"
-    ],
-    "fr": [
-      "azxlvs"
-    ],
-    "vn": [
-      "valaerys"
-    ],
-    "cht": [
-      "abatos777"
+    "translators": {
+        "ru": [
+            "dem666.",
+            "graceclu"
+        ],
+        "fr": [
+            "azxlvs"
+        ],
+        "vn": [
+            "valaerys"
+        ],
+        "cht": [
+            "abatos777"
+        ]
+    },
+    "sections": [
+        {
+            "title": "Active Contributors",
+            "names": [
+                "xaale",
+                "50molesofnacl",
+                "crypticlucid",
+                "azxlvs",
+                "strawvt",
+                "sipsipsip.",
+                "houseplant_official",
+                "ongabongaboo1123",
+                "knightimator",
+                "valaerys",
+                "dem666.",
+                "verudition"
+            ]
+        },
+        {
+            "title": "Website Development",
+            "names": [
+                "akhala_",
+                "xaale"
+            ]
+        },
+        {
+            "title": "Extensive References",
+            "names": [
+                "Guoba Certified"
+            ]
+        },
+        {
+            "title": "Other Contributors",
+            "names": [
+                "kinumako"
+            ]
+        },
+        {
+            "title": "Past References",
+            "names": [
+                "canne_tuna",
+                "justmorbnika",
+                "ucian",
+                "akatsuhorishiku",
+                "morikage00",
+                "indalbesepi4",
+                "aquami",
+                "ataraxia1339",
+                "valiumanic"
+            ]
+        },
+        {
+            "title": "Special Thanks",
+            "names": [
+                "akhala_"
+            ]
+        }
     ]
-  },
-  "sections": [
-    {
-      "title": "Active Contributors",
-      "names": [
-        "xaale",
-        "50molesofnacl",
-        "crypticlucid",
-        "azxlvs",
-        "strawvt",
-        "sipsipsip.",
-        "houseplant_official",
-        "ongabongaboo1123",
-        "knightimator",
-        "valaerys",
-        "dem666.",
-        "verudition"
-      ]
-    },
-    {
-      "title": "Website Development",
-      "names": [
-        "akhala_",
-        "xaale"
-      ]
-    },
-    {
-      "title": "Extensive References",
-      "names": [
-        "Guoba Certified"
-      ]
-    },
-    {
-      "title": "Other Contributors",
-      "names": []
-    },
-    {
-      "title": "Past References",
-      "names": [
-        "canne_tuna",
-        "justmorbnika",
-        "ucian ",
-        ".akatsuhorishikuthesimp.",
-        "morikage00",
-        "indalbesepi4",
-        "aquami",
-        "ataraxia1339",
-        "valiumanic"
-      ]
-    },
-    {
-      "title": "Special Thanks",
-      "names": [
-        "akhala_"
-      ]
-    }
-  ]
 }

@@ -87,16 +87,58 @@ function compareCatalogCards(
     left: HTMLElement,
     right: HTMLElement,
     sort: string,
+    kind?: FilterKind,
 ) {
-    const byName = cardValue(left, 'name')
-        .localeCompare(cardValue(right, 'name'));
+    const byName = cardValue(
+        left,
+        'name',
+    ).localeCompare(
+        cardValue(right, 'name'),
+    );
+
+    /*
+     * Relic A-Z:
+     * Cavern first, then Planar,
+     * with each group sorted A-Z.
+     */
+    if (
+        kind === 'relic' &&
+        sort === 'name'
+    ) {
+        const typeOrder: Record<
+            string,
+            number
+        > = {
+            cavern: 0,
+            planar: 1,
+        };
+
+        const byType =
+            (typeOrder[
+                cardValue(left, 'type')
+            ] ?? 99) -
+            (typeOrder[
+                cardValue(right, 'type')
+            ] ?? 99);
+
+        return byType || byName;
+    }
 
     if (sort === 'release') {
         return (
-            compareVersionNewest(
-                cardValue(left, 'versionReleased'),
-                cardValue(right, 'versionReleased'),
-            ) || byName
+            Number.parseFloat(
+                cardValue(
+                    right,
+                    'versionReleased',
+                ),
+            ) -
+            Number.parseFloat(
+                cardValue(
+                    left,
+                    'versionReleased',
+                ),
+            ) ||
+            byName
         );
     }
 
@@ -189,7 +231,12 @@ if (kind) {
                 ...[...cards].sort((left, right) =>
                     kind === 'character'
                         ? compareCharacterCards(left, right, sort)
-                        : compareCatalogCards(left, right, sort),
+                        : compareCatalogCards(
+                            left,
+                            right,
+                            sort,
+                            kind,
+                        ),
                 ),
             );
         }

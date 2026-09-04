@@ -226,12 +226,25 @@ export function getRelicSetBrowserData(
 ) {
     const locale = getLocale(lang);
 
+    const relicTypeOrder = {
+        cavern: 0,
+        planar: 1,
+    } as const;
+
     const relicSets = getRelicSetEntries(
         locale,
         lang,
-    ).sort((a, b) =>
-        a.name.localeCompare(b.name),
-    );
+    ).sort((a, b) => {
+        const byType =
+            relicTypeOrder[a.type] -
+            relicTypeOrder[b.type];
+
+        if (byType !== 0) {
+            return byType;
+        }
+
+        return a.name.localeCompare(b.name);
+    });
 
     const visibleTagOptionGroups =
         tagOptionGroups
