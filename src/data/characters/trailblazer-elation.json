@@ -71,7 +71,7 @@
       "min_level": 1,
       "max_level": 12,
       "default_level": 10,
-      "description_template": "Gains 5 Punchline point(s). Increases the CRIT DMG of one designated ally by {{scaling1}}% for 3 turn(s), and dispels Crowd Control debuffs on them. If the target has Elation Skill, they additionally gain 10 point(s) of \"Certified Banger\" and immediately use their Elation Skill 1 time, taking into account a fixed amount of 20 Punchline point(s). If the enemy target is defeated before the Elation Skill is unleashed, then the Elation Skill is instead launched on a newly entering enemy target. If the target does not have Elation Skill, their action advances by 50%.",
+      "description_template": "Gains 5 Punchline point(s). Increases the CRIT DMG of one designated ally by {{scaling1}}% for 3 turn(s), and dispels Crowd Control debuffs on them.\nIf the target has Elation Skill, they additionally gain 10 point(s) of \"Certified Banger\" and immediately use their Elation Skill 1 time, taking into account a fixed amount of 20 Punchline point(s).\nIf the enemy target is defeated before the Elation Skill is unleashed, then the Elation Skill is instead launched on a newly entering enemy target. If the target does not have Elation Skill, their action advances by 50%.",
       "scaling": {
         "scaling1": [
           30,
@@ -96,7 +96,7 @@
       "min_level": 1,
       "max_level": 12,
       "default_level": 10,
-      "description_template": "After using an attack, regenerates a fixed amount of 10 Energy and gains 3 Punchline point(s). When the Trailblazer holds \"Certified Banger,\" their Skill additionally deals {{scaling1}}% Lightning Elation DMG to all enemies. This DMG is calculated using the highest \"Certified Banger\" value among all allies.",
+      "description_template": "After using an attack, regenerates a fixed amount of 10 Energy and gains 3 Punchline point(s).\nWhen the Trailblazer holds \"Certified Banger,\" their Skill additionally deals {{scaling1}}% Lightning Elation DMG to all enemies. This DMG is calculated using the highest \"Certified Banger\" value among all allies.",
       "scaling": {
         "scaling1": [
           15,
@@ -118,7 +118,7 @@
       "type": "Technique",
       "name": "We Are So Back!",
       "tag": "Enhance",
-      "description": "After using Technique, randomly gains 1 of the following effects: A low chance to gain \"Hearty Laughter\": Increases Elation by 30%. A high chance to gain \"Irrepressible Laughter\": Increases Elation by 20%. When the next battle begins, increases all allies' Elation stat by the corresponding amount for 3 turn(s)."
+      "description": "After using Technique, randomly gains 1 of the following effects:\nA low chance to gain \"Hearty Laughter\": Increases Elation by 30%.\nA high chance to gain \"Irrepressible Laughter\": Increases Elation by 20%.\nWhen the next battle begins, increases all allies' Elation stat by the corresponding amount for 3 turn(s)."
     }
   },
   "elation": {
@@ -209,7 +209,7 @@
     {
       "level": 3,
       "name": "Into the Spotlight",
-      "description": "Skill Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15. Elation Skill Lv. +1, up to a maximum of Lv. 15."
+      "description": "Skill Lv. +2, up to a maximum of Lv. 15.\nTalent Lv. +2, up to a maximum of Lv. 15.\nElation Skill Lv. +1, up to a maximum of Lv. 15."
     },
     {
       "level": 4,
@@ -219,7 +219,7 @@
     {
       "level": 5,
       "name": "Love & Courage: Always in Style",
-      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10. Elation Skill Lv. +1, up to a maximum of Lv. 15."
+      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15.\nBasic ATK Lv. +1, up to a maximum of Lv. 10.\nElation Skill Lv. +1, up to a maximum of Lv. 15."
     },
     {
       "level": 6,

@@ -1,0 +1,230 @@
+{
+  "id": "trailblazer-elation",
+  "name": "Nhà Khai Phá - Vui Vẻ",
+  "rarity": 5,
+  "element": "lightning",
+  "path": "elation",
+  "version_released": "4.2",
+  "max_energy": 160,
+  "level_80_stats": {
+    "hp": 1087,
+    "atk": 465,
+    "def": 630,
+    "spd": 106
+  },
+  "abilities": {
+    "basic": {
+      "type": "Tấn Công Thường",
+      "name": "Đây Chính Là Cổ Vũ",
+      "tag": "Đánh Đơn",
+      "energy_gain": 20,
+      "break": 10,
+      "min_level": 1,
+      "max_level": 7,
+      "default_level": 6,
+      "description_template": "Gây Sát Thương Lôi cho 1 kẻ địch chỉ định bằng {{scaling1}}% Tấn Công của Nhà Khai Phá.",
+      "scaling": {
+        "scaling1": [
+          50,
+          60,
+          70,
+          80,
+          90,
+          100,
+          110
+        ]
+      }
+    },
+    "skill": {
+      "type": "Chiến Kỹ",
+      "name": "Cơn Bão Thật Ồn Ào",
+      "tag": "Đánh Lan",
+      "energy_gain": 30,
+      "break_aoe": 20,
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "Gây Sát Thương Lôi cho toàn bộ phe địch bằng {{scaling1}}% Tấn Công của Nhà Khai Phá, nhận 20 điểm điểm \"Việc Tốt Đáng Thưởng\".",
+      "scaling": {
+        "scaling1": [
+          30,
+          33,
+          36,
+          39,
+          42,
+          45,
+          48.8,
+          52.5,
+          56.3,
+          60,
+          63,
+          66
+        ]
+      }
+    },
+    "ultimate": {
+      "type": "Tuyệt Kỹ",
+      "name": "Yên Tâm Bay Đi, Khai Phá Mãi Đồng Hành!",
+      "tag": "Hỗ Trợ",
+      "energy_gain": 5,
+      "energy_cost": 160,
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "Nhận 5 Điểm Hài Hước, khiến Sát Thương Bạo Kích của 1 đồng đội chỉ định tăng {{scaling1}}%, duy trì 3 hiệp, đồng thời giải trừ Hiệu Ứng Xấu Loại Khống Chế của mục tiêu này.\nNếu mục tiêu có Kỹ Năng Vui Vẻ, mục tiêu nhận thêm 20 điểm \"Việc Tốt Đáng Thưởng\", đồng thời khiến mục tiêu lập tức thi triển 1 lần Kỹ Năng Vui Vẻ được tính cố định 20 Điểm Hài Hước, nếu mục tiêu phe địch bị tiêu diệt trước khi thi triển Kỹ Năng Vui Vẻ, thì sẽ phát động Kỹ Năng Vui Vẻ lên mục tiêu phe địch mới vào trận.\nNếu mục tiêu không có Kỹ Năng Vui Vẻ, khiến mục tiêu đó Ưu Tiên Hành Động 50%.",
+      "scaling": {
+        "scaling1": [
+          30,
+          32,
+          34,
+          36,
+          38,
+          40,
+          42.5,
+          45,
+          47.5,
+          50,
+          52,
+          54
+        ]
+      }
+    },
+    "talent": {
+      "type": "Thiên Phú",
+      "name": "Anh Hùng Mỉm Cười, Sinh Tử Khó Lường",
+      "tag": "Hỗ Trợ",
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "Sau khi thi triển tấn công, hồi phục cố định 10 điểm Năng Lượng và nhận 3 Điểm Hài Hước.\nKhi Nhà Khai Phá sở hữu \"Việc Tốt Đáng Thưởng\", Chiến Kỹ gây thêm {{scaling1}}% Sát Thương Vui Vẻ thuộc tính Lôi cho toàn bộ phe địch, sát thương này sử dụng giá trị \"Việc Tốt Đáng Thưởng\" cao nhất của phe ta để tính toán.",
+      "scaling": {
+        "scaling1": [
+          15,
+          16.5,
+          18,
+          19.5,
+          21,
+          22.5,
+          24.4,
+          26.3,
+          28.1,
+          30,
+          31.5,
+          33
+        ]
+      }
+    },
+    "technique": {
+      "type": "Bí Kỹ",
+      "name": "Cháy Lên Nào!",
+      "tag": "Cường Hóa",
+      "description": "Sau khi sử dụng Bí Kỹ sẽ nhận ngẫu nhiên 1 loại hiệu ứng sau:<br />Xác suất nhỏ nhận \"Cười Vang Sảng Khoái\": Độ Vui Vẻ tăng 30%.<br />Xác suất lớn nhận \"Không Nhịn Được Cười\": Độ Vui Vẻ tăng 20%.<br />Khi bắt đầu trận chiến tiếp theo, khiến toàn phe ta tăng Độ Vui Vẻ theo giá trị tương ứng, duy trì 3 hiệp."
+    }
+  },
+  "elation": {
+    "skills": {
+      "skill": {
+        "type": "Kỹ Năng Vui Vẻ",
+        "name": "Tôi Nói Vui Vẻ, Không Nghe Thấy À?",
+        "tag": "Đánh Lan",
+        "energy_gain": 5,
+        "participant_id": 120,
+        "break_aoe": 20,
+        "min_level": 1,
+        "max_level": 12,
+        "default_level": 10,
+        "description_template": "Gây 8 lần sát thương, mỗi lần gây {{scaling1}}% Sát Thương Vui Vẻ thuộc tính Lôi cho 1 kẻ địch ngẫu nhiên. Cuối cùng gây {{scaling2}}% Sát Thương Vui Vẻ thuộc tính Lôi, chia đều cho toàn bộ phe địch.",
+        "scaling": {
+          "scaling1": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16.3,
+            17.5,
+            18.8,
+            20,
+            21,
+            22
+          ],
+          "scaling2": [
+            30,
+            33,
+            36,
+            39,
+            42,
+            45,
+            48.8,
+            52.5,
+            56.3,
+            60,
+            63,
+            66
+          ]
+        }
+      }
+    }
+  },
+  "major_traces": {
+    "2": {
+      "name": "Vui Thay Sướng Thay",
+      "description": "Nếu Tấn Công của Nhà Khai Phá cao hơn 1000 điểm, cứ mỗi 200 điểm Tấn Công vượt quá sẽ khiến Độ Vui Vẻ của bản thân tăng 10%, tối đa tăng 60%."
+    },
+    "4": {
+      "name": "Cú Đo Ván",
+      "description": "Tỷ Lệ Bạo Kích của bản thân tăng 15%. Sau khi thi triển Tuyệt Kỹ, hồi 1] Điểm Chiến Kỹ cho phe ta."
+    },
+    "6": {
+      "name": "Aha, Cắn Nó Đi!",
+      "description": "Sau khi mục tiêu phe ta thi triển Kỹ Năng Vui Vẻ, lần tiếp theo Nhà Khai Phá thi triển Chiến Kỹ sẽ nhận thêm 2 điểm \"Việc Tốt Đáng Thưởng\"."
+    }
+  },
+  "stat_bonuses": [
+    {
+      "stat": "Tấn Công",
+      "value": "+28%"
+    },
+    {
+      "stat": "Tỷ Lệ Bạo Kích",
+      "value": "+12%"
+    },
+    {
+      "stat": "Sát Thương Bạo Kích",
+      "value": "+13.3%"
+    }
+  ],
+  "eidolons": [
+    {
+      "level": 1,
+      "name": "Thời Gian Tin Vào Ánh Sáng",
+      "description": "Sau khi thi triển Chiến Kỹ, lần tiếp theo thi triển Tuyệt Kỹ khiến \"Việc Tốt Đáng Thưởng\" mà mục tiêu phe ta nhận được tăng 2 điểm, hiệu ứng này tối đa cộng dồn 3 tầng."
+    },
+    {
+      "level": 2,
+      "name": "Cảnh Kinh Điển Đang Ấp Ủ...",
+      "description": "Tuyệt Kỹ thêm hiệu quả khiến Độ Vui Vẻ của 1 đồng đội chỉ định tăng 12%, duy trì 2 hiệp."
+    },
+    {
+      "level": 3,
+      "name": "Lại Đây Nào, Tiêu Điểm Của Ống Kính",
+      "description": "Cấp Chiến Kỹ +2, tối đa không quá cấp 15; Cấp Thiên Phú +2, tối đa không quá cấp 15; Cấp Kỹ Năng Vui Vẻ +1, tối đa không quá cấp 15."
+    },
+    {
+      "level": 4,
+      "name": "Giải Cứu Thế Giới, Không Cần Lý Do",
+      "description": "Khi thi triển Kỹ Năng Vui Vẻ, khiến sát thương mục tiêu phe địch phải chịu tăng 10%, duy trì 2 hiệp."
+    },
+    {
+      "level": 5,
+      "name": "Tình Yêu Và Dũng Cảm, Không Bao Giờ Lỗi Thời",
+      "description": "Cấp Tuyệt Kỹ +2, tối đa không quá cấp 15; Cấp Tấn Công Thường +1, tối đa không quá cấp 10; Cấp Kỹ Năng Vui Vẻ +1, tối đa không quá cấp 15."
+    },
+    {
+      "level": 6,
+      "name": "Huyền Thoại Vũ Trụ, Xuất Hiện!",
+      "description": "Khi thi triển Kỹ Năng Vui Vẻ, khiến Sát Thương Bạo Kích của bản thân tăng 100%, duy trì 3 hiệp."
+    }
+  ]
+}
