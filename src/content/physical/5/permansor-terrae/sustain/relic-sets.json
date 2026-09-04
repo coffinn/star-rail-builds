@@ -83,7 +83,7 @@
                             "name": "penacony",
                             "pieces": 2,
                             "note": {
-                                "en": "Only usable with a [[element:physical]] element Main DPS."
+                                "en": "This can only be used if the wearer is of the same Type as the Main DPS."
                             }
                         }
                     ]

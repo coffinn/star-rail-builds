@@ -25,7 +25,9 @@
             "items": [
                 {
                     "name": "ultimate",
-                    "note": {"en": "Ultimate can be ignored"}
+                    "note": {
+                        "en": "Ultimate can be ignored."
+                    }
                 }
             ]
         }

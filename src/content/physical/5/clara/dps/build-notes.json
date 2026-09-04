@@ -5,7 +5,7 @@
     },
     "notes": [
         {
-            "en": "**Summary and General Analysis**\n\n✦ Clara is a Counter DPS that deals Single Target damage to an enemy that attacks her.\n\n✦ Clara's Ultimate reduces her damage taken and Enhances her next 2 Counters, allowing them to deal more damage to a Blast radius.\n\n✦ When an enemy attacks Clara, they are marked with \"Mark of Counter\". Clara's next Skill deals additional damage to any enemy with \"Mark of Counter\" then removes the mark immediately after."
+            "en": "**Summary and General Analysis**\n\n✦ Clara is a Counter DPS who’s primary damage is Single Target, her Skill however deals AoE damage. When attacked by an enemy Svarog will Counter with a Single Target attack on the enemy attacking her. Keep in mind that Svarog does not count as a Summon.\n\n✦ Her Ultimate provides DMG Reduction for 2 turns, and enhances Svarog’s Counter for the next 2 Counters. The Enhanced state of Svarog’s Counter changes his Single Target damage to Blast, he also launches Counters when any ally is attacked.\n\n✦ When an enemy attacks Clara, they are marked with \"Mark of Counter\". Her next Skill deals additional damage to any enemy with \"Mark of Counter\", all \"Mark of Counte\" will be removed after Skill is used."
         },
         {
             "en": "**Investment Priority**\n\n**E6 > Support Investments**\n\n**Investment Explanation**\n\n✦ Her E6 is vital for both her damage and her Energy gain.\n\n✦ Being a very old DPS, Support investment is required for her to perform well in majority of endgame scenarios."

@@ -30,7 +30,7 @@
                     "name": "planetary-rendezvous",
                     "note_group": "fire-affinity",
                     "note": {
-                        "en": "Requires a Fire DPS to be in the team."
+                        "en": "This can only be used if the wearer is of the same Type as the Main DPS."
                     }
                 }
             ]

@@ -18,12 +18,14 @@
             "items": [
                 {
                     "name": "basic",
+                    "note_group": "traces",
                     "note": {
                         "en": "[[ability:basic]] and Skill can be ignored."
                     }
                 },
                 {
-                    "name": "skill"
+                    "name": "skill",
+                    "note_group": "traces"
                 }
             ]
         }

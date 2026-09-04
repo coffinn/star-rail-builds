@@ -17,7 +17,7 @@
                             "name": "poet",
                             "pieces": 4,
                             "note":{
-                                "en":"[[set:poet-of-mourning-collapse]] should only be used if his SPD can be kept under 95."
+                                "en":"Be mindful of the 95 SPD threshold of the CRIT Rate requirements."
                             }
                         
                         }                       

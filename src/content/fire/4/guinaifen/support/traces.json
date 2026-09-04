@@ -17,7 +17,9 @@
                 },
                 {
                     "name": "ultimate",
-                    "note": {"en": "Basic ATK, Skill, and Ultimate can be ignored"}
+                    "note": {
+                        "en": "Basic ATK, Skill, and Ultimate can be ignored."
+                    }
                 }
             ]
         }
