@@ -3,7 +3,8 @@
     "name": {
         "en": "Elation DPS",
         "ru": "ДД Радости",
-        "vn": "DPS Vui Vẻ"
+        "vn": "DPS Vui Vẻ",
+        "cht": "歡愉主C"
     },
     "notes": [
         
@@ -20,12 +21,14 @@
         {
             "en": "## Skill Point Usage\n- Negative",
             "ru": "## Восстановление очков навыков\n- Отрицательное",
-            "vn": "## Mức sử dụng Điểm Chiến Kĩ\n- Âm"
+            "vn": "## Mức sử dụng Điểm Chiến Kĩ\n- Âm",
+            "cht": "## 產點能力\n- 負"
         },
         {
             "en": "##  Ability Rotation\n- Skill spam",
             "ru": "## Ротация\n- Спам навыка",
-            "vn": "## Lối Chơi\n- Spam [[ability:skill]]"
+            "vn": "## Lối Chơi\n- Spam [[ability:skill]]",
+            "cht": "## 技能循環\n- 有戰技用戰技"
         }
     ]
 }
