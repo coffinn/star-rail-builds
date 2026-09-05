@@ -6,14 +6,16 @@
     "notes": [
         
         {
-            "en": "**Summary and General Analysis**\n\n✦ Trailblazer: Elation is a support character who allows a single unit to use additional Elation Skills.\n\n✦ After using their Ultimate, Trailblazer: Elation selects a single unit to buff. If the unit has an Elation Skill, they use their Elation Skill once with a fixed value of 20 Punchline. If the unit does not have an Elation Skill, their action advances by 50%. Trailblazer: Elation is a solid Elation support."
-        },
-        
-        {
-            "en": "**Skill Point Usage**\n\nNegative"
+            "en": "## Summary and General Analysis\n- Trailblazer: Elation is a support character who allows a single unit to use additional Elation Skills.\n\n- After using their Ultimate, Trailblazer: Elation selects a single unit to buff. If the unit has an Elation Skill, they use their Elation Skill once with a fixed value of 20 Punchline. If the unit does not have an Elation Skill, their action advances by 50%. Trailblazer: Elation is a solid Elation support."
         },
         {
-            "en": "**Ability Rotation**\n\nSkill as often as possible for more Ultimates"
+            "en": "## Notable Investments\n ### E1, E2, E4\n- E1 increases allies' \"Certified Banger\" gained\n- E2 increases Elation of the Ultimate's target\n- E4 increases Vulnerability"
+        },
+        {
+            "en": "## Skill Point Usage\n- Negative"
+        },
+        {
+            "en": "## Ability Rotation\n- Skill as often as possible for more Ultimates"
         }
     ]
 }
