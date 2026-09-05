@@ -26,6 +26,21 @@
             ]
         },
         {
+            "groups":[
+                {
+                    "items": [
+                        {
+                            "name": "sacerdos",
+                            "pieces": 4,
+                            "note": {
+                                "en": "Specifically for Evanescia."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "groups": [
                 {
                     "choose": true,
