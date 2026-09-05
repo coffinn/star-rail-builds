@@ -5,16 +5,16 @@
     },
     "notes": [
         {
-            "en": "**Summary and General Analysis**\n\n✦ Pela applies DEF Shred to all enemies with her Ultimate.\n\n✦ Her skill removes a buff from an enemy target.\n\n✦ She generates extra energy when hitting debuffed enemies."
+            "en": "**Summary and General Analysis**\n\n✦ Her Ultimate applies DEF Reduction to all enemies for 2 turns. Her Talent allows her for more frequent Ultimates when she attack enemies she has debuffed.\n\n✦ Pela’s Skill removes 1 buff from the targeted enemy."
         },
         {
-            "en": "**Notable Investments**\n\n**E2, E4**\n\n**Investment Explanation**\n\n✦ E2 gives her more speed when removing a buff.\n\n✦ E4 supports the teams damage, but its only applicable to ice teams."
+            "en": "**Notable Investments**\n\n**E2, E4**\n\n**Investment Explanation**\n\n✦ E2 increases her SPD after dispelling 1 buff from the targeted enemy.\n\n✦ Her E4 enables her Skill to reduce the target enemy’s Ice RES for 2 turns."
         },
         {
             "en": "**Skill Point Usage**\n\nPositive"
         },
         {
-            "en": "**Ability Rotation**\n\nBasic ATK Spam, Skill if needed"
+            "en": "**Ability Rotation**\n\nBasic ATK spam, Skill if needed"
         }        
     ]    
 }    

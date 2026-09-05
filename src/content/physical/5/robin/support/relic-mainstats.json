@@ -11,7 +11,7 @@
           {
             "name": "physical-dmg",
              "note": {
-             "en": "Can be used to boost \"Concerto\" damage if you can hit 4000+ ATK with it"
+             "en": "When in \"Concerto\", she will deal Additional DMG after every ally attack. If you can hit 4000+ ATK this will increase her personal damage."
             }
         }
         ],

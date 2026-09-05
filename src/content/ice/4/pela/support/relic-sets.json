@@ -70,7 +70,9 @@
         {
           "name": "penacony",
           "pieces": 2,
-          "note": {"en": "Requires an Ice DPS to be in the team"}
+          "note": {
+            "en": "This can only be used if the wearer is of the same Type as the DPS"
+          }
         }
       ]
     }
