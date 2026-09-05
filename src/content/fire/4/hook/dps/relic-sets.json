@@ -72,7 +72,8 @@
                 {
                     "items": [
                         {
-                            "name": "glamoth","pieces": 2
+                            "name": "glamoth",
+                            "pieces": 2
                         }
                     ]
                 }

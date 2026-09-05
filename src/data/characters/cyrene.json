@@ -71,7 +71,7 @@
       "min_level": 1,
       "max_level": 12,
       "default_level": 10,
-      "description_template": "Gains 3 \"Recollection\" point(s) and deploys a Zone that lasts for 2 turns. The Zone's duration decreases by 1 at the start of Cyrene's every turn. While the Zone lasts, for each instance of DMG dealt by all ally targets, deals 1 additional instance of True DMG  equal to {{scaling1}}% of the original DMG. When Cyrene is downed , the Zone will also be dispelled.",
+      "description_template": "Gains 3 \"Recollection\" point(s) and deploys a Zone that lasts for 2 turns. The Zone's duration decreases by 1 at the start of Cyrene's every turn. While the Zone lasts, for each instance of DMG dealt by all ally targets, deals 1 additional instance of True DMG equal to {{scaling1}}% of the original DMG. When Cyrene is downed, the Zone will also be dispelled.",
       "scaling": {
         "scaling1": [
           12,
@@ -426,7 +426,7 @@
             "type": "Memosprite Skill",
             "name": "Ode to Worldbearing",
             "tag": "Support",
-            "description_template": "Effective for the entire battle. After it is used on Phainon, Phainon gains 6 \"Coreflame\" as well as \"Eternal Ignition\" when Transforming. When Transforming, if \"Coreflame\" exceeds 12, for each point in excess, Khaslana's CRIT DMG increases by {{scaling3}}%, up to a max increase of {{scaling4}}%. While \"Eternal Ignition\" persists, increases Khaslana's CRIT Rate by {{scaling1}}%. After the extra turns  are depleted, the Transformation does not end, and all of Khaslana's extra turns  get refreshed and 4 \"Scourge \" is granted. At the start of extra turns , Khaslana consumes HP equal to 15.0% of his current HP. After using an attack, deals 5 instances of Additional DMG , with each instance dealing Fire Additional DMG  equal to {{scaling2}}% of Khaslana's ATK to one random enemy.",
+            "description_template": "Effective for the entire battle. After it is used on Phainon, Phainon gains 6 \"Coreflame\" as well as \"Eternal Ignition\" when Transforming. When Transforming, if \"Coreflame\" exceeds 12, for each point in excess, Khaslana's CRIT DMG increases by {{scaling3}}%, up to a max increase of {{scaling4}}%. While \"Eternal Ignition\" persists, increases Khaslana's CRIT Rate by {{scaling1}}%. After the extra turns  are depleted, the Transformation does not end, and all of Khaslana's extra turns  get refreshed and 4 \"Scourge \" is granted. At the start of extra turns , Khaslana consumes HP equal to 15.0% of his current HP. After using an attack, deals 5 instances of Additional DMG, with each instance dealing Fire Additional DMG equal to {{scaling2}}% of Khaslana's ATK to one random enemy.",
             "scaling": {
               "scaling1": [
                 8,
