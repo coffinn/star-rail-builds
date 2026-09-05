@@ -16,6 +16,7 @@
     "ehr": "Effect Hit Rate",
     "effect-res": "Effect RES",
     "be": "Break Effect",
+    "break-effect": "Break Effect",
     "ogh": "Outgoing Healing Boost",
     "err": "Energy Regeneration Rate",
     "physical-dmg": "Physical DMG Boost",
@@ -25,5 +26,5 @@
     "wind-dmg": "Wind DMG Boost",
     "quantum-dmg": "Quantum DMG Boost",
     "imaginary-dmg": "Imaginary DMG Boost",
-    "ANY":"Any"
+    "ANY": "Any"
 }
