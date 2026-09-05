@@ -6,7 +6,8 @@
             "note": {
                 "en": "This build does not require [[stat:spd]].",
                 "ru": "Данный билд не требует скорость.",
-                "vn": "Build này không cần [[stat:spd]]."
+                "vn": "Build này không cần [[stat:spd]].",
+                "cht": "這套出裝不需要[[stat:spd]]。"
             }
         },
         {
@@ -15,7 +16,8 @@
             "note": {
                 "en": "Evanescia's A2 buffs her [[stat:cr]] by 30%, for 100% [[stat:cr]] in combat.",
                 "ru": "А2 Эванессы увеличивает её крит. шанс на 30%, что в итоге даёт ей 100% крит. шанса в бою.",
-                "vn": "Năng Lực Thêm A2 của Evanescia buff 30% [[stat:cr]], giúp cô ấy đạt được 100% [[stat:cr]] trong trận."
+                "vn": "Năng Lực Thêm A2 của Evanescia buff 30% [[stat:cr]], giúp cô ấy đạt được 100% [[stat:cr]] trong trận.",
+                "cht": "緋英能通過行跡自拐30%[[stat:cr]]，來更好達到實戰100%暴擊率。"
             }
         },
         {
@@ -24,7 +26,8 @@
             "note": {
                 "en": "Aim for 250%+ [[stat:cd]] with S1: [[light-cone:until-the-flowers-bloom-again]].",
                 "ru": "Стремитесь к 250+ крит. урона с S1: [[light-cone:until-the-flowers-bloom-again]]",
-                "vn": "Nhắm mốc [[stat:cd]] 250%+ nếu dùng Nón Ánh Sáng S1 [[light-cone:until-the-flowers-bloom-again]]."
+                "vn": "Nhắm mốc [[stat:cd]] 250%+ nếu dùng Nón Ánh Sáng S1 [[light-cone:until-the-flowers-bloom-again]].",
+                "cht": "當有疊影1 [[light-cone:until-the-flowers-bloom-again]]，盡可能往250%+ [[stat:cd]]堆就行。"
             }
         }
     ]
