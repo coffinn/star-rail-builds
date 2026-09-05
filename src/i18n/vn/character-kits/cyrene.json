@@ -1,0 +1,693 @@
+{
+  "id": "cyrene",
+  "name": "Cyrene",
+  "rarity": "5",
+  "element": "ice",
+  "path": "remembrance",
+  "version_released": "3.7",
+  "level_80_stats": {
+    "hp": 1397,
+    "atk": 446,
+    "def": 582,
+    "spd": 101
+  },
+  "abilities": {
+    "basic": {
+      "type": "Tấn Công Thường",
+      "name": "Nhìn Kìa, Khởi Đầu Của Hy Vọng!",
+      "tag": "Đánh Đơn",
+      "break": 10,
+      "min_level": 1,
+      "max_level": 7,
+      "default_level": 6,
+      "description_template": "Nhận 1 điểm \"Hồi Ức\" và gây cho 1 kẻ địch chỉ định Sát Thương Băng bằng {{scaling1}}% Giới Hạn HP của Cyrene.",
+      "scaling": {
+        "scaling1": [
+          25,
+          30,
+          35,
+          40,
+          45,
+          50,
+          55
+        ]
+      },
+      "variants": [
+        {
+          "type": "Tấn Công Thường Cường Hóa",
+          "name": "Hướng Tới Tình Yêu Và Ngày Mai ♪",
+          "tag": "Đánh Lan",
+          "energy_gain": 0,
+          "break_main": 10,
+          "break_adjacent": 5,
+          "description_template": "Nhận 3 điểm \"Hồi Ức\" và gây cho 1 kẻ địch chỉ định Sát Thương Băng bằng {{scaling1}}% Giới Hạn HP của Cyrene, sau đó gây cho toàn bộ phe địch Sát Thương Băng bằng {{scaling2}}% Giới Hạn HP của Cyrene.\n\"Hướng Tới Tình Yêu Và Ngày Mai ♪\" không thể hồi Điểm Chiến Kỹ.",
+          "scaling": {
+            "scaling1": [
+              15,
+              18,
+              21,
+              24,
+              27,
+              30,
+              33
+            ],
+            "scaling2": [
+              15,
+              18,
+              21,
+              24,
+              27,
+              30,
+              33
+            ]
+          }
+        }
+      ]
+    },
+    "skill": {
+      "type": "Skill",
+      "name": "Bloom, Elysium of Beyond",
+      "tag": "Support",
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "Gains 3 \"Recollection\" point(s) and deploys a Zone that lasts for 2 turns. The Zone's duration decreases by 1 at the start of Cyrene's every turn. While the Zone lasts, for each instance of DMG dealt by all ally targets, deals 1 additional instance of True DMG  equal to {{scaling1}}% of the original DMG. When Cyrene is downed , the Zone will also be dispelled.",
+      "scaling": {
+        "scaling1": [
+          12,
+          13.2,
+          14.4,
+          15.6,
+          16.8,
+          18,
+          19.5,
+          21,
+          22.5,
+          24,
+          25.2,
+          26.4
+        ]
+      }
+    },
+    "talent": {
+      "type": "Thiên Phú",
+      "name": "Muôn Ước Nguyện, Hợp Dòng Tựa Khúc Ca",
+      "tag": "Cường Hoá",
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "Khi bắt đầu chiến đấu hoặc sau khi Cyrene hành động, nhân vật khác trong trạng thái bất kỳ của phe ta và Linh Hồn Ký Ức của người đó sẽ nhận được \"Tương Lai\", khi mục tiêu có \"Tương Lai\" của phe ta hành động sẽ tiêu hao \"Tương Lai\" khiến Cyrene nhận 1 điểm \"Hồi Ức\". Khi \"Hồi Ức\" của Cyrene đạt 24 điểm có thể kích hoạt Tuyệt Kỹ và giải trừ toàn bộ Hiệu Ứng Xấu của bản thân, khi ở trạng thái \"Gợn Sóng Của Quá Khứ\", khi Hồi Ức đạt 12 điểm có thể kích hoạt Tuyệt Kỹ, sau khi đạt giới hạn còn có thể nhận dư ra tối đa đến 27 điểm. Khi Cyrene trong trận, sát thương toàn bộ mục tiêu phe ta gây ra tăng {{scaling1}}%.",
+      "scaling": {
+        "scaling1": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16.25,
+          17.5,
+          18.75,
+          20,
+          21,
+          22
+        ]
+      }
+    },
+    "technique": {
+      "type": "Bí Kỹ",
+      "name": "Tận Cùng Gió Tây Là Yên Bình Vĩnh Hằng",
+      "tag": "Hỗ Trợ",
+      "description": "Sau khi dùng Bí Kỹ, sẽ tạo ra 1 vùng đặc biệt duy trì 30 giây xung quanh bản thân. Kẻ địch trong vùng đặc biệt sẽ rơi vào trạng thái \"Khoảnh Khắc Này Là Mãi Mãi\", kẻ địch trong trạng thái \"Khoảnh Khắc Này Là Mãi Mãi\" sẽ dừng tất cả hành động. Tốc độ di chuyển của nhân vật phe ta trong vùng này tăng 50%. Trong thời gian duy trì, sau khi vào chiến đấu, sẽ triển khai kết giới của Chiến Kỹ. Tối đa chỉ tồn tại 1 hiệu ứng vùng do phe ta tạo ra."
+    },
+    "ultimate": {
+      "type": "Tuyệt Kỹ",
+      "name": "Áng Thơ \"◦\" Lời Thề \"∞\"",
+      "tag": "Triệu Hồi",
+      "energy_cost": "24 điểm \"Hồi Ức\"",
+      "min_level": 1,
+      "max_level": 12,
+      "default_level": 10,
+      "description_template": "Triệu Hồi Linh Hồn Ký Ức Demiurge, khiến đối tượng này nhận ngay 1 hiệp tăng thêm và kích hoạt Tuyệt Kỹ của toàn bộ đồng đội, sau đó vào trạng thái \"Gợn Sóng Của Quá Khứ\", Tấn Công Thường cường hóa thành \"Hướng Tới Tình Yêu Và Ngày Mai ♪\" và chỉ có thể dùng Tấn Công Thường này, Tỷ Lệ Bạo Kích của Cyrene và Demiurge tăng {{scaling1}}%, triển khai kết giới của Chiến Kỹ và khiến kết giới của Chiến Kỹ không có thời gian duy trì.\nTrong 1 trận chiến chỉ có thể thi triển 1 lần. Demiurge ban đầu có Giới Hạn HP bằng 100% Giới Hạn HP của Cyrene.",
+      "scaling": {
+        "scaling1": [
+          25,
+          27.5,
+          30,
+          32.5,
+          35,
+          37.5,
+          40.625,
+          43.75,
+          46.875,
+          50,
+          52.5,
+          55
+        ]
+      },
+      "variants": [
+        {
+          "type": "Tuyệt Kỹ",
+          "name": "Hội Ngộ Như Lần Đầu Gặp Gỡ",
+          "tag": "Cường Hoá",
+          "energy_cost": "12 điểm \"Hồi Ức\"",
+          "description": "Khiến Demiurge lập tức nhận 1 hiệp tăng thêm."
+        }
+      ]
+    }
+  },
+  "memosprite": {
+    "name": "Demiurge",
+    "initial_spd": 0,
+    "hp_source": "100% Giới Hạn HP của Cyrene",
+    "skills": {
+      "minuet": {
+        "type": "Kỹ Năng Linh Hồn Ký Ức",
+        "name": "Vũ Khúc Hoa Và Tên",
+        "tag": "Đánh Lan",
+        "break": "10",
+        "min_level": 1,
+        "max_level": 7,
+        "default_level": 6,
+        "description_template": "Gây cho toàn bộ phe địch Sát Thương Băng bằng {{scaling1}}% Giới Hạn HP của Demiurge.",
+        "scaling": {
+          "scaling1": [
+            30,
+            36,
+            42,
+            48,
+            54,
+            60,
+            66
+          ]
+        }
+      },
+      "lives": {
+        "type": "Kỹ Năng Linh Hồn Ký Ức",
+        "name": "Bài Thơ Này, Dâng Tặng Mọi Sinh Mệnh",
+        "tag": "Hỗ Trợ",
+        "min_level": 1,
+        "max_level": 7,
+        "default_level": 6,
+        "description_template": "Thi triển hiệu ứng buff lên 1 nhân vật chỉ định phe ta, khi nhân vật này là Hậu Duệ Chrysos sẽ khiến nhân vật này nhận được hiệu ứng đặc biệt, còn khi không phải Hậu Duệ Chrysos, sẽ tăng {{scaling}}% sát thương nhân vật này gây ra, duy trì 2 hiệp, hiệu ứng này cũng có hiệu lực với Linh Hồn Ký Ức của nhân vật này.",
+        "scaling": {
+          "scaling": [
+            20,
+            24,
+            28,
+            32,
+            36,
+            40,
+            44
+          ]
+        },
+        "variant_selector": {
+          "label": "Chọn Nhân Vật khác"
+        },
+        "variants": [
+          {
+            "id": "genesis",
+            "selector_label": "Nhà Khai Phá - Ký Ức",
+            "type": "Kỹ Năng Linh Hồn Ký Ức",
+            "name": "Bài Thơ Dâng Tặng \"Sáng Thế\"",
+            "tag": "Hỗ Trợ",
+            "description_template": "Có hiệu lực cả trận, khi thi triển lên Nhà Khai Phá - Ký Ức, sẽ tăng Tấn Công của Nhà Khai Phá - Ký Ức, mức tăng bằng {{scaling1}}% Giới Hạn HP của Demiurge, đồng thời tăng Tỷ Lệ Bạo Kích của Nhà Khai Phá - Ký Ức, mức tăng bằng {{scaling2}}% Tỷ Lệ Bạo Kích của Demiurge. Hiệu ứng này cũng có hiệu lực với Mem. Trong trận này, sau khi Nhà Khai Phá - Ký Ức thi triển Tấn Công Thường Cường Hóa, Demiurge nhận ngay 1 hiệp tăng thêm và tự động thi triển \"Vũ Khúc Hoa Và Tên\", nếu mục tiêu bị tiêu diệt trước khi thi triển thì sẽ thi triển với mục tiêu phe địch mới vào trận.",
+            "scaling": {
+              "scaling1": [
+                8,
+                9.6,
+                11.2,
+                12.8,
+                14.4,
+                16,
+                17.6
+              ],
+              "scaling2": [
+                36,
+                43.2,
+                50.4,
+                57.6,
+                64.8,
+                72,
+                79.2
+              ]
+            }
+          },
+          {
+            "id": "romance",
+            "selector_label": "Aglaea",
+            "type": "Kỹ Năng Linh Hồn Ký Ức",
+            "name": "Bài Thơ Dâng Tặng \"Lãng Mạn\"",
+            "tag": "Hỗ Trợ",
+            "description_template": "Có hiệu lực một lần, khi thi triển lên Aglaea, khiến Aglaea nhận được \"Lãng Mạn\" và khiến số tầng hiệu ứng tăng Tốc Độ của Thiên Phú Linh Hồn Ký Ức Thợ May lập tức cộng dồn đến tối đa. Sau khi Aglaea hoặc Thợ May tấn công, sẽ tiêu hao \"Lãng Mạn\" hồi cho bản thân 70 điểm Năng Lượng. Sát thương Aglaea và Thợ May gây ra tăng {{scaling1}}% và bỏ qua {{scaling2}}% Phòng Thủ của mục tiêu, duy trì đến khi Aglaea thoát khỏi trạng thái \"Tư Thế Tối Cao\".",
+            "scaling": {
+              "scaling1": [
+                36,
+                43.2,
+                50.4,
+                57.6,
+                64.8,
+                72,
+                79.2
+              ],
+              "scaling2": [
+                18,
+                21.6,
+                25.2,
+                28.8,
+                32.4,
+                36,
+                39.6
+              ]
+            }
+          },
+          {
+            "id": "passage",
+            "selector_label": "Tribbie",
+            "type": "Kỹ Năng Linh Hồn Ký Ức",
+            "name": "Bài Thơ Dâng Tặng \"Cánh Cổng\"",
+            "tag": "Hỗ Trợ",
+            "description_template": "Có hiệu lực cả trận, khi thi triển lên Tribbie, khiến sát thương Tribbie gây ra bỏ qua {{scaling}}% Phòng Thủ của mục tiêu phe địch. Khi Tribbie thi triển Đòn Đánh Theo Sau kích hoạt Sát Thương Kèm Theo của kết giới của Tribbie, sẽ gây thêm 1 lần Sát Thương Kèm Theo.",
+            "scaling": {
+              "scaling": [
+                6,
+                7.2,
+                8.4,
+                9.6,
+                10.8,
+                12,
+                13.2
+              ]
+            }
+          },
+          {
+            "id": "strife",
+            "selector_label": "Mydei",
+            "type": "Kỹ Năng Linh Hồn Ký Ức",
+            "name": "Bài Thơ Dâng Tặng \"Phân Tranh\"",
+            "tag": "Hỗ Trợ",
+            "description_template": "Có hiệu lực một lần, khi thi triển lên Mydei sẽ giải trừ tất cả Hiệu Ứng Xấu Loại Khống Chế mà Mydei rơi vào, nếu Mydei đang ở trạng thái \"Huyết Thù\", sẽ khiến Mydei tự động thi triển 1 lần \"Sát Thần Đăng Thần\" không tiêu hao Nạp Năng Lượng, Sát Thương Bạo Kích của Mydei trong lần tấn công này tăng {{scaling}}%, nếu mục tiêu bị tiêu diệt trước khi thi triển thì sẽ thi triển lên mục tiêu phe địch mới vào trận. Nếu Mydei không ở trạng thái \"Huyết Thù\", sẽ khiến Mydei Ưu Tiên Hành Động 100%.",
+            "scaling": {
+              "scaling": [
+                100,
+                120,
+                140,
+                160,
+                180,
+                200,
+                220
+              ]
+            }
+          },
+          {
+            "id": "life",
+            "selector_label": "Castorice",
+            "type": "Kỹ Năng Linh Hồn Ký Ức",
+            "name": "Bài Thơ Dâng Tặng \"Sinh Tử\"",
+            "tag": "Hỗ Trợ",
+            "description_template": "Có hiệu lực cả trận, khi thi triển lên Castorice, \"Nhụy Hoa\" có thể vượt mức đến 200%. Khi triệu hồi Rồng Tử Vong sẽ tiêu hao tất cả \"Nhụy Hoa\" vượt mức, cứ tiêu hao 1% giá trị vượt mức, sẽ khiến Bội Số Sát Thương gây ra tăng {{scaling1}}% khi Rồng Tử Vong được triệu hồi lần này kích hoạt hiệu ứng kỹ năng của Thiên Phú \"Đôi Cánh Càn Quét Phế Tích\", khi triệu hồi, nếu mục tiêu phe địch trong trận nhỏ hơn hoặc bằng 2, Bội Số Sát Thương sẽ tăng thêm {{scaling2}}%.",
+            "scaling": {
+              "scaling1": [
+                0.12,
+                0.144,
+                0.168,
+                0.192,
+                0.216,
+                0.24,
+                0.264
+              ],
+              "scaling2": [
+                0.24,
+                0.288,
+                0.336,
+                0.384,
+                0.432,
+                0.48,
+                0.528
+              ]
+            }
+          },
+          {
+            "id": "reason",
+            "selector_label": "Anaxa",
+            "type": "Kỹ Năng Linh Hồn Ký Ức",
+            "name": "Bài Thơ Dâng Tặng \"Lý Trí\"",
+            "tag": "Hỗ Trợ",
+            "description_template": "Có hiệu lực một lần, khi thi triển lên Anaxa, sẽ hồi 1 Điểm Chiến Kỹ cho phe ta và khiến Anaxa lập tức hành động, khiến số lần sát thương của Chiến Kỹ tăng 3 lần, duy trì 1 hiệp. Khi Anaxa thi triển Tấn Công Thường, Chiến Kỹ lần tiếp theo, sẽ nhận được \"Tri Thức Chân Chính\": Tấn Công của tất cả nhân vật vận mệnh Tri Thức tăng {{scaling2}}%, sát thương Chiến Kỹ gây ra tăng {{scaling1}}%, duy trì đến khi bắt đầu hiệp tiếp theo của Anaxa.",
+            "scaling": {
+              "scaling1": [
+                20,
+                24,
+                28,
+                32,
+                36,
+                40,
+                44
+              ],
+              "scaling2": [
+                30,
+                36,
+                42,
+                48,
+                54,
+                60,
+                66
+              ]
+            }
+          },
+          {
+            "id": "sky",
+            "selector_label": "Hyacine",
+            "type": "Kỹ Năng Linh Hồn Ký Ức",
+            "name": "Bài Thơ Dâng Tặng \"Bầu Trời\"",
+            "tag": "Hỗ Trợ",
+            "description_template": "Khi Demiurge thi triển Kỹ Năng Linh Hồn Ký Ức, khiến Hyacine nhận được 2 tầng Bài Thơ Dâng Tặng \"Bầu Trời\". Khi thi triển lên Hyacine, sẽ hồi {{scaling2}} điểm Năng Lượng cho Hyacine. Khi Hyacine có Bài Thơ Dâng Tặng \"Bầu Trời\" và cung cấp trị liệu, lượng trị liệu tính vào Kỹ Năng Linh Hồn Ký Ức Nhóc Ica sẽ tăng thêm, mức tăng bằng {{scaling1}}% lượng trị liệu của lần này. Sau khi Hyacine thi triển Chiến Kỹ/Tuyệt Kỹ, sẽ tiêu hao 1 tầng Bài Thơ Dâng Tặng \"Bầu Trời\".",
+            "scaling": {
+              "scaling1": [
+                36,
+                43.2,
+                50.4,
+                57.6,
+                64.8,
+                72,
+                79.2
+              ],
+              "scaling2": [
+                12,
+                14.4,
+                16.8,
+                19.2,
+                21.6,
+                24,
+                26.4
+              ]
+            }
+          },
+          {
+            "id": "trickery",
+            "selector_label": "Cipher",
+            "type": "Kỹ Năng Linh Hồn Ký Ức",
+            "name": "Bài Thơ Dâng Tặng \"Mưu Kế\"",
+            "tag": "Hỗ Trợ",
+            "description_template": "Có hiệu lực cả trận, khi thi triển lên Cipher, khiến sát thương Cipher gây ra tăng {{scaling1}}%, và khiến Phòng Thủ của \"Khách Quen\" giảm {{scaling2}}%, Phòng Thủ của mục tiêu phe địch không phải \"Khách Quen\" giảm {{scaling3}}%.",
+            "scaling": {
+              "scaling1": [
+                18,
+                21.6,
+                25.2,
+                28.8,
+                32.4,
+                36,
+                39.6
+              ],
+              "scaling2": [
+                10,
+                12,
+                14,
+                16,
+                18,
+                20,
+                22
+              ],
+              "scaling3": [
+                6,
+                7.2,
+                8.4,
+                9.6,
+                10.8,
+                12,
+                13.2
+              ]
+            }
+          },
+          {
+            "id": "worldbearing",
+            "selector_label": "Phainon",
+            "type": "Kỹ Năng Linh Hồn Ký Ức",
+            "name": "Bài Thơ Dâng Tặng \"Phụ Thế\"",
+            "tag": "Hỗ Trợ",
+            "description_template": "Có hiệu lực cả trận, sau khi thi triển lên Phainon, khiến Phainon nhận được 6 điểm \"Ngọn Lửa\", và khi biến thân sẽ nhận được \"Thiêu Đốt Vĩnh Hằng\". Khi Biến Thân, nếu \"Ngọn Lửa\" lớn hơn 12 điểm, cứ mỗi 1 điểm vượt quá, Sát Thương Bạo Kích của Khaslana sẽ tăng {{scaling3}}%, tối đa có thể tăng {{scaling4}}%. Khi có \"Thiêu Đốt Vĩnh Hằng\", Tỷ Lệ Bạo Kích của Khaslana tăng {{scaling1}}%, sau khi dùng hết Hiệp Tăng Thêm Của Khaslana sẽ không kết thúc biến thân, làm mới toàn bộ Hiệp Tăng Thêm Của Khaslana và nhận được 4 điểm \"Phá Hủy\". Khi bắt đầu hiệp tăng thêm, Khaslana sẽ tiêu hao lượng HP bằng 15,0% HP hiện tại. Sau khi thi triển tấn công, sẽ gây 5 lần Sát Thương Kèm Theo, mỗi lần sát thương sẽ gây Sát Thương Kèm Theo thuộc tính Hỏa bằng {{scaling2}}% Tấn Công của Khaslana cho 1 kẻ địch ngẫu nhiên.",
+            "scaling": {
+              "scaling1": [
+                8,
+                9.6,
+                11.2,
+                12.8,
+                14.4,
+                16,
+                17.6
+              ],
+              "scaling2": [
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+              ],
+              "scaling3": [
+                6,
+                7.2,
+                8.4,
+                9.6,
+                10.8,
+                12,
+                13.2
+              ],
+              "scaling4": [
+                36,
+                43.2,
+                50.4,
+                57.6,
+                64.8,
+                72,
+                79.2
+              ]
+            }
+          },
+          {
+            "id": "ocean",
+            "selector_label": "Hysilens",
+            "type": "Kỹ Năng Linh Hồn Ký Ức",
+            "name": "Bài Thơ Dâng Tặng \"Biển Cả\"",
+            "tag": "Hỗ Trợ",
+            "description_template": "Có hiệu lực một lần, khi thi triển lên Hysilens, khiến Hysilens nhận được \"Dòng Chảy Ấm Áp\". Sau khi Hysilens thi triển tấn công sẽ tiêu hao \"Dòng Chảy Ấm Áp\", hồi 60 điểm Năng Lượng cho bản thân. Trong trận đấu, sát thương Hysilens gây ra tăng {{scaling1}}%, sau khi thi triển Tấn Công Thường/Chiến Kỹ tấn công mục tiêu phe địch, sẽ khiến tất cả Sát Thương Duy Trì mà mục tiêu phe địch bị tấn công hiện phải chịu lập tức sinh ra sát thương bằng {{scaling2}}%/{{scaling3}}% sát thương gốc.",
+            "scaling": {
+              "scaling1": [
+                60,
+                72,
+                84,
+                96,
+                108,
+                120,
+                132
+              ],
+              "scaling2": [
+                30,
+                36,
+                42,
+                48,
+                54,
+                60,
+                66
+              ],
+              "scaling3": [
+                40,
+                48,
+                56,
+                64,
+                72,
+                80,
+                88
+              ]
+            }
+          },
+          {
+            "id": "law",
+            "selector_label": "Cerydra",
+            "type": "Kỹ Năng Linh Hồn Ký Ức",
+            "name": "Bài Thơ Dâng Tặng \"Luật Pháp\"",
+            "tag": "Hỗ Trợ",
+            "description_template": "Có hiệu lực cả trận, sau khi thi triển lên Cerydra, Sát Thương Bạo Kích của nhân vật sở hữu \"Quân Công\" tăng {{scaling1}}%, sau khi Đột Kích kết thúc, Cerydra sẽ nhận được 1 điểm Nạp Năng Lượng.",
+            "scaling": {
+              "scaling1": [
+                15,
+                18,
+                21,
+                24,
+                27,
+                30,
+                33
+              ]
+            }
+          },
+          {
+            "id": "time",
+            "selector_label": "Evernight",
+            "type": "Kỹ Năng Linh Hồn Ký Ức",
+            "name": "Bài Thơ Dâng Tặng \"Thời Gian\"",
+            "tag": "Hỗ Trợ",
+            "description_template": "Có hiệu lực cả trận, sau khi thi triển lên Evernight, sát thương gây ra khi Đêm Dài thi triển Kỹ Năng Linh Hồn Ký Ức \"Mộng Mị, Mất Mát, Như Sương\" tăng {{scaling1}}%, sau khi Evernight thi triển Chiến Kỹ/Tuyệt Kỹ, sẽ nhận thêm 1 điểm Chất Ký Ức. Hiệu ứng Tăng Sát Thương Bạo Kích của Chiến Kỹ Evernight sẽ tăng thêm, mức tăng bằng {{scaling2}}% Sát Thương Bạo Kích của Evernight.",
+            "scaling": {
+              "scaling1": [
+                9,
+                10.8,
+                12.6,
+                14.4,
+                16.2,
+                18,
+                19.8
+              ],
+              "scaling2": [
+                6,
+                7.2,
+                8.4,
+                9.6,
+                10.8,
+                12,
+                13.2
+              ]
+            }
+          },
+          {
+            "id": "earth",
+            "selector_label": "Dan Heng - Permansor Terrae",
+            "type": "Kỹ Năng Linh Hồn Ký Ức",
+            "name": "Bài Thơ Dâng Tặng \"Mặt Đất\"",
+            "tag": "Hỗ Trợ",
+            "description_template": "Khi Demiurge thi triển Kỹ Năng Linh Hồn Ký Ức, khiến Dan Heng - Permansor Terrae nhận được Bài Thơ Dâng Tặng \"Mặt Đất\", và khiến 3 lần tấn công tiếp theo của Hồn Rồng gây Sát Thương Kèm Theo thuộc tính tương ứng bằng {{scaling1}}% lượng Khiên của \"Đồng Bào\". Khi Dan Heng - Permansor Terrae có Bài Thơ Dâng Tặng \"Mặt Đất\", sát thương Đồng Bào gây ra tăng {{scaling2}}%. Khi thi triển lên Dan Heng - Permansor Terrae, khiến Hồn Rồng ưu tiên hành động 100%, và khiến Hồn Rồng khi hành động lần tiếp theo sẽ nhận được hiệu ứng cường hóa của Tuyệt Kỹ Dan Heng - Permansor Terrae, lượng Khiên cung cấp bằng 150,0% lượng Khiên ban đầu, không tiêu hao số lần cường hóa của Tuyệt Kỹ Dan Heng - Permansor Terrae.",
+            "scaling": {
+              "scaling1": [
+                12,
+                14.4,
+                16.8,
+                19.2,
+                21.6,
+                24,
+                26.4
+              ],
+              "scaling2": [
+                40,
+                48,
+                56,
+                64,
+                72,
+                80,
+                88
+              ]
+            }
+          },
+          {
+            "id": "ego",
+            "selector_label": "Cyrene",
+            "type": "Kỹ Năng Linh Hồn Ký Ức",
+            "name": "Bài Thơ Dâng Tặng \"Chân Ngã\"",
+            "tag": "Hỗ Trợ",
+            "description_template": "Cyrene cứ mỗi lần nhận được \"Hồi Ức\" từ 1 đồng đội khác nhau ngoại trừ Demiurge, thì khi Demiurge thi triển \"Vũ Khúc Hoa Và Tên\", sẽ gây thêm 1 lần Sát Thương Băng bằng {{scaling1}}% Giới Hạn HP của Demiurge cho 1 kẻ địch ngẫu nhiên. Sau khi Cyrene thi triển Tuyệt Kỹ hoặc khi Demiurge được triệu hồi, Demiurge sẽ nhận được 1 điểm \"Câu Chuyện\", khi \"Câu Chuyện\" đạt 3 điểm, Demiurge sẽ tiêu hao toàn bộ \"Câu Chuyện\" để lập tức nhận 1 hiệp tăng thêm và tự động thi triển \"Vũ Khúc Hoa Và Tên\".",
+            "scaling": {
+              "scaling1": [
+                30,
+                36,
+                42,
+                48,
+                54,
+                60,
+                66
+              ]
+            }
+          }
+        ]
+      },
+      "waiting": {
+        "type": "Thiên Phú Linh Hồn Ký Ức",
+        "name": "Chờ Đợi, Trong Tất Cả Quá Khứ",
+        "tag": "Cường Hoá",
+        "min_level": 1,
+        "max_level": 7,
+        "default_level": 6,
+        "description_template": "Tốc Độ của Demiurge duy trì bằng 0, và sẽ không xuất hiện trên thứ tự hành động, khi trong trận, đối tượng được xem như ở Bên Ngoài Ranh Giới. Khi Phần Trăm HP của Cyrene thay đổi, Phần Trăm HP của Demiurge cũng sẽ thay đổi tương ứng. Khi Demiurge trong trận, Giới Hạn HP của Cyrene và Demiurge tăng {{scaling1}}%. Sau khi Demiurge thi triển kỹ năng, khiến số hiệp duy trì của tất cả hiệu ứng duy trì của bản thân giảm 1.",
+        "scaling": {
+          "scaling1": [
+            12,
+            14.4,
+            16.8,
+            19.2,
+            21.6,
+            24,
+            26.4
+          ]
+        }
+      },
+      "hello": {
+        "type": "Thiên Phú Linh Hồn Ký Ức",
+        "name": "\"Xin Chào, Thế Giới ♪\"",
+        "tag": "Cường Hoá",
+        "min_level": 1,
+        "max_level": 7,
+        "default_level": 6,
+        "description": "Khi Demiurge được triệu hồi, sẽ giải trừ Hiệu Ứng Xấu Loại Khống Chế của toàn bộ phe ta."
+      }
+    }
+  },
+  "major_traces": {
+    "2": {
+      "name": "Tịnh Tử Của Ký Ức",
+      "description": "Khi Linh Hồn Ký Ức của đồng đội được triệu hồi sẽ nhận được \"Tương Lai\", \"Tương Lai\" mà Linh Hồn Ký Ức sở hữu sẽ không bị tiêu hao."
+    },
+    "4": {
+      "name": "Lữ Khách Thời Gian",
+      "description": "Khi trong đội có 1/2/3 nhân vật Hậu Duệ Chrysos hoặc nhân vật vận mệnh \"Ký Ức\" ngoại trừ Cyrene, khi Cyrene bắt đầu chiến đấu sẽ nhận được 2/3/6 điểm Hồi Ức."
+    },
+    "6": {
+      "name": "Nhân Quả Tam Thần",
+      "description": "Khi Tốc Độ của Cyrene lớn hơn hoặc bằng 180 điểm, sát thương toàn bộ phe ta gây ra sẽ tăng 20%, sau đó cứ mỗi 1 điểm Tốc Độ vượt quá, Xuyên Kháng Băng của Cyrene và Demiurge sẽ tăng 2%, tối đa tính 60 điểm Tốc Độ vượt quá."
+    }
+  },
+  "stat_bonuses": [
+    {
+      "stat": "HP",
+      "value": "+10%"
+    },
+    {
+      "stat": "Tốc Độ",
+      "value": "+9"
+    },
+    {
+      "stat": "Sát Thương Bạo Kích",
+      "value": "+37.3%"
+    }
+  ],
+  "eidolons": [
+    {
+      "level": 1,
+      "name": "Khoảng Trống, Nơi Bài Thơ Bắt Đầu",
+      "description": "Khi Demiurge kích hoạt Kỹ Năng Linh Hồn Ký Ức Bài Thơ Dâng Tặng \"Chân Ngã\" thi triển Vũ Khúc Hoa Và Tên, sẽ nhận được 6 điểm \"Hồi Ức\" và khiến số lần Nảy Bật của lần tấn công này tăng thêm 12 lần."
+    },
+    {
+      "level": 2,
+      "name": "Mười Ba Sắc Ánh Sáng, Phản Chiếu Ngày Mai",
+      "description": "Khi vào chiến đấu, nhận thêm 12 điểm \"Hồi Ức\". Cứ có 1 nhân vật phe ta khác nhau nhận được hiệu ứng buff của Kỹ Năng Linh Hồn Ký Ức Demiurge, bội số Sát Thương Chuẩn mục tiêu phe ta gây ra thông qua kết giới của Chiến Kỹ tăng 6%, tối đa tăng 24%."
+    },
+    {
+      "level": 3,
+      "name": "Vì Bạn Mà Tồn Tại, Như Tôi Đã Viết",
+      "description": "Cấp Tuyệt Kỹ +2, tối đa không quá cấp 15; Cấp Thiên Phú +2, tối đa không quá cấp 15; Cấp kỹ năng của Linh Hồn Ký Ức +1, tối đa không quá cấp 10."
+    },
+    {
+      "level": 4,
+      "name": "Hãy Mỉm Cười, Và Viết Trang Tiếp Theo",
+      "description": "Demiurge cứ sau khi thi triển 1 lần Vũ Khúc Hoa Và Tên, Bội Số Sát Thương Nảy Bật của Kỹ Năng Linh Hồn Ký Ức Bài Thơ Dâng Tặng \"Chân Ngã\" kích hoạt trong trận này tăng 6%, tối đa cộng dồn 24 tầng."
+    },
+    {
+      "level": 5,
+      "name": "Ánh Mắt, Thấm Đẫm Vườn Hoa Ngày Hôm Qua",
+      "description": "Cấp Chiến Kỹ +2, tối đa không quá cấp 15; Cấp Tấn Công Thường +1, tối đa không quá cấp 10; Cấp Thiên Phú Linh Hồn Ký Ức +1, tối đa không quá cấp 10."
+    },
+    {
+      "level": 6,
+      "name": "Ký Ức, Hóa Thành Từng Gợn Sóng ♪",
+      "description": "Khi Cyrene lần đầu thi triển Tuyệt Kỹ, sẽ khiến toàn bộ phe ta ưu tiên hành động 100%. Khi Demiurge mỗi lần kích hoạt Kỹ Năng Linh Hồn Ký Ức Bài Thơ Dâng Tặng \"Chân Ngã\" thi triển Vũ Khúc Hoa Và Tên, sẽ căn cứ số lần đã kích hoạt trong trận này để nhận hiệu ứng sau:\n1 lần: Khi Demiurge trong trận, Phòng Thủ của toàn bộ mục tiêu phe địch giảm 20%;\nÍt nhất 2 lần: Khiến toàn bộ phe ta Ưu Tiên Hành Động 24%."
+    }
+  ]
+}

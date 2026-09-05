@@ -95,5 +95,19 @@
         "watchmaker": "watchmaker-master-of-dream-machinations",
         "wavestrider": "wavestrider-captain",
         "deliverer": "world-remaking-deliverer"
+    },
+    "character": {
+        "dmc": "trailblazer-destruction",
+        "pmc": "trailblazer-preservation",
+        "hmc": "trailblazer-harmony",
+        "rmc": "trailblazer-remembrance",
+        "emc": "trailblazer-elation",
+        "hm7": "march-7th-hunt",
+        "sw999": "silver-wolf-lv999",
+        "dhpt": "permansor-terrae",
+        "dhil": "imbibitor-lunae",
+        "mblade": "mortenax-blade",
+        "waven": "aventurine-waveflair",
+        "sobin": "robin-summeretto"
     }
 }
