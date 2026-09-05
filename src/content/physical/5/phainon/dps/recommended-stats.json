@@ -5,7 +5,8 @@
             "baseline": "100%",
             "recommended": "100%",
             "note": {
-                "en": "Modify your CRIT Rate based on in battle buffs from teammates."
+                "en": "Modify your CRIT Rate based on in battle buffs from teammates.",
+                "ru": "Изменяйте свой крит. шанс в зависимости от баффов, получаемых от союзников во время боя."
             }
         },
         {
@@ -20,7 +21,8 @@
     ],
     "notes": [
         {
-            "en": "**SPD**: Please note that SPD is not a valuable substat on Phainon. When he transforms into Khaslana it only counts his base SPD, which is not affected by Relic substats"
+            "en": "**SPD**: Please note that SPD is not a valuable substat on Phainon. When he transforms into Khaslana it only counts his base SPD, which is not affected by Relic substats",
+            "ru": "**Скорость**: Обратите внимание, что скорость не является ценным сабстатом для Фаенона. Когда он превращается в Каослану, учитывается только его базовая скорость, на которую не влияют сабстаты реликвий."
         }
     ]
 }

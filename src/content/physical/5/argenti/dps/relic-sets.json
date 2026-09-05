@@ -17,7 +17,8 @@
                             "name": "poet",
                             "pieces": 4,
                             "note":{
-                                "en":"Be mindful of the 95 SPD threshold of the CRIT Rate requirements."
+                                "en":"Be mindful of the 95 SPD threshold of the CRIT Rate requirements.",
+                                "ru": "Обратите внимание на ограничение в 95 скорости, необходимое, чтоб получить полный бафф крит. шанса."
                             }
                         
                         }                       

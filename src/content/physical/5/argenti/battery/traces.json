@@ -7,7 +7,8 @@
                     "note_group": "traces",
                     "note": 
                         {
-                            "en":"Traces can be completely ignored when using this build. Only his Ascension 4 Trace is reccommended."
+                            "en":"Traces can be completely ignored when using this build. Only his Ascension 4 Trace is reccommended.",
+                            "ru": "Прокачку следов можно полностью игнорировать при использовании данной сборки. Важен только след за четвёртое Возвышение"
                         }  
                 },
                 {

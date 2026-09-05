@@ -20,7 +20,8 @@
                             "name": "warrior-goddess",
                             "pieces": 4,
                             "note": {
-                                "en": "Only works if using S1: [[light-cone:though-worlds-apart]]."
+                                "en": "Only works if using S1: [[light-cone:though-worlds-apart]].",
+                                "ru": "Работает только при использовании S1: [[light-cone:though-worlds-apart]]."
                             }
                         }
                     ]
@@ -83,7 +84,8 @@
                             "name": "penacony",
                             "pieces": 2,
                             "note": {
-                                "en": "This can only be used if the wearer is of the same Type as the DPS."
+                                "en": "This can only be used if the wearer is of the same Type as the DPS.",
+                                "ru": "Можно использовать только в том случае, если владелец относится к тому же Типу, что и ДД."
                             }
                         }
                     ]

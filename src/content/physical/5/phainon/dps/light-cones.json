@@ -14,7 +14,8 @@
                     "name": "brighter-than-the-sun",
                     "superimposition": 1,
                     "note": {
-                        "en": "Requires alternating between Basic ATK and Skill to maintain its buffs."
+                        "en": "Requires alternating between Basic ATK and Skill to maintain its buffs.",
+                        "ru": "Для поддержания баффов требуется чередование базовой атаки и навыка."
                     }
                 }
             ]
