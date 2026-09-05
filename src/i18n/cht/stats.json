@@ -5,17 +5,18 @@
     "atk%": "攻擊力%",
     "def": "防禦力",
     "def%": "防禦力%",
-    "total-hp": "生命上限",
-    "total-atk": "攻擊力",
-    "total-def": "防禦力",
+    "flat-hp": "小生命值",
+    "flat-atk": "小攻擊力",
+    "flat-def": "小防禦力",
     "spd": "速度",
+    "spd%":"速度%"
     "cr": "暴擊率",
     "cd": "暴擊傷害",
     "cr/cd": "暴擊率 / 暴擊傷害",
     "ehr": "效果命中",
     "effect-res": "效果抵抗",
-    "break-effect": "擊破特攻",
-    "outgoing-healing": "治療量加成",
+    "be": "擊破特攻",
+    "ogh": "治療量加成",
     "err": "能量恢復效率",
     "physical-dmg": "物理屬性傷害",
     "fire-dmg": "火屬性傷害",
@@ -23,5 +24,6 @@
     "lightning-dmg": "雷屬性傷害",
     "wind-dmg": "風屬性傷害",
     "quantum-dmg": "量子屬性傷害",
-    "imaginary-dmg": "虛數屬性傷害"
+    "imaginary-dmg": "虛數屬性傷害",
+    "ANY":"任意"
 }
