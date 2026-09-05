@@ -1,0 +1,28 @@
+{
+    "traces": [
+        {
+            "items": [
+                {
+                    "name": "talent",
+                    "note_group": "traces",
+                    "note": 
+                        {
+                            "en":"Traces can be completely ignored when using this build. Only her Ascension 2 and Ascension 4 Trace is reccommended."
+                        }  
+                },
+                {
+                    "name": "ultimate",
+                    "note_group": "traces"
+                },
+                {
+                    "name": "skill",
+                    "note_group": "traces"
+                },
+                {
+                    "name": "basic",
+                    "note_group": "traces"
+                }
+            ]
+        }
+    ]
+}

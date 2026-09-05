@@ -1,0 +1,14 @@
+{
+    "substats_priority": [
+        "cr",
+        {
+            "name": "cd"
+        },
+        {
+            "name": "atk%"
+        },
+        {
+            "name": "spd"
+        }
+    ]
+}

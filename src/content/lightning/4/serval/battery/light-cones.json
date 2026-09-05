@@ -1,0 +1,20 @@
+{
+    "light_cones": [
+        {
+            "items": [
+                {
+                    "name": "life-should-be-cast-to-flames",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "passkey",
+                    "superimposition": 5
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "light_cones": [
+        {
+            "items": [
+                {
+                    "name": "the-finale-of-a-lie",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "worrisome-blissful",
+                    "superimposition": 1
+                },
+                {
+                    "name": "baptism-of-pure-thought",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "cruising-in-the-stellar-sea",
+                    "superimposition": 5
+                },
+                {
+                    "name": "swordplay",
+                    "superimposition": 5,
+                    "note": {
+                        "en": "Assuming minimal target swap."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "see-you-at-the-end",
+                    "superimposition": 5
+                }
+            ]
+        },
+        {
+            "items": [                {
+                    "name": "only-silence-remains",
+                    "superimposition": 5
+                }]
+        },
+        {
+            "items": [
+                {
+                    "name": "final-victor",
+                    "superimposition": 5
+                }
+            ]
+        }
+    ]
+}

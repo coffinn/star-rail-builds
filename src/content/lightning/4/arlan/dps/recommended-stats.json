@@ -1,0 +1,23 @@
+{
+    "stats": [
+        {
+            "name": "cr",
+            "recommended": "100%",
+            "note": {
+                "en": "Tune your CRIT Rate according to in battle buffs."
+            }
+        },
+        {
+            "name": "cd",
+            "recommended": "120%+"
+        },
+        {
+            "name": "spd",
+            "recommended": "94/134+"
+        },
+        {
+            "name": "atk",
+            "recommended": "3000+"
+        }
+    ]
+}

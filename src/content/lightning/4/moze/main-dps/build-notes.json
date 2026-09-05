@@ -1,0 +1,20 @@
+{
+    "best": true,
+    "name": {
+        "en": "DPS"
+    },
+        "notes": [
+        {
+            "en": "**Summary and General Analysis**\n\n✦ Moze marks an enemy as \"Prey\", gains 9 points of Charge and departs from the team. When allies attack the \"Prey\", he deals additional damage to the enemy target and consumes 1 Charge. Every 3 consumed stacks, he will launch a Follow-Up Attack on the \"Prey\". When all Charge stacks are consumed, dispells prey and returns to the team.\n\n✦ If he is the only ally remaining, he cannot apply \"Prey\" and depart."
+        },
+        {
+            "en": "**Notable Investments**\n\n**E2**\n\n**Investment Explanation**\n\n✦ E2 gives him free CRIT DMG, helping maintain stat goals."
+        },
+        {
+            "en": "**Skill Point Usage**\n\nNeutral"
+        },
+        {
+            "en": "**Ability Rotation**\n\nSkill when available"
+        }        
+    ]
+}    

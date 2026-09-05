@@ -1,0 +1,68 @@
+{
+    "relic_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "scholar",
+                            "pieces": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "genius",
+                            "pieces": 4
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "planar_ornaments": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "rutilant",
+                            "pieces": 2
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "glamoth",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "salsotto","pieces": 2
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "sss","pieces": 2
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

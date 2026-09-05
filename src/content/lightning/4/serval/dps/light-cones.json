@@ -1,0 +1,62 @@
+{
+    "light_cones": [
+        {
+            "items": [
+                {
+                    "name": "into-the-unreachable-veil",
+                    "superimposition": 1
+
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "milky-way",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "peaceful-day",
+                    "superimposition": 1
+                }
+
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "repose",
+                    "superimposition": 5
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "breakfast",
+                    "superimposition": 5
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "the-day-the-cosmos-fell",
+                    "superimposition": 5
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "passkey",
+                    "superimposition": 5
+                }
+            ]
+        }
+    ]
+}

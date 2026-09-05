@@ -1,0 +1,27 @@
+{
+    "main_stats": {
+        "body": [
+            "cr",
+            {
+                "name": "cd"
+            }
+        ],
+        "feet": [
+            "spd",
+            "atk%"
+        ],
+        "planar_sphere": [
+            "lightning-dmg",
+            "atk%"
+        ],
+        "link_rope": [
+            "atk%",
+            {
+                "name": "err",
+                "note": {
+                    "en": "Preferred if using Eagle of Twilight Line"
+                }
+            }
+        ]
+    }
+}
