@@ -11,7 +11,7 @@ export type CharacterAbilityVariant = {
 
     id?: string;
     selector_label?: string;
-    energy_gain?: number;
+    energy_gain?: number | string;
     energy_cost?: number | string;
 
     break?: number | string;
@@ -27,6 +27,11 @@ export type CharacterAbilityVariant = {
     break_first_hit?: number | string;
     break_final_hit?: number | string;
     break_total?: number | string;
+
+    min_level?: number;
+    max_level?: number;
+    default_level?: number;
+
     scaling?: Record<
         string,
         Array<number | string>
@@ -41,7 +46,7 @@ export type CharacterAbility = {
     variant_selector?: {
         label?: string;
     };
-    energy_gain?: number;
+    energy_gain?: number | string;
     energy_cost?: number | string;
 
     break?: number | string;
@@ -153,7 +158,17 @@ type AbilityTextTranslation = {
     name?: string;
     tag?: string;
 
+    energy_gain?: number | string;
     energy_cost?: number | string;
+
+    break?: number | string;
+    break_main?: number | string;
+    break_adjacent?: number | string;
+    break_bounce?: number | string;
+    break_aoe?: number | string;
+    break_first_hit?: number | string;
+    break_final_hit?: number | string;
+    break_total?: number | string;
 
     description?: string;
     description_template?: string;
@@ -167,9 +182,19 @@ type AbilityTextTranslation = {
         name?: string;
         tag?: string;
 
-        selector_label?: string;
-
+        energy_gain?: number | string;
         energy_cost?: number | string;
+
+        break?: number | string;
+        break_main?: number | string;
+        break_adjacent?: number | string;
+        break_bounce?: number | string;
+        break_aoe?: number | string;
+        break_first_hit?: number | string;
+        break_final_hit?: number | string;
+        break_total?: number | string;
+
+        selector_label?: string;
 
         description?: string;
         description_template?: string;
@@ -266,9 +291,47 @@ function localizeAbility(
         tag:
             translation.tag ??
             ability.tag,
+     
+
+        energy_gain:
+            translation.energy_gain ??
+            ability.energy_gain,
+
         energy_cost:
             translation.energy_cost ??
             ability.energy_cost,
+
+        break:
+            translation.break ??
+            ability.break,
+
+        break_main:
+            translation.break_main ??
+            ability.break_main,
+
+        break_adjacent:
+            translation.break_adjacent ??
+            ability.break_adjacent,
+
+        break_bounce:
+            translation.break_bounce ??
+            ability.break_bounce,
+
+        break_aoe:
+            translation.break_aoe ??
+            ability.break_aoe,
+
+        break_first_hit:
+            translation.break_first_hit ??
+            ability.break_first_hit,
+
+        break_final_hit:
+            translation.break_final_hit ??
+            ability.break_final_hit,
+
+        break_total:
+            translation.break_total ??
+            ability.break_total,
         description:
             translation.description ??
             ability.description,
@@ -317,9 +380,47 @@ function localizeAbility(
                         tag:
                             translatedVariant.tag ??
                             variant.tag,
+
+                        energy_gain:
+                            translatedVariant.energy_gain ??
+                            variant.energy_gain,
+
                         energy_cost:
-                            translation.energy_cost ??
-                            ability.energy_cost,
+                            translatedVariant.energy_cost ??
+                            variant.energy_cost,
+
+                        break:
+                            translatedVariant.break ??
+                            variant.break,
+
+                        break_main:
+                            translatedVariant.break_main ??
+                            variant.break_main,
+
+                        break_adjacent:
+                            translatedVariant.break_adjacent ??
+                            variant.break_adjacent,
+
+                        break_bounce:
+                            translatedVariant.break_bounce ??
+                            variant.break_bounce,
+
+                        break_aoe:
+                            translatedVariant.break_aoe ??
+                            variant.break_aoe,
+
+                        break_first_hit:
+                            translatedVariant.break_first_hit ??
+                            variant.break_first_hit,
+
+                        break_final_hit:
+                            translatedVariant.break_final_hit ??
+                            variant.break_final_hit,
+
+                        break_total:
+                            translatedVariant.break_total ??
+                            variant.break_total,
+
                         selector_label:
                             translatedVariant
                                 .selector_label ??
