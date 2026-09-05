@@ -5,16 +5,16 @@
     },
     "notes": [
         {
-            "en": "**Summary and General Analysis**\n\n✦ Clara is a Counter DPS who's primary damage is Single Target. However, her Skill deals AoE damage. When attacked by an ,enemy Svarog will Counter with a Single Target attack on the enemy attacking her. Keep in mind that Svarog does not count as a Summon.\n\n✦ Her Ultimate provides DMG Reduction for 2 turns, and enhances Svarog’s Counter for the next 2 Counters. The Enhanced state of Svarog’s Counter changes his Single Target damage to Blast while also allowing Svarog to launch Counters when any ally is attacked.\n\n✦ When an enemy attacks Clara, they are marked with \"Mark of Counter\". Her next Skill deals additional damage to enemies with \"Mark of Counter\" and removes all \"Mark of Counter\" from all enemies after Skill is used."
+            "en": "## Summary and General Analysis\n- Clara is a Counter DPS who's primary damage is Single Target. However, her Skill deals AoE damage. When attacked by an ,enemy Svarog will Counter with a Single Target attack on the enemy attacking her. Keep in mind that Svarog does not count as a Summon.\n- Her Ultimate provides DMG Reduction for 2 turns, and enhances Svarog’s Counter for the next 2 Counters. The Enhanced state of Svarog’s Counter changes his Single Target damage to Blast while also allowing Svarog to launch Counters when any ally is attacked.\n- When an enemy attacks Clara, they are marked with \"Mark of Counter\". Her next Skill deals additional damage to enemies with \"Mark of Counter\" and removes all \"Mark of Counter\" from all enemies after Skill is used."
         },
         {
-            "en": "**Investment Priority**\n\n**E6 > Support Investments**\n\n**Investment Explanation**\n\n✦ Her E6 is vital for both her damage and her Energy gain.\n\n✦ Being a very old DPS, Support investment is required for her to perform well in majority of endgame scenarios."
+            "en": "## Investment Priority\n ### E6 > Support Investments\n- Her E6 is vital for both her damage and her Energy gain.\n- Being a very old DPS, Support investment is required for her to perform well in majority of endgame scenarios."
         },
         {
-            "en": "**Skill Point Usage**\n\nNegative"
+            "en": "## Skill Point Usage\n- Negative"
         },
         {
-            "en": "**Ability Rotation**\n\nSkill Spam, Basic ATK if needed"
-        }        
-    ]    
-}    
+            "en": "## Ability Rotation\n- Skill Spam, Basic ATK if needed"
+        }
+    ]
+}

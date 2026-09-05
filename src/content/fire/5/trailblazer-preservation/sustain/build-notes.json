@@ -5,16 +5,16 @@
     },
     "notes": [
         {
-            "en": "**Summary and General Analysis**\n\n✦ Fairly weak Sustain that primarily focuses on Taunting enemies and then tanking the hits.\n\n✦ Their Shield value is very poor, even with a high DEF stat and boosted Shield Effect.\n\n✦ Generally, Trailblazer: Preservation is strong against enemies with Single Target attacks. However, their teamwide sustain is poor. They are best paired with a secondary sustain such as a healer.\n\n✦ Their best use is early story and in Simulated Universe, Swarm Disaster, or Gold and Gears because of their ability to abuse Preservation Path blessings."
+            "en": "## Summary and General Analysis\n- Trailblazer: Preservation is a fairly weak Sustain that primarily focuses on Taunting enemies and then tanking the hits.\n- Their Shield value is very poor, even with high DEF stat and relic effects that boost Shield Effect.\n- Generally, Trailblazer: Preservation is strong against enemies with Single Target attacks.\n- However, their teamwide sustain is poor. They are best paired with a secondary sustain such as a healer.\n- Their best use is early story and in Simulated Universe, Swarm Disaster, or Gold and Gears because of their ability to abuse Preservation Path blessings."
         },
         {
-            "en": "**Investment Priority**\n\nN/A\n\n**Investment Explanation**\n\nN/A"
+            "en": "## Notable Investments\n ### E2, E6 \n- E2 increases the amount of DMG Trailblazer's Shield can block\n- E6 increases Trailblazer's DEF, which contributes to their Shield strength "
         },
         {
-            "en": "**Skill Point Usage**\n\nPositive / Neutral"
+            "en": "## Skill Point Usage\n- Positive / Neutral"
         },
         {
-            "en": "**Ability Rotation**\n\nSkill → Basic ATK → Basic ATK\n\nor\n\nSkill → Basic ATK → Skill → Basic ATK"
+            "en": "## Ability Rotation\n- Skill → Basic ATK → Basic ATK\n- Skill → Basic ATK → Skill → Basic ATK"
         }
     ]
 }
