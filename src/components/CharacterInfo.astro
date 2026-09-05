@@ -15,6 +15,39 @@ const { character, locale } = Astro.props as {
 
 const ui = (id: string) => t(locale, 'ui', id, undefined, false);
 
+/*
+ * Prefer the current human-readable UI key, but fall back to the
+ * older snake_case key used by some locale files. This keeps labels
+ * such as Break (Total) translated while translations are migrated.
+ */
+const uiWithFallback = (id: string, legacyId: string) => {
+    const translated = ui(id);
+
+    if (translated !== id) {
+        return translated;
+    }
+
+    const legacyTranslation = ui(legacyId);
+
+    return legacyTranslation !== legacyId ? legacyTranslation : translated;
+};
+
+/*
+ * Break metadata can contain a qualifier in parentheses, for example
+ * "20 (Enhanced Counter)". Translate that qualifier through ui.json
+ * when a locale provides it.
+ */
+const translateBreakValue = (value: string | number | undefined) => {
+    if (typeof value !== 'string') {
+        return value;
+    }
+
+    return value.replace(/\(([^()]+)\)/g, (_match, label: string) => {
+        const translated = ui(label);
+        return `(${translated})`;
+    });
+};
+
 const levelAbbreviation = ui('Lv.');
 
 const getAbilityTypeLabel = (id: string, fallback: string) => {
@@ -58,7 +91,7 @@ const getAbilityMetaItems = (ability: AbilityWithMeta) =>
          */
         {
             label: ui('Break'),
-            value: ability.break,
+            value: translateBreakValue(ability.break),
         },
 
         /*
@@ -74,38 +107,38 @@ const getAbilityMetaItems = (ability: AbilityWithMeta) =>
          * Total
          */
         {
-            label: ui('Break (Main)'),
-            value: ability.break_main,
+            label: uiWithFallback('Break (Main)', 'break_main'),
+            value: translateBreakValue(ability.break_main),
         },
 
         {
-            label: ui('Break (Adjacent)'),
-            value: ability.break_adjacent,
+            label: uiWithFallback('Break (Adjacent)', 'break_adjacent'),
+            value: translateBreakValue(ability.break_adjacent),
         },
 
         {
-            label: ui('Break (AoE)'),
-            value: ability.break_aoe,
+            label: uiWithFallback('Break (AoE)', 'break_aoe'),
+            value: translateBreakValue(ability.break_aoe),
         },
 
         {
-            label: ui('Break (First Hit)'),
-            value: ability.break_first_hit,
+            label: uiWithFallback('Break (First Hit)', 'break_first_hit'),
+            value: translateBreakValue(ability.break_first_hit),
         },
 
         {
-            label: ui('Break (Per Bounce)'),
-            value: ability.break_bounce,
+            label: uiWithFallback('Break (Per Bounce)', 'break_bounce'),
+            value: translateBreakValue(ability.break_bounce),
         },
 
         {
-            label: ui('Break (Final Hit)'),
-            value: ability.break_final_hit,
+            label: uiWithFallback('Break (Final Hit)', 'break_final_hit'),
+            value: translateBreakValue(ability.break_final_hit),
         },
 
         {
-            label: ui('Break (Total)'),
-            value: ability.break_total,
+            label: uiWithFallback('Break (Total)', 'break_total'),
+            value: translateBreakValue(ability.break_total),
         },
     ].filter(
         (
@@ -121,8 +154,11 @@ const getAbilityMetaItems = (ability: AbilityWithMeta) =>
 type SelectableAbilityVariant = CharacterAbilityVariant & {
     id?: string;
     selector_label?: string;
-};
 
+    min_level?: number;
+    max_level?: number;
+    default_level?: number;
+};
 type SelectableCharacterAbility = CharacterAbility & {
     variant_selector?: {
         label?: string;
@@ -211,26 +247,65 @@ const eidolons = [...(character.eidolons ?? [])].sort(
     (a, b) => a.level - b.level,
 );
 
-const getDefaultLevel = (ability: CharacterAbility) => {
-    const min = ability.min_level ?? 1;
-
-    const max = ability.max_level ?? min;
-
-    return Math.max(min, Math.min(ability.default_level ?? max, max));
+type LevelledAbility = {
+    min_level?: number;
+    max_level?: number;
+    default_level?: number;
+    scaling?: Record<string, Array<number | string>>;
 };
 
-const getAbilityLevels = (ability: CharacterAbility) => {
-    const min = ability.min_level ?? 1;
+const getScalingLength = (ability?: LevelledAbility) => {
+    if (!ability?.scaling) {
+        return 0;
+    }
 
-    const max = ability.max_level ?? min;
-
-    return Array.from(
-        {
-            length: max - min + 1,
-        },
-        (_, index) => min + index,
+    return Math.max(
+        0,
+        ...Object.values(ability.scaling).map((values) => values.length),
     );
 };
+
+/*
+ * A grouped ability can be static while one or more variants are scalable
+ * (Castorice's grouped Memosprite Talents are the important example).
+ * In that case, use the scalable variant's level range for the shared slider.
+ */
+const getAbilityLevelConfig = (
+    ability: LevelledAbility,
+    fallback?: LevelledAbility,
+) => {
+    const minLevel = ability.min_level ?? fallback?.min_level ?? 1;
+
+    const scalingLength =
+        getScalingLength(ability) || getScalingLength(fallback);
+
+    const inferredMaxLevel =
+        scalingLength > 0 ? minLevel + scalingLength - 1 : minLevel;
+
+    const maxLevel =
+        ability.max_level ?? fallback?.max_level ?? inferredMaxLevel;
+
+    const defaultLevel = Math.max(
+        minLevel,
+        Math.min(
+            ability.default_level ?? fallback?.default_level ?? maxLevel,
+            maxLevel,
+        ),
+    );
+
+    const levels = Array.from(
+        { length: Math.max(1, maxLevel - minLevel + 1) },
+        (_, index) => minLevel + index,
+    );
+
+    return {
+        minLevel,
+        maxLevel,
+        defaultLevel,
+        levels,
+    };
+};
+
 const hasAbilityMeta = (ability: CharacterAbility | CharacterAbilityVariant) =>
     ability.energy_gain !== undefined ||
     ability.energy_cost !== undefined ||
@@ -238,9 +313,12 @@ const hasAbilityMeta = (ability: CharacterAbility | CharacterAbilityVariant) =>
     ability.break_main !== undefined ||
     ability.break_adjacent !== undefined ||
     ability.break_bounce !== undefined ||
-    ability.break_aoe !== undefined;
+    ability.break_aoe !== undefined ||
+    ability.break_first_hit !== undefined ||
+    ability.break_final_hit !== undefined ||
+    ability.break_total !== undefined;
 const renderVariantDescription = (
-    variant: CharacterAbilityVariant,
+    variant: SelectableAbilityVariant,
     parentAbility: CharacterAbility,
     requestedLevel?: number,
 ) => {
@@ -248,11 +326,10 @@ const renderVariantDescription = (
         return variant.description ?? '';
     }
 
-    const minLevel = parentAbility.min_level ?? 1;
-
-    const maxLevel = parentAbility.max_level ?? minLevel;
-
-    const defaultLevel = parentAbility.default_level ?? maxLevel;
+    const { minLevel, maxLevel, defaultLevel } = getAbilityLevelConfig(
+        variant as SelectableAbilityVariant,
+        parentAbility,
+    );
 
     const level = Math.max(
         minLevel,
@@ -357,23 +434,52 @@ const renderVariantDescription = (
 
                 <div class="character-info-details character-ability-grid">
                     {section.abilities.map(({ id, ability }) => {
-                        const minLevel = ability.min_level ?? 1;
                         const metaItems = getAbilityMetaItems(ability);
-                        const maxLevel = ability.max_level ?? minLevel;
-
-                        const defaultLevel = getDefaultLevel(ability);
-
-                        const levels = getAbilityLevels(ability);
-
-                        const scalable =
-                            Boolean(
-                                ability.description_template && ability.scaling,
-                            ) && maxLevel > minLevel;
                         const hasMeta = hasAbilityMeta(ability);
                         const selectableAbility =
                             ability as SelectableCharacterAbility;
 
                         const variants = selectableAbility.variants ?? [];
+
+                        /*
+                         * The parent ability normally owns the trace level.
+                         * Some grouped abilities are static parents with a
+                         * scalable variant instead. Castorice's Memosprite
+                         * Talent is the important example:
+                         *
+                         * - Mooncocoon Shrouds the Form: static parent
+                         * - Roar Rumbles the Realm: static variant
+                         * - Wings Sweep the Ruins: Lv. 1-7 scalable variant
+                         *
+                         * In that case, let the scalable variant provide the
+                         * shared slider's min/max/default level.
+                         */
+                        const abilityScalable = Boolean(
+                            ability.description_template && ability.scaling,
+                        );
+
+                        const firstScalableVariant = variants.find((variant) =>
+                            Boolean(
+                                variant.description_template && variant.scaling,
+                            ),
+                        );
+
+                        const levelSource = abilityScalable
+                            ? undefined
+                            : firstScalableVariant;
+
+                        const { minLevel, maxLevel, defaultLevel, levels } =
+                            getAbilityLevelConfig(
+                                ability,
+                                levelSource,
+                            );
+
+                        const hasScalableVariant =
+                            firstScalableVariant !== undefined;
+
+                        const scalable =
+                            (abilityScalable || hasScalableVariant) &&
+                            maxLevel > minLevel;
 
                         const variantSelector =
                             selectableAbility.variant_selector;
@@ -465,7 +571,8 @@ const renderVariantDescription = (
                                     )}
 
                                     <div class="character-ability-description">
-                                        {scalable ? (
+                                        {abilityScalable &&
+                                        maxLevel > minLevel ? (
                                             levels.map((level) => (
                                                 <p
                                                     data-character-level-panel={
@@ -547,11 +654,19 @@ const renderVariantDescription = (
                                                     getAbilityMetaItems(
                                                         variant,
                                                     );
+                                                const variantLevelConfig =
+                                                    getAbilityLevelConfig(
+                                                        variant,
+                                                        ability,
+                                                    );
+
                                                 const variantScalable =
                                                     Boolean(
                                                         variant.description_template &&
                                                         variant.scaling,
-                                                    ) && maxLevel > minLevel;
+                                                    ) &&
+                                                    variantLevelConfig.maxLevel >
+                                                        variantLevelConfig.minLevel;
 
                                                 const variantId =
                                                     variant.id ?? String(index);
