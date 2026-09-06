@@ -1,0 +1,20 @@
+{
+    "stats": [
+        {
+            "name": "spd",
+            "recommended": "160+"
+        },
+        {
+            "name": "cd",
+            "recommended": "180%+"
+        },
+        {
+            "name": "cr",
+            "recommended": "28%",
+            "note_group": "cr",
+            "note": {
+                "en": "Only relevant if Cyrene is on the team."
+            }
+        }
+    ]
+}
