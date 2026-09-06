@@ -3,18 +3,31 @@
         {
             "groups": [
                 {
-                    "items": [{ "name": "eagle", "pieces": 4 }]
+                    "items": [
+                        {
+                            "name": "eagle", "pieces": 4,
+                            "note":{
+                                "en": "Advance Moze’s next action even while he is Departed, helping with applying \"Prey\" more often."
+                            } 
+                        }
+                    ]
                 }
             ]
         },
         {
             "groups": [
                 {
-                    "items": [{ "name": "pioneer", "pieces": 4}]
+                    "items": [
+                        {
+                            "name": "pioneer", "pieces": 4
+                        }
+                    ]
                 },
                 {
                     "items": [
-                        { "name": "duke", "pieces": 4}
+                        {
+                            "name": "duke", "pieces": 4
+                        }
                     ]
                 }
             ]
@@ -24,7 +37,9 @@
                 {
                     "choose": true,
                     "items": [
-                        { "name": "2pc-atk", "pieces": 2 }
+                        {
+                            "name": "2pc-atk", "pieces": 2
+                        }
                     ]
                 }
             ]
@@ -35,20 +50,39 @@
         {
             "groups": [
                 {
-                    "items": [{ "name": "duran", "pieces": 2}]
+                    "items": [
+                        {
+                            "name": "duran", "pieces": 2
+                        }
+                    ]
                 },
                 {
-                    "items": [{ "name": "city", "pieces": 2}]
+                    "items": [
+                        {
+                            "name": "city", "pieces": 2
+                        }
+                    ]
                 }
             ]
         },
         {
             "groups": [
                 {
-                    "items": [{ "name": "salsotto", "pieces": 2}]
+                    "items": [
+                        {
+                            "name": "salsotto", "pieces": 2
+                        }
+                    ]
                 },
                 {
-                    "items": [{ "name": "izumo", "pieces": 2, "note":{"en": "Can be used with another Hunt ally on the team."}}]
+                    "items": [
+                        {
+                            "name": "izumo", "pieces": 2,
+                            "note":{
+                                "en": "Can be used with another Hunt ally on the team."
+                            }
+                        }
+                    ]
                 }
             ]
         }

@@ -5,10 +5,10 @@
     },
         "notes": [
         {
-            "en": "## Summary and General Analysis\n- Moze marks an enemy as \"Prey\", gains 9 points of Charge and departs from the team. When allies attack the \"Prey\", he deals Lightning Additional DMG to the enemy target and consumes 1 Charge. Every 3 points of \"Charge\" consumed, he will launch a Follow-Up Attack on the \"Prey\". When all Charge stacks are consumed, dispels \"Prey\" and returns to the team.\n- If Moze is the only ally remaining, he cannot use his Skill."
+            "en": "## Summary and General Analysis\n- Moze is a Follow-Up ATK oriented sub DPS, who performs best in combat where the target enemy does not frequently change.\n- By using his Skill he marks an enemy with \"Prey\", gains 9 points of \"Charge\". and Departs from the team. After allies attack \"Prey\" he will deal 1 instance of Additional DMG while consuming 1 \"Charge\". For every 3 points of Charge consumed, he will launch 1 Follow-Up ATK. Once all \"Charge\" are consumed, the enemy’s \"Prey\" state will be dispelled and he returns to the field.\n- If all of his allies on the field are unable to participate in combat, he is unable to use his Skill.\n- His A2 Trace: Nightfeather allows his Follow-Up ATKs to recover 1 Skill Point. This can only be triggered once per turn."
         },
         {
-            "en": "## Notable Investments\n ### E2\n- E2 gives him CRIT DMG, helping maintain stat goals."
+            "en": "## Notable Investments\n ### E2\n- E2 Increases his CRIT DMG after allies attack \"Prey\", allowing more focus on his CRIT Rate needs."
         },
         {
             "en": "## Skill Point Usage\n- Neutral"
