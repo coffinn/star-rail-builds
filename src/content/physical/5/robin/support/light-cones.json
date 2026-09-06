@@ -9,7 +9,8 @@
                     "name": "past-self-in-mirror",
                     "note_group": "robin-energy",
                     "note": {
-                        "en": "Provides Energy to get Robin into her Ultimate faster."
+                        "en": "Provides Energy to get Robin into her Ultimate faster.",
+                        "ru": "Даёт энергию, чтобы Зарянка быстрее активировала свою сверхспособность."
                     } 
                 }
             ]
@@ -27,7 +28,8 @@
                 {
                     "name": "poised-to-bloom",
                     "note": {
-                        "en": "Requires two teammates of the same Path to be in the team. Does not have to be the same Path as Robin."
+                        "en": "Requires two teammates of the same Path to be in the team. Does not have to be the same Path as Robin.",
+                        "ru": "Трубется, чтобы в команде было два союзника одного и того же Пути. Не обязательно, чтобы их Путь совпадал с Путем Зарянки."
                     }
                 }
             ]
@@ -44,7 +46,8 @@
                     "name": "planetary-rendezvous",
                     "note_group": "phys-affinity",
                     "note": {
-                        "en": "This can only be used if the wearer is of the same Type as the DPS."
+                        "en": "This can only be used if the wearer is of the same Type as the DPS.",
+                        "ru": "Можно использовать только в том случае, если владелец относится к тому же Типу, что и ДД."
                     }
                 }
             ]

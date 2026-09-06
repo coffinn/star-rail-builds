@@ -19,7 +19,8 @@
             {
                 "name": "err",
                 "note": {
-                    "en": "Preferred if using Eagle of Twilight Line."
+                    "en": "Preferred if using [[set:eagle]].",
+                    "ru": "Предпочтительно при использовании [[set:eagle]]."
                 }
             }
         ]

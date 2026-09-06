@@ -30,7 +30,8 @@
                     "name": "swordplay",
                     "superimposition": 5,
                     "note": {
-                        "en": "Assuming minimal target swap."
+                        "en": "Assuming minimal target swap.",
+                        "ru": "Предпологается минимальная смена цели."
                     }
                 }
             ]

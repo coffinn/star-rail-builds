@@ -7,7 +7,8 @@
                         {
                             "name": "eagle", "pieces": 4,
                             "note":{
-                                "en": "Advance Moze’s next action even while he is Departed, helping with applying \"Prey\" more often."
+                                "en": "Advance Moze’s next action even while he is Departed, helping with applying \"Prey\" more often.",
+                                "ru": "Продвигает следующее действие Моцзэ вперёд, даже когда он находится в состоянии Отсуствие, что поможет чаще накладывать статус Жертва."
                             } 
                         }
                     ]
@@ -79,7 +80,8 @@
                         {
                             "name": "izumo", "pieces": 2,
                             "note":{
-                                "en": "Can be used with another Hunt ally on the team."
+                                "en": "Can be used with another Hunt ally on the team.",
+                                "ru": "Может если в команде есть другой союзник Пути Охота."
                             }
                         }
                     ]

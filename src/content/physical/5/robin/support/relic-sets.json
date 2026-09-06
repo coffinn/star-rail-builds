@@ -17,7 +17,8 @@
                             "name": "wavestrider-captain",
                             "pieces": 4,
                             "note": {
-                                "en": "If Robin can be targeted twice by allies to activate the set effect, [[set:wavestrider-captain]] becomes Best in Slot."
+                                "en": "If Robin can be targeted twice by allies to activate the set effect, [[set:wavestrider-captain]] becomes Best in Slot.",
+                                "ru": "Если союзники смогут дважды выбрать Зарянку в качестве цели для активации эффекта набора, то [[set:wavestrider-captain]] становится лучшим."
                             }
                         }
                     ]

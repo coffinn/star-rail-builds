@@ -1,20 +1,25 @@
 {
     "best": true,
     "name": {
-        "en": "Support"
+        "en": "Support",
+        "ru": "Саппорт"
     },
     "notes": [
         {
-            "en": "## Summary and General Analysis\n- Robin is a support who’s utility stems from her Ultimate. Upon using her Ultimate, she enters the \"Concerto\" state and makes all allies immediately take action. While in the \"Concerto\" state, she increases all allies’ ATK, CRIT DMG, and Follow-Up ATK CRIT DMG respectively. During \"Concerto\", Robin is unable to take action, is immune to Crowd Control debuffs, and gains Energy each time an ally attacks.\n- She performs best in teams with high attack frequencies, and benefits ATK scaling Follow-Up ATK characters the best.\n- Her A2 Trace Coloratura Cadenza advances her action by 25%, allowing her to use her Skill faster and gain needed Energy for her Ultimate."
+            "en": "## Summary and General Analysis\n- Robin is a support who’s utility stems from her Ultimate. Upon using her Ultimate, she enters the \"Concerto\" state and makes all allies immediately take action. While in the \"Concerto\" state, she increases all allies’ ATK, CRIT DMG, and Follow-Up ATK CRIT DMG respectively. During \"Concerto\", Robin is unable to take action, is immune to Crowd Control debuffs, and gains Energy each time an ally attacks.\n- She performs best in teams with high attack frequencies, and benefits ATK scaling Follow-Up ATK characters the best.\n- Her A2 Trace Coloratura Cadenza advances her action by 25%, allowing her to use her Skill faster and gain needed Energy for her Ultimate.",
+            "ru": "## Краткое описание и общий анализ\n- Зарянка — саппорт, чья полезность обусловлена её сверхспособностью. При использовании сверхспособности она переходит в состояние Концерт, и все союзники немедленно совершают действие. В состоянии Концерт она увеличивает силу атаки, крит. урон и крит. урон бонус-атак всем союзникам. В состоянии Концерт Зарянка не может совершать действия, невосприимчива к эффектам контроля и получает энергию каждый раз, когда союзники атакуют.\n- Она наиболее эффективна в командах с высокой частотой атак и лучше всего подходит для персонажей, которым нужна сила атаки и которые используют бонус-атаки.\n- Её A2 Колоратура каденции продвигает её действие на 25%, позволяя ей быстрее использовать свой навык и получить необходимую энергию для сверхспособности."
         },
         {
-            "en": "## Investment Priority\n ### E2 > E1 > S1\n- E2 increases her \"Concerto\" uptime and Energy Regeneration from her Talent. It also provides a teamwide SPD buff.\n- Her E1 provides all allies All-Type RES PEN when \"Concerto\" is active. This is a baseline investment if you wish to use her in endgame modes.\n- Her S1 [[light-cone:flowing-nightglow]] additionally helps with her Energy, allowing for more time in her \"Concerto\" state. It provides ATK for herself and a teamwide DMG increase."
+            "en": "## Investment Priority\n ### E2 > E1 > S1\n- E2 increases her \"Concerto\" uptime and Energy Regeneration from her Talent. It also provides a teamwide SPD buff.\n- Her E1 provides all allies All-Type RES PEN when \"Concerto\" is active. This is a baseline investment if you wish to use her in endgame modes.\n- Her S1 [[light-cone:flowing-nightglow]] additionally helps with her Energy, allowing for more time in her \"Concerto\" state. It provides ATK for herself and a teamwide DMG increase.",
+            "ru": "## Приоритет инвестиций\n ### E2 > E1 > S1\n- E2 увеличивает время действия Концерта и восстановление энергии от таланта. Также даёт бафф скорости всей команде.\n- Ее E1 даёт всем союзникам пробитие всех типов сопротивления, когда активен Концерт. Это базовое вложение, если вы хотите использовать её в режимах эндгейма.\n- Ее S1 [[light-cone:flowing-nightglow]] дополнительно помогает с энергией, позволяя ей дольше находиться в состоянии Концерт. Он увеличивает силу атаки для неё самой и урон команды."
         },
         {
-            "en": "## Skill Point Usage\n- Negative"
+            "en": "## Skill Point Usage\n- Negative",
+            "ru": "## Восстановление очков навыков\n- Отрицательное"
         },
         {
-            "en": "## Ability Rotation\n- Skill spam"
+            "en": "## Ability Rotation\n- Skill spam",
+            "ru": "## Ротация\n- Спам навыка"
         }
     ]
 }
