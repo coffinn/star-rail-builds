@@ -1,0 +1,48 @@
+{
+    "light_cones": [
+        {
+            "items": [
+                {
+                    "name": "into-the-unreachable-veil",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "peaceful-day",
+                    "superimposition": 5
+                },
+                {
+                    "name": "milky-way",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "before-dawn",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "geniuses-repose",
+                    "superimposition": 5
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "breakfast",
+                    "superimposition": 5
+                }
+            ]
+        }
+    ]
+}
