@@ -26,7 +26,8 @@
                 {
                     "name": "ultimate",
                     "note": {
-                        "en": "Ultimate can be ignored."
+                        "en": "Ultimate can be ignored.",
+                        "ru": "Сверхспособность можно не прокачивать."
                     }
                 }
             ]

@@ -1,20 +1,25 @@
 {
     "best": true,
     "name": {
-        "en": "DPS"
+        "en": "DPS",
+        "ru": "ДД"
     },
     "notes": [
         {
-            "en": "## Summary and General Analysis\n- When launching Ultimate, Hook enhances her Skill to deal Blast damage.\n- Her Skills can apply Burn DoT. When attacking an enemy afflicted with Burn, she deals Fire Additional DMG and gains extra Energy."
+            "en": "## Summary and General Analysis\n- When launching Ultimate, Hook enhances her Skill to deal Blast damage.\n- Her Skills can apply Burn DoT. When attacking an enemy afflicted with Burn, she deals Fire Additional DMG and gains extra Energy.",
+            "ru": "## Краткое описание и общий анализ\n- При использовании сверхспособности Хук усиливает свой навык, чтобы он наносил взрывной урон.\n- Её навыки могут накладывать статус периодического урона Горение. При атаке противника со статусом Горение, она наносит дополнительный огненный урон и получает дополнительную энергию."
         },
         {
-            "en": "## Notable Investments\n ### E6, E1\n- Her E6 and E1 directly increase her damage output."
+            "en": "## Notable Investments\n ### E6, E1\n- Her E6 and E1 directly increase her damage output.",
+            "ru": "## Важные инвестиции\n ### E6, E1\n- Ее E6 и E1 напрямую увеличивают наносимый ею урон."
         },
         {
-            "en": "## Skill Point Usage\n- Negative"
+            "en": "## Skill Point Usage\n- Negative",
+            "ru": "## Восстановление очков навыков\n- Отрицательное"
         },
         {
-            "en": "## Ability Rotation\n- Skill spam"
+            "en": "## Ability Rotation\n- Skill spam",
+            "ru": "## Ротация\n- Спам навыка"
         }        
     ]    
 }    

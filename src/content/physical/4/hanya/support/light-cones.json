@@ -30,7 +30,8 @@
                     "name": "planetary-rendezvous",
                     "note_group": "phys-affinity",
                     "note": {
-                        "en": "This can only be used if the wearer is of the same Type as the DPS."
+                        "en": "This can only be used if the wearer is of the same Type as the DPS.",
+                        "ru": "Можно использовать только в том случае, если владелец относится к тому же Типу, что и ДД."
                     }
                 }
             ]

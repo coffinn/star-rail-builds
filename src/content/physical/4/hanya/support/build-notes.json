@@ -1,20 +1,25 @@
 {
     "best": true,
     "name": {
-        "en": "Support"
+        "en": "Support",
+        "ru": "Саппорт"
     },
     "notes": [
         {
-            "en": "## Summary and General Analysis\n- Hanya applies \"Burden\" to an enemy with her Skill. 1 Skill Point is recovered for every 2 ally attacks on the enemy with \"Burden\", up to 2 times.\n- Her Ultimate increases an ally's ATK and SPD, and her Talent applies Vulnerability to the target with \"Burden\"."
+            "en": "## Summary and General Analysis\n- Hanya applies \"Burden\" to an enemy with her Skill. 1 Skill Point is recovered for every 2 ally attacks on the enemy with \"Burden\", up to 2 times.\n- Her Ultimate increases an ally's ATK and SPD, and her Talent applies Vulnerability to the target with \"Burden\".",
+            "ru": "## Краткое описание и общий анализ\n- Ханья накладывает на противника статус Ноша своим навыком. За каждые 2 атаки союзника по противнику со статусом Ноша восстанавливается 1 очко навыков, до 2 раз.\n- Её сверхспособность увеличивает силу атаки и скорость союзника, а её талант повышает урон по противнику со статусом Ноша."
         },
         {
-            "en": "## Noteable Investments\n ### E4\n- E4 allows for 100% uptime on her Ultimate assuming a 4 turn Ultimate."
+            "en": "## Noteable Investments\n ### E4\n- E4 allows for 100% uptime on her Ultimate assuming a 4 turn Ultimate.",
+            "ru": "## Важные инвестиции\n ### E4\n- E4 обеспечивает 100% времени действия её сверхспособности при условии использования сверхспособности каждые 4 хода."
         },
         {
-            "en": "## Skill Point Usage\n- Positive"
+            "en": "## Skill Point Usage\n- Positive",
+            "ru": "## Восстановление очков навыков\n- Положительное"
         },
         {
-            "en": "## Ability Rotation\n- Skill → Basic ATK"
+            "en": "## Ability Rotation\n- Skill → Basic ATK",
+            "ru": "## Ротация\n- Навык → базовая атака"
         }
     ]
 }

@@ -1,20 +1,25 @@
 {
     "best": true,
     "name": {
-        "en": "Sustain"
+        "en": "Sustain",
+        "ru": "Хилер"
     },
     "notes": [
         {
-            "en": "## Summary and General Analysis\n- When using his Ultimate, he inflicts \"Besotted\" on all enemies, lasting for 2 turns, enhances his Basic ATK and advances his action by 100%. Any SPD debuff will affect the 100% Action Advance.\n- Enemies in the \"Besotted\" state will receive more Break DMG and allies attacking enemies them will receive healing. His Enhanced Basic ATK decreases the enemy target’s ATK while providing healing to all allies."
+            "en": "## Summary and General Analysis\n- When using his Ultimate, he inflicts \"Besotted\" on all enemies, lasting for 2 turns, enhances his Basic ATK and advances his action by 100%. Any SPD debuff will affect the 100% Action Advance.\n- Enemies in the \"Besotted\" state will receive more Break DMG and allies attacking enemies them will receive healing. His Enhanced Basic ATK decreases the enemy target’s ATK while providing healing to all allies.",
+            "ru": "## Краткое описание и общий анализ\n- При использовании своей сверхспособности он накладывает на всех противников статус Мертвецки пьян, длящийся 2 хода, усиливает свою базовую атаку и продвигает своё действие на 100%. Любой дебафф скорости повлияет на 100% продвижение действия.\n- Противники со статусом Мертвецки пьян получат больше урона пробития, а союзники, атакующие их, получат исцеление. Его усиленная базовая атака снижает силу атаку противника, одновременно исцеляя всех союзников."
         },
         {
-            "en": "## Noteable Investments\n ### E4 > E2\n- E4 significantly makes his sustain and Ultimate rotation more comfortable.\n- E2 provides him with more utility, and makes him slightly more viable against enemies with debuffs."
+            "en": "## Noteable Investments\n ### E4 > E2\n- E4 significantly makes his sustain and Ultimate rotation more comfortable.\n- E2 provides him with more utility, and makes him slightly more viable against enemies with debuffs.",
+            "ru": "## Важные инвестиции\n ### E4 > E2\n- E4 значительно улучшает его лечение и повышает удобство использования сверхспособности.\n- E2 предоставляет ему больше полезных функций и делает его немного более эффективным против врагов с дебаффами."
         },
         {
-            "en": "## Skill Point Usage\n- Positive"
+            "en": "## Skill Point Usage\n- Positive",
+            "ru": "## Восстановление очков навыков\n- Положительное"
         },
         {
-            "en": "## Ability Rotation\n- Basic ATK spam, Skill if needed"
+            "en": "## Ability Rotation\n- Basic ATK spam, Skill if needed",
+            "ru": "## Ротация\n- Спам базовой атаки, навык при необходимости"
         }
     ]
 }

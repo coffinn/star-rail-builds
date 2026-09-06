@@ -1,20 +1,25 @@
 {
     "best": true,
     "name": {
-        "en": "Sustain"
+        "en": "Sustain",
+        "ru": "Хилер"
     },
     "notes": [
         {
-            "en": "## Summary and General Analysis\n- Natasha applies a continuous healing effect to an ally target when using her Skill. At the start of the targeted ally's next two turns, she will automatically heal them."
+            "en": "## Summary and General Analysis\n- Natasha applies a continuous healing effect to an ally target when using her Skill. At the start of the targeted ally's next two turns, she will automatically heal them.",
+            "ru": "## Краткое описание и общий анализ\n- Наташа накладывает непрерывный эффект исцеления на союзника при использовании своего навыка. В начале следующих двух ходов выбранного союзника она автоматически исцеляет его."
         },
         {
-            "en": "## Noteable Investments\n ### E2\n- E2 helps alleviate enemy pressure by increasing her healing efficiency."
+            "en": "## Noteable Investments\n ### E2\n- E2 helps alleviate enemy pressure by increasing her healing efficiency.",
+            "ru": "## Важные инвестиции\n ### E2\n- E2 помогает снизить давление противников, повышая эффективность её лечения."
         },
         {
-            "en": "## Skill Point Usage\n- Positive"
+            "en": "## Skill Point Usage\n- Positive",
+            "ru": "## Восстановление очков навыков\n- Положительное"
         },
         {
-            "en": "## Ability Rotation\n- Basic ATK spam, Skill if needed"
+            "en": "## Ability Rotation\n- Basic ATK spam, Skill if needed",
+            "ru": "## Ротация\n- Спам базовой атаки, навык при необходимости"
         }
     ]
 }

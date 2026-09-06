@@ -22,7 +22,8 @@
                 {
                     "name": "basic",
                     "note": {
-                        "en": "[[ability:basic]] and Skill can be ignored."
+                        "en": "[[ability:basic]] and Skill can be ignored.",
+                        "ru": "Базовую атаку и навык можно не прокачивать."
                     }
                 }
             ]

@@ -7,7 +7,8 @@
                     "superimposition": 1,
                     "note_group": "antisynergy",
                     "note": {
-                        "en": "Using S1 [[light-cone:thus-burns-the-dawn]] will disqualify you from the highest CRIT Rate bonus from [[set:poet]], and therefore shouldn't be used together."
+                        "en": "Using S1 [[light-cone:thus-burns-the-dawn]] will disqualify you from the highest CRIT Rate bonus from [[set:poet]], and therefore shouldn't be used together.",
+                        "ru": "Использование S1 [[light-cone:thus-burns-the-dawn]] лишит вас возможности получить максимальный бонус к крит. шансу от [[set:poet]], поэтому их не следует использовать вместе."
                     }
                 }
             ]

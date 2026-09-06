@@ -8,7 +8,8 @@
             "name": "ehr",
             "recommended": "66.7%",
             "note": {
-                "en": "To guarantee her inflicting Shock, you want to reach 66.70% Effect Hit Rate"
+                "en": "To guarantee her inflicting Shock, you want to reach 66.70% Effect Hit Rate",
+                "ru": "Чтобы гарантировать наложить статус Шок, вам необходимо достичь 66,70% шанса попадания эффектов."
             }
         }
     ]

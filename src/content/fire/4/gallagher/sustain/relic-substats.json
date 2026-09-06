@@ -1,6 +1,7 @@
 {
     "substats_priority": [
-        "spd","be",
+        "spd",
+        "be",
         "hp%"
     ]
 }

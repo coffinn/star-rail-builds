@@ -55,7 +55,8 @@
                             "name": "fallen-star-anchorage",
                             "pieces": 2,
                             "note": {
-                                "en": "Requires a Trailblaze Companion other than Trailblazer to be in the team."
+                                "en": "Requires a Trailblaze Companion other than Trailblazer to be in the team.",
+                                "ru": "Требуется, чтобы в команде был компаньон по Освоению, кроме Первопроходца."
                             }
                         }
                     ]

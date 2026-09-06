@@ -10,15 +10,19 @@
         {
             "items": [
                 {
-                    "name": "basic"
+                    "name": "basic",
+                    "note_group": "traces"
                 },
                 {
-                    "name": "skill"
+                    "name": "skill",
+                    "note_group": "traces"
                 },
                 {
                     "name": "ultimate",
+                    "note_group": "traces",
                     "note": {
-                        "en": "Basic ATK, Skill, and Ultimate can be ignored."
+                        "en": "Basic ATK, Skill, and Ultimate can be ignored.",
+                        "ru": "Базовую атаку, навык и сверхспособность можно не прокачивать."
                     }
                 }
             ]
