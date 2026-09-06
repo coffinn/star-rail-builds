@@ -59,9 +59,13 @@
                         "note": {
                             "en": "Marginally better."
                         }
-                    },
+                    }
+                ]
+            },
+            {
+                "items": [
                     {
-                        "name": "rutilant-arena", "pieces": 2
+                        "name": "rutilant", "pieces": 2
                     }
                 ]
             }

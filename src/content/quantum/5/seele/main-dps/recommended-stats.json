@@ -3,10 +3,7 @@
         {
             "name": "cr",
             "baseline": "100%",
-            "recommended": "100%",
-            "note": {
-                "en": "Yes."
-            }
+            "recommended": "100%"
         },
         {
             "name": "cd",

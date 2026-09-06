@@ -5,7 +5,7 @@
             "baseline": "150",
             "recommended": "160+",
             "note": {
-                "en": "160+ SPD is the preferred target for first cycle breakpoint, but 150 is a reasonable baseline."
+                "en": "160+ SPD is the preferred target for the cycle 1 breakpoint, but 150 is a reasonable baseline."
             }
         },
         {
