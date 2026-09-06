@@ -176,7 +176,7 @@ Common `type` labels include:
 ```json
 "skill": {
   "type": "Skill",
-  "name": "Jeweled Sword Zelretch",
+  "name": "Example Skill Name",
 
   "min_level": 1,
   "max_level": 12,
@@ -204,7 +204,7 @@ Common `type` labels include:
   "variants": [
     {
       "type": "Skill (Enhanced)",
-      "name": "Second Magic Experiment",
+      "name": "Enhanced Skill Name",
       "tag": "Bounce",
 
       "description_template": "Deals {{damage}}% ATK as enhanced DMG.",

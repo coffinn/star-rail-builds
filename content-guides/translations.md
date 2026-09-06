@@ -75,7 +75,7 @@ Languages are registered in:
 src/utils/languages.ts
 ```
 
-The current file only has English enabled; the other existing language entries are commented out.
+To enable a languange, uncomment it.
 
 To enable French, for example:
 

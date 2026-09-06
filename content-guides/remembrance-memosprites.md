@@ -8,45 +8,38 @@ Memosprite abilities are separate from the character's normal `abilities` sectio
 
 ```json
 "memosprite": {
-  "name": "Memosprite Name",
-  "initial_spd": 165,
-  "hp_source": "100% of max resource",
-
-  "skills": {
-    "skill": {
-      "type": "Memosprite Skill",
-      "name": "Memosprite Skill Name",
-      "tag": "AoE",
-
-      "min_level": 1,
-      "max_level": 10,
-      "default_level": 6,
-
-      "description_template": "Deals {{damage}}% DMG to all enemies.",
-
-      "scaling": {
-        "damage": [
-          20,
-          24,
-          28,
-          32,
-          36,
-          40,
-          44,
-          48,
-          52,
-          56
-        ]
-      }
-    },
-
-    "talent": {
-      "type": "Memosprite Talent",
-      "name": "Memosprite Talent Name",
-      "tag": "Support",
-      "description": "Memosprite Talent description."
+    "name": "Netherwing",
+    "initial_spd": 165,
+    "hp_source": "100% of max resource",
+    "skills": {
+        "memosprite_skill": {
+            "type": "Memosprite Skill",
+            "name": "Memosprite Skill Name",
+            "tag": "AoE",
+            "break_aoe": 10,
+            "min_level": 1,
+            "max_level": 7,
+            "default_level": 6,
+            "description_template": "Deals {{damage}}% DMG to all enemies.",
+            "scaling": {
+                "damage": [
+                20.0,
+                24.0,
+                28.0,
+                32.0,
+                36.0,
+                40.0,
+                44.0
+                ]
+            },
+        },
+        "memosprite_talent": {
+            "type": "Memosprite Talent",
+            "name": "Memosprite Talent Name",
+            "tag": "Support",
+            "description": "Memosprite Talent Description."
+        }
     }
-  }
 }
 ```
 

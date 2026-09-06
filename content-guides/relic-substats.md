@@ -37,8 +37,7 @@ src/content/<type>/<rarity>/<character>/<build>/relic-substats.json
 ## Fields
 
 - `substats_priority`: Ordered list of substats.
-- `notes`: Optional top-level section notes shown under
-  `Regarding Relic Choices:` without adding a `*` marker to any substat.
+- `notes`: Optional top-level section notes
 - Each item may be either:
   - a stat ID string, such as `"cr"` or `"atk%"`
   - an object with `name` and optional `note`
@@ -58,8 +57,6 @@ src/content/<type>/<rarity>/<character>/<build>/relic-substats.json
   row needs custom text with inline translation tokens.
 - Adding `note` to a substat automatically adds a `*` marker next to that
   substat in the substat priority list.
-- The same `note` also automatically creates a matching note entry under the
-  `Substats` part of `Regarding Relic Choices:`.
 - Notes support Markdown and inline translation tokens.
 
 Example with the same note translated in different languages:
@@ -102,7 +99,7 @@ Alternative groups are useful when two stats share a priority slot.
         "fr": "Something about prioritizing CRIT Rate until 100%."
       }
     },
-    "cr/cd",
+    "cd",
     {
       "items": [
         "atk%",
@@ -116,8 +113,8 @@ Alternative groups are useful when two stats share a priority slot.
 This renders as:
 
 ```txt
-1. Energy Recharge*
-2. CRIT Rate / CRIT DMG
+1. CRIT Rate*
+2. CRIT DMG
 3. ATK%
 ≈ SPD
 ```

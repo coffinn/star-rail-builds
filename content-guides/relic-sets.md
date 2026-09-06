@@ -29,7 +29,7 @@ src/content/<type>/<rarity>/<character>/<build>/relic-sets.json
           "choose": true,
           "items": [
             {
-              "name": "2pc-speed",
+              "name": "2pc-spd",
               "pieces": 2
             }
           ]
@@ -109,8 +109,7 @@ src/content/<type>/<rarity>/<character>/<build>/relic-sets.json
       stat pseudo-set ID.
     - `conditional[].items[].pieces`: Number of set pieces, usually `2` or `4`.
     - `conditional[].items[].note`: Optional localized editorial note.
-- `notes`: Optional top-level section notes shown under
-  `Regarding Relic Choices:` without adding a `*` marker to any item.
+- `notes`: Optional top-level section notes
 
 ## Group Rules
 

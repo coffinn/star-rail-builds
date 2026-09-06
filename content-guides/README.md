@@ -69,7 +69,7 @@ Then only add this file inside a specific build folder when that build needs to
 override the shared defaults:
 
 ```txt
-src/content/quantum/5/silver-wolf/support/relics-mainstats.json
+src/content/quantum/5/silver-wolf/support/relic-mainstats.json
 ```
 
 This default-and-override behavior applies to build data loaded through the
@@ -88,7 +88,7 @@ content loader, including:
 - Gameplay names usually use IDs from `src/i18n/<lang>/*.json`.
 - Light cone rarity, stats, and passive data live in `src/data/light-cones/<light-cone-path>.json`. Build
   `light-cones.json` files should list light cone IDs, superimpositions, and notes only.
-- Relic set rarity and set effects live in `src/data/artifacts/artifact_sets.json`. Build
+- Relic set rarity and set effects live in `src/data/relics/relic_sets.json`. Build
   `relic-sets.json` files should list relic set IDs, rankings, and notes only.
 - Notes are translated directly inside the JSONs
 - Notes, when present, must include `en`; other languages are optional.
@@ -171,11 +171,11 @@ notes render under `Regarding Relic Choices:`, and trace notes render under
 - Use [build-notes.md](./build-notes.md) for the build title, best-build badge,
   build-wide notes, and calculation credits.
 - Use [light-cones.md](./light-cones.md) for ranked light cones and conditional light cones.
-- Use [relic-sets.md](./artifacts-sets.md) for relic set rankings and
+- Use [relic-sets.md](./relic-sets.md) for relic set rankings and
   conditional relic sets.
-- Use [relic-mainstats.md](./artifacts-mainstats.md) for body, feet, planar sphere, and link rope Main Stats.
-- Use [relic-substats.md](./artifacts-substats.md) for substat priority.
-- Use [traces.md](./talents.md) for trace priority.
+- Use [relic-mainstats.md](./relic-mainstats.md) for body, feet, planar sphere, and link rope Main Stats.
+- Use [relic-substats.md](./relic-substats.md) for substat priority.
+- Use [traces.md](./traces.md) for trace priority.
 - You can copy the content of [json-base](./json-base) to have a pre-made structure for the different jsons
 
 ## Data and i18n Files
@@ -189,12 +189,12 @@ there.
 Each language folder must contain these translation dictionaries:
 
 ```txt
+src/i18n/<lang>/abilities.json
+src/i18n/<lang>/characters.json
 src/i18n/<lang>/light-cones.json
 src/i18n/<lang>/relic-sets.json
-src/i18n/<lang>/characters.json
-src/i18n/<lang>/elements.json
+src/i18n/<lang>/paths.json
 src/i18n/<lang>/types.json
-src/i18n/<lang>/abilities.json
 src/i18n/<lang>/notes.json
 src/i18n/<lang>/ui.json
 ```
@@ -220,21 +220,11 @@ Editorial text can reference i18n IDs:
 [[set:eagle-of-twilight-line]]
 [[character:silver-wolf]]
 [[stat:cd]]
-[[element:pyro]]
+[[element:fire]]
 [[err]]
 ```
 
 Typed tokens search a specific category. Untyped tokens search known categories.
-
-## Rotation Notation Popovers
-
-Use `{rot:...}` in note text when a rotation or combo notation should show the
-standard keybind legend popover:
-
-```txt
-{rot:N2C}
-{rot:Q > N2 E > N2 E}
-```
 
 The text inside the marker is what readers see. The popover text is translated
 from the selected site language when available and falls back to English.

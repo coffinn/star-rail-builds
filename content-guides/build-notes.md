@@ -13,7 +13,7 @@ src/content/<type>/<rarity>/<character>/<build>/build-notes.json
 {
   "best": true,
   "name": {
-    "en": "[[element:lighting]] DPS",
+    "en": "[[element:lightning]] DPS",
     "fr": "DPS [[element:lightning]]"
   },
   "relic": {
@@ -41,8 +41,8 @@ src/content/<type>/<rarity>/<character>/<build>/build-notes.json
   },
   "notes": [
     {
-      "en": "Use **Markdown** and [[character:bennett]] here.",
-      "fr": "Utilisez **Markdown** et [[character:bennett]] ici."
+      "en": "Use **Markdown** and [[character:silver-wolf]] here.",
+      "fr": "Utilisez **Markdown** et [[character:silver-wolf]] ici."
     }
   ]
 }
@@ -64,8 +64,6 @@ src/content/<type>/<rarity>/<character>/<build>/build-notes.json
 - `notes`: Array of localized editorial note objects.
   - Each note item must include `en`. The requested language falls back to `en`.
   - Supports Markdown and inline translation tokens.
-  - These notes appear directly under the main `Notes` title, before the
-    Light Cone, Relics, and Traces note sections.
   - Build-level notes do not add a `*` marker because they are not attached to
     one specific item.
 
@@ -82,7 +80,7 @@ objects.
     "author": "AuthorName",
     "detail": "4pc comparison"
   },
-  "light_cone": [
+  "light_cones": [
     {
       "link": "https://example.com/light-cone-calculation-a",
       "author": "AuthorName",
@@ -158,8 +156,8 @@ Example with Markdown, inline translation tokens, and multiple languages:
   "notes": [
     {
       "en": "[[character:kafka]] needs enough [[stat:spd]] to act twice in the first cycle.",
-      "fr": "[[character:xingqiu]] a besoin d'assez de [[stat:er]] pour utiliser son dechainement a chaque rotation.",
-      "es": "[[character:xingqiu]] necesita suficiente [[stat:er]] para usar su definitiva en cada rotacion."
+      "fr": "[[character:kafka]] a besoin d'assez de [[stat:spd]] pour utiliser son dechainement a chaque rotation.",
+      "es": "[[character:kafka]] necesita suficiente [[stat:spd]] para usar su definitiva en cada rotacion."
     }
   ]
 }

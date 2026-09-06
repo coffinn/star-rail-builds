@@ -43,9 +43,24 @@ Use `break_aoe` when the ability deals the same Toughness damage to all enemies.
 
 Use:
 ```json
+"break_first_hit": 10
+```
+
+Use `break_first_hit`: Toughness damage dealt by the first hit of a Bounce attack.
+
+Use:
+```json
 "break_bounce": 5
+```
 
 Use `break_bounce`: Toughness damage dealt by each individual hit of a Bounce attack.
+
+Use:
+```json
+"break_total": 30
+```
+
+Use `break_total`: Total toughness damage dealt by a Bounce attack.
 
 ## Quick Reference
 
@@ -61,6 +76,15 @@ break_adjacent
 
 break_aoe
 → all enemies in an AoE attack
+
+break_first_hit
+→ first hit of a bounce attack
+
+break_bounce
+→ each successive hit of a bounce attack
+
+break_total
+→ total break damage dealt by a combined attack
 ```
 
 ## Example

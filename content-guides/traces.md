@@ -1,4 +1,4 @@
-# talents.json
+# traces.json
 
 `talents.json` defines talent priority groups for one build.
 
@@ -12,14 +12,14 @@ src/content/<type>/<rarity>/<character>/<build>/traces.json
 {
   "notes": [
     {
-      "en": "Talent priority assumes this build's main rotation."
+      "en": "Notes go here."
     }
   ],
-  "talents": [
+  "traces": [
     {
         "items": [
             {
-                "name": "ba"
+                "name": "basic"
             }
         ]
     },
@@ -44,8 +44,7 @@ src/content/<type>/<rarity>/<character>/<build>/traces.json
 ## Fields
 
 - `traces`: Ordered priority groups.
-- `notes`: Optional section-level notes shown under
-  `Regarding Talents Choices:` without adding a `*` marker to any trace.
+- `notes`: Optional section-level notes
 - `traces[].items`: Traces in the same priority position. Multiple items
   render on one line with `=`.
 - `traces[].approx`: Optional boolean. Use `true` when multiple traces are
