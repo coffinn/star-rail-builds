@@ -3,15 +3,17 @@
         {
             "items": [
                 {
-                    "name": "flowing-nightglow"
+                    "name": "flowing-nightglow",
+                    "superimposition": 1
                 },
                 {
                     "name": "past-self-in-mirror",
+                    "superimposition": 1,
                     "note_group": "robin-energy",
                     "note": {
                         "en": "Provides Energy to get Robin into her Ultimate faster.",
                         "ru": "Даёт энергию, чтобы Зарянка быстрее активировала свою сверхспособность."
-                    } 
+                    }
                 }
             ]
         },
@@ -19,6 +21,7 @@
             "items": [
                 {
                     "name": "but-the-battle-isnt-over",
+                    "superimposition": 1,
                     "note_group": "robin-energy"
                 }
             ]
@@ -27,6 +30,7 @@
             "items": [
                 {
                     "name": "poised-to-bloom",
+                    "superimposition": 5,
                     "note": {
                         "en": "Requires two teammates of the same Path to be in the team. Does not have to be the same Path as Robin.",
                         "ru": "Трубется, чтобы в команде было два союзника одного и того же Пути. Не обязательно, чтобы их Путь совпадал с Путем Зарянки."
@@ -37,13 +41,16 @@
         {
             "items": [
                 {
-                    "name": "for-tomorrows-journey"
+                    "name": "for-tomorrows-journey",
+                    "superimposition": 5
                 },
                 {
-                    "name": "the-forever-victual"
+                    "name": "the-forever-victual",
+                    "superimposition": 5
                 },
                 {
                     "name": "planetary-rendezvous",
+                    "superimposition": 5,
                     "note_group": "phys-affinity",
                     "note": {
                         "en": "This can only be used if the wearer is of the same Type as the DPS.",
@@ -55,7 +62,8 @@
         {
             "items": [
                 {
-                    "name": "meshing-cogs"
+                    "name": "meshing-cogs",
+                    "superimposition": 5
                 }
             ]
         }

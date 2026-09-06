@@ -3,51 +3,61 @@
         {
             "items": [
                 {
-                    "name": "night-of-fright"
+                    "name": "night-of-fright",
+                    "superimposition": 1
                 },
                 {
-                    "name": "unto-tomorrows-morrow"
+                    "name": "unto-tomorrows-morrow",
+                    "superimposition": 5
                 },
                 {
-                    "name": "multiplication"
+                    "name": "multiplication",
+                    "superimposition": 5
                 },
                 {
-                    "name": "quid-pro-quo"
+                    "name": "quid-pro-quo",
+                    "superimposition": 5
                 },
                 {
-                    "name": "scent-alone-stays-true"
+                    "name": "scent-alone-stays-true",
+                    "superimposition": 1
                 }
             ]
         },
         {
             "items": [
                 {
-                    "name": "postop"
+                    "name": "postop",
+                    "superimposition": 5
                 },
                 {
-                    "name": "dreams-montage"
+                    "name": "dreams-montage",
+                    "superimposition": 5
                 }
             ]
         },
         {
             "items": [
                 {
-                    "name": "perfect-timing"
+                    "name": "perfect-timing",
+                    "superimposition": 5
                 },
                 {
-                    "name": "what-is-real"
+                    "name": "what-is-real",
+                    "superimposition": 5
                 }
             ]
         }
     ],
-  "conditional": [
-    {
-      "name": "shared-feeling",
-      "note_group": "skill-spam",
-      "note": {
-        "en": "Can be used if Gallagher is able to Skill spam.",
-        "ru": "Можно использовать, если Галлахер способен часто использовать навык."
-      }
-    }
-  ]
+    "conditional": [
+        {
+            "name": "shared-feeling",
+            "superimposition": 5,
+            "note_group": "skill-spam",
+            "note": {
+                "en": "Can be used if Gallagher is able to Skill spam.",
+                "ru": "Можно использовать, если Галлахер способен часто использовать навык."
+            }
+        }
+    ]
 }

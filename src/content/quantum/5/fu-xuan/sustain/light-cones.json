@@ -3,42 +3,48 @@
         {
             "items": [
                 {
-                    "name": "she-already-shut-her-eyes"
+                    "name": "she-already-shut-her-eyes",
+                    "superimposition": 1
                 }
             ]
         },
         {
             "items": [
                 {
-                    "name": "moment-of-victory"
+                    "name": "moment-of-victory",
+                    "superimposition": 1
                 }
             ]
         },
         {
             "items": [
                 {
-                    "name": "day-one-of-my-new-life"
+                    "name": "day-one-of-my-new-life",
+                    "superimposition": 5
                 }
             ]
         },
         {
             "items": [
                 {
-                    "name": "landaus-choice"
+                    "name": "landaus-choice",
+                    "superimposition": 5
                 }
             ]
         },
         {
             "items": [
                 {
-                    "name": "texture-of-memories"
+                    "name": "texture-of-memories",
+                    "superimposition": 1
                 }
             ]
         },
         {
             "items": [
                 {
-                    "name": "trend-of-the-universal-market"
+                    "name": "trend-of-the-universal-market",
+                    "superimposition": 5
                 }
             ]
         }
