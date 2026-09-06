@@ -6,7 +6,8 @@
                     "name": "thus-burns-the-dawn",
                     "superimposition": 1,
                     "note": {
-                        "en": "If using [[light-cone:thus-burns-the-dawn]] and [[set:poet-of-mourning-collapse]], getting any SPD substats will disqualify you from the highest CRIT Rate bonus."
+                        "en": "If using [[light-cone:thus-burns-the-dawn]] and [[set:poet-of-mourning-collapse]], getting any SPD substats will disqualify you from the highest CRIT Rate bonus.",
+                        "ru": "При использовании [[light-cone:thus-burns-the-dawn]] и [[set:poet-of-mourning-collapse]] получение любых сабстатов скорости лишит вас возможности получить максимальный бонус к крит. шансу."
                     }
                 }
             ]
@@ -25,7 +26,8 @@
                     "name": "brighter-than-the-sun",
                     "superimposition": 1,
                     "note": {
-                        "en": "Requires alternating between Basic ATK and Skill to maintain its buffs."
+                        "en": "Requires alternating between Basic ATK and Skill to maintain its buffs.",
+                        "ru": "Для поддержания баффов требуется чередовать базовую атаку и навык."
                     }
                 }
             ]

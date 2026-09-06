@@ -5,7 +5,8 @@
             "baseline": "68%",
             "recommended": "68%",
             "note": {
-                "en": "Assumes [[set:poet-of-mourning-collapse]] is being used. Otherwise, 100% is recommended."
+                "en": "Assumes [[set:poet-of-mourning-collapse]] is being used. Otherwise, 100% is recommended.",
+                "ru": "Предполагается, что используется [[set:poet-of-mourning-collapse]]. В противном случае рекомендуется 100%."
             }
         },
         {
