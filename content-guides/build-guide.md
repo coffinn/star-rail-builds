@@ -2,7 +2,7 @@
 
 This guide explains how to add a **character build guide** to Star Rail Builds.
 
-It assumes the character itself already exists. This guide only covers the build recommendation files: build name/notes, Light Cones, Relics, main stats, substats, and Trace priority.
+It assumes the character itself already exists. This guide only covers the build recommendation files: build name/notes, Light Cones, Relics, Main Stats, substats, and Trace priority.
 
 ---
 
@@ -363,7 +363,7 @@ err
 break
 ```
 
-When multiple main stats are acceptable, list them in recommendation order.
+When multiple Main Stats are acceptable, list them in recommendation order.
 
 ---
 

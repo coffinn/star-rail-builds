@@ -1,6 +1,6 @@
 {
     "intro": {
-        "en": "Hello and welcome to Star Rail Builds!<br><br>This website aims to help players build their Honkai: Star Rail characters as effectively as possible by providing recommended Light Cones, Relic and Planar Ornament sets, main stats, substats, and Trace priorities. This FAQ explains how the guide works and how to interpret its recommendations.",
+        "en": "Hello and welcome to Star Rail Builds!<br><br>This website aims to help players build their Honkai: Star Rail characters as effectively as possible by providing recommended Light Cones, Relic and Planar Ornament sets, Main Stats, substats, and Trace priorities. This FAQ explains how the guide works and how to interpret its recommendations.",
         "ru": "Добро пожаловать в руководство по билдам персонажей Honkai: Star Rail!<br><br> Цель этого сайта - помочь игрокам как можно лучше собрать своих персонажей: выбрать оптимальные Световые конусы, наборы реликвий и планарные украшения, основаные статы, сабстаты, и приоритетные следы. Раздел FAQ предназначен для того, чтобы помочь разобраться, как работает руководство и как интерпретировать его рекомендации.",
         "vn": "Xin chào và chào mừng bạn đến với Star Rail Builds!<br><br>Trang web này được làm ra nhằm mục đích giúp người chơi build các Nhân Vật Honkai: Star Rail của họ một cách hiệu quả nhất có thể bằng cách cung cấp các Nón Ánh Sáng, bộ Di Vật và Phụ Kiện Vị Diện được đề xuất, các chỉ số chính, chỉ số phụ và mức độ ưu tiên của Vết Tích. Phần Câu hỏi thường gặp này giải thích cách hoạt động của hướng dẫn này và cách diễn giải các đề xuất trong đó."
     },
@@ -36,7 +36,7 @@
                 "vn": "Hướng dẫn build này có những gì?"
             },
             "answer": {
-                "en": "Each character guide can include recommended **Light Cones**, **Cavern Relics**, **Planar Ornaments**, **Relic main stats**, **substat priorities**, and **Trace priorities**. Some characters may also have multiple builds when they have meaningfully different playstyles or roles.",
+                "en": "Each character guide can include recommended **Light Cones**, **Cavern Relics**, **Planar Ornaments**, **Relic Main Stats**, **substat priorities**, and **Trace priorities**. Some characters may also have multiple builds when they have meaningfully different playstyles or roles.",
                 "ru": "В каждом руководстве по персонажу могут быть указаны рекомендуемые **Световые конусы**, **пещерные реликвии**, **планарные украшения**, **основные характеристики реликвий**, **приоритеты дополнительных характеристик** и **приоритеты следов**. У некоторых персонажей также может быть несколько вариантов прокачки, если у них существенно различаются стили игры или роли.",
                 "vn": "Mỗi hướng dẫn Nhân Vật có thể bao gồm **Nón Ánh Sáng**, **Di Vật Hang Động**, **Phụ Kiện Vị Diện**, **Chỉ số chính của Di Tích**, **Các ưu tiên chỉ số phụ** và **Ưu tiên Vết Tích**. Một số Nhân Vật cũng có thể có nhiều build khác nhau khi họ có các phong cách chơi hoặc vai trò khác nhau."
             }
@@ -115,12 +115,12 @@
         },
         {
             "question": {
-                "en": "How should I read the Relic main stat recommendations?",
+                "en": "How should I read the Relic Main Stat recommendations?",
                 "ru": "Как мне следует интерпретировать рекомендации по основным статам реликвии?",
                 "vn": "Tôi nên đọc các đề xuất về thuộc tính chính của Di Vật như thế nào?"
             },
             "answer": {
-                "en": "The guide separately lists recommended main stats for **Body**, **Feet**, **Planar Sphere**, and **Link Rope**. When multiple stats are listed for one slot, the best choice may depend on your build, team, Light Cone, or existing stats. Check the character's notes when additional context is provided.",
+                "en": "The guide separately lists recommended Main Stats for **Body**, **Feet**, **Planar Sphere**, and **Link Rope**. When multiple stats are listed for one slot, the best choice may depend on your build, team, Light Cone, or existing stats. Check the character's notes when additional context is provided.",
                 "ru": "В руководстве отдельно указаны рекомендуемые основные статы для **тела**, **ног**, **планарной сферы** и **соединительной вязи**. Если для одного слота указано несколько характеристик, лучший выбор может зависеть от вашей сборки, команды, Светового конуса или имеющихся статов. Для получения дополнительной информации обратитесь к примечаниям к персонажу.",
                 "vn": "Hướng dẫn liệt kê riêng các đề xuất thuộc tính chính cho **Thân**, **Chân**, **Quả Cầu Vị Diện** và **Dây Liên Kết**. Khi nhiều thuộc tính được liệt kê cho một vị trí, lựa chọn tốt nhất có thể phụ thuộc vào lối chơi, đội hình, Nón Ánh Sáng hoặc các chỉ số hiện có của bạn. Kiểm tra ghi chú của Nhân Vật khi ngữ cảnh bổ sung được cung cấp."
             }

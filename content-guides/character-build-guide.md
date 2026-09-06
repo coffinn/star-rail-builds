@@ -18,7 +18,7 @@ It covers:
 - build names and build-wide notes
 - Light Cone recommendations
 - Relic recommendations
-- Relic main stats
+- Relic Main Stats
 - Relic substats
 - Recommended Stats
 - Trace priorities
@@ -494,7 +494,7 @@ The build-specific version wins.
 
 ## Example
 
-Suppose both builds use the same Relic main stats and Trace priority.
+Suppose both builds use the same Relic Main Stat and Trace priority.
 
 Instead of this:
 
@@ -526,7 +526,7 @@ Both builds inherit those character-level files.
 
 ## Overriding only one build
 
-Suppose both builds normally use the same main stats, except Break DPS needs different ones.
+Suppose both builds normally use the same Main Stats, except Break DPS needs different ones.
 
 Use:
 
@@ -1217,7 +1217,7 @@ Location:
 src/content/<element>/<rarity>/<character>/<build>/relic-mainstats.json
 ```
 
-HSR main stats use these slots:
+HSR Main Stats use these slots:
 
 ```text
 body
@@ -1854,7 +1854,7 @@ The general syntax is:
 
 ---
 
-## Relic main stat
+## Relic Main Stats
 
 ```json
 {
@@ -2441,7 +2441,7 @@ Support
 Break DPS
 ```
 
-We will share main stats only where they are actually identical.
+We will share Main Stats only where they are actually identical.
 
 Folder:
 
@@ -2649,7 +2649,7 @@ Ask:
 ```text
 Are the Light Cones different?
 Are the Relics different?
-Are the main stats different?
+Are the Main Stats different?
 Are the substats different?
 Are the Recommended Stats different?
 Are the Trace priorities different?

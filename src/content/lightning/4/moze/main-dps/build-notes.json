@@ -5,10 +5,10 @@
     },
         "notes": [
         {
-            "en": "## Summary and General Analysis\n- Moze marks an enemy as \"Prey\", gains 9 points of Charge and departs from the team. When allies attack the \"Prey\", he deals Lightning Additional DMG to the enemy target and consumes 1 Charge. Every 3 consumed stacks, he will launch a Follow-Up Attack on the \"Prey\". When all Charge stacks are consumed, dispells \"Prey\" and returns to the team.\n- If he is the only ally remaining, he cannot apply \"Prey\" and depart."
+            "en": "## Summary and General Analysis\n- Moze marks an enemy as \"Prey\", gains 9 points of Charge and departs from the team. When allies attack the \"Prey\", he deals Lightning Additional DMG to the enemy target and consumes 1 Charge. Every 3 points of \"Charge\" consumed, he will launch a Follow-Up Attack on the \"Prey\". When all Charge stacks are consumed, dispels \"Prey\" and returns to the team.\n- If Moze is the only ally remaining, he cannot use his Skill."
         },
         {
-            "en": "## Notable Investments\n ### E2\n- E2 gives him free CRIT DMG, helping maintain stat goals."
+            "en": "## Notable Investments\n ### E2\n- E2 gives him CRIT DMG, helping maintain stat goals."
         },
         {
             "en": "## Skill Point Usage\n- Neutral"

@@ -48,7 +48,7 @@
                     "items": [{ "name": "salsotto", "pieces": 2}]
                 },
                 {
-                    "items": [{ "name": "izumo", "pieces": 2, "note":{"en": "Another Hunt ally must be on the team."}}]
+                    "items": [{ "name": "izumo", "pieces": 2, "note":{"en": "Can be used with another Hunt ally on the team."}}]
                 }
             ]
         }

@@ -59,7 +59,7 @@ build folder does not contain the file, the character-level file is used as the
 default.
 
 This is useful when multiple builds share the same values. For example, if two
-Silver Wolf builds use the same artifact main stats, place the shared file here:
+Silver Wolf builds use the same relic Main Stats, place the shared file here:
 
 ```txt
 src/content/quantum/5/silver-wolf/relic-mainstats.json
@@ -173,7 +173,7 @@ notes render under `Regarding Relic Choices:`, and trace notes render under
 - Use [light-cones.md](./light-cones.md) for ranked light cones and conditional light cones.
 - Use [relic-sets.md](./artifacts-sets.md) for relic set rankings and
   conditional relic sets.
-- Use [relic-mainstats.md](./artifacts-mainstats.md) for body, feet, planar sphere, and link rope main stats.
+- Use [relic-mainstats.md](./artifacts-mainstats.md) for body, feet, planar sphere, and link rope Main Stats.
 - Use [relic-substats.md](./artifacts-substats.md) for substat priority.
 - Use [traces.md](./talents.md) for trace priority.
 - You can copy the content of [json-base](./json-base) to have a pre-made structure for the different jsons

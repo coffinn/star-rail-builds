@@ -1,6 +1,6 @@
 # relic-mainstats.json
 
-`relic-mainstats.json` defines main stat priorities for body, feet, planar sphere, and link rope.
+`relic-mainstats.json` defines Main Stat priorities for body, feet, planar sphere, and link rope.
 
 ```txt
 src/content/<type>/<rarity>/<character>/<build>/relic-mainstats.json
@@ -61,7 +61,7 @@ src/content/<type>/<rarity>/<character>/<build>/relic-mainstats.json
   `src/i18n/<lang>/stats.json`.
 - Custom display strings such as `merrymaking` can be used when no i18n ID exists.
 - Adding `note` to an object stat automatically adds a `*` marker next to that
-  stat in the main stat list.
+  stat in the Main Stat list.
 - The same `note` also automatically creates a matching note entry under the
   `Main Stats` part of `Regarding Relic Choices:`.
 - Notes support Markdown and inline translation tokens.

@@ -5,10 +5,10 @@
     },
     "notes": [
         {
-            "en": "## Summary and General Analysis\n- Hysilens is a DoT DPS who applies a random DoT type on enemies when allies attack, giving extra bonuses for the Bleed state. Her Skill can inflict Vulnerability to enemies.\n- Her Ultimate deploys a Zone that reduces enemy targets' ATK and DEF then deals a large portion of the DoT damage taken by enemies back to them. With her A4 Trace: The Bubble of Banquets, her Ultimate can also detonate DoT's\n- Hysilens' performance is heavily reliant on Kafka, who is currently our only reliable DoT detonator."
+            "en": "## Summary and General Analysis\n- Hysilens is a DoT DPS who applies a random DoT type on enemies when allies attack, giving extra bonuses for the Bleed state. Her Skill can inflict Vulnerability to enemies.\n- Her Ultimate deploys a Zone that reduces enemy targets' ATK and DEF and deals a large portion of the DoT damage taken by enemies as additional Physical DoT. With her A4 Trace The Bubble of Banquets, her Ultimate can also detonate DoT's\n- Hysilens' performance is heavily reliant on Kafka, who is currently the only reliable DoT detonator."
         },
         {
-            "en": "## Investment Priority\n ### E1 >> S1\n- Her E1 is DoT's best early investment, significantly boosting DoT ramp up and damage for the whole team.\n- S1: [[light-cone:why-does-the-ocean-sing]] increases the teams DoT DMG and SPD, particularly useful for helping Kafka reach SPD breakpoints. If both Hysilens and Black Swan are E1, they can swap signature Light Cones."
+            "en": "## Investment Priority\n ### E1 >> S1\n- Her E1 is DoT's best early investment, significantly boosting DoT ramp up and damage for the whole team.\n- S1 [[light-cone:why-does-the-ocean-sing]] inflicts DoT Vulnerability and increases ally's SPD, particularly useful for helping Kafka reach SPD breakpoints. If both Hysilens and Black Swan are E1, they can swap signature Light Cones."
         },
         {
             "en": "## Skill Point Usage\n- Negative"
