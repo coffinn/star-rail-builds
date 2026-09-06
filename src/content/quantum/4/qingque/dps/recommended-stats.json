@@ -5,7 +5,7 @@
             "baseline": "68% / 100%",
             "recommended": "68% / 100%",
             "note": {
-                "en": "68% CRIT Rate with Poet of Mourning Collapse (4), assuming under 95 SPD."
+                "en": "Assumes [[set:poet-of-mourning-collapse]] is being used. Otherwise, 100% is recommended."
             }
         },
         {

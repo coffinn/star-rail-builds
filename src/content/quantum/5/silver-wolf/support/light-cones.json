@@ -4,10 +4,7 @@
             "items": [
                 {
                     "name": "incessant-rain",
-                    "superimposition": 1,
-                    "note": {
-                        "en": "test note."
-                    }
+                    "superimposition": 1
                 }
             ]
         }

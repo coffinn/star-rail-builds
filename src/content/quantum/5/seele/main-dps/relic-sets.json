@@ -14,7 +14,7 @@
                         {
                             "name": "eagle", "pieces": 4 ,
                             "notes": {
-                                "en": "situationally useful"
+                                "en": "situationally useful."
                             }
                         }
                     ]
@@ -28,7 +28,7 @@
                         { "name": "scholar-lost-in-erudition", "pieces": 4 },
                         {
                             "name": "poet-of-mourning-collapse", "pieces": 4 , "notes": {
-                                "en": "Sould only be used if Seele is not using 'In The Night' nor is she E2+"
+                                "en": "Sould only be used if Seele is not using 'In The Night' nor is she E2+."
                             }
                         }
                     ]
@@ -59,9 +59,13 @@
                         "note": {
                             "en": "Marginally better."
                         }
-                    },
+                    }
+                ]
+            },
+            {
+                "items": [
                     {
-                        "name": "rutilant-arena", "pieces": 2
+                        "name": "rutilant", "pieces": 2
                     }
                 ]
             }

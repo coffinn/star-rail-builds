@@ -21,7 +21,7 @@
                 },
                 {
                     "name": "basic",
-                    "note": {"en": "Basic ATK can be ignored"}
+                    "note": {"en": "Basic ATK can be ignored."}
                 }
             ]
         }
