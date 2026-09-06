@@ -4,17 +4,18 @@
         "en": "DPS"
     },
     "notes": [
-        {
-            "en": "## Summary and General Analysis\n- Yunli is a Counter DPS that deals Blast damage.\n- She can store 2 Ultimates at a time. When activating her Ultimnate, she will Taunt all enemies and boost her next Counter's CRIT DMG. If hit by an enemy, she will launch an Enhanced Counter with additional Bounce damage. If an ally takes action instead, she will launch an Enhanced Counter without the Bounce damage.\n- Her Skill restores HP based on her ATK and deals Blast damage to enemies.\n- Yunli's performance is heavily reliant on her Supports' Investments."
+    ],
+    "overview": {
+        "summary": {
+            "en": "- Yunli is a Counter DPS that deals Blast damage.\n- She can store 2 Ultimates at a time. When activating her Ultimnate, she will Taunt all enemies and boost her next Counter's CRIT DMG. If hit by an enemy, she will launch an Enhanced Counter with additional Bounce damage. If an ally takes action instead, she will launch an Enhanced Counter without the Bounce damage.\n- Her Skill restores HP based on her ATK and deals Blast damage to enemies.\n- Yunli's performance is heavily reliant on her Supports' Investments."
         },
-        {
-            "en": "## Investment Priority\n ### E1 > S1 \n- Her E1 boosts her damage output through the additional Bounce instances.\n- S1 [[light-cone:dance-at-sunset]] provides her with increased taunt, as well as [[stat:cd]] and DMG Boost to her Follow-Up ATK. It is an okay investment, since she has access to other viable alternatives."
-        },
-        {
-            "en": "## Skill Point Usage\n- Negative"
-        },
-        {
-            "en": "## Ability Rotation\n- Skill spam, Basic ATK if needed"
-        }        
-    ]    
+        "investment_priority": {
+            "priority": {
+                "en": "E1 > S1"
+            },
+            "details": {
+                "en": "- Her E1 boosts her damage output through the additional Bounce instances.\n- S1 [[light-cone:dance-at-sunset]] provides her with increased taunt, as well as [[stat:cd]] and DMG Boost to her Follow-Up ATK. It is an okay investment, since she has access to other viable alternatives."
+            }
+        }
+    }
 }    

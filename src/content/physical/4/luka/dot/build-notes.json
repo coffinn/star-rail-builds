@@ -5,21 +5,21 @@
         "ru": "ДД от переодического урона"
     },
     "notes": [
-        {
-            "en": "## Summary and General Analysis\n- When Luka uses Basic ATK or Skill, he gains a stack of \"Fighting Will\", up to 4 stacks. At 2 or more stacks, his Basic ATK is Enhanced and will detonate Bleed DoT on the enemy target.\n- His Skill can apply Bleed, and his Ultimate will apply Vulnerability to an enemy target and give 2 stacks of \"Fighting Will\".",
-            "ru": "## Краткое описание и общий анализ\n- Когда Лука использует базовую атаку или навык, он получает 1 ур. статуса Воля к битве, до макс. 4 ур. При наличии 2 или более ур. его базовая атака усиливается и немедленно активирует статус Кровотечение на противнике.\n- Его навык может накладывать статус Кровотечение, а его сверхспособность повышает получаемый противником урон и даёт 2 ур. статуса Воля к битве."
+    ],
+    "overview": {
+        "summary": {
+            "en": "- When Luka uses Basic ATK or Skill, he gains a stack of \"Fighting Will\", up to 4 stacks. At 2 or more stacks, his Basic ATK is Enhanced and will detonate Bleed DoT on the enemy target.\n- His Skill can apply Bleed, and his Ultimate will apply Vulnerability to an enemy target and give 2 stacks of \"Fighting Will\".",
+            "ru": "- Когда Лука использует базовую атаку или навык, он получает 1 ур. статуса Воля к битве, до макс. 4 ур. При наличии 2 или более ур. его базовая атака усиливается и немедленно активирует статус Кровотечение на противнике.\n- Его навык может накладывать статус Кровотечение, а его сверхспособность повышает получаемый противником урон и даёт 2 ур. статуса Воля к битве."
         },
-        {
-            "en": "## Notable Eidolons\n ### E6 \n- His E6 increases his damage output with Bleed.",
-            "ru": "## Важные Эйдолоны\n ### E6\n- Его E6 увеличивает урон от статуса Кровотечение."
-        },
-        {
-            "en": "## Skill Point Usage\n- Negative",
-            "ru": "## Восстановление очков навыков\n- Отрицательное"
-        },
-        {
-            "en": "## Ability Rotation\n- [[ability:skill]] spam\n- Use Enhanced Basic ATK when ready",
-            "ru": "## Ротация\n- Спам навыка\n- Используйте усиленную базовую атаку, когда возможно"
+        "notable_eidolons": {
+            "priority": {
+                "en": "E6",
+                "ru": "E6"
+            },
+            "details": {
+                "en": "- His E6 increases his damage output with Bleed.",
+                "ru": "- Его E6 увеличивает урон от статуса Кровотечение."
+            }
         }
-    ]
+    }
 }
