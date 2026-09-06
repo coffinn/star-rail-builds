@@ -6,10 +6,10 @@
     "notes": [
         
         {
-            "en": "## Summary and General Analysis\n- Tingyun applies \"Benediction\" to one ally target. \"Benediction\" increases attack, and deals Lightning Additional DMG in tandem with ally attacks.\n- Her Ultimate regenerates Energy and boost an ally's damage dealt.\n- When Tingyun attacks an enemy, the ally with \"Benediction\" deals Lightning Additional DMG to the offending enemy."
+            "en": "## Summary and General Analysis\n- Tingyun is a support who provides ATK and Energy buffs to one single ally. She grants the target of her Skill \"Benediction\", when they launch an attack they will deal Lightning Additional DMG 1 time. The Additional DMG dealt is based off of the ally with \"Benediction\", rather than Tingyun’s own ATK.\n- Her Ultimate regenerates 50 Energy for the target ally, while also increasing their DMG for 2 turns.\n- When attacked by an enemy, the ally with \"Benediction\" deals Lightning Additional DMG to the attacker."
         },
         {
-            "en": "## Noteable Investments\n ### E1, E6\n- E1 boosts target an ally's speed.\n- E6 generates extra Energy on Ultimate."
+            "en": "## Noteable Investments\n ### E6\n- Her E6 regenerates 10 more Energy for the target of her Ultimate, adding up to a total of 60 Energy. Her earlier Eidolons also increase SPD, Energy regeneration, the damage from the ally with \"Benediction\"."
         },
         {
             "en": "## Skill Point Usage\n- Positive"
