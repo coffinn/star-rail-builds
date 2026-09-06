@@ -65,13 +65,13 @@
       ]
     },
     "skill": {
-      "type": "Skill",
-      "name": "Bloom, Elysium of Beyond",
-      "tag": "Support",
+      "type": "Chiến Kỹ",
+      "name": "Nở Rộ Nhé, Thiên Đường Của Kiếp Sau",
+      "tag": "Hỗ Trợ",
       "min_level": 1,
       "max_level": 12,
       "default_level": 10,
-      "description_template": "Gains 3 \"Recollection\" point(s) and deploys a Zone that lasts for 2 turns. The Zone's duration decreases by 1 at the start of Cyrene's every turn. While the Zone lasts, for each instance of DMG dealt by all ally targets, deals 1 additional instance of True DMG  equal to {{scaling1}}% of the original DMG. When Cyrene is downed , the Zone will also be dispelled.",
+      "description_template": "Nhận 3 điểm \"Hồi Ức\" và gây cho 1 kẻ địch chỉ định Sát Thương Băng bằng {{scaling1}}% Giới Hạn HP của Cyrene, sau đó gây cho toàn bộ phe địch Sát Thương Băng bằng {{scaling1}}% Giới Hạn HP của Cyrene.\n\"Hướng Tới Tình Yêu Và Ngày Mai ♪\" không thể hồi Điểm Chiến Kỹ.",
       "scaling": {
         "scaling1": [
           12,
