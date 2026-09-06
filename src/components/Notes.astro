@@ -1,177 +1,169 @@
 ---
 import { t } from '../utils/i18n';
 
-const { notes, buildNote, locale } = Astro.props;
-
 type RenderedNote = {
     id: string;
     name: string;
     note: string;
 };
 
+type PrioritySection = {
+    priority?: string;
+    details?: string;
+};
+
+type OverviewData = {
+    summary?: string;
+    investment_priority?: PrioritySection;
+    notable_eidolons?: PrioritySection;
+};
+
+type BuildNoteData = {
+    notes?: string[];
+    overview?: OverviewData;
+};
+
+const { notes, buildNote, locale } = Astro.props as {
+    notes: any;
+    buildNote?: BuildNoteData | null;
+    locale: any;
+};
+
+const ui = (id: string) => t(locale, 'ui', id, undefined, false);
+
+/*
+ * Short / attached notes.
+ * These stay in the NOTES card.
+ */
 const itemNotes: RenderedNote[] = [
-    ...(notes.lightCones?.items ?? []),
+    ...(notes?.lightCones?.items ?? []),
 
-    ...(notes.relics?.sets ?? []),
-    ...(notes.relics?.mainstats ?? []),
-    ...(notes.relics?.substats ?? []),
+    ...(notes?.relics?.sets ?? []),
+    ...(notes?.relics?.mainstats ?? []),
+    ...(notes?.relics?.substats ?? []),
 
-    ...(notes.recommendedStats?.items ?? []),
+    ...(notes?.recommendedStats?.items ?? []),
 
-    ...(notes.traces?.items ?? []),
+    ...(notes?.traces?.items ?? []),
 ];
 
 const globalNotes: string[] = [
-    ...(notes.lightCones?.global ?? []),
-    ...(notes.relics?.global ?? []),
-    ...(notes.recommendedStats?.global ?? []),
-    ...(notes.traces?.global ?? []),
+    ...(notes?.lightCones?.global ?? []),
+    ...(notes?.relics?.global ?? []),
+    ...(notes?.recommendedStats?.global ?? []),
+    ...(notes?.traces?.global ?? []),
 ];
 
-const hasNotes =
-    itemNotes.length > 0 ||
-    globalNotes.length > 0 ||
-    buildNote?.notes?.length > 0;
+const buildNotes: string[] = buildNote?.notes ?? [];
 
+const hasNotes =
+    itemNotes.length > 0 || globalNotes.length > 0 || buildNotes.length > 0;
+
+/*
+ * Long-form build overview.
+ */
 const overview = buildNote?.overview;
 
-const hasSummary =
-    Boolean(overview?.summary);
+const hasSummary = Boolean(overview?.summary);
 
-const hasInvestment =
-    Boolean(
-        overview?.investment_priority?.priority ||
-        overview?.investment_priority?.details,
-    );
+/*
+ * investment_priority and notable_eidolons are intentionally
+ * interchangeable. If both are present, investment_priority wins.
+ */
+const prioritySection = overview?.investment_priority
+    ? {
+          title: ui('Investment Priority'),
+          data: overview.investment_priority,
+      }
+    : overview?.notable_eidolons
+      ? {
+            title: ui('Notable Eidolons'),
+            data: overview.notable_eidolons,
+        }
+      : null;
 
-const hasOverview =
-    hasSummary || hasInvestment;
+const hasPrioritySection = Boolean(
+    prioritySection?.data?.priority || prioritySection?.data?.details,
+);
+
+const hasOverview = hasSummary || hasPrioritySection;
 ---
 
 {
     hasNotes && (
-        <div class="card notes-card">
-            <h2>{t(locale, 'ui', 'Notes')}</h2>
+        <section class="card notes-card">
+            <h2>{ui('Notes')}</h2>
 
             <div class="notes-content">
-                {
-                    buildNote?.notes?.length > 0 && (
-                        <div class="notes-block">
-                            <div class="build-note-list">
-                                {buildNote.notes.map(
-                                    (note: string) => (
-                                        <div set:html={note} />
-                                    ),
-                                )}
-                            </div>
-                        </div>
-                    )
-                }
+                {buildNotes.length > 0 && (
+                    <div class="build-note-list">
+                        {buildNotes.map((note) => (
+                            <div class="build-note" set:html={note} />
+                        ))}
+                    </div>
+                )}
 
-                {
-                    globalNotes.length > 0 && (
-                        <div class="notes-global-list">
-                            {globalNotes.map((note) => (
-                                <div
-                                    class="note-global"
-                                    set:html={note}
-                                />
-                            ))}
-                        </div>
-                    )
-                }
+                {globalNotes.length > 0 && (
+                    <div class="notes-global-list">
+                        {globalNotes.map((note) => (
+                            <div class="note-global" set:html={note} />
+                        ))}
+                    </div>
+                )}
 
-                {
-                    itemNotes.length > 0 && (
-                        <div class="note-list">
-                            {itemNotes.map((note) => (
-                                <div
-                                    id={note.id}
-                                    class="note-target"
-                                    set:html={`<span class="element-bold">${note.name}:</span> ${note.note}`}
-                                />
-                            ))}
-                        </div>
-                    )
-                }
+                {itemNotes.length > 0 && (
+                    <div class="note-list">
+                        {itemNotes.map((note) => (
+                            <div
+                                id={note.id}
+                                class="note-target"
+                                set:html={`<span class="element-bold">${note.name}:</span> ${note.note}`}
+                            />
+                        ))}
+                    </div>
+                )}
             </div>
-        </div>
+        </section>
     )
 }
 
 {
     hasOverview && (
-        <div class="card notes-card overview-card">
-            <h2>
-                {t(locale, 'ui', 'Overview')}
-            </h2>
+        <section class="card notes-card overview-card">
+            <h2>{ui('Overview')}</h2>
 
             <div class="overview-content">
-                {
-                    hasSummary && (
-                        <section class="overview-section">
-                            <h3>
-                                {t(
-                                    locale,
-                                    'ui',
-                                    'Summary and General Analysis',
-                                )}
-                            </h3>
+                {hasSummary && overview?.summary && (
+                    <section class="overview-section">
+                        <h3>{ui('Summary and General Analysis')}</h3>
 
+                        <div
+                            class="overview-text"
+                            set:html={overview.summary}
+                        />
+                    </section>
+                )}
+
+                {hasPrioritySection && prioritySection && (
+                    <section class="overview-section">
+                        <h3>{prioritySection.title}</h3>
+
+                        {prioritySection.data.priority && (
+                            <div
+                                class="overview-investment-priority"
+                                set:html={prioritySection.data.priority}
+                            />
+                        )}
+
+                        {prioritySection.data.details && (
                             <div
                                 class="overview-text"
-                                set:html={
-                                    overview.summary
-                                }
+                                set:html={prioritySection.data.details}
                             />
-                        </section>
-                    )
-                }
-
-                {
-                    hasInvestment && (
-                        <section class="overview-section">
-                            <h3>
-                                {t(
-                                    locale,
-                                    'ui',
-                                    'Investment Priority',
-                                )}
-                            </h3>
-
-                            {
-                                overview
-                                    .investment_priority
-                                    ?.priority && (
-                                    <div
-                                        class="overview-investment-priority"
-                                        set:html={
-                                            overview
-                                                .investment_priority
-                                                .priority
-                                        }
-                                    />
-                                )
-                            }
-
-                            {
-                                overview
-                                    .investment_priority
-                                    ?.details && (
-                                    <div
-                                        class="overview-text"
-                                        set:html={
-                                            overview
-                                                .investment_priority
-                                                .details
-                                        }
-                                    />
-                                )
-                            }
-                        </section>
-                    )
-                }
+                        )}
+                    </section>
+                )}
             </div>
-        </div>
+        </section>
     )
 }

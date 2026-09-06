@@ -1086,6 +1086,26 @@ function buildLocalizedNotes(
                                 ),
                         }
                         : undefined,
+
+                notable_eidolons:
+                    buildNoteData.overview
+                        .notable_eidolons
+                        ? {
+                            priority:
+                                renderLocalizedBuildText(
+                                    buildNoteData.overview
+                                        .notable_eidolons
+                                        .priority,
+                                ),
+
+                            details:
+                                renderLocalizedBuildText(
+                                    buildNoteData.overview
+                                        .notable_eidolons
+                                        .details,
+                                ),
+                        }
+                        : undefined,
             }
             : undefined,
     };
