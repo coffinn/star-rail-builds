@@ -4,22 +4,21 @@
         "en": "Support",
         "ru": "Саппорт"
     },
-    "notes": [
-        {
-            "en": "## Summary and General Analysis\n- Pela's Ultimate applies DEF Reduction to all enemies for 2 turns.\n- Her Talent allows her for more frequent Ultimates when she attack enemies she has debuffed.\n- Pela’s Skill removes 1 buff from the targeted enemy.",
-            "ru": "## Краткое описание и общий анализ\n- Сверхспособность Пелы понижает защиту всех противников на 2 хода.\n- Её талант позволяет ей чаще использовать сверхспособность при атаке противников, на которых она наложила дебаффы.\n- Навык Пелы снимает 1 бафф с противника."
+    "notes": [],
+    "overview": {
+        "summary": {
+            "en": "- Pela's Ultimate applies DEF Reduction to all enemies for 2 turns.\n- Her Talent allows her for more frequent Ultimates when she attack enemies she has debuffed.\n- Pela’s Skill removes 1 buff from the targeted enemy.",
+            "ru": "- Сверхспособность Пелы понижает защиту всех противников на 2 хода.\n- Её талант позволяет ей чаще использовать сверхспособность при атаке противников, на которых она наложила дебаффы.\n- Навык Пелы снимает 1 бафф с противника."
         },
-        {
-            "en": "## Notable Eidolons\n ### E2, E4\n- E2 increases her SPD after dispelling 1 buff from the targeted enemy.\n- E4 enables her Skill to reduce the target enemy’s Ice RES for 2 turns.",
-            "ru": "## Важные Эйдолоны\n ### E2, E4\n- E2 увеличивает её скорость после снятия 1 баффа с противника.\n- E4 даёт её навыку возможность понизить ледяное сопротивление противника на 2 хода."
-        },
-        {
-            "en": "## Skill Point Usage\n- Positive",
-            "ru": "## Восстановление очков навыков\n- Положительное"
-        },
-        {
-            "en": "## Ability Rotation\n- Basic ATK spam, Skill if needed",
-            "ru": "## Ротация\n- Спам базовой атаки, навык при необходимости"
-        }        
-    ]    
+        "investment_priority": {
+            "priority": {
+                "en": "E2, E4",
+                "ru": "E2, E4"
+            },
+            "details": {
+                "en": "- E2 increases her SPD after dispelling 1 buff from the targeted enemy.\n- E4 enables her Skill to reduce the target enemy’s Ice RES for 2 turns.",
+                "ru": "- E2 увеличивает её скорость после снятия 1 баффа с противника.\n- E4 даёт её навыку возможность понизить ледяное сопротивление противника на 2 хода."
+            }
+        }
+    }
 }    

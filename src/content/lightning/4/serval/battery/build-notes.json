@@ -6,20 +6,24 @@
     },
     "notes": [
         {
-            "en": "## Summary and General Analysis\n- Serval is best used as The Herta’s required Erudition ally. She can frequently use her AoE Ultimate, providing Energy for The Herta’s own Ultimate.\n- By prioritizing SPD and Effect Hit Rate, her supportive capabilities for The Herta greatly increase.",
-            "ru": "## Краткое описание и общий анализ\n- Сервал лучше всего использовать в качестве союзника Великой Герты, которой требуется персонаж Пути Эрудиция. Она может часто использовать свою сверхспособность, наносящую AoE-урон, обеспечивая энергией сверхспособность Великой Герты.\n- Благодаря приоритету скорости и шансу попадания эффектов её вспомогательные возможности для Великой Герты значительно возрастают."
+            "en": "Her own damage is not important for this build, the only Traces you need to unlock are A2: Rock ‘n’ Roll and A4: String Vibration.",
+            "ru": "Для этого билда её собственный урон не важен, вам нужно разблокировать только A2: Рок-н-ролл и A4: Вибрация струн."
+        }
+    ],
+    "overview": {
+        "summary": {
+            "en": "- Serval is best used as The Herta’s required Erudition ally. She can frequently use her AoE Ultimate, providing Energy for The Herta’s own Ultimate.\n- By prioritizing SPD and Effect Hit Rate, her supportive capabilities for The Herta greatly increase.",
+            "ru": "- Сервал лучше всего использовать в качестве союзника Великой Герты, которой требуется персонаж Пути Эрудиция. Она может часто использовать свою сверхспособность, наносящую AoE-урон, обеспечивая энергией сверхспособность Великой Герты.\n- Благодаря приоритету скорости и шансу попадания эффектов её вспомогательные возможности для Великой Герты значительно возрастают."
         },
-        {
-            "en": "## Notable Eidolons\n ### E2 & E4\n- E2 significantly boosts her Energy regeneration, which is a baseline need for her to perform well with The Herta.\n- Her E4 helps her extend the duration of Shock when using her Ultimate.",
-            "ru": "## Важные Эйдолоны\n ### E2 и E4\n- E2 значительно увеличивает скорость восстановления энергии, что является базовым условием для эффективной игры за Герту.\n- E4 помогает ей продлить действие эффекта «Шок» при использовании ультимейта."
-        },
-        {
-            "en": "## Skill Point Usage\n- Negative",
-            "ru": "## Восстановление очков навыков\n- Отрицательное"
-        },
-        {
-            "en": "## Ability Rotation\n- Skill spam, Basic ATK if needed",
-            "ru": "## Ротация\n- Спам навыка, базовая атака при необходимости"
-        }        
-    ]
+        "notable_eidolons": {
+            "priority": {
+                "en": "E2 & E4",
+                "ru": "E2 и E4"
+            },
+            "details": {
+                "en": "- E2 significantly boosts her Energy regeneration, which is a baseline need for her to perform well with The Herta.\n- Her E4 helps her extend the duration of Shock when using her Ultimate.",
+                "ru": "- E2 значительно увеличивает скорость восстановления энергии, что является базовым условием для эффективной игры за Герту.\n- E4 помогает ей продлить действие эффекта «Шок» при использовании ультимейта."
+            }
+        }
+    }
 }    

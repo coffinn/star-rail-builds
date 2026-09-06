@@ -4,22 +4,21 @@
         "en": "DPS",
         "ru": "ДД"
     },
-    "notes": [
-        {
-            "en": "## Summary and General Analysis\n- Misha can stack up to 10 Hits Per Action for his Ultimate, starting at 3. When allies consume Skill Points, he gains one Hit Per Action for his Ultimate.\n- Every instance has a chance to apply Freeze to the enemy. Frozen enemies take Ice Additional DMG.",
-            "ru": "## Краткое описание и общий анализ\n- Миша может накапливать до 10 ударов сверхспособности, начиная с 3. Когда союзники расходуют очки навыков, количество ударов для следующей сверхспособности увеличивается на 1.\n- Каждый удар сверхспособности имеет шанс наложить статус Заморозка на противника. Противники со статусом Заморозка получают дополнительный ледяной урон."
+    "notes": [],
+    "overview": {
+        "summary": {
+            "en": "- Misha can stack up to 10 Hits Per Action for his Ultimate, starting at 3. When allies consume Skill Points, he gains one Hit Per Action for his Ultimate.\n- Every instance has a chance to apply Freeze to the enemy. Frozen enemies take Ice Additional DMG.",
+            "ru": "- Миша может накапливать до 10 ударов сверхспособности, начиная с 3. Когда союзники расходуют очки навыков, количество ударов для следующей сверхспособности увеличивается на 1.\n- Каждый удар сверхспособности имеет шанс наложить статус Заморозка на противника. Противники со статусом Заморозка получают дополнительный ледяной урон."
         },
-        {
-            "en": "## Notable Eidolons\n ### E2\n- E2 has a change of inflicting DEF Reduction on enemies for 3 turns.",
-            "ru": "## Важные Эйдолоны\n ### E2\n- E2 имеет шанс наложить на врагов понижение защиты на 3 хода."
-        },
-        {
-            "en": "## Skill Point Usage\n- Negative",
-            "ru": "## Восстановление очков навыков\n- Отрицательное"
-        },
-        {
-            "en": "## Ability Rotation\n- Skill spam, Basic ATK if needed",
-            "ru": "## Ротация\n- Спам навыка, базовая атака при необходимости"
-        }        
-    ]    
+        "notable_eidolons": {
+            "priority": {
+                "en": "E2",
+                "ru": "E2"
+            },
+            "details": {
+                "en": "- E2 has a change of inflicting DEF Reduction on enemies for 3 turns.",
+                "ru": "- E2 имеет шанс наложить на врагов понижение защиты на 3 хода."
+            }
+        }
+    }
 }    

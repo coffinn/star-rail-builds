@@ -5,22 +5,21 @@
         "ru": "Саппорт"
     },
     "notes": [
-        
-        {
-            "en": "## Summary and General Analysis\n- Tingyun is a support who provides ATK and Energy buffs to one single ally. She grants the target of her Skill \"Benediction\", when they launch an attack they will deal Lightning Additional DMG 1 time. The Additional DMG dealt is based off of the ally with \"Benediction\", rather than Tingyun’s own ATK.\n- Her Ultimate regenerates 50 Energy for the target ally, while also increasing their DMG for 2 turns.\n- When attacked by an enemy, the ally with \"Benediction\" deals Lightning Additional DMG to the attacker.",
-            "ru": "## Краткое описание и общий анализ\n- Тинъюнь — саппорт, который усиливает силу атаки и даёт энергию одному союзнику. Она накладывает своим навыком статус Благословение на союзника, и когда союзник наносит урон, она наносит дополнительный электрический урон 1 раз. Дополнительный урон рассчитывается исходя из силы атаки союзника со статусом Благословение, а не из силы атаки самой Тинъюнь.\n- Её сверхспособность восстанавливает 50 энергии союзнику, а также увеличивает его урон на 2 хода.\n- При атаке противником союзника со статусом Благословение наносится атакующему дополнительный электрический урон."
+    ],
+    "overview": {
+        "summary": {
+            "en": "- Tingyun is a support who provides ATK and Energy buffs to one single ally. She grants the target of her Skill \"Benediction\", when they launch an attack they will deal Lightning Additional DMG 1 time. The Additional DMG dealt is based off of the ally with \"Benediction\", rather than Tingyun’s own ATK.\n- Her Ultimate regenerates 50 Energy for the target ally, while also increasing their DMG for 2 turns.\n- When attacked by an enemy, the ally with \"Benediction\" deals Lightning Additional DMG to the attacker.",
+            "ru": "- Тинъюнь — саппорт, который усиливает силу атаки и даёт энергию одному союзнику. Она накладывает своим навыком статус Благословение на союзника, и когда союзник наносит урон, она наносит дополнительный электрический урон 1 раз. Дополнительный урон рассчитывается исходя из силы атаки союзника со статусом Благословение, а не из силы атаки самой Тинъюнь.\n- Её сверхспособность восстанавливает 50 энергии союзнику, а также увеличивает его урон на 2 хода.\n- При атаке противником союзника со статусом Благословение наносится атакующему дополнительный электрический урон."
         },
-        {
-            "en": "## Notable Eidolons\n ### E6\n- Her E6 regenerates 10 more Energy for the target of her Ultimate, adding up to a total of 60 Energy. Her earlier Eidolons also increase SPD, Energy regeneration, the damage from the ally with \"Benediction\".",
-            "ru": "## Важные Эйдолоны\n ### E6\n - Её E6 восстанавливает на 10 энергии больше для цели её сверхспособности, в сумме давая 60 энергии. Её более ранние Эйдолоны также увеличивают скорость, скорость восстановления энергии и урон союзника со статусом Благословение."
-        },
-        {
-            "en": "## Skill Point Usage\n- Positive",
-            "ru": "## Восстановление очков навыков\n- Положительное"
-        },
-        {
-            "en": "## Ability Rotation\n- Skill → Basic ATK → Basic ATK",
-            "ru": "## Ротация\n- Навык → базовая атака → базовая атака"
+        "notable_eidolons": {
+            "priority": {
+                "en": "E6",
+                "ru": "E6"
+            },
+            "details": {
+                "en": "- Her E6 regenerates 10 more Energy for the target of her Ultimate, adding up to a total of 60 Energy. Her earlier Eidolons also increase SPD, Energy regeneration, the damage from the ally with \"Benediction\".",
+                "ru": "- Её E6 восстанавливает на 10 энергии больше для цели её сверхспособности, в сумме давая 60 энергии. Её более ранние Эйдолоны также увеличивают скорость, скорость восстановления энергии и урон союзника со статусом Благословение."
+            }
         }
-    ]
+    }
 }

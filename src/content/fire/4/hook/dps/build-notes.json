@@ -5,21 +5,21 @@
         "ru": "ДД"
     },
     "notes": [
-        {
-            "en": "## Summary and General Analysis\n- When launching Ultimate, Hook enhances her Skill to deal Blast damage.\n- Her Skills can apply Burn DoT. When attacking an enemy afflicted with Burn, she deals Fire Additional DMG and gains extra Energy.",
-            "ru": "## Краткое описание и общий анализ\n- При использовании сверхспособности Хук усиливает свой навык, чтобы он наносил взрывной урон.\n- Её навыки могут накладывать статус периодического урона Горение. При атаке противника со статусом Горение, она наносит дополнительный огненный урон и получает дополнительную энергию."
+    ],
+    "overview": {
+        "summary": {
+            "en": "- When launching Ultimate, Hook enhances her Skill to deal Blast damage.\n- Her Skills can apply Burn DoT. When attacking an enemy afflicted with Burn, she deals Fire Additional DMG and gains extra Energy.",
+            "ru": "- При использовании сверхспособности Хук усиливает свой навык, чтобы он наносил взрывной урон.\n- Её навыки могут накладывать статус периодического урона Горение. При атаке противника со статусом Горение, она наносит дополнительный огненный урон и получает дополнительную энергию."
         },
-        {
-            "en": "## Notable Eidolons\n ### E6, E1\n- Her E6 and E1 directly increase her damage output.",
-            "ru": "## Важные Эйдолоны\n ### E6, E1\n- Ее E6 и E1 напрямую увеличивают наносимый ею урон."
-        },
-        {
-            "en": "## Skill Point Usage\n- Negative",
-            "ru": "## Восстановление очков навыков\n- Отрицательное"
-        },
-        {
-            "en": "## Ability Rotation\n- Skill spam",
-            "ru": "## Ротация\n- Спам навыка"
-        }        
-    ]    
+        "notable_eidolons": {
+            "priority": {
+                "en": "E6, E1",
+                "ru": "E6, E1"
+            },
+            "details": {
+                "en": "- Her E6 and E1 directly increase her damage output.",
+                "ru": "- Ее E6 и E1 напрямую увеличивают наносимый ею урон."
+            }
+        }
+    }
 }    
