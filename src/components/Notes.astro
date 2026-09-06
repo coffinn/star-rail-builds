@@ -32,6 +32,20 @@ const hasNotes =
     itemNotes.length > 0 ||
     globalNotes.length > 0 ||
     buildNote?.notes?.length > 0;
+
+const overview = buildNote?.overview;
+
+const hasSummary =
+    Boolean(overview?.summary);
+
+const hasInvestment =
+    Boolean(
+        overview?.investment_priority?.priority ||
+        overview?.investment_priority?.details,
+    );
+
+const hasOverview =
+    hasSummary || hasInvestment;
 ---
 
 {
@@ -44,9 +58,11 @@ const hasNotes =
                     buildNote?.notes?.length > 0 && (
                         <div class="notes-block">
                             <div class="build-note-list">
-                                {buildNote.notes.map((note: string) => (
-                                    <div set:html={note} />
-                                ))}
+                                {buildNote.notes.map(
+                                    (note: string) => (
+                                        <div set:html={note} />
+                                    ),
+                                )}
                             </div>
                         </div>
                     )
@@ -76,6 +92,83 @@ const hasNotes =
                                 />
                             ))}
                         </div>
+                    )
+                }
+            </div>
+        </div>
+    )
+}
+
+{
+    hasOverview && (
+        <div class="card notes-card overview-card">
+            <h2>
+                {t(locale, 'ui', 'Overview')}
+            </h2>
+
+            <div class="overview-content">
+                {
+                    hasSummary && (
+                        <section class="overview-section">
+                            <h3>
+                                {t(
+                                    locale,
+                                    'ui',
+                                    'Summary and General Analysis',
+                                )}
+                            </h3>
+
+                            <div
+                                class="overview-text"
+                                set:html={
+                                    overview.summary
+                                }
+                            />
+                        </section>
+                    )
+                }
+
+                {
+                    hasInvestment && (
+                        <section class="overview-section">
+                            <h3>
+                                {t(
+                                    locale,
+                                    'ui',
+                                    'Investment Priority',
+                                )}
+                            </h3>
+
+                            {
+                                overview
+                                    .investment_priority
+                                    ?.priority && (
+                                    <div
+                                        class="overview-investment-priority"
+                                        set:html={
+                                            overview
+                                                .investment_priority
+                                                .priority
+                                        }
+                                    />
+                                )
+                            }
+
+                            {
+                                overview
+                                    .investment_priority
+                                    ?.details && (
+                                    <div
+                                        class="overview-text"
+                                        set:html={
+                                            overview
+                                                .investment_priority
+                                                .details
+                                        }
+                                    />
+                                )
+                            }
+                        </section>
                     )
                 }
             </div>

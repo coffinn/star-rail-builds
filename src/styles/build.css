@@ -39,6 +39,62 @@ html[lang='ru'] .page-title {
     hyphens: none;
 }
 
+.overview-card {
+    width: 100%;
+}
+
+.overview-content {
+    display: grid;
+    gap: 14px;
+    padding: 10px;
+}
+
+.overview-section {
+    min-width: 0;
+
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 8px;
+
+    padding: 10px 12px;
+
+    background: rgba(255, 255, 255, 0.025);
+}
+
+.overview-section h3 {
+    margin: 0 0 10px;
+
+    padding-bottom: 8px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+    color: var(--accent);
+
+    font-size: 0.78rem;
+    font-weight: 850;
+
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.overview-text> :first-child,
+.overview-investment-priority> :first-child {
+    margin-top: 0;
+}
+
+.overview-text> :last-child,
+.overview-investment-priority> :last-child {
+    margin-bottom: 0;
+}
+
+.overview-investment-priority {
+    margin: 12px 0;
+
+    color: var(--accent);
+
+    font-weight: 850;
+    text-align: center;
+}
+
 /* =========================================================
    Character name / element / rarity / path
    ========================================================= */

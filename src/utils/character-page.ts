@@ -982,7 +982,30 @@ function buildLocalizedNotes(
             ? localizeCreditDetail(value)
             : value;
     };
+    const renderLocalizedBuildText = (
+        value:
+            | {
+                en: string;
+                [lang: string]: string;
+            }
+            | undefined,
+    ) => {
+        if (!value?.en) {
+            return '';
+        }
 
+        return renderMarkdown(
+            translator.translateNoteText(
+                value[lang] ?? value.en,
+                sourceFile,
+                {
+                    lightConePopovers: true,
+                    relicPopovers: true,
+                    rotationPopovers: true,
+                },
+            ),
+        );
+    };
     return {
         ...buildNoteData,
 
@@ -1037,6 +1060,34 @@ function buildLocalizedNotes(
                 ),
             );
         }),
+        overview: buildNoteData.overview
+            ? {
+                summary:
+                    renderLocalizedBuildText(
+                        buildNoteData.overview.summary,
+                    ),
+
+                investment_priority:
+                    buildNoteData.overview
+                        .investment_priority
+                        ? {
+                            priority:
+                                renderLocalizedBuildText(
+                                    buildNoteData.overview
+                                        .investment_priority
+                                        .priority,
+                                ),
+
+                            details:
+                                renderLocalizedBuildText(
+                                    buildNoteData.overview
+                                        .investment_priority
+                                        .details,
+                                ),
+                        }
+                        : undefined,
+            }
+            : undefined,
     };
 }
 

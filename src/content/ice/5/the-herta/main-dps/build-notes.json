@@ -3,18 +3,18 @@
     "name": {
         "en": "DPS"
     },
-    "notes": [
-        {
+    "notes": [],
+    "overview": {
+        "summary": {
             "en": "## Summary and General Analysis\n- The Herta is an AoE DPS with her damage concentrated in her Enhanced Skill. Each time The Herta uses her Ultimate, she immediately takes action and gains access to her Enhanced Skill, while also boosting her ATK%.\n- When enemies are hit, they gain \"Interpretation\" stacks, up to 42, increasing the damage multiplier of her Enhanced Skill and granting The Herta Energy. For every stack of \"Interpretation\" the team inflicts, she gains 1 stack of \"Answer\", until 99, raising her Ultimate's damage. \"Answer\" stacks do not go away.\n- She is reliant on Tribbie or Mortenax Blade in order to feed her high energy Ultimate as well as to apply \"Interpretation\" to enemies. She also needs another character on the path of Erudition to boost the team's CRIT DMG%, while making \"Interpretation\" stacking and energy gain easier."
         },
-        {
-            "en": "## Investment Priority\n ### E2 > S1 ≥ E1\n- E2 starts with 1 Enhanced Skill. Gains an additional charge when using Ultimate. After using Enhanced Skill, her next action advances by 35%.\n- S1 grants 12% CRIT Rate. Increases the wearer's Skill and Ultimate DMG by 60%. Using her Ultimate restores a Skill Point, improving Skill Point economy. Lower priority if using [[light-cone:peaceful-day]]\n- E1 enhanced Skill calculates 1.5x of the Interpretation from the target with the highest number of stacks. This calculation can go beyond 42. Afterward, Interpretation stacks are reset to 15, enabling faster buildup to 42."
-        },
-        {
-            "en": "## Skill Point Usage\n- Negative."
-        },
-        {
-            "en": "## Ability Rotation\n- [[ability:skill]] spam."
+        "investment_priority": {
+            "priority": {
+                "en": "E2 > S1 ≥ E1"
+            },
+            "details": {
+                "en": "- E2 starts with 1 Enhanced Skill and gains an additional charge when using Ultimate.\n- S1 grants CRIT Rate and increases Skill and Ultimate DMG. Lower priority if using [[light-cone:peaceful-day]]"
+            }
         }
-    ]
+    }
 }
