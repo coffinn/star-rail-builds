@@ -9,7 +9,9 @@
                             "pieces": 4,
                             "note_group": "diviner-eagle-comparison",
                             "note": {
-                                "en": "[[set:diviner-of-distant-reach]] is preferred if there is no other user in the party. If another unit has the aforementioned set, 4-Pc [[set:eagle-of-twilight-line]] is preferred."
+                                "en": "[[set:diviner-of-distant-reach]] is preferred if there is no other user in the party. If another unit has the aforementioned set, 4-Pc [[set:eagle-of-twilight-line]] is preferred.",
+                                "ru": "",
+                                "vn": "Nên ưu tiên dùng [[set:diviner-of-distant-reach]] nếu trong đội hình không có ai khác sử dụng bộ này. Nếu đã có đồng minh khác sử dụng bộ kể trên thì nên ưu tiên dùng bộ 4 món [[set:eagle-of-twilight-line]]."
                             }
                         }
                     ]
@@ -33,7 +35,9 @@
                             "name": "sacerdos",
                             "pieces": 4,
                             "note": {
-                                "en": "Specifically for Evanescia."
+                                "en": "Viable option for Evanescia.",
+                                "ru": "",
+                                "vn": "Một lựa chọn khả thi cho Evanescia."
                             }
                         }
                     ]

@@ -5,7 +5,9 @@
                 "name": "ANY",
                 "note_group": "main-stat-flexibility",
                 "note": {
-                    "en": "Use any Main Stat to maximize SPD. HP/DEF Main Stats can be used for more survivability."
+                    "en": "Use any Main Stat to maximize SPD. HP/DEF Main Stats can be used for more survivability.",
+                    "ru": "",
+                    "vn": "Sử dụng bất kỳ Thuộc Tính Chính nào giúp tối đa hóa [[stat:spd]]. Có thể sử dụng Thuộc Tính Chính HP hoặc [[stat:def]] để tăng khả năng sống sót."
                 }
             }
         ],
