@@ -1,20 +1,25 @@
 {
     "best": true,
     "name": {
-        "en": "Sustain"
+        "en": "Sustain",
+        "ru": "Щитовик"
     },
     "notes": [
         {
-            "en": "## Summary and General Analysis\n- March 7th is a Shield based sustainer who’s Shields scale on her DEF. She also has personal damage output scaling on her ATK, as well as potential to Freeze enemies.\n- Enemies attacking an ally Shielded by March 7th will cause March 7th to launch a Counter. This effect can be triggered up to two times per turn.\n- Her Ultimate deals AoE damage with a low chance of inflicting enemies with Freeze.\n- She is a weak Shielder, who will be very unlikely to sustain the team in endgame content."
+            "en": "## Summary and General Analysis\n- March 7th is a Shield based sustainer who’s Shields scale on her DEF. She also has personal damage output scaling on her ATK, as well as potential to Freeze enemies.\n- Enemies attacking an ally Shielded by March 7th will cause March 7th to launch a Counter. This effect can be triggered up to two times per turn.\n- Her Ultimate deals AoE damage with a low chance of inflicting enemies with Freeze.\n- She is a weak Shielder, who will be very unlikely to sustain the team in endgame content.",
+            "ru": "## Краткое описание и общий анализ\n- Март 7 — щитовик, чей щит зависит от её защиты. Её личный урон зависит от её силы атаки, а также от потенциала наложить статус Заморозка на противников.\n- Когда враг атакует союзника, находящегося под щитом Март 7, Март 7 выполняет контратаку. Этот эффект может срабатывать до двух раз за ход.\n- Её сверхспособность наносит урон по области с низким шансом наложить статус Заморозка.\n- Она слабый щитовик, который вряд ли сможет поддерживать выживаемость команды в эндгейм-контенте."
         },
         {
-            "en": "## Notable Investments \n ### E2, E6\n- E2 grants a Shield to the ally with lowest HP upon entering battle.\n- E6 restores HP to allies with March 7th's Shield at the beginning of their turn."
+            "en": "## Notable Investments \n ### E2, E6\n- E2 grants a Shield to the ally with lowest HP upon entering battle.\n- E6 restores HP to allies with March 7th's Shield at the beginning of their turn.",
+            "ru": "## Важные инвестиции \n ### E2, E6\n- E2 даёт щит союзнику с наименьшим количеством HP при вступлении в бой.\n- E6 восстанавливает HP союзникам со щитом Март 7 в начале их хода."
         },
         {
-            "en": "## Skill Point Usage\n- Neutral / Negative"
+            "en": "## Skill Point Usage\n- Neutral / Negative",
+            "ru": "## Восстановление очков навыков\n- Нейтральное / Отрицательное"
         },
         {
-            "en": "## Ability Rotation\n- Skill as needed"
+            "en": "## Ability Rotation\n- Skill as needed",
+            "ru": "## Ротация\n- Навык по мере необходимости"
         }
     ]
 }

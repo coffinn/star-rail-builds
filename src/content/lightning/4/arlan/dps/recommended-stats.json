@@ -4,7 +4,8 @@
             "name": "cr",
             "recommended": "100%",
             "note": {
-                "en": "Tune your CRIT Rate according to in battle buffs."
+                "en": "Tune your CRIT Rate according to in battle buffs.",
+                "ru": "Настройте свой крит. шанс в соответствии с баффами в бою."
             }
         },
         {

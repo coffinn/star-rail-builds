@@ -13,7 +13,8 @@
             "recommended": "92% / 156%",
             "note_group": "ehrstat",
             "note": {
-                "en": "Optional stat. Effect Hit Rate% is needed to guarantee Freeze against 20% / 40% Effect RES enemies."
+                "en": "Optional stat. Effect Hit Rate% is needed to guarantee Freeze against 20% / 40% Effect RES enemies.",
+                "ru": "Опциональный стат. Шанс попадания эффектов необходим для гарантированного наложения статуса Заморозка на противников с сопротивлением эффектам 20%/40%."
             }
         }
     ]

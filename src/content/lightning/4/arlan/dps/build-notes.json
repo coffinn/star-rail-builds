@@ -1,20 +1,25 @@
 {
     "best": true,
     "name": {
-        "en": "DPS"
+        "en": "DPS",
+        "ru": "ДД"
     },
     "notes": [
         {
-            "en": "## Summary and General Analysis\n- Arlan is a weaker DPS, who’s damage increases the lower his HP is.\n- Upon using his Skill, a percentage of his HP is consumed. His major Traces all help his survivability. But a sustainer is still needed on his team.\n- You want to keep his HP below 57% as much as possible to increase his damage output."
+            "en": "## Summary and General Analysis\n- Arlan is a weaker DPS, who’s damage increases the lower his HP is.\n- Upon using his Skill, a percentage of his HP is consumed. His major Traces all help his survivability. But a sustainer is still needed on his team.\n- You want to keep his HP below 57% as much as possible to increase his damage output.",
+            "ru": "## Краткое описание и общий анализ\n- Арлан — слабый ДД-персонаж, урон которого увеличивается с уменьшением его HP.\n- При использовании его навыка расходуется определённый процент от его HP. Все его дополнительные способности улучшают его выживаемость, но в его команде всё равно нужен персонаж, способный поддерживать его здоровье.\n- Вам нужно как можно дольше держать его HP ниже 57%, чтобы увеличить его урон."
         },
         {
-            "en": "## Notable Investments\n ### E2\n- His E2 enables him to remove 1 debuff from himself when using either Skill or Ultimate."
+            "en": "## Notable Investments\n ### E2\n- His E2 enables him to remove 1 debuff from himself when using either Skill or Ultimate.",
+            "ru": "## Важные инвестиции\n ### E2\n- Его E2 позволяет ему снять 1 дебафф с себя при использовании навыка или сверхспособности."
         },
         {
-            "en": "## Skill Point Usage\n- Negative"
+            "en": "## Skill Point Usage\n- Negative",
+            "ru": "## Восстановление очков навыков\n- Отрицательное"
         },
         {
-            "en": "## Ability Rotation\n- Skill spam"
+            "en": "## Ability Rotation\n- Skill spam",
+            "ru": "## Ротация\n - Спам навыка"
         }        
     ]    
 }    
