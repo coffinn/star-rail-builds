@@ -1,20 +1,24 @@
 {
     "best": true,
     "name": {
-        "en": "DoT Support"
+        "en": "DoT Support",
+        "ru": "Саппорт для периодического урона"
     },
     "notes": [
     ],
     "overview": {
         "summary": {
-            "en": "- Kafka is a DoT support who detonates active DoTs outside of enemy turns, greatly increasing the damage output of a DoT team.\n- When attacking enemies with her Ultimate, Skill, or Follow-Up ATK, any DoTs the enemies are afflicted with will detonate and deal a portion of their original damage.\n- After using her Ultimate or after her turn ends, she will gain one Follow-Up ATK charge.\n- Her performance is heavily reliant on having Hysilens on the team, as Kafka herself does not deal significant DoT damage.\n- Kafka’s own investments are less impactful for the DoT team compared to her other teammates’. Hysilens’ E1 is the best early investment, providing a unique 16% DoT DMG Boost, while also doubling the instances of DoTs she applies (4 → 8). This Eidolon not only greatly increases Hysilens’ personal damage, it also increases Black Swan’s as well."
+            "en": "- Kafka is a DoT support who detonates active DoTs outside of enemy turns, greatly increasing the damage output of a DoT team.\n- When attacking enemies with her Ultimate, Skill, or Follow-Up ATK, any DoTs the enemies are afflicted with will detonate and deal a portion of their original damage.\n- After using her Ultimate or after her turn ends, she will gain one Follow-Up ATK charge.\n- Her performance is heavily reliant on having Hysilens on the team, as Kafka herself does not deal significant DoT damage.\n- Kafka’s own investments are less impactful for the DoT team compared to her other teammates’. Hysilens’ E1 is the best early investment, providing a unique 16% DoT DMG Boost, while also doubling the instances of DoTs she applies (4 → 8). This Eidolon not only greatly increases Hysilens’ personal damage, it also increases Black Swan’s as well.",
+            "ru": "- Кафка — саппорт, для команд с периодическим уроном, который активирует эффекты периодического урона вне ходов противников, значительно увеличивая урон команды, использующей этот эффект.\n- При атаке противников с помощью сверхспособности, навыка или бонус-атаки, любые эффекты периодического урона, наложенные на врагов, активируются и наносят часть своего первоначального урона.\n- После использования сверхспособности или после окончания её хода она получает один заряд бонус-атаки.\n- Её эффективность сильно зависит от наличия Гисиленсы в команде, поскольку сама Кафка не наносит значительного периодического урона.\n- Вложения в Кафку менее эффективны для команды, играющей от периодического урона, по сравнению с вложениями в других её союзников. E1 Гисиленсы — лучшее раннее вложение, обеспечивающее уникальное увеличение урона для периодического урона на 16%, а также удваивающее количество накладываемых ею эффектов периодического урона (4 → 8). Этот Эйдолон не только значительно увеличивает личный урон Гисиленсы, но и увеличивает урон Чёрного лебедя."
         },
         "investment_priority": {
             "priority": {
-                "en": "E1 >> S1"
+                "en": "E1 >> S1",
+                "ru": "E1 >> S1"
             },
             "details": {
-                "en": "- E1 provides 30% DoT Vulnerability.\n- Due to needing Energy in order to function optimally in her role as DoT detonator, [[light-cone:tutorial]] is much preferred over her S1 [[light-cone:payn]] until she is E4+, where her own E4 provides the Energy needed."
+                "en": "- E1 provides 30% DoT Vulnerability.\n- Due to needing Energy in order to function optimally in her role as DoT detonator, [[light-cone:tutorial]] is much preferred over her S1 [[light-cone:payn]] until she is E4+, where her own E4 provides the Energy needed.",
+                "ru": "- E1 повышает получаемый врагами периодический урон на 30%.\n- Поскольку для оптимального функционирования в роли детонатора эффектов периодического урона ей необходима энергия, [[light-cone:tutorial]] гораздо предпочтительнее её S1 [[light-cone:payn]] до достижения E4+, так как её E4 даёт необходимую энергию."
             }
         }
     }

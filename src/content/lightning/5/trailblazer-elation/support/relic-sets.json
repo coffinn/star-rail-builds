@@ -10,7 +10,7 @@
                             "note_group": "diviner-eagle-comparison",
                             "note": {
                                 "en": "[[set:diviner-of-distant-reach]] is preferred if there is no other user in the party. If another unit has the aforementioned set, 4-Pc [[set:eagle-of-twilight-line]] is preferred.",
-                                "ru": "",
+                                "ru": "Если в команде нет никого кто уже использует [[set:diviner-of-distant-reach]], то предпочтительнее использовать его. Если у другого союзника есть указанный ранее сет, предпочтительнее использовать 4 шт. [[set:eagle-of-twilight-line]].",
                                 "vn": "Nên ưu tiên dùng [[set:diviner-of-distant-reach]] nếu trong đội hình không có ai khác sử dụng bộ này. Nếu đã có đồng minh khác sử dụng bộ kể trên thì nên ưu tiên dùng bộ 4 món [[set:eagle-of-twilight-line]]."
                             }
                         }
@@ -36,7 +36,7 @@
                             "pieces": 4,
                             "note": {
                                 "en": "Viable option for Evanescia.",
-                                "ru": "",
+                                "ru": "Хороший вариант с Эванессой",
                                 "vn": "Một lựa chọn khả thi cho Evanescia."
                             }
                         }
@@ -75,7 +75,9 @@
                             "name": "lushaka-the-sunken-seas",
                             "pieces": 2,
                             "note": {
-                                "en": "While Elation DMG is not affected by ATK, [[set:lushaka-the-sunken-seas]] can be used if Sparxie is on the team, as she has a trace that converts ATK into Elation."
+                                "en": "While Elation DMG is not affected by ATK, [[set:lushaka-the-sunken-seas]] can be used if Sparxie is on the team, as she has a trace that converts ATK into Elation.",
+                                "ru": "Хотя урон Радости не зависит от силы атаки, [[set:lushaka-the-sunken-seas|Русалку, затопленные берега]] можно использовать, если Искра находится в команде. У неё есть способность, которая преобразует силу атаки в Радость.",
+                                "vn": "Dù Sát Thương Vui Vẻ không bị ảnh hưởng bởi Tấn Công, Yao Guang vẫn có thể sử dụng [[set:lushaka]] nếu có Sparxie trong đội hình bởi vì Sparxie có Vết Tích chuyển đổi Tấn Công thành Độ Vui Vẻ."
                             }
                         }
                     ]

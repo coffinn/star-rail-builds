@@ -13,7 +13,8 @@
                     "name": "talent",
                     "note_group": "traces",
                     "note": {
-                        "en": "Basic ATK, Skill, and Talent can be ignored."
+                        "en": "Basic ATK, Skill, and Talent can be ignored.",
+                        "ru": "Базовую атаку, навык и талант можно не прокачивать."
                     }
                 }
             ]

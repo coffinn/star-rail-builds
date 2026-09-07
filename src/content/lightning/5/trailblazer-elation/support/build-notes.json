@@ -2,7 +2,7 @@
     "best": true,
     "name": {
         "en": "Elation Support",
-        "ru": "",
+        "ru": "Саппорт Радости",
         "vn": "Support Vui Vẻ"
     },
     "notes": [
@@ -10,7 +10,7 @@
     "overview": {
         "summary": {
             "en": "- Trailblazer: Elation is a support character who allows a single unit to use additional Elation Skills.\n- After using their Ultimate, Trailblazer: Elation selects a single unit to buff. If the unit has an Elation Skill, they use their Elation Skill once with a fixed value of 20 Punchline. If the unit does not have an Elation Skill, their action advances by 50%. Trailblazer: Elation is a solid Elation support.",
-            "ru": "",
+            "ru": "- Первопроходец (Радость) — это саппорт, который позволяет одному союзнику использовать дополнительные навыки Радости.\n- После использования своей сверхспособности Первопроходец (Радость) выбирает одного союзника для усиления. Если у союзника есть навык Радости, он использует его один раз с фиксированным значением 20 ед. Юмора. Если у союзника нет навыка Радости, его действие продвигается на 50%. Первопроходец (Радость) — это хороший саппорт Радости.",
             "vn": "- [[character:emc]] là nhân vật hỗ trợ cho phép một đồng minh sử dụng thêm Kỹ Năng Vui Vẻ.\n- Sau khi thi triển Tuyệt Kỹ, [[character:emc]] sẽ chọn một đồng minh để buff. Nếu đồng minh đó sở hữu Kỹ Năng Vui Vẻ, họ sẽ kích hoạt kỹ năng này một lần với giá trị Điểm Hài Hước cố định là 20. Nếu đồng minh đó không có Kỹ Năng Vui Vẻ, họ sẽ được Ưu Tiên Hành Động 50%. [[character:emc]] là một nhân vật support Vui Vẻ rất hiệu quả."
 
         },
@@ -22,7 +22,7 @@
             },
             "details": {
                 "en": "- E1 increases allies' \"Certified Banger\" gained.\n- E2 increases Elation of the Ultimate's target.\n- E4 increases Vulnerability.",
-                "ru": "",
+                "ru": "- E1 увеличивает получаемые союзниками ур. статуса Настоящий хит.\n- E2 увеличивает радость цели сверхспособности.\n- E4 увеличивает получаемый противниками урон.",
                 "vn": "- E1 tăng lượng điểm \"Việc Tốt Đáng Thưởng\" mà đồng đội nhận được.\n- E2 tăng Độ Vui của mục tiêu của Tuyệt Kỹ.\n- E4 tăng hiệu ứng Trọng Thương."
             }
         }

@@ -20,7 +20,13 @@
                 }
             ]
         },
-        {"items":[{"name": "pearls","superimposition":5}]},
+        {
+            "items":[
+                {
+                    "name": "pearls","superimposition":5
+                }
+            ]
+        },
         {
             "items": [
                 {

@@ -5,7 +5,8 @@
             "name": "ANY",
             "note_group": "main_stat",
             "note":{
-                "en": "Use any Main Stat to maximise Kafka's SPD."
+                "en": "Use any Main Stat to maximise Kafka's SPD.",
+                "ru": "Используйте любой основной стат, чтобы максимизировать скорости Кафки."
             }
         }
         ],

@@ -1,19 +1,23 @@
 {
     "best": true,
     "name": {
-        "en": "Sustain"
+        "en": "Sustain",
+        "ru": "Щитовик"
     },
     "notes": [],
     "overview": {
         "summary": {
-            "en": "- Generally, Gepard is not seriously used outside of early to midgame Story and Simulated Universe. In Simulated Universe, Swarm Disaster, and Gold and Gears, Gepard can abuse Preservation Path blessings.\n- Outside of these use cases, it's recommended to go with a different sustain."
+            "en": "- Gepard is rarely used outside of endgame content. He finds use within Simulated Universe, Swarm Disaster, and Gold and Gears, where he can utilize the Preservation Path blessings.\n- Outside of these use cases, it's recommended to go with a different sustain.",
+            "ru": "- Гепард редко используется вне эндгейм-контента. Он находит применение в Виртуальной вселенной, Нашествии роя и Золоте и шестерёнках, где может использовать благословения Пути Сохранения.\n- Вне этих вариантов рекомендуется использовать другого хилера или щитовика."
         },
         "notable_eidolons": {
             "priority": {
-                "en": "S1"
+                "en": "S1",
+                "ru": "S1"
             },
             "details": {
-                "en": "- Gepard's Eidolons aren't notworthy.\n- His S1 [[light-cone:moment-of-victory]] is very strong, is not recommended to Warp for or to redeem. Many 4-star alternatives work just fine.\n- Any standard Light Cone should not be redeemed, as they can be obtained randomly and are oftentimes outperformed."
+                "en": "- Gepard's Eidolons aren't notworthy.\n- His S1 [[light-cone:moment-of-victory]] is very strong, is not recommended to Warp for or to redeem. Many 4-star alternatives work just fine.\n- Any standard Light Cone should not be redeemed, as they can be obtained randomly and are oftentimes outperformed.",
+                "ru": "- Эйдолоны Гепарда не являются чем-то стоящим.\n- Его S1 [[light-cone:moment-of-victory]] очень силён, однако не рекомендуется специально получать его в прыжках или покупать. Многие 4-звёздочные альтернативы работают отлично.\n- Любой стандартный Световой конус не следует покупать, так как его можно получить случайным образом, и зачастую он уступает по эффективности другим."
             }
         }
     }

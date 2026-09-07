@@ -4,7 +4,8 @@
             "name": "spd",
             "recommended": "167+",
             "note": {
-                "en": "167 SPD with [[set:eagle-of-twilight-line]] allows Kafka to reach 200 effective SPD."
+                "en": "167 SPD with [[set:eagle-of-twilight-line]] allows Kafka to reach 200 effective SPD.",
+                "ru": "167 скорости с [[set:eagle-of-twilight-line|Орлом сумеречного рубежа]] позволяет Кафке достичь фактически 200 скорости."
             }
         },
         {
