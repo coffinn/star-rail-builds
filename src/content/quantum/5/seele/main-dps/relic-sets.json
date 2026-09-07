@@ -12,9 +12,10 @@
                 {
                     "items": [
                         {
-                            "name": "eagle", "pieces": 4 ,
-                            "notes": {
-                                "en": "situationally useful."
+                            "name": "eagle", 
+                            "pieces": 4 ,
+                            "note": {
+                                "en": "Situationally useful."
                             }
                         }
                     ]
@@ -27,8 +28,9 @@
                     "items": [
                         { "name": "scholar-lost-in-erudition", "pieces": 4 },
                         {
-                            "name": "poet-of-mourning-collapse", "pieces": 4 , "notes": {
-                                "en": "Sould only be used if Seele is not using 'In The Night' nor is she E2+."
+                            "name": "poet-of-mourning-collapse", "pieces": 4 , 
+                            "note": {
+                                "en": "Should only be used if Seele is not using [[light-cone:in-the-night]] nor is she E2+."
                             }
                         }
                     ]
