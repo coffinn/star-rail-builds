@@ -1,0 +1,21 @@
+{
+    "best": true,
+    "name": {
+        "en": "Support"
+    },
+    "notes": [
+    ],
+    "overview": {
+        "summary": {
+            "en": "- Cerydra's Talent grants one ally Military Merit. That ally gains 1 Charge whenever Cerydra uses her Skill, or whenever the Military Merit holder uses a Basic ATK or Skill. Cerydra's Ultimate additionally grants 2 Charges. Up to 8 Charges can be stored. Upon reaching 6 or more Charges, the ally's next Skill is automatically duplicated, and 6 Charges are consumed.\n- Cerydra provides powerful Skill-focused buffs, including ATK%, All-Type RES PEN, CRIT DMG%, Additional DMG, and SPD for both herself and the Military Merit holder.\n- She excels at supporting DPS characters who deal most of their damage through frequent Skill usage, such as Phainon and Anaxa. However, her limited general-purpose buffs make her highly specialized for this niche."
+        },
+        "investment_priority": {
+            "priority": {
+                "en": "E1 = S1"
+            },
+            "details": {
+                "en": "- E1 provides DEF Ignore, a strong damage amplification when [Coup de Main] is triggered. Its Energy is rarely useful, but notably allows her to stack two of Phainon's [Coreflame] with one Skill usage. However, Cyrene makes this effect unnecessary.\n- S1 significantly improves Cerydra's ATK, and grants the DPS a sizeable buff to Skill DMG. Its improvements to Skill Point economy can allow the team to spam Skill more easily, sometimes resulting in more \"Coup de Main\" triggers."
+            }
+        }
+    }
+}

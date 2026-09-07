@@ -1,0 +1,21 @@
+{
+    "best": true,
+    "name": {
+        "en": "DPS"
+    },
+    "notes": [
+    ],
+    "overview": {
+        "summary": {
+            "en": "- Anaxa is a very flexible DPS performing well in most scenarios. But despite being an Erudition character, his main source of damage is Bounce. Therefore he performs best against 3 or less targets, which in turn means he struggles in AoE content and Pure Fiction.\n- By using either Basic ATK or Skill to attack an enemy with at least 5 implanted weaknesses, unleashes an additional Skill. This is not a Follow-Up ATK nor does it consume any Skill Points.\nHis Skill's Bounce effect prioritizes enemies who have not been hit by this instance of Skill.\n- \"Sublimation\" is applied by his Ultimate. This will implant all Weakness of all Types on target enemies. However, this does not reduce their RES.\nBy using Ultimate on enemies without Control RES (almost every enemy excluding Bosses), it will make them unable to take action.\n- The core of Anaxa's damage is found through his teammates, rather than investing in his own kit. Prioritizing Cyrene E2 due to the True DMG multiplier as well as the additional stacks for her Ultimate. Cerydra E1 provides extremely valuable DEF ignore, as well as extra Energy Regeneration. Cerydra S1 An Epoch Etched in Golden Blood provides valuable ATK% and Skill DMG buffs, as well as Skill Point regeneration which is desperately needed. [[character:dhpt]] E1 provides Skill Point recovery when he uses his Ultimate, and All-Type RES PEN."
+        },
+        "investment_priority": {
+            "priority": {
+                "en": "S1 > E2 > E1"
+            },
+            "details": {
+                "en": "- S1 [[light-cone:life-should-be-cast-to-flames]] provides Energy, DEF reduction, and DMG Boost.\n- E2 provides 20% All-Type RES PEN and triggers Talent's Weakness Implant on enemies when they enter battle.\n- E1 provides 16% DEF reduction, as well as recover 1 Skill Point after using Skill for the first time."
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "stats": [
+        {
+            "name": "atk",
+            "recommended": "3500+"
+        },
+        {
+            "name": "spd",
+            "recommended": "97 / 114",
+            "note": {
+                "en": "Cyrene enables him to take action immediately. Cerydra provides an additional +20 SPD buff through her Skill once you've unlocked her A6 Trace \"Vici\"."
+            }
+        },
+        {
+            "name": "cr",
+            "recommended": "100%"
+        },
+        {
+            "name": "cd",
+            "recommended": "150%+"
+        }
+    ]
+}

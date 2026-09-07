@@ -1,0 +1,52 @@
+{
+    "light_cones": [
+        {
+            "items": [
+                {
+                    "name": "flickering-stars",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "into-the-unreachable-veil",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "milky-way",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "peaceful-day",
+                    "superimposition": 5
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "repose",
+                    "superimposition": 5
+                },
+                {
+                    "name": "breakfast",
+                    "superimposition": 5
+                },
+                {
+                    "name": "calculus",
+                    "superimposition": 5
+                }
+            ]
+        }
+    ]
+}

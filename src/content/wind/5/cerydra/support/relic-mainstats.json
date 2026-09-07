@@ -1,0 +1,23 @@
+{
+    "main_stats": {
+        "body": [
+            "atk%"
+        ],
+        "feet": [
+            "spd",
+            "atk%"
+        ],
+        "planar_sphere": [
+            "atk%"
+        ],
+        "link_rope": [
+            "err",
+            {
+              "name": "atk%",
+              "note": {
+                "en": "Preferred with Phainon."
+              }
+            }
+        ]
+    }
+}

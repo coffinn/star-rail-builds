@@ -1,0 +1,43 @@
+{
+    "light_cones": [
+        {
+            "items": [
+                {
+                    "name": "epoch-etched-in-golden-blood",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "flowing-nightglow",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "the-forever-victual",
+                    "superimposition": 5
+                },
+                {
+                    "name": "ddd",
+                    "superimposition": 5
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "planetary-rendezvous",
+                    "superimposition": 5,
+                    "note": {
+                        "en": "Can be used with a Wind DPS."
+                    }
+                }
+            ]
+        }
+    ]
+}

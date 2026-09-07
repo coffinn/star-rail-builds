@@ -1,0 +1,44 @@
+{
+    "light_cones": [
+        {
+            "items": [
+                {
+                    "name": "life-should-be-cast-to-flames",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "into-the-unreachable-veil",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "milky-way",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "the-great-cosmic-enterprise",
+                    "superimposition": 5
+                },
+                {
+                    "name": "eternal-calculus",
+                    "superimposition": 5
+                },
+                {
+                    "name": "peaceful-day",
+                    "superimposition": 5
+                }
+            ]
+        }
+    ]
+}

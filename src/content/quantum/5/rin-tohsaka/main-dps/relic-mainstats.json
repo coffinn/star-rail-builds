@@ -1,0 +1,22 @@
+{
+    "main_stats": {
+        "body": [
+            "cr/cd"
+        ],
+        "feet": [
+            "atk%"
+        ],
+        "planar_sphere": [
+          {
+            "name": "quantum-dmg",
+             "note": {
+             "en": "Preferred over ATK%."
+            }
+        },
+            "atk%"
+        ],
+        "link_rope": [
+            "atk%"
+        ]
+    }
+}

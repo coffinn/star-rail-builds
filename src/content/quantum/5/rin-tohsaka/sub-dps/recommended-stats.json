@@ -1,0 +1,23 @@
+{
+    "stats": [
+        {
+            "name": "cr",
+            "recommended": "100%"
+        },
+        {
+            "name": "atk",
+            "recommended": "2700+"
+        },
+        {
+            "name": "spd",
+            "recommended": "140+",
+            "note": {
+                "en": "SPD is variable, general rule of thumb is being able to always get 1 turn in between Sparkle's (note of her self 20% SPD buff)."
+            }
+        },
+        {
+            "name": "cd",
+            "recommended": "120%+"
+        }
+    ]
+}
