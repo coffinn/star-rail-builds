@@ -2,7 +2,7 @@
   "id": "firefly",
   "name": "Firefly",
   "rarity": "5",
-  "element": "fire",
+  "type": "fire",
   "path": "destruction",
   "version_released": "2.3",
   "max_energy": 240,

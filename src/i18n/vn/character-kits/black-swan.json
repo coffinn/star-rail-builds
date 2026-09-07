@@ -2,7 +2,7 @@
     "id": "black-swan",
     "name": "Black Swan",
     "rarity": "5",
-    "element": "wind",
+    "type": "wind",
     "path": "nihility",
     "version_released": "2.0",
     "max_energy": 120,

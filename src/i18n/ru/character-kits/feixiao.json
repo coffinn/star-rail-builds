@@ -2,7 +2,7 @@
     "id": "feixiao",
     "name": "Фэйсяо",
     "rarity": "5",
-    "element": "wind",
+    "type": "wind",
     "path": "hunt",
     "version_released": "2.5",
     "level_80_stats": {

@@ -29,7 +29,7 @@ src/content/<type>/<rarity>/<character>/<build>/relic-sets.json
           "choose": true,
           "items": [
             {
-              "name": "2pc-speed",
+              "name": "2pc-spd",
               "pieces": 2
             }
           ]
@@ -50,7 +50,7 @@ src/content/<type>/<rarity>/<character>/<build>/relic-sets.json
                 }
             ]
         }
-    ]
+  ],
   "conditional": [
     {
       "items": [
@@ -89,7 +89,7 @@ src/content/<type>/<rarity>/<character>/<build>/relic-sets.json
       - `relic_sets[].groups[].items[].pieces`: Number of set pieces,
         usually `2` or `4`.
       - `relic_sets[].groups[].items[].note`: Optional localized editorial
-        note. Adds a `*` marker beside the item and renders in the relic
+        note. Adds a `ⓘ` marker beside the item and renders in the relic
         notes section.
     - `relic_sets[].groups[].choices`: Optional array of choose-one item
       pools. Use this for 2p/2p combinations where the player should choose one
@@ -109,8 +109,7 @@ src/content/<type>/<rarity>/<character>/<build>/relic-sets.json
       stat pseudo-set ID.
     - `conditional[].items[].pieces`: Number of set pieces, usually `2` or `4`.
     - `conditional[].items[].note`: Optional localized editorial note.
-- `notes`: Optional top-level section notes shown under
-  `Regarding Relic Choices:` without adding a `*` marker to any item.
+- `notes`: Optional top-level section notes
 
 ## Group Rules
 
@@ -295,7 +294,7 @@ group objects directly and do not use a `groups` wrapper:
 ## Notes
 
 - Notes support Markdown and inline translation tokens.
-- Adding `note` to an item automatically adds a `*` marker next to that item in
+- Adding `note` to an item automatically adds a `ⓘ` marker next to that item in
   the relic set list.
 - The same `note` also automatically creates a matching note entry under
   `Regarding Relic Choices:`.

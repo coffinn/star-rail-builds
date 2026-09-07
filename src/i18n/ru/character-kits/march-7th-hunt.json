@@ -2,7 +2,7 @@
     "id": "march-7th-hunt",
     "name": "Март 7 - Охота",
     "rarity": 4,
-    "element": "imaginary",
+    "type": "imaginary",
     "path": "hunt",
     "version_released": "2.4",
     "max_energy": 140,

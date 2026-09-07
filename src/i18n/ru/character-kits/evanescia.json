@@ -2,7 +2,7 @@
   "id": "evanescia",
   "name": "Эванесса",
   "rarity": "5",
-  "element": "physical",
+  "type": "physical",
   "path": "elation",
   "version_released": "4.2",
   "max_energy": 480,

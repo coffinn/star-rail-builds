@@ -2,7 +2,7 @@
   "id": "arlan",
   "name": "Arlan",
   "rarity": 4,
-  "element": "lightning",
+  "type": "lightning",
   "path": "destruction",
   "version_released": "1.0",
   "max_energy": 110,

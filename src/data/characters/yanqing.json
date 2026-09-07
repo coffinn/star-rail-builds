@@ -2,7 +2,7 @@
   "id": "yanqing",
   "name": "Yanqing",
   "rarity": 5,
-  "element": "ice",
+  "type": "ice",
   "path": "hunt",
   "version_released": "1.0",
   "max_energy": 140,

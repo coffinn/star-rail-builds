@@ -2,7 +2,7 @@
   "id": "hysilens",
   "name": "Гисиленса",
   "rarity": 5,
-  "element": "physical",
+  "type": "physical",
   "path": "nihility",
   "version_released": "3.5",
   "max_energy": 110,

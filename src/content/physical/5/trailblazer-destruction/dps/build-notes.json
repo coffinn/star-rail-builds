@@ -5,21 +5,21 @@
         "ru": "ДД"
     },
         "notes": [
-        {
-            "en": "## Summary and General Analysis\n- Trailblazer: Destruction's Ultimate allows you to choose from either a Single Target or Blast attack to do damage.",
-            "ru": "## Краткое описание и общий анализ\n- Сверхспособность Первопроходца (Разрушение) позволяет выбрать между атакой по одной цели или взрывной атакой для нанесения урона."
+    ],
+    "overview": {
+        "summary": {
+            "en": "- Trailblazer: Destruction's Ultimate allows you to choose from either a Single Target or Blast attack to do damage.",
+            "ru": "- Сверхспособность Первопроходца (Разрушение) позволяет выбрать между атакой по одной цели или взрывной атакой для нанесения урона."
         },
-        {
-            "en": "## Investment Priority\n ### Teammate Investments\n- All of their Eidolons are both free and not very impactful, so support investments will be required in endgame scenarios.",
-            "ru": "## Приоритет инвестиций\n ### Инвестиции в союзников\n - Все их Эйдолоны бесплатны и не оказывают существенного влияния, поэтому в эндгейм-сценариях потребуются инвестиции в саппортов."
-        },
-        {
-            "en": "## Skill Point Usage\n- Negative",
-            "ru": "## Восстановление очков навыков\n- Отрицательное"
-        },
-        {
-            "en": "## Ability Rotation\n- Skill spam",
-            "ru": "## Ротация\n- Спам навыка"
-        }        
-    ]
+        "notable_eidolons": {
+            "priority": {
+                "en": "Teammate Investments",
+                "ru": "Инвестиции в союзников"
+            },
+            "details": {
+                "en": "- All of their Eidolons are both free and not very impactful, so support investments will be required in endgame scenarios.",
+                "ru": "- Все их Эйдолоны бесплатны и не оказывают существенного влияния, поэтому в эндгейм-сценариях потребуются инвестиции в саппортов."
+            }
+        }
+    }
 }    

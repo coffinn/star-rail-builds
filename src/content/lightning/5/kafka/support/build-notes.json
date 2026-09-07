@@ -4,17 +4,18 @@
         "en": "DoT Support"
     },
     "notes": [
-        {
-            "en": "## Summary and General Analysis\n- Kafka is a DoT support capable of detonating DoTs outside of enemy turns.\n- When Kafka attacks enemies with her Ultimate, Skill, and Follow-Up ATKs, DoTs on the enemies trigger for a portion of their damage.\n- Kafka gains one Follow-Up ATK charge after using her Ultimate and after her turn ends. \n- Kafka's performance is heavily reliant on Hysilens for DoT damage.\n- Kafka's own investments is less impactful for DoT team compared to other teammates' investments. Hysilens' E1 is DoT's best early investment, providing a unique 16% DMG Boost while doubling the number of DoTs she applies (4 -> 8). This Eidolon not only greatly increases Hysilens' personal damage (especially in double DoT teams), it also greatly increases Black Swan's personal damage. "
+    ],
+    "overview": {
+        "summary": {
+            "en": "- Kafka is a DoT support who detonates active DoTs outside of enemy turns, greatly increasing the damage output of a DoT team.\n- When attacking enemies with her Ultimate, Skill, or Follow-Up ATK, any DoTs the enemies are afflicted with will detonate and deal a portion of their original damage.\n- After using her Ultimate or after her turn ends, she will gain one Follow-Up ATK charge.\n- Her performance is heavily reliant on having Hysilens on the team, as Kafka herself does not deal significant DoT damage.\n- Kafka’s own investments are less impactful for the DoT team compared to her other teammates’. Hysilens’ E1 is the best early investment, providing a unique 16% DoT DMG Boost, while also doubling the instances of DoTs she applies (4 → 8). This Eidolon not only greatly increases Hysilens’ personal damage, it also increases Black Swan’s as well."
         },
-        {
-            "en": "## Investment Priority\n ### E1 >> S1\n- E1 provides 30% DoT Vulnerability.\n- Due to needing Energy in order to function optimally in her role as DoT detonator, [[light-cone:tutorial]] is much preferred over her S1 [[light-cone:payn]] until she is E4+, where her own E4 provides the Energy needed."
-        },
-        {
-            "en": "## Skill Point Usage\n- Negative"
-        },
-        {
-            "en": "## Ability Rotation\n- Skill spam"
+        "investment_priority": {
+            "priority": {
+                "en": "E1 >> S1"
+            },
+            "details": {
+                "en": "- E1 provides 30% DoT Vulnerability.\n- Due to needing Energy in order to function optimally in her role as DoT detonator, [[light-cone:tutorial]] is much preferred over her S1 [[light-cone:payn]] until she is E4+, where her own E4 provides the Energy needed."
+            }
         }
-    ]
+    }
 }

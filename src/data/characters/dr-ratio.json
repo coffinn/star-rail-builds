@@ -2,7 +2,7 @@
   "id": "dr-ratio",
   "name": "Dr. Ratio",
   "rarity": 5,
-  "element": "imaginary",
+  "type": "imaginary",
   "path": "hunt",
   "version_released": "1.6",
   "max_energy": 140,

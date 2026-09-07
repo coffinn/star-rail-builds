@@ -2,7 +2,7 @@
     "id": "bronya",
     "name": "Броня",
     "rarity": "5",
-    "element": "wind",
+    "type": "wind",
     "path": "harmony",
     "version_released": "1.0",
     "max_energy": 120,

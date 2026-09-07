@@ -28,7 +28,7 @@
                 }
             ]
         },
-        {"items":[{"name": "pearls","superimposition":1}]},
+        {"items":[{"name": "pearls","superimposition":5}]},
         {"items":[                {
                     "name": "fermata",
                     "superimposition": 5

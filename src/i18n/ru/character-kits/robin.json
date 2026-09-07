@@ -2,7 +2,7 @@
   "id": "robin",
   "name": "Зарянка",
   "rarity": 5,
-  "element": "physical",
+  "type": "physical",
   "path": "harmony",
   "version_released": "2.2",
   "max_energy": 160,

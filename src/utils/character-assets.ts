@@ -12,7 +12,7 @@ type CharacterAssetImage =
     }>;
 
 type CharacterAssetContext = {
-    element: string;
+    type: string;
     rarity: string;
     character: string;
 };
@@ -51,7 +51,7 @@ export function resolveCharacterAssetImage(
     ) {
         const assetPath = [
             '/src/assets/character-assets',
-            context.element,
+            context.type,
             context.rarity,
             context.character,
             `${baseName}.${extension}`,

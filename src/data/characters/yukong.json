@@ -2,7 +2,7 @@
   "id": "yukong",
   "name": "Yukong",
   "rarity": 4,
-  "element": "imaginary",
+  "type": "imaginary",
   "path": "harmony",
   "version_released": "1.1",
   "max_energy": 130,

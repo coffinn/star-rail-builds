@@ -2,7 +2,7 @@
     "id": "argenti",
     "name": "Argenti",
     "rarity": 5,
-    "element": "physical",
+    "type": "physical",
     "path": "erudition",
     "version_released": "1.5",
     "max_energy": 180,

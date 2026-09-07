@@ -2,7 +2,7 @@
   "id": "trailblazer-elation",
   "name": "Nhà Khai Phá - Vui Vẻ",
   "rarity": 5,
-  "element": "lightning",
+  "type": "lightning",
   "path": "elation",
   "version_released": "4.2",
   "max_energy": 160,

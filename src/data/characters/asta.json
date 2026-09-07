@@ -2,7 +2,7 @@
   "id": "asta",
   "name": "Asta",
   "rarity": 4,
-  "element": "fire",
+  "type": "fire",
   "path": "harmony",
   "version_released": "1.0",
   "max_energy": 120,

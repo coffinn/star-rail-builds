@@ -7,7 +7,7 @@ type LocaleBundle = {
     relic: LocaleCategory;
     character: LocaleCategory;
     stat: LocaleCategory;
-    element: LocaleCategory;
+    type: LocaleCategory;
     ability: LocaleCategory;
     path: LocaleCategory;
     ui: LocaleCategory;
@@ -22,7 +22,7 @@ const localeFiles = {
     lightconesource: 'light-cone-sources',
     character: 'characters',
     stat: 'stats',
-    element: 'elements',
+    type: 'types',
     path: 'paths',
     ability: 'abilities',
     ui: 'ui',

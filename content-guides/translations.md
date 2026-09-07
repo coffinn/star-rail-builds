@@ -42,12 +42,12 @@ Use the matching English file in `src/i18n/en/` as the reference. The current HS
 ```text
 abilities.json
 characters.json
-elements.json
 light-cones.json
 notes.json
 paths.json
 relic-sets.json
 stats.json
+types.json
 ui.json
 ```
 
@@ -75,7 +75,7 @@ Languages are registered in:
 src/utils/languages.ts
 ```
 
-The current file only has English enabled; the other existing language entries are commented out.
+To enable a languange, uncomment it.
 
 To enable French, for example:
 

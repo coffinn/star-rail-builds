@@ -2,7 +2,7 @@
   "id": "ruan-mei",
   "name": "Ruan Mei",
   "rarity": "5",
-  "element": "ice",
+  "type": "ice",
   "path": "harmony",
   "version_released": "1.6",
   "max_energy": 130,

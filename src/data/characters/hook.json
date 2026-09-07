@@ -2,7 +2,7 @@
   "id": "hook",
   "name": "Hook",
   "rarity": 4,
-  "element": "fire",
+  "type": "fire",
   "path": "destruction",
   "version_released": "1.0",
   "max_energy": 120,

@@ -1528,7 +1528,7 @@ export function getCharacterPageData({
 
     const metadata = loadJSON(foundPath.path, 'metadata.json');
     const assetContext = {
-        element: foundPath.element,
+        type: foundPath.type,
         rarity: foundPath.rarity,
         character: contentSlug,
         characterPath: foundPath.path,
@@ -1537,7 +1537,7 @@ export function getCharacterPageData({
         ...metadata,
 
         // The character's rarity comes from the content folder:
-        // src/content/<element>/<rarity>/<character>
+        // src/content/<type>/<rarity>/<character>
         rarity: foundPath.rarity,
 
         image: resolveCharacterAssetImage(assetContext, 'image'),
@@ -1552,7 +1552,7 @@ export function getCharacterPageData({
                 ? translatedCharacterName
                 : toTitleCase(contentSlug),
         metadata: metadataWithAssets,
-        element: foundPath.element,
+        type: foundPath.type,
         lang: currentLang,
         locale,
         builds: buildNames

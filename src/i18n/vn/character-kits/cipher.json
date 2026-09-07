@@ -2,7 +2,7 @@
   "id": "cipher",
   "name": "Cipher",
   "rarity": 5,
-  "element": "quantum",
+  "type": "quantum",
   "path": "nihility",
   "version_released": "3.4",
   "max_energy": 130,

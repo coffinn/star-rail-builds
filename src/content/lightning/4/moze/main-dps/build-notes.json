@@ -5,21 +5,21 @@
         "ru": "ДД"
     },
         "notes": [
-        {
-            "en": "## Summary and General Analysis\n- Moze is a Follow-Up ATK oriented sub DPS, who performs best in combat where the target enemy does not frequently change.\n- By using his Skill he marks an enemy with \"Prey\", gains 9 points of \"Charge\". and Departs from the team. After allies attack \"Prey\" he will deal 1 instance of Additional DMG while consuming 1 \"Charge\". For every 3 points of Charge consumed, he will launch 1 Follow-Up ATK. Once all \"Charge\" are consumed, the enemy’s \"Prey\" state will be dispelled and he returns to the field.\n- If all of his allies on the field are unable to participate in combat, he is unable to use his Skill.\n- His A2 Trace: Nightfeather allows his Follow-Up ATKs to recover 1 Skill Point. This can only be triggered once per turn.",
-            "ru": "## Краткое описание и общий анализ\n- Моцзэ — это Саб-ДД от бонус-атак, который лучше всего проявляет себя в бою, где цель не часто меняется.\n- Используя свой навык, он помечает противника как Жертву, получает 9 ед. заряда и покидает поле боя. После того как союзники атакуют Жертву, он наносит 1 дополнительный урон, расходуя 1 ед. заряда. За каждые 3 ед. заряда он совершает 1 бонус-атаку. Как только все ед. заряда будут израсходованы, статус Жертва будет снят с противника, и он вернётся на поле боя.\n- Если все его союзники на поле боя не способны сражаться, он не может использовать свой навык.\n- Его дополнительная способность A2: Перья ночи позволяет его бонус-атакам восстанавливать 1 очко навыка. Это можно активировать только один раз за ход."
+    ],
+    "overview": {
+        "summary": {
+            "en": "- Moze is a Follow-Up ATK oriented sub DPS, who performs best in combat where the target enemy does not frequently change.\n- By using his Skill he marks an enemy with \"Prey\", gains 9 points of \"Charge\". and Departs from the team. After allies attack \"Prey\" he will deal 1 instance of Additional DMG while consuming 1 \"Charge\". For every 3 points of Charge consumed, he will launch 1 Follow-Up ATK. Once all \"Charge\" are consumed, the enemy’s \"Prey\" state will be dispelled and he returns to the field.\n- If all of his allies on the field are unable to participate in combat, he is unable to use his Skill.\n- His A2 Trace: Nightfeather allows his Follow-Up ATKs to recover 1 Skill Point. This can only be triggered once per turn.",
+            "ru": "- Моцзэ — это Саб-ДД от бонус-атак, который лучше всего проявляет себя в бою, где цель не часто меняется.\n- Используя свой навык, он помечает противника как Жертву, получает 9 ед. заряда и покидает поле боя. После того как союзники атакуют Жертву, он наносит 1 дополнительный урон, расходуя 1 ед. заряда. За каждые 3 ед. заряда он совершает 1 бонус-атаку. Как только все ед. заряда будут израсходованы, статус Жертва будет снят с противника, и он вернётся на поле боя.\n- Если все его союзники на поле боя не способны сражаться, он не может использовать свой навык.\n- Его дополнительная способность A2: Перья ночи позволяет его бонус-атакам восстанавливать 1 очко навыка. Это можно активировать только один раз за ход."
         },
-        {
-            "en": "## Notable Eidolons\n ### E2\n- E2 Increases his CRIT DMG after allies attack \"Prey\", allowing more focus on his CRIT Rate needs.",
-            "ru": "## Важные Эйдолоны\n ### E2\n- E2 увеличивает его крит. урон после того, как союзники атакуют противника со стаусом Жертва, позволяя больше сосредоточиться на повышении крит. шанса."
-        },
-        {
-            "en": "## Skill Point Usage\n- Neutral",
-            "ru": "## Восстановление очков навыков\n- Нейтральное"
-        },
-        {
-            "en": "## Ability Rotation\n- Skill when available",
-            "ru": "## Ротация\n- Навык, когда он доступен"
-        }        
-    ]
+        "notable_eidolons": {
+            "priority": {
+                "en": "E2",
+                "ru": "E2"
+            },
+            "details": {
+                "en": "- E2 Increases his CRIT DMG after allies attack \"Prey\", allowing more focus on his CRIT Rate needs.",
+                "ru": "- E2 увеличивает его крит. урон после того, как союзники атакуют противника со стаусом Жертва, позволяя больше сосредоточиться на повышении крит. шанса."
+            }
+        }
+    }
 }    

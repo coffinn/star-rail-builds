@@ -2,7 +2,7 @@
   "id": "robin-summeretto",
   "name": "Robin • Summeretto",
   "rarity": "5",
-  "element": "wind",
+  "type": "wind",
   "path": "remembrance",
   "version_released": "4.5",
   "max_energy": 140,

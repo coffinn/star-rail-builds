@@ -2,7 +2,7 @@
   "id": "fu-xuan",
   "name": "Fu Xuan",
   "rarity": 5,
-  "element": "quantum",
+  "type": "quantum",
   "path": "preservation",
   "version_released": "1.3",
   "max_energy": 135,

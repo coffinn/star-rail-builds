@@ -2,7 +2,7 @@
   "id": "tingyun",
   "name": "Тинъюнь",
   "rarity": "4",
-  "element": "lightning",
+  "type": "lightning",
   "path": "harmony",
   "version_released": "1.0",
   "max_energy": 130,

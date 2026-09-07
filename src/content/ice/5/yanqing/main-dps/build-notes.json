@@ -7,18 +7,18 @@
         "ru": "foo"
     },
     "last_updated": "",
-    "notes": [
-        {
-            "en": "## Summary and General Analysis\n- Yanqing is a Single Target DPS who uses a combination of Skill, Ultimate and Follow-Up ATK.\n- In order to maintain Soulsteel Sync, Yanqing must not take direct damage from enemies. As a result, you should often use a sustain that can provide Shield.\n- Small advantage against enemies with Ice Weakness and enemies that are Frozen."
+    "notes": [],
+    "overview": {
+        "summary": {
+            "en": "- Yanqing is a Single Target DPS who uses a combination of Skill, Ultimate and Follow-Up ATK.\n- In order to maintain Soulsteel Sync, Yanqing must not take direct damage from enemies. As a result, you should often use a sustain that can provide Shield.\n- Small advantage against enemies with Ice Weakness and enemies that are Frozen."
         },
-	    {
-	        "en": "## Investment Priority\n ### Support Investments > E4\n- E4 increases his Ice RES PEN. \n- You would see greater improvements by investing into his supports, as his own eidolons do not provide a significant improvement to his performance."
-	    },
-        {
-	        "en": "## Skill Point Usage\n- Negative"
-        },
-	    {
-	        "en": "## Abillity Rotation\n- Skill spam. Basic ATK only if necessary, ideally using Ultimate immediately after to maintain Soulsteel Sync"
-	    }
-    ]
+        "investment_priority": {
+            "priority": {
+              "en": "Support Investments > E4"
+            },
+            "details": {
+	          "en": "- E4 increases his Ice RES PEN. \n- You would see greater improvements by investing into his supports, as his own eidolons do not provide a significant improvement to his performance."
+            }
+        }
+    }
 }

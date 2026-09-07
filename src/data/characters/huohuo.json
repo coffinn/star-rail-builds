@@ -2,7 +2,7 @@
     "id": "huohuo",
     "name": "Huohuo",
     "rarity": "5",
-    "element": "wind",
+    "type": "wind",
     "path": "abundance",
     "version_released": "1.5",
     "max_energy": 140,

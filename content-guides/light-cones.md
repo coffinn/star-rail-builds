@@ -42,14 +42,14 @@ src/content/<type>/<rarity>/<character>/<build>/light-cones.json
 
 - `light_cones`: Ordered ranking groups.
 - `notes`: Optional section-level notes shown under
-  `Regarding Light Cone Choices:` without adding a `*` marker to any weapon.
+  `Regarding Light Cone Choices:` without adding a `ⓘ` marker to any weapon.
 - `light_cones[].items`: Light cones in the same ranking position.
 - `items[]`: Light cone i18n IDs or aliases, either as plain strings or as objects.
 - `items[].name`: Light cone i18n ID or alias. Required when the item needs an
   object for `superimposition` or `note`.
-- `items[].refinement`: Optional refinement rank. Use a number for exact
+- `items[].superimposition`: Optional superimposition rank. Use a number for exact
   refinements, such as `5`, or a string for ranges, such as `"4+"`.
-- `items[].note`: Optional localized editorial note. Adds a `*` marker beside
+- `items[].note`: Optional localized editorial note. Adds a `ⓘ` marker beside
   the light cone and renders in the light cone notes section.
 - `conditional`: Optional unranked light cone list shown below the ranking under
   `Conditional (See Notes):`.
@@ -78,7 +78,7 @@ This renders as:
 
 ```txt
 1. Incessant Rain (5 ★) [S1]
-2. Before the Tutorial Mission Starts (4 ★) [R5]
+2. Before the Tutorial Mission Starts (4 ★) [s5]
 ```
 
 Use multiple items in the same `items` array when light cones are close enough to
@@ -128,14 +128,12 @@ Conditional weapons use the same item fields as ranked weapons:
 - When adding a light cone that is not in the shared light cone data yet, add it to the
   matching file (`abundance.json`, `destruction.json`, `erudition.json`, `elation.json`,
   etc.) instead of adding `rarity` to the build.
-- Adding `note` to a light cone automatically adds a `*` marker next to that light cone
+- Adding `note` to a light cone automatically adds a `ⓘ` marker next to that light cone
   in the light cone ranking list.
-- The same `note` also automatically creates a matching note entry under
-  `Regarding Light Cone Choices:`.
 - `note` must include `en` because it is the fallback if no other translation
   was provided.
 - Notes support Markdown, such as `**bold text**` and inline translation tokens,
-  such as `[[light-cone:the-light-cone-name]]`.
+  such as `[[light-cone:bttms]]`.
 
 Example with the same note translated in different languages:
 

@@ -2,7 +2,7 @@
     "id": "silver-wolf-lv999",
     "name": "Silver Wolf LV.999",
     "rarity": 5,
-    "element": "imaginary",
+    "type": "imaginary",
     "path": "elation",
     "version_released": "4.2",
     "abilities": {

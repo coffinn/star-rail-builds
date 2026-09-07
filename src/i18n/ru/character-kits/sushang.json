@@ -2,7 +2,7 @@
     "id": "sushang",
     "name": "Сушан",
     "rarity": 4,
-    "element": "physical",
+    "type": "physical",
     "path": "hunt",
     "version_released": "1.0",
     "max_energy": 120,

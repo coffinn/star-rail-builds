@@ -2,7 +2,7 @@
   "id": "pela",
   "name": "Пела",
   "rarity": "4",
-  "element": "ice",
+  "type": "ice",
   "path": "nihility",
   "version_released": "1.0",
   "max_energy": 110,

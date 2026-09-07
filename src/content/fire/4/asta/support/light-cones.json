@@ -3,24 +3,28 @@
         {
             "items": [
                 {
-                    "name": "motp"
+                    "name": "motp",
+                    "superimposition": 5
                 },
                 {
-                    "name": "meshing-cogs"
+                    "name": "meshing-cogs",
+                    "superimposition": 5
                 }
             ]
         },
         {
             "items": [
                 {
-                    "name": "ddd"
+                    "name": "ddd",
+                    "superimposition": 5
                 }
             ]
         },
         {
             "items": [
                 {
-                    "name": "psim"
+                    "name": "psim",
+                    "superimposition": 1
                 }
             ]
         },
@@ -28,6 +32,7 @@
             "items": [
                 {
                     "name": "planetary-rendezvous",
+                    "superimposition": 5,
                     "note_group": "fire-affinity",
                     "note": {
                         "en": "This can only be used if the wearer is of the same Type as the Main DPS.",

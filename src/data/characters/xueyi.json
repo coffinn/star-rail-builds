@@ -2,7 +2,7 @@
   "id": "xueyi",
   "name": "Xueyi",
   "rarity": 4,
-  "element": "quantum",
+  "type": "quantum",
   "path": "destruction",
   "version_released": "1.3",
   "max_energy": 120,

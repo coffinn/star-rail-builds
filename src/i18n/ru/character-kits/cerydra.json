@@ -2,7 +2,7 @@
     "id": "cerydra",
     "name": "Керидра",
     "rarity": "5",
-    "element": "wind",
+    "type": "wind",
     "path": "harmony",
     "version_released": "3.5",
     "max_energy": 130,

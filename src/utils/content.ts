@@ -99,7 +99,7 @@ export const toTitleCase = (str: string) =>
  * Searches the content directory for a character folder.
  *
  * Traverses:
- * - element folders
+ * - type folders
  * - rarity folders
  *
  * Example structure:
@@ -116,23 +116,23 @@ export function findCharacterPath(
     const lookup =
         parsePublicCharacterSlug(char);
 
-    for (const element of fs.readdirSync(base)) {
-        const elementPath = path.join(
+    for (const type of fs.readdirSync(base)) {
+        const typePath = path.join(
             base,
-            element,
+            type,
         );
 
         if (
-            !fs.statSync(elementPath).isDirectory()
+            !fs.statSync(typePath).isDirectory()
         ) {
             continue;
         }
 
         for (const rarity of fs.readdirSync(
-            elementPath,
+            typePath,
         )) {
             const rarityPath = path.join(
-                elementPath,
+                typePath,
                 rarity,
             );
 
@@ -156,7 +156,7 @@ export function findCharacterPath(
 
             if (fs.existsSync(metadataFile)) {
                 return {
-                    element,
+                    type,
                     rarity,
                     path: candidate,
                 };

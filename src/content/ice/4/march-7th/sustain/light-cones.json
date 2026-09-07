@@ -3,35 +3,40 @@
         {
             "items": [
                 {
-                    "name": "inherently-unjust-destiny"
+                    "name": "inherently-unjust-destiny",
+                    "superimposition": 1
                 }
             ]
         },
         {
             "items": [
                 {
-                    "name": "journey-forever-peaceful"
+                    "name": "journey-forever-peaceful",
+                    "superimposition": 5
                 }
             ]
         },
         {
             "items": [
                 {
-                    "name": "moment-of-victory"
+                    "name": "moment-of-victory",
+                    "superimposition": 1
                 }
             ]
         },
         {
             "items": [
                 {
-                    "name": "landaus-choice"
+                    "name": "landaus-choice",
+                    "superimposition": 5
                 }
             ]
         },
         {
             "items": [
                 {
-                    "name": "day-one-of-my-new-life"
+                    "name": "day-one-of-my-new-life",
+                    "superimposition": 5
                 }
             ]
         }

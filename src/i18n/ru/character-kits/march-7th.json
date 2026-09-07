@@ -2,7 +2,7 @@
   "id": "march-7th",
   "name": "Март 7",
   "rarity": "4",
-  "element": "ice",
+  "type": "ice",
   "path": "preservation",
   "version_released": "1.0",
   "max_energy": 120,

@@ -96,7 +96,7 @@ html[lang='ru'] .page-title {
 }
 
 /* =========================================================
-   Character name / element / rarity / path
+   Character name / type / rarity / path
    ========================================================= */
 
 .character-title-row {
@@ -120,7 +120,7 @@ html[lang='ru'] .page-title {
     word-break: normal;
 }
 
-.character-meta-element-icon {
+.character-meta-type-icon {
     display: block;
     width: 20px;
     height: 20px;
@@ -216,7 +216,7 @@ html[lang='ru'] .page-title {
     scrollbar-width: thin;
     background:
         linear-gradient(135deg,
-            color-mix(in srgb, var(--element) 18%, transparent),
+            color-mix(in srgb, var(--type) 18%, transparent),
             transparent 48%),
         linear-gradient(180deg,
             rgba(255, 255, 255, 0.07),
@@ -234,7 +234,7 @@ html[lang='ru'] .page-title {
     right: 0;
     left: 0;
     height: 3px;
-    background: var(--element);
+    background: var(--type);
     content: '';
 }
 
@@ -275,10 +275,10 @@ html[lang='ru'] .page-title {
     flex-direction: column;
     gap: 2px;
     margin-top: 10px;
-    border: 1px solid color-mix(in srgb, var(--element) 45%, transparent);
+    border: 1px solid color-mix(in srgb, var(--type) 45%, transparent);
     border-radius: 8px;
     padding: 5px 9px;
-    background: color-mix(in srgb, var(--element) 13%, rgba(0, 0, 0, 0.28));
+    background: color-mix(in srgb, var(--type) 13%, rgba(0, 0, 0, 0.28));
     color: color-mix(in srgb, var(--text) 78%, transparent);
     font-size: 0.76rem;
     font-weight: 750;
@@ -292,7 +292,7 @@ html[lang='ru'] .page-title {
 }
 
 .last-updated strong {
-    color: color-mix(in srgb, #fff 88%, var(--element) 12%);
+    color: color-mix(in srgb, #fff 88%, var(--type) 12%);
 }
 
 .build-note-hint {
@@ -321,7 +321,7 @@ html[lang='ru'] .page-title {
 }
 
 .build-note-hint .note-marker-text {
-    color: var(--element);
+    color: var(--type);
     font-size: 0.84rem;
     line-height: 1;
 }
@@ -348,12 +348,12 @@ html[lang='ru'] .page-title {
     aspect-ratio: 1;
     object-fit: contain;
     object-position: center;
-    border: 1px solid color-mix(in srgb, var(--element) 36%, transparent);
+    border: 1px solid color-mix(in srgb, var(--type) 36%, transparent);
     border-radius: 8px;
     padding: 8px;
     background:
         radial-gradient(circle at 50% 35%,
-            color-mix(in srgb, var(--element) 24%, transparent),
+            color-mix(in srgb, var(--type) 24%, transparent),
             transparent 64%),
         rgba(0, 0, 0, 0.18);
 }
@@ -419,26 +419,26 @@ html[lang='ru'] .page-title {
     bottom: 0;
     left: 0;
     width: 3px;
-    background: var(--element);
+    background: var(--type);
     opacity: 0;
     content: '';
 }
 
 .build-switcher-button:hover,
 .build-switcher-button:focus-visible {
-    border-color: color-mix(in srgb, var(--element) 42%, transparent);
+    border-color: color-mix(in srgb, var(--type) 42%, transparent);
     background: color-mix(in srgb,
-            var(--element) 10%,
+            var(--type) 10%,
             rgba(255, 255, 255, 0.045));
     outline: none;
 }
 
 .build-switcher-button.is-active {
-    border-color: color-mix(in srgb, var(--element) 64%, white 6%);
-    background: color-mix(in srgb, var(--element) 16%, rgba(255, 255, 255, 0.06));
+    border-color: color-mix(in srgb, var(--type) 64%, white 6%);
+    background: color-mix(in srgb, var(--type) 16%, rgba(255, 255, 255, 0.06));
     box-shadow:
-        inset 0 0 0 1px color-mix(in srgb, var(--element) 18%, transparent),
-        0 8px 20px color-mix(in srgb, var(--element) 10%, transparent);
+        inset 0 0 0 1px color-mix(in srgb, var(--type) 18%, transparent),
+        0 8px 20px color-mix(in srgb, var(--type) 10%, transparent);
 }
 
 .build-switcher-button.is-active::before {
@@ -477,7 +477,7 @@ html[lang='ru'] .page-title {
 
 .build-calculation-card {
     overflow: hidden;
-    border: 1px solid var(--element);
+    border: 1px solid var(--type);
     border-radius: 8px;
     background: rgba(0, 0, 0, 0.18);
 }
@@ -555,7 +555,7 @@ html[lang='ru'] .page-title {
     right: 0;
     left: 0;
     height: 3px;
-    background: color-mix(in srgb, var(--element) 52%, transparent);
+    background: color-mix(in srgb, var(--type) 52%, transparent);
     opacity: 0;
     content: '';
     transition: opacity 0.16s ease;
@@ -804,10 +804,10 @@ html[lang='ru'] .page-title {
     width: 22px;
     min-height: 22px;
     place-items: center;
-    border: 1px solid color-mix(in srgb, var(--element) 30%, transparent);
+    border: 1px solid color-mix(in srgb, var(--type) 30%, transparent);
     border-radius: 7px;
-    background: color-mix(in srgb, var(--element) 14%, rgba(0, 0, 0, 0.22));
-    color: color-mix(in srgb, #fff 88%, var(--element) 12%);
+    background: color-mix(in srgb, var(--type) 14%, rgba(0, 0, 0, 0.22));
+    color: color-mix(in srgb, #fff 88%, var(--type) 12%);
     font-size: 0.68rem;
     font-weight: 900;
     line-height: 1;
@@ -818,10 +818,10 @@ html[lang='ru'] .page-title {
     width: 22px;
     min-height: 22px;
     place-items: center;
-    border: 1px solid color-mix(in srgb, var(--element) 30%, transparent);
+    border: 1px solid color-mix(in srgb, var(--type) 30%, transparent);
     border-radius: 7px;
-    background: color-mix(in srgb, var(--element) 14%, rgba(0, 0, 0, 0.22));
-    color: color-mix(in srgb, #fff 88%, var(--element) 12%);
+    background: color-mix(in srgb, var(--type) 14%, rgba(0, 0, 0, 0.22));
+    color: color-mix(in srgb, #fff 88%, var(--type) 12%);
     font-size: 0.68rem;
     font-weight: 900;
     line-height: 1;
@@ -831,7 +831,7 @@ html[lang='ru'] .page-title {
     width: 6px;
     height: 6px;
     border-radius: 999px;
-    background: var(--element);
+    background: var(--type);
     content: '';
 }
 
@@ -935,7 +935,7 @@ html[lang='ru'] .page-title {
 
     color: color-mix(in srgb,
             #fff 82%,
-            var(--element) 18%);
+            var(--type) 18%);
 
     font-size: 0.76rem;
     line-height: 1.2;
@@ -956,7 +956,7 @@ html[lang='ru'] .page-title {
 .recommended-stat-value {
     color: color-mix(in srgb,
             #fff 82%,
-            var(--element) 18%);
+            var(--type) 18%);
 
     font-weight: 850;
     text-align: center;
@@ -1032,7 +1032,7 @@ html[lang='ru'] .page-title {
 
     color: color-mix(in srgb,
             #fff 82%,
-            var(--element) 18%);
+            var(--type) 18%);
 
     font-size: 0.78rem;
     line-height: 1.25;
@@ -1067,18 +1067,18 @@ html[lang='ru'] .page-title {
     color: color-mix(in srgb, var(--text) 82%, transparent);
 }
 
-.element-bold {
-    color: color-mix(in srgb, #fff 30%, var(--element) 70%);
+.type-bold {
+    color: color-mix(in srgb, #fff 30%, var(--type) 70%);
     font-weight: 850;
 }
 
-.element-bold .info-popover-trigger {
+.type-bold .info-popover-trigger {
     color: inherit;
     font-weight: inherit;
 }
 
-.element-bold .info-popover-trigger:hover,
-.element-bold .info-popover-trigger:focus-visible {
+.type-bold .info-popover-trigger:hover,
+.type-bold .info-popover-trigger:focus-visible {
     color: inherit;
 }
 
@@ -1106,14 +1106,14 @@ html[lang='ru'] .page-title {
     place-items: center;
     margin: -3px -3px -3px 0;
     padding: 3px;
-    color: var(--element);
+    color: var(--type);
     font-weight: 900;
     line-height: 1;
     text-decoration: none;
 }
 
 .note-marker-text {
-    color: var(--element);
+    color: var(--type);
     font-weight: 900;
 }
 
@@ -1148,40 +1148,40 @@ html[lang='ru'] .page-title {
     0% {
         border-color:
             color-mix(in srgb,
-                var(--element) 85%,
+                var(--type) 85%,
                 white 15%);
 
         background:
             color-mix(in srgb,
-                var(--element) 32%,
+                var(--type) 32%,
                 rgba(255, 255, 255, 0.04));
 
         box-shadow:
             0 0 0 3px color-mix(in srgb,
-                var(--element) 32%,
+                var(--type) 32%,
                 transparent),
             0 0 20px color-mix(in srgb,
-                var(--element) 28%,
+                var(--type) 28%,
                 transparent);
     }
 
     30% {
         border-color:
             color-mix(in srgb,
-                var(--element) 72%,
+                var(--type) 72%,
                 transparent);
 
         background:
             color-mix(in srgb,
-                var(--element) 24%,
+                var(--type) 24%,
                 rgba(255, 255, 255, 0.04));
 
         box-shadow:
             0 0 0 3px color-mix(in srgb,
-                var(--element) 22%,
+                var(--type) 22%,
                 transparent),
             0 0 14px color-mix(in srgb,
-                var(--element) 20%,
+                var(--type) 20%,
                 transparent);
     }
 
@@ -1265,7 +1265,7 @@ html[lang='ru'] .page-title {
 
 .info-popover-trigger:focus-visible {
     border-radius: 4px;
-    outline: 2px solid var(--element);
+    outline: 2px solid var(--type);
     outline-offset: 2px;
 }
 
@@ -1282,13 +1282,13 @@ html[lang='ru'] .page-title {
     overflow-x: hidden;
     overflow-y: auto;
     overscroll-behavior: contain;
-    border: 1px solid color-mix(in srgb, var(--element) 48%, rgba(255, 255, 255, 0.18));
+    border: 1px solid color-mix(in srgb, var(--type) 48%, rgba(255, 255, 255, 0.18));
     border-radius: 8px;
     margin: 0;
     padding: 12px;
     background:
         linear-gradient(180deg,
-            color-mix(in srgb, var(--element) 10%, transparent),
+            color-mix(in srgb, var(--type) 10%, transparent),
             transparent 44%),
         color-mix(in srgb, var(--bg) 86%, #05080c 14%);
     box-shadow: 0 18px 44px rgba(0, 0, 0, 0.34);
@@ -1324,11 +1324,11 @@ html[lang='ru'] .page-title {
     width: 64px;
     height: 64px;
     place-items: center;
-    border: 1px solid color-mix(in srgb, var(--element) 42%, transparent);
+    border: 1px solid color-mix(in srgb, var(--type) 42%, transparent);
     border-radius: 8px;
     background:
         radial-gradient(circle at 50% 38%,
-            color-mix(in srgb, var(--element) 20%, transparent),
+            color-mix(in srgb, var(--type) 20%, transparent),
             transparent 64%),
         rgba(0, 0, 0, 0.16);
 }
@@ -1421,13 +1421,13 @@ html[lang='ru'] .page-title {
     height: 52px;
     place-items: center;
     border: 1px solid color-mix(in srgb,
-            var(--element) 38%,
+            var(--type) 38%,
             transparent);
     border-radius: 8px;
     background:
         radial-gradient(circle at 50% 38%,
             color-mix(in srgb,
-                var(--element) 18%,
+                var(--type) 18%,
                 transparent),
             transparent 64%),
         rgba(0, 0, 0, 0.14);
@@ -1560,7 +1560,7 @@ html[lang='ru'] .page-title {
 }
 
 .weapon-popover-refinement-button {
-    border: 1px solid color-mix(in srgb, var(--element) 55%, var(--text));
+    border: 1px solid color-mix(in srgb, var(--type) 55%, var(--text));
     border-radius: 7px;
     padding: 3px 7px;
     background: transparent;
@@ -1572,7 +1572,7 @@ html[lang='ru'] .page-title {
 }
 
 .weapon-popover-refinement-button[aria-pressed='true'] {
-    background: var(--element);
+    background: var(--type);
     color: #05080c;
 }
 
@@ -1581,7 +1581,7 @@ html[lang='ru'] .page-title {
 }
 
 .weapon-popover-passive-value {
-    color: var(--accent-color, var(--element));
+    color: var(--accent-color, var(--type));
     font-weight: 850;
 }
 
@@ -1606,37 +1606,37 @@ html[lang='ru'] .page-title {
 @keyframes note-highlight {
     0% {
         border-color: color-mix(in srgb,
-                var(--element) 75%,
+                var(--type) 75%,
                 white 10%);
 
         background: color-mix(in srgb,
-                var(--element) 32%,
+                var(--type) 32%,
                 rgba(255, 255, 255, 0.04));
 
         box-shadow:
             0 0 0 3px color-mix(in srgb,
-                var(--element) 28%,
+                var(--type) 28%,
                 transparent),
             0 0 18px color-mix(in srgb,
-                var(--element) 24%,
+                var(--type) 24%,
                 transparent);
     }
 
     35% {
         border-color: color-mix(in srgb,
-                var(--element) 65%,
+                var(--type) 65%,
                 transparent);
 
         background: color-mix(in srgb,
-                var(--element) 24%,
+                var(--type) 24%,
                 rgba(255, 255, 255, 0.04));
 
         box-shadow:
             0 0 0 3px color-mix(in srgb,
-                var(--element) 20%,
+                var(--type) 20%,
                 transparent),
             0 0 14px color-mix(in srgb,
-                var(--element) 18%,
+                var(--type) 18%,
                 transparent);
     }
 
@@ -1710,7 +1710,7 @@ html[lang='ru'] .page-title {
         max-width: calc(100% - 28px);
     }
 
-    .character-title-element-icon {
+    .character-title-type-icon {
         width: 22px;
         height: 22px;
     }

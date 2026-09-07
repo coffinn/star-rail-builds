@@ -3,14 +3,16 @@
         {
             "items": [
                 {
-                    "name": "until-the-flowers-bloom-again"
+                    "name": "until-the-flowers-bloom-again",
+                    "superimposition": 1
                 }
             ]
         },
         {
             "items": [
                 {
-                    "name": "dazzled-by-a-flowery-world"
+                    "name": "dazzled-by-a-flowery-world",
+                    "superimposition": 1
                 }
             ]
         },
@@ -18,6 +20,7 @@
             "items": [
                 {
                     "name": "todays-good-luck",
+                    "superimposition": 5,
                     "note_group": "s1-comparison",
                     "note": {
                         "en": "If [[light-cone:todays-good-luck]] is S1, [[light-cone:mushy-shroomys-adventures]] is better.",
@@ -32,6 +35,7 @@
             "items": [
                 {
                     "name": "mushy-shroomys-adventures",
+                    "superimposition": 5,
                     "note_group": "s1-comparison"
                 }
             ]

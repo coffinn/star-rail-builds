@@ -2,7 +2,7 @@
   "id": "aglaea",
   "name": "Aglaea",
   "rarity": 5,
-  "element": "lightning",
+  "type": "lightning",
   "path": "remembrance",
   "version_released": "3.0",
   "max_energy": 350,

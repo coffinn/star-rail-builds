@@ -5,21 +5,21 @@
         "ru": "Саппорт"
     },
     "notes": [
-        {
-            "en": "## Summary and General Analysis\n- Guinaifen has a chance to apply \"Firekiss\" to any enemies taking damage from Burn. Enemies with \"Firekiss\" have increased Vulnerability.\n- Using her Ultimate on enemies inflicted with Burn will detonate any existing Fire DoT applied.",
-            "ru": "## Краткое описание и общий анализ\n- У Гуйнайфэнь есть шанс наложить статус Огненный поцелуй на любых противников, со статусом Горение. Враги со статусом Огненный поцелуй получают больше урона.\n- Использование её сверхспособности на противниках, со статусом Горение, мгновенное активирует все статусы огненного периодического урона."
+    ],
+    "overview": {
+        "summary": {
+            "en": "- Guinaifen has a chance to apply \"Firekiss\" to any enemies taking damage from Burn. Enemies with \"Firekiss\" have increased Vulnerability.\n- Using her Ultimate on enemies inflicted with Burn will detonate any existing Fire DoT applied.",
+            "ru": "- У Гуйнайфэнь есть шанс наложить статус Огненный поцелуй на любых противников, со статусом Горение. Враги со статусом Огненный поцелуй получают больше урона.\n- Использование её сверхспособности на противниках, со статусом Горение, мгновенное активирует все статусы огненного периодического урона."
         },
-        {
-            "en": "## Notable Eidolons\n ### E1, E4, E6\n- E1 increases the chance for allies to apply debuffs.\n- E4 makes her gain extra Energy whenever enemies take damage from Burn applied by Guinaifen.\n- E6 increases the amount of \"Firekiss\" stacks she can apply by 1, increasing the potency of her debuffs.",
-            "ru": "## Важные Эйдолоны\n ### E1, E4, E6\n- E1 увеличивает шанс наложения союзниками дебаффов.\n- E4 позволяет ей получать дополнительную энергию всякий раз, когда враги получают урон от статуса Горения, наложенного Гуйнайфэнь.\n- E6 увеличивает количество ур. статуса Огнененный поцелуй, которые она может наложить, на 1, повышая силу ее дебаффов."
-        },
-        {
-            "en": "## Skill Point Usage\n- Neutral/Negative",
-            "ru": "## Восстановление очков навыков\n- Нейтральное/Отрицательное"
-        },
-        {
-            "en": "## Ability Rotation\n- Basic ATK spam, Skill if needed",
-            "ru": "## Ротация\n- Спам базовой атакой, навык при необходимости"
+        "notable_eidolons": {
+            "priority": {
+                "en": "E1, E4, E6",
+                "ru": "E1, E4, E6"
+            },
+            "details": {
+                "en": "- E1 increases the chance for allies to apply debuffs.\n- E4 makes her gain extra Energy whenever enemies take damage from Burn applied by Guinaifen.\n- E6 increases the amount of \"Firekiss\" stacks she can apply by 1, increasing the potency of her debuffs.",
+                "ru": "- E1 увеличивает шанс наложения союзниками дебаффов.\n- E4 позволяет ей получать дополнительную энергию всякий раз, когда враги получают урон от статуса Горения, наложенного Гуйнайфэнь.\n- E6 увеличивает количество ур. статуса Огнененный поцелуй, которые она может наложить, на 1, повышая силу ее дебаффов."
+            }
         }
-    ]
+    }
 }

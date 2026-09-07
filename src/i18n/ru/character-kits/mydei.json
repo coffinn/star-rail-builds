@@ -2,7 +2,7 @@
     "id": "mydei",
     "name": "Мидей",
     "rarity": 5,
-    "element": "imaginary",
+    "type": "imaginary",
     "path": "destruction",
     "version_released": "3.1",
     "max_energy": 160,

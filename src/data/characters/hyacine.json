@@ -2,7 +2,7 @@
   "id": "hyacine",
   "name": "Hyacine",
   "rarity": "5",
-  "element": "wind",
+  "type": "wind",
   "path": "remembrance",
   "version_released": "3.3",
   "max_energy": 140,

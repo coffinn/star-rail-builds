@@ -2,7 +2,7 @@
   "id": "sunday",
   "name": "Воскресенье",
   "rarity": 5,
-  "element": "imaginary",
+  "type": "imaginary",
   "path": "harmony",
   "version_released": "2.7",
   "max_energy": 130,

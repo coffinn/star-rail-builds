@@ -2,13 +2,13 @@
 import { Image } from 'astro:assets';
 import { t } from '../utils/i18n';
 import { localizedPath } from '../utils/paths';
-import physicalIcon from '../assets/browser-icons/elements/physical.png';
-import fireIcon from '../assets/browser-icons/elements/fire.png';
-import iceIcon from '../assets/browser-icons/elements/ice.png';
-import lightningIcon from '../assets/browser-icons/elements/lightning.png';
-import windIcon from '../assets/browser-icons/elements/wind.png';
-import quantumIcon from '../assets/browser-icons/elements/quantum.png';
-import imaginaryIcon from '../assets/browser-icons/elements/imaginary.png';
+import physicalIcon from '../assets/browser-icons/types/physical.png';
+import fireIcon from '../assets/browser-icons/types/fire.png';
+import iceIcon from '../assets/browser-icons/types/ice.png';
+import lightningIcon from '../assets/browser-icons/types/lightning.png';
+import windIcon from '../assets/browser-icons/types/wind.png';
+import quantumIcon from '../assets/browser-icons/types/quantum.png';
+import imaginaryIcon from '../assets/browser-icons/types/imaginary.png';
 
 import destructionIcon from '../assets/browser-icons/paths/destruction.png';
 import huntIcon from '../assets/browser-icons/paths/hunt.png';
@@ -20,7 +20,7 @@ import abundanceIcon from '../assets/browser-icons/paths/abundance.png';
 import remembranceIcon from '../assets/browser-icons/paths/remembrance.png';
 import elationIcon from '../assets/browser-icons/paths/elation.png';
 
-const elementIcons = {
+const typeIcons = {
     physical: physicalIcon,
     fire: fireIcon,
     ice: iceIcon,
@@ -66,8 +66,8 @@ const sortOptions = [
         label: t(locale, 'ui', 'Characters - A-Z', undefined, false),
     },
     {
-        value: 'element',
-        label: t(locale, 'ui', 'Element - A-Z', undefined, false),
+        value: 'type',
+        label: t(locale, 'ui', 'type - A-Z', undefined, false),
     },
     {
         value: 'rarity',
@@ -82,24 +82,24 @@ function formatUiTemplate(template: string, name: string) {
 function getCharacterViewModel(character: any) {
     const href = localizedPath(lang, character.slug);
 
-    const elementLabel = t(locale, 'element', character.element);
+    const typeLabel = t(locale, 'type', character.type);
 
     const pathLabel = t(locale, 'path', character.path);
 
     const rarityLabel = `${character.rarity}\u2605`;
 
-    const elementIcon =
-        elementIcons[character.element as keyof typeof elementIcons];
+    const typeIcon =
+        typeIcons[character.type as keyof typeof typeIcons];
 
     const pathIcon = pathIcons[character.path as keyof typeof pathIcons];
 
     return {
         ...character,
         href,
-        elementLabel,
+        typeLabel,
         pathLabel,
         rarityLabel,
-        elementIcon,
+        typeIcon,
         pathIcon,
     };
 }
@@ -134,7 +134,7 @@ const rosterCharacters: ReturnType<typeof getCharacterViewModel>[] =
                         sortOptions.map((option) => (
                             <option
                                 value={option.value}
-                                selected={option.value === 'element'}
+                                selected={option.value === 'type'}
                             >
                                 {option.label}
                             </option>
@@ -154,7 +154,7 @@ const rosterCharacters: ReturnType<typeof getCharacterViewModel>[] =
 
                     return (
                         <a
-                            class={`roster-character ${character.element}${character.isWip ? ' is-wip' : ''}`}
+                            class={`roster-character ${character.type}${character.isWip ? ' is-wip' : ''}`}
                             href={character.isWip ? undefined : character.href}
                             aria-label={
                                 character.isWip
@@ -163,7 +163,7 @@ const rosterCharacters: ReturnType<typeof getCharacterViewModel>[] =
                             }
                             aria-disabled={character.isWip ? 'true' : undefined}
                             data-character-card
-                            data-element={character.element}
+                            data-type={character.type}
                             data-last-updated={character.lastUpdated}
                             data-name={character.name}
                             data-recent-updated={
@@ -191,12 +191,12 @@ const rosterCharacters: ReturnType<typeof getCharacterViewModel>[] =
                                 class="roster-character-emblems"
                                 aria-hidden="true"
                             >
-                                {character.elementIcon && (
+                                {character.typeIcon && (
                                     <img
-                                        class="roster-character-emblem roster-character-emblem-element"
-                                        src={character.elementIcon.src}
+                                        class="roster-character-emblem roster-character-emblem-type"
+                                        src={character.typeIcon.src}
                                         alt=""
-                                        title={character.elementLabel}
+                                        title={character.typeLabel}
                                         width="28"
                                         height="28"
                                     />

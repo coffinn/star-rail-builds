@@ -68,7 +68,7 @@ It covers:
 Character build content is organized by:
 
 ```text
-src/content/<element>/<rarity>/<character>/<build>/
+src/content/<type>/<rarity>/<character>/<build>/
 ```
 
 Example:
@@ -80,7 +80,7 @@ src/content/quantum/5/silver-wolf/support/
 Breaking that down:
 
 ```text
-quantum       = element
+quantum       = type
 5             = rarity
 silver-wolf   = character slug
 support       = build slug
@@ -139,7 +139,7 @@ If the character already exists and you only want to add one build:
 Create a build folder:
 
 ```text
-src/content/<element>/<rarity>/<character>/<build-slug>/
+src/content/<type>/<rarity>/<character>/<build-slug>/
 ```
 
 Example:
@@ -206,7 +206,7 @@ npm run build
 Character-level metadata lives at:
 
 ```text
-src/content/<element>/<rarity>/<character>/metadata.json
+src/content/<type>/<rarity>/<character>/metadata.json
 ```
 
 Example:
@@ -273,7 +273,7 @@ This is used for release-date sorting.
 
 ---
 
-## Element, rarity, and character slug
+## Type, rarity, and character slug
 
 These come from the folder path itself:
 
@@ -284,7 +284,7 @@ src/content/quantum/5/silver-wolf/
 means:
 
 ```text
-element   = quantum
+type   = quantum
 rarity    = 5
 slug      = silver-wolf
 ```
@@ -578,7 +578,7 @@ Do not duplicate identical files unless there is a reason.
 Location:
 
 ```text
-src/content/<element>/<rarity>/<character>/<build>/build-notes.json
+src/content/<type>/<rarity>/<character>/<build>/build-notes.json
 ```
 
 This controls:
@@ -675,7 +675,7 @@ If no visible name exists, the site falls back to the build folder slug.
 Location:
 
 ```text
-src/content/<element>/<rarity>/<character>/<build>/light-cones.json
+src/content/<type>/<rarity>/<character>/<build>/light-cones.json
 ```
 
 Light Cones are ranked from top to bottom.
@@ -870,7 +870,7 @@ This creates a general note for the Light Cone section without attaching `ⓘ` t
 Location:
 
 ```text
-src/content/<element>/<rarity>/<character>/<build>/relic-sets.json
+src/content/<type>/<rarity>/<character>/<build>/relic-sets.json
 ```
 
 This file contains:
@@ -1214,7 +1214,7 @@ Conditional entries are group objects directly:
 Location:
 
 ```text
-src/content/<element>/<rarity>/<character>/<build>/relic-mainstats.json
+src/content/<type>/<rarity>/<character>/<build>/relic-mainstats.json
 ```
 
 HSR Main Stats use these slots:
@@ -1344,7 +1344,7 @@ You can mix object and string entries:
 Location:
 
 ```text
-src/content/<element>/<rarity>/<character>/<build>/relic-substats.json
+src/content/<type>/<rarity>/<character>/<build>/relic-substats.json
 ```
 
 ---
@@ -1433,7 +1433,7 @@ If a priority row needs custom text, the `name` may use translation tokens:
 Location:
 
 ```text
-src/content/<element>/<rarity>/<character>/<build>/recommended-stats.json
+src/content/<type>/<rarity>/<character>/<build>/recommended-stats.json
 ```
 
 This section is for **final character stat targets**, not Relic main-stat choices.
@@ -1666,7 +1666,7 @@ Example:
 Location:
 
 ```text
-src/content/<element>/<rarity>/<character>/<build>/traces.json
+src/content/<type>/<rarity>/<character>/<build>/traces.json
 ```
 
 This controls Trace leveling priority.
@@ -3097,7 +3097,7 @@ If two builds use the exact same file, use a character-level default instead of 
       "spd"
     ],
     "planar_sphere": [
-      "element-dmg"
+      "type-dmg"
     ],
     "link_rope": [
       "atk%"
@@ -3109,10 +3109,10 @@ If two builds use the exact same file, use a character-level default instead of 
 Replace:
 
 ```text
-element-dmg
+type-dmg
 ```
 
-with the actual supported elemental DMG ID, for example:
+with the actual supported type DMG ID, for example:
 
 ```text
 quantum-dmg
@@ -3229,7 +3229,7 @@ Remove fields or entries that are not needed before committing.
 ## Alternate-build starter structure
 
 ```text
-src/content/<element>/<rarity>/<character>/
+src/content/<type>/<rarity>/<character>/
 ├── metadata.json
 ├── main-build/
 │   ├── build-notes.json
@@ -3276,7 +3276,7 @@ Alternate:
 
 Before considering a character build finished:
 
-- [ ] Character folder is under the correct element and rarity.
+- [ ] Character folder is under the correct type and rarity.
 - [ ] `metadata.json` has the correct Path.
 - [ ] `last_updated` is current.
 - [ ] Build folder uses a stable lowercase slug.
@@ -3312,7 +3312,7 @@ If you only need the answer to "How do I add another build?", it is:
 1. Go to the character folder:
 
    ```text
-   src/content/<element>/<rarity>/<character>/
+   src/content/<type>/<rarity>/<character>/
    ```
 
 2. Create another child folder:

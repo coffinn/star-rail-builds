@@ -8,7 +8,7 @@
                 },
                 {
                     "name": "those-many-springs",
-                    "superimposition": 5
+                    "superimposition": 1
                 }
             ]
         },
@@ -16,7 +16,7 @@
             "items": [
                 {
                     "name": "why-does-the-ocean-sing",
-                    "superimposition": 5
+                    "superimposition": 1
                 }
             ]
         },
@@ -28,7 +28,7 @@
                 }
             ]
         },
-        {"items":[{"name": "pearls","superimposition":1}]},
+        {"items":[{"name": "pearls","superimposition":5}]},
         {
             "items": [
                 {

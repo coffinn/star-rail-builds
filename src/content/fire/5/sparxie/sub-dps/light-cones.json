@@ -3,21 +3,24 @@
         {
             "items": [
                 {
-                    "name": "dazzled-by-a-flowery-world"
+                    "name": "dazzled-by-a-flowery-world",
+                    "superimposition": 1
                 }
             ]
         },
         {
             "items": [
                 {
-                    "name": "todays-good-luck"
+                    "name": "todays-good-luck",
+                    "superimposition": 5
                 }
             ]
         },
         {
             "items": [
                 {
-                    "name": "mushy-shroomys-adventures"
+                    "name": "mushy-shroomys-adventures",
+                    "superimposition": 5
                 }
             ]
         }

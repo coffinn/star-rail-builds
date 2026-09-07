@@ -2,7 +2,7 @@
   "id": "evernight",
   "name": "Темень",
   "rarity": "5",
-  "element": "ice",
+  "type": "ice",
   "path": "remembrance",
   "version_released": "3.6",
   "max_energy": 240,

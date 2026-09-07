@@ -2,7 +2,7 @@
     "id": "boothill",
     "name": "Бутхилл",
     "rarity": 5,
-    "element": "physical",
+    "type": "physical",
     "path": "hunt",
     "version_released": "2.2",
     "max_energy": 115,

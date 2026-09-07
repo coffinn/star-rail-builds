@@ -2,7 +2,7 @@
     "id": "rappa",
     "name": "Rappa",
     "rarity": 5,
-    "element": "imaginary",
+    "type": "imaginary",
     "path": "erudition",
     "version_released": "2.6",
     "max_energy": 160,

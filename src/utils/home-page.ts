@@ -58,7 +58,7 @@ function getBuildSummaries(
 /**
  * Builds the localized character list used by the home page.
  *
- * The content directory is the source of truth: element, rarity, and slug come
+ * The content directory is the source of truth: type, rarity, and slug come
  * from folder names, Path comes from metadata.json, and images come from
  * src/assets/character-assets.
  *
@@ -72,10 +72,10 @@ export function getHomePageData(lang = 'en') {
     const recentVersions = getRecentChangelogVersions(contentPath);
 
     const characters = getContentCharacters(contentPath, true)
-        .map(({ character, characterPath, element, metadataPath, rarity }) => {
+        .map(({ character, characterPath, type, metadataPath, rarity }) => {
             const metadata = readJSONFile(metadataPath);
             const assetContext = {
-                element,
+                type,
                 rarity,
                 character,
                 characterPath,
@@ -93,7 +93,7 @@ export function getHomePageData(lang = 'en') {
                     character,
 
                 }),
-                element,
+                type,
                 rarity,
                 path: metadata.path,
                 lastUpdated,
@@ -106,7 +106,7 @@ export function getHomePageData(lang = 'en') {
         })
         .sort(
             (a, b) =>
-                a.element.localeCompare(b.element) || a.name.localeCompare(b.name),
+                a.type.localeCompare(b.type) || a.name.localeCompare(b.name),
         );
 
     const recentlyUpdatedCharacters = characters.filter(

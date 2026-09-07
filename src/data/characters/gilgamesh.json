@@ -2,7 +2,7 @@
   "id": "gilgamesh",
   "name": "Gilgamesh",
   "rarity": 5,
-  "element": "lightning",
+  "type": "lightning",
   "path": "destruction",
   "version_released": "4.4",
   "max_energy": 360,

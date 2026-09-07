@@ -53,7 +53,7 @@
     "Trace Details": "Chi tiết Vết Tích",
     "Information": "Thông Tin",
     "All": "Tất Cả",
-    "Search": "Tìm Kiếm",
+    "Search": "Tìm kiếm",
     "Search by name": "Tìm kiếm theo tên",
     "Stat": "Chỉ Số",
     "Base ATK": "Tấn Công cơ bản",
@@ -152,5 +152,9 @@
     "Legal notice rights reserved": "© Mọi quyền lợi được bảo lưu bởi COGNOSPHERE. Các tài sản khác thuộc về chủ sở hữu tương ứng.",
     "Footer attribution": "Mã nguồn nguyên bản đã được đội ngũ cộng tác viên của dự án Honkai: Star Rail Navigator chỉnh sửa và chuyển thể từ dự án Genshin Impact Helper Team. Trang web này không trực thuộc HoYoverse.",
     "Footer copyright": "Honkai: Star Rail, nội dung trò chơi và các tài liệu liên quan là thương hiệu và tài sản có bản quyền của COGNOSPHERE, HoYoverse và các chủ sở hữu tương ứng.",
-    "View GitHub": "Xem GitHub"
+    "View GitHub": "Xem GitHub",
+    "Overview": "Tổng quan",
+    "Summary and General Analysis": "Tóm tắt và Phân tích chung",
+    "Investment Priority": "Ưu tiên đầu tư",
+    "Notable Eidolons": "Các Tinh Hồn đáng chú ý"
 }

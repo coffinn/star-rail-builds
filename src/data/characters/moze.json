@@ -2,7 +2,7 @@
   "id": "moze",
   "name": "Moze",
   "rarity": "4",
-  "element": "lightning",
+  "type": "lightning",
   "path": "hunt",
   "version_released": "2.5",
   "max_energy": 120,

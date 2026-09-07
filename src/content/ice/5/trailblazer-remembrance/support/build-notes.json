@@ -3,18 +3,18 @@
     "name": {
         "en": "Support"
     },
-    "notes": [
-        {
-            "en": "## Summary and General Analysis\n- [[character:rmc]] is a general support, providing CRIT Rate and True DMG to a target ally.\n- [[character:rmc]]'s Memosprite Mem gains charge when allies gain energy, with 10 Energy from allies granting Mem 1% Charge. At 100% Charge, Mem can grant advance the action of 1 ally by 100%, granting a True DMG and CRIT Rate buff. Mem also constantly gives the entire team a CRIT DMG boost.\n- The True DMG given by Mem increases when the target ally has more Max Energy, up to 200 Max Energy. For units that do not use Energy, [[character:rmc]]'s E4 allows Mem to gain 3% Charge from their action while also giving an increase in True DMG buff."
+    "notes": [],
+    "overview": {
+        "summary": {
+            "en": "- [[character:rmc]] is a general support, providing CRIT Rate and True DMG to a target ally.\n- [[character:rmc]]'s Memosprite Mem gains charge when allies gain energy, with 10 Energy from allies granting Mem 1% Charge. At 100% Charge, Mem can grant advance the action of 1 ally by 100%, granting a True DMG and CRIT Rate buff. Mem also constantly gives the entire team a CRIT DMG boost.\n- The True DMG given by Mem increases when the target ally has more Max Energy, up to 200 Max Energy. For units that do not use Energy, [[character:rmc]]'s E4 allows Mem to gain 3% Charge from their action while also giving an increase in True DMG buff."
         },
-        {
-            "en": "## Notable Eidolons\n ### E1\n- E1 increases CRIT Rate of a selected ally target by 10% when Mem's Charge reaches 100%."
-        },
-        {
-            "en": "## Skill Point Usage\n- Positive / Varies."
-        },
-        {
-            "en": "## Ability Rotation\n- [[ability:basic]] spam / Varies."
+        "notable_eidolons": {
+            "priority": {
+                "en": "E1"
+            },
+            "details": {
+                "en": "- E1 increases CRIT Rate of a selected ally target by 10% when Mem's Charge reaches 100%."
+            }
         }
-    ]
+    }
 }

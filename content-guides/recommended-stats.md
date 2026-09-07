@@ -18,7 +18,7 @@ The system supports both **Baseline** and **Recommended** values. Either value c
 For a specific build, create:
 
 ```text
-src/content/<element>/<rarity>/<character>/<build>/recommended-stats.json
+src/content/<type>/<rarity>/<character>/<build>/recommended-stats.json
 ```
 
 Example for Silver Wolf's Support build:
@@ -273,7 +273,7 @@ recommended-stats.json
 directly in the character folder:
 
 ```text
-src/content/<element>/<rarity>/<character>/recommended-stats.json
+src/content/<type>/<rarity>/<character>/recommended-stats.json
 ```
 
 Example:
@@ -524,13 +524,13 @@ recommended-stats.json
 Build-specific location:
 
 ```text
-src/content/<element>/<rarity>/<character>/<build>/recommended-stats.json
+src/content/<type>/<rarity>/<character>/<build>/recommended-stats.json
 ```
 
 Character-level default location:
 
 ```text
-src/content/<element>/<rarity>/<character>/recommended-stats.json
+src/content/<type>/<rarity>/<character>/recommended-stats.json
 ```
 
 Minimum valid example:

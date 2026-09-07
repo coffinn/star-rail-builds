@@ -2,7 +2,7 @@
   "id": "anaxa",
   "name": "那刻夏",
   "rarity": 5,
-  "element": "wind",
+  "type": "wind",
   "path": "erudition",
   "version_released": "3.2",
   "max_energy": 140,

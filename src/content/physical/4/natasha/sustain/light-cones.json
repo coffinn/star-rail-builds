@@ -3,42 +3,49 @@
         {
             "items": [
                 {
-                    "name": "night-of-fright"
+                    "name": "night-of-fright",
+                    "superimposition": 1
                 },
                 {
-                    "name": "unto-tomorrows-morrow"
+                    "name": "unto-tomorrows-morrow",
+                    "superimposition": 5
                 },
                 {
-                    "name": "multiplication"
+                    "name": "multiplication",
+                    "superimposition": 5
                 },
                 {
-                    "name": "quid-pro-quo"
+                    "name": "quid-pro-quo",
+                    "superimposition": 5
                 }
             ]
         },
         {
             "items": [
                 {
-                    "name": "postop"
+                    "name": "postop",
+                    "superimposition": 5
                 }
             ]
         },
         {
             "items": [
                 {
-                    "name": "perfect-timing"
+                    "name": "perfect-timing",
+                    "superimposition": 5
                 }
             ]
         }
     ],
-  "conditional": [
-    {
-      "name": "shared-feeling",
-      "note_group": "skill-spam",
-      "note": {
-        "en": "Can be used if Natasha is able to Skill spam.",
-        "ru": "Можно использовать, если Наташа способна часто использовать навык."
-      }
-    }
-  ]
+    "conditional": [
+        {
+            "name": "shared-feeling",
+            "superimposition": 5,
+            "note_group": "skill-spam",
+            "note": {
+                "en": "Can be used if Natasha is able to Skill spam.",
+                "ru": "Можно использовать, если Наташа способна часто использовать навык."
+            }
+        }
+    ]
 }

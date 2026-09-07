@@ -3,18 +3,19 @@
     "name": {
         "en": "Break DPS"
     },
-            "notes": [
-        {
-            "en": "## Summary and General Analysis\n- Boothill is a single target Break DPS who uses his Skill to force him and an enemy into the \"Standoff\" state, dealing more damage to the enemy target at the cost of taking more damage. During \"Standoff\", his Basic ATK is Enhanced, and he can only target the selected enemy.\n- When inflicting Weakness Break or defeating an enemy, Boothill gains \"Pocket Trickshot\", which increases the Weakness Break Efficiency and damage of his Enhanced Basic ATK, stacking up to 3 times.\n- Boothill's performance is heavily reliant on The Dahlia and Fugue. The Dahlia provides invaluable Break support that makes her a neccecity for Break teams. Fugue's Exo-Toughness mechanic helps Boothill quickly gain \"Pocket Trickshot\", along with her other utility."
+    "notes": [
+    ],
+    "overview": {
+        "summary": {
+            "en": "- Boothill is a single target Break DPS who uses his Skill to force him and an enemy into the \"Standoff\" state, dealing more damage to the enemy target at the cost of taking more damage. During \"Standoff\", his Basic ATK is Enhanced, and he can only target the selected enemy.\n- When inflicting Weakness Break or defeating an enemy, Boothill gains \"Pocket Trickshot\", which increases the Weakness Break Efficiency and damage of his Enhanced Basic ATK, stacking up to 3 times.\n- Boothill's performance is heavily reliant on The Dahlia and Fugue. The Dahlia provides invaluable Break support that makes her a neccecity for Break teams. Fugue's Exo-Toughness mechanic helps Boothill quickly gain \"Pocket Trickshot\", along with her other utility."
         },
-        {
-            "en": "## Investment Priority\n ### E1 > S1\n- Boothill's E1 helps with his early \"Pocket Trickshot\" ramp up.\n- While his S1 [[light-cone:sailing-towards-a-second-life]] provides him with valuable stats such as [[stat:be]], [[stat:spd]], and DEF Ignore, it is a lower priority compared to other investments since he has access to other viable alternatives."
-        },
-        {
-            "en": "## Skill Point Usage\n- Negative at E0"
-        },
-        {
-            "en": "## Ability Rotation\n- Skill spam outside \"Standoff\""
-        }        
-    ]
+        "investment_priority": {
+            "priority": {
+                "en": "E1 > S1"
+            },
+            "details": {
+                "en": "- Boothill's E1 helps with his early \"Pocket Trickshot\" ramp up.\n- While his S1 [[light-cone:sailing-towards-a-second-life]] provides him with valuable stats such as [[stat:be]], [[stat:spd]], and DEF Ignore, it is a lower priority compared to other investments since he has access to other viable alternatives."
+            }
+        }
+    }
 }    

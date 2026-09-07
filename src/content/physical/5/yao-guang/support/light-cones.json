@@ -3,14 +3,16 @@
         {
             "items": [
                 {
-                    "name": "when-she-decided-to-see"
+                    "name": "when-she-decided-to-see",
+                    "superimposition": 1
                 }
             ]
         },
         {
             "items": [
                 {
-                    "name": "mushy-shroomys-adventures"
+                    "name": "mushy-shroomys-adventures",
+                    "superimposition": 5
                 }
             ]
         }

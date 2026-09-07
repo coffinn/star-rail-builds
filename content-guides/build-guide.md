@@ -11,7 +11,7 @@ It assumes the character itself already exists. This guide only covers the build
 A build lives inside the character's content folder:
 
 ```text
-src/content/<element>/<rarity>/<character>/<build>/
+src/content/<type>/<rarity>/<character>/<build>/
 ```
 
 Example:

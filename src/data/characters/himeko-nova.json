@@ -2,7 +2,7 @@
     "id": "himeko-nova",
     "name": "Himeko • Nova",
     "rarity": 5,
-    "element": "fire",
+    "type": "fire",
     "path": "erudition",
     "version_released": "4.4",
     "max_energy": 150,

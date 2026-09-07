@@ -6,7 +6,7 @@ const versionNumber = (version) => {
 const compareVersionNewest = (left, right) =>
     versionNumber(right) - versionNumber(left);
 const value = (card, name) => card.dataset[name] ?? '';
-const elementOrder = [
+const typeOrder = [
     'physical',
     'fire',
     'ice',
@@ -16,9 +16,9 @@ const elementOrder = [
     'imaginary',
 ];
 
-const elementRank = (element) => {
+const typeRank = (type) => {
     const index =
-        elementOrder.indexOf(element);
+        typeOrder.indexOf(type);
 
     return index === -1
         ? Number.MAX_SAFE_INTEGER
@@ -51,11 +51,11 @@ export function compareCharacterCards(left, right, sort) {
     }
 
     return (
-        elementRank(
-            value(left, 'element'),
+        typeRank(
+            value(left, 'type'),
         ) -
-        elementRank(
-            value(right, 'element'),
+        typeRank(
+            value(right, 'type'),
         ) ||
         byName
     );

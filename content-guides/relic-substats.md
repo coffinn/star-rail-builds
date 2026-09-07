@@ -16,7 +16,7 @@ src/content/<type>/<rarity>/<character>/<build>/relic-substats.json
     }
   ],
   "substats_priority": [
-    "er",
+    "err",
     {
       "name": "cr",
       "note": {
@@ -37,8 +37,7 @@ src/content/<type>/<rarity>/<character>/<build>/relic-substats.json
 ## Fields
 
 - `substats_priority`: Ordered list of substats.
-- `notes`: Optional top-level section notes shown under
-  `Regarding Relic Choices:` without adding a `*` marker to any substat.
+- `notes`: Optional top-level section notes
 - Each item may be either:
   - a stat ID string, such as `"cr"` or `"atk%"`
   - an object with `name` and optional `note`
@@ -48,7 +47,7 @@ src/content/<type>/<rarity>/<character>/<build>/relic-substats.json
   inline translation tokens when a row needs custom text, such as
   `"[[stat:cr/cd]] / [[stat:hp%]]"`.
 - `items`: List of stat strings or stat objects for same-rank alternatives.
-- `note`: Optional localized editorial note. Adds a `*` marker beside the
+- `note`: Optional localized editorial note. Adds a `ⓘ` marker beside the
   substat and renders in the `Substats` part of the relic notes section.
 
 ## Notes
@@ -56,10 +55,8 @@ src/content/<type>/<rarity>/<character>/<build>/relic-substats.json
 - String items are concise and should be used when no note is needed.
 - Object items should be used when a substat needs an explanation, or when the
   row needs custom text with inline translation tokens.
-- Adding `note` to a substat automatically adds a `*` marker next to that
+- Adding `note` to a substat automatically adds a `ⓘ` marker next to that
   substat in the substat priority list.
-- The same `note` also automatically creates a matching note entry under the
-  `Substats` part of `Regarding Relic Choices:`.
 - Notes support Markdown and inline translation tokens.
 
 Example with the same note translated in different languages:
@@ -102,7 +99,7 @@ Alternative groups are useful when two stats share a priority slot.
         "fr": "Something about prioritizing CRIT Rate until 100%."
       }
     },
-    "cr/cd",
+    "cd",
     {
       "items": [
         "atk%",
@@ -116,8 +113,8 @@ Alternative groups are useful when two stats share a priority slot.
 This renders as:
 
 ```txt
-1. Energy Recharge*
-2. CRIT Rate / CRIT DMG
+1. CRIT Rate*
+2. CRIT DMG
 3. ATK%
 ≈ SPD
 ```

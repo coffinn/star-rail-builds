@@ -2,7 +2,7 @@
     "id": "dan-heng",
     "name": "Дань Хэн",
     "rarity": "4",
-    "element": "wind",
+    "type": "wind",
     "path": "hunt",
     "version_released": "1.0",
     "max_energy": 100,

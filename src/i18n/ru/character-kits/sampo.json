@@ -2,7 +2,7 @@
     "id": "sampo",
     "name": "Сампо",
     "rarity": "4",
-    "element": "wind",
+    "type": "wind",
     "path": "nihility",
     "version_released": "1.0",
     "max_energy": 120,

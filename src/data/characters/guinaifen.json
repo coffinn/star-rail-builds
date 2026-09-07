@@ -2,7 +2,7 @@
   "id": "guinaifen",
   "name": "Guinaifen",
   "rarity": 4,
-  "element": "fire",
+  "type": "fire",
   "path": "nihility",
   "version_released": "1.4",
   "max_energy": 120,
