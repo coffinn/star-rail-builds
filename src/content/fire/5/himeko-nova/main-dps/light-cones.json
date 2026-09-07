@@ -1,0 +1,52 @@
+{
+    "light_cones": [
+        {
+            "items": [
+                {
+                    "name": "a-star-that-lights-the-night",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "into-the-unreachable-veil",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "life-should-be-cast-to-flames",
+                    "superimposition": 1
+                },
+                {
+                    "name": "milky-way",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "repose",
+                    "superimposition": 5
+                },
+                {
+                    "name": "the-day-the-cosmos-fell",
+                    "superimposition": 5
+                },
+                {
+                    "name": "peaceful-day",
+                    "superimposition": 5
+                },
+                {
+                    "name": "calculus",
+                    "superimposition": 5
+                }
+            ]
+        }
+    ]
+}

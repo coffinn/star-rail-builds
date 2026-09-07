@@ -1,0 +1,23 @@
+{
+    "main_stats": {
+        "body": [
+            "cr/cd"
+        ],
+        "feet": [
+            "atk%"
+        ],
+        "planar_sphere": [
+            "atk%",
+            "fire-dmg"
+        ],
+        "link_rope": [
+            "atk%",
+            {
+                "name": "err",
+                "note": {
+                    "en": "An energy regeneration rope can be used in some rotations."
+                }
+            }
+        ]
+    }
+}

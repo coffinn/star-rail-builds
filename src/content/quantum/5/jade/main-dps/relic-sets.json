@@ -1,0 +1,87 @@
+{
+    "relic_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "genius",
+                            "pieces": 4,
+                            "note": {
+                                "en": "This set is best if enemy is Quantum Weak, Jade has S1, or has sources of DEF shred on the team. If none of the former is true, [[set:duke]] is slightly better."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "duke",
+                            "pieces": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "poet",
+                            "pieces": 4
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "planar_ornaments": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "duran",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "sigonia",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Viable option for Pure Fiction."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "izumo",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Viable option if paired with an Erudition ally."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

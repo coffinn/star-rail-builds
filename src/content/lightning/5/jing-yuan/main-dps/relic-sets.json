@@ -1,0 +1,42 @@
+{
+    "relic_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "duke",
+                            "pieces": 4
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "planar_ornaments": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "banana",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "salsotto",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

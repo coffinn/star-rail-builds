@@ -1,0 +1,43 @@
+{
+    "light_cones": [
+        {
+            "items": [
+                {
+                    "name": "ninjutsu-inscription-dazzling-evilbreaker",
+                    "superimposition": 1,
+                    "note": {
+                        "en": "Achieving 167 SPD on Rappa with Ninjutsu Inscription: Dazzling Evilbreaker allows her to get all 3 Enhanced Basic Attacks within the first cycle. This requirement drops to 157.1 SPD when paired with Ruan Mei, or 151 SPD when paired with [[light-cone:ddd]] S5."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "clamor",
+                    "superimposition": 5
+                },
+                {
+                    "name": "charmony",
+                    "superimposition": 5
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "calculus",
+                    "superimposition": 5
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "passkey",
+                    "superimposition": 5
+                }
+            ]
+        }
+    ]
+}

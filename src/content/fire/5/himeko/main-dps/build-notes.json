@@ -1,0 +1,24 @@
+{
+    "best": true,
+    "name": {
+        "en": "Break DPS"
+    },
+    "notes": [
+        {
+            "en": "When using Himeko as a Super Break DPS, her traces can be ignored."
+        }
+    ],
+    "overview": {
+        "summary": {
+            "en": "- Himeko is a DPS unit who primarily deals damage through her follow-up attacks.\n- When normal enemies or Elite enemies become Weakness Broken, Himeko gains one or three charges respectively, up to a max of 3 Charges.. Upon reaching three Charges, she unleashes a Follow-Up ATK that deals damage to all enemies.\n- Himeko's performance is reliant on Dahlia and Fugue for charge generation and consistent Super Break damage.\n- Himeko excels in content where enemies can be frequently Weakness Broken, such as Pure Fiction.\n- Despite Himeko having CRIT traces, her damage nowadays is underwhelming, unlike her Toughness damage, making her a viable Break carry."
+        },
+        "investment_priority": {
+            "priority": {
+                "en": "S1 > E1"
+            },
+            "details": {
+                "en": "- "
+            }
+        }
+    }
+}
