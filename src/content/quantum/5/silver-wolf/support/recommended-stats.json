@@ -14,12 +14,12 @@
             "recommended": "67%"
         },
         {
-            "name": "total-hp",
+            "name": "hp",
             "baseline": "3000+",
             "recommended": "3500+"
         },
         {
-            "name": "total-def",
+            "name": "def",
             "recommended": "1000+"
         }
     ]
