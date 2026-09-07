@@ -29,8 +29,7 @@ const { notes, buildNote, locale } = Astro.props as {
     locale: any;
 };
 
-const ui = (id: string) =>
-    t(locale, 'ui', id, undefined, false);
+const ui = (id: string) => t(locale, 'ui', id, undefined, false);
 
 /*
  * Short / attached notes.
@@ -55,47 +54,39 @@ const globalNotes: string[] = [
     ...(notes?.traces?.global ?? []),
 ];
 
-const buildNotes: string[] =
-    buildNote?.notes ?? [];
+const buildNotes: string[] = buildNote?.notes ?? [];
 
 const hasNotes =
-    itemNotes.length > 0 ||
-    globalNotes.length > 0 ||
-    buildNotes.length > 0;
+    itemNotes.length > 0 || globalNotes.length > 0 || buildNotes.length > 0;
 
 /*
  * Long-form build overview.
  */
 const overview = buildNote?.overview;
 
-const hasSummary =
-    Boolean(overview?.summary);
+const hasSummary = Boolean(overview?.summary);
 
 /*
  * investment_priority and notable_eidolons are intentionally
  * interchangeable. If both are present, investment_priority wins.
  */
-const prioritySection =
-    overview?.investment_priority
-        ? {
-              title: ui('Investment Priority'),
-              data: overview.investment_priority,
-          }
-        : overview?.notable_eidolons
-          ? {
-                title: ui('Notable Eidolons'),
-                data: overview.notable_eidolons,
-            }
-          : null;
+const prioritySection = overview?.investment_priority
+    ? {
+          title: ui('Investment Priority'),
+          data: overview.investment_priority,
+      }
+    : overview?.notable_eidolons
+      ? {
+            title: ui('Notable Eidolons'),
+            data: overview.notable_eidolons,
+        }
+      : null;
 
-const hasPrioritySection =
-    Boolean(
-        prioritySection?.data?.priority ||
-        prioritySection?.data?.details,
-    );
+const hasPrioritySection = Boolean(
+    prioritySection?.data?.priority || prioritySection?.data?.details,
+);
 
-const hasOverview =
-    hasSummary || hasPrioritySection;
+const hasOverview = hasSummary || hasPrioritySection;
 ---
 
 {
@@ -104,45 +95,33 @@ const hasOverview =
             <h2>{ui('Notes')}</h2>
 
             <div class="notes-content">
-                {
-                    buildNotes.length > 0 && (
-                        <div class="build-note-list">
-                            {buildNotes.map((note) => (
-                                <div
-                                    class="build-note"
-                                    set:html={note}
-                                />
-                            ))}
-                        </div>
-                    )
-                }
+                {buildNotes.length > 0 && (
+                    <div class="build-note-list">
+                        {buildNotes.map((note) => (
+                            <div class="build-note" set:html={note} />
+                        ))}
+                    </div>
+                )}
 
-                {
-                    globalNotes.length > 0 && (
-                        <div class="notes-global-list">
-                            {globalNotes.map((note) => (
-                                <div
-                                    class="note-global"
-                                    set:html={note}
-                                />
-                            ))}
-                        </div>
-                    )
-                }
+                {globalNotes.length > 0 && (
+                    <div class="notes-global-list">
+                        {globalNotes.map((note) => (
+                            <div class="note-global" set:html={note} />
+                        ))}
+                    </div>
+                )}
 
-                {
-                    itemNotes.length > 0 && (
-                        <div class="note-list">
-                            {itemNotes.map((note) => (
-                                <div
-                                    id={note.id}
-                                    class="note-target"
-                                    set:html={`<span class="element-bold">${note.name}:</span> ${note.note}`}
-                                />
-                            ))}
-                        </div>
-                    )
-                }
+                {itemNotes.length > 0 && (
+                    <div class="note-list">
+                        {itemNotes.map((note) => (
+                            <div
+                                id={note.id}
+                                class="note-target"
+                                set:html={`<span class="element-bold">${note.name}:</span> ${note.note}`}
+                            />
+                        ))}
+                    </div>
+                )}
             </div>
         </section>
     )
@@ -154,61 +133,36 @@ const hasOverview =
             <h2>{ui('Overview')}</h2>
 
             <div class="overview-content">
-                {
-                    hasSummary && overview?.summary && (
-                        <section class="overview-section">
-                            <h3>
-                                {ui(
-                                    'Summary and General Analysis',
-                                )}
-                            </h3>
+                {hasSummary && overview?.summary && (
+                    <section class="overview-section">
+                        <h3>{ui('Summary and General Analysis')}</h3>
 
+                        <div
+                            class="overview-text"
+                            set:html={overview.summary}
+                        />
+                    </section>
+                )}
+
+                {hasPrioritySection && prioritySection && (
+                    <section class="overview-section">
+                        <h3>{prioritySection.title}</h3>
+
+                        {prioritySection.data.priority && (
+                            <div
+                                class="overview-investment-priority"
+                                set:html={prioritySection.data.priority}
+                            />
+                        )}
+
+                        {prioritySection.data.details && (
                             <div
                                 class="overview-text"
-                                set:html={overview.summary}
+                                set:html={prioritySection.data.details}
                             />
-                        </section>
-                    )
-                }
-
-                {
-                    hasPrioritySection &&
-                        prioritySection && (
-                            <section class="overview-section">
-                                <h3>
-                                    {prioritySection.title}
-                                </h3>
-
-                                {
-                                    prioritySection.data
-                                        .priority && (
-                                        <div
-                                            class="overview-investment-priority"
-                                            set:html={
-                                                prioritySection
-                                                    .data
-                                                    .priority
-                                            }
-                                        />
-                                    )
-                                }
-
-                                {
-                                    prioritySection.data
-                                        .details && (
-                                        <div
-                                            class="overview-text"
-                                            set:html={
-                                                prioritySection
-                                                    .data
-                                                    .details
-                                            }
-                                        />
-                                    )
-                                }
-                            </section>
-                        )
-                }
+                        )}
+                    </section>
+                )}
             </div>
         </section>
     )
@@ -220,12 +174,8 @@ const hasOverview =
     Hovering/focusing an ⓘ note link previews the matching note.
     Clicking the icon still follows the existing #note-id anchor.
 -->
-<div
-    id="note-preview-popup"
-    class="note-preview-popup"
-    role="tooltip"
-    hidden
-></div>
+<div id="note-preview-popup" class="note-preview-popup" role="tooltip" hidden>
+</div>
 
 <script>
     const root = document.documentElement;
@@ -233,10 +183,9 @@ const hasOverview =
     if (root.dataset.notePreviewReady !== 'true') {
         root.dataset.notePreviewReady = 'true';
 
-        const popup =
-            document.querySelector<HTMLElement>(
-                '#note-preview-popup',
-            );
+        const popup = document.querySelector<HTMLElement>(
+            '#note-preview-popup',
+        );
 
         let activeTrigger: HTMLElement | null = null;
         let showTimer: number | undefined;
@@ -254,11 +203,8 @@ const hasOverview =
             }
         };
 
-        const getPreviewContent = (
-            target: HTMLElement,
-        ) => {
-            const clone =
-                target.cloneNode(true) as HTMLElement;
+        const getPreviewContent = (target: HTMLElement) => {
+            const clone = target.cloneNode(true) as HTMLElement;
 
             clone.removeAttribute('id');
 
@@ -267,37 +213,24 @@ const hasOverview =
              * cards inside the note preview. Keep only their labels.
              */
             clone
-                .querySelectorAll(
-                    '.info-popover-card, [popover]',
-                )
+                .querySelectorAll('.info-popover-card, [popover]')
                 .forEach((element) => element.remove());
 
-            clone
-                .querySelectorAll('button, a')
-                .forEach((element) => {
-                    const replacement =
-                        document.createElement('span');
+            clone.querySelectorAll('button, a').forEach((element) => {
+                const replacement = document.createElement('span');
 
-                    replacement.innerHTML =
-                        element.innerHTML;
+                replacement.innerHTML = element.innerHTML;
 
-                    if (
-                        element.classList.contains(
-                            'info-popover-trigger',
-                        )
-                    ) {
-                        replacement.className =
-                            'note-preview-inline-name';
-                    }
+                if (element.classList.contains('info-popover-trigger')) {
+                    replacement.className = 'note-preview-inline-name';
+                }
 
-                    element.replaceWith(replacement);
-                });
+                element.replaceWith(replacement);
+            });
 
             clone
                 .querySelectorAll('[id]')
-                .forEach((element) =>
-                    element.removeAttribute('id'),
-                );
+                .forEach((element) => element.removeAttribute('id'));
 
             return clone.innerHTML;
         };
@@ -307,71 +240,50 @@ const hasOverview =
                 return;
             }
 
-            const triggerRect =
-                activeTrigger.getBoundingClientRect();
+            const triggerRect = activeTrigger.getBoundingClientRect();
 
-            const popupRect =
-                popup.getBoundingClientRect();
+            const popupRect = popup.getBoundingClientRect();
 
             const gap = 10;
             const edge = 12;
 
             let left =
-                triggerRect.left +
-                triggerRect.width / 2 -
-                popupRect.width / 2;
+                triggerRect.left + triggerRect.width / 2 - popupRect.width / 2;
 
             left = Math.max(
                 edge,
-                Math.min(
-                    left,
-                    window.innerWidth -
-                        popupRect.width -
-                        edge,
-                ),
+                Math.min(left, window.innerWidth - popupRect.width - edge),
             );
 
             const fitsBelow =
-                window.innerHeight -
-                    triggerRect.bottom >=
+                window.innerHeight - triggerRect.bottom >=
                 popupRect.height + gap + edge;
 
             let top = fitsBelow
                 ? triggerRect.bottom + gap
-                : triggerRect.top -
-                  popupRect.height -
-                  gap;
+                : triggerRect.top - popupRect.height - gap;
 
             top = Math.max(
                 edge,
-                Math.min(
-                    top,
-                    window.innerHeight -
-                        popupRect.height -
-                        edge,
-                ),
+                Math.min(top, window.innerHeight - popupRect.height - edge),
             );
 
             popup.style.left = `${left}px`;
             popup.style.top = `${top}px`;
         };
 
-        const showPreview = (
-            trigger: HTMLElement,
-        ) => {
+        const showPreview = (trigger: HTMLElement) => {
             if (!popup) {
                 return;
             }
 
-            const noteId =
-                trigger.dataset.notePreviewId;
+            const noteId = trigger.dataset.notePreviewId;
 
             if (!noteId) {
                 return;
             }
 
-            const target =
-                document.getElementById(noteId);
+            const target = document.getElementById(noteId);
 
             if (!target) {
                 return;
@@ -382,26 +294,18 @@ const hasOverview =
             showTimer = window.setTimeout(() => {
                 activeTrigger = trigger;
 
-                popup.innerHTML =
-                    getPreviewContent(target);
+                popup.innerHTML = getPreviewContent(target);
 
                 popup.hidden = false;
                 popup.dataset.open = 'true';
 
-                trigger.setAttribute(
-                    'aria-describedby',
-                    'note-preview-popup',
-                );
+                trigger.setAttribute('aria-describedby', 'note-preview-popup');
 
-                requestAnimationFrame(
-                    positionPopup,
-                );
+                requestAnimationFrame(positionPopup);
             }, 90);
         };
 
-        const hidePreview = (
-            trigger?: HTMLElement,
-        ) => {
+        const hidePreview = (trigger?: HTMLElement) => {
             if (!popup) {
                 return;
             }
@@ -409,16 +313,11 @@ const hasOverview =
             clearTimers();
 
             hideTimer = window.setTimeout(() => {
-                if (
-                    trigger &&
-                    activeTrigger !== trigger
-                ) {
+                if (trigger && activeTrigger !== trigger) {
                     return;
                 }
 
-                activeTrigger?.removeAttribute(
-                    'aria-describedby',
-                );
+                activeTrigger?.removeAttribute('aria-describedby');
 
                 activeTrigger = null;
                 popup.dataset.open = 'false';
@@ -427,103 +326,69 @@ const hasOverview =
             }, 80);
         };
 
-        document.addEventListener(
-            'pointerover',
-            (event) => {
-                const trigger = (
-                    event.target as HTMLElement
-                )?.closest<HTMLElement>(
-                    '.note-link[data-note-preview-id]',
-                );
+        document.addEventListener('pointerover', (event) => {
+            const trigger = (event.target as HTMLElement)?.closest<HTMLElement>(
+                '.note-link[data-note-preview-id]',
+            );
 
-                if (!trigger) {
-                    return;
-                }
+            if (!trigger) {
+                return;
+            }
 
+            showPreview(trigger);
+        });
+
+        document.addEventListener('pointerout', (event) => {
+            const trigger = (event.target as HTMLElement)?.closest<HTMLElement>(
+                '.note-link[data-note-preview-id]',
+            );
+
+            if (!trigger) {
+                return;
+            }
+
+            const related = event.relatedTarget as Node | null;
+
+            if (related && trigger.contains(related)) {
+                return;
+            }
+
+            hidePreview(trigger);
+        });
+
+        document.addEventListener('focusin', (event) => {
+            const trigger = (event.target as HTMLElement)?.closest<HTMLElement>(
+                '.note-link[data-note-preview-id]',
+            );
+
+            if (trigger) {
                 showPreview(trigger);
-            },
-        );
+            }
+        });
 
-        document.addEventListener(
-            'pointerout',
-            (event) => {
-                const trigger = (
-                    event.target as HTMLElement
-                )?.closest<HTMLElement>(
-                    '.note-link[data-note-preview-id]',
-                );
+        document.addEventListener('focusout', (event) => {
+            const trigger = (event.target as HTMLElement)?.closest<HTMLElement>(
+                '.note-link[data-note-preview-id]',
+            );
 
-                if (!trigger) {
-                    return;
-                }
-
-                const related =
-                    event.relatedTarget as Node | null;
-
-                if (
-                    related &&
-                    trigger.contains(related)
-                ) {
-                    return;
-                }
-
+            if (trigger) {
                 hidePreview(trigger);
-            },
-        );
-
-        document.addEventListener(
-            'focusin',
-            (event) => {
-                const trigger = (
-                    event.target as HTMLElement
-                )?.closest<HTMLElement>(
-                    '.note-link[data-note-preview-id]',
-                );
-
-                if (trigger) {
-                    showPreview(trigger);
-                }
-            },
-        );
-
-        document.addEventListener(
-            'focusout',
-            (event) => {
-                const trigger = (
-                    event.target as HTMLElement
-                )?.closest<HTMLElement>(
-                    '.note-link[data-note-preview-id]',
-                );
-
-                if (trigger) {
-                    hidePreview(trigger);
-                }
-            },
-        );
+            }
+        });
 
         /*
          * Keep the existing click-to-scroll behavior.
          * The preview is supplemental only.
          */
-        window.addEventListener(
-            'scroll',
-            () => hidePreview(),
-            true,
-        );
+        window.addEventListener('scroll', () => hidePreview(), true);
 
-        window.addEventListener(
-            'resize',
-            () => hidePreview(),
-        );
+        window.addEventListener('resize', () => hidePreview());
 
-        document.addEventListener(
-            'keydown',
-            (event) => {
-                if (event.key === 'Escape') {
-                    hidePreview();
-                }
-            },
-        );
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') {
+                hidePreview();
+            }
+        });
     }
 </script>
 
@@ -537,32 +402,19 @@ const hasOverview =
         overflow: auto;
 
         border: 1px solid
-            color-mix(
-                in srgb,
-                var(--element) 42%,
-                rgba(255, 255, 255, 0.16)
-            );
+            color-mix(in srgb, var(--element) 42%, rgba(255, 255, 255, 0.16));
         border-radius: 8px;
         padding: 9px 10px;
 
-        background:
-            linear-gradient(
-                180deg,
-                color-mix(
-                    in srgb,
-                    var(--element) 8%,
-                    transparent
-                ),
-                transparent 50%
-            ),
-            color-mix(
-                in srgb,
-                var(--bg) 90%,
-                #05080c 10%
-            );
+        background-color: #1b1f26;
 
-        box-shadow:
-            0 14px 34px rgba(0, 0, 0, 0.32);
+        background-image: linear-gradient(
+            180deg,
+            color-mix(in srgb, var(--element) 10%, transparent),
+            transparent 55%
+        );
+
+        box-shadow: 0 14px 34px rgba(0, 0, 0, 0.32);
 
         color: var(--text);
         font-size: 0.78rem;
@@ -577,22 +429,12 @@ const hasOverview =
     }
 
     .note-preview-popup .element-bold {
-        color:
-            color-mix(
-                in srgb,
-                #fff 30%,
-                var(--element) 70%
-            );
+        color: color-mix(in srgb, #fff 30%, var(--element) 70%);
         font-weight: 850;
     }
 
     .note-preview-popup .note-preview-inline-name {
-        color:
-            color-mix(
-                in srgb,
-                #fff 82%,
-                var(--accent) 18%
-            );
+        color: color-mix(in srgb, #fff 82%, var(--accent) 18%);
         font-weight: 750;
     }
 
@@ -612,16 +454,9 @@ const hasOverview =
 
     @media (max-width: 720px) {
         .note-preview-popup {
-            width: min(
-                320px,
-                calc(100vw - 20px)
-            );
-            max-height: min(
-                260px,
-                calc(100vh - 20px)
-            );
+            width: min(320px, calc(100vw - 20px));
+            max-height: min(260px, calc(100vh - 20px));
             font-size: 0.75rem;
         }
     }
 </style>
-
