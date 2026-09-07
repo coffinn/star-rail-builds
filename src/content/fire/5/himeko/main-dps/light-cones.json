@@ -1,0 +1,32 @@
+{
+    "light_cones": [
+        {
+            "items": [
+                {
+                    "name": "ninjutsu-inscription-dazzling-evilbreaker",
+                    "superimposition": 1
+                },
+                {
+                    "name": "charmony",
+                    "superimposition": 5
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "calculus",
+                    "superimposition": 5
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "milky-way",
+                    "superimposition": 1
+                }
+            ]
+        }
+    ]
+}

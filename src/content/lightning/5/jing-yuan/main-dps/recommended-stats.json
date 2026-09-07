@@ -1,0 +1,23 @@
+{
+    "stats": [
+        {
+            "name": "atk",
+            "recommended": "2700+"
+        },
+        {
+            "name": "spd",
+            "recommended": "134+"
+        },
+        {
+            "name": "cr",
+            "recommended": "70%",
+            "note": {
+                "en": "As he gets 10% CRIT Rate upon skill, and 20% from Sunday, you only need 70% CRIT Rate out-of-combat."
+            }
+        },
+        {
+            "name": "cd",
+            "recommended": "210%+"
+        }
+    ]
+}

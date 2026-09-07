@@ -1,0 +1,22 @@
+{
+    "main_stats": {
+        "body": [
+            "cr/cd"
+        ],
+        "feet": [
+            "spd"
+        ],
+        "planar_sphere": [
+            {
+                "name": "lightning-dmg",
+                "note": {
+                    "en": "Preferred over ATK%."
+                }
+            },
+            "atk%"
+        ],
+        "link_rope": [
+            "atk%"
+        ]
+    }
+}

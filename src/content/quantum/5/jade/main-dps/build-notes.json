@@ -1,0 +1,21 @@
+{
+    "best": true,
+    "name": {
+        "en": "DPS"
+    },
+    "notes": [
+    ],
+    "overview": {
+        "summary": {
+            "en": "- Jade is primarily an AOE specialist and not meant for situations with low enemy count. In 4-5 target AOE situations, she works well as a Skill Point positive Sub DPS who gains Follow-Up ATK charges whenever her chosen ally acts. She also self buffs herself for up to 120% CRIT DMG and 25% ATK%.\n- Generally, she pairs well with a Main DPS who benefits from Jade's frequent, AOE attacks. Jade is also able to provide a flat 30 SPD buff to her primary partner, which is significant.\n- As of the writing of this entry, Jade sees lower usage due to stronger units in her AOE specialist niche."
+        },
+        "investment_priority": {
+            "priority": {
+                "en": "S1 > E1 (for Pure Fiction)\n\nE1 > S1 (for lower target scenarios)"
+            },
+            "details": {
+                "en": "- While her E1 does allow her to perform better in lower enemy target scenarios, Jade generally performs best in Pure Fiction or 4-5 target scenarios regardless. Thus, her S1 [[light-cone:yet-hope-is-priceless]] would be a more reliable general upgrade.\n- If you really want to bring Jade to as many types of situations as possible, E1 is a notable upgrade."
+            }
+        }
+    }
+}
