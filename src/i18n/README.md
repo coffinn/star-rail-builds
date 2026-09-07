@@ -29,7 +29,7 @@ Use:
 - `characters.json` for character names.
 - `stats.json` for stats and stat-like labels, such as `er`, `atk%`, `em-set`,
   or `atk-set`.
-- `elements.json` for elements, such as `ice`, `fire`,
+- `types.json` for types, such as `ice`, `fire`,
   and `quantum`.
 - `abilities.json` for trace names, such as `basic-atk`, `skill`, and `ultimate`.
 - `notes.json` for reusable note labels referenced by inline tokens.
@@ -91,7 +91,7 @@ Typed tokens search one specific dictionary:
 [[set:eagle-of-twilight-line]]
 [[character:silver-wolf]]
 [[stat:spd]]
-[[element:quantum]]
+[[type:quantum]]
 [[ability:ultimate]]
 ```
 
@@ -178,5 +178,5 @@ the canonical ID.
 - If you are unsure about JSON formatting, add the `Needs Format Check` label
   to your Pull Request.
 - Each language folder must contain `light-cones.json`, `artifact-sets.json`,
-  `characters.json`, `stats.json`, `elements.json`, `abilities.json`, `ui.json`,
+  `characters.json`, `stats.json`, `types.json`, `abilities.json`, `ui.json`,
   and `notes.json`, even when a dictionary is empty (`{}`).

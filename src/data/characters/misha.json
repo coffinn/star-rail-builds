@@ -2,7 +2,7 @@
     "id": "misha",
     "name": "Misha",
     "rarity": "4",
-    "element": "ice",
+    "type": "ice",
     "path": "destruction",
     "version_released": "2.0",
     "max_energy": 100,

@@ -2,7 +2,7 @@
   "id": "sparkle",
   "name": "Sparkle",
   "rarity": 5,
-  "element": "quantum",
+  "type": "quantum",
   "path": "harmony",
   "version_released": "2.0",
   "max_energy": 110,

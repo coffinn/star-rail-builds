@@ -64,11 +64,11 @@ const stats =
         ),
     ) ?? {};
 
-const elements =
+const types =
     existingJSON(
         path.join(
             ROOT,
-            'src/i18n/en/elements.json',
+            'src/i18n/en/types.json',
         ),
     ) ?? {};
 
@@ -771,33 +771,33 @@ function validateBuildFiles(
     }
 }
 
-for (const element of fs.readdirSync(
+for (const type of fs.readdirSync(
     contentRoot,
 )) {
-    if (element === 'site') continue;
+    if (type === 'site') continue;
 
-    const elementDirectory = path.join(
+    const typeDirectory = path.join(
         contentRoot,
-        element,
+        type,
     );
 
     if (
-        !fs.statSync(elementDirectory).isDirectory()
+        !fs.statSync(typeDirectory).isDirectory()
     ) {
         continue;
     }
 
-    if (!(element in elements)) {
+    if (!(type in types)) {
         error(
-            `Unknown element directory "${element}"`,
+            `Unknown type directory "${type}"`,
         );
     }
 
     for (const rarity of fs.readdirSync(
-        elementDirectory,
+        typeDirectory,
     )) {
         const rarityDirectory = path.join(
-            elementDirectory,
+            typeDirectory,
             rarity,
         );
 
@@ -879,12 +879,12 @@ for (const element of fs.readdirSync(
                 }
 
                 if (
-                    characterData?.element &&
-                    characterData.element !==
-                    element
+                    characterData?.type &&
+                    characterData.type !==
+                    type
                 ) {
                     error(
-                        `${character}.json says element "${characterData.element}", but content folder is "${element}"`,
+                        `${character}.json says type "${characterData.type}", but content folder is "${type}"`,
                     );
                 }
 

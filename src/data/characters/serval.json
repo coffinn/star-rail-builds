@@ -2,7 +2,7 @@
   "id": "serval",
   "name": "Serval",
   "rarity": "4",
-  "element": "lightning",
+  "type": "lightning",
   "path": "erudition",
   "version_released": "1.0",
   "max_energy": 100,

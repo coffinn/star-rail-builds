@@ -2,7 +2,7 @@
     "id": "hanya",
     "name": "Ханья",
     "rarity": 4,
-    "element": "physical",
+    "type": "physical",
     "path": "harmony",
     "version_released": "1.5",
     "max_energy": 140,

@@ -2,7 +2,7 @@
   "id": "yao-guang",
   "name": "Яо Гуан",
   "rarity": "5",
-  "element": "physical",
+  "type": "physical",
   "path": "elation",
   "version_released": "4.0",
   "max_energy": 180,

@@ -2,7 +2,7 @@
   "id": "jingliu",
   "name": "Jingliu",
   "rarity": "5",
-  "element": "ice",
+  "type": "ice",
   "path": "destruction",
   "version_released": "1.4",
   "max_energy": 140,

@@ -2,7 +2,7 @@
   "id": "luocha",
   "name": "Лоча",
   "rarity": 5,
-  "element": "imaginary",
+  "type": "imaginary",
   "path": "abundance",
   "version_released": "1.1",
   "max_energy": 100,

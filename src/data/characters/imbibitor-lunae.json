@@ -2,7 +2,7 @@
     "id": "imbibitor-lunae",
     "name": "Dan Heng • Imbibitor Lunae",
     "rarity": "5",
-    "element": "imaginary",
+    "type": "imaginary",
     "path": "destruction",
     "version_released": "1.3",
     "max_energy": 140,

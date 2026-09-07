@@ -2,7 +2,7 @@
   "id": "bailu",
   "name": "Bailu",
   "rarity": "5",
-  "element": "lightning",
+  "type": "lightning",
   "path": "abundance",
   "version_released": "1.0",
   "max_energy": 100,

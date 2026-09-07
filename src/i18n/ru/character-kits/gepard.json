@@ -2,7 +2,7 @@
   "id": "gepard",
   "name": "Гепард",
   "rarity": "5",
-  "element": "ice",
+  "type": "ice",
   "path": "preservation",
   "version_released": "1.0",
   "max_energy": 100,

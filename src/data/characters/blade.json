@@ -2,7 +2,7 @@
     "id": "blade",
     "name": "Blade",
     "rarity": "5",
-    "element": "wind",
+    "type": "wind",
     "path": "destruction",
     "version_released": "1.2",
     "max_energy": 130,

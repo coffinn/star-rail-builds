@@ -2,7 +2,7 @@
     "id": "mydei",
     "name": "Mydei",
     "rarity": 5,
-    "element": "imaginary",
+    "type": "imaginary",
     "path": "destruction",
     "version_released": "3.1",
     "max_energy": 160,

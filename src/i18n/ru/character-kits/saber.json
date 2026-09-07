@@ -2,7 +2,7 @@
   "id": "saber",
   "name": "Сэйбер",
   "rarity": "5",
-  "element": "wind",
+  "type": "wind",
   "path": "destruction",
   "version_released": "3.4",
   "max_energy": 360,

@@ -2,7 +2,7 @@
     "id": "trailblazer-destruction",
     "name": "Первопроходец (Разрушение)",
     "rarity": 5,
-    "element": "physical",
+    "type": "physical",
     "path": "destruction",
     "version_released": "1.0",
     "max_energy": 120,

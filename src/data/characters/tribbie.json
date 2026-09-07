@@ -2,7 +2,7 @@
   "id": "tribbie",
   "name": "Tribbie",
   "rarity": 5,
-  "element": "quantum",
+  "type": "quantum",
   "path": "harmony",
   "version_released": "3.2",
   "max_energy": 120,

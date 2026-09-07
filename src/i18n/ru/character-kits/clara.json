@@ -2,7 +2,7 @@
     "id": "clara",
     "name": "Клара",
     "rarity": 5,
-    "element": "physical",
+    "type": "physical",
     "path": "destruction",
     "version_released": "1.0",
     "max_energy": 110,

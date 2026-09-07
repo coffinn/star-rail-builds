@@ -2,7 +2,7 @@
   "id": "fugue",
   "name": "Фуга",
   "rarity": "5",
-  "element": "fire",
+  "type": "fire",
   "path": "nihility",
   "version_released": "2.7",
   "max_energy": 130,

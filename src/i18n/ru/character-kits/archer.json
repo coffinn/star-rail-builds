@@ -2,7 +2,7 @@
     "id": "archer",
     "name": "Арчер",
     "rarity": 5,
-    "element": "quantum",
+    "type": "quantum",
     "path": "hunt",
     "version_released": "3.4",
     "collaboration": "Fate/stay night: Unlimited Blade Works",

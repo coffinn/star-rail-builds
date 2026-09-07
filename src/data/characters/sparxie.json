@@ -2,7 +2,7 @@
   "id": "sparxie",
   "name": "Sparxie",
   "rarity": "5",
-  "element": "fire",
+  "type": "fire",
   "path": "elation",
   "version_released": "4.0",
   "max_energy": 160,

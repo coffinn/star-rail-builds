@@ -2,7 +2,7 @@
   "id": "herta",
   "name": "Герта",
   "rarity": "4",
-  "element": "ice",
+  "type": "ice",
   "path": "erudition",
   "version_released": "1.0",
   "max_energy": 110,

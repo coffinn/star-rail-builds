@@ -2,7 +2,7 @@
   "id": "the-herta",
   "name": "The Herta",
   "rarity": "5",
-  "element": "ice",
+  "type": "ice",
   "path": "erudition",
   "version_released": "3.0",
   "max_energy": 220,

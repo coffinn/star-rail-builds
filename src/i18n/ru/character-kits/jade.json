@@ -2,7 +2,7 @@
   "id": "jade",
   "name": "Яшма",
   "rarity": 5,
-  "element": "quantum",
+  "type": "quantum",
   "path": "erudition",
   "version_released": "2.3",
   "max_energy": 140,

@@ -2,7 +2,7 @@
   "id": "castorice",
   "name": "Castorice",
   "rarity": 5,
-  "element": "quantum",
+  "type": "quantum",
   "path": "remembrance",
   "version_released": "3.2",
   "max_energy": null,

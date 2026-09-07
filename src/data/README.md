@@ -109,7 +109,7 @@ A character entry can include:
 
 - `name`: character's name.
 - `rarity`: character's rarity.
-- `element`: character's type.
+- `type`: character's type.
 - `path`: character's path.
 - `level_80_stats`: character's hp, atk, def, and spd stats at level 80.
 - `abilities`: character's abilities (Basic ATK, Skill, Ultimate, Talent, etc.).

@@ -2,7 +2,7 @@
     "id": "luka",
     "name": "Luka",
     "rarity": 4,
-    "element": "physical",
+    "type": "physical",
     "path": "nihility",
     "version_released": "1.2",
     "max_energy": 130,

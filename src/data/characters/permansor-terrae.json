@@ -2,7 +2,7 @@
     "id": "permansor-terrae",
     "name": "Dan Heng • Permansor Terrae",
     "rarity": "5",
-    "element": "physical",
+    "type": "physical",
     "path": "preservation",
     "version_released": "3.6",
     "max_energy": 135,

@@ -2,7 +2,7 @@
   "id": "lynx",
   "name": "Lynx",
   "rarity": 4,
-  "element": "quantum",
+  "type": "quantum",
   "path": "abundance",
   "version_released": "1.3",
   "max_energy": 100,

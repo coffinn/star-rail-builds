@@ -2,7 +2,7 @@
   "id": "the-dahlia",
   "name": "Георгина",
   "rarity": "5",
-  "element": "fire",
+  "type": "fire",
   "path": "nihility",
   "version_released": "3.8",
   "max_energy": 130,

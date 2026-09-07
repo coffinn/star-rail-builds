@@ -2,7 +2,7 @@
   "id": "ashveil",
 "name": "Ashveil",
 "rarity": 5,
-"element": "lightning",
+"type": "lightning",
 "path": "hunt",
 "version_released": "4.1",
 "max_energy": 150,

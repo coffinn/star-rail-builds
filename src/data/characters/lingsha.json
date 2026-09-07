@@ -2,7 +2,7 @@
   "id": "lingsha",
   "name": "Lingsha",
   "rarity": "5",
-  "element": "fire",
+  "type": "fire",
   "path": "abundance",
   "version_released": "2.5",
   "max_energy": 110,

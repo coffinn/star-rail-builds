@@ -2,7 +2,7 @@
   "id": "topaz",
   "name": "Топаз и Счетовод",
   "rarity": "5",
-  "element": "fire",
+  "type": "fire",
   "path": "hunt",
   "version_released": "1.4",
   "max_energy": 130,

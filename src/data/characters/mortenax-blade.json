@@ -2,7 +2,7 @@
   "id": "mortenax-blade",
   "name": "Mortenax Blade",
   "rarity": "5",
-  "element": "fire",
+  "type": "fire",
   "path": "nihility",
   "version_released": "4.3",
   "max_energy": 160,

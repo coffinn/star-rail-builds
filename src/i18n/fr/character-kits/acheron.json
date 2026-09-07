@@ -2,7 +2,7 @@
     "id": "acheron",
     "name": "Achéron",
     "rarity": "5",
-    "element": "lightning",
+    "type": "lightning",
     "path": "nihility",
     "version_released": "2.1",
     "level_80_stats": {

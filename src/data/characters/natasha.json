@@ -2,7 +2,7 @@
     "id": "natasha",
     "name": "Natasha",
     "rarity": "4",
-    "element": "physical",
+    "type": "physical",
     "path": "abundance",
     "version_released": "1.0",
     "max_energy": 90,

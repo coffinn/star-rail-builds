@@ -2,7 +2,7 @@
   "id": "kafka",
   "name": "Kafka",
   "rarity": 5,
-  "element": "lightning",
+  "type": "lightning",
   "path": "nihility",
   "version_released": "1.2",
   "max_energy": 120,

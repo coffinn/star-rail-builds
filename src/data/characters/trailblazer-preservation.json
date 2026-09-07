@@ -2,7 +2,7 @@
   "id": "trailblazer-preservation",
   "name": "Trailblazer: Preservation",
   "rarity": "5",
-  "element": "fire",
+  "type": "fire",
   "path": "preservation",
   "version_released": "1.0",
   "max_energy": 120,

@@ -2,7 +2,7 @@
     "id": "rin-tohsaka",
     "name": "Рин Тосака",
     "rarity": 5,
-    "element": "quantum",
+    "type": "quantum",
     "path": "erudition",
     "version_released": "3.4",
     "collaboration": "Fate/stay night: Unlimited Blade Works",
