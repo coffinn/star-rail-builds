@@ -53,14 +53,14 @@ src/content/<type>/<rarity>/<character>/<build>/relic-mainstats.json
 - `note`: Optional localized editorial note. Use this only on object stat
   items.
 - `notes`: Optional top-level section notes shown under
-  `Regarding Relic Choices:` without adding a `*` marker to any stat.
+  `Regarding Relic Choices:` without adding a `ⓘ` marker to any stat.
 
 ## Notes
 
 - Stat IDs such as `atk%`, `err`, `cr`, and `cd` are translated through
   `src/i18n/<lang>/stats.json`.
 - Custom display strings such as `merrymaking` can be used when no i18n ID exists.
-- Adding `note` to an object stat automatically adds a `*` marker next to that
+- Adding `note` to an object stat automatically adds a `ⓘ` marker next to that
   stat in the Main Stat list.
 - Notes support Markdown and inline translation tokens.
 

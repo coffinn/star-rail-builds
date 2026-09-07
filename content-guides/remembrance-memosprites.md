@@ -31,7 +31,7 @@ Memosprite abilities are separate from the character's normal `abilities` sectio
                 40.0,
                 44.0
                 ]
-            },
+            }
         },
         "memosprite_talent": {
             "type": "Memosprite Talent",

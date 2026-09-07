@@ -50,7 +50,7 @@ src/content/<type>/<rarity>/<character>/<build>/relic-sets.json
                 }
             ]
         }
-    ]
+  ],
   "conditional": [
     {
       "items": [
@@ -89,7 +89,7 @@ src/content/<type>/<rarity>/<character>/<build>/relic-sets.json
       - `relic_sets[].groups[].items[].pieces`: Number of set pieces,
         usually `2` or `4`.
       - `relic_sets[].groups[].items[].note`: Optional localized editorial
-        note. Adds a `*` marker beside the item and renders in the relic
+        note. Adds a `ⓘ` marker beside the item and renders in the relic
         notes section.
     - `relic_sets[].groups[].choices`: Optional array of choose-one item
       pools. Use this for 2p/2p combinations where the player should choose one
@@ -294,7 +294,7 @@ group objects directly and do not use a `groups` wrapper:
 ## Notes
 
 - Notes support Markdown and inline translation tokens.
-- Adding `note` to an item automatically adds a `*` marker next to that item in
+- Adding `note` to an item automatically adds a `ⓘ` marker next to that item in
   the relic set list.
 - The same `note` also automatically creates a matching note entry under
   `Regarding Relic Choices:`.

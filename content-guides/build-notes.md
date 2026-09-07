@@ -64,7 +64,7 @@ src/content/<type>/<rarity>/<character>/<build>/build-notes.json
 - `notes`: Array of localized editorial note objects.
   - Each note item must include `en`. The requested language falls back to `en`.
   - Supports Markdown and inline translation tokens.
-  - Build-level notes do not add a `*` marker because they are not attached to
+  - Build-level notes do not add a `ⓘ` marker because they are not attached to
     one specific item.
 
 ## Detailed Calculation Credits
@@ -75,64 +75,58 @@ objects.
 
 ```json
 {
-  "relics": {
-    "link": "https://example.com/relic-calculation",
-    "author": "AuthorName",
-    "detail": "4pc comparison"
-  },
-  "light_cones": [
-    {
-      "link": "https://example.com/light-cone-calculation-a",
-      "author": "AuthorName",
-      "detail": "single target"
-    },
-    {
-      "link": "https://example.com/light-cone-calculation-b",
-      "author": "OtherAuthor"
-    }
-  ],
-  "trace": {
-    "link": "https://example.com/trace-calculation",
-    "author": "AuthorName"
-  },
-  "global": {
-    "link": "https://example.com/all-calculations",
-    "author": "AuthorName"
-  }
+    "global": [
+        {
+            "tag": "character-calculations",
+            "author": "coffinn",
+            "link": "https://example.com/calcs",
+            "detail": "Character calculations"
+        },
+        {
+            "tag": "investment-chart",
+            "author": "houseplantofficial",
+            "link": "https://imgur.com/a/Cn0nbGf",
+            "detail": "Investment Chart"
+        },
+        {
+            "tag": "team-guide",
+            "author": "GuideAuthor",
+            "link": "https://example.com/teams",
+            "detail": "Team guide"
+        }
+    ],`
 }
 ```
 
 Each object has:
 
+- `tag`: Bolded hyperlinked category
 - `link`: URL opened by the detailed calculation link.
 - `author`: Name shown after "Thank you to".
-- `detail`: Optional text shown in parentheses after the detailed calculation
-  link text. Supports inline translation tokens.
+- `detail`: Optional text before the thank you note. Supports inline translation tokens.
 
 For example, this:
 
 ```json
 {
-  "light_cone": {
-    "link": "https://example.com/light-cone-calculation",
-    "author": "AuthorName",
-    "detail": "single target"
-  }
-}
+    "tag": "character-calculations",
+    "author": "AuthorName!",
+    "link": "https://example.com/calcs",
+    "detail": "Character calculations"
+},
 ```
 
 renders as:
 
 ```txt
-Detailed light cone calculations (single target) - Thank you to AuthorName!
+Character calculations - Thank you to AuthorName!
 ```
 
-The current keys are intentionally:
+The current tags are:
 
-- `relic` or `relics`: Shows `Detailed relic calculations`
-- `light_cone`: Shows `Detailed light_cone calculations`
-- `trace` or `traces`: Shows `Detailed trace calculations`
-- `global`: Shows `Detailed calculations`
+- `character-calculations`,
+- `investment-chart`,
+- `team-guide`,
 
 ## Build-Level Notes
 
@@ -178,4 +172,4 @@ section note areas:
 Use `build-notes.json` for comments about the whole build. Use item `note`
 fields in `light-cones.json`, `relic-sets.json`, `relic-mainstats.json`,
 `relic-substats.json`, or `traces.json` when the note belongs to one
-specific listed item and should add a `*` marker.
+specific listed item and should add a `ⓘ` marker.

@@ -23,7 +23,7 @@ mirror that path under `src/assets/character-assets`:
 
 ```txt
 src/content/quantum/5/silver-wolf/metadata.json
-src/assets/character-assets/quamtum/5/silver-wolf/splash_art.png
+src/assets/character-assets/quantum/5/silver-wolf/splash_art.png
 src/assets/character-assets/quantum/5/silver-wolf/portrait.png
 ```
 

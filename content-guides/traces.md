@@ -52,7 +52,7 @@ src/content/<type>/<rarity>/<character>/<build>/traces.json
   numbered line with `≈`.
 - `traces[].name`: Trace ID from `src/i18n/<lang>/traces.json`.
   Current IDs are `ba`, `skill`, `ultimate`, and `talent`.
-- `items[].note`: Optional localized editorial note. Adds a `*` marker beside
+- `items[].note`: Optional localized editorial note. Adds a `ⓘ` marker beside
   the trace and renders in the trace notes section.
 
 ## Notes
@@ -60,7 +60,7 @@ src/content/<type>/<rarity>/<character>/<build>/traces.json
 - Use trace IDs instead of display names when possible.
 - Existing display strings such as `"Basic ATK"` still work, but they are
   not translated.
-- Adding `note` to a talent automatically adds a `*` marker next to that trace
+- Adding `note` to a talent automatically adds a `ⓘ` marker next to that trace
   in the trace priority list.
 - The same `note` also automatically creates a matching note entry under
   `Regarding Trace Choices:`.

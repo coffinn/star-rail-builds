@@ -16,7 +16,7 @@ src/content/<type>/<rarity>/<character>/<build>/relic-substats.json
     }
   ],
   "substats_priority": [
-    "er",
+    "err",
     {
       "name": "cr",
       "note": {
@@ -47,7 +47,7 @@ src/content/<type>/<rarity>/<character>/<build>/relic-substats.json
   inline translation tokens when a row needs custom text, such as
   `"[[stat:cr/cd]] / [[stat:hp%]]"`.
 - `items`: List of stat strings or stat objects for same-rank alternatives.
-- `note`: Optional localized editorial note. Adds a `*` marker beside the
+- `note`: Optional localized editorial note. Adds a `ⓘ` marker beside the
   substat and renders in the `Substats` part of the relic notes section.
 
 ## Notes
@@ -55,7 +55,7 @@ src/content/<type>/<rarity>/<character>/<build>/relic-substats.json
 - String items are concise and should be used when no note is needed.
 - Object items should be used when a substat needs an explanation, or when the
   row needs custom text with inline translation tokens.
-- Adding `note` to a substat automatically adds a `*` marker next to that
+- Adding `note` to a substat automatically adds a `ⓘ` marker next to that
   substat in the substat priority list.
 - Notes support Markdown and inline translation tokens.
 
