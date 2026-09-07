@@ -13,8 +13,8 @@ src/content/<type>/<rarity>/<character>/<build>/build-notes.json
 {
   "best": true,
   "name": {
-    "en": "[[element:lightning]] DPS",
-    "fr": "DPS [[element:lightning]]"
+    "en": "[[type:lightning]] DPS",
+    "fr": "DPS [[type:lightning]]"
   },
   "relic": {
     "link": "https://example.com/relic-calculation",

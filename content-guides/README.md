@@ -5,7 +5,7 @@ These files are for contributor to read and understand how the JSONs must be wri
 
 ## Folder Layout
 
-Character content is organized by element, rarity, character slug, then build
+Character content is organized by type, rarity, character slug, then build
 slug:
 
 ```txt
@@ -202,7 +202,7 @@ src/i18n/<lang>/ui.json
 Use `stats.json` for stat labels and stat-like pseudo-set labels, such as `err`,
 `atk%`, and `ehr`.
 
-Use `elements.json` for elemental types, such as `fire`,
+Use `types.json` for types, such as `fire`,
 `ice`, and `lightning`.
 
 Use `abilities.json` for ability labels and `notes.json` for reusable note
@@ -220,7 +220,7 @@ Editorial text can reference i18n IDs:
 [[set:eagle-of-twilight-line]]
 [[character:silver-wolf]]
 [[stat:cd]]
-[[element:fire]]
+[[type:fire]]
 [[err]]
 ```
 

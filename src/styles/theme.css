@@ -2,7 +2,7 @@
     --bg: #1a1a36;
     --text: hsla(0, 0%, 100%, 0.85);
     --accent: rgb(255, 215, 128);
-    --element: #30d8a0;
+    --type: #30d8a0;
 }
 
 body {
@@ -12,42 +12,42 @@ body {
 
 
 
-body[data-element="physical"] {
+body[data-type="physical"] {
     --bg: #404d4f;
-    --element: #b8b6b5;
+    --type: #b8b6b5;
 }
 
-body[data-element="fire"] {
+body[data-type="fire"] {
     --bg: #3d1818;
-    --element: #ff6640;
+    --type: #ff6640;
 }
 
-body[data-element="ice"] {
+body[data-type="ice"] {
     --bg: #235d74;
-    --element: #7af0f0;
+    --type: #7af0f0;
 }
 
-body[data-element="lightning"] {
+body[data-type="lightning"] {
     --bg: #22052c;
-    --element: #c87fff;
+    --type: #c87fff;
 }
 
-body[data-element="wind"] {
+body[data-type="wind"] {
     --bg: #153434;
-    --element: #9de43b;
+    --type: #9de43b;
 }
 
-body[data-element="quantum"] {
+body[data-type="quantum"] {
     --bg: #241b46;
-    --element: #a679ff;
+    --type: #a679ff;
 }
 
-body[data-element="imaginary"] {
+body[data-type="imaginary"] {
     --bg: #3d2c1d;
-    --element: #f3b530;
+    --type: #f3b530;
 }
 
-body[data-element="base"] {
+body[data-type="base"] {
     --bg: #1a1a36;
 
     background:

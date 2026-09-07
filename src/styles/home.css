@@ -4,7 +4,7 @@
     margin: 0 auto;
 }
 
-body[data-element="base"].browser-background {
+body[data-type="base"].browser-background {
     min-height: 100vh;
 
     background-color: #080a0e;
@@ -413,36 +413,36 @@ body[data-element="base"].browser-background {
 }
 
 .roster-character {
-    --roster-element: var(--element);
-    --roster-rarity: var(--roster-element);
+    --roster-type: var(--type);
+    --roster-rarity: var(--roster-type);
 }
 
 .roster-character.physical {
-    --roster-element: #b8b6b5;
+    --roster-type: #b8b6b5;
 }
 
 .roster-character.fire {
-    --roster-element: #ff6640;
+    --roster-type: #ff6640;
 }
 
 .roster-character.ice {
-    --roster-element: #7af0f0;
+    --roster-type: #7af0f0;
 }
 
 .roster-character.lightning {
-    --roster-element: #D559FF;
+    --roster-type: #D559FF;
 }
 
 .roster-character.wind {
-    --roster-element: #9de43b;
+    --roster-type: #9de43b;
 }
 
 .roster-character.quantum {
-    --roster-element: #7552FF;
+    --roster-type: #7552FF;
 }
 
 .roster-character.imaginary {
-    --roster-element: #f3b530;
+    --roster-type: #f3b530;
 }
 
 .roster-character[data-rarity='4'] {
@@ -490,11 +490,11 @@ body[data-element="base"].browser-background {
     aspect-ratio: 4 / 5;
     min-height: 0;
     grid-template-rows: minmax(0, 1fr) 54px;
-    border: 1px solid color-mix(in srgb, var(--roster-element) 24%, transparent);
+    border: 1px solid color-mix(in srgb, var(--roster-type) 24%, transparent);
     border-radius: 8px;
     overflow: hidden;
     background: color-mix(in srgb,
-            var(--roster-element) 10%,
+            var(--roster-type) 10%,
             rgba(8, 10, 14, 0.82));
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
     color: var(--text);
@@ -512,7 +512,7 @@ body[data-element="base"].browser-background {
     inset: 0;
     background:
         linear-gradient(180deg,
-            color-mix(in srgb, var(--roster-element) 14%, transparent),
+            color-mix(in srgb, var(--roster-type) 14%, transparent),
             transparent 52%),
         linear-gradient(to top, rgba(0, 0, 0, 0.55), transparent 46%);
     opacity: 0.86;
@@ -526,13 +526,13 @@ body[data-element="base"].browser-background {
 
 .roster-character:not(.is-wip):hover,
 .roster-character:not(.is-wip):focus-visible {
-    border-color: color-mix(in srgb, var(--roster-element) 72%, white 4%);
+    border-color: color-mix(in srgb, var(--roster-type) 72%, white 4%);
     background: color-mix(in srgb,
-            var(--roster-element) 14%,
+            var(--roster-type) 14%,
             rgba(8, 10, 14, 0.8));
     box-shadow:
         inset 0 1px 0 rgba(255, 255, 255, 0.14),
-        0 0 0 1px color-mix(in srgb, var(--roster-element) 16%, transparent);
+        0 0 0 1px color-mix(in srgb, var(--roster-type) 16%, transparent);
     outline: none;
     text-decoration: none;
 }
@@ -583,7 +583,7 @@ body[data-element="base"].browser-background {
 }
 
 /* =========================================================
-   Element + Path overlay on character portraits
+   type + Path overlay on character portraits
    ========================================================= */
 
 .roster-character-emblems {
@@ -728,11 +728,11 @@ body[data-element="base"].browser-background {
     right: 6px;
     max-width: calc(100% - 12px);
     overflow: hidden;
-    border: 1px solid color-mix(in srgb, var(--roster-element) 42%, transparent);
+    border: 1px solid color-mix(in srgb, var(--roster-type) 42%, transparent);
     border-radius: 8px;
     padding: 3px 6px;
     background: rgba(4, 6, 10, 0.72);
-    color: color-mix(in srgb, #fff 74%, var(--roster-element) 26%);
+    color: color-mix(in srgb, #fff 74%, var(--roster-type) 26%);
     font-size: 0.62rem;
     font-weight: 820;
     line-height: 1;
@@ -1334,38 +1334,38 @@ body[data-element="base"].browser-background {
     }
 
     /* =========================================
-   Nameplate bar colors by element
+   Nameplate bar colors by type
    ========================================= */
 
     .roster-character {
         --roster-nameplate: #ffffff;
     }
 
-    .roster-character[data-element='physical'] {
+    .roster-character[data-type='physical'] {
         --roster-nameplate: #d8d8d8;
     }
 
-    .roster-character[data-element='fire'] {
+    .roster-character[data-type='fire'] {
         --roster-nameplate: #ff6b5c;
     }
 
-    .roster-character[data-element='ice'] {
+    .roster-character[data-type='ice'] {
         --roster-nameplate: #7ddcff;
     }
 
-    .roster-character[data-element='lightning'] {
+    .roster-character[data-type='lightning'] {
         --roster-nameplate: #c58cff;
     }
 
-    .roster-character[data-element='wind'] {
+    .roster-character[data-type='wind'] {
         --roster-nameplate: #68d9aa;
     }
 
-    .roster-character[data-element='quantum'] {
+    .roster-character[data-type='quantum'] {
         --roster-nameplate: #7d7cff;
     }
 
-    .roster-character[data-element='imaginary'] {
+    .roster-character[data-type='imaginary'] {
         --roster-nameplate: #f2d36b;
     }
 

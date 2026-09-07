@@ -22,7 +22,7 @@ const {
     characterName,
     characterData,
     metadata,
-    element,
+    type,
     lang: currentLang,
     locale,
     builds,
@@ -39,8 +39,6 @@ const calculationKeys = [
     'relic',
     'relics',
     'light_cones',
-    'talent',
-    'talents',
     'global',
     'trace',
     'traces',
@@ -80,7 +78,7 @@ const noteMarkerExplanation = t(
     characterSlug={characterSlug}
     character={characterName}
     metadata={metadata}
-    element={element}
+    type={type}
     lang={currentLang}
     locale={locale}
     defaultBuildSlug={defaultBuildSlug}
@@ -89,7 +87,6 @@ const noteMarkerExplanation = t(
         name: build.name,
         isBest: build.isBest,
         buildNote: build.buildNote,
-
         hasCalculations: hasBuildCalculations(build.buildNote),
     }))}
 >

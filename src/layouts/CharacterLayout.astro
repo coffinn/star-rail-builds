@@ -1,12 +1,12 @@
 ---
 import { Image } from 'astro:assets';
-import physicalIcon from '../assets/filter-icons/elements/physical.png';
-import fireIcon from '../assets/filter-icons/elements/fire.png';
-import iceIcon from '../assets/filter-icons/elements/ice.png';
-import lightningIcon from '../assets/filter-icons/elements/lightning.png';
-import windIcon from '../assets/filter-icons/elements/wind.png';
-import quantumIcon from '../assets/filter-icons/elements/quantum.png';
-import imaginaryIcon from '../assets/filter-icons/elements/imaginary.png';
+import physicalIcon from '../assets/filter-icons/types/physical.png';
+import fireIcon from '../assets/filter-icons/types/fire.png';
+import iceIcon from '../assets/filter-icons/types/ice.png';
+import lightningIcon from '../assets/filter-icons/types/lightning.png';
+import windIcon from '../assets/filter-icons/types/wind.png';
+import quantumIcon from '../assets/filter-icons/types/quantum.png';
+import imaginaryIcon from '../assets/filter-icons/types/imaginary.png';
 
 import destructionIcon from '../assets/filter-icons/paths/destruction.png';
 import huntIcon from '../assets/filter-icons/paths/hunt.png';
@@ -30,7 +30,7 @@ const {
     character,
     characterSlug,
     metadata,
-    element,
+    type,
     lang,
     locale,
     builds = [],
@@ -41,7 +41,7 @@ const characterArtAlt = t(locale, 'ui', 'Character art alt').replace(
     character,
 );
 const characterHeaderImage = metadata?.portrait ?? metadata?.image;
-const elementIcons = {
+const typeIcons = {
     physical: physicalIcon,
     fire: fireIcon,
     ice: iceIcon,
@@ -63,14 +63,14 @@ const pathIcons = {
     elation: elationIcon,
 } as const;
 
-const elementName = element as keyof typeof elementIcons | undefined;
+const typeName = type as keyof typeof typeIcons | undefined;
 const pathName = metadata?.path as keyof typeof pathIcons | undefined;
 
-const elementIcon = elementName ? elementIcons[elementName] : undefined;
+const typeIcon = typeName ? typeIcons[typeName] : undefined;
 
 const pathIcon = pathName ? pathIcons[pathName] : undefined;
 
-const elementLabel = elementName ? t(locale, 'element', elementName) : '';
+const typeLabel = typeName ? t(locale, 'type', typeName) : '';
 
 const pathLabel = pathName ? t(locale, 'path', pathName) : '';
 
@@ -88,7 +88,7 @@ const bestRoleLabel = t(locale, 'ui', 'Best Role');
         <link rel="icon" type="image/webp" href={sitePath('favicon.webp')} />
     </head>
 
-    <body data-element={element}>
+    <body data-type={type}>
         <!-- The header needs the URL slug, not the localized display name. -->
         <Header locale={locale} lang={lang} character={characterSlug} />
 
@@ -143,12 +143,12 @@ const bestRoleLabel = t(locale, 'ui', 'Best Role');
                                             aria-hidden="true"
                                         />
                                     )}
-                                    {elementIcon && (
+                                    {typeIcon && (
                                         <img
-                                            class="character-title-element-icon"
-                                            src={elementIcon.src}
+                                            class="character-title-type-icon"
+                                            src={typeIcon.src}
                                             alt=""
-                                            title={elementLabel}
+                                            title={typeLabel}
                                             width="30"
                                             height="30"
                                             aria-hidden="true"

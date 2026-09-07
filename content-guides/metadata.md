@@ -93,6 +93,6 @@ src/content/quantum/5/silver-wolf/metadata.json
 
 This means:
 
-- element: `quantum`
+- type: `quantum`
 - rarity: `5`
 - character slug: `silver-wolf`

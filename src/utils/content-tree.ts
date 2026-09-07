@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { readJSONFile } from './content';
-const HSR_ELEMENTS = new Set([
+const HSR_TYPES = new Set([
     'physical',
     'fire',
     'ice',
@@ -14,7 +14,7 @@ const CHARACTER_DATA_PATH = path.resolve(
     'src/data/characters',
 );
 export type ContentCharacter = {
-    element: string;
+type: string;
     rarity: string;
     character: string;
     characterPath: string;
@@ -32,24 +32,24 @@ export function getContentCharacters(
         .filter(
             (entry) =>
                 entry.isDirectory() &&
-                HSR_ELEMENTS.has(entry.name),
+                HSR_TYPES.has(entry.name),
         )
-        .flatMap((element) =>
+        .flatMap((type) =>
             fs
-                .readdirSync(path.join(contentPath, element.name), {
+                .readdirSync(path.join(contentPath, type.name), {
                     withFileTypes: true,
                 })
                 .filter((entry) => entry.isDirectory())
                 .flatMap((rarity) =>
                     fs
-                        .readdirSync(path.join(contentPath, element.name, rarity.name), {
+                        .readdirSync(path.join(contentPath, type.name, rarity.name), {
                             withFileTypes: true,
                         })
                         .filter((entry) => entry.isDirectory())
                         .flatMap((character) => {
                             const characterPath = path.join(
                                 contentPath,
-                                element.name,
+                                type.name,
                                 rarity.name,
                                 character.name,
                             );
@@ -83,7 +83,7 @@ export function getContentCharacters(
                                 ? []
                                 : [
                                     {
-                                        element: element.name,
+                                        type: type.name,
                                         rarity: rarity.name,
                                         character: character.name,
                                         characterPath,
