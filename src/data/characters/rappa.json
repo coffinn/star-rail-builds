@@ -188,7 +188,7 @@
         },
         "6": {
             "name": "Ninjutsu Inscription: Withered Leaf",
-            "description": "While in the \"Sealform\" state, after Rappa uses Enhanced Basic ATK to deal DMG to a Weakness Broken enemy target, converts the Toughness Reduction from this instance of DMG to 1 instance of 60% Super Break DMG."
+            "description": "When an enemy target becomes Weakness Broken, increases the Break DMG taken by 2%. If Rappa's current ATK is higher than 2400, for every 100 excess ATK, additionally increases this value by 1%, up to a max additional increase of 9%. This effect lasts for 2 turn(s)."
         }
     },
     "stat_bonuses": [

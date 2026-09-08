@@ -7,14 +7,14 @@
     ],
     "overview": {
         "summary": {
-            "en": "- Rappa is a strong AoE Break DPS who deals huge Break DMG, especially in situations where enemies are abundant or frequently enter.\n- Rappa can increase the Break DMG taken by enemies when they become Weakness Broken.\n- Unlike other Break DPS characters, she needs The Dahlia to implant Imaginary Weakness in order to deal maximum damage Toughess Bar damage. Alongside that, without the proper build or rotation, Rappa’s damage drops significantly outside of her Ultimate.\n- Rappa's performance is heavily reliant on The Dahlia and Fugue. They are core teamates due to their strong Break-related buffs and ability to front-load break DMG."
+            "en": "- Rappa is a strong AoE Break DPS who deals huge Break DMG, especially in situations where enemies are abundant or frequently enter.\n- Rappa can increase the Break DMG taken by enemies when they become Weakness Broken.\n- Unlike other Break DPS characters, she needs The Dahlia to implant Imaginary Weakness in order to deal maximum damage Toughess Bar damage. Alongside that, without the proper build or rotation, Rappa’s damage drops significantly outside of her Ultimate.\n- Rappa's performance is heavily reliant on The Dahlia and Fugue. They are core teamates due to their strong Break-related buffs and ability to front-load Break DMG."
         },
         "investment_priority": {
             "priority": {
                 "en": "S1 > E1 > E2"
             },
             "details": {
-                "en": "- S1 [[light-cone:ninjutsu-inscription-dazzling-evilbreaker]] grants energy to use Ultimate after one Skill and advances her action every two Enhanced Basic Attacks.\n- E1 provides DEF ignore and improves Ultimate uptime.\n- E2 increases Single-Target toughness damage."
+                "en": "- S1 [[light-cone:ninjutsu-inscription-dazzling-evilbreaker]] grants energy to use Ultimate after one Skill and advances her action every two Enhanced Basic Attacks.\n- E1 provides DEF ignore and improves Ultimate uptime.\n- E2 increases Single Target Toughness Reduction."
             }
         }
     }

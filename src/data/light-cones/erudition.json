@@ -547,7 +547,7 @@
     "version_released": "2.6",
     "source": "limited-warp",
     "passive": {
-      "en": "Increases the wearer's Break Effect by {{value}}%. When entering battle, immediately regenerates {{value }} Energy. After the wearer uses Ultimate, obtains \"Raiton.\" After using 2 Basic ATKs, advances the wearer's action by {{value}}% and removes \"Raiton.\" After the wearer uses Ultimate, resets \"Raiton.\"",
+      "en": "Increases the wearer's Break Effect by {{value}}%. When entering battle, immediately regenerates {{value}} Energy. After the wearer uses Ultimate, obtains \"Raiton.\" After using 2 Basic ATKs, advances the wearer's action by {{value}}% and removes \"Raiton.\" After the wearer uses Ultimate, resets \"Raiton.\"",
       "ru": "Эффект пробития владельца повышается на {{value}}%. В начале боя владелец немедленно восстанавливает {{value}} ед. энергии. После использования владельцем сверхспособности он получает статус Спасение от грома. После выполнения базовой атаки 2 раза действие владельца продвигается вперёд на {{value}}%, после чего статус Спасение от грома снимается. После повторного использования владельцем сверхспособности на него снова накладывается статус Спасение от грома.",
       "vn": "Tăng {{value}}% Tấn Công Kích Phá của người trang bị. Khi vào chiến đấu, lập tức hồi {{value}}% điểm Năng Lượng. Và sau khi người trang bị thi triển Tuyệt Kỹ, nhận Lôi Độn. Sau khi thi triển 2 lần Tấn Công Thường, người trang bị Ưu Tiên Hành Động {{value}}%, và xóa Lôi Độn. Sau khi người trang bị thi triển Tuyệt Kỹ sẽ làm mới Lôi Độn."
     },

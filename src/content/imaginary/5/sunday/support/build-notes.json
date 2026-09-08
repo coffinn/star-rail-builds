@@ -7,14 +7,14 @@
     ],
     "overview": {
         "summary": {
-            "en": "- Hypercarry-focused support that excels alongside summon-based DPS units. His skill provides DMG%, CRIT Rate%, and cleanses, while also advancing both an ally and their summon(s), when applicable. If the target has a summon(s), they receive a larger DMG% buff.\n- His Ultimate grants The Beatified state to an ally, increasing their CRIT DMG% and energy, and causing his Skill to refund Skill Points if used on them.\n- Synergises best with summon-based units but remains effective in CRIT-based Hypercarry teams. However, he is limited to single-target support and cannot advance Harmony units, limiting his usefulness in certain compositions.\n-  It's also worth noting that Sunday's buffs given to summons are dispelled when the summon disappears. Remembrance Memosprites are the only summons that can disappear, which can lead to a clunky synergy with Sunday if they disappear frequently."
+            "en": "- Hypercarry-focused support that excels alongside summon-based DPS units. His skill provides DMG%, CRIT Rate%, and cleanses, while also advancing both an ally and their summon(s), when applicable. If the target has a summon(s), they receive a larger DMG% buff.\n- His Ultimate grants \"The Beatified\" state to an ally, increasing their CRIT DMG% and energy, and causing his Skill to refund Skill Points if used on them.\n- Synergises best with summon-based units but remains effective in CRIT-based Hypercarry teams. However, he is limited to single-target support and cannot advance Harmony units, limiting his usefulness in certain compositions.\n-  It's also worth noting that Sunday's buffs given to summons are dispelled when the summon disappears. Remembrance Memosprites are the only summons that can disappear, which can lead to a clunky synergy with Sunday if they disappear frequently."
         },
         "investment_priority": {
             "priority": {
                 "en": "S1 > E1"
             },
             "details": {
-                "en": "- S1 allows Sunday to use his Ultimate every 3 turns while also making him Skill Point positive. Provides up to a 45% DMG buff, which is sufficient to support most hypercarry teams.\n- E1 provides a strong single-target DEF Ignore buff to the target of his Skill if they possess a summon. The ally target receives a 16% DEF ignore, while their summon gains an even stronger 40% DEF ignore buff."
+                "en": "- S1 [[light-cone:a-grounded-ascent]] allows Sunday to use his Ultimate every 3 turns while also making him Skill Point positive. Provides up to a 45% DMG buff, which is sufficient to support most hypercarry teams.\n- E1 provides a strong single-target DEF Ignore buff to the target of his Skill if they possess a summon. The ally target receives a 16% DEF ignore, while their summon gains an even stronger 40% DEF ignore buff."
             }
         }
     }

@@ -8,14 +8,14 @@
     ],
     "overview": {
         "summary": {
-            "en": "- Qingque's kit revolves around her Talent's Hidden Hand state. When using Qingque's Skill, she draws two jade tiles of 3 different suits. Upon collecting 4 tiles of the same suit, Qingque enters the Hidden Hand state, increasing her damage and enhancing her Basic Attack to become Blast damage.\n- It is recommended to use Qingque's Ultimate after entering Hidden Hand rather than using it for the free tiles, as the free tiles it gives Qingque may result in less Skill usage and therefore less damage amplification."
+            "en": "- Qingque's kit revolves around her Talent's \"Hidden Hand\" state. When using Qingque's Skill, she draws two jade tiles of 3 different suits. Upon collecting 4 tiles of the same suit, Qingque enters the \"Hidden Hand\" state, increasing her damage and enhancing her Basic Attack to become Blast damage.\n- It is recommended to use Qingque's Ultimate after entering \"Hidden Hand\" state rather than using it for the free tiles, as the free tiles it gives Qingque may result in less Skill usage and therefore less damage amplification."
         },
         "notable_eidolons": {
             "priority": {
                 "en": "E4, E6"
             },
             "details": {
-                "en": "- E4 gives each usage of her Skill a chance to give her the Self-Sufficer buff, which causes her Enhanced Basic ATK to also launch a Follow-Up ATK that is effectively a copy of the Enhanced Basic ATK.\n- E6 grants 1 Skill Point upon using her Enhanced Basic ATK. Note that the attack from E4 is not an Enhanced Basic ATK but rather a Follow-Up ATK, and therefore does not grant 1 Skill Point when used."
+                "en": "- E4 gives each usage of her Skill a chance to give her the \"Self-Sufficer\" buff, which causes her Enhanced Basic ATK to also launch a Follow-Up ATK that is effectively a copy of the Enhanced Basic ATK.\n- E6 grants 1 Skill Point upon using her Enhanced Basic ATK. Note that the attack from E4 is not an Enhanced Basic ATK but rather a Follow-Up ATK, and therefore does not grant 1 Skill Point when used."
             }
         }
     }
