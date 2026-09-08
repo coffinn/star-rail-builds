@@ -39,7 +39,7 @@
                     "superimposition": 5,
                     "note_group": "type",
                     "note": {
-                        "en": "Can be used with an Imaginary DPS."
+                        "en": "This can only be used if the wearer is of the same Type as the DPS."
                     }
                 }
             ]

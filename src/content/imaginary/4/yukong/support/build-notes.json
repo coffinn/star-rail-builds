@@ -7,14 +7,14 @@
     ],
     "overview": {
         "summary": {
-            "en": "- Yukong is a support capable of buffing allies' CRIT Rate% and CRIT DMG%.\n- After Yukong uses her Skill or enters combat with her Technique, she gains two stacks of Roaring Bowstrings. Yukong loses one stack of Roaring Bowstrings at the end of all ally turns. While Roaring Bowstrings is active, all allies recieve an ATK% buff. If Yukong uses her Ultimate while Roaring Bowstrings is active, allies additionally gain a CRIT buff.\n-  While Yukong provides great buffs, her poor uptime and SP unfriendly ability rotation make her a bad support option."
+            "en": "- Yukong is a support capable of buffing allies' CRIT Rate% and CRIT DMG%.\n- After Yukong uses her Skill or enters combat with her Technique, she gains two stacks of \"Roaring Bowstrings\". Yukong loses one stack of \"Roaring Bowstrings\" at the end of all ally turns. While \"Roaring Bowstrings\" is active, all allies recieve an ATK% buff. If Yukong uses her Ultimate while \"Roaring Bowstrings\" is active, allies additionally gain a CRIT buff.\n-  While Yukong provides great buffs, her poor uptime and Skill Points unfriendly ability rotation make her a bad support option."
         },
         "notable_eidolons": {
             "priority": {
                 "en": "E6"
             },
             "details": {
-                "en": "- E6 gives her one stack of Roaring Bowstrings upon casting her Ultimate, easing her rotation by allowing her to use her Ultimate even when her Skill has worn off."
+                "en": "- E6 gives her one stack of \"Roaring Bowstrings\" upon casting her Ultimate, easing her rotation by allowing her to use her Ultimate even when her Skill has worn off."
             }
         }
     }
