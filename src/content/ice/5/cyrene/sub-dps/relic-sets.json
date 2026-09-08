@@ -18,6 +18,21 @@
         {
             "groups": [
                 {
+                    "items": [
+                        {
+                            "name": "messenger",
+                            "pieces": 4,
+                            "note": {
+                                "en": "foo"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
                     "choose": true,
                     "items": [
                         {
