@@ -1,0 +1,22 @@
+{
+    "main_stats": {
+        "body": [
+            "ANY"
+        ],
+        "feet": [
+            "spd"
+        ],
+        "planar_sphere": [
+            "ANY"
+        ],
+        "link_rope": [
+            "be",
+            {
+              "name": "err",
+              "note": {
+                "en": "Preferred over [[stat:be]], for [[set:eagle]] and [[light-cone:ddd]] spam."
+              }
+            }
+        ]
+    }
+}

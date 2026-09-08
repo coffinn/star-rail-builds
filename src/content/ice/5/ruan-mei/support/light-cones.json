@@ -3,27 +3,23 @@
         {
             "items": [
                 {
-                    "name": "epoch-etched-in-golden-blood",
+                    "name": "psim",
                     "superimposition": 1
+                },
+                {
+                    "name": "pursuit",
+                    "superimposition": 5
                 }
             ]
         },
         {
             "items": [
                 {
-                    "name": "flowing-nightglow",
-                    "superimposition": 1
-                }
-            ]
-        },
-        {
-            "items": [
-                {
-                    "name": "the-forever-victual",
+                    "name": "motp",
                     "superimposition": 5
                 },
                 {
-                    "name": "ddd",
+                    "name": "cogs",
                     "superimposition": 5
                 }
             ]
@@ -35,7 +31,7 @@
                     "superimposition": 5,
                     "note_group": "type",
                     "note": {
-                        "en": "Can be used with a Wind DPS."
+                        "en": "Can be used with an Ice DPS. Not recommended for Break teams."
                     }
                 }
             ]

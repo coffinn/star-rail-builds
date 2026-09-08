@@ -3,11 +3,11 @@
         {
             "items": [
                 {
-                    "name": "ninjutsu-inscription-dazzling-evilbreaker",
-                    "superimposition": 1
+                    "name": "ddd",
+                    "superimposition": 5
                 },
                 {
-                    "name": "charmony",
+                    "name": "pursuit",
                     "superimposition": 5
                 }
             ]
@@ -15,7 +15,15 @@
         {
             "items": [
                 {
-                    "name": "calculus",
+                    "name": "psim",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "motp",
                     "superimposition": 5
                 }
             ]
@@ -23,7 +31,7 @@
         {
             "items": [
                 {
-                    "name": "clamor",
+                    "name": "cogs",
                     "superimposition": 5
                 }
             ]

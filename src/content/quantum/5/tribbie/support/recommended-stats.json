@@ -1,0 +1,25 @@
+{
+    "stats": [
+        {
+            "name": "hp",
+            "recommended": "5300+"
+        },
+        {
+            "name": "spd",
+            "recommended": "< 95",
+            "note_group": "poet",
+            "note": {
+                "en": "Assuming [[set:poet]] is used."
+            }
+        },
+        {
+            "name": "cr",
+            "recommended": "68%",
+            "note_group": "poet"
+        },
+        {
+            "name": "cd",
+            "recommended": "190%+"
+        }
+    ]
+}

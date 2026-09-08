@@ -1,0 +1,21 @@
+{
+    "best": true,
+    "name": {
+        "en": "Support"
+    },
+    "notes": [
+    ],
+    "overview": {
+        "summary": {
+            "en": "- [[character:hmc]] is a Super Break support capable of enabling allies to deal Super Break damage.\n- Their Ultimate grants all allies the Backup Dancer effect for three turns, increasing their Break Effect% and converting Toughness damage dealt to Weakness Broken enemies into an instance of Super Break damage.\n- The Super Break damage triggered by Backup Dancer increases as the number of enemies on the field decreases.\n- [[character:hmc]] remains a strong and free super break support unit."
+        },
+        "notable_eidolons": {
+            "priority": {
+                "en": "E2, E4"
+            },
+            "details": {
+                "en": "- E2 increases their own Energy Regeneration Rate% for 3 turns at the beginning of the combat, making it easier to get the first Ultimate.\n- E4 is a team-wide Break Effect% boost. While only being 15% of their own Break Effect%, it is still a decent free increase for the team."
+            }
+        }
+    }
+}

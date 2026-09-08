@@ -3,27 +3,35 @@
         {
             "items": [
                 {
-                    "name": "epoch-etched-in-golden-blood",
-                    "superimposition": 1
-                }
-            ]
-        },
-        {
-            "items": [
-                {
-                    "name": "flowing-nightglow",
-                    "superimposition": 1
-                }
-            ]
-        },
-        {
-            "items": [
-                {
-                    "name": "the-forever-victual",
+                    "name": "ddd",
                     "superimposition": 5
                 },
                 {
-                    "name": "ddd",
+                    "name": "psim",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "a-grounded-ascent",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "earthly-escapade",
+                    "superimposition": 1
+                },
+                {
+                    "name": "btbio",
+                    "superimposition": 1
+                },
+                {
+                    "name": "cogs",
                     "superimposition": 5
                 }
             ]
@@ -35,7 +43,7 @@
                     "superimposition": 5,
                     "note_group": "type",
                     "note": {
-                        "en": "Can be used with a Wind DPS."
+                        "en": "Can be used with a Quantum DPS."
                     }
                 }
             ]

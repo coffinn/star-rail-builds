@@ -1,0 +1,21 @@
+{
+    "best": true,
+    "name": {
+        "en": "Support"
+    },
+    "notes": [
+    ],
+    "overview": {
+        "summary": {
+            "en": "- Sparkle is a Harmony support who generates a large amount of Skill Points for the team.\n- Her Skill advances a single ally by 50%. To maximize this action advance, it is generally best to pair a fast Sparkle with a base SPD DPS.\n- Her Ultimate provides six Skill Points for the team. Any excessive Skill Points will be stored with a limit of 10.\n- Sparkle's large Skill Point generation makes her a core support for Archer. Combined with her strong general buffs, she is also an excellent support in a wide variety of teams."
+        },
+        "investment_priority": {
+            "priority": {
+                "en": "E2 > E1 > S1"
+            },
+            "details": {
+                "en": "- E2 provides additional Def Ignore to her Talent.\n- E1 provides herself a speed buff and an additional ATK% buff for her Ultimate.\n- S1 provides teamwide CRIT buffs. However, other options such as Dance! Dance! Dance!, A Grounded Ascent, or even Past Self in Mirror can perform similarly or, in some situations, outperform her signature Light Cone."
+            }
+        }
+    }
+}

@@ -3,35 +3,28 @@
         {
             "groups": [
                 {
-                    "items": [
+                    "choices": [
                         {
-                            "name": "sacerdos",
-                            "pieces": 4
+                            "items": [
+                                {
+                                    "name": "2pc-spd", "pieces": 2
+                                }
+                            ]
+                        },
+                        {
+                            "items": [
+                                {
+                                    "name": "2pc-be", "pieces": 2
+                                }
+                            ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "groups": [
+                },
                 {
                     "items": [
                         {
-                            "name": "eagle",
+                            "name": "watchmaker",
                             "pieces": 4
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "groups": [
-                {
-                    "choose": true,
-                    "items": [
-                        {
-                            "name": "2pc-atk",
-                            "pieces": 2
                         }
                     ]
                 }
@@ -74,7 +67,11 @@
                     "items": [
                         {
                             "name": "city",
-                            "pieces": 2
+                            "pieces": 2,
+                            "note_group": "nonbreak",
+                            "note": {
+                                "en": "Not recommended for Break teams."
+                            }
                         }
                     ]
                 },
@@ -82,7 +79,8 @@
                     "items": [
                         {
                             "name": "keel",
-                            "pieces": 2
+                            "pieces": 2,
+                            "note_group": "nonbreak"
                         }
                     ]
                 }

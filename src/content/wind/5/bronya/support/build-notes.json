@@ -1,0 +1,21 @@
+{
+    "best": true,
+    "name": {
+        "en": "Support"
+    },
+    "notes": [
+    ],
+    "overview": {
+        "summary": {
+            "en": "- Bronya is a hypercarry support capable of buffing a single target with her Skill.\n- Bronya is able to fully action advance a single ally with her Skill. Her Ultimate provides a full teamwide ATK boost.\n- While Bronya falls behind specialized support options, her buffs and action advance make her a solid second choice in many teams."
+        },
+        "notable_eidolons": {
+            "priority": {
+                "en": "E2, E6"
+            },
+            "details": {
+                "en": "- E2 increases the Skill's target SPD by 30%.\n- E6 extends the duration of the Skill's DMG Boost by 1 turn."
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "best": true,
+    "name": {
+        "en": "Support"
+    },
+    "notes": [
+    ],
+    "overview": {
+        "summary": {
+            "en": "- Ruan Mei is a strong generalist support for many teams.\n- Ruan Mei's Skill provides a teamwide Weakness Break Efficiency boost, allowing allies to rapidly reduce toughness bars. When hitting an enemy while her Ultimate is active, enemies recovering from Weakness Break have their actions delayed further.\n- Although Ruan Mei provides several Break-focused buffs, she is often overshadowed by more specialized Break supports. In many teams, she falls behind stronger niche support options, though she still remains a solid secondary choice."
+        },
+        "investment_priority": {
+            "priority": {
+                "en": "E1 > S1"
+            },
+            "details": {
+                "en": "- E1 provides a teamwide DEF shred boost while her ultimate is active.\n-  S1 increases her Break Effect%. When using her Ultimate, Ruan Mei provides a team-wide DMG increase. She additionally gains an additional Skill Point if her Break Effect% is over 150%. All allies gain additional Energy at the start of each wave."
+            }
+        }
+    }
+}

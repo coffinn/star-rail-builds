@@ -3,7 +3,7 @@
         {
             "items": [
                 {
-                    "name": "epoch-etched-in-golden-blood",
+                    "name": "psim",
                     "superimposition": 1
                 }
             ]
@@ -11,7 +11,7 @@
         {
             "items": [
                 {
-                    "name": "flowing-nightglow",
+                    "name": "btbio",
                     "superimposition": 1
                 }
             ]
@@ -19,23 +19,27 @@
         {
             "items": [
                 {
-                    "name": "the-forever-victual",
+                    "name": "pnf",
                     "superimposition": 5
                 },
                 {
-                    "name": "ddd",
+                    "name": "poised-to-bloom",
                     "superimposition": 5
                 }
             ]
         },
         {
             "items": [
+                {
+                    "name": "cogs",
+                    "superimposition": 5
+                },
                 {
                     "name": "planetary-rendezvous",
                     "superimposition": 5,
                     "note_group": "type",
                     "note": {
-                        "en": "Can be used with a Wind DPS."
+                        "en": "Can be used with an Imaginary DPS."
                     }
                 }
             ]

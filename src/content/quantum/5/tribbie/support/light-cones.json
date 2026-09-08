@@ -3,11 +3,7 @@
         {
             "items": [
                 {
-                    "name": "life-should-be-cast-to-flames",
-                    "superimposition": 1
-                },
-                {
-                    "name": "into-the-unreachable-veil",
+                    "name": "if-time-were-a-flower",
                     "superimposition": 1
                 }
             ]
@@ -15,7 +11,7 @@
         {
             "items": [
                 {
-                    "name": "the-great-cosmic-enterprise",
+                    "name": "ddd",
                     "superimposition": 5
                 }
             ]
@@ -23,16 +19,24 @@
         {
             "items": [
                 {
-                    "name": "milky-way",
-                    "superimposition": 1
-                },
-                {
-                    "name": "eternal-calculus",
+                    "name": "cogs",
                     "superimposition": 5
                 },
                 {
-                    "name": "peaceful-day",
+                    "name": "motp",
                     "superimposition": 5
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "planetary-rendezvous",
+                    "superimposition": 5,
+                    "note_group": "type",
+                    "note": {
+                        "en": "Can be used with an Quantum DPS."
+                    }
                 }
             ]
         }

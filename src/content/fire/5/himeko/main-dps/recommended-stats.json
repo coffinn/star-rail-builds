@@ -2,7 +2,10 @@
     "stats": [
         {
             "name": "be",
-            "recommended": "200%+"
+            "recommended": "160%+",
+            "note": {
+                "en": "Aim for 200%+ [[stat:be]] with S1 [[light-cone:ninjutsu-inscription-dazzling-evilbreaker]] or S5 [[light-cone:charmony]]."
+            }
         },
         {
             "name": "spd",

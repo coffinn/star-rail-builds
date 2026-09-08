@@ -3,35 +3,33 @@
         {
             "groups": [
                 {
-                    "items": [
-                        {
-                            "name": "sacerdos",
-                            "pieces": 4
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "groups": [
-                {
-                    "items": [
-                        {
-                            "name": "eagle",
-                            "pieces": 4
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "groups": [
-                {
                     "choose": true,
                     "items": [
                         {
-                            "name": "2pc-atk",
+                            "name": "2pc-spd",
                             "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "choices": [
+                        {
+                            "items": [
+                                {
+                                    "name": "2pc-spd", "pieces": 2
+                                }
+                            ]
+                        },
+                        {
+                            "items": [
+                                {
+                                    "name": "2pc-hp", "pieces": 2
+                                }
+                            ]
                         }
                     ]
                 }

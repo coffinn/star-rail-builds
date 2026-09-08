@@ -1,0 +1,15 @@
+{
+    "stats": [
+        {
+            "name": "spd",
+            "recommended": "134",
+            "note": {
+                "en": "Sunday should be speed-tuned in two ways: either 134 paired with a 135+ Speed DPS, or at 160 Speed alongside a base Speed DPS."
+            }
+        },
+        {
+            "name": "cd",
+            "recommended": "200%+"
+        }
+    ]
+}

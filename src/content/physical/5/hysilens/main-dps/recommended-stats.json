@@ -2,7 +2,10 @@
     "stats": [
         {
             "name": "atk",
-            "recommended": "3200+"
+            "recommended": "3400+",
+            "note": {
+                "en": "Aim for 3800+ [[stat:atk]] with S1 [[light-cone:reforged-remembrance]] or S1 [[light-cone:why-does-the-ocean-sing]]."
+            }
         },
         {
             "name": "spd",

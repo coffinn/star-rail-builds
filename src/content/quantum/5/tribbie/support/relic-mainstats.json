@@ -1,0 +1,22 @@
+{
+    "main_stats": {
+        "body": [
+            "cr/cd"
+        ],
+        "feet": [
+            "hp%"
+        ],
+        "planar_sphere": [
+            "hp%"
+        ],
+        "link_rope": [
+            "err",
+            {
+              "name": "hp%",
+              "note": {
+                "en": "S1 [[light-cone:if-time-were-a-flower]] allows her to use an HP% Rope."
+              }
+            }
+        ]
+    }
+}
