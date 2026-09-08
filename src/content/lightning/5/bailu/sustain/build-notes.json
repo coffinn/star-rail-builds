@@ -1,0 +1,22 @@
+{
+    "best": true,
+    "name": {
+        "en": "Sustain",
+        "ru": "Хилер"
+    },
+    "notes": [
+    ],
+    "overview": {
+        "summary": {
+            "en": "- Bailu is a sustain unit who keeps the team alive through her Invigoration effect.\n- Allies gain Invigoration at the start of battle and after Bailu uses her Ultimate. When allies with Invigoration are attacked, they receive healing.\n- Bailu can struggle into enemies with frequent debuff/CC appliction as she does not have a way to cleanse debuffs."
+        },
+        "notable_eidolons": {
+            "priority": {
+                "en": "E1, E4, E6"
+            },
+            "details": {
+                "en": "- E1 regenerates 8 extra Energy for the ally target if their HP is equal to their Max HP when Invigoration ends.\n- E4 boosts the DMG dealt by Skill's target.\n- E6 increases Talent's revive chance by 1."
+            }
+        }
+    }
+}

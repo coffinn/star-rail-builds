@@ -1,0 +1,22 @@
+{
+    "best": true,
+    "name": {
+        "en": "Sustain",
+        "ru": "Хилер"
+    },
+    "notes": [
+    ],
+    "overview": {
+        "summary": {
+            "en": "- Skill and Ultimate activate [Divine Provision]. This heals and cleanses allies at the beginning of their turn, and heals them after they use their Ultimate; meeting these conditions also heals any ally below 50% HP.\n- Ultimate grants a teamwide ATK% buff, and restores 20% of her other party members' Max Energy. This can make her a strong teammate to Energy-reliant characters.\n- Her healing is decent, and her cleansing and teamwide buffs are among the best among sustains.\n- Lacks damage reduction or automatic emergency healing, so her teams are prone to one-shots. This can force allies to delay Ultimates to trigger healing."
+        },
+        "investment_priority": {
+            "priority": {
+                "en": "E1 > S1"
+            },
+            "details": {
+                "en": "- E1 allows Talent's [Divine Provision] to grant the team a 12% SPD buff and lasts 1 extra turn. It also increases Outgoing Healing by 20%, improving her consistency by making it easier to rely on Ultimate to refresh [Divine Provision] without ever using Skill. The 12% SPD can be impactful if it allows your team to hit meaningful breakpoints; can allow DPS to focus on offensive substats over SPD, and supports to reach 200 SPD.\n- S1 [[light-cone:night-of-fright]] provides [[stat:err]] for Huohuo, healing for an ally when they uses their Ultimate, as well as an [[stat:atk]] buff when they receive healing. This is a decent pick, but Huohuo has access to other viable options."
+            }
+        }
+    }
+}

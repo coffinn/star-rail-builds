@@ -1,0 +1,22 @@
+{
+    "best": true,
+    "name": {
+        "en": "Sustain",
+        "ru": "Хилер"
+    },
+    "notes": [
+    ],
+    "overview": {
+        "summary": {
+            "en": "- Luocha is a sustain unit who keeps the team alive through his Field and emergency healing.\n- Luocha deploys his Field at the start of battle and whenever he reaches two stacks of Abyss Flower. He gains one stack of Abyss Flower after using his Skill and Ultimate respectively. While Luocha's field is active, all allies are healed whenever any ally attacks. Luocha's Field lasts for two turns.\n- When an ally falls below 50% HP, Luocha automatically uses his Skill to heal them. This emergency heal can trigger once every two turns.\n- E0S0 is a good stopping point. Neither Luocha's Eidolons nor Signature Light Cone provide a significant increase to his or the team's overall performance."
+        },
+        "investment_priority": {
+            "priority": {
+                "en": "S1 > E1"
+            },
+            "details": {
+                "en": "- S1 grants him an ATK% boost and regenerates Energy after attacking enemies. Additionally, after using his Ultimate, the entire team receives a one-turn SPD boost.\n- E1 provides a small teamwide ATK% boost."
+            }
+        }
+    }
+}

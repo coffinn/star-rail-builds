@@ -1,0 +1,22 @@
+{
+    "best": true,
+    "name": {
+        "en": "Sustain",
+        "ru": "Хилер"
+    },
+    "notes": [
+    ],
+    "overview": {
+        "summary": {
+            "en": "- Lingsha is a decent AOE healer and AOE cleanser with high action frequency thanks to her summon's Follow-Up ATKs, but her healing strength can fall short for very difficult content unless she uses Skill more often.\n- Lingsha's Skill, Ult, and her summon's Follow-Up ATKs all AOE heal and cleanse, and she has an emergency  healing Follow-Up ATK that will automatically trigger whenever an ally falls below 60% health with a 2 turn cooldown.\n- At E1, Lingsha can be used as a Break Sub DPS, but generally as of patch 4.2, most Break teams avoid using a sustain in favor of a 3rd Break support instead. Thus, her value for Break teams is low.\n- For Follow-Up ATK teams, she generally sees less usage due to better sustains being available."
+        },
+        "investment_priority": {
+            "priority": {
+                "en": "S1 [[light-cone:echoes-of-the-coffin]] > E1 > S1"
+            },
+            "details": {
+                "en": "- Luocha S1 [[light-cone:echoes-of-the-coffin]] synergizes greatly with Lingsha and is preferred over her own S1 [[light-cone:scent-alone-stays-true]].\n- E1 greatly boosts her Weakness Break Efficiency while providing a notable 20% DEF shred to all Weakness Broken enemies. E1 also allows Lingsha to become a Break Sub DPS."
+            }
+        }
+    }
+}

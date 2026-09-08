@@ -1,0 +1,22 @@
+{
+    "main_stats": {
+        "body": [
+            "ogh"
+        ],
+        "feet": [
+            "spd"
+        ],
+        "planar_sphere": [
+            "atk%"
+        ],
+        "link_rope": [
+            "err",
+            {
+                "name": "be",
+                "note": {
+                    "en": "ERR% rope is preferred for sustaining in difficult content. Break Effect% rope can be used when Lingsha is E1 and is being used as a Break Sub DPS."
+                }
+            }
+        ]
+    }
+}

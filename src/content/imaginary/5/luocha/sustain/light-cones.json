@@ -1,0 +1,58 @@
+{
+    "light_cones": [
+        {
+            "items": [
+                {
+                    "name": "echoes-of-the-coffin",
+                    "superimposition": 5
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "night-of-fright",
+                    "superimposition": 1
+                },
+                {
+                    "name": "unto-tomorrows-morrow",
+                    "superimposition": 5
+                },
+                {
+                    "name": "multiplication",
+                    "superimposition": 5
+                },
+                {
+                    "name": "quid-pro-quo",
+                    "superimposition": 5
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "postop",
+                    "superimposition": 5
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "perfect-timing",
+                    "superimposition": 5
+                }
+            ]
+        }
+    ],
+    "conditional": [
+        {
+            "name": "shared-feeling",
+            "superimposition": 5,
+            "note_group": "skill-spam",
+            "note": {
+                "en": "Can be used if Luocha is able to Skill spam."
+            }
+        }
+    ]
+}
