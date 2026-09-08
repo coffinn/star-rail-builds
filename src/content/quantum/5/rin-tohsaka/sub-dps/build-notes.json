@@ -7,14 +7,14 @@
     ],
     "overview": {
         "summary": {
-            "en": "- Rin is a sub DPS character with a unique Joint Follow-up Attack with Archer.\n- After Archer uses his Skill, if there are three or fewer Skill Points or if Archer has used his Skill five times successively, Rin and Archer will lauch a Joint Follow-Up ATK, dealing damage and recovering four Skill Points.\n- Whenever allies gain or consume Skill Points, Rin gains Gem Energy. If she has 15 or more Gem Energy, or if the team has more than 7 Skill Points, she can use her Enhanced Skill. This Enhanced Skill deals increased damage based on her current Gem Energy and consumes all Skill Points except for two.\n- Rin is a core support for Archer, but can also be played as a main DPS with Eidolons and her signature lightcone."
+            "en": "- Rin is a sub DPS character with a unique Joint Follow-up Attack with Archer.\n- After Archer uses his Skill, if there are three or fewer Skill Points or if Archer has used his Skill five times successively, Rin and Archer will lauch a Joint Follow-Up ATK, dealing damage and recovering four Skill Points.\n- Whenever allies gain or consume Skill Points, Rin gains Gem Energy. If she has 15 or more Gem Energy, or if the team has more than 7 Skill Points, she can use her Enhanced Skill. This Enhanced Skill deals increased damage based on her current Gem Energy and consumes all Skill Points except for two.\n- Rin is a core support for Archer, but can also be played as a main DPS with Eidolons and her S1 [[light-cone:flickering-stars]]."
         },
         "investment_priority": {
             "priority": {
                 "en": "S1 > E2 > E1"
             },
             "details": {
-                "en": "- S1 grants Rin CRIT Rate, Skill DMG, and a teamwide DEF Ignore buff. It is her strongest vertical investment for overall team damage and provides a significant boost to Main DPS Rin.\n- E2 increases Rin's personal Skill DMG while also increasing the Skill multiplier for all allies. This is a significant increase to both her own damage and Archer's damage.\n- E1 allows Rin to utilize a new resource called Shadow Gem in addition to her normal Gem Energy and Skill Points. This makes her bursts of Skill DMG much more consistent, greatly increasing her personal DPS. However, when used primarily as an Archer support, Rin's personal damage is relatively low, making this eidolon a modest upgrade to overall team damage."
+                "en": "- S1 [[light-cone:flickering-stars]] grants Rin CRIT Rate, Skill DMG, and a teamwide DEF Ignore buff. It is her strongest vertical investment for overall team damage and provides a significant boost to Main DPS Rin.\n- E2 increases Rin's personal Skill DMG while also increasing the Skill multiplier for all allies. This is a significant increase to both her own damage and Archer's damage.\n- E1 allows Rin to utilize a new resource called Shadow Gem in addition to her normal Gem Energy and Skill Points. This makes her bursts of Skill DMG much more consistent, greatly increasing her personal DPS. However, when used primarily as an Archer support, Rin's personal damage is relatively low, making this eidolon a modest upgrade to overall team damage."
             }
         }
     }

@@ -3,16 +3,23 @@
         {
             "items": [
                 {
-                    "name": "skill"
+                    "name": "skill",
+                    "note_group": "traces",
+                    "note": {
+                        "en": "When using Himeko as a Super Break DPS, her traces can be ignored."
+                    }
                 },
                 {
-                    "name": "talent"
+                    "name": "talent",
+                    "note_group": "traces"
                 },
                 {
-                    "name": "ultimate"
+                    "name": "ultimate",
+                    "note_group": "traces"
                 },
                 {
-                    "name": "basic"
+                    "name": "basic",
+                    "note_group": "traces"
                 }
             ]
         }
