@@ -6,10 +6,7 @@
                     "items": [
                         {
                             "name": "deliverer",
-                            "pieces": 4,
-                            "note": {
-                                "en": "For Castorice, Evernight, and Hyacine Main DPS teams."
-                            }
+                            "pieces": 4
                         }
                     ]
                 }
@@ -23,7 +20,7 @@
                             "name": "messenger",
                             "pieces": 4,
                             "note": {
-                                "en": "foo"
+                                "en": "Can be Best in Slot if Cyrene can maintain 100% uptime."
                             }
                         }
                     ]
@@ -64,7 +61,7 @@
                             "name": "bone",
                             "pieces": 2,
                             "note": {
-                                "en": "For [[character:evernight]] Main DPS team."
+                                "en": "For [[character:evernight]] and personal Main DPS teams."
                             }
                         }
                     ]

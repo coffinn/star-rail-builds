@@ -17,11 +17,8 @@
                 {
                     "items": [
                         {
-                            "name": "messenger",
-                            "pieces": 4,
-                            "note": {
-                                "en": "foo"
-                            }
+                            "name": "deliverer",
+                            "pieces": 4
                         }
                     ]
                 }
@@ -36,7 +33,7 @@
                             "name": "2pc-spd",
                             "pieces": 2,
                             "note": {
-                                "en": "Can be used for a temporary build while farming for Deliverer or Eagle. Is especially good for Phainon teams because Cyrene cannot proc Deliverer."
+                                "en": "Can be used for a temporary build while farming for Deliverer or Eagle. This is especially good for Phainon teams because Cyrene cannot proc Deliverer in this team."
                             }
                         }
                     ]
@@ -67,6 +64,18 @@
                             "note": {
                                 "en": "Assuming no one else on the team holds this set."
                             }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "giant-tree",
+                            "pieces": 2
                         }
                     ]
                 }

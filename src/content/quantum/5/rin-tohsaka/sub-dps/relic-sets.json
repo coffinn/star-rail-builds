@@ -5,21 +5,6 @@
                 {
                     "items": [
                         {
-                            "name": "master-smith",
-                            "pieces": 4,
-                            "note": {
-                                "en": "Only viable if using S1 [[light-cone:life-should-be-cast-to-flames]]."
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "groups": [
-                {
-                    "items": [
-                        {
                             "name": "genius",
                             "pieces": 4
                         }
@@ -100,5 +85,18 @@
                 }
             ]
         }
+    ],
+    "conditional": [
+        {
+                    "items": [
+                        {
+                            "name": "master-smith",
+                            "pieces": 4,
+                            "note": {
+                                "en": "Only viable if using S1 [[light-cone:life-should-be-cast-to-flames]]."
+                            }
+                        }
+                    ]
+                }
     ]
 }

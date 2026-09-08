@@ -9,8 +9,7 @@
         ],
         "planar_sphere": [
             {
-                "name": "ice-dmg",
-                "note_group": "cyrene-rem"
+                "name": "ice-dmg"
             }
         ],
         "link_rope": [

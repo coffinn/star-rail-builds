@@ -6,7 +6,10 @@
         },
         {
             "name": "spd",
-            "recommended": "180+"
+            "recommended": "180+",
+            "note": {
+                "en": ""
+            }
         },
         {
             "name": "cd",
