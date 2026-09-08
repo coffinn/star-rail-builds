@@ -6,19 +6,21 @@
                     "items": [
                         {
                             "name": "eagle",
-                            "pieces": 4
+                            "pieces": 4,
+                            "note": {
+                                "en": "Preferred over [[sets:world-remaking-deliverer]] for [[character:aglaea]], [[character:anaxa]], [[character:mydei]], [[character:hysilens]]. "
+                            }
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "groups": [
+                },
                 {
                     "items": [
                         {
                             "name": "deliverer",
-                            "pieces": 4
+                            "pieces": 4,
+                            "note": {
+                                "en": "For [[character:castorice]], [[character:evernight]], [[character:hyacine]] teams."
+                            }
                         }
                     ]
                 }
@@ -33,7 +35,7 @@
                             "name": "2pc-spd",
                             "pieces": 2,
                             "note": {
-                                "en": "Can be used for a temporary build while farming for Deliverer or Eagle. This is especially good for Phainon teams because Cyrene cannot proc Deliverer in this team."
+                                "en": "Can be used for a temporary build while farming for Deliverer or Eagle. Used for Phainon teams because Cyrene cannot proc Deliverer in this team."
                             }
                         }
                     ]
