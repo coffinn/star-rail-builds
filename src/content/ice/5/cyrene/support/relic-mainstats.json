@@ -1,0 +1,17 @@
+{
+    "main_stats": {
+        "body": [
+            "cd",
+            "hp"
+        ],
+        "feet": [
+            "spd"
+        ],
+        "planar_sphere": [
+            "hp"
+        ],
+        "link_rope": [
+            "hp"
+        ]
+    }
+}

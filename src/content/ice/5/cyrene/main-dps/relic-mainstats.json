@@ -1,0 +1,20 @@
+{
+    "main_stats": {
+        "body": [
+            "cd",
+            "hp"
+        ],
+        "feet": [
+            "spd"
+        ],
+        "planar_sphere": [
+            {
+                "name": "ice-dmg",
+                "note_group": "cyrene-rem"
+            }
+        ],
+        "link_rope": [
+            "hp"
+        ]
+    }
+}

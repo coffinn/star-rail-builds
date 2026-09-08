@@ -1,0 +1,36 @@
+{
+    "light_cones": [
+        {
+            "items": [
+                {
+                    "name": "this-love-forever",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "long-may-rainbows-adorn-the-sky",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "curtain",
+                    "superimposition": 5
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "the-storys-next-page",
+                    "superimposition": 5
+                }
+            ]
+        }
+    ]
+}

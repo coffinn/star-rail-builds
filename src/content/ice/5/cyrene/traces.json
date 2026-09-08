@@ -1,0 +1,43 @@
+{
+    "traces": [
+        {
+            "items": [
+                {
+                    "name": "memo-skill"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "skill"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "talent"
+                },
+                {
+                    "name": "ultimate"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "memo-talent"
+                }
+            ]
+        },
+        {
+
+            "items": [
+                {
+                    "name": "basic"
+                }
+            ]
+        }
+    ]
+}
