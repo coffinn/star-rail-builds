@@ -6,19 +6,21 @@
                     "items": [
                         {
                             "name": "eagle",
-                            "pieces": 4
+                            "pieces": 4,
+                            "note": {
+                                "en": "Preferred over [[set:deliverer]] for Anaxa, Aglaea, Mydei, Hysilens teams."
+                            }
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "groups": [
+                },
                 {
                     "items": [
                         {
                             "name": "deliverer",
-                            "pieces": 4
+                            "pieces": 4,
+                            "note": {
+                                "en": "Main option for Castorice, Evernight, Hyacine teams."
+                            }
                         }
                     ]
                 }
