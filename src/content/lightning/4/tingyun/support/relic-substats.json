@@ -1,5 +1,6 @@
 {
     "substats_priority": [
-        "spd"
+        "spd",
+        "atk%"
     ]
 }

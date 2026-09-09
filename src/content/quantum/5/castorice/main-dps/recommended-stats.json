@@ -9,10 +9,10 @@
         },
         {
             "name": "spd",
-            "recommended": "<95",
+            "recommended": "< 95",
             "note_group": "poet-cr",
             "note": {
-                "en": "[[set:poet-of-mourning-collapse]], requires under 95 SPD to acquire 32% CRIT Rate buff. If not using [[set:poet]], aim base speed and 100% CRIT Rate out of combat, and subtract CRIT Rate buffers (if applicable) accordingly."
+                "en": "Assuming [[set:poet-of-mourning-collapse]] is being used, as it requires under 95 SPD to acquire 32% CRIT Rate buff in combat. If not using [[set:poet]], aim base SPD and 100% CRIT Rate out of combat, and subtract CRIT Rate buffers (if applicable) accordingly."
             }
         },
         {

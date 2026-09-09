@@ -4,13 +4,13 @@
             "cd"
         ],
         "feet": [
-            "hp"
+            "hp%"
         ],
         "planar_sphere": [
-            "ice-dmg"
+            "hp%"
         ],
         "link_rope": [
-            "hp"
+            "err"
         ]
     }
 }

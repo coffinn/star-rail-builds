@@ -5,6 +5,10 @@
                 {
                     "name": "a-grounded-ascent",
                     "superimposition": 1
+                },
+                {
+                    "name": "epoch-etched-in-golden-blood",
+                    "superimposition": 1
                 }
             ]
         },
@@ -13,11 +17,7 @@
                 {
                     "name": "motp",
                     "superimposition": 5
-                }
-            ]
-        },
-        {
-            "items": [
+                },
                 {
                     "name": "meshing-cogs",
                     "superimposition": 5
@@ -28,6 +28,26 @@
             "items": [
                 {
                     "name": "ddd",
+                    "superimposition": 5
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "poised-to-bloom",
+                    "superimposition": 5,
+                    "note": {
+                        "en": "Requires two teammates of the same Path to be in the team. Does not have to be the same Path as Tingyun.",
+                        "ru": "Трубется, чтобы в команде было два союзника одного и того же Пути. Не обязательно, чтобы их Путь совпадал с Путем Тинъюнь."
+                    }
+                },
+                {
+                    "name": "the-forever-victual",
+                    "superimposition": 5
+                },
+                {
+                    "name": "ftj",
                     "superimposition": 5
                 }
             ]

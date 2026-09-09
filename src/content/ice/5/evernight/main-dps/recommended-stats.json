@@ -8,7 +8,7 @@
             "name": "cr",
             "recommended": "65%",
             "note": {
-                "en": "[[character:evernight]] self buffs 35% CRIT Rate. Substract appropriate CRIT Rate buffers."
+                "en": "[[character:evernight]]'s A2 buffs her [[stat:cr]] by 35%, for 100% [[stat:cr]] in battle.. Substract appropriate CRIT Rate buffers."
             }
         },
         {

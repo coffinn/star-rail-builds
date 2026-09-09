@@ -2,7 +2,10 @@
     "stats": [
         {
             "name": "spd",
-            "recommended": "194+"
+            "recommended": "194+",
+            "note": {
+                "en": "Assuming [[set:warrior-goddess]], otherwise aim for 200+ SPD."
+            }
         },
         {
             "name": "hp",
