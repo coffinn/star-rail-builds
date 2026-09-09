@@ -1,0 +1,38 @@
+{
+    "light_cones": [
+        {
+            "items": [
+                {
+                    "name": "make-farewells-more-beautiful",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "to-evernights-stars",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "the-storys-next-page",
+                    "superimposition": 5
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "viab",
+                    "superimposition": 5,
+                    "note_group": "high-hp-lc",
+                    "note": " Before resorting to [[lightcone:viab]], use any high base HP light cone off Path, specifically 1164+/1058+ base HP light cones."
+                }
+            ]
+        }
+    ]
+}

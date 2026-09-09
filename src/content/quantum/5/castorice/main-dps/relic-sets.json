@@ -1,0 +1,41 @@
+{
+    "relic_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "poet",
+                            "pieces": 4
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "deliverer",
+                            "pieces": 4,
+                            "note": {
+                                "en": "For higher invested Castorice teams."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "planar_ornaments": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "bone",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

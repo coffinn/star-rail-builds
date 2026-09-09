@@ -1,0 +1,19 @@
+{
+    "stats": [
+        {
+            "name": "hp",
+            "recommended": "7000+"
+        },
+        {
+            "name": "cr",
+            "recommended": "65%",
+            "note": {
+                "en": "[[character:evernight]] self buffs 35% CRIT Rate."
+            }
+        },
+        {
+            "name": "cd",
+            "recommended": "200%+"
+        }
+    ]
+}

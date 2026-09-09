@@ -1,0 +1,30 @@
+{
+    "stats": [
+        {
+            "name": "hp",
+            "recommended": "9200",
+            "note": {
+                "en": "With HP orb."
+            }
+        },
+        {
+            "name": "spd",
+            "recommended": "<95",
+            "note_group": "poet-cr",
+            "note": {
+                "en": "[[set:poet-of-mourning-collapse]], requires under 95 SPD to acquire 32% CRIT Rate buff. If not using [[set:poet]], aim base speed and 100% CRIT Rate out of combat, and subtract CRIT Rate buffers (if applicable) accordingly."
+            }
+        },
+        {
+            "name": "cr",
+            "recommended": "68%",
+            "note_group": "poet-cr"
+            
+            
+        },
+        {
+            "name": "cd",
+            "recommended": "200%+"
+        }
+    ]
+}
