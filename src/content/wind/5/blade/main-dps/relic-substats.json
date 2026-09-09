@@ -1,0 +1,13 @@
+{
+    "substats_priority": [
+        "cr/cd",
+        "hp%",
+        {
+            "name": "spd",
+            "note_group": "blade-spd",
+            "note": {
+                "en": "Depends on team. 134 SPD or base speed."
+            }
+        }
+    ]
+}
