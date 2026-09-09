@@ -4,24 +4,24 @@
             "cr/cd"
         ],
         "feet": [
-            "hp"
+            "hp%"
         ],
         "planar_sphere": [
             {
-                "name": "hp",
+                "name": "hp%",
                 "note_group":"cas-orb"
             },
             {
                 "name": "quantum-dmg",
                 "note_group": "cas-orb",
                 "note": {
-                    "en": "HP is preferred for builds with lower number of HP subs and Quantum DMG Boost for builds with higher number of HP subs."
+                    "en": "HP% is preferred for builds with lower number of HP subs and Quantum DMG Boost for builds with higher number of HP subs."
                 }
             }
 
         ],
         "link_rope": [
-            "hp"
+            "hp%"
         ]
     }
 }
