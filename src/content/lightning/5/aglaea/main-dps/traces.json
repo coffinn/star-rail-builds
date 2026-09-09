@@ -1,0 +1,47 @@
+{
+    "traces": [
+        {
+            "items": [
+                {
+                    "name": "basic"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "ultimate"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "talent"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "memo-skill"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "memo-talent"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "skill",
+                    "note": "[[ability:skill]] can be ignored."
+                }
+            ]
+        }
+    ]
+}

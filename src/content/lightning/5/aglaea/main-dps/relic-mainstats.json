@@ -1,0 +1,26 @@
+{
+    "main_stats": {
+        "body": [
+            "cr/cd"
+        ],
+        "feet": [
+            "atk%"
+        ],
+        "planar_sphere": [
+            "lightning-dmg"
+        ],
+        "link_rope": [
+            {
+                "name": "err",
+                "note_group": "aglaea-err",
+                "note": {
+                    "en": "At E1, ATK% rope is preferred with Sunday or Cyrene."
+                }
+            },
+            {
+                "name": "atk%",
+                "note_group": "aglaea-err"
+            }
+        ]
+    }
+}

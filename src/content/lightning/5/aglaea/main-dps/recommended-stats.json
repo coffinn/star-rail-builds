@@ -1,0 +1,23 @@
+{
+    "stats": [
+        {
+            "name": "atk",
+            "recommended": "2200+"
+        },
+        {
+            "name": "spd",
+            "recommended": "102"
+        },
+        {
+            "name": "cr",
+            "recommended": "100%",
+            "note": {
+                "en": "Modify your CRIT Rate based on in battle buffs from teammates."
+            }
+        },
+        {
+            "name": "cd",
+            "recommended": "130%+"
+        }
+    ]
+}

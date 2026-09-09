@@ -1,0 +1,52 @@
+{
+    "light_cones": [
+        {
+            "items": [
+                {
+                    "name": "time-woven-into-gold",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "long-may-rainbows-adorn-the-sky",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "sncl",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "the-flower-remembers",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "reminiscence",
+                    "superimposition": 5
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "geniuses-greetings",
+                    "superimposition": 5
+                }
+            ]
+        }
+    ]
+}
