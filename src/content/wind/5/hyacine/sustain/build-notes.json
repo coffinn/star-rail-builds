@@ -1,0 +1,22 @@
+{
+    "best": true,
+    "name": {
+        "en": "Sustain",
+        "ru": "Хилер"
+    },
+    "notes": [
+    ],
+    "overview": {
+        "summary": {
+            "en": "- [[character:hyacine]] is a very strong general sustain, with strong on turn and out of turn healing. Her Skill and Ultimate have strong amounts of healing, and her Memosprite Little Ica heals allies when they lose HP.\n- [[character:hyacine]] excels in HP scaling teams like [[character:castorice]] and [[character:mydei]], where the team's HP loss synergizes with her Memosprite Talent healing."
+        },
+        "investment_priority": {
+            "priority": {
+                "en": "E2 > E1 = S1"
+            },
+            "details": {
+                "en": "-  E2 gives a huge 30% SPD boost to all allies when they lose HP for 2 turns. This effect can easily be permanent with her S1, but still has high uptime without it.\n- E1 gives 50% Max HP to all allies, while also giving allies sustain after they attack. This greatly improves [[character:hyacine]]'s already strong sustain capabilities.\n- S1 gives her a SPD boost while also causing all of [[character:hyacine]]'s actions to drain a small amount of HP from all allies, enabling [[character:hyacine]]'s Memosprite Talent as well as her E2."
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "traces": [
+        {
+            "items": [
+                {
+                    "name": "skill"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "ultimate"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "memo-talent"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "talent"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "memo-skill"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "basic",
+                    "note": {
+                        "en": "Basic ATK can be ignored.",
+                        "ru": "Базовую атаку можно не прокачивать."
+                    }
+                }
+            ]
+        }
+    ]
+}
