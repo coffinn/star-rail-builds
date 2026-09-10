@@ -1,7 +1,7 @@
 {
     "best": true,
     "name": {
-        "en": "Break DPS"
+        "en": "DPS"
     },
     "notes": [
     ],
@@ -14,7 +14,7 @@
                 "en": "E1 = S1 > E2"
             },
             "details": {
-                "en": "E1: Increases DMG taken by enemies by 24%. When an enemy is below 50% health, this increases to 36% (provides more value if Ashveil is a sub-DPS).\n- His S1 [[light-cone:the-finale-of-a-lie]] provides 18% CR. Grants 40% ATK and applies 20% Vulnerability to all enemies at the start of the battle and for every 4 instances of FuA.\n- E2: Increases maximum Gluttony to 18 and refunds 35% of consumed Gluttony after an enhanced FuA."
+                "en": "- E1: Increases DMG taken by enemies by 24%. When an enemy is below 50% health, this increases to 36% (provides more value if Ashveil is a sub-DPS).\n- His S1 [[light-cone:the-finale-of-a-lie]] provides 18% CR. Grants 40% ATK and applies 20% Vulnerability to all enemies at the start of the battle and for every 4 instances of FuA.\n- E2: Increases maximum Gluttony to 18 and refunds 35% of consumed Gluttony after an enhanced FuA."
             }
         }
     }
