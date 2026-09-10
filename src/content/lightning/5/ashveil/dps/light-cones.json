@@ -1,0 +1,37 @@
+{
+    "light_cones": [
+        {
+            "items": [
+                {
+                    "name": "the-finale-of-a-lie",
+                    "superimposition": 1
+
+                },
+                {
+                    "name": "baptism-of-pure-thought",
+                    "superimposition": 1
+                },
+                {
+                    "name": "the-hell-where-ideals-burn",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "worrisome-blissful",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "cruising",
+                    "superimposition": 1
+                }
+            ]
+        }  
+    ]
+}    
