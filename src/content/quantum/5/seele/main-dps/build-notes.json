@@ -3,9 +3,18 @@
   "name": {
     "en": "Main DPS"
   },
-  "notes": [
-    {
-      "en": "foo"
+  "notes": [],
+  "overview": {
+    "summary": {
+        "en": "- Whenever Seele defeats an enemy, she triggers \"Resurgence\". During \"Resurgence\", Seele enters Amplification state, which grants her increased DMG, Quantum RES PEN and an extra turn. Defeating enemies in this extra turn will not trigger another \"Resurgence\".\n- Seele's Skill deals DMG to a single enemy and increases her SPD. If any ally attacks any enemy and causes their HP to reach 50% or lower, Seele immediately uses her Skill at that target. This Skill does not consume SP or generate energy, and can only be triggered once per Seele's turn.\n- Upon using Seele's Ultimate, she enters Amplification state and deals a huge amount of DMG to one enemy.\n- Seele's Basic Attack deals minor DMG to one enemy and advances herself by 20%."
+    },
+    "investment_priority": {
+        "priority": {
+            "en": "S1 > E1 > E2"
+        },
+        "details": {
+            "en": "- S1 gives 18% CRIT Rate to the wearer. The more SPD the wearer has, they gains increased Basic ATK, Skill DMG and Ultimate CRIT DMG.\n- E1 gives herself 15% CRIT Rate and 20% DEF Ignore if she attacks enemy whose HP is equal or lower than 80%.\n- E2 allows the SPD boost from her Skill to stack up to 2 times.\n- Seele's Eidolons and S1 are rather mediocore, pairing with Seele being able to be obtained via losing 50/50s makes investments on her supports a better priority to go for."
+        }
     }
-  ]
+  }
 }
