@@ -1,11 +1,6 @@
 {
     "substats_priority": [
-        {
-            "name": "cr",
-            "note": {
-                "en": "Prioritize first until you reach 100% CRIT Rate."
-            }
-        },
+        "cr",
         "cd",
         "atk%"
     ]
