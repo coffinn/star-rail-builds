@@ -1,7 +1,9 @@
 {
     "substats_priority": [
         "cr",
-        "cdmg",
+        {
+            "name": "cdmg"
+        },
         {
             "name": "atk"
         },
