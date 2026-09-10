@@ -5,5 +5,7 @@
     "talent": "Talent",
     "technique": "Technique",
     "elation-skill": "Comicompétence",
-    "assist-skill": "Compétence de soutien"
+    "assist-skill": "Compétence de soutien",
+    "memo-skill": "Compétence du Mnémesprit",
+    "memo-talent": "Talent du Mnémesprit"
 }
