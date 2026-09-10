@@ -20,7 +20,7 @@
               "name": "genius-of-brilliant-stars",
               "pieces": 4,
               "note": {
-                "en": "Potent with high DEF reduction."
+                "en": "Potent with high DEF Reduction."
               }
             }
           ]
@@ -73,7 +73,7 @@
               "name": "firmament-frontline-glamoth",
               "pieces": 2,
               "note": {
-                "en": "Performs better than [[set:salsotto]] if you can reach 135 SPD while also being more efficient to farm for other dps."
+                "en": "Performs better than [[set:salsotto]] if can reach 135 SPD."
               }
             }
           ]
@@ -83,8 +83,8 @@
             {
               "name": "duran-dynasty-of-running-wolves",
               "pieces": 2,
-              "notes": {
-                "en": "Can be used if there are other follow-up attackers in the team, otherwise it takes a while to reach max stacks."
+              "note": {
+                "en": "Can be used if there are other Follow-Up Attackers in the team, otherwise will take a while to reach max stacks."
               }
             }
           ]
