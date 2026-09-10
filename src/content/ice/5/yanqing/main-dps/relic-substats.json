@@ -1,10 +1,10 @@
 {
     "substats_priority": [
-        "cd",
         {
             "name": "cr",
 	    "note_group": "crit-rate-prio"
         },
+        "cd",
         "atk%"
     ]
 }
