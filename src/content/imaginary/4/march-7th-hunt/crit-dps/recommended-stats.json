@@ -1,0 +1,23 @@
+{
+    "stats": [
+        {
+            "name": "atk",
+            "recommended": "2500+"
+        },
+        {
+            "name": "spd",
+            "recommended": "123",
+            "note": {
+                "en": "123 SPD out of combat emulates 134 SPD in combat."
+            }
+        },
+        {
+            "name": "cr",
+            "recommended": "100%"
+        },
+        {
+            "name": "cd",
+            "recommended": "170%+"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "name": {
+        "en": "Break DPS"
+    },
+    "notes": [
+    ],
+    "overview": {
+        "summary": {
+            "en": "- When March 7th uses her Skill, she designates the target as her Shifu.\nIf March 7th uses her Skill on a Erudition, Destruction, Hunt, or Remembrance unit, her Enhanced Basic ATK will deal Additional DMG. If March 7th uses her Skill on a Harmony, Nihility, Preservation, or Abundance unit, her Enhanced Basic ATK will deal additional toughness damage.\n- After March 7th uses a Basic ATK or after her Shifu launches an attack or uses their Ultimate, March 7th gains one Charge. At seven Charges, March 7th immediately takes action and uses her Enhanced Basic ATK.\n- [[character:hm7]]'s performance is heavily dependent on The Dahlia and Fugue."
+        },
+        "notable_eidolons": {
+            "priority": {
+                "en": "E2"
+            },
+            "details": {
+                "en": "- E2 allows [[character:hm7]] to launch a Follow-Up ATK after her \"Shifu\" launches a [[ability:basic]] or [[ability:skill]], as well as gaining 1 Charge and triggering the corresponding effect based on \"Shifu\"'s Path."
+            }
+        }
+    }
+}    

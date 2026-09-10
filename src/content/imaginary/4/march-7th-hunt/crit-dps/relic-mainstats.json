@@ -1,0 +1,18 @@
+{
+    "main_stats": {
+        "body": [
+            "cr/cd"
+        ],
+        "feet": [
+            "spd",
+            "atk%"
+        ],
+        "planar_sphere": [
+            "imaginary-dmg",
+            "atk%"
+        ],
+        "link_rope": [
+            "atk%"
+        ]
+    }
+}
