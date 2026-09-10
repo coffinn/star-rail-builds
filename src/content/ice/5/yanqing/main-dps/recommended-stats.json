@@ -2,7 +2,6 @@
     "stats": [
         {
             "name": "cr",
-            "baseline": "80%",
             "recommended": "80%",
             "note_group": "crit-rate-prio",
             "note": {
@@ -11,13 +10,11 @@
         },
         {
             "name": "cd",
-            "baseline": "120%",
             "recommended": "160%+"
         },
         {
             "name": "atk%",
-            "baseline": "",
-            "recommended": ""
+            "recommended": "3000+"
         }
     ]
 }

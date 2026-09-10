@@ -13,7 +13,7 @@
             "items": [
                 {
                     "name": "shadowed-by-night",
-                    "superimposition": 1
+                    "superimposition": 5
                 }
             ]
         },
@@ -21,7 +21,7 @@
             "items": [
                 {
                     "name": "cruising",
-                    "superimposition": 1
+                    "superimposition": 5
                 }
             ]
         },

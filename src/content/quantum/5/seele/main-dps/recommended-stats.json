@@ -2,18 +2,15 @@
     "stats": [
         {
             "name": "cr",
-            "baseline": "100%",
             "recommended": "100%"
         },
         {
             "name": "cd",
-            "baseline": "120%",
-            "recommended": "120+%"
+            "recommended": "120%+"
         },
         {
             "name": "atk%",
-            "baseline": "",
-            "recommended": ""
+            "recommended": "3000+"
         }
     ]
 }

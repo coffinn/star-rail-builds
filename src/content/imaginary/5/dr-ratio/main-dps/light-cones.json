@@ -1,22 +1,48 @@
 {
-    "light_cones": [
+  "light_cones": [
+    {
+      "items": [
         {
-            "items": [{ "name": "baptism-of-pure-thought", "superimposition": 1}]
-        },
-        {
-            "items": [{ "name": "the-finale-of-a-lie", "superimposition": 1}]
-        },
-        {
-            "items": [{ "name": "worrisome-blissful", "superimposition": 1}]
-        },
-        {
-            "items": [
-                { "name": "cruising-in-the-stellar-sea", "superimposition": 1},
-                { "name": "see-you-at-the-end", "superimposition": 1}
-            ]
-        },
-        {
-            "items": [{ "name": "only-silence-remains", "superimposition": 5}]
+          "name": "baptism-of-pure-thought",
+          "superimposition": 1
         }
-    ]
+      ]
+    },
+    {
+      "items": [
+        {
+          "name": "the-finale-of-a-lie",
+          "superimposition": 1
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "name": "worrisome-blissful",
+          "superimposition": 1
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "name": "cruising-in-the-stellar-sea",
+          "superimposition": 5
+        },
+        {
+          "name": "see-you-at-the-end",
+          "superimposition": 1
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "name": "only-silence-remains",
+          "superimposition": 5
+        }
+      ]
+    }
+  ]
 }

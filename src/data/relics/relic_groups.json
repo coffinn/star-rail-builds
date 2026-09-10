@@ -52,5 +52,35 @@
       "thief-of-shooting-meteor",
       "watchmaker-master-of-dream-machinations"
     ]
+  },
+
+  "2pc-cr": {
+    "label": "cr",
+    "pieces": 2,
+    "type": "cavern",
+    "sets": [
+      "scholar-lost-in-erudition",
+      "world-remaking-deliverer"
+    ]
+  },
+
+  "2pc-cd": {
+    "label": "cd",
+    "pieces": 2,
+    "type": "cavern",
+    "sets": [
+      "wavestrider-captain",
+      "ever-glorious-magical-girl"
+    ]
+  },
+
+  "2pc-quantum": {
+    "label": "quantum-dmg",
+    "pieces": 2,
+    "type": "cavern",
+    "sets": [
+      "poet-of-mourning-collapse",
+      "genius-of-brilliant-stars"
+    ]
   }
 }
