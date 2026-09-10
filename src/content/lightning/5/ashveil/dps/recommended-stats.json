@@ -1,0 +1,24 @@
+{
+    "stats": [
+        {
+            "name": "atk",
+            "baseline": "2500+",
+            "recommended": "3000+"
+        },
+        {
+            "name": "spd",
+            "baseline": "Base / 134",
+            "recommended": "Base / 134"
+        },
+        {
+            "name": "cr",
+            "baseline": "100%",
+            "recommended": "100%"
+        },
+        {
+            "name": "cdmg",
+            "baseline": "120%",
+            "recommended": "150%"
+        }
+    ]
+}
