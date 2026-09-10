@@ -5,15 +5,15 @@
             "cd"
         ],
         "feet": [
-            "atk",
+            "atk%",
             "spd"
         ],
         "planar_sphere": [
-            "atk",
+            "atk%",
             "lightning-dmg"
         ],
         "link_rope": [
-            "atk",
+            "atk%",
             "err"
         ]
     }
