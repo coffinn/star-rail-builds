@@ -24,7 +24,8 @@
         "rarity": 5,
         "version_released": "1.0",
         "tags": [
-            "lightning-dmg"
+            "lightning-dmg",
+            "atk"
         ],
         "2p": {
             "en": "Increases Lightning DMG by 10%.",
@@ -42,7 +43,8 @@
         "rarity": 5,
         "version_released": "1.0",
         "tags": [
-            "physical-dmg"
+            "physical-dmg",
+            "atk"
         ],
         "2p": {
             "en": "Increases Physical DMG by 10%.",
@@ -80,7 +82,7 @@
         "rarity": 5,
         "version_released": "4.0",
         "tags": [
-            "speed",
+            "spd",
             "crit-rate",
             "elation"
         ],
@@ -138,7 +140,8 @@
         "rarity": 5,
         "version_released": "1.0",
         "tags": [
-            "fire-dmg"
+            "fire-dmg",
+            "skill-dmg"
         ],
         "2p": {
             "en": "Increases Fire DMG by 10%.",
@@ -194,7 +197,7 @@
         "version_released": "3.0",
         "tags": [
             "atk",
-            "speed",
+            "spd",
             "crit-dmg"
         ],
         "2p": {
@@ -213,7 +216,8 @@
         "rarity": 5,
         "version_released": "1.0",
         "tags": [
-            "ice-dmg"
+            "ice-dmg",
+            "crit-dmg"
         ],
         "2p": {
             "en": "Increases Ice DMG by 10%.",
@@ -268,7 +272,7 @@
         "rarity": 5,
         "version_released": "1.2",
         "tags": [
-            "speed",
+            "spd",
             "crit-rate"
         ],
         "2p": {
@@ -287,7 +291,7 @@
         "rarity": 5,
         "version_released": "1.2",
         "tags": [
-            "speed"
+            "spd"
         ],
         "2p": {
             "en": "Increases SPD by 6%.",
@@ -305,7 +309,8 @@
         "rarity": 5,
         "version_released": "1.0",
         "tags": [
-            "atk"
+            "atk",
+            "basic-atk-dmg"
         ],
         "2p": {
             "en": "ATK increases by 12%.",
@@ -381,7 +386,7 @@
         "version_released": "1.5",
         "tags": [
             "atk",
-            "dot",
+            "dot-dmg",
             "def-ignore"
         ],
         "2p": {
@@ -400,7 +405,7 @@
         "rarity": 5,
         "version_released": "2.6",
         "tags": [
-            "speed",
+            "spd",
             "crit-dmg"
         ],
         "2p": {
@@ -458,7 +463,7 @@
         "rarity": 5,
         "version_released": "1.5",
         "tags": [
-            "fua-dmg",
+            "follow-up-attack",
             "atk"
         ],
         "2p": {
@@ -515,7 +520,7 @@
         "rarity": 5,
         "version_released": "3.3",
         "tags": [
-            "speed",
+            "spd",
             "outgoing-healing",
             "crit-dmg"
         ],
@@ -535,7 +540,10 @@
         "rarity": 5,
         "version_released": "1.0",
         "tags": [
-            "img-dmg"
+            "imaginary-dmg",
+            "debuff",
+            "crit-rate",
+            "crit-dmg"
         ],
         "2p": {
             "en": "Increases Imaginary DMG by 10%.",
@@ -571,7 +579,8 @@
         "rarity": 5,
         "version_released": "3.3",
         "tags": [
-            "crit-dmg"
+            "crit-dmg",
+            "atk"
         ],
         "2p": {
             "en": "Increases CRIT DMG by 16%.",
@@ -667,7 +676,7 @@
         "version_released":"3.7",
         "tags":[
             "crit-rate",
-            "speed"
+            "spd"
         ],
         "2p": {
             "en": "Increases the wearer's CRIT Rate by 8%. While the wearer's memosprite is on the field, increases all allies' SPD by 8%. This effect cannot be stacked.",
@@ -833,7 +842,7 @@
         "rarity": 5,
         "version_released": "2.3",
         "tags": [
-            "speed",
+            "spd",
             "break-effect"
         ],
         "2p": {
@@ -847,7 +856,7 @@
         "rarity": 5,
         "version_released": "3.1",
         "tags": [
-            "speed",
+            "spd",
             "outgoing-healing"
         ],
         "2p": {
@@ -890,7 +899,7 @@
         "rarity": 5,
         "version_released": "2.5",
         "tags": [
-            "energy-regen",
+            "err",
             "atk"
         ],
         "2p": {
@@ -919,7 +928,7 @@
         "rarity": 5,
         "version_released": "1.5",
         "tags": [
-            "energy-regen",
+            "err",
             "same-type-dmg"
         ],
         "2p": {
@@ -1004,7 +1013,7 @@
         "rarity": 5,
         "version_released": "1.0",
         "tags": [
-            "energy-regen",
+            "err",
             "action-advance"
         ],
         "2p": {
