@@ -1,0 +1,44 @@
+{
+    "main_stats": {
+        "body": [
+            {
+                "name": "hp%",
+                "note_group": "sobin-atk-scaler",
+                "note": {
+                    "en": "Paired with ATK scaling DPS."
+                }
+            }
+        ],
+        "feet": [
+            {
+                "name": "spd",
+                "note_group": "sobin-hp-scaler",
+                "note": {
+                    "en": "Paired with HP scaling DPS."
+                }
+            },
+            {
+                "name": "hp%",
+                "note_group": "sobin-atk-scaler"
+            }
+        ],
+        "planar_sphere": [
+            "hp%",
+            {
+                "name": "wind-dmg",
+                "note": {
+                    "en": "For her personal damage output."
+                }
+            }
+        ],
+        "link_rope": [
+            "err",
+            {
+                "name": "hp%",
+                "note": {
+                    "en": "Preferred with Phainon."
+                }
+            }
+        ]
+    }
+}
