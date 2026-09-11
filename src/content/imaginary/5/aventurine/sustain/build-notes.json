@@ -7,14 +7,14 @@
     ],
     "overview": {
         "summary": {
-            "en": "- Strong Shielder with Follow-Up ATKs. Whenever Aventurine uses his Skill or triggers his Follow-Up ATK from his Talent, he grants Shield to all allies. Shielded allies will also gain Effect RES.\n- As of Patch 4.2, E0S0 Aventurine's sustaining may not be sufficient for difficult endgame content. To improve his Shield frequency and uptime, E1S0 is recommended. However, it would be best to invest in a newer sustain."
+            "en": "- Aventurine provides Shields with his Skill or whenever his Follow-Up ATKs are triggered, using his Skill provides all allies with \"Fortified Wager\". Allies with \"Fortified Wager\" get increased Effect RES, Aventurine himself is able to resist any Crowd Control debuffs once every two turns with said effect.\n- His Follow-Up ATKs trigger once he has 7 points of \"Blind Bet\", these points are gained when allies with \"Fortified Wager\" are attacked, or if an ally launches a Follow-Up ATK. Upon using his Ultimate, he gains 1 to 7 points of \"Blind Bet\".\n- In higher difficulty endgame content he is likely to struggle with sustaining. To improve his Shield frequency, it is recommended to get his E1. This enables his Ultimate to apply \"Fortified Wager\", allowing him to Basic ATK instead of using Skill."
         },
         "investment_priority": {
             "priority": {
                 "en": "E1 > E2 > S1"
             },
             "details": {
-                "en": "- E1 is the main quality of life Eidolon, letting his Ultimate refresh his Shields so that he can play purely Skill Point positive. It also provides 20% teamwide CRIT DMG buff.\n- E2 is a useful, but overall modest 12% All-Type RES PEN debuff on the target of his Basic ATKs.\n- S1 [[light-cone:inherently-unjust-destiny]] provides a useful Vulnerability debuff, which can be applied to several targets through his Bounce Follow-Up ATK. The extra DEF% also helps to boost his Shield capability."
+                "en": "- E1 is the main quality of life Eidolon, letting his Ultimate refresh his Shields so that he can play purely Skill Point positive. It also provides 20% teamwide CRIT DMG buff.\n- E2 is a useful, but overall modest 12% All-Type RES PEN debuff on the target of his Basic ATKs.\n- S1 [[light-cone:inherently-unjust-destiny]] provides a useful Vulnerability debuff, which can be applied to several targets through his Bounce Follow-Up ATK. The extra DEF% also helps to boost his Shield capability. However, it would be best to invest in a newer sustain."
             }
         }
     }
