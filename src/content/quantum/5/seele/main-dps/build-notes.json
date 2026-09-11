@@ -6,7 +6,7 @@
   "notes": [],
   "overview": {
     "summary": {
-        "en": "- Whenever Seele defeats an enemy, she triggers \"Resurgence\". During \"Resurgence\", Seele enters Amplification state, which grants her increased DMG, Quantum RES PEN and an extra turn. Defeating enemies in this extra turn will not trigger another \"Resurgence\".\n- Seele's Skill deals DMG to a single enemy and increases her SPD. If any ally attacks any enemy and causes their HP to reach 50% or lower, Seele immediately uses her Skill at that target. This Skill does not consume SP or generate energy, and can only be triggered once per Seele's turn.\n- Upon using Seele's Ultimate, she enters Amplification state and deals a huge amount of DMG to one enemy.\n- Seele's Basic Attack deals minor DMG to one enemy and advances herself by 20%."
+        "en": "- Whenever Seele defeats an enemy, she triggers \"Resurgence\". During \"Resurgence\", Seele enters Amplification state, which grants her increased DMG, Quantum RES PEN and an extra turn. Defeating enemies in this extra turn will not trigger another \"Resurgence\".\n- Seele's Skill deals DMG to a single enemy and increases her SPD. If any ally attacks any enemy and causes their HP to reach 50% or lower, Seele immediately uses her Skill at that target. This Skill does not consume Skill Point or generate Energy, and can only be triggered once per Seele's turn.\n- Upon using Seele's Ultimate, she enters Amplification state and deals a huge amount of DMG to one enemy.\n- Seele's Basic Attack deals minor DMG to one enemy and advances herself by 20%."
     },
     "investment_priority": {
         "priority": {
