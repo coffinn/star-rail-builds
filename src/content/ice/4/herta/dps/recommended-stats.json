@@ -2,7 +2,10 @@
     "stats": [
         {
             "name": "cr",
-            "recommended": "85%"
+            "recommended": "85%",
+            "note": {
+                "en": "Herta's E2 buffs her [[stat:cr]] by 15%, for 100% [[stat:cr]] in battle."
+            }
         },
         {
             "name": "cd",

@@ -13,38 +13,38 @@ body {
 
 
 body[data-type="physical"] {
-    --bg: #404d4f;
-    --type: #b8b6b5;
+    --bg: #363636;
+    --type: #cccccc;
 }
 
 body[data-type="fire"] {
     --bg: #3d1818;
-    --type: #ff6640;
+    --type: #EA3F3F;
 }
 
 body[data-type="ice"] {
-    --bg: #235d74;
-    --type: #7af0f0;
+    --bg: #0C384F;
+    --type: #7FD2FC;
 }
 
 body[data-type="lightning"] {
     --bg: #22052c;
-    --type: #c87fff;
+    --type: #BE79D8;
 }
 
 body[data-type="wind"] {
-    --bg: #153434;
-    --type: #9de43b;
+    --bg: #17281D;
+    --type: #67C086;
 }
 
 body[data-type="quantum"] {
-    --bg: #241b46;
-    --type: #a679ff;
+    --bg: #201D34;
+    --type: #9284EA;
 }
 
 body[data-type="imaginary"] {
-    --bg: #3d2c1d;
-    --type: #f3b530;
+    --bg: #372814;
+    --type: #F3C030;
 }
 
 body[data-type="base"] {

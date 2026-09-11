@@ -5,35 +5,30 @@
                 {
                     "items": [
                         {
-                            "name": "eagle",
-                            "pieces": 4
-                        
-                        }                       
+                            "name": "duke",
+                            "pieces": 4,
+                            "note_group": "personaldmg",
+                            "note": {
+                              "en": "For her personal damage, particularly in Pure Fiction."
+                            }
+                        }
                     ]
                 },
                 {
                     "items": [
                         {
-                            "name": "duke",
+                            "name": "eagle",
                             "pieces": 4
-                        
-                        }                       
+
+                        }
                     ]
-                }                
+                }
             ]
         }
     ],
     "planar_ornaments": [
         {
             "groups": [
-                {
-                    "items": [
-                        {
-                            "name": "vonwacq",
-                            "pieces": 2
-                        }
-                    ]
-                },
                 {
                     "items": [
                         {
@@ -45,11 +40,41 @@
                 {
                     "items": [
                         {
-                            "name": "sigonia",
+                            "name": "vonwacq",
                             "pieces": 2
                         }
                     ]
-                }                
+                },
+                {
+                    "items": [
+                        {
+                            "name": "lushaka",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "sigonia",
+                            "pieces": 2,
+                            "note_group": "personaldmg"
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "duran",
+                            "pieces": 2,
+                            "note_group": "personaldmg"
+                        }
+                    ]
+                }
             ]
         }
     ]
