@@ -28,9 +28,5 @@
         "jsonc-parser": "^3.3.1",
         "prettier": "^3.8.3",
         "prettier-plugin-astro": "^0.14.1"
-    },
-    "allowScripts": {
-        "@parcel/watcher@2.6.0": true,
-        "esbuild@0.28.2": true
     }
 }
