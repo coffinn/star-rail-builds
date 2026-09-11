@@ -1,0 +1,63 @@
+{
+    "light_cones": [
+        {
+            "items": [
+                {
+                    "name": "the-finale-of-a-lie",
+                    "superimposition": 1
+
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "the-hell-where-ideals-burn",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "cruising",
+                    "superimposition": 5
+                },
+                {
+                    "name": "baptism-of-pure-thought",
+                    "superimposition": 1
+                },
+                {
+                    "name": "worrisome-blissful",
+                    "superimposition": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "see-you-at-the-end",
+                    "superimposition": 5
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "osr",
+                    "superimposition": 5,
+                    "note": {
+                        "en": "Only viable in 1-2 target scenario."
+                    }
+                },
+                {
+                    "name": "swordplay",
+                    "superimposition": 5,
+                    "note": {
+                        "en": "Assuming no target switching."
+                    }
+                }
+            ]
+        }
+    ]
+}    

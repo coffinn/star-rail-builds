@@ -4,12 +4,11 @@
             "cr/cd"
         ],
         "feet": [
-            "atk%",
-            "spd"
+            "atk%"
         ],
         "planar_sphere": [
             "atk%",
-            "lightning-dmg"
+            "quantum-dmg"
         ],
         "link_rope": [
             "atk%",
