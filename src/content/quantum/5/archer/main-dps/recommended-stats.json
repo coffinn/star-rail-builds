@@ -2,11 +2,14 @@
     "stats": [
         {
             "name": "atk",
-            "recommended": "3000+"
+            "recommended": "2800+"
         },
         {
             "name": "spd",
-            "recommended": "106 / 134"
+            "recommended": "105",
+            "note": {
+                "en": "This build does not require [[stat:spd]]."
+            }
         },
         {
             "name": "cr",
@@ -14,7 +17,7 @@
         },
         {
             "name": "cd",
-            "recommended": "150%+"
+            "recommended": "120%+"
         }
     ]
 }
