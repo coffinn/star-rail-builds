@@ -13,9 +13,10 @@
         "astro": "astro",
         "download:character-assets": "node scripts/download-hsr-assets.mjs character",
         "download:light-cone-assets": "node scripts/download-hsr-assets.mjs light-cone",
-        "download:relic-assets": "node scripts/download-hsr-assets.mjs relic"
+        "download:relic-assets": "node scripts/download-hsr-assets.mjs relic",
     },
     "dependencies": {
+        "@astrojs/check": "^0.9.10",
         "astro": "^7.2.0",
         "astro-pagefind": "^2.0.1",
         "marked": "^18.0.3",
