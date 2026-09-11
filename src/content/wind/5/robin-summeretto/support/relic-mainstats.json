@@ -32,13 +32,7 @@
             }
         ],
         "link_rope": [
-            "err",
-            {
-                "name": "hp%",
-                "note": {
-                    "en": "Preferred with Phainon."
-                }
-            }
+            "err"
         ]
     }
 }
