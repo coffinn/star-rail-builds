@@ -5,13 +5,25 @@
             "cd"
         ],
         "feet": [
-            "spd"
+            "spd",
+            {
+                "name": "atk%",
+                "note_group": "personaldmg"
+            }
         ],
         "planar_sphere": [
-            "ice-dmg","atk%"
+            {
+                "name": "ice-dmg",
+                "note_group": "personaldmg"
+            },
+            "atk%"
         ],
         "link_rope": [
-            "atk%","err"
+            {
+                "name": "atk%",
+                "note_group": "personaldmg"
+            },
+            "err"
         ]
     }
 }
