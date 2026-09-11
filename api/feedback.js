@@ -18,6 +18,11 @@ const DEFAULT_ALLOWED_ORIGINS = [
 const TURNSTILE_VERIFY_URL =
     'https://challenges.cloudflare.com/turnstile/v0/siteverify';
 
+
+// Adding constants for addIssueToProject handling for later in case of failed sync-build-project.yml
+const DEFAULT_PROJECT_OWNER = 'coffinn';
+const DEFAULT_PROJECT_NUMBER = 2;
+
 class GitHubApiError extends Error {
     status;
     constructor(message, status) {
@@ -154,14 +159,15 @@ function clean(value, maxLength) {
         .slice(0, maxLength);
 }
 
+//error handling with proper error returns rather than just string matching
 function validatePayload(payload) {
     const feedback = clean(payload.feedback, 5_000);
     const type = clean(payload.type, 80);
     if (!FEEDBACK_TYPES.includes(type)) {
-        throw new Error('Choose what the feedback is about.');
+        throw new ClientError(400, 'Choose what the feedback is about.');
     }
     if (!feedback) {
-        throw new Error('Feedback is required.');
+        throw new ClientError(400, 'Feedback is required.');
     }
     return {
         contact: clean(payload.contact, 140),
@@ -692,6 +698,13 @@ export default async function handler(request, response) {
             payload,
         );
 
+        //Error handling for handling dead addIssueToProject function which is created but never synced or called
+        try {
+            await addIssueToProject(client, DEFAULT_REPOSITORY, issue, payload);
+        } catch (projectError) {
+            console.error('Issue sucessfully created by project sync has failed: ', projectError);
+        }
+
         return json(response, 201, {
             ok: true,
             issueNumber: issue.number,
@@ -699,16 +712,21 @@ export default async function handler(request, response) {
         });
     } catch (error) {
         if (!(error instanceof ClientError)) console.error(error);
-        const message =
-            error instanceof Error ? error.message : 'Could not send feedback.';
+
         if (error instanceof ClientError) {
             return json(response, error.status, { error: message });
         }
         const isClientError =
             message.includes('Feedback is required') ||
             message.includes('Choose what the feedback');
-        return json(response, isClientError ? 400 : 500, {
-            error: isClientError ? message : 'Could not send feedback.',
+
+        const debug =
+            exposeDebugErrors() && error instanceof Error
+                ? error.message
+                : undefined;
+
+        return json(response, 500, {
+            error: 'could not send feedback.', ...(debug ? { debug } : {}),
         });
     }
 }

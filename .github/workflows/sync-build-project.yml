@@ -32,12 +32,12 @@ jobs:
       - name: Sync character and build issues
         env:
           GH_TOKEN: ${{ secrets.PROJECT_SYNC_TOKEN }}
-          ISSUE_REPOSITORY: Genshin-Impact-Helper-Team/genshin-builds
-          PROJECT_OWNER: Genshin-Impact-Helper-Team
-          PROJECT_NUMBER: '1'
+          ISSUE_REPOSITORY: coffinn/star-rail-builds
+          PROJECT_OWNER: coffinn
+          PROJECT_NUMBER: '2'
           PROJECT_FIELD_NAME: Last Updated
-          WEAPON_COUNT_FIELD_NAME: Weapon Count
-          ARTIFACT_SET_COUNT_FIELD_NAME: Artifact Count
+          WEAPON_COUNT_FIELD_NAME: Light Cone Count
+          ARTIFACT_SET_COUNT_FIELD_NAME: Relic Set Count
           BEST_ROLE_FIELD_NAME: Best Role
           CHARACTER_PRIORITY_FIELD_NAME: Character Priority
           UPDATE_PRIORITY_FIELD_NAME: Update Priority
