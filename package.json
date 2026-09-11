@@ -21,6 +21,7 @@
         "marked": "^18.0.3",
         "sass": "^1.102.0",
         "typescript": "^7.0.2",
+        "vite-node": "^6.0.0",
         "webcoreui": "^1.5.0"
     },
     "devDependencies": {
