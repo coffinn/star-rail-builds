@@ -1,0 +1,21 @@
+{
+    "best": true,
+    "name": {
+        "en": "Main DPS"
+    },
+    "notes": [
+    ],
+    "overview": {
+        "summary": {
+            "en": "- Dan Heng is a single target DPS unit, capable of redcuing enemy SPD as well as buffing his own.\n- When Dan Heng uses his Skill, he has chance to reduce the target's SPD if he CRITs. He also deals Additional DMG against Slowed enemies with his Basic ATK and Ultimate."
+        },
+        "notable_eidolons": {
+            "priority": {
+                "en": "E2"
+            },
+            "details": {
+                "en": "- E2 reduces his Talent's cooldown, which increases his Wind RES PEN, by 1 turn."
+            }
+        }
+    }
+} 

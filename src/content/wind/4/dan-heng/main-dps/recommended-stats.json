@@ -1,0 +1,23 @@
+{
+    "stats": [
+        {
+            "name": "atk",
+            "recommended": "2300+"
+        },
+        {
+            "name": "spd",
+            "recommended": "110 / 134",
+            "note": {
+                "en": "Dan Heng has a 50% chance to increase his speed by 20% after launching an attack. "
+            }
+        },
+        {
+            "name": "cr",
+            "recommended": "100%"
+        },
+        {
+            "name": "cd",
+            "recommended": "150%+"
+        }
+    ]
+}
