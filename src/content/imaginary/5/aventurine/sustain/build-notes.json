@@ -1,20 +1,24 @@
 {
     "best": true,
     "name": {
-        "en": "Sustain"
+        "en": "Sustain",
+        "ru": "Щитовик"
     },
     "notes": [
     ],
     "overview": {
         "summary": {
-            "en": "- Aventurine provides Shields with his Skill or whenever his Follow-Up ATKs are triggered, using his Skill provides all allies with \"Fortified Wager\". Allies with \"Fortified Wager\" get increased Effect RES, Aventurine himself is able to resist any Crowd Control debuffs once every two turns with said effect.\n- His Follow-Up ATKs trigger once he has 7 points of \"Blind Bet\", these points are gained when allies with \"Fortified Wager\" are attacked, or if an ally launches a Follow-Up ATK. Upon using his Ultimate, he gains 1 to 7 points of \"Blind Bet\".\n- In higher difficulty endgame content he is likely to struggle with sustaining. To improve his Shield frequency, it is recommended to get his E1. This enables his Ultimate to apply \"Fortified Wager\", allowing him to Basic ATK instead of using Skill."
+            "en": "- Aventurine provides Shields with his Skill or whenever his Follow-Up ATKs are triggered, using his Skill provides all allies with \"Fortified Wager\". Allies with \"Fortified Wager\" get increased Effect RES, Aventurine himself is able to resist any Crowd Control debuffs once every two turns with said effect.\n- His Follow-Up ATKs trigger once he has 7 points of \"Blind Bet\", these points are gained when allies with \"Fortified Wager\" are attacked, or if an ally launches a Follow-Up ATK. Upon using his Ultimate, he gains 1 to 7 points of \"Blind Bet\".\n- In higher difficulty endgame content he is likely to struggle with sustaining. To improve his Shield frequency, it is recommended to get his E1. This enables his Ultimate to apply \"Fortified Wager\", allowing him to Basic ATK instead of using Skill.",
+            "ru": "- Авантюрин обеспечивает щиты с помощью своего навыка или всякий раз, когда срабатывают его бонус-атаки. Использование навыка даёт всем союзникам Укреплённую ставку. Союзники с Укреплённой ставкой получают повышенное сопротивление эффектам; сам Авантюрин благодаря этому эффекту способен сопротивляться любым эффектам контроля раз в два хода.\n- Его бонус-атаки срабатывают, когда у него накапливается 7 ед. заряда Ставки в слепую; эти ед. заряда набираются, когда атакуют союзников с Укреплённой ставкой или когда союзник совершает бонус-атаку. При использовании сверхспособности он получает от 1 до 7 ед. заряда Ставки в слепую.\n- В высокосложном эндгейм-контенте ему, вероятно, будет трудно поддерживать живучесть. Чтобы повысить частоту щитов, рекомендуется получить его E1. Это позволяет его сверхспособности накладывать Укреплённую ставку, что даёт ему возможность использовать базовую атаку вместо навыка."
         },
         "investment_priority": {
             "priority": {
-                "en": "E1 > E2 > S1"
+                "en": "E1 > E2 > S1",
+                "ru": "E1 > E2 > S1"
             },
             "details": {
-                "en": "- E1 is the main quality of life Eidolon, letting his Ultimate refresh his Shields so that he can play purely Skill Point positive. It also provides 20% teamwide CRIT DMG buff.\n- E2 is a useful, but overall modest 12% All-Type RES PEN debuff on the target of his Basic ATKs.\n- S1 [[light-cone:inherently-unjust-destiny]] provides a useful Vulnerability debuff, which can be applied to several targets through his Bounce Follow-Up ATK. The extra DEF% also helps to boost his Shield capability. However, it would be best to invest in a newer sustain."
+                "en": "- E1 is the main quality of life Eidolon, letting his Ultimate refresh his Shields so that he can play purely Skill Point positive. It also provides 20% teamwide CRIT DMG buff.\n- E2 is a useful, but overall modest 12% All-Type RES PEN debuff on the target of his Basic ATKs.\n- S1 [[light-cone:inherently-unjust-destiny]] provides a useful Vulnerability debuff, which can be applied to several targets through his Bounce Follow-Up ATK. The extra DEF% also helps to boost his Shield capability. However, it would be best to invest in a newer sustain.",
+                "ru": "- E1 — ключевой, очень важный эйдолон, позволяющий его сверхспособности обновлять щиты, чтобы он мог играть чисто в плюс по очкам навыков. Также даёт 20% бафф крит. урона всей команде.\n- E2 — полезный, но в целом скромный дебафф 12% понижения всех типов сопротивления на цель его базовых атак.\n- S1 [[light-cone:inherently-unjust-destiny]] даёт полезный дебафф получаемого урона, который можно наложить на несколько целей через его бонус-атаку с отскоком. Дополнительная защита% также помогает усилить его щиты. Однако лучше вложиться в более нового щитовика/хилера." 
             }
         }
     }

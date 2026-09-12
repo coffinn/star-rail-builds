@@ -1,20 +1,24 @@
 {
     "best": true,
     "name": {
-        "en": "Sustain"
+        "en": "Sustain",
+        "ru": "Хилер"
     },
     "notes": [
     ],
     "overview": {
         "summary": {
-            "en": "- When using her Skill, she activates a Zone \"Matrix of Prescience\" for 3 turns. When this \"Matrix of Prescience\" is active, allies’ Max HP and CRIT Rate will be increased, and any damage allies receive will be distributed to Fu Xuan. All allies gain one instance of resisting any Crowd Control debuffs, this resets after she uses her Skill again.\n- Her Talent decreases damage taken by all allies. If she ever falls below 50% of her Max HP, she will restore a large amount of HP. This effect can only be triggered twice, but will not work if she receives a killing blow.\n- An outdated character who will struggle to sustain for high difficulty endgame content. If using her for high difficulty content, it is recommended to get S1 [[light-cone:she-already-shut-her-eyes]], and adding her to your Celestial Invitation for pool."
+            "en": "- When using her Skill, she activates a Zone \"Matrix of Prescience\" for 3 turns. When this \"Matrix of Prescience\" is active, allies’ Max HP and CRIT Rate will be increased, and any damage allies receive will be distributed to Fu Xuan. All allies gain one instance of resisting any Crowd Control debuffs, this resets after she uses her Skill again.\n- Her Talent decreases damage taken by all allies. If she ever falls below 50% of her Max HP, she will restore a large amount of HP. This effect can only be triggered twice, but will not work if she receives a killing blow.\n- An outdated character who will struggle to sustain for high difficulty endgame content. If using her for high difficulty content, it is recommended to get S1 [[light-cone:she-already-shut-her-eyes]], and adding her to your Celestial Invitation for pool.",
+            "ru": "- При использовании навыка она активирует зону Матрицу предвидения на 3 хода. Пока эта Матрица предвидения активна, максимальное HP и крит. шанс союзников повышаются, а любой получаемый союзниками урон распределяется на Фу Сюань. Все союзники получают возможность избежать любых накладываемых противниками эффектов контроля 1 раз, обновляется после того, как она снова использует навык.\n- Её талант уменьшает получаемый всеми союзниками урон. Если её HP когда-либо опускается ниже 50% от максимума, она восстанавливает большое количество HP. Этот эффект может сработать только дважды, но не сработает, если она получает смертельный удар.\n- В целом, она — устаревший персонаж, которому будет трудно поддерживать живучесть в высокосложном эндгейм-контенте. Если использовать её в высокосложном контенте, рекомендуется получить S1 [[light-cone:she-already-shut-her-eyes]] и добавить её в свой пул Приглашения звёзд."
         },
         "investment_priority": {
             "priority": {
-                "en": "S1 > E1 > E2"
+                "en": "S1 > E1 > E2",
+                "ru": "S1 > E1 > E2"
             },
             "details": {
-                "en": "- S1 [[light-cone:she-already-shut-her-eyes]] is needed for a more comfortable sustaining experience, as it solves her Energy and HP needs. It allows her to use an HP% Link Rope, giving her a higher Max HP, helping her absorb more damage without getting killed."
+                "en": "- S1 [[light-cone:she-already-shut-her-eyes]] is needed for a more comfortable sustaining experience, as it solves her Energy and HP needs. It allows her to use an HP% Link Rope, giving her a higher Max HP, helping her absorb more damage without getting killed.",
+                "ru": "- S1 [[light-cone:she-already-shut-her-eyes]] нужен для более комфортного поддержания живучести, так как решает её потребности в энергии и HP. Он позволяет ей использовать cоединительную вязь с HP%, давая ей более высокое максимальное HP и помогая поглощать больше урона, не погибая."
             }
         }
     }

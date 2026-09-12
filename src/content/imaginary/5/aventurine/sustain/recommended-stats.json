@@ -13,7 +13,8 @@
             "recommended": "50%",
             "note_group": "crcd",
             "note": {
-                "en": "Optional stat for personal damage."
+                "en": "Optional stat for personal damage.",
+                "ru": "Опциональный стат для личного урона."
             }
         },
         {
